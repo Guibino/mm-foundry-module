@@ -37,29 +37,28 @@ const slug = (s: string) =>
   s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
     .replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "").slice(0, 60);
 
-const toolsName = (name: string) => name.trim().replace(/\s+/g, " ");
-const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
-const exists = (p: string) => access(p).then(() => true).catch(() => false);
-
-async function download(url: string, dest: string): Promise<boolean> {
-  if (await exists(dest)) return true; // resume
-  for (let attempt = 0; attempt < 2; attempt++) {
-    try {
-      const res = await fetch(url, { headers: HEADERS });
-      if (res.status === 404) return false;
-      if (!res.ok) { if (attempt === 0) { await sleep(500); continue; } return false; }
-      const buf = Buffer.from(await res.arrayBuffer());
-      if (buf.length < 100) return false;
-      await writeFile(dest, buf);
-      return true;
-    } catch {
-      if (attempt === 0) { await sleep(500); continue; }
-      return false;
-    }
-  }
-  return false;
-}
-
-async function main() {
-  const monsters: Monster[] = JSON.parse(await readFile(paths.monstersEn, "utf8"));
-  awai
+/**
+ * Correcao de nomes para casar com o nome de arquivo do 5e.tools quando o nome
+ * do monstro veio com ruido de OCR ou foi traduzido para PT. Chave = nome atual
+ * do monstro; valor = nome canonico (ingles) usado na URL do 5e.tools.
+ */
+const NAME_OVERRIDES: Record<string, string> = {
+  "VAMPIRE FAMILIAR": "Vampire Familiar",
+  "SUCCUBUS": "Succubus",
+  "SWARM OF VENOMOUS SNAKES": "Swarm of Venomous Snakes",
+  "Venomous Snakes": "Swarm of Venomous Snakes",
+  "Smothering": "Rug of Smothering",
+  "Rug of Smothering Animado": "Rug of Smothering",
+  "Ax.e Beak": "Axe Beak",
+  "Bal or": "Balor",
+  "Gulthlas Blight": "Gulthias Blight",
+  "Bone N aga": "Bone Naga",
+  "Dark.mantle": "Darkmantle",
+  "Death l(night Aspirant": "Death Knight Aspirant",
+  "Ga . rgoyle": "Gargoyle",
+  "Goblin Mjruon": "Goblin Minion",
+  "Guardian N aga": "Guardian Naga",
+  "Hidra": "Hydra",
+  "Jackal were": "Jackalwere",
+  "Enxame de Larvas": "Swarm of Larvae",
+  "Salamander Modron Qu
