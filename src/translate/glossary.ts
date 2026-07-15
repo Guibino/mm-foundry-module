@@ -32,6 +32,7 @@ export const glossary: Glossary = JSON.parse(readFileSync(paths.glossary, "utf8"
 function buildReplacements(): [RegExp, string][] {
   const pairs: [string, string][] = [];
   for (const [en, pt] of Object.entries(glossary.phrases)) pairs.push([en, pt]);
+  for (const [en, pt] of Object.entries(glossary.abilities)) if (en.length > 3) pairs.push([en, pt]);
   for (const [en, v] of Object.entries(glossary.damageTypes)) pairs.push([en, v.pt]);
   for (const [en, v] of Object.entries(glossary.conditions)) pairs.push([en, v.pt]);
   for (const [en, v] of Object.entries(glossary.senses)) pairs.push([en, v.pt]);

@@ -119,6 +119,27 @@ mm-foundry-module/
 
 ---
 
+## Fonte alternativa: 5e.tools (recomendada para máxima fidelidade)
+
+Além do PDF, o projeto inclui um **conversor da fonte estruturada do 5e.tools**
+(dados sem OCR — muito mais fiéis). Use a fonte **XMM** (Monster Manual
+2024/2025). Isso roda no **seu** ambiente; os dados são da Wizards of the Coast
+e **não** vão para o repositório (ficam em `data/`, gitignored).
+
+```bash
+npm run fetch:5e     # baixa data/raw/5etools-xmm.json (uso local/pessoal)
+npm run build:5e     # converte -> traduz -> normaliza -> compila o pack -> relatório
+```
+
+O conversor (`src/source-5etools/`) mapeia todos os campos (CA, PV, atributos,
+saves, perícias, sentidos, imunidades, ND, traits, ações, reações, lendárias,
+míticas, conjuração) e renderiza as marcações `{@atk}`, `{@hit}`, `{@damage}`,
+`{@dc}`, `{@condition}`, etc. A terminologia é traduzida pelo mesmo glossário
+PT-BR. Um teste com criatura sintética valida o mapeamento: `npm test`.
+
+> Observação: eu (assistente) não redistribuo a base do 5e.tools — o download e
+> a geração acontecem na sua máquina, sob sua responsabilidade e os termos do site.
+
 ## Regenerar a partir de outro PDF
 
 ```bash
