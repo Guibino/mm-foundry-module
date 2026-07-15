@@ -1,0 +1,33 @@
+{
+  "name": "mm2024-foundry-builder",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Pipeline para gerar um módulo FoundryVTT (dnd5e) com os monstros do Monster Manual 2024 a partir de um PDF local. Não redistribui conteúdo protegido: apenas processa o PDF fornecido pelo usuário no ambiente dele.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "extract": "tsx src/extract/index.ts",
+    "extract:merge": "tsx src/extract/from-merged.ts",
+    "parse": "tsx src/parse/index.ts",
+    "translate": "tsx src/translate/index.ts",
+    "images": "tsx src/images/index.ts",
+    "normalize": "tsx src/normalize/index.ts",
+    "build:pack": "tsx src/build/pack.ts",
+    "report": "tsx src/build/report.ts",
+    "all": "npm run extract && npm run parse && npm run translate && npm run normalize && npm run build:pack && npm run report",
+    "regen": "npm run parse && npm run translate && npm run normalize && npm run build:pack && npm run report",
+    "test": "tsx tests/run.ts"
+  },
+  "dependencies": {
+    "@foundryvtt/foundryvtt-cli": "^1.0.3",
+    "pdfjs-dist": "^4.10.38",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}

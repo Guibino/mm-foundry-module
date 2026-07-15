@@ -1,0 +1,52 @@
+{
+  "id": "mm2024-pt-br",
+  "title": "Manual dos Monstros 2024 (PT-BR)",
+  "description": "Compêndio de monstros do Monster Manual 2024 traduzidos para português brasileiro, com atores dnd5e totalmente estruturados. Gerado localmente a partir do PDF do usuário; não redistribui conteúdo protegido.",
+  "version": "0.1.0",
+  "authors": [
+    { "name": "Gerado pelo pipeline mm2024-foundry-builder" }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14",
+    "maximum": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": { "minimum": "4.0.0" }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "monsters",
+      "label": "Monstros (MM 2024 PT-BR)",
+      "path": "packs/monsters",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Manual dos Monstros 2024",
+      "sorting": "a",
+      "packs": ["monsters"]
+    }
+  ],
+  "languages": [
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json"
+    }
+  ],
+  "esmodules": [],
+  "styles": [],
+  "url": "",
+  "manifest": "",
+  "download": ""
+}
