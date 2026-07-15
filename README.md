@@ -132,6 +132,21 @@ Se você já extraiu em blocos, `npm run extract:merge` limpa um
 
 ---
 
+## Verificação de cobertura (contra o índice do livro)
+
+O pipeline extrai o **INDEX OF STAT BLOCKS** (páginas 5–7 do PDF) como fonte de
+verdade dos nomes e faz uma etapa de **reconciliação** (`npm run reconcile`):
+casa cada stat block parseado com a entrada do índice por nome + página e adota
+o nome canônico. Resultado da última execução:
+
+- **Índice do livro:** 495 entradas (o livro anuncia "500+", contando variações).
+- **Stat blocks gerados:** 495 atores (todos com atributos, CA, PV, ND, etc.).
+- **Nomes verificados contra o índice:** ~484 casados automaticamente + correções
+  manuais de OCR; ~10 monstros em páginas densas do Apêndice A ou com fusão de
+  colunas ficam com nome aproximado (sinalizados no relatório).
+
+Rode `npm run report` para a lista detalhada em `data/intermediate/quality-report.json`.
+
 ## Qualidade e limitações conhecidas
 
 Rode `npm run report` para ver `data/intermediate/quality-report.json`.

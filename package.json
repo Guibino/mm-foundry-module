@@ -10,14 +10,16 @@
   "scripts": {
     "extract": "tsx src/extract/index.ts",
     "extract:merge": "tsx src/extract/from-merged.ts",
+    "index": "python3 src/parse/build_index.py \"${MM_PDF:-../4. MM (2024) - AI Upscaled + HQ [5e].pdf}\" > data/intermediate/book-index.json",
     "parse": "tsx src/parse/index.ts",
+    "reconcile": "tsx src/parse/reconcile.ts",
     "translate": "tsx src/translate/index.ts",
     "images": "tsx src/images/index.ts",
     "normalize": "tsx src/normalize/index.ts",
     "build:pack": "tsx src/build/pack.ts",
     "report": "tsx src/build/report.ts",
-    "all": "npm run extract && npm run parse && npm run translate && npm run normalize && npm run build:pack && npm run report",
-    "regen": "npm run parse && npm run translate && npm run normalize && npm run build:pack && npm run report",
+    "all": "npm run extract && npm run index && npm run parse && npm run reconcile && npm run translate && npm run normalize && npm run build:pack && npm run report",
+    "regen": "npm run parse && npm run reconcile && npm run translate && npm run normalize && npm run build:pack && npm run report",
     "test": "tsx tests/run.ts"
   },
   "dependencies": {

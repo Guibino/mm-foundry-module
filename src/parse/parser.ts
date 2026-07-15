@@ -20,15 +20,40 @@ interface Line { page: number; text: string }
 // ---------- deteccao da grade de atributos ----------
 function isStrRow(text: string): boolean {
   const d = denoUp(text);
-  return /STR\d/.test(d) && d.includes("DEX") && d.includes("CON");
+  if (!(d.includes("STR") && d.includes("DEX") && d.includes("CON"))) return false;
+  // deve parecer uma linha de valores (varios digitos), nao prosa
+  return (text.match(/\d/g)?.length ?? 0) >= 4;
 }
 function isIntRow(text: string): boolean {
   const d = denoUp(text);
   return d.includes("INT") && d.includes("CHA");
 }
+const TYPES = ["Aberration","Beast","Celestial","Construct","Dragon","Elemental","Fey","Fiend","Giant","Humanoid","Monstrosity","Ooze","Plant","Undead"];
 function isMetaLine(text: string): boolean {
-  const t = text.trim();
-  return SIZES.some((s) => new RegExp(`^${s}(\\s|$)`).test(t)) && /,/.test(t);
+  const d = denoUp(text);
+  const startsSize = SIZES.some((s) => d.startsWith(s.toUpperCase()));
+  if (!startsSize) return false;
+  const hasType = TYPES.some((t) => d.includes(t.toUpperCase().slice(0, 6)));
+  const hasAlign = /LAWFUL|CHAOTIC|NEUTRAL|GOOD|EVIL|UNALIGN|E1JI|ELJI/.test(d);
+  return hasType || hasAlign;
+}
+/** Extrai size/type/alignment/subtipos de forma tolerante a OCR. */
+function parseMeta(raw: string): { size: string; type: string; alignment: string; subtypes: string[] } {
+  const d = denoUp(raw);
+  const size = SIZES.find((s) => d.startsWith(s.toUpperCase())) ?? "Medium";
+  const type = TYPES.find((t) => d.includes(t.toUpperCase().slice(0, 6))) ?? "Unknown";
+  let alignment = "Unaligned";
+  if (/UNALIGN/.test(d)) alignment = "Unaligned";
+  else if (/\bANY\b/.test(d)) alignment = "Any Alignment";
+  else {
+    const ethic = /LAWFUL/.test(d) ? "Lawful" : /CHAOTIC/.test(d) ? "Chaotic" : /NEUTRAL/.test(d) ? "Neutral" : "";
+    const moral = /(EVIL|E1JI|ELJI)/.test(d) ? "Evil" : /GOOD/.test(d) ? "Good" : /NEUTRAL/.test(d) ? "Neutral" : "";
+    if (ethic && moral) alignment = ethic === moral ? "Neutral" : `${ethic} ${moral}`;
+    else alignment = ethic || moral || "Unaligned";
+  }
+  const subM = raw.match(/\(([^)]*)\)/);
+  const subtypes = subM && /[A-Za-z]{3}/.test(subM[1]!) ? splitList(subM[1]!) : [];
+  return { size, type, alignment, subtypes };
 }
 function isAcAnchor(text: string): boolean {
   return /^AC\d+I/i.test(denoise(text));
@@ -44,11 +69,18 @@ function looksLikeName(text: string): boolean {
 /** Linha de NOME de monstro: maiuscula, curta e sem cara de citacao. */
 function isNameLine(text: string): boolean {
   const t = text.trim();
-  if (!looksLikeName(t)) return false;
-  if (/["'“”]/.test(t)) return false;              // citacao
-  if (/^[-—]/.test(t)) return false;                // atribuicao "- FULANO"
+  if (t.length < 2 || t.length > 42) return false;
+  if (/["'“”]/.test(t)) return false;                // citacao
+  if (/^[-—]/.test(t)) return false;                 // atribuicao "- FULANO"
+  const letters = t.replace(/[^A-Za-z]/g, "");
+  if (letters.length < 2) return false;
   const words = t.split(/\s+/).filter(Boolean);
-  return words.length <= 5;                          // nomes reais sao curtos
+  if (words.length > 5) return false;                // nomes reais sao curtos
+  if (/[.:;]$/.test(t) && words.length > 2) return false; // frase
+  // prosa: contem palavras funcionais e e "comprida"
+  if (/\b(the|and|with|from|that|this|creature|damage|target|its|into|when)\b/i.test(t) && words.length > 3) return false;
+  // aceita CAIXA MISTA (small caps do MM lidos como mixed pelo OCR)
+  return true;
 }
 
 /** Linha de fluff-boundary: comeca o texto de ambientacao do proximo monstro. */
@@ -68,7 +100,7 @@ function findGrids(lines: Line[]): { strIdx: number; intIdx: number }[] {
   for (let i = 0; i < lines.length; i++) {
     if (!isStrRow(lines[i]!.text)) continue;
     let intIdx = -1;
-    for (let j = i + 1; j <= i + 3 && j < lines.length; j++) {
+    for (let j = i + 1; j <= i + 4 && j < lines.length; j++) {
       if (isIntRow(lines[j]!.text)) { intIdx = j; break; }
     }
     if (intIdx >= 0) grids.push({ strIdx: i, intIdx });
@@ -150,10 +182,37 @@ function splitEntries(block: string[]): NamedText[] {
     .filter((e) => (e.name === "" ? e.text.length > 0 : !HEADER.test(e.name) && !/^[A-Z0-9 '-]{4,}$/.test(e.name)));
 }
 function cleanName(raw: string): string {
-  let n = raw.replace(/["'`.,;:~]+/g, " ").replace(/\s+/g, " ").trim();
-  const words = n.split(" ");
-  const half = words.length / 2;
-  if (words.length % 2 === 0 && words.slice(0, half).join(" ") === words.slice(half).join(" ")) n = words.slice(0, half).join(" ");
+  let n = raw;
+  // remove prefixo de frase/fluff que vazou antes do nome (colunas densas):
+  // descarta palavras iniciais minusculas ou "stopwords" ate a 1a palavra-nome.
+  {
+    const stop = /^(that|these|those|their|there|the|a|an|and|of|to|in|on|it|its|is|are|was|were|with|from|for|as|by|or|but|end|ends|remain|remains|itself|damage|condition|half|prone|effects|effect|immediately|immedi|wild|frenzies|death|action|hide|when|this|creature|target|attacks?|makes?|deals?|gains?|has|have|can|must|takes?)$/i;
+    const parts = n.split(/\s+/).filter(Boolean);
+    let s = 0;
+    while (s < parts.length - 1 && (/^[a-z]/.test(parts[s]!) || stop.test(parts[s]!))) s++;
+    n = parts.slice(s).join(" ");
+  }
+  // remove ruido que vazou ANTES do nome (texto denso do Apendice A / colunas)
+  n = n.replace(/^.*?\b(?:Piercing|Slashing|Bludgeoning|Fire|Cold|Acid|Lightning|Necrotic|Radiant|Psychic|Thunder|Poison|Force)\s+damage\b/i, "");
+  n = n.replace(/^.*?\bHide action\b/i, "");
+  n = n.replace(/^.*?\bnon-?modrons?\b/i, "");
+  n = n.replace(/^\s*(?:nity\s+)?Attacks?\b/i, "");
+  n = n.replace(/^\s*Spellcasting\b/i, "");
+  n = n.replace(/^\s*INTRODUCTION\b/i, "");
+  n = n.replace(/APPENDIX\s*A\s*I?\s*ANIMALS?\s*\d*/gi, " ");
+  // corta fragmento de meta que colou no fim do nome ("HAWK Tiny Beast) ...")
+  n = n.replace(/\b(Tiny|Small|Medium|Large|Huge|Gargantuan)\b[\s\S]*$/i, (m, s, off) => (off > 1 ? "" : m));
+  // limpa pontuacao/simbolos/numeros soltos
+  n = n.replace(/[^A-Za-z' -]+/g, " ").replace(/\s+/g, " ").trim();
+  // remove fragmentos de 1 letra nas extremidades (ruido de OCR)
+  const parts = n.split(" ").filter((w) => w.length > 0);
+  while (parts.length > 1 && parts[0]!.length === 1) parts.shift();
+  n = parts.join(" ");
+  // dedup de nome repetido (case-insensitive): "OwL OWL" -> "OwL"
+  const w = n.split(" ");
+  const half = w.length / 2;
+  if (w.length % 2 === 0 && w.slice(0, half).join(" ").toUpperCase() === w.slice(half).join(" ").toUpperCase())
+    n = w.slice(0, half).join(" ");
   return n.trim();
 }
 
@@ -175,7 +234,7 @@ export function parseMonsters(pages: { page: number; text: string }[]): Monster[
 function dedupe(list: Monster[]): Monster[] {
   const seen = new Map<string, Monster>();
   for (const m of list) {
-    const key = `${m.name}|${m.hp.value}|${m.cr}`;
+    const key = `${m.page}|${m.hp.value}|${m.cr}|${m.abilities.str.score}|${m.abilities.dex.score}`;
     const prev = seen.get(key);
     if (!prev) { seen.set(key, m); continue; }
     const score = (x: Monster) => x.actions.length + x.traits.length + x.legendaryActions.length;
@@ -210,16 +269,8 @@ function parseBlockAt(lines: Line[], strIdx: number, intIdx: number, nextGridStr
   const name = cleanName(nameLines.join(" ")) || "Sem Nome";
 
   // meta
-  const meta = metaIdx >= 0 ? at(metaIdx).trim() : "Medium Unknown, Unaligned";
-  const sizeM = meta.match(new RegExp(`^(${SIZES.join("|")})`, "i"));
-  const size = sizeM ? sizeM[1]! : "Medium";
-  const afterSize = meta.replace(new RegExp(`^(${SIZES.join("|")})\\s*`, "i"), "");
-  const commaIdx = afterSize.lastIndexOf(",");
-  const typePart = commaIdx >= 0 ? afterSize.slice(0, commaIdx) : afterSize;
-  const alignment = commaIdx >= 0 ? afterSize.slice(commaIdx + 1).trim() : "Unaligned";
-  const subM = typePart.match(/\(([^)]*)\)/);
-  const subtypes = subM ? splitList(subM[1]!) : [];
-  const type = typePart.replace(/\([^)]*\)/, "").trim() || "Unknown";
+  const metaRaw = metaIdx >= 0 ? at(metaIdx).trim() : "Medium Unknown, Unaligned";
+  const { size, type, alignment, subtypes } = parseMeta(metaRaw);
 
   // AC / init
   const acLine = acIdx >= 0 ? denoise(at(acIdx)) : "";
