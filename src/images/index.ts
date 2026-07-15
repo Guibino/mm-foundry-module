@@ -1,67 +1,65 @@
 /**
- * Etapa 5 — Download de imagens (retrato + token).
+ * Etapa 5 — Download de imagens (token + retrato) do 5e.tools.
  *
- * IMPORTANTE (direitos autorais): as imagens do 5e.tools sao arte da Wizards of
- * the Coast. Este script baixa para uso LOCAL/pessoal no seu ambiente e NAO
- * inclui nada no repositorio (assets/portraits e assets/tokens sao gitignored).
- * Rode por sua conta e risco, respeitando os termos do 5e.tools.
+ * IMPORTANTE (direitos autorais): as imagens sao arte da Wizards of the Coast
+ * (hospedadas no 5e.tools). Este script baixa para uso LOCAL/pessoal no SEU
+ * ambiente e NAO inclui nada no repositorio (module/assets/* e gitignored).
+ * Rode por sua conta, respeitando os termos do 5e.tools.
  *
- * As imagens do Monster Manual 2024 usam o codigo de fonte "XMM" no 5e.tools.
- * Convencao de URL (pode mudar): 
- *   retrato: https://5e.tools/img/bestiary/XMM/<Nome>.webp
+ * Padrao de URL (fonte XMM = Monster Manual 2024/2025):
  *   token:   https://5e.tools/img/bestiary/tokens/XMM/<Nome>.webp
+ *   retrato: https://5e.tools/img/bestiary/XMM/<Nome>.webp
  *
- * Executar: npm run images   (variavel MM_IMG_SOURCE p/ trocar "XMM")
+ * O download e resumivel: arquivos ja baixados sao pulados. Nomes que faltarem
+ * (404) sao listados em module/assets/faltantes.json para ajuste manual.
+ *
+ * Executar: npm run images        (variavel MM5E_IMG_SOURCE p/ trocar "XMM")
+ * Depois:   npm run relink        (vincula as imagens e recompila o pack)
  */
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile, access } from "node:fs/promises";
 import path from "node:path";
 import { paths } from "../config.js";
 import { makeLogger } from "../util/log.js";
 import type { Monster } from "../parse/schema.js";
 
 const log = makeLogger("images");
-const SOURCE = process.env.MM_IMG_SOURCE ?? "XMM";
+const SOURCE = process.env.MM5E_IMG_SOURCE ?? "XMM";
 const BASE = "https://5e.tools/img/bestiary";
+const DELAY = Number(process.env.MM5E_DELAY ?? 120); // ms entre requisicoes (educado)
+
+const HEADERS = {
+  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+  Referer: "https://5e.tools/bestiary.html",
+  Accept: "image/webp,image/*,*/*;q=0.8",
+};
 
 const slug = (s: string) =>
   s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
     .replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "").slice(0, 60);
 
-/** Nome no padrao 5e.tools (Title Case, espacos preservados). */
-function toolsName(nameEn: string): string {
-  return nameEn.trim().split(/\s+/)
-    .map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
-    .join(" ");
-}
+const toolsName = (name: string) => name.trim().replace(/\s+/g, " ");
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+const exists = (p: string) => access(p).then(() => true).catch(() => false);
 
-async function tryDownload(url: string, dest: string): Promise<boolean> {
-  try {
-    const res = await fetch(url);
-    if (!res.ok) return false;
-    const buf = Buffer.from(await res.arrayBuffer());
-    if (buf.length < 100) return false;
-    await writeFile(dest, buf);
-    return true;
-  } catch {
-    return false;
+async function download(url: string, dest: string): Promise<boolean> {
+  if (await exists(dest)) return true; // resume
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const res = await fetch(url, { headers: HEADERS });
+      if (res.status === 404) return false;
+      if (!res.ok) { if (attempt === 0) { await sleep(500); continue; } return false; }
+      const buf = Buffer.from(await res.arrayBuffer());
+      if (buf.length < 100) return false;
+      await writeFile(dest, buf);
+      return true;
+    } catch {
+      if (attempt === 0) { await sleep(500); continue; }
+      return false;
+    }
   }
+  return false;
 }
 
 async function main() {
   const monsters: Monster[] = JSON.parse(await readFile(paths.monstersEn, "utf8"));
-  await mkdir(paths.portraits, { recursive: true });
-  await mkdir(paths.tokens, { recursive: true });
-  let okP = 0, okT = 0;
-  for (const m of monsters) {
-    const enc = encodeURIComponent(toolsName(m.name));
-    const s = slug(m.name);
-    const portraitUrl = `${BASE}/${SOURCE}/${enc}.webp`;
-    const tokenUrl = `${BASE}/tokens/${SOURCE}/${enc}.webp`;
-    if (await tryDownload(portraitUrl, path.join(paths.portraits, `${s}.webp`))) okP++;
-    if (await tryDownload(tokenUrl, path.join(paths.tokens, `${s}.webp`))) okT++;
-    log.debug(m.name, "retrato/token tentados");
-  }
-  log.ok(`Retratos: ${okP}/${monsters.length} | Tokens: ${okT}/${monsters.length}`);
-  log.info("Rode 'npm run normalize' e 'npm run build:pack' para vincular as imagens.");
-}
-main().catch((e) => { log.error(e); process.exit(1); });
+  awai

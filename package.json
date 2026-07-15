@@ -24,7 +24,8 @@
     "fetch:5e": "tsx src/source-5etools/fetch.ts",
     "convert:5e": "tsx src/source-5etools/index.ts",
     "build:5e": "npm run convert:5e && npm run translate && npm run normalize && npm run build:pack && npm run report",
-    "all:5e": "npm run fetch:5e && npm run build:5e"
+    "all:5e": "npm run fetch:5e && npm run build:5e",
+    "relink": "npm run normalize && npm run build:pack && npm run report"
   },
   "dependencies": {
     "@foundryvtt/foundryvtt-cli": "^1.0.3",
