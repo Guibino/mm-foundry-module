@@ -111,7 +111,7 @@ function assetPath(dir: string, kind: "portraits" | "tokens", slug: string): str
   return existsSync(file) ? `modules/${MODULE_ID}/assets/${kind}/${slug}.webp` : null;
 }
 
-export function toActor(m: any): any {
+export function toActor(m: any, folderId?: string): any {
   const id = makeId(`actor:${m.name}|${m.page ?? ""}|${m.hp?.value ?? ""}|${m.cr ?? ""}`);
   const slug = slugify(m.name);
   const portrait = assetPath(paths.portraits, "portraits", slug) ?? "icons/svg/mystery-man.svg";
@@ -166,6 +166,7 @@ export function toActor(m: any): any {
   return {
     _id: id,
     _key: `!actors!${id}`,
+    folder: folderId ?? null,
     name: m.namePt || m.name,
     type: "npc",
     img: portrait,

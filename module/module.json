@@ -1,16 +1,29 @@
 {
   "id": "mm2024-pt-br",
   "title": "Manual dos Monstros 2024 (PT-BR)",
-  "description": "Compêndio de monstros do Monster Manual 2024 traduzidos para português brasileiro, com atores dnd5e totalmente estruturados. Gerado localmente a partir do PDF do usuário; não redistribui conteúdo protegido.",
-  "version": "0.1.0",
+  "description": "Compêndio de monstros do Monster Manual 2024 traduzidos para português brasileiro, com atores dnd5e totalmente estruturados e organizados por tipo de criatura. Gerado localmente a partir do PDF do usuário; não redistribui conteúdo protegido.",
   "authors": [
-    { "name": "Gerado pelo pipeline mm2024-foundry-builder" }
+    { "name": "Fã" }
   ],
+  "version": "0.2.0",
   "compatibility": {
-    "minimum": "13",
-    "verified": "14",
-    "maximum": "14"
+    "minimum": "12",
+    "verified": "13"
   },
+  "esmodules": [
+    "scripts/mm2024-pt-br.mjs"
+  ],
+  "styles": [
+    "styles/mm2024-pt-br.css"
+  ],
+  "languages": [
+    {
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-BR.json",
+      "flags": {}
+    }
+  ],
   "relationships": {
     "systems": [
       {
@@ -23,30 +36,21 @@
   "packs": [
     {
       "name": "monsters",
-      "label": "Monstros (MM 2024 PT-BR)",
+      "label": "Monstros (MM 2024)",
       "path": "packs/monsters",
       "type": "Actor",
       "system": "dnd5e",
-      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" },
+      "flags": {}
     }
   ],
   "packFolders": [
     {
       "name": "Manual dos Monstros 2024",
-      "sorting": "a",
-      "packs": ["monsters"]
+      "color": "#7d1f1f",
+      "sorting": "m",
+      "packs": ["monsters"],
+      "folders": []
     }
-  ],
-  "languages": [
-    {
-      "lang": "pt-BR",
-      "name": "Português (Brasil)",
-      "path": "lang/pt-BR.json"
-    }
-  ],
-  "esmodules": [],
-  "styles": [],
-  "url": "",
-  "manifest": "",
-  "download": ""
+  ]
 }
