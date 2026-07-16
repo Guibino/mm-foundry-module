@@ -130,11 +130,55 @@ async function main() {
     for (const [re, nm] of MANUAL) if (re.test(m.name)) { (m as any).nameOcr = m.name; m.name = nm; break; }
   }
 
+  // Correcao canonica FINAL de nomes garbled de OCR. Alguns nomes chegam
+  // deturpados ate do proprio INDEX OF STAT BLOCKS do livro (ruido de OCR e
+  // mesclagem de colunas do Apendice A), entao esta passagem roda sobre TODOS
+  // os monstros — casados ou nao — e adota o nome canonico EM INGLES. O nome de
+  // OCR original fica preservado em `nameOcr`. Entradas que sao apenas
+  // fragmentos de cabecalho do Apendice (nao correspondem a criatura alguma)
+  // sao descartadas do resultado. Correcao factual de nome, nao de conteudo.
+  let cleanedSwapFix = 0;
+  // Desfaz um cruzamento de reconciliacao no bloco de objetos animados (p15-18):
+  // o stat block do "Animated Broom" (nameOcr) foi casado ao nome de indice
+  // "Animal Lord", enquanto o Animal Lord real (Celestial CR20) herdou o nome de
+  // indice "Smothering" (cauda de "Animated Rug of Smothering"). Corrige pelo
+  // OCR de origem, que e o sinal confiavel aqui.
+  for (const m of monsters) {
+    if ((m as any).nameOcr === "ANIMATED BROOM" && m.name !== "Animated Broom") {
+      m.name = "Animated Broom"; cleanedSwapFix++;
+    }
+  }
+
+  const CANONICAL_FIXES: [RegExp, string][] = [
+    [/Bone\s+N\s*aga/i, "Bone Naga"],
+    [/Guardian\s+N\s*aga/i, "Guardian Naga"],
+    [/Death\s+l?\(?night\s+Aspirant/i, "Death Knight Aspirant"],
+    [/Githyan[a-z]*\s+Knight/i, "Githyanki Knight"],
+    [/Goblin\s+Mjruon|Goblin\s+Min[il]on/i, "Goblin Minion"],
+    [/^Larva\b/i, "Larva"],
+    [/^Hippogriff\b/i, "Hippogriff"],
+    [/Salamander\s+Modron\s+Quadrone|^Modron\s+Quadrone$/i, "Modron Quadrone"],
+    [/Salamander\s+Fire\s+Snake|^Fire\s+Snake$/i, "Fire Snake"],
+    [/^Smothering$/i, "Animal Lord"], // stat block do Animal Lord (nao do Rug)
+  ];
+  const INVALID: RegExp[] = [/^APPENDIX\b/i, /\bAN\s+Il\s+MA\b/i];
+  let cleaned = 0;
+  for (const m of monsters) {
+    for (const [re, nm] of CANONICAL_FIXES) {
+      if (re.test(m.name) && m.name !== nm) {
+        if (!(m as any).nameOcr) (m as any).nameOcr = m.name;
+        m.name = nm; cleaned++; break;
+      }
+    }
+  }
+  const kept = monsters.filter((m) => !INVALID.some((re) => re.test(m.name)));
+  const dropped = monsters.length - kept.length;
+
   const unmatchedIdx = idx.filter((_, i) => !idxUsed[i]).map((e) => `${e.name} (p${e.page})`);
   const unmatchedMon = monsters.filter((_, j) => !assign.has(j)).map((m) => m.name);
 
-  await writeFile(paths.monstersEn, JSON.stringify(monsters, null, 2), "utf8");
-  log.ok(`${assign.size}/${monsters.length} casados com o indice; ${fixed} nomes ajustados`);
+  await writeFile(paths.monstersEn, JSON.stringify(kept, null, 2), "utf8");
+  log.ok(`${assign.size}/${monsters.length} casados com o indice; ${fixed} nomes ajustados; ${cleaned + cleanedSwapFix} nomes limpos; ${dropped} entrada(s) invalida(s) descartada(s)`);
   if (unmatchedIdx.length) log.warn(`indice sem par (${unmatchedIdx.length}): ${unmatchedIdx.join(", ")}`);
   if (unmatchedMon.length) log.warn(`monstros sem par no indice (${unmatchedMon.length}): ${unmatchedMon.slice(0, 20).map((s) => JSON.stringify(s.slice(0, 24))).join(", ")}`);
 }
