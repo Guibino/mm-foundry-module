@@ -228,10 +228,12 @@ export function toActor(m: any, folderId?: string): any {
   const dv = mapTraitList(m.vulnerabilities, Object.fromEntries(Object.entries(glossary.damageTypes)) as any);
   const ci = mapTraitList(m.conditionImmunities, Object.fromEntries(Object.entries(glossary.conditions)) as any);
 
-  const movement: any = { units: "ft", hover: !!m.hover };
-  for (const [k, v] of Object.entries(m.speeds)) movement[k] = v;
-  const senses: any = { units: "ft" };
-  for (const [k, v] of Object.entries(m.senses)) if (k !== "passivePerception") senses[k] = v;
+  // Deslocamento em metros (padrao PT-BR): 5 ft = 1,5 m => valor x 0,3.
+  const toMeters = (ft: number) => Math.round(ft * 0.3 * 100) / 100;
+  const movement: any = { units: "m", hover: !!m.hover };
+  for (const [k, v] of Object.entries(m.speeds)) movement[k] = toMeters(v as number);
+  const senses: any = { units: "m" };
+  for (const [k, v] of Object.entries(m.senses)) if (k !== "passivePerception") senses[k] = toMeters(v as number);
 
   const items: any[] = [];
   const push = (arr: Entry[], arrEn: Entry[], act: string, tag: string) =>

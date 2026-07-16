@@ -46,16 +46,16 @@
         "tempmax": null
       },
       "movement": {
-        "units": "ft",
+        "units": "m",
         "hover": false,
-        "walk": 30,
-        "fly": 60,
-        "swim": 90
+        "walk": 9,
+        "fly": 18,
+        "swim": 27
       },
       "senses": {
-        "units": "ft",
-        "darkvision": 120,
-        "blindsight": 30
+        "units": "m",
+        "darkvision": 36,
+        "blindsight": 9
       },
       "init": {
         "ability": "dex",
