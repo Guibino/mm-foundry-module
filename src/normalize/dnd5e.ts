@@ -164,7 +164,10 @@ function buildUses(entry: Entry): any {
 function featItem(entry: Entry, entryEn: Entry, activation: string, seed: string): any {
   const mech = detectMechanics(entryEn.textEn ?? entryEn.text);
   const uses = buildUses(entry);
-  const nameSuffix = entry.recharge ? ` (${entry.recharge})` : entry.uses ? ` (${entry.uses})` : "";
+  const ptSuffix = (s: string) => s
+    .replace(/Recharge/g, "Recarga").replace(/\/Day/g, "/Dia")
+    .replace(/\/Turn/g, "/Turno").replace(/\/Round/g, "/Rodada").replace(/\/Rest/g, "/Descanso");
+  const nameSuffix = entry.recharge ? ` (${ptSuffix(entry.recharge)})` : entry.uses ? ` (${ptSuffix(entry.uses)})` : "";
   // Activities nativas so para entradas acionaveis (acoes/bonus/reacoes/lendarias);
   // traits passivos (activation vazio) permanecem apenas descritivos.
   const activities = activation ? buildActivities(mech, activation, seed) : {};
