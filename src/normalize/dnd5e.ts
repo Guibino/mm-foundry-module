@@ -197,8 +197,12 @@ function assetPath(dir: string, kind: "portraits" | "tokens", slug: string): str
 export function toActor(m: any, folderId?: string): any {
   const id = makeId(`actor:${m.name}|${m.page ?? ""}|${m.hp?.value ?? ""}|${m.cr ?? ""}`);
   const slug = slugify(m.name);
-  const portrait = assetPath(paths.portraits, "portraits", slug) ?? "icons/svg/mystery-man.svg";
-  const token = assetPath(paths.tokens, "tokens", slug) ?? portrait;
+  const portraitAsset = assetPath(paths.portraits, "portraits", slug);
+  const tokenAsset = assetPath(paths.tokens, "tokens", slug);
+  // Sem retrato mas com token: usa a arte do token como retrato (img), em vez
+  // do icone padrao do Foundry (mystery-man).
+  const portrait = portraitAsset ?? tokenAsset ?? "icons/svg/mystery-man.svg";
+  const token = tokenAsset ?? portrait;
   const abil = (a: any) => ({ value: a.score, proficient: a.save > a.mod ? 1 : 0 });
   const skills: Record<string, any> = {};
   for (const s of m.skills) {
