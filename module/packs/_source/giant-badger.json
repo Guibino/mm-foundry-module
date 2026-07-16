@@ -1,8 +1,8 @@
 {
-  "_id": "hRmcHdLHmNRs5baX",
-  "_key": "!actors!hRmcHdLHmNRs5baX",
-  "folder": "kCLi0hD5goTIU7AM",
-  "name": "Gigante Badger",
+  "_id": "MZHAS4A06Gh3nlGV",
+  "_key": "!actors!MZHAS4A06Gh3nlGV",
+  "folder": "9eORFRgLi2o0urFB",
+  "name": "Giant Badger",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/giant-badger.webp",
   "system": {
@@ -41,7 +41,7 @@
       "hp": {
         "value": 15,
         "max": 15,
-        "formula": "2d8+6",
+        "formula": "2d8 + 6",
         "temp": null,
         "tempmax": null
       },
@@ -62,15 +62,15 @@
     },
     "details": {
       "type": {
-        "value": "",
+        "value": "beast",
         "subtype": "",
         "swarm": "",
-        "custom": "Unknown"
+        "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -101,13 +101,18 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Gigante Badger",
+    "name": "Giant Badger",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -119,13 +124,13 @@
   },
   "items": [
     {
-      "_id": "yfywvLWgppT4SofT",
-      "name": "Bite",
+      "_id": "rXWdJI3FaipupAwk",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 6 (2d4 + l) Perfurante de dano. GIANT Bo AR GIANT BAT Large Beast, Una ii~ d AC 13 - Iniciativa +3 (13) HP 22 (4d1 0) Sp eed l Oft., Fly 60 ft. MOD SAVE MO D SAVE MOD_ SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 6 (2d4 + 1) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -143,8 +148,8 @@
           "subtype": ""
         },
         "activities": {
-          "lT7UcbQ2j39BNSVM": {
-            "_id": "lT7UcbQ2j39BNSVM",
+          "EoRZqv120YlrE8Qj": {
+            "_id": "EoRZqv120YlrE8Qj",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -165,15 +170,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "1",
                   "types": [
                     "piercing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "2d4+l"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -191,20 +196,20 @@
           "mechanics": {
             "toHit": 3,
             "attackType": "melee",
-            "damageFormula": "2d4+l",
+            "damageFormula": "2d4+1",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hRmcHdLHmNRs5baX.yfywvLWgppT4SofT"
+      "_key": "!actors.items!MZHAS4A06Gh3nlGV.rXWdJI3FaipupAwk"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Giant Badger",
-      "page": 356,
-      "cr": "0",
+      "page": 354,
+      "cr": "1/4",
       "warnings": []
     }
   }

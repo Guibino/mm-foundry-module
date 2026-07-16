@@ -1,6 +1,6 @@
 {
-  "_id": "yNQo6UzrvkoUeFqQ",
-  "_key": "!actors!yNQo6UzrvkoUeFqQ",
+  "_id": "A0drPTz6pFtYXGqg",
+  "_key": "!actors!A0drPTz6pFtYXGqg",
   "folder": "CVeezowVb7BNP8yc",
   "name": "Iron Golem",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 252,
         "max": 252,
-        "formula": "24d1 O + 120",
+        "formula": "24d10 + 120",
         "temp": null,
         "tempmax": null
       },
@@ -69,7 +69,7 @@
       "alignment": "Sem Tendência",
       "cr": 16,
       "xp": {
-        "value": 15000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -99,13 +99,17 @@
       "ci": {
         "value": [
           "charmed",
-          "exhaustion"
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "petrified",
+          "poisoned"
         ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Understands Common plus two other"
+        "custom": "understands Common plus two other languages but can't speak"
       }
     },
     "skills": {}
@@ -129,7 +133,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Whenever the golem is subjected to er: I Fogo de dano, it regains a number of Pontos de Vida equal to l/1 CY the Fogo de dano dealt.</p>",
+          "value": "<p>Whenever the golem is subjected to dano de fogo, it regains a number of Pontos de Vida equal to the dano de fogo dealt.</p>",
           "chat": ""
         },
         "activation": {
@@ -153,16 +157,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!yNQo6UzrvkoUeFqQ.RGkdsb25Kb8wOv6b"
+      "_key": "!actors.items!A0drPTz6pFtYXGqg.RGkdsb25Kb8wOv6b"
     },
     {
-      "_id": "0ZebaMb1txhiJxn9",
-      "name": "Immutable Form",
+      "_id": "yyLMSJ6dC8koR4tR",
+      "name": "Forma Imutável",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The golem can't shape-shift.</p>",
+          "value": "<p>A criatura não pode mudar de forma.</p>",
           "chat": ""
         },
         "activation": {
@@ -186,16 +190,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!yNQo6UzrvkoUeFqQ.0ZebaMb1txhiJxn9"
+      "_key": "!actors.items!A0drPTz6pFtYXGqg.yyLMSJ6dC8koR4tR"
     },
     {
-      "_id": "kCnTAyXfrPunVCjo",
-      "name": "Magic Resistance",
+      "_id": "osewZbsJAXkeAdZ1",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The golem has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -219,7 +223,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!yNQo6UzrvkoUeFqQ.kCnTAyXfrPunVCjo"
+      "_key": "!actors.items!A0drPTz6pFtYXGqg.osewZbsJAXkeAdZ1"
     },
     {
       "_id": "h4xSa8kc66flT5C1",
@@ -253,7 +257,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!yNQo6UzrvkoUeFqQ.h4xSa8kc66flT5C1"
+      "_key": "!actors.items!A0drPTz6pFtYXGqg.h4xSa8kc66flT5C1"
     },
     {
       "_id": "MjrYpbXb136ek3BU",
@@ -262,7 +266,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: + 12 , alcance l Oft. Acerto: 20 (3d8 + 7) Cortante de dano plus l O (3d6) Fogo de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +12, alcance 3 m. Acerto: 20 (3d8 + 7) dano cortante mais 10 (3d6) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -279,18 +283,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "yPmkcRzeyV6kUasC": {
+            "_id": "yPmkcRzeyV6kUasC",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "12",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 8,
+                  "bonus": "7",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 12,
+            "attackType": "melee",
             "damageFormula": "3d8+7",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!yNQo6UzrvkoUeFqQ.MjrYpbXb136ek3BU"
+      "_key": "!actors.items!A0drPTz6pFtYXGqg.MjrYpbXb136ek3BU"
     },
     {
       "_id": "I1MnGfySwiDdMtKS",
@@ -299,7 +347,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância:+ 10, range 120 ft. Acerto: 36 (8d8) Fogo de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +10, distância 36 m. Acerto: 36 (8d8) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -316,27 +364,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "1ojsGaybrpbVpq4r": {
+            "_id": "1ojsGaybrpbVpq4r",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 8,
+                  "denomination": 8,
+                  "bonus": "",
+                  "types": [
+                    "fire"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 10,
+            "attackType": "ranged",
             "damageFormula": "8d8",
             "damageType": "fire"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!yNQo6UzrvkoUeFqQ.I1MnGfySwiDdMtKS"
+      "_key": "!actors.items!A0drPTz6pFtYXGqg.I1MnGfySwiDdMtKS"
     },
     {
-      "_id": "1fRKS2ElXbKg69kW",
-      "name": "Veneno Breath (Recharge 6)",
+      "_id": "O9Zq1gPI5V585qco",
+      "name": "Sopro de Veneno",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 18, cada criatura in a 60-foot Cone. Falha: 55 (lOdlO) Veneno de dano. Sucesso: Metade do dano. IRON GOLEM 181 jACKALWERE Small Fi end, C ha otic E 1Ji l AC 12 lnitiative +2 (12) HP 18 (4d6 + 4) Speed 40 ft. MOD SAVE MOD SA VE MOD SAVE</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 18, cada criatura in a 18 m Cone. 55 (10d10) dano de veneno. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -346,22 +438,16 @@
         },
         "uses": {
           "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "recharge",
-              "type": "recoverAll",
-              "formula": "6"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
           "subtype": ""
         },
         "activities": {
-          "afOvzc0zoXk2IQFR": {
-            "_id": "afOvzc0zoXk2IQFR",
+          "sNC6amMGOdH7Ip1d": {
+            "_id": "sNC6amMGOdH7Ip1d",
             "type": "save",
             "activation": {
               "type": "action",
@@ -380,25 +466,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
-                  "types": [
-                    "poison"
-                  ],
-                  "custom": {
-                    "enabled": true,
-                    "formula": "lOdlO"
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -406,21 +474,19 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "lOdlO",
-            "damageType": "poison",
             "saveDc": 18,
             "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!yNQo6UzrvkoUeFqQ.1fRKS2ElXbKg69kW"
+      "_key": "!actors.items!A0drPTz6pFtYXGqg.O9Zq1gPI5V585qco"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Iron Golem",
-      "page": 183,
+      "page": 181,
       "cr": "16",
       "warnings": []
     }

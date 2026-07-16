@@ -1,0 +1,255 @@
+{
+  "_id": "WE4sfWliMKvdaRSY",
+  "_key": "!actors!WE4sfWliMKvdaRSY",
+  "folder": "1nioWC3kx0YxX8qj",
+  "name": "Darkmantle",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/darkmantle.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 12,
+        "proficient": 0
+      },
+      "con": {
+        "value": 13,
+        "proficient": 0
+      },
+      "int": {
+        "value": 2,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 5,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 11,
+        "formula": ""
+      },
+      "hp": {
+        "value": 22,
+        "max": 22,
+        "formula": "5d6 + 5",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 10,
+        "fly": 30
+      },
+      "senses": {
+        "units": "ft",
+        "blindsight": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "aberration",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 0.5,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "sm",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Darkmantle",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/darkmantle.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "dGEy6slWwiucWB0V",
+      "name": "Crush",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 6 (1d6 + 3) dano de concussão, and the darkmantle attaches to o alvo. If o alvo is a Medium or smaller creature and the darkmantle had Vantagem on a rolagem de ataque, it covers o alvo, which fica com a condição Cego and is suffocating while the darkmantle is attached in this way.\nWhile attached to a target, the darkmantle can attack only o alvo but has Vantagem on its attack rolls. Its Speed becomes 0, it can't benefit from any bonus to its Speed, and it moves with o alvo.\nA creature can take an action to try to detach the darkmantle from itself, doing so with a successful CD 13 Força (Athletics) check. On its turn, the darkmantle can detach itself by using 1,5 m of movement.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "ILC8JENT2q1f0hHi": {
+            "_id": "ILC8JENT2q1f0hHi",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "1d6+3",
+            "damageType": "bludgeoning",
+            "saveDc": 13,
+            "saveAbility": "str"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!WE4sfWliMKvdaRSY.dGEy6slWwiucWB0V"
+    },
+    {
+      "_id": "T92AvWGaYmXa7gV1",
+      "name": "Darkness Aura (1/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Magical Darkness fills a 4,5 m Emanation originating from the darkmantle. This effect lasts while the darkmantle maintains Concentration on it, up to 10 minutes. Visão no Escuro can't penetrate this area, and no light can illuminate it.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!WE4sfWliMKvdaRSY.T92AvWGaYmXa7gV1"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Darkmantle",
+      "page": 90,
+      "cr": "1/2",
+      "warnings": []
+    }
+  }
+}

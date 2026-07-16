@@ -1,6 +1,6 @@
 {
-  "_id": "aWNOcRa3Qm6iWTf5",
-  "_key": "!actors!aWNOcRa3Qm6iWTf5",
+  "_id": "ZvDuxoVQbaTnaY1O",
+  "_key": "!actors!ZvDuxoVQbaTnaY1O",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Death Cultist",
   "type": "npc",
@@ -20,7 +20,7 @@
         "proficient": 1
       },
       "int": {
-        "value": 72,
+        "value": 12,
         "proficient": 0
       },
       "wis": {
@@ -35,19 +35,20 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 77,
+        "flat": 17,
         "formula": ""
       },
       "hp": {
-        "value": 727,
-        "max": 727,
+        "value": 127,
+        "max": 127,
         "formula": "15d8 + 60",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "walk": 30
       },
       "senses": {
         "units": "ft"
@@ -67,7 +68,7 @@
       "alignment": "Neutro e Mau",
       "cr": 8,
       "xp": {
-        "value": 3900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -77,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -99,7 +100,20 @@
         "custom": "Comum"
       }
     },
-    "skills": {}
+    "skills": {
+      "ins": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "rel": {
+        "value": 2,
+        "ability": "int"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Death Cultist",
@@ -145,7 +159,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!aWNOcRa3Qm6iWTf5.kU0M5daj96AdRwPS"
+      "_key": "!actors.items!ZvDuxoVQbaTnaY1O.kU0M5daj96AdRwPS"
     },
     {
       "_id": "EycGbbdLm11zITry",
@@ -154,7 +168,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 10 ft. Acerto: 9 (1d10 + 4) Cortante de dano plus 11 (2d10) Necrótico de dano, and o alvo can't regain Pontos de Vida until the end of its next turn.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 3 m. Acerto: 9 (1d10 + 4) dano cortante mais 11 (2d10) dano necrótico, and o alvo can't regain Pontos de Vida until the end of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -226,7 +240,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!aWNOcRa3Qm6iWTf5.EycGbbdLm11zITry"
+      "_key": "!actors.items!ZvDuxoVQbaTnaY1O.EycGbbdLm11zITry"
     },
     {
       "_id": "iald8PTPt1qu1dEU",
@@ -235,7 +249,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +6, range 120 ft. Acerto: 22 (4d1 0) Necrótico de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +6, distância 36 m. Acerto: 22 (4d10) dano necrótico.</p>",
           "chat": ""
         },
         "activation": {
@@ -307,16 +321,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!aWNOcRa3Qm6iWTf5.iald8PTPt1qu1dEU"
+      "_key": "!actors.items!ZvDuxoVQbaTnaY1O.iald8PTPt1qu1dEU"
     },
     {
       "_id": "N3ogI4kWRprhDJof",
-      "name": "Spirit Wail (Recharge 5-6)",
+      "name": "Spirit Wail (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sabedoria Salling Throw: DC 14, cada criatura in a 20-foot Emanation originating from the cultist. Falha: 14 (4d6) Psíquico de dano, and the creature has the Amedrontado condition until the end of its next turn. Sucesso: Metade do dano only. ' ELEMENTAL CULTIST Medium or Small Humanoid, Chaotic Evil AC 16 Iniciativa +4 (74) HP 135 (18d8 + 54) Speed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 14, cada criatura in a 6 m Emanation originating from the cultist. 14 (4d6) dano psíquico, and o alvo fica com a condição Amedrontado until the end of its next turn. Metade do dano only.</p>",
           "chat": ""
         },
         "activation": {
@@ -339,18 +353,42 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "nhBsY0qVp6K3amRO": {
+            "_id": "nhBsY0qVp6K3amRO",
+            "type": "save",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "14"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "4d6",
-            "damageType": "psychic"
+            "saveDc": 14,
+            "saveAbility": "wis"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!aWNOcRa3Qm6iWTf5.N3ogI4kWRprhDJof"
+      "_key": "!actors.items!ZvDuxoVQbaTnaY1O.N3ogI4kWRprhDJof"
     },
     {
       "_id": "N9195UgGqZYqiFlk",
@@ -359,7 +397,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cultist casts one of the following spells, using Sabedoria as the spellcasting ability (spell save DC 14): À Vontade: Speak with Dead, Thaumaturgy</p>",
+          "value": "<p>The cultist casts one of the following spells, using Sabedoria as the spellcasting ability (spell save CD 14):</p>",
           "chat": ""
         },
         "activation": {
@@ -384,13 +422,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!aWNOcRa3Qm6iWTf5.N9195UgGqZYqiFlk"
+      "_key": "!actors.items!ZvDuxoVQbaTnaY1O.N9195UgGqZYqiFlk"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Death Cultist",
-      "page": 88,
+      "page": 86,
       "cr": "8",
       "warnings": []
     }

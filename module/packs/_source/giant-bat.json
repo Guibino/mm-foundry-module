@@ -1,22 +1,22 @@
 {
-  "_id": "G6UKcagZ2axhG40N",
-  "_key": "!actors!G6UKcagZ2axhG40N",
+  "_id": "oxyBRgqoyswWG0B8",
+  "_key": "!actors!oxyBRgqoyswWG0B8",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Gigante Bat",
+  "name": "Giant Bat",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/giant-bat.webp",
   "system": {
     "abilities": {
       "str": {
-        "value": 6,
+        "value": 15,
         "proficient": 0
       },
       "dex": {
-        "value": 75,
+        "value": 16,
         "proficient": 0
       },
       "con": {
-        "value": 72,
+        "value": 11,
         "proficient": 0
       },
       "int": {
@@ -24,34 +24,36 @@
         "proficient": 0
       },
       "wis": {
-        "value": 74,
+        "value": 12,
         "proficient": 0
       },
       "cha": {
-        "value": 7,
+        "value": 6,
         "proficient": 0
       }
     },
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 72,
+        "flat": 13,
         "formula": ""
       },
       "hp": {
-        "value": 4,
-        "max": 4,
-        "formula": "1d6+ l",
+        "value": 22,
+        "max": 22,
+        "formula": "4d10",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 10,
+        "fly": 60
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "blindsight": 120
       },
       "init": {
         "ability": "dex",
@@ -66,9 +68,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 0.25,
       "xp": {
-        "value": 70
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +80,7 @@
       }
     },
     "traits": {
-      "size": "sm",
+      "size": "lg",
       "di": {
         "value": [],
         "custom": ""
@@ -97,13 +99,13 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Gigante Bat",
+    "name": "Giant Bat",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -115,13 +117,13 @@
   },
   "items": [
     {
-      "_id": "N6uEYeIsH1IQoII5",
-      "name": "Talons",
+      "_id": "1tsdbCTyx1g7gY6o",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 feet. Acerto: 4 (1d4 + 2) Cortante de dano. ELEPHANT Huge Beast, Unaligned AC 12 Iniciativa - l (9 ) HP 76 (8d1 2 + 24) Speed 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 6 (1d6 + 3) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -139,8 +141,8 @@
           "subtype": ""
         },
         "activities": {
-          "XmPF9TfMzF9evJFr": {
-            "_id": "XmPF9TfMzF9evJFr",
+          "qy2obvNOrf6xGcLT": {
+            "_id": "qy2obvNOrf6xGcLT",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -150,7 +152,7 @@
             },
             "attack": {
               "ability": "",
-              "bonus": "4",
+              "bonus": "5",
               "flat": true,
               "type": {
                 "value": "melee",
@@ -162,10 +164,10 @@
               "parts": [
                 {
                   "number": 1,
-                  "denomination": 4,
-                  "bonus": "2",
+                  "denomination": 6,
+                  "bonus": "3",
                   "types": [
-                    "slashing"
+                    "piercing"
                   ],
                   "custom": {
                     "enabled": false,
@@ -185,22 +187,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "toHit": 4,
+            "toHit": 5,
             "attackType": "melee",
-            "damageFormula": "1d4+2",
-            "damageType": "slashing"
+            "damageFormula": "1d6+3",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!G6UKcagZ2axhG40N.N6uEYeIsH1IQoII5"
+      "_key": "!actors.items!oxyBRgqoyswWG0B8.1tsdbCTyx1g7gY6o"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Giant Bat",
       "page": 355,
-      "cr": "0",
+      "cr": "1/4",
       "warnings": []
     }
   }

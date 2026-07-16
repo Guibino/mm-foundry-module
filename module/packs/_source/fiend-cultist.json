@@ -1,6 +1,6 @@
 {
-  "_id": "aMeyPgbehvaIodLJ",
-  "_key": "!actors!aMeyPgbehvaIodLJ",
+  "_id": "ihw4KdQmrB89dXBr",
+  "_key": "!actors!ihw4KdQmrB89dXBr",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Fiend Cultist",
   "type": "npc",
@@ -69,7 +69,7 @@
       "alignment": "Neutro e Mau",
       "cr": 8,
       "xp": {
-        "value": 3900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -79,7 +79,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -101,7 +101,16 @@
         "custom": "Abissal, Comum, Infernal"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "rel": {
+        "value": 2,
+        "ability": "int"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Fiend Cultist",
@@ -147,7 +156,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!aMeyPgbehvaIodLJ.g4jJqbIiNb6iOEKF"
+      "_key": "!actors.items!ihw4KdQmrB89dXBr.g4jJqbIiNb6iOEKF"
     },
     {
       "_id": "j4Sap8u3SdcRvZ8A",
@@ -156,7 +165,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 10 (1d1 2 + 4) Cortante de dano pl~s 13 (3d8) Fogo de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 10 (1d12 + 4) dano cortante mais 13 (3d8) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -228,41 +237,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!aMeyPgbehvaIodLJ.j4Sap8u3SdcRvZ8A"
-    },
-    {
-      "_id": "ORSG19mZYiKRYSrV",
-      "name": "Hellish Rebuke",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The cultist casts Hellish Rebuke in re- sponse to that spell's trigger, using the same spellcast- ing ability as Conjuração. \\ OULTISTS CYCLOPES Monocular Servants of Destiny</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "reaction",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!aMeyPgbehvaIodLJ.ORSG19mZYiKRYSrV"
+      "_key": "!actors.items!ihw4KdQmrB89dXBr.j4Sap8u3SdcRvZ8A"
     },
     {
       "_id": "HZyuNBrPMjH2TIpX",
@@ -271,7 +246,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cultist casts one of the following spells, using Wisdo~ as the spellcasting ability (spell save DC 15, +7 to hit with spell attacks): À Vontade: Scorching Ray (level 5 version), Thaumaturgy 2/Dia: Fogoball (level 6 version)</p>",
+          "value": "<p>The cultist casts one of the following spells, using Sabedoria as the spellcasting ability (spell save CD 15, +7 to hit with spell attacks):</p>",
           "chat": ""
         },
         "activation": {
@@ -322,13 +297,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!aMeyPgbehvaIodLJ.HZyuNBrPMjH2TIpX"
+      "_key": "!actors.items!ihw4KdQmrB89dXBr.HZyuNBrPMjH2TIpX"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Fiend Cultist",
-      "page": 89,
+      "page": 87,
       "cr": "8",
       "warnings": []
     }

@@ -1,6 +1,6 @@
 {
-  "_id": "55cyWHNznxDShmVz",
-  "_key": "!actors!55cyWHNznxDShmVz",
+  "_id": "sqLh1jDiTr1dL25i",
+  "_key": "!actors!sqLh1jDiTr1dL25i",
   "folder": "1nioWC3kx0YxX8qj",
   "name": "Slaad Tadpole",
   "type": "npc",
@@ -68,9 +68,9 @@
         "custom": ""
       },
       "alignment": "Caótico e Neutro",
-      "cr": 0,
+      "cr": 0.125,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -89,10 +89,11 @@
         "value": [
           "acid",
           "cold",
+          "fire",
           "lightning",
           "thunder"
         ],
-        "custom": "Fi r e"
+        "custom": ""
       },
       "dv": {
         "value": [],
@@ -104,7 +105,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Understands Slaad but can't speak"
+        "custom": "understands Slaad but can't speak"
       }
     },
     "skills": {
@@ -127,13 +128,13 @@
   },
   "items": [
     {
-      "_id": "0RTclmXZMz4a6Val",
-      "name": "Magic Resistance",
+      "_id": "6ngo6y3leBZj7dlw",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The slaad has Advantage on saving throws against spells and other magical effects. _J A CTIONS <( l/1 l/1</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -157,21 +158,22 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!55cyWHNznxDShmVz.0RTclmXZMz4a6Val"
+      "_key": "!actors.items!sqLh1jDiTr1dL25i.6ngo6y3leBZj7dlw"
     },
     {
-      "_id": "TENqwfOnABeZcMJN",
-      "name": "Bite",
+      "_id": "ZFjgbFQaG2d1hB7S",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 5 (l a: d6 + 2)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "",
-          "value": null
+          "type": "action",
+          "value": null,
+          "condition": ""
         },
         "uses": {
           "spent": 0,
@@ -182,58 +184,69 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "PbQcA8TXvjzYAmkU": {
+            "_id": "PbQcA8TXvjzYAmkU",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d6+2",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!55cyWHNznxDShmVz.TENqwfOnABeZcMJN"
-    },
-    {
-      "_id": "2BTN6G6dcxyW3fD5",
-      "name": "Perfurante de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>UJ 284 ~ SLAADI RED SLAAD Red slaadi amass in vast throngs in Limbo. There they wrestle and croak-sing as they endlessly dis- mantle and rebuild islands of drifting planar matter. When they encounter non-slaadi, red slaadi seek to play with, telepathically converse with, or devour the other creatures. These whims change from moment to - moment. Red slaadi instinctively avoid harming those bearing slaadi eggs, which red slaadi implant using their claws, or other slaad curses. BLUE SLAAD Almost as numerous as red slaadi, blue slaadi are muscular brutes with vicious blades extending from the backs of their claws. These claws carry a magi- cal curse called chaos phage, which can transform victims into red or green slaadi. Blue slaadi accom- pany red slaadi and behave similarly. They innately know the signs of chaos phage and avoid slaying creatures that carry it or other slaad curses. RED SLAAD Large A berration, Chaotic Neutral A C14 Initiativ e+ l (l l) HP 93 (11d10 + 33) Sp ee d 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!55cyWHNznxDShmVz.2BTN6G6dcxyW3fD5"
+      "_key": "!actors.items!sqLh1jDiTr1dL25i.ZFjgbFQaG2d1hB7S"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Slaad Tadpole",
-      "page": 286,
-      "cr": "0",
+      "page": 284,
+      "cr": "1/8",
       "warnings": []
     }
   }

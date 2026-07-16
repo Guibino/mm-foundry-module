@@ -1,6 +1,6 @@
 {
-  "_id": "1T1G36yDSzF7JbWV",
-  "_key": "!actors!1T1G36yDSzF7JbWV",
+  "_id": "OBAMqX4Fg9toeErV",
+  "_key": "!actors!OBAMqX4Fg9toeErV",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Medusa",
   "type": "npc",
@@ -69,7 +69,7 @@
       "alignment": "Leal e Mau",
       "cr": 6,
       "xp": {
-        "value": 2300
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -101,7 +101,20 @@
         "custom": "Common plus one other language"
       }
     },
-    "skills": {}
+    "skills": {
+      "dec": {
+        "value": 2,
+        "ability": "cha"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Medusa",
@@ -122,7 +135,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The medusa makes two Claw attacks and one Snake Hair attack, or it makes three Veneno Ray attacks.</p>",
+          "value": "<p>The medusa makes two Garra attacks and one Snake Hair attack, or it makes three Veneno Ray attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,16 +160,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!1T1G36yDSzF7JbWV.1ENbiruPmenACDAn"
+      "_key": "!actors.items!OBAMqX4Fg9toeErV.1ENbiruPmenACDAn"
     },
     {
-      "_id": "oAgXTbdJvBTAr310",
-      "name": "Claw",
+      "_id": "B8e3f7JhrPKgUxXo",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 10 (2d6 + 3) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 10 (2d6 + 3) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -174,8 +187,8 @@
           "subtype": ""
         },
         "activities": {
-          "1DZhXKCUPS3Sa6a0": {
-            "_id": "1DZhXKCUPS3Sa6a0",
+          "WAb5UW0FBv2fa0S9": {
+            "_id": "WAb5UW0FBv2fa0S9",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -228,7 +241,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!1T1G36yDSzF7JbWV.oAgXTbdJvBTAr310"
+      "_key": "!actors.items!OBAMqX4Fg9toeErV.B8e3f7JhrPKgUxXo"
     },
     {
       "_id": "3xQp4CZzPABT3eoM",
@@ -237,7 +250,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6 alcance 5 ft. Acerto: 5 (1d4 + 3) Perfurante de dano plus 14 (4d6) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 5 (1d4 + 3) dano perfurante mais 14 (4d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -309,7 +322,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!1T1G36yDSzF7JbWV.3xQp4CZzPABT3eoM"
+      "_key": "!actors.items!OBAMqX4Fg9toeErV.3xQp4CZzPABT3eoM"
     },
     {
       "_id": "FCYqXsPdF6l0P9IE",
@@ -318,7 +331,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +5, range 150 ft. Acerto: 11 (2d8 + 2) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +5, distância 45 m. Acerto: 11 (2d8 + 2) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -390,16 +403,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!1T1G36yDSzF7JbWV.FCYqXsPdF6l0P9IE"
+      "_key": "!actors.items!OBAMqX4Fg9toeErV.FCYqXsPdF6l0P9IE"
     },
     {
       "_id": "oFjPxGOfX9Pe46Ug",
-      "name": "Petrifying Gaze (Recharge 5-6)",
+      "name": "Petrifying Gaze (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 13, cada criatura in a 30-foot Cone. If the medusa sees its reflection in the Cone, the medusa must make this save. First Falha: The target has the Impedido condition and repeats the save at the end of _J its next turn if it is still Impedido, ending the effect on z itself on a success. Second Falha: The target has the <( Petrificado condition instead of the Impedido condition. MEDUSA FATES 1d6 The Medusa Was ... l Born a medusa and lives unaware of whatever curse or circumstances afflicted its ancestor. 2 Created by a god and tasked with guarding a treasure or secret. 3 A cultist who made a fiendish bargain and enjoyed rewards that have since faded. 4 An explorer transformed and compelled to defend a cursed ruin. 5 A vain noble whose magical attempt to gain eternal beauty backfired. 6 The victim of a bite from a magical serpent or reptilian god in disguise. ~ MEDUSA ~05 MEPHITS Malicious Elemental Hooligans</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 13, cada criatura in a 9 m Cone. If the medusa sees its reflection in the Cone, the medusa must make this save. Falha: O alvo fica com a condição Impedido and repeats the save at the end of its next turn if it is still Impedido, ending the effect on itself on a success. Falha: O alvo fica com a condição Petrificado instead of a condição Impedido.</p>",
           "chat": ""
         },
         "activation": {
@@ -457,13 +470,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!1T1G36yDSzF7JbWV.oFjPxGOfX9Pe46Ug"
+      "_key": "!actors.items!OBAMqX4Fg9toeErV.oFjPxGOfX9Pe46Ug"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Medusa",
-      "page": 207,
+      "page": 205,
       "cr": "6",
       "warnings": []
     }

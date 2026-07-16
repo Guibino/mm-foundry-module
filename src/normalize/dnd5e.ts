@@ -254,7 +254,8 @@ export function toActor(m: any, folderId?: string): any {
     _id: id,
     _key: `!actors!${id}`,
     folder: folderId ?? null,
-    name: m.namePt || m.name,
+    // Nome do monstro em ingles canonico (o conteudo das acoes fica em PT).
+    name: m.name,
     type: "npc",
     img: portrait,
     system: {
@@ -284,7 +285,7 @@ export function toActor(m: any, folderId?: string): any {
       skills,
     },
     prototypeToken: {
-      name: m.namePt || m.name,
+      name: m.name,
       actorLink: false,
       sight: { enabled: true },
       texture: { src: token },

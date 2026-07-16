@@ -1,6 +1,6 @@
 {
-  "_id": "sKFSyXLdMMaenm7G",
-  "_key": "!actors!sKFSyXLdMMaenm7G",
+  "_id": "ObESW4beZDSUgw1v",
+  "_key": "!actors!ObESW4beZDSUgw1v",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Manes Vaporspawn",
   "type": "npc",
@@ -62,14 +62,14 @@
     "details": {
       "type": {
         "value": "fiend",
-        "subtype": "D emon",
+        "subtype": "demon",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Mau",
       "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -81,7 +81,9 @@
     "traits": {
       "size": "med",
       "di": {
-        "value": [],
+        "value": [
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
@@ -97,12 +99,19 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "grappled",
+          "poisoned",
+          "restrained"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Understands Abyssal but can't speak"
+        "custom": "understands Abyssal but can't speak"
       }
     },
     "skills": {}
@@ -126,7 +135,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The manes can move through a space as narrow as 1 inch without expending extra move- ment to do so.</p>",
+          "value": "<p>A criatura pode se mover por um espaço tão estreito quanto 2,5 cm sem gastar movimento extra para isso.</p>",
           "chat": ""
         },
         "activation": {
@@ -150,7 +159,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!sKFSyXLdMMaenm7G.r0IPU5iaUdncrw4t"
+      "_key": "!actors.items!ObESW4beZDSUgw1v.r0IPU5iaUdncrw4t"
     },
     {
       "_id": "xqCiwm9CMM6bITLM",
@@ -159,7 +168,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Sa1Jing Throw: DC 12, cada criatura in a 5-foot Emanation originating from the manes at the end of the manes's turn. Falha: The target has the Incapacitado condition until the end of its next turn. Sucesso: The target is immune to this manes's Sickening Vapors for 24 hours.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 12, cada criatura in a 1,5 m Emanation originating from the manes at the end of the manes's turn. O alvo fica com a condição Incapacitado until the end of its next turn. O alvo is immune to this manes's Sickening Vapors for 24 hours.</p>",
           "chat": ""
         },
         "activation": {
@@ -179,20 +188,23 @@
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 12,
+            "saveAbility": "con"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!sKFSyXLdMMaenm7G.xqCiwm9CMM6bITLM"
+      "_key": "!actors.items!ObESW4beZDSUgw1v.xqCiwm9CMM6bITLM"
     },
     {
-      "_id": "xBgwHcNSPEFFXAWU",
-      "name": "Claw",
+      "_id": "V3NgkZCVHzBI1hXw",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 5 (1d6 + 2) • Cortante de dano plus 5 (2d4) Necrótico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano cortante mais 5 (2d4) dano necrótico.</p>",
           "chat": ""
         },
         "activation": {
@@ -210,8 +222,8 @@
           "subtype": ""
         },
         "activities": {
-          "h1YAhsleStcdtZEA": {
-            "_id": "h1YAhsleStcdtZEA",
+          "6fXgcD8g9dVqLDGB": {
+            "_id": "6fXgcD8g9dVqLDGB",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -230,7 +242,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -239,21 +269,23 @@
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d6+2",
+            "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!sKFSyXLdMMaenm7G.xBgwHcNSPEFFXAWU"
+      "_key": "!actors.items!ObESW4beZDSUgw1v.V3NgkZCVHzBI1hXw"
     },
     {
-      "_id": "AfvWpv5xrSydxQUb",
-      "name": "Shadow Stealth",
+      "_id": "Aj8aqj5qxzfqJmb6",
+      "name": "Furtividade nas Sombras",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in Dim Light or Darkness, the • manes takes the Hide action. MANES 201 MANTI CORE Winged, Leon,ine People-Eater</p>",
+          "value": "<p>Sob Luz Fraca ou Escuridão, a criatura realiza a ação Esconder-se.</p>",
           "chat": ""
         },
         "activation": {
@@ -278,13 +310,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!sKFSyXLdMMaenm7G.AfvWpv5xrSydxQUb"
+      "_key": "!actors.items!ObESW4beZDSUgw1v.Aj8aqj5qxzfqJmb6"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Manes Vaporspawn",
-      "page": 203,
+      "page": 201,
       "cr": "1",
       "warnings": []
     }

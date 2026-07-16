@@ -1,0 +1,358 @@
+{
+  "_id": "YhQA2GZrgs02Ci1C",
+  "_key": "!actors!YhQA2GZrgs02Ci1C",
+  "folder": "1QPcErIwVgACFlzi",
+  "name": "Knight",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/tokens/knight.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 14,
+        "proficient": 1
+      },
+      "int": {
+        "value": 11,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 11,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 15,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 18,
+        "formula": ""
+      },
+      "hp": {
+        "value": 52,
+        "max": 52,
+        "formula": "8d8 + 16",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 3,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "sm",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "frightened"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Common plus one other language"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Knight",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/knight.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "oq8AK6udkaP0e9x9",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The knight makes two attacks, using Montante or Besta Pesada in any combination.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!YhQA2GZrgs02Ci1C.oq8AK6udkaP0e9x9"
+    },
+    {
+      "_id": "s289w4jByqYv88NR",
+      "name": "Montante",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 10 (2d6 + 3) dano cortante mais 4 (1d8) dano radiante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "443gvn642XTpQSkj": {
+            "_id": "443gvn642XTpQSkj",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "2d6+3",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!YhQA2GZrgs02Ci1C.s289w4jByqYv88NR"
+    },
+    {
+      "_id": "8dfv26KjOq6P3gVB",
+      "name": "Besta Pesada",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +2, distância 30/120 m. Acerto: 11 (2d10) dano perfurante mais 4 (1d8) dano radiante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "20RgSitR21K9yKwo": {
+            "_id": "20RgSitR21K9yKwo",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "2",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 2,
+            "attackType": "ranged",
+            "damageFormula": "2d10",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!YhQA2GZrgs02Ci1C.8dfv26KjOq6P3gVB"
+    },
+    {
+      "_id": "slBFHK06XfuKBm3q",
+      "name": "Aparar",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura é atingida por uma rolagem de ataque corpo a corpo enquanto empunha uma arma. Ela adiciona 2 à sua CA contra esse ataque, podendo fazê-lo errar.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!YhQA2GZrgs02Ci1C.slBFHK06XfuKBm3q"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Knight",
+      "page": 184,
+      "cr": "3",
+      "warnings": []
+    }
+  }
+}

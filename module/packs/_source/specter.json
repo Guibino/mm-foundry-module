@@ -1,6 +1,6 @@
 {
-  "_id": "KcmcVLOH7yYcs11C",
-  "_key": "!actors!KcmcVLOH7yYcs11C",
+  "_id": "rqvOczXRXDnIQoou",
+  "_key": "!actors!rqvOczXRXDnIQoou",
   "folder": "bKQUPthn1V2Yu6Bn",
   "name": "Specter",
   "type": "npc",
@@ -47,8 +47,9 @@
       },
       "movement": {
         "units": "ft",
-        "hover": false,
-        "walk": 30
+        "hover": true,
+        "walk": 30,
+        "fly": 50
       },
       "senses": {
         "units": "ft",
@@ -69,7 +70,7 @@
       "alignment": "Caótico e Mau",
       "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -81,7 +82,10 @@
     "traits": {
       "size": "med",
       "di": {
-        "value": [],
+        "value": [
+          "necrotic",
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
@@ -90,7 +94,10 @@
           "bludgeoning",
           "cold",
           "fire",
-          "lightning"
+          "lightning",
+          "piercing",
+          "slashing",
+          "thunder"
         ],
         "custom": ""
       },
@@ -99,12 +106,22 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed",
+          "exhaustion",
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "prone",
+          "restrained",
+          "unconscious"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "understands Common plus one other language but can't speak"
       }
     },
     "skills": {}
@@ -122,13 +139,13 @@
   },
   "items": [
     {
-      "_id": "BON7H5DSBRsWeNJu",
-      "name": "Incorporeal Movement",
+      "_id": "tbwlJY8HU8dHeZa9",
+      "name": "Movimento Incorpóreo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The specter can move through other creatures and objects . as if they were Difficult Ter- rain. It takes 5 (1d10) Energia de dano if it ends its turn inside an object.</p>",
+          "value": "<p>A criatura pode se mover através de outras criaturas e objetos como se fossem Terreno Difícil. Ela sofre 5 (1d10) de dano de energia se terminar o turno dentro de um objeto.</p>",
           "chat": ""
         },
         "activation": {
@@ -152,16 +169,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KcmcVLOH7yYcs11C.BON7H5DSBRsWeNJu"
+      "_key": "!actors.items!rqvOczXRXDnIQoou.tbwlJY8HU8dHeZa9"
     },
     {
-      "_id": "anU42UWdRt6RhKIR",
-      "name": "Sunlight Sensitivity",
+      "_id": "Sev2NWAQfKux9n4U",
+      "name": "Sensibilidade à Luz Solar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in sunlight, the specter has Disadvantage on ability checks and attack rolls.</p>",
+          "value": "<p>Sob luz solar, a criatura tem Desvantagem em testes de habilidade e rolagens de ataque.</p>",
           "chat": ""
         },
         "activation": {
@@ -185,7 +202,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KcmcVLOH7yYcs11C.anU42UWdRt6RhKIR"
+      "_key": "!actors.items!rqvOczXRXDnIQoou.Sev2NWAQfKux9n4U"
     },
     {
       "_id": "sVrm2XV2SFdIqoDY",
@@ -194,7 +211,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 7 (2d6)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 7 (2d6) dano necrótico. If o alvo is uma criatura, its Hit Point maximum decreases by an amount equal to the de dano taken.</p>",
           "chat": ""
         },
         "activation": {
@@ -232,7 +249,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "",
+                  "types": [
+                    "necrotic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -241,52 +276,20 @@
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d6",
+            "damageType": "necrotic"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KcmcVLOH7yYcs11C.sVrm2XV2SFdIqoDY"
-    },
-    {
-      "_id": "mf6JfDTgxMdKYzw9",
-      "name": "Necrótico de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If o alvo is a creature, its Hit ....J er. Point maximum decreases by an amount equal to the z de dano taken. , <( SPHINXE S Collectors and l(eepers of Secrets</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!KcmcVLOH7yYcs11C.mf6JfDTgxMdKYzw9"
+      "_key": "!actors.items!rqvOczXRXDnIQoou.sVrm2XV2SFdIqoDY"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Specter",
-      "page": 292,
+      "page": 290,
       "cr": "1",
       "warnings": []
     }

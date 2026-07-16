@@ -1,6 +1,6 @@
 {
-  "_id": "qb0hqxiJ1jaTV9iW",
-  "_key": "!actors!qb0hqxiJ1jaTV9iW",
+  "_id": "6OPY4be0eGcTKkUf",
+  "_key": "!actors!6OPY4be0eGcTKkUf",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Werewolf",
   "type": "npc",
@@ -62,14 +62,14 @@
     "details": {
       "type": {
         "value": "monstrosity",
-        "subtype": "Lycanthrope",
+        "subtype": "lycanthrope",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -79,7 +79,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -98,7 +98,7 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Common (can't speak in wolf form)"
       }
     },
     "skills": {
@@ -125,13 +125,13 @@
   },
   "items": [
     {
-      "_id": "BlDsSnz7v02ISefn",
-      "name": "Pack Tactics",
+      "_id": "1sqTZojBk0S1e7KH",
+      "name": "Táticas de Matilha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The werewolf has Advantage on an attack roll against a creature if at least one of the werewolf's allies is within 5 feet of the creature and the ally doesn't have the Incapacitado condition.</p>",
+          "value": "<p>A criatura tem Vantagem em uma rolagem de ataque contra uma criatura se pelo menos um dos aliados dela estiver a até 1,5 m do alvo e esse aliado não estiver com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -155,7 +155,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qb0hqxiJ1jaTV9iW.BlDsSnz7v02ISefn"
+      "_key": "!actors.items!6OPY4be0eGcTKkUf.1sqTZojBk0S1e7KH"
     },
     {
       "_id": "clbCDKFzCBpLrqGq",
@@ -164,7 +164,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The werewolf makes two attacks, using</p>",
+          "value": "<p>The werewolf makes two attacks, using Scratch or Arco Longo in any combination. It can replace one attack with a Mordida attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -189,50 +189,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qb0hqxiJ1jaTV9iW.clbCDKFzCBpLrqGq"
+      "_key": "!actors.items!6OPY4be0eGcTKkUf.clbCDKFzCBpLrqGq"
     },
     {
-      "_id": "EijOIdktp8ccUflJ",
-      "name": "Scratch or Longbow in any combination",
+      "_id": "NVflbdaLDAJ6j5J7",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>It can replace one attack with a Bite attack.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!qb0hqxiJ1jaTV9iW.EijOIdktp8ccUflJ"
-    },
-    {
-      "_id": "jbyBiiOvFUZrMfCi",
-      "name": "Bite (Wolf or Hybrid Form Only)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 12 (2d8 + 3) Perfurante de dano. If o alvo is a Humanoid, it is subjected to the following ef- fect. Constituição Teste de Resistência: DC 12. Falha: The tar- get is cursed. If the cursed target drops to O Pontos de Vida, it instead becomes a Werewolf under the DM's control and has 10 Pontos de Vida. Sucesso: The target is immune to this werewolf's curse for 24 hours.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 12 (2d8 + 3) dano perfurante. If o alvo is a Humanoid, it is subjected to the following effect. Teste de Resistência de Constituição: CD 12. O alvo is cursed. If the cursed target drops to 0 Pontos de Vida, it instead becomes a Werewolf under the DM's control and has 10 Pontos de Vida. O alvo is immune to this werewolf's curse for 24 hours.</p>",
           "chat": ""
         },
         "activation": {
@@ -250,8 +216,8 @@
           "subtype": ""
         },
         "activities": {
-          "wOWWBatVgL6XRXIy": {
-            "_id": "wOWWBatVgL6XRXIy",
+          "SuLVOAy95IXTvQfJ": {
+            "_id": "SuLVOAy95IXTvQfJ",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -306,16 +272,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qb0hqxiJ1jaTV9iW.jbyBiiOvFUZrMfCi"
+      "_key": "!actors.items!6OPY4be0eGcTKkUf.NVflbdaLDAJ6j5J7"
     },
     {
-      "_id": "NfbjawgqpnQZyvpI",
+      "_id": "XVklh52TPb1lkTB2",
       "name": "Scratch",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 10 (2d6 + 3) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 10 (2d6 + 3) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -333,8 +299,8 @@
           "subtype": ""
         },
         "activities": {
-          "SDcqLQzeJtbq3P7z": {
-            "_id": "SDcqLQzeJtbq3P7z",
+          "6o1BMf7gA8sLIQt8": {
+            "_id": "6o1BMf7gA8sLIQt8",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -387,16 +353,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qb0hqxiJ1jaTV9iW.NfbjawgqpnQZyvpI"
+      "_key": "!actors.items!6OPY4be0eGcTKkUf.XVklh52TPb1lkTB2"
     },
     {
-      "_id": "W0mRn3PTwXSbKPEj",
-      "name": "Longbow (Humanoid or Hybrid Form Only)",
+      "_id": "zZ7igteh1rsJzVWK",
+      "name": "Arco Longo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Distânciad At- tack Roll: +4, range 150/600 ft. Acerto: 11 (2d8 + 2) Pierc- ing de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +4, distância 45/180 m. Acerto: 11 (2d8 + 2) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -413,24 +379,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "bvcW2gAXGWolf4nk": {
+            "_id": "bvcW2gAXGWolf4nk",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "ranged",
+            "damageFormula": "2d8+2",
+            "damageType": "piercing"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qb0hqxiJ1jaTV9iW.W0mRn3PTwXSbKPEj"
+      "_key": "!actors.items!6OPY4be0eGcTKkUf.zZ7igteh1rsJzVWK"
     },
     {
-      "_id": "rBVNXUbBPPfhQHLh",
-      "name": "Shape-Shift",
+      "_id": "kbzlRVWbqPfhPw8p",
+      "name": "Mudar de Forma",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The werewolf shape-shifts into a Large u wolf-humanoid hybrid or a Medium wolf, or it returns V1 <( to its true humanoid form. Its game statistics, other co than its size, are the same in each form. Any equipment V1 a::: it is wearing or carrying isn't transformed. WHITE DRAGONS Dragons of Frio and Cruelty</p>",
+          "value": "<p>The werewolf shape-shifts into a Large wolf-humanoid hybrid or a Medium wolf, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed.</p>",
           "chat": ""
         },
         "activation": {
@@ -455,13 +468,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qb0hqxiJ1jaTV9iW.rBVNXUbBPPfhQHLh"
+      "_key": "!actors.items!6OPY4be0eGcTKkUf.kbzlRVWbqPfhPw8p"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Werewolf",
-      "page": 329,
+      "page": 327,
       "cr": "3",
       "warnings": []
     }

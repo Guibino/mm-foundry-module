@@ -1,0 +1,414 @@
+{
+  "_id": "VPbUJmUZgeTuWXlr",
+  "_key": "!actors!VPbUJmUZgeTuWXlr",
+  "folder": "mI6hZZeXOMovX9oy",
+  "name": "Salamander Inferno Master",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/salamander-inferno-master.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 24,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 16,
+        "proficient": 1
+      },
+      "con": {
+        "value": 18,
+        "proficient": 0
+      },
+      "int": {
+        "value": 14,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 20,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 18,
+        "formula": ""
+      },
+      "hp": {
+        "value": 256,
+        "max": 256,
+        "formula": "27d10 + 108",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40,
+        "climb": 40
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "elemental",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Mau",
+      "cr": 15,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "fire"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [
+          "cold"
+        ],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Primordial (Ignan)"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Salamander Inferno Master",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/salamander-inferno-master.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "QCfbdlENQSvkHdq3",
+      "name": "Aura de Fogo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>At the end of each of the salamander's turns, cada criatura of the salamander's choice in a 3 m Emanation originating from the salamander takes 10 (3d6) dano de fogo.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!VPbUJmUZgeTuWXlr.QCfbdlENQSvkHdq3"
+    },
+    {
+      "_id": "xi0zrud57VEzQ3FZ",
+      "name": "Resistência a Magia",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!VPbUJmUZgeTuWXlr.xi0zrud57VEzQ3FZ"
+    },
+    {
+      "_id": "u4LSMTm43KgwOEHK",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The salamander makes two Flame Tridente attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!VPbUJmUZgeTuWXlr.u4LSMTm43KgwOEHK"
+    },
+    {
+      "_id": "HtdIsE625VoThO1d",
+      "name": "Flame Tridente",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +12, alcance 1,5 m. or distância 9/27 m. Acerto: 16 (2d8 + 7) dano perfurante mais 14 (4d6) dano de fogo. The trident magically returns to the salamander's hand immediately after a ranged attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "ZVVo6Uph3RkaP78F": {
+            "_id": "ZVVo6Uph3RkaP78F",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "12",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "7",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 12,
+            "attackType": "ranged",
+            "damageFormula": "2d8+7",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!VPbUJmUZgeTuWXlr.HtdIsE625VoThO1d"
+    },
+    {
+      "_id": "PbQbpHgegEI8fZeJ",
+      "name": "Inferno Blast (Recharge 5)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Destreza: CD 18, cada criatura in a 9 m-radius Sphere centered on a point the salamander can see within 36 m. 35 (10d6) dano de fogo, and o alvo starts burning, taking 5 (1d10) dano de fogo at the start of each of its turns instead of the normal burning de dano. O alvo gains 1 Exaustão level whenever it takes this burning de dano. Metade do dano only.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "SEAOIDgFnaciq2mW": {
+            "_id": "SEAOIDgFnaciq2mW",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "18"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 18,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!VPbUJmUZgeTuWXlr.PbQbpHgegEI8fZeJ"
+    },
+    {
+      "_id": "Hc7zf1mz7BlKvwT5",
+      "name": "Blazing Movement",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The salamander moves up to its Speed without provoking Opportunity Attacks. During this movement, fire fills a 1,5 m Emanation originating from the salamander. When the Emanation enters uma criatura's space, that creature takes 7 (2d6) dano de fogo. A creature can take this de dano only once per turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!VPbUJmUZgeTuWXlr.Hc7zf1mz7BlKvwT5"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Salamander Inferno Master",
+      "page": 267,
+      "cr": "15",
+      "warnings": []
+    }
+  }
+}

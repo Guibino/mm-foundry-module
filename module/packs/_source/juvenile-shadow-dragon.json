@@ -1,8 +1,8 @@
 {
-  "_id": "4a7CAoIZV3l8N39G",
-  "_key": "!actors!4a7CAoIZV3l8N39G",
+  "_id": "dJ5SiIwH1WurukQS",
+  "_key": "!actors!dJ5SiIwH1WurukQS",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Juvenile Shadow Dragão",
+  "name": "Juvenile Shadow Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/juvenile-shadow-dragon.webp",
   "system": {
@@ -48,10 +48,14 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "climb": 30,
+        "fly": 60
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60,
+        "blindsight": 10
       },
       "init": {
         "ability": "dex",
@@ -68,7 +72,7 @@
       "alignment": "Caótico e Mau",
       "cr": 4,
       "xp": {
-        "value": 1100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -87,7 +91,7 @@
       },
       "dr": {
         "value": [],
-        "custom": ""
+        "custom": "See Living Shadow"
       },
       "dv": {
         "value": [],
@@ -99,7 +103,7 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum, Dracônico"
       }
     },
     "skills": {
@@ -114,7 +118,7 @@
     }
   },
   "prototypeToken": {
-    "name": "Juvenile Shadow Dragão",
+    "name": "Juvenile Shadow Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -132,7 +136,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in Dim Light or Darkness, the dragon has Resistance to de dano that isn't Energia, Psy- ch ic, or Radiante.</p>",
+          "value": "<p>While in Dim Light or Darkness, the dragon has Resistance to de dano that isn't Energia, Psíquico, or Radiante.</p>",
           "chat": ""
         },
         "activation": {
@@ -156,16 +160,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!4a7CAoIZV3l8N39G.CNK520zdaxYVE5j8"
+      "_key": "!actors.items!dJ5SiIwH1WurukQS.CNK520zdaxYVE5j8"
     },
     {
-      "_id": "tPUFb4aqnjFLRMCH",
-      "name": "Sunlight Sensitivity",
+      "_id": "HeJgu3nFrLe72hL3",
+      "name": "Sensibilidade à Luz Solar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in sunlight , the dragon has Disadvantage on ability checks and attack rolls .</p>",
+          "value": "<p>Sob luz solar, a criatura tem Desvantagem em testes de habilidade e rolagens de ataque.</p>",
           "chat": ""
         },
         "activation": {
@@ -189,7 +193,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!4a7CAoIZV3l8N39G.tPUFb4aqnjFLRMCH"
+      "_key": "!actors.items!dJ5SiIwH1WurukQS.HeJgu3nFrLe72hL3"
     },
     {
       "_id": "oQAuVSPVOv1VrbJO",
@@ -198,7 +202,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes two Rend attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -223,16 +227,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!4a7CAoIZV3l8N39G.oQAuVSPVOv1VrbJO"
+      "_key": "!actors.items!dJ5SiIwH1WurukQS.oQAuVSPVOv1VrbJO"
     },
     {
-      "_id": "faEXAA3QIbjypLBM",
-      "name": "Rend",
+      "_id": "0utvQSodPT28QdqU",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo : +5, alcance 10 ft. Hit : 7 (1d8 + 3) Cortante de dano plus 3 (1d6) Necrótico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 3 m. Acerto: 7 (1d8 + 3) dano cortante mais 3 (1d6) dano necrótico.</p>",
           "chat": ""
         },
         "activation": {
@@ -249,24 +253,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "9p3hb8aoJLZI5fGn": {
+            "_id": "9p3hb8aoJLZI5fGn",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "3",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "1d8+3",
+            "damageType": "slashing"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!4a7CAoIZV3l8N39G.faEXAA3QIbjypLBM"
+      "_key": "!actors.items!dJ5SiIwH1WurukQS.0utvQSodPT28QdqU"
     },
     {
       "_id": "87qbdXnJaWOKiIL1",
-      "name": "Shadow Breath (Recharge 5-6)",
+      "name": "Shadow Breath (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 13, cada criatura in a 30-foot Cone. Failure : 17 (5d6) Necrótico de dano. Sucesso: Metade do dano. Failure or Success : A Humanoid reduced to 0 Pontos de Vida by this de dano dies, and a Shadow rises from its corpse. The shadow is under the dragon's control and shares the dragon's Iniciativa count but acts immediately. after the dragon.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 13, cada criatura in a 9 m Cone. 17 (5d6) dano necrótico. Metade do dano. A Humanoid reduced to 0 Pontos de Vida by this de dano dies, and a Shadow rises from its corpse. The shadow is under the dragon's control and shares the dragon's Iniciativa count but acts immediately after the dragon.</p>",
           "chat": ""
         },
         "activation": {
@@ -324,16 +375,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!4a7CAoIZV3l8N39G.87qbdXnJaWOKiIL1"
+      "_key": "!actors.items!dJ5SiIwH1WurukQS.87qbdXnJaWOKiIL1"
     },
     {
-      "_id": "A7tlaw4GZcidWgHv",
-      "name": "Shadow Stealth",
+      "_id": "5A5Abbj4h5dCt4tq",
+      "name": "Furtividade nas Sombras",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in Dim Light or Darkness, the dragon takes the Hide action . SHADOW DRAGON Huge or Large Dragon , Chaotic Evi l AC 16 Iniciativa +14 (24) HP 189 (18d12 + 72) S peed 40 ft., Climb 40 ft., Fly 80 ft. MO D SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Sob Luz Fraca ou Escuridão, a criatura realiza a ação Esconder-se.</p>",
           "chat": ""
         },
         "activation": {
@@ -358,13 +409,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!4a7CAoIZV3l8N39G.A7tlaw4GZcidWgHv"
+      "_key": "!actors.items!dJ5SiIwH1WurukQS.5A5Abbj4h5dCt4tq"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Juvenile Shadow Dragon",
-      "page": 277,
+      "page": 275,
       "cr": "4",
       "warnings": []
     }

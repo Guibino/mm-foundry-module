@@ -1,6 +1,6 @@
 {
-  "_id": "WrYOCNTbaP68NZTU",
-  "_key": "!actors!WrYOCNTbaP68NZTU",
+  "_id": "veDLUfLam36ER4Xp",
+  "_key": "!actors!veDLUfLam36ER4Xp",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Wereboar",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 97,
         "max": 97,
-        "formula": "l 5d8 + 30",
+        "formula": "15d8 + 30",
         "temp": null,
         "tempmax": null
       },
@@ -61,14 +61,14 @@
     "details": {
       "type": {
         "value": "monstrosity",
-        "subtype": "Lycanthrope",
+        "subtype": "lycanthrope",
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Neutro",
+      "alignment": "Neutro e Mau",
       "cr": 4,
       "xp": {
-        "value": 7
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -97,10 +97,15 @@
       },
       "languages": {
         "value": [],
-        "custom": "Common (can 't speak in boar form)"
+        "custom": "Common (can't speak in boar form)"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Wereboar",
@@ -121,7 +126,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The wereboar makes two attacks, using</p>",
+          "value": "<p>The wereboar makes two attacks, using Azagaia or Tusk in any combination. It can replace one attack with a Chifrada attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,50 +151,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!WrYOCNTbaP68NZTU.fbjDgq2mwXgEyAqD"
+      "_key": "!actors.items!veDLUfLam36ER4Xp.fbjDgq2mwXgEyAqD"
     },
     {
-      "_id": "obplXLVYcwgEk4lY",
-      "name": "Javelin or Tusk in any combination",
+      "_id": "eifHfWIZIXmhsM9V",
+      "name": "Chifrada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>It can replace one attack with a Gore attack.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!WrYOCNTbaP68NZTU.obplXLVYcwgEk4lY"
-    },
-    {
-      "_id": "0lzhFy6aJEFhX6XG",
-      "name": "Gore (Boar or Hybrid Form Only)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Hit : 12 (2d8 + 3) Perfurante de dano. If o alvo is a Humanoid, it is subjected to the following ef- fect. Constituição Teste de Resistência: DC 12 . Falha: The tar- get is cursed. If the cursed target drops to O Pontos de Vida, it instead becomes a Wereboar under the DM's control and has 70 Pontos de Vida. Sucesso: The target is immune to this wereboar's curse for 24 hours.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 12 (2d8 + 3) dano perfurante. If o alvo is a Humanoid, it is subjected to the following effect. Teste de Resistência de Constituição: CD 12. O alvo is cursed. If the cursed target drops to 0 Pontos de Vida, it instead becomes a Wereboar under the DM's control and has 10 Pontos de Vida. O alvo is immune to this wereboar's curse for 24 hours.</p>",
           "chat": ""
         },
         "activation": {
@@ -207,8 +178,8 @@
           "subtype": ""
         },
         "activities": {
-          "5AYSVMy9vMnUhc76": {
-            "_id": "5AYSVMy9vMnUhc76",
+          "jabowvlBcOVzhrRo": {
+            "_id": "jabowvlBcOVzhrRo",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -227,7 +198,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -237,22 +226,24 @@
           "mechanics": {
             "toHit": 5,
             "attackType": "melee",
+            "damageFormula": "2d8+3",
+            "damageType": "piercing",
             "saveDc": 12,
             "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!WrYOCNTbaP68NZTU.0lzhFy6aJEFhX6XG"
+      "_key": "!actors.items!veDLUfLam36ER4Xp.eifHfWIZIXmhsM9V"
     },
     {
-      "_id": "e7dPDogpsr3BbPN9",
-      "name": "Javelin (Humanoid or Hybrid Form Only)",
+      "_id": "MN9YL6eLHD7N24J7",
+      "name": "Azagaia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +5, ., alcance 5 ft. or range ·30/120 ft. Acerto: 13 (3d6 + 3) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +5, alcance 1,5 m. or distância 9/36 m. Acerto: 13 (3d6 + 3) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -270,8 +261,8 @@
           "subtype": ""
         },
         "activities": {
-          "QDgiNHwEZce2rBBX": {
-            "_id": "QDgiNHwEZce2rBBX",
+          "wbe1DZaieIieZhny": {
+            "_id": "wbe1DZaieIieZhny",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -324,16 +315,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!WrYOCNTbaP68NZTU.e7dPDogpsr3BbPN9"
+      "_key": "!actors.items!veDLUfLam36ER4Xp.MN9YL6eLHD7N24J7"
     },
     {
-      "_id": "35n8aONJzzhMaQik",
-      "name": "Tusk (Boar or Hybrid Form Only)",
+      "_id": "7FkVeOo9gmFe6Owi",
+      "name": "Tusk",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 7 0 (2d6 + 3) Perfurante de dano. If the tar- get is a Medium or smaller creature and the wereboar moved 20+ feet straight toward it immediately before the hit, o alvo takes an extra 7 (2d6) Perfurante dam- age and has the Caído condition.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 10 (2d6 + 3) dano perfurante. If o alvo is a Medium or smaller creature and the wereboar moved 20+ feet straight toward it immediately before the hit, o alvo takes an extra 7 (2d6) dano perfurante and fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -351,8 +342,8 @@
           "subtype": ""
         },
         "activities": {
-          "7XPQjAlmU25EJR1a": {
-            "_id": "7XPQjAlmU25EJR1a",
+          "ghDOGI2sNr6R1RBt": {
+            "_id": "ghDOGI2sNr6R1RBt",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -371,7 +362,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -380,21 +389,23 @@
         "mm2024": {
           "mechanics": {
             "toHit": 5,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d6+3",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!WrYOCNTbaP68NZTU.35n8aONJzzhMaQik"
+      "_key": "!actors.items!veDLUfLam36ER4Xp.7FkVeOo9gmFe6Owi"
     },
     {
-      "_id": "i3kAMNGsTORLCZ6z",
-      "name": "Shape-Shift",
+      "_id": "vUvqnuoYkd4QJigp",
+      "name": "Mudar de Forma",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The wereboar shape-shifts into a Medium boar-humanoid hybrid or a Small boar, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. WERERAT Changed by the Deviousness of the Rat</p>",
+          "value": "<p>The wereboar shape-shifts into a Medium boar-humanoid hybrid or a Small boar, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed.</p>",
           "chat": ""
         },
         "activation": {
@@ -419,13 +430,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!WrYOCNTbaP68NZTU.i3kAMNGsTORLCZ6z"
+      "_key": "!actors.items!veDLUfLam36ER4Xp.vUvqnuoYkd4QJigp"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Wereboar",
-      "page": 327,
+      "page": 325,
       "cr": "4",
       "warnings": []
     }

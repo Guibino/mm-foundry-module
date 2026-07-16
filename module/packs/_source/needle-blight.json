@@ -1,6 +1,6 @@
 {
-  "_id": "JCCFsSuYIRss8T3n",
-  "_key": "!actors!JCCFsSuYIRss8T3n",
+  "_id": "7qGotp5JMALDxgHY",
+  "_key": "!actors!7qGotp5JMALDxgHY",
   "folder": "UIhMG4gNrr0aGWHc",
   "name": "Needle Blight",
   "type": "npc",
@@ -39,9 +39,9 @@
         "formula": ""
       },
       "hp": {
-        "value": 1,
-        "max": 1,
-        "formula": "",
+        "value": 16,
+        "max": 16,
+        "formula": "3d8 + 3",
         "temp": null,
         "tempmax": null
       },
@@ -51,7 +51,8 @@
         "walk": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "blindsight": 60
       },
       "init": {
         "ability": "dex",
@@ -65,10 +66,10 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Neutro",
+      "alignment": "Neutro e Mau",
       "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -92,12 +93,14 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "deafened"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Understands Common but can't speak"
+        "custom": "understands Common but can't speak"
       }
     },
     "skills": {}
@@ -115,13 +118,13 @@
   },
   "items": [
     {
-      "_id": "ZbBWmPI6tQCfzQGd",
-      "name": "Claw",
+      "_id": "MurgfsAnUXmiYha6",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 6 (2d4 + l) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 6 (2d4 + 1) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -139,8 +142,8 @@
           "subtype": ""
         },
         "activities": {
-          "tJchoTlOSzSnFErD": {
-            "_id": "tJchoTlOSzSnFErD",
+          "QEHD2NLLTK3jxxiJ": {
+            "_id": "QEHD2NLLTK3jxxiJ",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -161,15 +164,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "1",
                   "types": [
                     "slashing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "2d4+l"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -187,13 +190,13 @@
           "mechanics": {
             "toHit": 3,
             "attackType": "melee",
-            "damageFormula": "2d4+l",
+            "damageFormula": "2d4+1",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!JCCFsSuYIRss8T3n.ZbBWmPI6tQCfzQGd"
+      "_key": "!actors.items!7qGotp5JMALDxgHY.MurgfsAnUXmiYha6"
     },
     {
       "_id": "j3AhRNOR818stdVG",
@@ -202,7 +205,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +3, range 30/60 ft. Acerto: 6. (2d4 + l) Perfurante de dano. , BLIGHTS 43 VINE BLIGHT Medium Plant, Neutral Evil AC12 • Iniciativa -1 (9) HP 19 (3d8 + 6) Sp eed 20 ft. MOD SAVE M OD SA VE M OD SAVE</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +3, distância 9/18 m. Acerto: 6 (2d4 + 1) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -240,7 +243,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "1",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -249,22 +270,22 @@
         "mm2024": {
           "mechanics": {
             "toHit": 3,
-            "attackType": "ranged"
+            "attackType": "ranged",
+            "damageFormula": "2d4+1",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!JCCFsSuYIRss8T3n.j3AhRNOR818stdVG"
+      "_key": "!actors.items!7qGotp5JMALDxgHY.j3AhRNOR818stdVG"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Needle Blight",
-      "page": 45,
+      "page": 43,
       "cr": "1/4",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "warnings": []
     }
   }
 }

@@ -1,8 +1,8 @@
 {
-  "_id": "vhDQE9QjxShwRPxt",
-  "_key": "!actors!vhDQE9QjxShwRPxt",
+  "_id": "BuzhvGCBksPX5kk3",
+  "_key": "!actors!BuzhvGCBksPX5kk3",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Jovem Cobre Dragão",
+  "name": "Young Copper Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/young-copper-dragon.webp",
   "system": {
@@ -48,10 +48,14 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40,
+        "climb": 40,
+        "fly": 80
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 120,
+        "blindsight": 30
       },
       "init": {
         "ability": "dex",
@@ -61,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Metallic",
+        "subtype": "metallic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Bom",
       "cr": 7,
       "xp": {
-        "value": 2900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,10 +106,23 @@
         "custom": "Comum, Dracônico"
       }
     },
-    "skills": {}
+    "skills": {
+      "dec": {
+        "value": 2,
+        "ability": "cha"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Jovem Cobre Dragão",
+    "name": "Young Copper Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -123,7 +140,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of Slowing Breath.</p>",
+          "value": "<p>The dragon makes three Dilacerar attacks. It can replace one attack with a use of Sopro Lentificante.</p>",
           "chat": ""
         },
         "activation": {
@@ -148,16 +165,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!vhDQE9QjxShwRPxt.1MDVOFh6HHc348M0"
+      "_key": "!actors.items!BuzhvGCBksPX5kk3.1MDVOFh6HHc348M0"
     },
     {
-      "_id": "3cIUCpebfRfpOxE4",
-      "name": "Rend",
+      "_id": "f4hveG5bwbgC1MCd",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>MeleeAttack Ro/1:+7, alcance 10ft. Acerto: 15 (2d10 + 4) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 3 m. Acerto: 15 (2d10 + 4) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -174,27 +191,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "HjhYHdngY3QrBAPM": {
+            "_id": "HjhYHdngY3QrBAPM",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "4",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 7,
+            "attackType": "melee",
             "damageFormula": "2d10+4",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!vhDQE9QjxShwRPxt.3cIUCpebfRfpOxE4"
+      "_key": "!actors.items!BuzhvGCBksPX5kk3.f4hveG5bwbgC1MCd"
     },
     {
-      "_id": "8T9lKmAyE3Md0X6V",
-      "name": "Ácido Breath (Recharge 5-6)",
+      "_id": "FpHUOhcHsoxRKgqZ",
+      "name": "Sopro de Ácido (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 1~, cada criatura in a .40-foot-long, 5-foot-wide Line. Falha: 40 (9d8) Ácido de dano. Sucesso: Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 14, cada criatura in a 12 m-long, 1,5 m-wide Line. 40 (9d8) dano de ácido. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -218,8 +279,8 @@
           "subtype": ""
         },
         "activities": {
-          "TeYCKxdgejMMumXx": {
-            "_id": "TeYCKxdgejMMumXx",
+          "3zvbNawSNc43t5h1": {
+            "_id": "3zvbNawSNc43t5h1",
             "type": "save",
             "activation": {
               "type": "action",
@@ -233,30 +294,12 @@
               ],
               "dc": {
                 "calculation": "",
-                "formula": "1"
+                "formula": "14"
               }
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 9,
-                  "denomination": 8,
-                  "bonus": "",
-                  "types": [
-                    "acid"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -264,24 +307,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "9d8",
-            "damageType": "acid",
-            "saveDc": 1,
+            "saveDc": 14,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!vhDQE9QjxShwRPxt.8T9lKmAyE3Md0X6V"
+      "_key": "!actors.items!BuzhvGCBksPX5kk3.FpHUOhcHsoxRKgqZ"
     },
     {
-      "_id": "ceFDWFqSQVgibbPb",
-      "name": "Slowing Breath",
+      "_id": "bx9cVGYaet14heNA",
+      "name": "Sopro Lentificante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 14, cada criatura in a 30-foot Cone. Falha: The target can't take > Reactions; its Speed is halved; and it can take either _J an action or a Bonus Action on its turn, not both. This z effect lasts until the end of its next turn. > ADULT COPPER DRAGON Huge Dragon (Metallic), Chaotic Good AC 18 In it ia ti ve +11 (21) HP 184 (16d12 + 80)</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 14, cada criatura in a 9 m Cone. O alvo can't take Reactions; its Speed is halved; and it can take either an action or a Bonus Action on its turn, not both. This effect lasts until the end of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -299,8 +340,8 @@
           "subtype": ""
         },
         "activities": {
-          "M4lIcFQgB5lEduIL": {
-            "_id": "M4lIcFQgB5lEduIL",
+          "BycFgO70aSoTgQtx": {
+            "_id": "BycFgO70aSoTgQtx",
             "type": "save",
             "activation": {
               "type": "action",
@@ -333,13 +374,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!vhDQE9QjxShwRPxt.ceFDWFqSQVgibbPb"
+      "_key": "!actors.items!BuzhvGCBksPX5kk3.bx9cVGYaet14heNA"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Young Copper Dragon",
-      "page": 80,
+      "page": 78,
       "cr": "7",
       "warnings": []
     }

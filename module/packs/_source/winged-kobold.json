@@ -1,6 +1,6 @@
 {
-  "_id": "2Kp8f4w09tvpssEg",
-  "_key": "!actors!2Kp8f4w09tvpssEg",
+  "_id": "yxtCc5iIEpph2uQO",
+  "_key": "!actors!yxtCc5iIEpph2uQO",
   "folder": "lhndsA6Aflaa0nF6",
   "name": "Winged Kobold",
   "type": "npc",
@@ -70,7 +70,7 @@
       "alignment": "Neutro",
       "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -117,13 +117,13 @@
   },
   "items": [
     {
-      "_id": "dwObtWAG7u3I6Og0",
-      "name": "Pack Tactics",
+      "_id": "iQkq2t0O5UeLLQaB",
+      "name": "Táticas de Matilha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The kobold has Advantage on an attack roll against a creature if at least one of the kobold's al- lies is within 5 feet of th~ creature and the ally doesn't have the Incapacitado condition.</p>",
+          "value": "<p>A criatura tem Vantagem em uma rolagem de ataque contra uma criatura se pelo menos um dos aliados dela estiver a até 1,5 m do alvo e esse aliado não estiver com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,16 +147,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2Kp8f4w09tvpssEg.dwObtWAG7u3I6Og0"
+      "_key": "!actors.items!yxtCc5iIEpph2uQO.iQkq2t0O5UeLLQaB"
     },
     {
-      "_id": "eZamIezP6bDFuPKq",
-      "name": "Sunlight Sensitivity",
+      "_id": "n5iUlcPCfSfMhioB",
+      "name": "Sensibilidade à Luz Solar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>'y(/hile in sunlight, the kobold has Disadvantage on ability checks and attack rolls.</p>",
+          "value": "<p>Sob luz solar, a criatura tem Desvantagem em testes de habilidade e rolagens de ataque.</p>",
           "chat": ""
         },
         "activation": {
@@ -180,7 +180,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2Kp8f4w09tvpssEg.eZamIezP6bDFuPKq"
+      "_key": "!actors.items!yxtCc5iIEpph2uQO.n5iUlcPCfSfMhioB"
     },
     {
       "_id": "HQEAGjiZfDCYx1Yg",
@@ -189,7 +189,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ~t. Acerto: 6 (1d6 + 3) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 6 (1d6 + 3) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -261,7 +261,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2Kp8f4w09tvpssEg.HQEAGjiZfDCYx1Yg"
+      "_key": "!actors.items!yxtCc5iIEpph2uQO.HQEAGjiZfDCYx1Yg"
     },
     {
       "_id": "AJriccdJI9ffPDPY",
@@ -270,7 +270,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +5, range 30 ft. Acerto: 6 (1d6 + 3) de dano of a type chosen by the kobold: Ácido, Frio, Fogo, Elétrico, or Veneno. K.OBOLDS ~ 185 KRAKEN Leviathan of Legend</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +5, distância 9 m. Acerto: 6 (1d6 + 3) de dano of a type chosen by the kobold: Ácido, Frio, Fogo, Elétrico, or Veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -322,13 +322,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2Kp8f4w09tvpssEg.AJriccdJI9ffPDPY"
+      "_key": "!actors.items!yxtCc5iIEpph2uQO.AJriccdJI9ffPDPY"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Winged Kobold",
-      "page": 187,
+      "page": 185,
       "cr": "1/4",
       "warnings": []
     }

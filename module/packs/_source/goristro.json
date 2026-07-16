@@ -1,6 +1,6 @@
 {
-  "_id": "pTkkCxma3cToRU7R",
-  "_key": "!actors!pTkkCxma3cToRU7R",
+  "_id": "RLwJtr2XbSe05Kw4",
+  "_key": "!actors!RLwJtr2XbSe05Kw4",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Goristro",
   "type": "npc",
@@ -39,9 +39,9 @@
         "formula": ""
       },
       "hp": {
-        "value": 370,
-        "max": 370,
-        "formula": "23d12 + 761",
+        "value": 310,
+        "max": 310,
+        "formula": "23d12 + 161",
         "temp": null,
         "tempmax": null
       },
@@ -51,7 +51,8 @@
         "walk": 50
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 120
       },
       "init": {
         "ability": "dex",
@@ -61,14 +62,14 @@
     "details": {
       "type": {
         "value": "fiend",
-        "subtype": "D emon",
+        "subtype": "demon",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Mau",
       "cr": 17,
       "xp": {
-        "value": 18000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -86,7 +87,11 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "cold",
+          "fire",
+          "lightning"
+        ],
         "custom": ""
       },
       "dv": {
@@ -104,7 +109,16 @@
         "custom": "Abissal"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "sur": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Goristro",
@@ -119,13 +133,13 @@
   },
   "items": [
     {
-      "_id": "GUyVNH0CVXaHdEGt",
-      "name": "Demonic Restoration",
+      "_id": "uTOPwYxEwe896XVa",
+      "name": "Restauração Demoníaca",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the goristro dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Pontos de Vida some- where in the Abyss.</p>",
+          "value": "<p>Se a criatura morrer fora do Abismo, o corpo dela se dissolve em icor e ela ganha um novo corpo instantaneamente, revivendo com todos os seus Pontos de Vida em algum lugar do Abismo.</p>",
           "chat": ""
         },
         "activation": {
@@ -149,16 +163,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!pTkkCxma3cToRU7R.GUyVNH0CVXaHdEGt"
+      "_key": "!actors.items!RLwJtr2XbSe05Kw4.uTOPwYxEwe896XVa"
     },
     {
-      "_id": "eS8JHXOXAcqlH7tY",
-      "name": "Magic Resistance",
+      "_id": "CzkSZpje05dTkUAh",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The goristro has Advantage on sav- ing throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -182,16 +196,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!pTkkCxma3cToRU7R.eS8JHXOXAcqlH7tY"
+      "_key": "!actors.items!RLwJtr2XbSe05Kw4.CzkSZpje05dTkUAh"
     },
     {
-      "_id": "hiTkUY18eyIA4iAQ",
-      "name": "Siege Monster",
+      "_id": "nKoQrlji0O52jvpl",
+      "name": "Monstro de Cerco",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The goristro deals double de dano to objects and structures.</p>",
+          "value": "<p>A criatura causa o dobro de dano a objetos e estruturas.</p>",
           "chat": ""
         },
         "activation": {
@@ -215,7 +229,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!pTkkCxma3cToRU7R.hiTkUY18eyIA4iAQ"
+      "_key": "!actors.items!RLwJtr2XbSe05Kw4.nKoQrlji0O52jvpl"
     },
     {
       "_id": "XP6BEeckyfUr436R",
@@ -224,7 +238,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The goristro makes one Brutal Gore attack and two Slam attacks.</p>",
+          "value": "<p>The goristro makes one Brutal Chifrada attack and two Pancada attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -249,16 +263,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!pTkkCxma3cToRU7R.XP6BEeckyfUr436R"
+      "_key": "!actors.items!RLwJtr2XbSe05Kw4.XP6BEeckyfUr436R"
     },
     {
-      "_id": "9HEbRhnsLUoCkSft",
-      "name": "Brutal Gore",
+      "_id": "KBlnDgqx9O54KDaN",
+      "name": "Brutal Chifrada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: + 13, alcance l O ft. Acerto: 40 (6d10 + 7) Perfurante d_amage. If o alvo is a Huge or smaller creature, it is pushed up to 20 feet straight away from the goristro and has the Caído condition.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +13, alcance 3 m. Acerto: 40 (6d10 + 7) dano perfurante. If o alvo is a Huge or smaller creature, it is pushed up to 6 m straight away from the goristro and fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -275,65 +289,156 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
+        "activities": {
+          "T8h6rXjCTsFLw1vf": {
+            "_id": "T8h6rXjCTsFLw1vf",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "13",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 6,
+                  "denomination": 10,
+                  "bonus": "7",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
         }
-      },
-      "_key": "!actors.items!pTkkCxma3cToRU7R.9HEbRhnsLUoCkSft"
-    },
-    {
-      "_id": "hjkp8wKkKRHibpFg",
-      "name": "Slam",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 13, alcance l Oft. Acerto: 29 (4d1 0 +. 7) Concussão de dano. BONUS ACTIONS z</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "4d10+.7",
+            "toHit": 13,
+            "attackType": "melee",
+            "damageFormula": "6d10+7",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!RLwJtr2XbSe05Kw4.KBlnDgqx9O54KDaN"
+    },
+    {
+      "_id": "QJOaQLBsTdaA6b0w",
+      "name": "Pancada",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +13, alcance 3 m. Acerto: 29 (4d10 + 7) dano de concussão.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "fdlmvSpd2KkZ85Pn": {
+            "_id": "fdlmvSpd2KkZ85Pn",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "13",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 10,
+                  "bonus": "7",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 13,
+            "attackType": "melee",
+            "damageFormula": "4d10+7",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!pTkkCxma3cToRU7R.hjkp8wKkKRHibpFg"
+      "_key": "!actors.items!RLwJtr2XbSe05Kw4.QJOaQLBsTdaA6b0w"
     },
     {
-      "_id": "fW4A2BmwwjBz2dNX",
-      "name": "Charge",
+      "_id": "krVyEYoJpFIeNrea",
+      "name": "Investida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The goristro moves up to half its Speed 0 straight toward an enemy it can see. w co GRAY OOZES Hungry Slimes and Magical Failures</p>",
+          "value": "<p>The goristro moves up to half its Speed straight toward an enemy it can see.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "action",
+          "type": "bonus",
           "value": null,
           "condition": ""
         },
@@ -354,13 +459,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!pTkkCxma3cToRU7R.fW4A2BmwwjBz2dNX"
+      "_key": "!actors.items!RLwJtr2XbSe05Kw4.krVyEYoJpFIeNrea"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Goristro",
-      "page": 152,
+      "page": 150,
       "cr": "17",
       "warnings": []
     }

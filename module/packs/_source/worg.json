@@ -1,6 +1,6 @@
 {
-  "_id": "PrRww5xUilrSKTBV",
-  "_key": "!actors!PrRww5xUilrSKTBV",
+  "_id": "nyXgyVAb2hOmKrGm",
+  "_key": "!actors!nyXgyVAb2hOmKrGm",
   "folder": "inkH4oLnh3yP5W9M",
   "name": "Worg",
   "type": "npc",
@@ -8,15 +8,15 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 76,
+        "value": 16,
         "proficient": 0
       },
       "dex": {
-        "value": 73,
+        "value": 13,
         "proficient": 0
       },
       "con": {
-        "value": 73,
+        "value": 13,
         "proficient": 0
       },
       "int": {
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 73,
+        "flat": 13,
         "formula": ""
       },
       "hp": {
@@ -69,7 +69,7 @@
       "alignment": "Neutro e Mau",
       "cr": 0.5,
       "xp": {
-        "value": 100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -121,13 +121,13 @@
   },
   "items": [
     {
-      "_id": "0wSGRUJifBz36U1a",
-      "name": "Bite",
+      "_id": "kKE8MwIcj9611VDG",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 7 (1d8 + 3) Perfurante de dano, and the next attack roll made against o alvo before the start of the worg's next turn has Advantage. DIRE WORG Huge Fey Neutral EtJil AC 16 Iniciativa +2 (12) · HP 147 (14d12 + 56) Sp eed 50 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 7 (1d8 + 3) dano perfurante, and the next attack roll made against o alvo before the start of the worg's next turn has Vantagem.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,8 +145,8 @@
           "subtype": ""
         },
         "activities": {
-          "x3c0veeoMXJZ1foB": {
-            "_id": "x3c0veeoMXJZ1foB",
+          "2WlPT6ihhTlkYM2O": {
+            "_id": "2WlPT6ihhTlkYM2O",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -199,13 +199,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!PrRww5xUilrSKTBV.0wSGRUJifBz36U1a"
+      "_key": "!actors.items!nyXgyVAb2hOmKrGm.kKE8MwIcj9611VDG"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Worg",
-      "page": 337,
+      "page": 335,
       "cr": "1/2",
       "warnings": []
     }

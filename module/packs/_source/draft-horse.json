@@ -1,6 +1,6 @@
 {
-  "_id": "uHGXp3TNokKeX8OE",
-  "_key": "!actors!uHGXp3TNokKeX8OE",
+  "_id": "k5i0qzGUkvIJumhM",
+  "_key": "!actors!k5i0qzGUkvIJumhM",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Draft Horse",
   "type": "npc",
@@ -41,14 +41,14 @@
       "hp": {
         "value": 15,
         "max": 15,
-        "formula": "2d1 0 + 4",
+        "formula": "2d10 + 4",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40
       },
       "senses": {
         "units": "ft"
@@ -68,7 +68,7 @@
       "alignment": "Sem Tendência",
       "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -113,11 +113,93 @@
     },
     "disposition": -1
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "6fxvTYdQY04kj151",
+      "name": "Cascos",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 6 (1d4 + 4) dano de concussão.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "AJFwUfHaxtUVf1Tw": {
+            "_id": "AJFwUfHaxtUVf1Tw",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "4",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 6,
+            "attackType": "melee",
+            "damageFormula": "1d4+4",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!k5i0qzGUkvIJumhM.6fxvTYdQY04kj151"
+    }
+  ],
   "flags": {
     "mm2024": {
       "nameEn": "Draft Horse",
-      "page": 354,
+      "page": 352,
       "cr": "1/4",
       "warnings": []
     }

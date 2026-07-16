@@ -1,6 +1,6 @@
 {
-  "_id": "Qt5vbNYk3qvxs7eX",
-  "_key": "!actors!Qt5vbNYk3qvxs7eX",
+  "_id": "ntx3cdnANXrr2e2w",
+  "_key": "!actors!ntx3cdnANXrr2e2w",
   "folder": "inkH4oLnh3yP5W9M",
   "name": "Sprite",
   "type": "npc",
@@ -48,7 +48,8 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 10,
+        "fly": 40
       },
       "senses": {
         "units": "ft"
@@ -68,7 +69,7 @@
       "alignment": "Neutro e Bom",
       "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -100,7 +101,16 @@
         "custom": "Comum, Élfico, Silvestre"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Sprite",
@@ -121,7 +131,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 6 (1d4 + 4) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 6 (1d4 + 4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -193,7 +203,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Qt5vbNYk3qvxs7eX.WSNuBRF1Nj7QdtPc"
+      "_key": "!actors.items!ntx3cdnANXrr2e2w.WSNuBRF1Nj7QdtPc"
     },
     {
       "_id": "S414a14iJLirwAdV",
@@ -202,7 +212,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +6, range 40/160 ft. Acerto: l Perfurante de dano, and o alvo has the Enfeitiçado condition until the start of the sprite's next turn.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +6, distância 12/48 m. Acerto: 1 dano perfurante, and o alvo fica com a condição Enfeitiçado until the start of the sprite's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -254,7 +264,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Qt5vbNYk3qvxs7eX.S414a14iJLirwAdV"
+      "_key": "!actors.items!ntx3cdnANXrr2e2w.S414a14iJLirwAdV"
     },
     {
       "_id": "jG9sQA8khHjR96jq",
@@ -263,7 +273,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Carisma Teste de Resistência: DC l 0, one crea- ture within 5 feet the sprite can see (Celestials, Fi _ends, and Undead automatically fail the save). Falha: The sprite knows o alvo's emotions and alignment.</p>",
+          "value": "<p>Teste de Resistência de Carisma: CD 10, uma criatura within 1,5 m the sprite can see (Celestials, Fiends, and Undead automatically fail the save). The sprite knows o alvo's emotions and alignment.</p>",
           "chat": ""
         },
         "activation": {
@@ -280,24 +290,51 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "mqvElveKQqwhexjk": {
+            "_id": "mqvElveKQqwhexjk",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "cha"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "10"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 10,
+            "saveAbility": "cha"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Qt5vbNYk3qvxs7eX.jG9sQA8khHjR96jq"
+      "_key": "!actors.items!ntx3cdnANXrr2e2w.jG9sQA8khHjR96jq"
     },
     {
-      "_id": "f7swvo0jZkYTp41T",
-      "name": "Invisibility",
+      "_id": "Oda4YouRNwvlfDKC",
+      "name": "Conjuração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The sprite casts / nvisibility on itself, req u i r- LJ LJ ing no spell components and using Carisma as the V) spellcasting ability. z STIRGES Notorious, Clinging Bloodsuckers</p>",
+          "value": "<p>The sprite casts Invisibility on itself, requiring no spell components and using Carisma as the spellcasting ability.</p>",
           "chat": ""
         },
         "activation": {
@@ -322,13 +359,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Qt5vbNYk3qvxs7eX.f7swvo0jZkYTp41T"
+      "_key": "!actors.items!ntx3cdnANXrr2e2w.Oda4YouRNwvlfDKC"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Sprite",
-      "page": 300,
+      "page": 298,
       "cr": "1/4",
       "warnings": []
     }

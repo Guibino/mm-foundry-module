@@ -1,8 +1,8 @@
 {
-  "_id": "F2kK0fRrPhydqk17",
-  "_key": "!actors!F2kK0fRrPhydqk17",
+  "_id": "8c8derc71qamBOtm",
+  "_key": "!actors!8c8derc71qamBOtm",
   "folder": "bKQUPthn1V2Yu6Bn",
-  "name": "Death Cavaleiro Aspirant",
+  "name": "Death Knight Aspirant",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/death-knight-aspirant.webp",
   "system": {
@@ -66,10 +66,10 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Chaotic",
+      "alignment": "Caótico e Mau",
       "cr": 11,
       "xp": {
-        "value": 7200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -79,7 +79,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [
           "necrotic",
@@ -98,7 +98,8 @@
       "ci": {
         "value": [
           "exhaustion",
-          "frightened"
+          "frightened",
+          "poisoned"
         ],
         "custom": ""
       },
@@ -110,7 +111,7 @@
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Death Cavaleiro Aspirant",
+    "name": "Death Knight Aspirant",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -122,13 +123,13 @@
   },
   "items": [
     {
-      "_id": "gcRB1mGcTV3zWUXY",
-      "name": "Magic Resistance",
+      "_id": "gkhXhxK2mLWA5OnX",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The aspirant has Advantage on sav- ing throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -152,7 +153,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!F2kK0fRrPhydqk17.gcRB1mGcTV3zWUXY"
+      "_key": "!actors.items!8c8derc71qamBOtm.gkhXhxK2mLWA5OnX"
     },
     {
       "_id": "kerQuoeOKeWhWeyd",
@@ -161,7 +162,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Undead creatures of the aspirant's choice (excluding itself) in a 60-foot Emanation orig- inating from it have Advantage on attack rolls and saving throws . It can't use this trait if it has the Incapac- ~ itated condition. DJ</p>",
+          "value": "<p>Undead creatures of the aspirant's choice (excluding itself) in a 18 m Emanation originating from it have Vantagem on attack rolls and saving throws. It can't use this trait if it fica com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -185,7 +186,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!F2kK0fRrPhydqk17.kerQuoeOKeWhWeyd"
+      "_key": "!actors.items!8c8derc71qamBOtm.kerQuoeOKeWhWeyd"
     },
     {
       "_id": "fEg6RQ2AHDS2mkjn",
@@ -194,7 +195,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The aspirant makes three Dread 'Blade attacks.</p>",
+          "value": "<p>The aspirant makes three Dread Blade attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -219,7 +220,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!F2kK0fRrPhydqk17.fEg6RQ2AHDS2mkjn"
+      "_key": "!actors.items!8c8derc71qamBOtm.fEg6RQ2AHDS2mkjn"
     },
     {
       "_id": "4FFteADh78amotQs",
@@ -228,7 +229,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 5 ft. Hit : 14 (2d8 + 5) Cortante de dano plus 10 (3d6) Ne- crotic de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 1,5 m. Acerto: 14 (2d8 + 5) dano cortante mais 10 (3d6) dano necrótico.</p>",
           "chat": ""
         },
         "activation": {
@@ -266,7 +267,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "5",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -275,21 +294,23 @@
         "mm2024": {
           "mechanics": {
             "toHit": 9,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d8+5",
+            "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!F2kK0fRrPhydqk17.4FFteADh78amotQs"
+      "_key": "!actors.items!8c8derc71qamBOtm.4FFteADh78amotQs"
     },
     {
       "_id": "r8VGTGA8oaRmHa5V",
-      "name": "Hellfire Orb (Recharge 5-6)",
+      "name": "Hellfire Orb (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 15, cada criatura in a 20-foot-radius Sphere centered on a point the aspirant can see within 120 feet of itself. Falha: 27 (6d6) Fogo de dano plus 27 (6d6) Necrótico de dano. Sucesso: Half d~mage. --</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 15, cada criatura in a 6 m-radius Sphere centered on a point the aspirant can see within 36 m of itself. 21 (6d6) dano de fogo mais 21 (6d6) dano necrótico. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -333,25 +354,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 6,
-                  "denomination": 6,
-                  "bonus": "",
-                  "types": [
-                    "fire"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -359,24 +362,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "6d6",
-            "damageType": "fire",
             "saveDc": 15,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!F2kK0fRrPhydqk17.r8VGTGA8oaRmHa5V"
+      "_key": "!actors.items!8c8derc71qamBOtm.r8VGTGA8oaRmHa5V"
     },
     {
-      "_id": "ah8fX338a0Mbd2Vf",
-      "name": "Parry",
+      "_id": "fh51ybULkNGoxEpK",
+      "name": "Aparar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: The aspirant is hit by a melee attack roll while holding a weapon. Response: The aspirant adds .4 to its AC against that attack, possibly causing it to miss . DEATH KNIGHTS 93 DEATH TYRANT Beholder beyond Death</p>",
+          "value": "<p>The aspirant is hit by a melee attack roll while holding a weapon. The aspirant adds 4 to its AC against that attack, possibly causing it to miss.</p>",
           "chat": ""
         },
         "activation": {
@@ -401,7 +402,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!F2kK0fRrPhydqk17.ah8fX338a0Mbd2Vf"
+      "_key": "!actors.items!8c8derc71qamBOtm.fh51ybULkNGoxEpK"
     },
     {
       "_id": "Dz2wQgsaqKR4CRGd",
@@ -410,7 +411,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The aspirant casts one of the following spells, using Charis~a as the spellcasting ability (spell save DC 15): À Vontade: Phantom Steed 1/Dia: Destructive Wave (Necrótico), Dispel Magic</p>",
+          "value": "<p>The aspirant casts one of the following spells, using Carisma as the spellcasting ability (spell save CD 15):</p>",
           "chat": ""
         },
         "activation": {
@@ -435,13 +436,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!F2kK0fRrPhydqk17.Dz2wQgsaqKR4CRGd"
+      "_key": "!actors.items!8c8derc71qamBOtm.Dz2wQgsaqKR4CRGd"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Death Knight Aspirant",
-      "page": 95,
+      "page": 93,
       "cr": "11",
       "warnings": []
     }

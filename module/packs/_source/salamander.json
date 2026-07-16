@@ -1,6 +1,6 @@
 {
-  "_id": "KBtfKXyST5hOhkVY",
-  "_key": "!actors!KBtfKXyST5hOhkVY",
+  "_id": "tAE9QLw40oAQMjV4",
+  "_key": "!actors!tAE9QLw40oAQMjV4",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Salamander",
   "type": "npc",
@@ -28,7 +28,7 @@
         "proficient": 0
       },
       "cha": {
-        "value": 72,
+        "value": 12,
         "proficient": 0
       }
     },
@@ -67,10 +67,10 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Neutro",
+      "alignment": "Neutro e Mau",
       "cr": 5,
       "xp": {
-        "value": 1800
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -103,7 +103,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Primordial (lgnan)"
+        "custom": "Primordial (Ignan)"
       }
     },
     "skills": {}
@@ -121,13 +121,13 @@
   },
   "items": [
     {
-      "_id": "u4fdrGKVHGf4jY6o",
-      "name": "Fogo Aura",
+      "_id": "igTrwtFPAjaGQdrU",
+      "name": "Aura de Fogo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>At the end of each of the salamander's turns, cada criatura of the salamander's choice in a 5-foot Emanation originating from the salamander takes 7 (2d6) Fogo de dano.</p>",
+          "value": "<p>At the end of each of the salamander's turns, cada criatura of the salamander's choice in a 1,5 m Emanation originating from the salamander takes 7 (2d6) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,7 +151,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KBtfKXyST5hOhkVY.u4fdrGKVHGf4jY6o"
+      "_key": "!actors.items!tAE9QLw40oAQMjV4.igTrwtFPAjaGQdrU"
     },
     {
       "_id": "RkLBvxoslBifwxxS",
@@ -160,7 +160,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The salamander makes two Flame</p>",
+          "value": "<p>The salamander makes two Flame Lança attacks. It can replace one attack with a use of Constrição.</p>",
           "chat": ""
         },
         "activation": {
@@ -185,50 +185,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KBtfKXyST5hOhkVY.RkLBvxoslBifwxxS"
+      "_key": "!actors.items!tAE9QLw40oAQMjV4.RkLBvxoslBifwxxS"
     },
     {
-      "_id": "SyifxwhtPywOuo5l",
-      "name": "Spear attacks",
+      "_id": "bYXR22FV3bfd76cB",
+      "name": "Flame Lança",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>It can replace one attack with a use of Constrict.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!KBtfKXyST5hOhkVY.SyifxwhtPywOuo5l"
-    },
-    {
-      "_id": "UoZlzr1NzisTaVFg",
-      "name": "Flame Spear",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 5 ft. or range 20/60 ft. Acerto: 13 (2d8 + 4) Perfurante de dano plus 7 (2d6) Fogo de dano. Hit or Erro: The spear mag- ically returns to the salamander's hand immediately after a ranged attack.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 1,5 m. or distância 6/18 m. Acerto: 13 (2d8 + 4) dano perfurante mais 7 (2d6) dano de fogo. The spear magically returns to the salamander's hand immediately after a ranged attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -246,8 +212,8 @@
           "subtype": ""
         },
         "activities": {
-          "JPC1lFqvjFncbGp2": {
-            "_id": "JPC1lFqvjFncbGp2",
+          "OAIhpa2saPzREaIz": {
+            "_id": "OAIhpa2saPzREaIz",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -300,16 +266,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KBtfKXyST5hOhkVY.UoZlzr1NzisTaVFg"
+      "_key": "!actors.items!tAE9QLw40oAQMjV4.bYXR22FV3bfd76cB"
     },
     {
-      "_id": "EPopT6AYObLvmxWg",
-      "name": "Constrict",
+      "_id": "abMJ05n4eL1fpuqE",
+      "name": "Constrição",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Força Teste de Resistência: DC 15, one Large or smaller creature the salamander can see within 10 feet. Falha: 11 (2d6 + 4) Concussão de dano plus 7 (2d6)</p>",
+          "value": "<p>Teste de Resistência de Força: CD 15, one Large or smaller creature the salamander can see within 3 m. 11 (2d6 + 4) dano de concussão mais 7 (2d6) dano de fogo. O alvo fica com a condição Agarrado (CD para escapar 14), and it fica com a condição Impedido until the grapple ends.</p>",
           "chat": ""
         },
         "activation": {
@@ -327,8 +293,8 @@
           "subtype": ""
         },
         "activities": {
-          "CkIa77rW87hjJPDE": {
-            "_id": "CkIa77rW87hjJPDE",
+          "i7th71UtLce2AOZz": {
+            "_id": "i7th71UtLce2AOZz",
             "type": "save",
             "activation": {
               "type": "action",
@@ -347,25 +313,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 2,
-                  "denomination": 6,
-                  "bonus": "4",
-                  "types": [
-                    "bludgeoning"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -373,55 +321,19 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "2d6+4",
-            "damageType": "bludgeoning",
             "saveDc": 15,
             "saveAbility": "str"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KBtfKXyST5hOhkVY.EPopT6AYObLvmxWg"
-    },
-    {
-      "_id": "roTLLtAHVseVN8Fm",
-      "name": "Fogo de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The target has the Agarrado condition (escape DC 14), and it has the Impedido condition un- til the grapple ends. SALAMANDER INFERNO MASTER Large Elemental, Neutral Ei;i/ AC 18 Iniciativa +8 (18) HP 256 (27d10 + 108) Speed 40 ft., Climb 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!KBtfKXyST5hOhkVY.roTLLtAHVseVN8Fm"
+      "_key": "!actors.items!tAE9QLw40oAQMjV4.abMJ05n4eL1fpuqE"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Salamander",
-      "page": 269,
+      "page": 267,
       "cr": "5",
       "warnings": []
     }

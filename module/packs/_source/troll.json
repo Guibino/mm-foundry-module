@@ -1,6 +1,6 @@
 {
-  "_id": "NjimfkplfxspZAs0",
-  "_key": "!actors!NjimfkplfxspZAs0",
+  "_id": "2adZtzmOOtsBSSpG",
+  "_key": "!actors!2adZtzmOOtsBSSpG",
   "folder": "EgPgmtpb4EiltKUV",
   "name": "Troll",
   "type": "npc",
@@ -8,11 +8,11 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 78,
+        "value": 18,
         "proficient": 0
       },
       "dex": {
-        "value": 73,
+        "value": 13,
         "proficient": 0
       },
       "con": {
@@ -35,13 +35,13 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 75,
+        "flat": 15,
         "formula": ""
       },
       "hp": {
         "value": 94,
         "max": 94,
-        "formula": "9d1 O + 45",
+        "formula": "9d10 + 45",
         "temp": null,
         "tempmax": null
       },
@@ -51,7 +51,8 @@
         "walk": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -68,7 +69,7 @@
       "alignment": "Caótico e Mau",
       "cr": 5,
       "xp": {
-        "value": 1800
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -126,7 +127,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the troll ends any turn Bloodied and took 15+ Cortante de dano during that turn, one of the troll's limbs is severed, falls into the troll's space, and becomes a Troll Limb. The limb acts immediately after the troll's turn. The troll has l Ex- haustion level for each missing limb, and it grows re- placement limbs the next time it regains Pontos de Vida.</p>",
+          "value": "<p>If the troll ends any turn Bloodied and took 15+ dano cortante during that turn, one of the troll's limbs is severed, falls into the troll's space, and becomes a Troll Limb. The limb acts immediately after the troll's turn. The troll has 1 Exaustão level for each missing limb, and it grows replacement limbs the next time it regains Pontos de Vida.</p>",
           "chat": ""
         },
         "activation": {
@@ -155,16 +156,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NjimfkplfxspZAs0.AJlnr0J67iL1Q4iV"
+      "_key": "!actors.items!2adZtzmOOtsBSSpG.AJlnr0J67iL1Q4iV"
     },
     {
-      "_id": "V3KUu8CyKjlWIyI8",
-      "name": "Regeneration",
+      "_id": "M79gzrOZgsowdmrZ",
+      "name": "Regeneração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The troll regains 15 Pontos de Vida at the start of each of its turns. If the troll takes Ácido or Fogo dam- age, this trait doesn't function on the troll's next turn. The troll dies only ifit starts its turn with 0 Pontos de Vida \\., and doesn't regenerate.</p>",
+          "value": "<p>The troll regains 15 Pontos de Vida at the start of each of its turns. If the troll takes Ácido or dano de fogo, this trait doesn't function on the troll's next turn. The troll dies only if it starts its turn with 0 Pontos de Vida and doesn't regenerate.</p>",
           "chat": ""
         },
         "activation": {
@@ -188,7 +189,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NjimfkplfxspZAs0.V3KUu8CyKjlWIyI8"
+      "_key": "!actors.items!2adZtzmOOtsBSSpG.M79gzrOZgsowdmrZ"
     },
     {
       "_id": "ZjydlkfnLJVwYw8v",
@@ -197,7 +198,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The troll makes three Rend attacks.</p>",
+          "value": "<p>A criatura faz três ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -222,16 +223,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NjimfkplfxspZAs0.ZjydlkfnLJVwYw8v"
+      "_key": "!actors.items!2adZtzmOOtsBSSpG.ZjydlkfnLJVwYw8v"
     },
     {
-      "_id": "kJngBkWpwdIwrzU1",
-      "name": "Rend",
+      "_id": "7fmY9LX7SpbNt8Fm",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 10 ft. Acerto: 17 (2d6 + 4) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 3 m. Acerto: 11 (2d6 + 4) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -249,8 +250,8 @@
           "subtype": ""
         },
         "activities": {
-          "jpgIuBiJT6cqB2Df": {
-            "_id": "jpgIuBiJT6cqB2Df",
+          "VlARngVdgwUBZVrV": {
+            "_id": "VlARngVdgwUBZVrV",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -303,16 +304,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NjimfkplfxspZAs0.kJngBkWpwdIwrzU1"
+      "_key": "!actors.items!2adZtzmOOtsBSSpG.7fmY9LX7SpbNt8Fm"
     },
     {
-      "_id": "634LCGluSTbAhJM0",
-      "name": "Charge",
+      "_id": "I3VGBiJZSw2SKEMe",
+      "name": "Investida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The troll moves up to half its Speed straight toward an enemy it can see. 31 0 TROLL LIMB Small Gigante, C haotic E1Ji! AC 13 Iniciativa +l (11) HP 14 (4d6) Sp eed 20 ft. MOD · SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>The troll moves up to half its Speed straight toward an enemy it can see.</p>",
           "chat": ""
         },
         "activation": {
@@ -337,13 +338,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NjimfkplfxspZAs0.634LCGluSTbAhJM0"
+      "_key": "!actors.items!2adZtzmOOtsBSSpG.I3VGBiJZSw2SKEMe"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Troll",
-      "page": 312,
+      "page": 310,
       "cr": "5",
       "warnings": []
     }

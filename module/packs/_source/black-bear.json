@@ -1,8 +1,8 @@
 {
-  "_id": "yfJuYhj8tAUC8VOc",
-  "_key": "!actors!yfJuYhj8tAUC8VOc",
+  "_id": "MyZqwkahgB8gc3Vz",
+  "_key": "!actors!MyZqwkahgB8gc3Vz",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Negro Bear",
+  "name": "Black Bear",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/black-bear.webp",
   "system": {
@@ -48,10 +48,13 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "climb": 30,
+        "swim": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -66,7 +69,7 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 0.5,
       "xp": {
         "value": 0
       },
@@ -97,7 +100,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {
@@ -108,7 +111,7 @@
     }
   },
   "prototypeToken": {
-    "name": "Negro Bear",
+    "name": "Black Bear",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -126,7 +129,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The bear makes two Rend attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,16 +154,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!yfJuYhj8tAUC8VOc.9xXfTzvZokbMfyU6"
+      "_key": "!actors.items!MyZqwkahgB8gc3Vz.9xXfTzvZokbMfyU6"
     },
     {
-      "_id": "7h0lJaqZzfcihtNj",
-      "name": "Rend",
+      "_id": "IOqxnDuQQbYTHMiu",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 5 (1d6 + 2) Cortante de dano. A P PENDIX A ANIMALS J 349 BLOOD HAWK Small Beast, Unalign ed AC 12 Initiat ive +2 (12) HP 7 (2d6) Speed l Oft., Fly 60 ft . MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -178,8 +181,8 @@
           "subtype": ""
         },
         "activities": {
-          "DrF2hy9bPsY6X7j6": {
-            "_id": "DrF2hy9bPsY6X7j6",
+          "prlTj3S0k3EOtoee": {
+            "_id": "prlTj3S0k3EOtoee",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -232,14 +235,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!yfJuYhj8tAUC8VOc.7h0lJaqZzfcihtNj"
+      "_key": "!actors.items!MyZqwkahgB8gc3Vz.IOqxnDuQQbYTHMiu"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Black Bear",
-      "page": 351,
-      "cr": "0",
+      "page": 349,
+      "cr": "1/2",
       "warnings": []
     }
   }

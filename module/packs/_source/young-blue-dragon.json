@@ -1,8 +1,8 @@
 {
-  "_id": "CikNaBMdcJMOYkmx",
-  "_key": "!actors!CikNaBMdcJMOYkmx",
+  "_id": "8m6tkjFIK0Sd8lHS",
+  "_key": "!actors!8m6tkjFIK0Sd8lHS",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Jovem Azul Dragão",
+  "name": "Young Blue Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/young-blue-dragon.webp",
   "system": {
@@ -48,7 +48,9 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40,
+        "burrow": 20,
+        "fly": 80
       },
       "senses": {
         "units": "ft",
@@ -63,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Chromatic",
+        "subtype": "chromatic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Mau",
       "cr": 9,
       "xp": {
-        "value": 5000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -110,13 +112,13 @@
         "ability": "wis"
       },
       "ste": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       }
     }
   },
   "prototypeToken": {
-    "name": "Jovem Azul Dragão",
+    "name": "Young Blue Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -134,7 +136,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks.</p>",
+          "value": "<p>A criatura faz três ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -159,16 +161,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CikNaBMdcJMOYkmx.iZMbSgwAjcRxnhQ9"
+      "_key": "!actors.items!8m6tkjFIK0Sd8lHS.iZMbSgwAjcRxnhQ9"
     },
     {
-      "_id": "RxeuSrpD7zKqYETq",
-      "name": "Rend",
+      "_id": "fjyWQoAC5B1lx9HZ",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance l 0 ft. Acerto: 12 (2=_d 6 + 5) Cortante de dano plus 5 (1d10) Elétrico de dano. z</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 3 m. Acerto: 12 (2d6 + 5) dano cortante mais 5 (1d10) dano elétrico.</p>",
           "chat": ""
         },
         "activation": {
@@ -186,8 +188,8 @@
           "subtype": ""
         },
         "activities": {
-          "PZCzq4aMmgoBagYP": {
-            "_id": "PZCzq4aMmgoBagYP",
+          "wZnCBobV1HNNkxBb": {
+            "_id": "wZnCBobV1HNNkxBb",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -208,15 +210,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "5",
                   "types": [
                     "slashing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "2=_d6+5"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -234,22 +236,22 @@
           "mechanics": {
             "toHit": 9,
             "attackType": "melee",
-            "damageFormula": "2=_d6+5",
+            "damageFormula": "2d6+5",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CikNaBMdcJMOYkmx.RxeuSrpD7zKqYETq"
+      "_key": "!actors.items!8m6tkjFIK0Sd8lHS.fjyWQoAC5B1lx9HZ"
     },
     {
-      "_id": "TKGTzxKmHOdlb97F",
-      "name": "Elétrico Breath (Recharge 5-6)",
+      "_id": "sva8DShuxpU16Tio",
+      "name": "Sopro Elétrico (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Saving 2 VJ Throw: DC 16, cada criatura in a 60-foot-long, 5-foot- 0 wide Line. Falha: 55 (10d10) Elétrico de dano. Suc- z cess: Metade do dano. z ADULT BLUE DRAGON Huge Dragon (Chromatic), Lawful Evil AC 19 Iniciativa + 10 (20) HP 212 (17d12 + 102) Speed 40 ft., Burrow 30 ft., Fly 80 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 16, cada criatura in a 18 m-long, 1,5 m-wide Line. 55 (10d10) dano elétrico. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -272,24 +274,48 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "pakWGjJNl7Hp4jbW": {
+            "_id": "pakWGjJNl7Hp4jbW",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "16"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "10d10",
-            "damageType": "lightning"
+            "saveDc": 16,
+            "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CikNaBMdcJMOYkmx.TKGTzxKmHOdlb97F"
+      "_key": "!actors.items!8m6tkjFIK0Sd8lHS.sva8DShuxpU16Tio"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Young Blue Dragon",
-      "page": 50,
+      "page": 48,
       "cr": "9",
       "warnings": []
     }

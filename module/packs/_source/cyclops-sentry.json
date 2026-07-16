@@ -1,6 +1,6 @@
 {
-  "_id": "EW2nUPBx1L0xN1td",
-  "_key": "!actors!EW2nUPBx1L0xN1td",
+  "_id": "bdPjVljSYQNoN09r",
+  "_key": "!actors!bdPjVljSYQNoN09r",
   "folder": "EgPgmtpb4EiltKUV",
   "name": "Cyclops Sentry",
   "type": "npc",
@@ -41,13 +41,14 @@
       "hp": {
         "value": 138,
         "max": 138,
-        "formula": "12d12+60",
+        "formula": "12d12 + 60",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "walk": 40
       },
       "senses": {
         "units": "ft"
@@ -67,7 +68,7 @@
       "alignment": "Caótico e Neutro",
       "cr": 6,
       "xp": {
-        "value": 2300
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -120,7 +121,41 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cyclops makes two attacks, using Greatclub or Rock in any combination. Create/uh. Rolagem de Ataque Corpo a Corpo: +9, alcance l O ft. Acerto: 16 (3d6 + 6) Concussão de dano. If o alvo is a Huge or smaller creature, it has the Caído condition.</p>",
+          "value": "<p>The cyclops makes two attacks, using Stone Clava or Rock in any combination.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bdPjVljSYQNoN09r.GbLx3RMn25Zc7iIc"
+    },
+    {
+      "_id": "nXQbE6Xg70lkJbvh",
+      "name": "Stone Clava",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 3 m. Acerto: 16 (3d6 + 6) dano de concussão. If o alvo is a Huge or smaller creature, it fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -138,8 +173,8 @@
           "subtype": ""
         },
         "activities": {
-          "HBCHSdXZhpppwHkV": {
-            "_id": "HBCHSdXZhpppwHkV",
+          "9nBs7LOpi9CipTUn": {
+            "_id": "9nBs7LOpi9CipTUn",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -192,16 +227,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!EW2nUPBx1L0xN1td.GbLx3RMn25Zc7iIc"
+      "_key": "!actors.items!bdPjVljSYQNoN09r.nXQbE6Xg70lkJbvh"
     },
     {
-      "_id": "xLfgdP3u4s16cBHe",
+      "_id": "7z5GWBKdLyYneV7r",
       "name": "Rock",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +9, range 30/120 ft. Acerto: 22 (3d1 O + 6) Concussão de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +9, distância 9/36 m. Acerto: 22 (3d10 + 6) dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
@@ -219,8 +254,8 @@
           "subtype": ""
         },
         "activities": {
-          "h6cw5gBgDlG5cPLT": {
-            "_id": "h6cw5gBgDlG5cPLT",
+          "ma6CCzoojXS5YPu4": {
+            "_id": "ma6CCzoojXS5YPu4",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -241,15 +276,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 3,
+                  "denomination": 10,
+                  "bonus": "6",
                   "types": [
                     "bludgeoning"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "3d1O+6"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -267,22 +302,22 @@
           "mechanics": {
             "toHit": 9,
             "attackType": "ranged",
-            "damageFormula": "3d1O+6",
+            "damageFormula": "3d10+6",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!EW2nUPBx1L0xN1td.xLfgdP3u4s16cBHe"
+      "_key": "!actors.items!bdPjVljSYQNoN09r.7z5GWBKdLyYneV7r"
     },
     {
       "_id": "BRMCQ0lDWv5UfAiX",
-      "name": "Limited Foresight (Recharge 6)",
+      "name": "Limited Foresight",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: A creature the cyclops can see makes an attack roll against it. Re- sponse: The cyclops imposes Disadvantage on the roll, and the cyclops gains Advantage on attack rolls against uJ er:: o alvo until the end of the cyclops's nex~ turn. <( DAO Genie of the Earth</p>",
+          "value": "<p>A creature the cyclops can see makes an attack roll against it. The cyclops imposes Desvantagem on the roll, and the cyclops gains Vantagem on attack rolls against o alvo until the end of the cyclops's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -292,14 +327,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "recharge",
-              "type": "recoverAll",
-              "formula": "6"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -313,13 +342,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!EW2nUPBx1L0xN1td.BRMCQ0lDWv5UfAiX"
+      "_key": "!actors.items!bdPjVljSYQNoN09r.BRMCQ0lDWv5UfAiX"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Cyclops Sentry",
-      "page": 90,
+      "page": 88,
       "cr": "6",
       "warnings": []
     }

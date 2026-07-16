@@ -1,0 +1,246 @@
+{
+  "_id": "ypZcoljEKgPiwGjU",
+  "_key": "!actors!ypZcoljEKgPiwGjU",
+  "folder": "mI6hZZeXOMovX9oy",
+  "name": "Salamander Fire Snake",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/salamander-fire-snake.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 12,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0
+      },
+      "con": {
+        "value": 11,
+        "proficient": 0
+      },
+      "int": {
+        "value": 7,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 8,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 14,
+        "formula": ""
+      },
+      "hp": {
+        "value": 27,
+        "max": 27,
+        "formula": "6d8",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30,
+        "climb": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "elemental",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Mau",
+      "cr": 1,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "fire"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [
+          "cold"
+        ],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "understands Primordial but can't speak"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Salamander Fire Snake",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/salamander-fire-snake.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "SX8T9HnP5hVPpNjj",
+      "name": "Aura de Fogo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>At the end of each of the salamander's turns, cada criatura of the salamander's choice in a 1,5 m Emanation originating from the salamander takes 3 (1d6) dano de fogo.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ypZcoljEKgPiwGjU.SX8T9HnP5hVPpNjj"
+    },
+    {
+      "_id": "c4zC571y5KpIvvde",
+      "name": "Mordida",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 6 (1d8 + 2) dano perfurante mais 3 (1d6) dano de fogo.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "JmM0HlyLWNG4IhDm": {
+            "_id": "JmM0HlyLWNG4IhDm",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "1d8+2",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ypZcoljEKgPiwGjU.c4zC571y5KpIvvde"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Salamander Fire Snake",
+      "page": 266,
+      "cr": "1",
+      "warnings": []
+    }
+  }
+}

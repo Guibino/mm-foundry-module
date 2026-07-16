@@ -1,6 +1,6 @@
 {
-  "_id": "tfpvFwSiHvmpxMd9",
-  "_key": "!actors!tfpvFwSiHvmpxMd9",
+  "_id": "s4f1Xa8VY6o5q9ba",
+  "_key": "!actors!s4f1Xa8VY6o5q9ba",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Yuan-ti Infiltrator",
   "type": "npc",
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 11,
         "formula": ""
       },
       "hp": {
@@ -51,7 +51,8 @@
         "walk": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -66,9 +67,9 @@
         "custom": ""
       },
       "alignment": "Neutro e Mau",
-      "cr": 0,
+      "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -80,7 +81,9 @@
     "traits": {
       "size": "med",
       "di": {
-        "value": [],
+        "value": [
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
@@ -92,12 +95,14 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "poisoned"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Abissal, Comum, Dracônico"
       }
     },
     "skills": {
@@ -128,13 +133,13 @@
   },
   "items": [
     {
-      "_id": "JWytgciooqk32cWf",
-      "name": "Magic Resistance",
+      "_id": "O2oEhaFmYLZpdEPr",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yuan-ti has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -158,7 +163,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!tfpvFwSiHvmpxMd9.JWytgciooqk32cWf"
+      "_key": "!actors.items!s4f1Xa8VY6o5q9ba.O2oEhaFmYLZpdEPr"
     },
     {
       "_id": "0WFkciFuaYxMWRk8",
@@ -167,7 +172,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yuan-ti makes two Scimitar attacks.</p>",
+          "value": "<p>The yuan-ti makes two Cimitarra attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -192,16 +197,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!tfpvFwSiHvmpxMd9.0WFkciFuaYxMWRk8"
+      "_key": "!actors.items!s4f1Xa8VY6o5q9ba.0WFkciFuaYxMWRk8"
     },
     {
-      "_id": "lE4J7NT57aoKq55N",
-      "name": "Scimitar",
+      "_id": "DBAf91Y0SchslAs1",
+      "name": "Cimitarra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 4 (1d6 + l) Cortante de dano . .</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 4 (1d6 + 1) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -219,8 +224,8 @@
           "subtype": ""
         },
         "activities": {
-          "GUzQmHxZdmyMtqUu": {
-            "_id": "GUzQmHxZdmyMtqUu",
+          "nyFwWtibxEUGbBO9": {
+            "_id": "nyFwWtibxEUGbBO9",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -241,15 +246,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "1",
                   "types": [
                     "slashing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "1d6+l"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -267,13 +272,13 @@
           "mechanics": {
             "toHit": 3,
             "attackType": "melee",
-            "damageFormula": "1d6+l",
+            "damageFormula": "1d6+1",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!tfpvFwSiHvmpxMd9.lE4J7NT57aoKq55N"
+      "_key": "!actors.items!s4f1Xa8VY6o5q9ba.DBAf91Y0SchslAs1"
     },
     {
       "_id": "ZukdCV4K7Ne4G0Wh",
@@ -282,7 +287,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +4, range 120 ft. Acerto: 9 -(2d6 + 2) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +4, distância 36 m. Acerto: 9 (2d6 + 2) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -320,7 +325,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "poison"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -329,12 +352,14 @@
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "ranged"
+            "attackType": "ranged",
+            "damageFormula": "2d6+2",
+            "damageType": "poison"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!tfpvFwSiHvmpxMd9.ZukdCV4K7Ne4G0Wh"
+      "_key": "!actors.items!s4f1Xa8VY6o5q9ba.ZukdCV4K7Ne4G0Wh"
     },
     {
       "_id": "OFM6iBNJ8p1qxFHM",
@@ -343,7 +368,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yuan-ti casts one of the following spells, requiring no Material components and using <( _J Sabedoria as the spellcasting ability (spell save DC 12): z N LLi À Vontade: Animal Friendship (snakes only) z 2/Dia: Suggestion en YUAN-Tl MALISON (TYPE 1) Medium Monstrosity, Neutral Evil AC 12 Iniciativa +2 (12) HP 66 (12d8+ 12) Speed 30 ft., Climb 30 ft. (snake form onl y) MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>The yuan-ti casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save CD 12):</p>",
           "chat": ""
         },
         "activation": {
@@ -368,14 +393,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!tfpvFwSiHvmpxMd9.OFM6iBNJ8p1qxFHM"
+      "_key": "!actors.items!s4f1Xa8VY6o5q9ba.OFM6iBNJ8p1qxFHM"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Yuan-ti Infiltrator",
-      "page": 344,
-      "cr": "0",
+      "page": 342,
+      "cr": "1",
       "warnings": []
     }
   }

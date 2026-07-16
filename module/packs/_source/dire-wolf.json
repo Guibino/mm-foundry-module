@@ -1,0 +1,250 @@
+{
+  "_id": "T7aNIk6dZ6coulU2",
+  "_key": "!actors!T7aNIk6dZ6coulU2",
+  "folder": "9eORFRgLi2o0urFB",
+  "name": "Dire Wolf",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/dire-wolf.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 17,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 0
+      },
+      "con": {
+        "value": 15,
+        "proficient": 0
+      },
+      "int": {
+        "value": 3,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 7,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 14,
+        "formula": ""
+      },
+      "hp": {
+        "value": 22,
+        "max": 22,
+        "formula": "3d10 + 6",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 50
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 1,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Dire Wolf",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/dire-wolf.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "Hwp0SzK957eScA8X",
+      "name": "Táticas de Matilha",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura tem Vantagem em uma rolagem de ataque contra uma criatura se pelo menos um dos aliados dela estiver a até 1,5 m do alvo e esse aliado não estiver com a condição Incapacitado.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!T7aNIk6dZ6coulU2.Hwp0SzK957eScA8X"
+    },
+    {
+      "_id": "1cCSI4fYvbjQc5gH",
+      "name": "Mordida",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 8 (1d10 + 3) dano perfurante. If o alvo is a Large or smaller creature, it fica com a condição Caído.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "680tawsIi9oAHPP5": {
+            "_id": "680tawsIi9oAHPP5",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 10,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "1d10+3",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!T7aNIk6dZ6coulU2.1cCSI4fYvbjQc5gH"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Dire Wolf",
+      "page": 352,
+      "cr": "1",
+      "warnings": []
+    }
+  }
+}

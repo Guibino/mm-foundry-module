@@ -1,8 +1,8 @@
 {
-  "_id": "K2neipxhbSnAPjRX",
-  "_key": "!actors!K2neipxhbSnAPjRX",
+  "_id": "5Wsgf3Av8pGoGLzM",
+  "_key": "!actors!5Wsgf3Av8pGoGLzM",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Jovem Prateado Dragão",
+  "name": "Young Silver Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/young-silver-dragon.webp",
   "system": {
@@ -64,14 +64,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Metal lic",
+        "subtype": "metallic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Bom",
       "cr": 9,
       "xp": {
-        "value": 5000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -105,10 +105,23 @@
         "custom": "Comum, Dracônico"
       }
     },
-    "skills": {}
+    "skills": {
+      "his": {
+        "value": 2,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Jovem Prateado Dragão",
+    "name": "Young Silver Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -126,7 +139,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of Paralyzing Breath.</p>",
+          "value": "<p>The dragon makes three Dilacerar attacks. It can replace one attack with a use of Sopro Paralisante.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,16 +164,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!K2neipxhbSnAPjRX.pWNImciB1lMAksk9"
+      "_key": "!actors.items!5Wsgf3Av8pGoGLzM.pWNImciB1lMAksk9"
     },
     {
-      "_id": "jErpej47FzEQOyTm",
-      "name": "Rend",
+      "_id": "1guWksBj2ADEe7cJ",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Melee Attack~ Roll:+ l 0, alcance l 0 ft. Acerto: 15 (2d8 + 6) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 3 m. Acerto: 15 (2d8 + 6) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -177,27 +190,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "EOjEDxDdVCac5NqB": {
+            "_id": "EOjEDxDdVCac5NqB",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "6",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 10,
+            "attackType": "melee",
             "damageFormula": "2d8+6",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!K2neipxhbSnAPjRX.jErpej47FzEQOyTm"
+      "_key": "!actors.items!5Wsgf3Av8pGoGLzM.1guWksBj2ADEe7cJ"
     },
     {
-      "_id": "0dNSQh0V01hbTeun",
-      "name": "Frio Breath (Recharge 5-6)",
+      "_id": "nn1i3xfxUvaQ85Yk",
+      "name": "Sopro de Frio (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 17, cada criatura in a 30-foot Cone. Falha: 49 (11d8) Frio de dano. Sucesso: Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 17, cada criatura in a 9 m Cone. 49 (11d8) dano de frio. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -221,89 +278,8 @@
           "subtype": ""
         },
         "activities": {
-          "5dRH5lOF8MtaTTsY": {
-            "_id": "5dRH5lOF8MtaTTsY",
-            "type": "save",
-            "activation": {
-              "type": "action",
-              "value": null,
-              "override": true,
-              "condition": ""
-            },
-            "save": {
-              "ability": [
-                "con"
-              ],
-              "dc": {
-                "calculation": "",
-                "formula": "17"
-              }
-            },
-            "damage": {
-              "onSave": "half",
-              "parts": [
-                {
-                  "number": 11,
-                  "denomination": 8,
-                  "bonus": "",
-                  "types": [
-                    "cold"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
-            }
-          }
-        }
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {
-            "damageFormula": "11d8",
-            "damageType": "cold",
-            "saveDc": 17,
-            "saveAbility": "con"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!K2neipxhbSnAPjRX.0dNSQh0V01hbTeun"
-    },
-    {
-      "_id": "ckcBCgd2J8MSKOlN",
-      "name": "Paralyzing Breath",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 17, cada criatura in a 30-foot Cone. First Falha: The-target has the Incapacitado condition until the end of its next turn, when it repeats the save. Second Falha: The tar- 0 . get has the Paralisado condition, and it repeats the save L.LJ at the end of each of its turns, ending the effect on itself D.. z z on a success. After l minute, it succeeds automatically. ADULT SILVER DRAGON H uge D ragon (Metallic), Lawful Good AC 19 Iniciativa + 10 (20) HP 216 (16d12 + 112) Speed 40 ft., Fly 80 ft. MOD S AVE MOD S AVE MO D S AVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {
-          "J3V57dAQaW3yx5aP": {
-            "_id": "J3V57dAQaW3yx5aP",
+          "RppwIT5exFrgQdaS": {
+            "_id": "RppwIT5exFrgQdaS",
             "type": "save",
             "activation": {
               "type": "action",
@@ -336,13 +312,74 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!K2neipxhbSnAPjRX.ckcBCgd2J8MSKOlN"
+      "_key": "!actors.items!5Wsgf3Av8pGoGLzM.nn1i3xfxUvaQ85Yk"
+    },
+    {
+      "_id": "2bAPTrS825K0G8hN",
+      "name": "Sopro Paralisante",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Constituição: CD 17, cada criatura in a 9 m Cone. Falha: O alvo fica com a condição Incapacitado until the end of its next turn, when it repeats the save. Falha: O alvo fica com a condição Paralisado, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "b3002D4EUChSCKg7": {
+            "_id": "b3002D4EUChSCKg7",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "17"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 17,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5Wsgf3Av8pGoGLzM.2bAPTrS825K0G8hN"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Young Silver Dragon",
-      "page": 280,
+      "page": 278,
       "cr": "9",
       "warnings": []
     }

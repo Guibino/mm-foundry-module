@@ -1,6 +1,6 @@
 {
-  "_id": "Y9ur3IhKk0fSjbsg",
-  "_key": "!actors!Y9ur3IhKk0fSjbsg",
+  "_id": "HAfYoQXbh7qBt9T2",
+  "_key": "!actors!HAfYoQXbh7qBt9T2",
   "folder": "EgPgmtpb4EiltKUV",
   "name": "Troll Limb",
   "type": "npc",
@@ -8,7 +8,7 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 78,
+        "value": 18,
         "proficient": 0
       },
       "dex": {
@@ -48,10 +48,11 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 20
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -66,9 +67,9 @@
         "custom": ""
       },
       "alignment": "Caótico e Mau",
-      "cr": 1,
+      "cr": 0.5,
       "xp": {
-        "value": 100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,7 +98,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
@@ -115,13 +116,13 @@
   },
   "items": [
     {
-      "_id": "THPxLEY4sV8xBTl7",
-      "name": "Regeneration",
+      "_id": "ck9V2I6Z257VKng1",
+      "name": "Regeneração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The limb regains 5 Pontos de Vida at the start of each of its turns. If the limb takes Ácido or Fogo dam- age, this trait doesn't function on the limb's next turn. The limb dies only if it starts its turn with 0 Pontos de Vida and doesn't regenerate ..</p>",
+          "value": "<p>The limb regains 5 Pontos de Vida at the start of each of its turns. If the limb takes Ácido or dano de fogo, this trait doesn't function on the limb's next turn. The limb dies only if it starts its turn with 0 Pontos de Vida and doesn't regenerate.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,7 +146,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Y9ur3IhKk0fSjbsg.THPxLEY4sV8xBTl7"
+      "_key": "!actors.items!HAfYoQXbh7qBt9T2.ck9V2I6Z257VKng1"
     },
     {
       "_id": "mfqYAgk2A6tN4sP4",
@@ -154,7 +155,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The limb uncannily has the same senses as a whole troll. If the limb isn't destroyed within 24 hours, roll 1d12. On a 12, the limb turns into a Troll. Otherwise, the limb withers away. A CTIO NS :><: LLI</p>",
+          "value": "<p>The limb uncannily has the same senses as a whole troll. If the limb isn't destroyed within 24 hours, roll 1d12. On a 12, the limb turns into a Troll. Otherwise, the limb withers away.</p>",
           "chat": ""
         },
         "activation": {
@@ -178,21 +179,22 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Y9ur3IhKk0fSjbsg.mfqYAgk2A6tN4sP4"
+      "_key": "!actors.items!HAfYoQXbh7qBt9T2.mfqYAgk2A6tN4sP4"
     },
     {
-      "_id": "lVDfyiTdcm2wxGWd",
-      "name": "Rend",
+      "_id": "wYRmaNcmhnv3vocQ",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 9 (2d4 + 4) f-</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 9 (2d4 + 4) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "",
-          "value": null
+          "type": "action",
+          "value": null,
+          "condition": ""
         },
         "uses": {
           "spent": 0,
@@ -203,58 +205,69 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "ra6F2SLHg0ZP1AnA": {
+            "_id": "ra6F2SLHg0ZP1AnA",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "4",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
             "toHit": 6,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d4+4",
+            "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Y9ur3IhKk0fSjbsg.lVDfyiTdcm2wxGWd"
-    },
-    {
-      "_id": "q8oAF9OzQvagz7xH",
-      "name": "Cortante de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>0 ULTROLOTH Yugoloth of Conspiracy and Control</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!Y9ur3IhKk0fSjbsg.q8oAF9OzQvagz7xH"
+      "_key": "!actors.items!HAfYoQXbh7qBt9T2.wYRmaNcmhnv3vocQ"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Troll Limb",
-      "page": 312,
-      "cr": "1",
+      "page": 310,
+      "cr": "1/2",
       "warnings": []
     }
   }

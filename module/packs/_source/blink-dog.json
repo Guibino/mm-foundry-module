@@ -1,6 +1,6 @@
 {
-  "_id": "r9bt5Z4TD1ThHSch",
-  "_key": "!actors!r9bt5Z4TD1ThHSch",
+  "_id": "WkmaDl5XJUW3oAzj",
+  "_key": "!actors!WkmaDl5XJUW3oAzj",
   "folder": "inkH4oLnh3yP5W9M",
   "name": "Blink Dog",
   "type": "npc",
@@ -8,15 +8,15 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 10,
+        "value": 12,
         "proficient": 0
       },
       "dex": {
-        "value": 10,
+        "value": 17,
         "proficient": 0
       },
       "con": {
-        "value": 10,
+        "value": 12,
         "proficient": 0
       },
       "int": {
@@ -24,11 +24,11 @@
         "proficient": 0
       },
       "wis": {
-        "value": 10,
+        "value": 13,
         "proficient": 0
       },
       "cha": {
-        "value": 10,
+        "value": 11,
         "proficient": 0
       }
     },
@@ -67,9 +67,9 @@
         "custom": ""
       },
       "alignment": "Leal e Bom",
-      "cr": 0,
+      "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -98,7 +98,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Blink Dog, understands Elvish and Sylvan"
+        "custom": "Blink Dog, understands Elvish and Sylvan but can't speak them"
       }
     },
     "skills": {
@@ -107,7 +107,7 @@
         "ability": "wis"
       },
       "ste": {
-        "value": 2,
+        "value": 1,
         "ability": "dex"
       }
     }
@@ -125,13 +125,13 @@
   },
   "items": [
     {
-      "_id": "8QC1TA7QdpRGzMJu",
-      "name": "Bite",
+      "_id": "5Qfj6tc1dCczD2Lw",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 5 (1d4 + 3) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 5 (1d4 + 3) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -149,8 +149,8 @@
           "subtype": ""
         },
         "activities": {
-          "ICvGtH5Rlox3fwoe": {
-            "_id": "ICvGtH5Rlox3fwoe",
+          "SF94Qv1bHeei421b": {
+            "_id": "SF94Qv1bHeei421b",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -203,16 +203,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!r9bt5Z4TD1ThHSch.8QC1TA7QdpRGzMJu"
+      "_key": "!actors.items!WkmaDl5XJUW3oAzj.5Qfj6tc1dCczD2Lw"
     },
     {
-      "_id": "Eiw1O5UhfUPi9ouk",
-      "name": "Teleport (Recharge 4-6)",
+      "_id": "Rgk5evzudEmygam3",
+      "name": "Teletransporte (Recharge 4)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dog teleports up to 40 feet to an unoccupied space it can see. BLINK D OG I BL OB OF ANNIHI L AT ION BLOB OF ANNIHILATION All-Consuming Cosmic Entropy Unleashed</p>",
+          "value": "<p>The dog teleports up to 12 m to an unoccupied space it can see.</p>",
           "chat": ""
         },
         "activation": {
@@ -243,17 +243,15 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!r9bt5Z4TD1ThHSch.Eiw1O5UhfUPi9ouk"
+      "_key": "!actors.items!WkmaDl5XJUW3oAzj.Rgk5evzudEmygam3"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Blink Dog",
-      "page": 48,
-      "cr": "0",
-      "warnings": [
-        "Atributos nao reconhecidos"
-      ]
+      "page": 46,
+      "cr": "1/4",
+      "warnings": []
     }
   }
 }

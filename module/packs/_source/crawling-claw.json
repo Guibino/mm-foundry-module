@@ -1,6 +1,6 @@
 {
-  "_id": "nJDORbfRSHRNFfjV",
-  "_key": "!actors!nJDORbfRSHRNFfjV",
+  "_id": "yvXLUo30h7gbzRV0",
+  "_key": "!actors!yvXLUo30h7gbzRV0",
   "folder": "bKQUPthn1V2Yu6Bn",
   "name": "Crawling Claw",
   "type": "npc",
@@ -70,7 +70,7 @@
       "alignment": "Neutro e Mau",
       "cr": 0,
       "xp": {
-        "value": 10
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -82,7 +82,10 @@
     "traits": {
       "size": "tiny",
       "di": {
-        "value": [],
+        "value": [
+          "necrotic",
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
@@ -94,12 +97,18 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "incapacitated",
+          "poisoned"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Understands Common but can't speak"
+        "custom": "understands Common but can't speak"
       }
     },
     "skills": {}
@@ -115,11 +124,73 @@
     },
     "disposition": -1
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "HQbuO9qd4PK0RwKx",
+      "name": "Pancada",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 2 dano necrótico.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "YWINAI4OAQ6C0HTs": {
+            "_id": "YWINAI4OAQ6C0HTs",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "3",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 3,
+            "attackType": "melee"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!yvXLUo30h7gbzRV0.HQbuO9qd4PK0RwKx"
+    }
+  ],
   "flags": {
     "mm2024": {
       "nameEn": "Crawling Claw",
-      "page": 85,
+      "page": 83,
       "cr": "0",
       "warnings": []
     }

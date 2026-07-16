@@ -1,18 +1,18 @@
 {
-  "_id": "59z4LZgNS3ObJjmJ",
-  "_key": "!actors!59z4LZgNS3ObJjmJ",
+  "_id": "3hzAbJOUYQbGZ75w",
+  "_key": "!actors!3hzAbJOUYQbGZ75w",
   "folder": "UIhMG4gNrr0aGWHc",
-  "name": "Myconid Adulto",
+  "name": "Myconid Adult",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/myconid-adult.webp",
   "system": {
     "abilities": {
       "str": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "dex": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "con": {
@@ -20,11 +20,11 @@
         "proficient": 0
       },
       "int": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "wis": {
-        "value": 73,
+        "value": 13,
         "proficient": 0
       },
       "cha": {
@@ -69,7 +69,7 @@
       "alignment": "Leal e Neutro",
       "cr": 0.5,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -104,7 +104,7 @@
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Myconid Adulto",
+    "name": "Myconid Adult",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -116,13 +116,13 @@
   },
   "items": [
     {
-      "_id": "YiSH3nPLExF2L5Z8",
-      "name": "Sun Sickness",
+      "_id": "ZR0GldW4ApDuDz5u",
+      "name": "Enfermidade Solar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in sunlight, the myconid has Dis- advantage on D20 Tests. The myconid dies if it spends more than l hour in sunlight.</p>",
+          "value": "<p>While in sunlight, the myconid has Desvantagem on D20 Tests. The myconid dies if it spends more than 1 hour in sunlight.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +146,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!59z4LZgNS3ObJjmJ.YiSH3nPLExF2L5Z8"
+      "_key": "!actors.items!3hzAbJOUYQbGZ75w.ZR0GldW4ApDuDz5u"
     },
     {
-      "_id": "meYRjje324HWlUMA",
-      "name": "Slam",
+      "_id": "87p1OvXOPpE79ltu",
+      "name": "Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 5 ft. Acerto: 4 (1d8) Concussão de dano plus 3 (1d6) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 1,5 m. Acerto: 4 (1d8) dano de concussão mais 3 (1d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -173,8 +173,8 @@
           "subtype": ""
         },
         "activities": {
-          "rKKxRZrhJGXb7JxK": {
-            "_id": "rKKxRZrhJGXb7JxK",
+          "yFuSaZYOwz8Hnm5E": {
+            "_id": "yFuSaZYOwz8Hnm5E",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -227,7 +227,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!59z4LZgNS3ObJjmJ.meYRjje324HWlUMA"
+      "_key": "!actors.items!3hzAbJOUYQbGZ75w.87p1OvXOPpE79ltu"
     },
     {
       "_id": "Dc6bB2fVTtckUiXM",
@@ -236,7 +236,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 11, uma criatura the myconid can see within 10 feet. Falha: The target has the Atordoado condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After l minute, it suc- ceeds automatically.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 11, uma criatura the myconid can see within 3 m. O alvo fica com a condição Atordoado and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</p>",
           "chat": ""
         },
         "activation": {
@@ -293,7 +293,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!59z4LZgNS3ObJjmJ.Dc6bB2fVTtckUiXM"
+      "_key": "!actors.items!3hzAbJOUYQbGZ75w.Dc6bB2fVTtckUiXM"
     },
     {
       "_id": "DCoAjw2VzfcrNxt5",
@@ -302,7 +302,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The myconid expels spores in a 30-foot</p>",
+          "value": "<p>The myconid expels spores in a 9 m Emanation originating from itself. Creatures in that area with an Inteligência score of 2 or higher that aren't Constructs, Elementals, or Undead gain telepatia with a distância of 9 m for 1 hour.</p>",
           "chat": ""
         },
         "activation": {
@@ -327,47 +327,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!59z4LZgNS3ObJjmJ.DCoAjw2VzfcrNxt5"
-    },
-    {
-      "_id": "dmaSOAlv3nFVqp4t",
-      "name": "Emanation originating from itself",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Creatures in that area with an Inteligência score of 2 or higher that aren't Constructs, Elementals, or Undead gain telepatia with a range of 30 feet for 1 hour. MYCONID SPORE SERVANT Medium or Small Plant, Unaligned I AC 13 Iniciativa +l ( 11) HP 37 (5d8 + 15) Speed 20 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!59z4LZgNS3ObJjmJ.dmaSOAlv3nFVqp4t"
+      "_key": "!actors.items!3hzAbJOUYQbGZ75w.DCoAjw2VzfcrNxt5"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Myconid Adult",
-      "page": 225,
+      "page": 223,
       "cr": "1/2",
       "warnings": []
     }

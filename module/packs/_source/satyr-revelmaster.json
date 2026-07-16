@@ -1,6 +1,6 @@
 {
-  "_id": "Y30ibW8OvoQtlkjy",
-  "_key": "!actors!Y30ibW8OvoQtlkjy",
+  "_id": "yIRmZdUUpX3jRSoy",
+  "_key": "!actors!yIRmZdUUpX3jRSoy",
   "folder": "inkH4oLnh3yP5W9M",
   "name": "Satyr Revelmaster",
   "type": "npc",
@@ -68,7 +68,7 @@
       "alignment": "Caótico e Neutro",
       "cr": 6,
       "xp": {
-        "value": 2300
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,10 +97,18 @@
       },
       "languages": {
         "value": [],
-        "custom": "Com mon, Élfico, Silvestre"
+        "custom": "Comum, Élfico, Silvestre"
       }
     },
     "skills": {
+      "acr": {
+        "value": 2,
+        "ability": "dex"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
       "prf": {
         "value": 2,
         "ability": "cha"
@@ -120,13 +128,13 @@
   },
   "items": [
     {
-      "_id": "GGrB6MwITFnUtdzq",
-      "name": "Magic Resistance",
+      "_id": "LVDWsDJ9gLulStsy",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The satyr has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -150,7 +158,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Y30ibW8OvoQtlkjy.GGrB6MwITFnUtdzq"
+      "_key": "!actors.items!yIRmZdUUpX3jRSoy.LVDWsDJ9gLulStsy"
     },
     {
       "_id": "xRI41hIScEOb6W7x",
@@ -184,7 +192,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Y30ibW8OvoQtlkjy.xRI41hIScEOb6W7x"
+      "_key": "!actors.items!yIRmZdUUpX3jRSoy.xRI41hIScEOb6W7x"
     },
     {
       "_id": "UTblGOrIZ1wHgQHh",
@@ -193,7 +201,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 13 (2d8 + Concussão de dano, and o alvo has the Enfeitiçado condition until the start of the satyr's next turn.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 13 (2d8 + 4) dano de concussão, and o alvo fica com a condição Enfeitiçado until the start of the satyr's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -231,7 +239,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "4",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -240,21 +266,23 @@
         "mm2024": {
           "mechanics": {
             "toHit": 7,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d8+4",
+            "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Y30ibW8OvoQtlkjy.UTblGOrIZ1wHgQHh"
+      "_key": "!actors.items!yIRmZdUUpX3jRSoy.UTblGOrIZ1wHgQHh"
     },
     {
       "_id": "goDA7HPnrweXZq3R",
-      "name": "Fey Melody (Recharge 4-6)",
+      "name": "Fey Melody (Recharge 4)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The satyr conjures a charming or frightening song: Sabedoria Teste de Resistência: DC 14, each enemy in a 60-foot Emanation originating from the satyr. Falha: The-target is subjected to the song's effect:</p>",
+          "value": "<p>The satyr conjures a charming or frightening song. Teste de Resistência de Sabedoria: CD 14, each enemy in a 18 m Emanation originating from the satyr. O alvo is subjected to the song's effect:\nO alvo fica com a condição Enfeitiçado for 1 minute. While Enfeitiçado, o alvo fica com a condição Incapacitado and uses all its movement to dance in place. The effect ends on o alvo if it takes any de dano.\n10 (2d6 + 3) dano psíquico, and o alvo fica com a condição Amedrontado for 1 minute. If o alvo ends its turn out of line of sight from the satyr, the condição ends on it.</p>",
           "chat": ""
         },
         "activation": {
@@ -312,81 +340,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Y30ibW8OvoQtlkjy.goDA7HPnrweXZq3R"
-    },
-    {
-      "_id": "0YoPvCF30nN045e6",
-      "name": "Charming",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The target has the Enfeitiçado condition for l minute. While Enfeitiçado, o alvo has the Inca- • pacitated condition and uses all its movement to dance in place. The effect ends on o alvo if - it takes • any de dano. z</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!Y30ibW8OvoQtlkjy.0YoPvCF30nN045e6"
-    },
-    {
-      "_id": "CqxhuLPYTJ9L9cx1",
-      "name": "Frightening",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>10 (2d6 + 3) Psíquico de dano, and the tar- 0:: If the <t get has the Amedrontado condition for 1 minute. 2 target ends its turn out of line of sight from the satyr, - N z the condition ends on it. 0 SCARECRO W Servant of Superstition</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!Y30ibW8OvoQtlkjy.CqxhuLPYTJ9L9cx1"
+      "_key": "!actors.items!yIRmZdUUpX3jRSoy.goDA7HPnrweXZq3R"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Satyr Revelmaster",
-      "page": 270,
+      "page": 268,
       "cr": "6",
       "warnings": []
     }

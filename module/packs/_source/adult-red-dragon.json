@@ -1,8 +1,8 @@
 {
-  "_id": "VZ0ki8QsUEYinCEM",
-  "_key": "!actors!VZ0ki8QsUEYinCEM",
+  "_id": "gGpVdGjWApHz9Kfs",
+  "_key": "!actors!gGpVdGjWApHz9Kfs",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Adulto Vermelho Dragão",
+  "name": "Adult Red Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/adult-red-dragon.webp",
   "system": {
@@ -48,7 +48,9 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40,
+        "climb": 40,
+        "fly": 80
       },
       "senses": {
         "units": "ft",
@@ -63,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Chromat ic",
+        "subtype": "chromatic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Mau",
       "cr": 17,
       "xp": {
-        "value": 18000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -110,13 +112,13 @@
         "ability": "wis"
       },
       "ste": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       }
     }
   },
   "prototypeToken": {
-    "name": "Adulto Vermelho Dragão",
+    "name": "Adult Red Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -129,12 +131,12 @@
   "items": [
     {
       "_id": "mdQQvojWlgHBY1XS",
-      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "name": "Resistência Lendária",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the dragon fails a saving throw, it can choose to suc- ceed instead.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -143,13 +145,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "3",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -163,7 +160,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VZ0ki8QsUEYinCEM.mdQQvojWlgHBY1XS"
+      "_key": "!actors.items!gGpVdGjWApHz9Kfs.mdQQvojWlgHBY1XS"
     },
     {
       "_id": "KTChn9nXXGhZT7zg",
@@ -172,7 +169,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of Conjuração to cast w Scorching Ray. ~ Rend. Rolagem de Ataque Corpo a Corpo: + 14, alcance l 0 ft. Acerto: 13 ( 1d1 0 Vl -t 8) Cortante de dano plus 5 (2d4) Fogo de dano.</p>",
+          "value": "<p>The dragon makes three Dilacerar attacks. It can replace one attack with a use of Conjuração to cast Scorching Ray.</p>",
           "chat": ""
         },
         "activation": {
@@ -193,23 +190,101 @@
       },
       "flags": {
         "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!gGpVdGjWApHz9Kfs.KTChn9nXXGhZT7zg"
+    },
+    {
+      "_id": "fb14w8pULHLpDhe6",
+      "name": "Dilacerar",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 3 m. Acerto: 13 (1d10 + 8) dano cortante mais 5 (2d4) dano de fogo.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "MPEaNoja4mFJRbWk": {
+            "_id": "MPEaNoja4mFJRbWk",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "14",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 10,
+                  "bonus": "8",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
           "mechanics": {
-            "damageFormula": "1d10Vl-t8",
+            "toHit": 14,
+            "attackType": "melee",
+            "damageFormula": "1d10+8",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VZ0ki8QsUEYinCEM.KTChn9nXXGhZT7zg"
+      "_key": "!actors.items!gGpVdGjWApHz9Kfs.fb14w8pULHLpDhe6"
     },
     {
-      "_id": "f31BBxpZ3NWjpHPM",
-      "name": "Fogo Breath (Recharge 5-6)",
+      "_id": "uXtF67EFV9YheZlO",
+      "name": "Sopro de Fogo (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Sa1Jing Throw: DC 21, cada criatura in a 60-foot Cone. Falha: 59 (l 7d6)</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 21, cada criatura in a 18 m Cone. 59 (17d6) dano de fogo. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -232,49 +307,42 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "lQ8tQfgIl6grsaHm": {
+            "_id": "lQ8tQfgIl6grsaHm",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "21"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 21,
+            "saveAbility": "dex"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VZ0ki8QsUEYinCEM.f31BBxpZ3NWjpHPM"
-    },
-    {
-      "_id": "XN7p0UQDoKnXwEjL",
-      "name": "Fogo de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Sucesso: Metade do dano.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!VZ0ki8QsUEYinCEM.XN7p0UQDoKnXwEjL"
+      "_key": "!actors.items!gGpVdGjWApHz9Kfs.uXtF67EFV9YheZlO"
     },
     {
       "_id": "0MA8h6LwEASdYAGn",
@@ -308,7 +376,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VZ0ki8QsUEYinCEM.0MA8h6LwEASdYAGn"
+      "_key": "!actors.items!gGpVdGjWApHz9Kfs.0MA8h6LwEASdYAGn"
     },
     {
       "_id": "DXq2WlRIEMuFP6PL",
@@ -317,7 +385,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon uses Conjuração to cast Scorch- ing Ray. The dragon can't take this action again until the start of its next turn.</p>",
+          "value": "<p>The dragon uses Conjuração to cast Scorching Ray. The dragon can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -342,16 +410,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VZ0ki8QsUEYinCEM.DXq2WlRIEMuFP6PL"
+      "_key": "!actors.items!gGpVdGjWApHz9Kfs.DXq2WlRIEMuFP6PL"
     },
     {
-      "_id": "OyHE8kKiQO8oBbbo",
-      "name": "Pounce",
+      "_id": "rFdIvfE7f27QkhUZ",
+      "name": "Bote",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon moves up to half its Speed, and it makes one Rend attack. RED DRAGONS 6_ 255 ADULT RED DRAGON Adult red dragons are tyrants that claim vast do- mains and might command armies of followers or significant magical resources. Red dragons rarely pay attention to the nations and claims of smaller creatures, and they might consider entire cities part of their realm. Most red dragons are inattentive rul- ers, though, spending decades focused on their own comforts, hoards, or magical concerns within their lairs. But when their attention returns to their terri- tories, if they find matters not to their liking, whole lands might burn. ANCIENT RED DRAGON Ancient red dragons number among the most feared and destructive beings in the multiverse. Few can withstand the wrath of an ancient red dragon that turns its mind toward devastation . These dragons ' greed matches their ruinous potential, and they col- lect vast hoards studded with storied treasures and magic items. Their lairs frequently tap into volcanic depths and might pierce other planes of existence, bringing servants from the Elemental Plane of Fogo or the Lower Planes into their service. ANCIENT RED DRAGON 0 Gargantuan Dragon (Chromatic), Chaotic f l)i/ AC 22 Iniciativa + 14 (24) HP 507 (26d20 + 234) Speed 40 ft ., Climb 40 ft., Fly 80 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>A criatura se move até metade do seu Deslocamento e faz um ataque de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -376,7 +444,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VZ0ki8QsUEYinCEM.OyHE8kKiQO8oBbbo"
+      "_key": "!actors.items!gGpVdGjWApHz9Kfs.rFdIvfE7f27QkhUZ"
     },
     {
       "_id": "31XriACivgUPP6iT",
@@ -385,7 +453,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (sp_ell save DC 20, +12 to hit with spell attacks): À Vontade: Command (level 2 version), Detect Magic, Scorching Ray 1/Dia: Fogoball</p>",
+          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 20, +12 to hit with spell attacks):</p>",
           "chat": ""
         },
         "activation": {
@@ -436,13 +504,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VZ0ki8QsUEYinCEM.31XriACivgUPP6iT"
+      "_key": "!actors.items!gGpVdGjWApHz9Kfs.31XriACivgUPP6iT"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Adult Red Dragon",
-      "page": 257,
+      "page": 255,
       "cr": "17",
       "warnings": []
     }

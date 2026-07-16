@@ -1,6 +1,6 @@
 {
-  "_id": "auKgIlsgDqwxl0XR",
-  "_key": "!actors!auKgIlsgDqwxl0XR",
+  "_id": "0eUcKxDKyy4FVan0",
+  "_key": "!actors!0eUcKxDKyy4FVan0",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Displacer Beast",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 76,
         "max": 76,
-        "formula": "9d1 0 + 27",
+        "formula": "9d10 + 27",
         "temp": null,
         "tempmax": null
       },
@@ -51,7 +51,8 @@
         "walk": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -68,7 +69,7 @@
       "alignment": "Leal e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,7 +98,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Understands Sylvan but can t speak"
+        "custom": "understands Sylvan but can't speak"
       }
     },
     "skills": {}
@@ -121,7 +122,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the displacer beast is subjected to an effect that allows it to make a saving throw to take only half de dano, it instead takes no de dano if it succeeds on the save and half de dano if it fails. It can't use this trait if it has the Incapacitado condition.</p>",
+          "value": "<p>If the displacer beast is subjected to an effect that allows it to make a saving throw to take only half de dano, it instead takes no de dano if it succeeds on the save and half de dano if it fails. It can't use this trait if it fica com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,7 +146,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!auKgIlsgDqwxl0XR.By5cHd8FAJZHLCjR"
+      "_key": "!actors.items!0eUcKxDKyy4FVan0.By5cHd8FAJZHLCjR"
     },
     {
       "_id": "FriiddGQqqnidw3J",
@@ -154,7 +155,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Attack rolls against the displacer beast have Disadvantage, since it projects an illusion that makes it appear to be near its actual location. This trait is suppressed while the displacer beast has the Incapac- itated condition.</p>",
+          "value": "<p>Attack rolls against the displacer beast have Desvantagem, since it projects an illusion that makes it appear to be near its actual location. This trait is suppressed while the displacer beast fica com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -178,7 +179,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!auKgIlsgDqwxl0XR.FriiddGQqqnidw3J"
+      "_key": "!actors.items!0eUcKxDKyy4FVan0.FriiddGQqqnidw3J"
     },
     {
       "_id": "UMRrTcjhdM1HYekv",
@@ -187,7 +188,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The displacer beast makes one Rend at- tack and one Tentacle attack.</p>",
+          "value": "<p>The displacer beast makes one Dilacerar attack and one Tentáculo attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -212,16 +213,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!auKgIlsgDqwxl0XR.UMRrTcjhdM1HYekv"
+      "_key": "!actors.items!0eUcKxDKyy4FVan0.UMRrTcjhdM1HYekv"
     },
     {
-      "_id": "7pSwbvQGv8vODi0e",
-      "name": "Rend",
+      "_id": "0B5hXtYKzrXalrC1",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 feet. Acerto: 9 (1d1 0 +' 4) Cortante de dano. If target is a Large or smaller creature, it has the Caído condition. w</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 9 (1d10 + 4) dano cortante. If target is a Large or smaller creature, it fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -239,8 +240,8 @@
           "subtype": ""
         },
         "activities": {
-          "glwPU9rc9ProTVdn": {
-            "_id": "glwPU9rc9ProTVdn",
+          "841L5mGEHoNzcfoC": {
+            "_id": "841L5mGEHoNzcfoC",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -261,15 +262,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 1,
+                  "denomination": 10,
+                  "bonus": "4",
                   "types": [
                     "slashing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "1d10+'4"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -287,22 +288,22 @@
           "mechanics": {
             "toHit": 6,
             "attackType": "melee",
-            "damageFormula": "1d10+'4",
+            "damageFormula": "1d10+4",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!auKgIlsgDqwxl0XR.7pSwbvQGv8vODi0e"
+      "_key": "!actors.items!0eUcKxDKyy4FVan0.0B5hXtYKzrXalrC1"
     },
     {
-      "_id": "LgogDwOT5cPcsKEY",
-      "name": "Tentacle",
+      "_id": "fRbXPbWJhWlzuOLo",
+      "name": "Tentáculo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 10 feet. Acerto: 11 2 (2d6 + 4) Perfurante de dano. , < u DJINNI Genie of the Air</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 3 m. Acerto: 11 (2d6 + 4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -320,8 +321,8 @@
           "subtype": ""
         },
         "activities": {
-          "Fwpx9fj94bgK72HP": {
-            "_id": "Fwpx9fj94bgK72HP",
+          "nFrvzGKXaqG2ydHm": {
+            "_id": "nFrvzGKXaqG2ydHm",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -340,7 +341,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -349,18 +368,20 @@
         "mm2024": {
           "mechanics": {
             "toHit": 6,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d6+4",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!auKgIlsgDqwxl0XR.LgogDwOT5cPcsKEY"
+      "_key": "!actors.items!0eUcKxDKyy4FVan0.fRbXPbWJhWlzuOLo"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Displacer Beast",
-      "page": 100,
+      "page": 98,
       "cr": "3",
       "warnings": []
     }

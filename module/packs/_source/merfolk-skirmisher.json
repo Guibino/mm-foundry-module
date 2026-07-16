@@ -1,6 +1,6 @@
 {
-  "_id": "xEsfwjER5VOfRpJq",
-  "_key": "!actors!xEsfwjER5VOfRpJq",
+  "_id": "AR69PZrxoMNdFxOH",
+  "_key": "!actors!AR69PZrxoMNdFxOH",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Merfolk Skirmisher",
   "type": "npc",
@@ -20,7 +20,7 @@
         "proficient": 0
       },
       "int": {
-        "value": 77,
+        "value": 11,
         "proficient": 0
       },
       "wis": {
@@ -28,14 +28,14 @@
         "proficient": 0
       },
       "cha": {
-        "value": 72,
+        "value": 12,
         "proficient": 0
       }
     },
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 11,
         "formula": ""
       },
       "hp": {
@@ -48,6 +48,7 @@
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 10,
         "swim": 40
       },
       "senses": {
@@ -66,9 +67,9 @@
         "custom": ""
       },
       "alignment": "Neutro",
-      "cr": 0.875,
+      "cr": 0.125,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,7 +98,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Common Primordial (Aquan)"
+        "custom": "Comum, Primordial (Aquan)"
       }
     },
     "skills": {}
@@ -115,13 +116,13 @@
   },
   "items": [
     {
-      "_id": "CyHl7GPTpvTNTDAh",
-      "name": "Amphibious",
+      "_id": "IEijgNjIS8Pi3AIR",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The merfolk can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,16 +146,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xEsfwjER5VOfRpJq.CyHl7GPTpvTNTDAh"
+      "_key": "!actors.items!AR69PZrxoMNdFxOH.IEijgNjIS8Pi3AIR"
     },
     {
-      "_id": "cbnep2A76X00nQPT",
-      "name": "Ocean Spear",
+      "_id": "nRBDJh5c8agNIF9z",
+      "name": "Ocean Lança",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +2, alcance 5 ft. or range 20/60 ft. Acerto: 3 (1d6) Perfurante de dano plus 2 (7d4) Frio de dano. If o alvo is a creature, <( its Speed decreases by 10 feet until the end of its next w turn. Hit or Erro: The spear, magically returns to the z merfolk 1 s hand immediately after a ranged attack. MERFOLK Protectors and Explorers of the Seas</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +2, alcance 1,5 m. or distância 6/18 m. Acerto: 3 (1d6) dano perfurante mais 2 (1d4) dano de frio. If o alvo is uma criatura, its Speed decreases by 3 m until the end of its next turn. The spear magically returns to the merfolk's hand immediately after a ranged attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -172,8 +173,8 @@
           "subtype": ""
         },
         "activities": {
-          "iPYF86FEabSpVuX9": {
-            "_id": "iPYF86FEabSpVuX9",
+          "TajUYrDIF5nQllBP": {
+            "_id": "TajUYrDIF5nQllBP",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -226,14 +227,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xEsfwjER5VOfRpJq.cbnep2A76X00nQPT"
+      "_key": "!actors.items!AR69PZrxoMNdFxOH.nRBDJh5c8agNIF9z"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Merfolk Skirmisher",
-      "page": 211,
-      "cr": "7/8",
+      "page": 209,
+      "cr": "1/8",
       "warnings": []
     }
   }

@@ -1,8 +1,8 @@
 {
-  "_id": "3l6cEpWEV76zcj1Z",
-  "_key": "!actors!3l6cEpWEV76zcj1Z",
+  "_id": "NEYw1K1SmaDnzlrg",
+  "_key": "!actors!NEYw1K1SmaDnzlrg",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Half-dragon",
+  "name": "Half-Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/half-dragon.webp",
   "system": {
@@ -70,7 +70,7 @@
       "alignment": "Neutro",
       "cr": 5,
       "xp": {
-        "value": 1800
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -87,7 +87,7 @@
       },
       "dr": {
         "value": [],
-        "custom": "Damage type chosen for the Dracon ic"
+        "custom": "Damage type chosen for the Draconic Origin trait below"
       },
       "dv": {
         "value": [],
@@ -104,21 +104,21 @@
     },
     "skills": {
       "ath": {
-        "value": 1,
+        "value": 2,
         "ability": "str"
       },
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       },
       "ste": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       }
     }
   },
   "prototypeToken": {
-    "name": "Half-dragon",
+    "name": "Half-Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -136,7 +136,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The half-dragon is related to a type of dragon associated with one of the following de dano types (DM 1 s choice): Ácido, Frio, Fogo, Elétrico, or Poi- son. This choice affects other aspects of the stat block.</p>",
+          "value": "<p>The half-dragon is related to a type of dragon associated with one of the following de dano types (DM's choice): Ácido, Frio, Fogo, Elétrico, or Veneno. This choice affects other aspects of the stat block.</p>",
           "chat": ""
         },
         "activation": {
@@ -160,7 +160,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3l6cEpWEV76zcj1Z.C905m7bSdmKTU0rN"
+      "_key": "!actors.items!NEYw1K1SmaDnzlrg.C905m7bSdmKTU0rN"
     },
     {
       "_id": "rsUhiwpjQNPfZbXM",
@@ -169,7 +169,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The half-dragon makes two Claw attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Garra.</p>",
           "chat": ""
         },
         "activation": {
@@ -194,16 +194,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3l6cEpWEV76zcj1Z.rsUhiwpjQNPfZbXM"
+      "_key": "!actors.items!NEYw1K1SmaDnzlrg.rsUhiwpjQNPfZbXM"
     },
     {
-      "_id": "Ny2BSf1NlsKaMc9T",
-      "name": "Claw",
+      "_id": "FyTnUN8nOV3DfU67",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 10 ft. Acerto: 6 (1d4 + 4) Cortante de dano plus 7 (2d6) de dano of the type cho- sen for the Dracônico Origin trait.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 3 m. Acerto: 6 (1d4 + 4) dano cortante mais 7 (2d6) de dano of the type chosen for the Dracônico Origin trait.</p>",
           "chat": ""
         },
         "activation": {
@@ -221,8 +221,8 @@
           "subtype": ""
         },
         "activities": {
-          "NvAf7UynnlZGOTSf": {
-            "_id": "NvAf7UynnlZGOTSf",
+          "PsbVb7ro2hqmZhzc": {
+            "_id": "PsbVb7ro2hqmZhzc",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -275,16 +275,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3l6cEpWEV76zcj1Z.Ny2BSf1NlsKaMc9T"
+      "_key": "!actors.items!NEYw1K1SmaDnzlrg.FyTnUN8nOV3DfU67"
     },
     {
       "_id": "Euk7bVHgFIMrowsD",
-      "name": "Dragon's Breath (Recharge 5-6)",
+      "name": "Dragon's Breath (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 14, cada criatura in a 30-foot Cone. Falha: 28 (8d6) de dano of the type chosen for the Dracônico</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 14, cada criatura in a 9 m Cone. 28 (8d6) de dano of the type chosen for the Dracônico Origin trait. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -342,20 +342,20 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3l6cEpWEV76zcj1Z.Euk7bVHgFIMrowsD"
+      "_key": "!actors.items!NEYw1K1SmaDnzlrg.Euk7bVHgFIMrowsD"
     },
     {
-      "_id": "DK6SV75vNJJKtRrZ",
-      "name": "Origin trait",
+      "_id": "pQA9pVgUDg5nTnkn",
+      "name": "Salto",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sucesso: Metade do dano. _j us __J BON A CTIONS <( Le a p. The ha If- d r a go n ju m p s u p to 3 0 feet by spend i n g 10 feet of movement. H A L F- D RAG ON Warrior Created by Dragons</p>",
+          "value": "<p>A criatura salta até 9 m gastando 3 m de movimento.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "action",
+          "type": "bonus",
           "value": null,
           "condition": ""
         },
@@ -376,13 +376,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3l6cEpWEV76zcj1Z.DK6SV75vNJJKtRrZ"
+      "_key": "!actors.items!NEYw1K1SmaDnzlrg.pQA9pVgUDg5nTnkn"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Half-Dragon",
-      "page": 165,
+      "page": 163,
       "cr": "5",
       "warnings": []
     }

@@ -1,6 +1,6 @@
 {
-  "_id": "krVQ4uDpwogFmeLG",
-  "_key": "!actors!krVQ4uDpwogFmeLG",
+  "_id": "GfRbMRK2F1WI7rR5",
+  "_key": "!actors!GfRbMRK2F1WI7rR5",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Raven",
   "type": "npc",
@@ -48,6 +48,7 @@
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 10,
         "fly": 50
       },
       "senses": {
@@ -97,10 +98,15 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Raven",
@@ -115,13 +121,13 @@
   },
   "items": [
     {
-      "_id": "CRxRxqRA8In4PBWp",
-      "name": "Mimicry",
+      "_id": "70fZwwady4nwp2yu",
+      "name": "Mímica",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The raven can mimic simple sounds it has heard, such as a whisper or chitter. A hearer can dis- cern the sounds are imitations with a successful DC l 0 Sabedoria (Insight) check.</p>",
+          "value": "<p>The raven can mimic simple sounds it has heard, such as a whisper or chitter. A hearer can discern the sounds are imitations with a successful CD 10 Sabedoria (Insight) check.</p>",
           "chat": ""
         },
         "activation": {
@@ -141,20 +147,23 @@
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 10,
+            "saveAbility": "wis"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!krVQ4uDpwogFmeLG.CRxRxqRA8In4PBWp"
+      "_key": "!actors.items!GfRbMRK2F1WI7rR5.70fZwwady4nwp2yu"
     },
     {
-      "_id": "lSrkdsOkPuY3tFHo",
-      "name": "Beak",
+      "_id": "SfT5bKB7abk8lYCj",
+      "name": "Bico",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 1 Perfurante de dano. REEF SHARK Medium Beast, Unaligned AC 12 Iniciativa +2 (12) HP 22 (4d8 + 4) Sp eed 5 ft., Swim 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 1 dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -172,8 +181,8 @@
           "subtype": ""
         },
         "activities": {
-          "2njYhYyfSMLoKFKD": {
-            "_id": "2njYhYyfSMLoKFKD",
+          "wAArWrzgemdO8s8T": {
+            "_id": "wAArWrzgemdO8s8T",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -206,13 +215,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!krVQ4uDpwogFmeLG.lSrkdsOkPuY3tFHo"
+      "_key": "!actors.items!GfRbMRK2F1WI7rR5.SfT5bKB7abk8lYCj"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Raven",
-      "page": 370,
+      "page": 368,
       "cr": "0",
       "warnings": []
     }

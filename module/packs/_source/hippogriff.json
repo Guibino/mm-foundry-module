@@ -1,6 +1,6 @@
 {
-  "_id": "gMra7R7C3usxJ4TQ",
-  "_key": "!actors!gMra7R7C3usxJ4TQ",
+  "_id": "cqAf1t1qC3r5GwTm",
+  "_key": "!actors!cqAf1t1qC3r5GwTm",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Hippogriff",
   "type": "npc",
@@ -41,14 +41,15 @@
       "hp": {
         "value": 26,
         "max": 26,
-        "formula": "4d10+4",
+        "formula": "4d10 + 4",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40,
+        "fly": 60
       },
       "senses": {
         "units": "ft"
@@ -68,7 +69,7 @@
       "alignment": "Sem Tendência",
       "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -120,13 +121,13 @@
   },
   "items": [
     {
-      "_id": "72ZrHE98wO0p89j6",
-      "name": "Flyby",
+      "_id": "CcR2zUFLCkAtY3Gz",
+      "name": "Voo Rasante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The hippogriff doesn't provoke an Opportunity Attack when it flies out of an enemy 1 s alcance.</p>",
+          "value": "<p>A criatura não provoca Ataque de Oportunidade ao sair voando do alcance de um inimigo.</p>",
           "chat": ""
         },
         "activation": {
@@ -150,7 +151,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gMra7R7C3usxJ4TQ.72ZrHE98wO0p89j6"
+      "_key": "!actors.items!cqAf1t1qC3r5GwTm.CcR2zUFLCkAtY3Gz"
     },
     {
       "_id": "hJUQrG8gYmGovdT6",
@@ -159,7 +160,41 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The hippogriff makes two Rend attacks. V1 LL. 0 Rend. Rolagem de Ataque Corpo a Corpo: +5 ; alcance 5 ft. Acerto: 7 (1d8 + 3) X Cortante de dano. HIPPO G RIFF World-Traveling Hunter and Steed</p>",
+          "value": "<p>A criatura faz dois ataques de Dilacerar.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!cqAf1t1qC3r5GwTm.hJUQrG8gYmGovdT6"
+    },
+    {
+      "_id": "gXBUTiTJYUGDAtVd",
+      "name": "Dilacerar",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 7 (1d8 + 3) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -177,8 +212,8 @@
           "subtype": ""
         },
         "activities": {
-          "z0jMRi0I24rogNVs": {
-            "_id": "z0jMRi0I24rogNVs",
+          "Nf6idafpgfPblILL": {
+            "_id": "Nf6idafpgfPblILL",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -197,7 +232,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "3",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -206,18 +259,20 @@
         "mm2024": {
           "mechanics": {
             "toHit": 5,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d8+3",
+            "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gMra7R7C3usxJ4TQ.hJUQrG8gYmGovdT6"
+      "_key": "!actors.items!cqAf1t1qC3r5GwTm.gXBUTiTJYUGDAtVd"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Hippogriff",
-      "page": 171,
+      "page": 169,
       "cr": "1",
       "warnings": []
     }

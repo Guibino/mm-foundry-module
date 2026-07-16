@@ -1,6 +1,6 @@
 {
-  "_id": "t69gWeY3OkHZBtuZ",
-  "_key": "!actors!t69gWeY3OkHZBtuZ",
+  "_id": "ut2LJV0pHGBzbUsd",
+  "_key": "!actors!ut2LJV0pHGBzbUsd",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Vulture",
   "type": "npc",
@@ -69,7 +69,7 @@
       "alignment": "Sem Tendência",
       "cr": 0,
       "xp": {
-        "value": 1
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -98,10 +98,15 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Vulture",
@@ -116,13 +121,13 @@
   },
   "items": [
     {
-      "_id": "1yixE6Gy52iUU411",
-      "name": "Pack Tactics",
+      "_id": "mPeXDkAxMWiNKXNP",
+      "name": "Táticas de Matilha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The vulture has Advantage on an attack roll against a creature if at least one of the vulture's allies is within 5 feet of the creature and the ally doesn t have the Incapacitado condition.</p>",
+          "value": "<p>A criatura tem Vantagem em uma rolagem de ataque contra uma criatura se pelo menos um dos aliados dela estiver a até 1,5 m do alvo e esse aliado não estiver com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +151,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!t69gWeY3OkHZBtuZ.1yixE6Gy52iUU411"
+      "_key": "!actors.items!ut2LJV0pHGBzbUsd.mPeXDkAxMWiNKXNP"
     },
     {
-      "_id": "yagrCAH5tliBRaPR",
-      "name": "Beak",
+      "_id": "R7lmrgKyn7p2bCMa",
+      "name": "Bico",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 5 ft. Acerto: 2 (7d4) Perfurante de dano. iY TYR/\\NNOSAURUS RE X. WARHORSE Large Beast, Unaligned AC 11 Iniciativa +l (11) HP 19 (3d10 + 3) Spe ed 60 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 1,5 m. Acerto: 2 (1d4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -173,8 +178,8 @@
           "subtype": ""
         },
         "activities": {
-          "Aks6u6QeZPIBHf99": {
-            "_id": "Aks6u6QeZPIBHf99",
+          "9OSM9sDIBc2tDXI5": {
+            "_id": "9OSM9sDIBc2tDXI5",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -195,7 +200,7 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": 7,
+                  "number": 1,
                   "denomination": 4,
                   "bonus": "",
                   "types": [
@@ -221,19 +226,19 @@
           "mechanics": {
             "toHit": 2,
             "attackType": "melee",
-            "damageFormula": "7d4",
+            "damageFormula": "1d4",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!t69gWeY3OkHZBtuZ.yagrCAH5tliBRaPR"
+      "_key": "!actors.items!ut2LJV0pHGBzbUsd.R7lmrgKyn7p2bCMa"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Vulture",
-      "page": 374,
+      "page": 372,
       "cr": "0",
       "warnings": []
     }

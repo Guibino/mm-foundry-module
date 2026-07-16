@@ -1,6 +1,6 @@
 {
-  "_id": "GR4P2CjoXcyL2mjI",
-  "_key": "!actors!GR4P2CjoXcyL2mjI",
+  "_id": "zHCzdsiO6syllUZW",
+  "_key": "!actors!zHCzdsiO6syllUZW",
   "folder": "EgPgmtpb4EiltKUV",
   "name": "Ogre",
   "type": "npc",
@@ -48,10 +48,11 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -68,7 +69,7 @@
       "alignment": "Caótico e Mau",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,7 +98,7 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum, Gigante"
       }
     },
     "skills": {}
@@ -115,13 +116,13 @@
   },
   "items": [
     {
-      "_id": "gaHElt3lnmmDT2qC",
-      "name": "Greatclub",
+      "_id": "JzdIQE6cvPjBqaFD",
+      "name": "Clava Grande",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 13 (2d8 + 4) Concussão de dano. Ct::</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 13 (2d8 + 4) dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
@@ -139,8 +140,8 @@
           "subtype": ""
         },
         "activities": {
-          "WmuMwY3Bihvmc4Bl": {
-            "_id": "WmuMwY3Bihvmc4Bl",
+          "fqJ3WJ9GCtVpjzCJ": {
+            "_id": "fqJ3WJ9GCtVpjzCJ",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -193,16 +194,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GR4P2CjoXcyL2mjI.gaHElt3lnmmDT2qC"
+      "_key": "!actors.items!zHCzdsiO6syllUZW.JzdIQE6cvPjBqaFD"
     },
     {
-      "_id": "RLYRJ5DfdeuT8CYC",
-      "name": "I Javelin",
+      "_id": "R7QHwIHWRuJhayGj",
+      "name": "Azagaia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +6, alcance 5 ft. or I '-- range 30/120 ft. Acerto: 11 (2d6 + 4) Perfurante de dano. OGRILLON OGRE Large Gigante, Chaotic E 1Ji l AC 12 Iniciativa +0 (l 0) HP 52 (7d10 + 14) Speed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +6, alcance 1,5 m. or distância 9/36 m. Acerto: 11 (2d6 + 4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -220,8 +221,8 @@
           "subtype": ""
         },
         "activities": {
-          "e443wtasmdyqqBfF": {
-            "_id": "e443wtasmdyqqBfF",
+          "wqBFZOS3jZYc7fxe": {
+            "_id": "wqBFZOS3jZYc7fxe",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -274,13 +275,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GR4P2CjoXcyL2mjI.RLYRJ5DfdeuT8CYC"
+      "_key": "!actors.items!zHCzdsiO6syllUZW.R7QHwIHWRuJhayGj"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Ogre",
-      "page": 233,
+      "page": 231,
       "cr": "2",
       "warnings": []
     }

@@ -1,8 +1,8 @@
 {
-  "_id": "kmlj94O9sEsEtHGl",
-  "_key": "!actors!kmlj94O9sEsEtHGl",
+  "_id": "IgOTJqPWUY9iSDnd",
+  "_key": "!actors!IgOTJqPWUY9iSDnd",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Jovem Dourado Dragão",
+  "name": "Young Gold Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/young-gold-dragon.webp",
   "system": {
@@ -39,9 +39,9 @@
         "formula": ""
       },
       "hp": {
-        "value": 1,
-        "max": 1,
-        "formula": "",
+        "value": 178,
+        "max": 178,
+        "formula": "17d10 + 85",
         "temp": null,
         "tempmax": null
       },
@@ -65,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Metallic",
+        "subtype": "metallic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Bom",
       "cr": 10,
       "xp": {
-        "value": 5900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -108,7 +108,7 @@
     },
     "skills": {
       "ins": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       },
       "prc": {
@@ -116,13 +116,17 @@
         "ability": "wis"
       },
       "per": {
-        "value": 1,
+        "value": 2,
         "ability": "cha"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
       }
     }
   },
   "prototypeToken": {
-    "name": "Jovem Dourado Dragão",
+    "name": "Young Gold Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -134,13 +138,13 @@
   },
   "items": [
     {
-      "_id": "fDbPJ52nhao7tEu5",
-      "name": "Amphibious",
+      "_id": "0z18tsrsUJIO7Ecb",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -164,7 +168,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!kmlj94O9sEsEtHGl.fDbPJ52nhao7tEu5"
+      "_key": "!actors.items!IgOTJqPWUY9iSDnd.0z18tsrsUJIO7Ecb"
     },
     {
       "_id": "Rl4k9hdoaZ46hPV8",
@@ -173,7 +177,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of Weakening Breath.</p>",
+          "value": "<p>The dragon makes three Dilacerar attacks. It can replace one attack with a use of Sopro Enfraquecedor.</p>",
           "chat": ""
         },
         "activation": {
@@ -198,16 +202,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!kmlj94O9sEsEtHGl.Rl4k9hdoaZ46hPV8"
+      "_key": "!actors.items!IgOTJqPWUY9iSDnd.Rl4k9hdoaZ46hPV8"
     },
     {
-      "_id": "8cvq5vaf642zPO8Q",
-      "name": "Rend",
+      "_id": "jNl8CqtqTHBWIeHB",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 10 ft. Acerto: 17 (2d10 + 6) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 3 m. Acerto: 17 (2d10 + 6) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -225,8 +229,8 @@
           "subtype": ""
         },
         "activities": {
-          "QUOLwnZHwbCa3wZU": {
-            "_id": "QUOLwnZHwbCa3wZU",
+          "EXoTV22HRdZY15Zx": {
+            "_id": "EXoTV22HRdZY15Zx",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -279,16 +283,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!kmlj94O9sEsEtHGl.8cvq5vaf642zPO8Q"
+      "_key": "!actors.items!IgOTJqPWUY9iSDnd.jNl8CqtqTHBWIeHB"
     },
     {
-      "_id": "TCflEuiMKN3Nan5G",
-      "name": "Fogo Breath (Recharge 5-6)",
+      "_id": "AzBwbApirgAquoku",
+      "name": "Sopro de Fogo (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 17, cada criatura in a 30-foot Cone. Falha: 55 (10d10)</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 17, cada criatura in a 9 m Cone. 55 (10d10) dano de fogo. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -312,8 +316,8 @@
           "subtype": ""
         },
         "activities": {
-          "fPcuBiKayJ6P8uhg": {
-            "_id": "fPcuBiKayJ6P8uhg",
+          "nOhydfkULfPfDxhF": {
+            "_id": "nOhydfkULfPfDxhF",
             "type": "save",
             "activation": {
               "type": "action",
@@ -346,50 +350,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!kmlj94O9sEsEtHGl.TCflEuiMKN3Nan5G"
+      "_key": "!actors.items!IgOTJqPWUY9iSDnd.AzBwbApirgAquoku"
     },
     {
-      "_id": "g6S9OUSqo2qz9KTX",
-      "name": "Fogo de dano",
+      "_id": "gGeHkTRJvik8fVEK",
+      "name": "Sopro Enfraquecedor",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sucesso: Metade do dano.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!kmlj94O9sEsEtHGl.g6S9OUSqo2qz9KTX"
-    },
-    {
-      "_id": "AAFewc4ljiyfBxCZ",
-      "name": "Weakening Breath",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Força Teste de Resistência: DC 17, cada criatura that isn't currently affected by this breath in a 30-foot Cone. Falha: The target has Disadvantage on l/1 Força-based D20 Tests and subtracts 3 (1d6) from cc its de dano rolls. It repeats the save at the end of each cc of its turns, ending the effect on itself on a success. Af- z ter 1 minute, it succeeds automatically. _J ADULT GOLD DRAGON Hug e D ragon (Metallic) , Lawful Good AC 19 Iniciativa + 14 (24) H P 24 3 ( 1 8d1 2 + 12 6) Speed 40 ft., Fly 80 ft., Swim 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Teste de Resistência de Força: CD 17, cada criatura that isn't currently affected by this breath in a 9 m Cone. O alvo has Desvantagem on Força-based D20 Tests and subtracts 3 (1d6) from its de dano rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</p>",
           "chat": ""
         },
         "activation": {
@@ -407,8 +377,8 @@
           "subtype": ""
         },
         "activities": {
-          "gB2PYjwCd3V6aQB2": {
-            "_id": "gB2PYjwCd3V6aQB2",
+          "TYsXqWoVYSHgCUOd": {
+            "_id": "TYsXqWoVYSHgCUOd",
             "type": "save",
             "activation": {
               "type": "action",
@@ -441,17 +411,15 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!kmlj94O9sEsEtHGl.AAFewc4ljiyfBxCZ"
+      "_key": "!actors.items!IgOTJqPWUY9iSDnd.gGeHkTRJvik8fVEK"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Young Gold Dragon",
-      "page": 146,
+      "page": 144,
       "cr": "10",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "warnings": []
     }
   }
 }

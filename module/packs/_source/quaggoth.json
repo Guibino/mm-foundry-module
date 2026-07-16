@@ -1,6 +1,6 @@
 {
-  "_id": "VbRpilhGFuM2wCqN",
-  "_key": "!actors!VbRpilhGFuM2wCqN",
+  "_id": "7zHYZWFwxNcISise",
+  "_key": "!actors!7zHYZWFwxNcISise",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Quaggoth",
   "type": "npc",
@@ -52,7 +52,8 @@
         "climb": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 120
       },
       "init": {
         "ability": "dex",
@@ -69,7 +70,7 @@
       "alignment": "Caótico e Neutro",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -81,7 +82,9 @@
     "traits": {
       "size": "med",
       "di": {
-        "value": [],
+        "value": [
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
@@ -93,15 +96,22 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "poisoned"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum Inferior"
       }
     },
-    "skills": {}
+    "skills": {
+      "ath": {
+        "value": 1,
+        "ability": "str"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Quaggoth",
@@ -116,13 +126,13 @@
   },
   "items": [
     {
-      "_id": "NJhquLvQInCnQ4nm",
-      "name": "Bloodied Fury",
+      "_id": "riefslKJQR3Pg1VK",
+      "name": "Fúria Sangrenta",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While Bloodied, the quaggoth has Ad- vantage on attack rolls.</p>",
+          "value": "<p>While Bloodied, the quaggoth has Vantagem on attack rolls.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,7 +156,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VbRpilhGFuM2wCqN.NJhquLvQInCnQ4nm"
+      "_key": "!actors.items!7zHYZWFwxNcISise.riefslKJQR3Pg1VK"
     },
     {
       "_id": "o8IiXjyKVt4NLaDI",
@@ -155,7 +165,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The quaggoth makes two Claw attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Garra.</p>",
           "chat": ""
         },
         "activation": {
@@ -180,16 +190,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VbRpilhGFuM2wCqN.o8IiXjyKVt4NLaDI"
+      "_key": "!actors.items!7zHYZWFwxNcISise.o8IiXjyKVt4NLaDI"
     },
     {
-      "_id": "bQhwnAeDcApMEHDN",
-      "name": "Claw",
+      "_id": "WMu60ZZzcaa3IDgo",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 6 (1d6 + 3) z I w Cortante de dano, or 13 ~ (3d6 + 3) Cortante de dano if <( the quaggoth is Bloodied. .-- QUAGGOTH THONOT Medium Monstrosity, Chaotic Neutral AC 15 Iniciativa +l (11) HP 67 (9d8 + 27) Sp eed 30 ft., Climb 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 6 (1d6 + 3) dano cortante, or 13 (3d6 + 3) dano cortante if the quaggoth is Bloodied.</p>",
           "chat": ""
         },
         "activation": {
@@ -207,8 +217,8 @@
           "subtype": ""
         },
         "activities": {
-          "vmdlQ8PpIz3k3bXE": {
-            "_id": "vmdlQ8PpIz3k3bXE",
+          "hVDOyYOZbPNFYHIF": {
+            "_id": "hVDOyYOZbPNFYHIF",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -227,7 +237,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -236,18 +264,20 @@
         "mm2024": {
           "mechanics": {
             "toHit": 5,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d6+3",
+            "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VbRpilhGFuM2wCqN.bQhwnAeDcApMEHDN"
+      "_key": "!actors.items!7zHYZWFwxNcISise.WMu60ZZzcaa3IDgo"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Quaggoth",
-      "page": 253,
+      "page": 251,
       "cr": "2",
       "warnings": []
     }

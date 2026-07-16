@@ -1,6 +1,6 @@
 {
-  "_id": "D5b5s6DzwJMLXc9Q",
-  "_key": "!actors!D5b5s6DzwJMLXc9Q",
+  "_id": "DgCtox1rNjeNTenh",
+  "_key": "!actors!DgCtox1rNjeNTenh",
   "folder": "bKQUPthn1V2Yu6Bn",
   "name": "Mummy",
   "type": "npc",
@@ -69,7 +69,7 @@
       "alignment": "Leal e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -79,7 +79,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [
           "necrotic",
@@ -92,13 +92,18 @@
         "custom": ""
       },
       "dv": {
-        "value": [],
-        "custom": "Fi re"
+        "value": [
+          "fire"
+        ],
+        "custom": ""
       },
       "ci": {
         "value": [
           "charmed",
-          "exhaustion"
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "poisoned"
         ],
         "custom": ""
       },
@@ -128,7 +133,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mummy makes two Rotting Fist at- tacks and uses Dreadful Glare.</p>",
+          "value": "<p>The mummy makes two Rotting Punho attacks and uses Dreadful Glare.</p>",
           "chat": ""
         },
         "activation": {
@@ -153,16 +158,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!D5b5s6DzwJMLXc9Q.hc8tgBnhVx4lfAbz"
+      "_key": "!actors.items!DgCtox1rNjeNTenh.hc8tgBnhVx4lfAbz"
     },
     {
-      "_id": "0brJfqdZqEA0VyAJ",
-      "name": "Rotting Fist",
+      "_id": "vIDsIEX2GhxabeK9",
+      "name": "Rotting Punho",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 8 (1d10 + 3) Concussão de dano plus 10 (3d6) Necrótico de dano. If o alvo is a_ creature, it is cursed. While cursed, o alvo can't regain Pontos de Vida, its Hit Point maximum doesn't return to normal when nnishing a Long Rest, and its Hit Point maximum decreases by 10 (3d6) every 24 hours that elapse. A creature dies and - turns to dust if reduced to 0 Pontos de Vida by this attack . . Dreadful Glare. Sabedoria Teste de Resistência: DC 11, one crea- ture the mummy can see within 60 feet. Falha: The target has the Amedrontado condition until the end of the mummy's next turn. Sucesso: The target is immune to_ this mummy's Dreadful Glare for 24 hours. MUMMIES MUMMY LORD Those desperate to escape death sometimes make terrible bargains with wicked deities. Devoting their hearts to evil forces, these villains gain power over death and a cursed immortality that binds their minds and spirits within a desiccated corpse. Freed from mortal concerns, these mummy lords pursue their obsessions across ages. Most mummy lords linger amid the ruins of an- cient palaces or temples where they once held sway. Their age-old faith and ties to deathly forces grant them fearful magic, which they use to sow ruin and animate undead s ervant s. A mummy lord's heart embodies the pact that grants it immortality. Rather than bearing its heart within its corpse, a mummy lord removes and hides this accursed organ. As long as its heart isn't de- stroyed by fire, a mummy lord can return to unlife no matter what doom it meets. Mummy lords are usually consumed by ageless plots. Roll on or choose a result from the Mummy Lord Plots table to determine a mummy lord's an - cient agenda. MUMMIES MUMMY LORD PLOTS 1d8 The Mummy Lord Seeks To ... l Open a portal to the past, when its power was at its height. 2 Pe r form a ritual that can be attempted only once every eight hundred years. 3 Reclaim and resurrect a loved one's corpse. 4 Reconquer the lands that once composed its empire. 5 Recover the pieces of its lost heart. 6 Replace its descendant as the ruler of a realm. 7 Sacrifice a thousand souls to its god in return for true life. 8 Transform the people of an entire nation into U ndead servants. T H E SCROLL CO N TAINED A FOUL RITUAL TO R A ISE O NE -</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 8 (1d10 + 3) dano de concussão mais 10 (3d6) dano necrótico. If o alvo is uma criatura, it is cursed. While cursed, o alvo can't regain Pontos de Vida, its Hit Point maximum doesn't return to normal when finishing a Long Rest, and its Hit Point maximum decreases by 10 (3d6) every 24 hours that elapse. A creature dies and turns to dust if reduced to 0 Pontos de Vida by this attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -180,8 +185,8 @@
           "subtype": ""
         },
         "activities": {
-          "e2EKu3nz8awvBG7c": {
-            "_id": "e2EKu3nz8awvBG7c",
+          "60BHlwFXznsC6aIE": {
+            "_id": "60BHlwFXznsC6aIE",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -229,23 +234,21 @@
             "toHit": 5,
             "attackType": "melee",
             "damageFormula": "1d10+3",
-            "damageType": "bludgeoning",
-            "saveDc": 11,
-            "saveAbility": "wis"
+            "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!D5b5s6DzwJMLXc9Q.0brJfqdZqEA0VyAJ"
+      "_key": "!actors.items!DgCtox1rNjeNTenh.vIDsIEX2GhxabeK9"
     },
     {
-      "_id": "VVEQnHdOj39sdLxr",
-      "name": "Cursed Fate",
+      "_id": "0dmG0Kl3x5c5B5dO",
+      "name": "Dreadful Glare",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Whenever a creature other than the mummy or one of its allies casts a Divination spell while within 1 mile of the lair, the creature makes a DC 15 Constituição saving throw. On a failed MUMMY LORD Medium or Small Undead ( Cl er ic), Lawful ElJj/ AC 17 Iniciativa + l 0 (20) HP 187 (25d8 + 75) Speed 30 ft. MOD SAVE MOD SAVE M OD SAVE</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 11, uma criatura the mummy can see within 18 m. O alvo fica com a condição Amedrontado until the end of the mummy's next turn. O alvo is immune to this mummy's Dreadful Glare for 24 hours.</p>",
           "chat": ""
         },
         "activation": {
@@ -263,8 +266,8 @@
           "subtype": ""
         },
         "activities": {
-          "n6yR7atBUXeBXdit": {
-            "_id": "n6yR7atBUXeBXdit",
+          "1YllGSNwzRebeMA3": {
+            "_id": "1YllGSNwzRebeMA3",
             "type": "save",
             "activation": {
               "type": "action",
@@ -274,11 +277,11 @@
             },
             "save": {
               "ability": [
-                "con"
+                "wis"
               ],
               "dc": {
                 "calculation": "",
-                "formula": "15"
+                "formula": "11"
               }
             },
             "damage": {
@@ -291,19 +294,19 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "saveDc": 15,
-            "saveAbility": "con"
+            "saveDc": 11,
+            "saveAbility": "wis"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!D5b5s6DzwJMLXc9Q.VVEQnHdOj39sdLxr"
+      "_key": "!actors.items!DgCtox1rNjeNTenh.0dmG0Kl3x5c5B5dO"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Mummy",
-      "page": 221,
+      "page": 219,
       "cr": "3",
       "warnings": []
     }

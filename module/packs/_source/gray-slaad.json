@@ -1,6 +1,6 @@
 {
-  "_id": "ybrihs6eVbXVtZdL",
-  "_key": "!actors!ybrihs6eVbXVtZdL",
+  "_id": "bAodl2ZzOnM8theZ",
+  "_key": "!actors!bAodl2ZzOnM8theZ",
   "folder": "1nioWC3kx0YxX8qj",
   "name": "Gray Slaad",
   "type": "npc",
@@ -20,7 +20,7 @@
         "proficient": 0
       },
       "int": {
-        "value": 73,
+        "value": 13,
         "proficient": 0
       },
       "wis": {
@@ -28,7 +28,7 @@
         "proficient": 0
       },
       "cha": {
-        "value": 78,
+        "value": 18,
         "proficient": 0
       }
     },
@@ -52,7 +52,8 @@
       },
       "senses": {
         "units": "ft",
-        "darkvision": 60
+        "darkvision": 60,
+        "blindsight": 60
       },
       "init": {
         "ability": "dex",
@@ -69,7 +70,7 @@
       "alignment": "Caótico e Neutro",
       "cr": 9,
       "xp": {
-        "value": 5000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -87,10 +88,12 @@
       "dr": {
         "value": [
           "acid",
+          "cold",
           "fire",
+          "lightning",
           "thunder"
         ],
-        "custom": "Co ld; Light ning"
+        "custom": ""
       },
       "dv": {
         "value": [],
@@ -102,10 +105,19 @@
       },
       "languages": {
         "value": [],
-        "custom": "Comm on, Slaad"
+        "custom": "Comum"
       }
     },
-    "skills": {}
+    "skills": {
+      "arc": {
+        "value": 2,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Gray Slaad",
@@ -120,13 +132,13 @@
   },
   "items": [
     {
-      "_id": "hCZi1eVnXWqcfHsu",
-      "name": "Magic Resistance",
+      "_id": "S42XJFqlfRaevg8J",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The slaad has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -150,16 +162,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ybrihs6eVbXVtZdL.hCZi1eVnXWqcfHsu"
+      "_key": "!actors.items!bAodl2ZzOnM8theZ.S42XJFqlfRaevg8J"
     },
     {
-      "_id": "S95xqc5ZAdQmccxn",
-      "name": "Regeneration",
+      "_id": "CP6cHSrit8wTd1pB",
+      "name": "Regeneração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The slaad regains 70 Pontos de Vida at the start of each of its turns if it has at least l Hit Point.</p>",
+          "value": "<p>A criatura recupera 10 Pontos de Vida no início de cada turno dela se tiver ao menos 1 Ponto de Vida.</p>",
           "chat": ""
         },
         "activation": {
@@ -183,7 +195,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ybrihs6eVbXVtZdL.S95xqc5ZAdQmccxn"
+      "_key": "!actors.items!bAodl2ZzOnM8theZ.CP6cHSrit8wTd1pB"
     },
     {
       "_id": "SJNScthFmgOG5MeG",
@@ -192,7 +204,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The slaad makes two Chaos Claw attacks.</p>",
+          "value": "<p>The slaad makes two Chaos Garra attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -217,16 +229,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ybrihs6eVbXVtZdL.SJNScthFmgOG5MeG"
+      "_key": "!actors.items!bAodl2ZzOnM8theZ.SJNScthFmgOG5MeG"
     },
     {
-      "_id": "FKYdoW2faeyHeJ5b",
-      "name": "Chaos Claw",
+      "_id": "xQ2wCG7GiOh6zykt",
+      "name": "Chaos Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance l_0 ft. Acerto: 9 (1d10 + 4) Cortante de dano plus 11 (2d10) Necrótico de dano. Until the start of the slaad's next turn, the tar- get has a condition determined by rolling 1d4: on a 1, Enfeitiçado; on a 2, Amedrontado; on a 3, Envenenado; or on a 4, Incapacitado.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 3 m. Acerto: 9 (1d10 + 4) dano cortante mais 11 (2d10) dano necrótico. Until the start of the slaad's next turn, o alvo has a condição determined by rolling 1d4: on a 1, Enfeitiçado; on a 2, Amedrontado; on a 3, Envenenado; or on a 4, Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -244,8 +256,8 @@
           "subtype": ""
         },
         "activities": {
-          "3NE69VIzc9sQ7uTs": {
-            "_id": "3NE69VIzc9sQ7uTs",
+          "lXvqOvTvvN1PLi4C": {
+            "_id": "lXvqOvTvvN1PLi4C",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -298,16 +310,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ybrihs6eVbXVtZdL.FKYdoW2faeyHeJ5b"
+      "_key": "!actors.items!bAodl2ZzOnM8theZ.xQ2wCG7GiOh6zykt"
     },
     {
-      "_id": "lr4npsdFMF0aHIgv",
-      "name": "Shape-Shift",
+      "_id": "E2gGegzb4mFClF5T",
+      "name": "Mudar de Forma",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The slaad shape-shifts into a Small or Me- dium Humanoid, or it returns to its true form. Other than its size, its game statistics are the same in each ' form. Any equipment it is wearing or carrying isn't transformed. FI GHT A SLAAD A N D LOSE , TH E STOR Y' S OV E R . FIGHT A SL AA D /\\N O W I N , THERE' S/\\ TH O U SAN D M O RE ST AND I N G I N LINE -.J U ST TO P R O VE THEY R E T OUGHER . -JEBEEL 5LOO M , GU I D E T O T HE PL A NE OF L I M B O DEATH SLAAD Medium Aberration, Chao tic E1Ji! AC 18 ln itiative+l0 (20) HP 178 (21d8 + 84) Sp ee d 40 ft. MOD S AVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>A criatura se transforma em um Humanoide Pequeno ou Médio, ou retorna à sua forma verdadeira. Além do tamanho, seus atributos de jogo são os mesmos em cada forma. Qualquer equipamento que ela esteja vestindo ou carregando não é transformado.</p>",
           "chat": ""
         },
         "activation": {
@@ -332,7 +344,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ybrihs6eVbXVtZdL.lr4npsdFMF0aHIgv"
+      "_key": "!actors.items!bAodl2ZzOnM8theZ.E2gGegzb4mFClF5T"
     },
     {
       "_id": "6eEX5xA9VYZEeBNo",
@@ -341,7 +353,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The slaad casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 16): À Vontade: Detect - Magic, Detect Thoughts, Invisibility (self only), Mage Hand, Major Image 1/Dia Each: C!oudki/1, Fly, Plane Shift (self only), Tongues</p>",
+          "value": "<p>The slaad casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 16):</p>",
           "chat": ""
         },
         "activation": {
@@ -366,13 +378,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ybrihs6eVbXVtZdL.6eEX5xA9VYZEeBNo"
+      "_key": "!actors.items!bAodl2ZzOnM8theZ.6eEX5xA9VYZEeBNo"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Gray Slaad",
-      "page": 288,
+      "page": 286,
       "cr": "9",
       "warnings": []
     }

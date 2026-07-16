@@ -1,6 +1,6 @@
 {
-  "_id": "9QgihHedkgYeq70r",
-  "_key": "!actors!9QgihHedkgYeq70r",
+  "_id": "bVLX31tWGPu829tJ",
+  "_key": "!actors!bVLX31tWGPu829tJ",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Pirate Admiral",
   "type": "npc",
@@ -68,7 +68,7 @@
       "alignment": "Neutro",
       "cr": 12,
       "xp": {
-        "value": 8400
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -102,15 +102,15 @@
     },
     "skills": {
       "acr": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       },
       "ath": {
-        "value": 1,
+        "value": 2,
         "ability": "str"
       },
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       }
     }
@@ -134,7 +134,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The pirate makes three attacks, using Scimitar or Pistol in any combination.</p>",
+          "value": "<p>The pirate makes three attacks, using Cimitarra or Pistol in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -159,16 +159,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9QgihHedkgYeq70r.ywhIXPQZj4qgyUag"
+      "_key": "!actors.items!bVLX31tWGPu829tJ.ywhIXPQZj4qgyUag"
     },
     {
-      "_id": "xDKqQpLWRldF2HeR",
-      "name": "Scimitar",
+      "_id": "u4lUbr3l6qhPahoj",
+      "name": "Cimitarra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ l 0, alcance 5 ft. Acerto: 16 (3d6 + 6) Cortante de dano plus 7 (2d6) Veneno de dano, and o alvo suffers one of the following effects of the pi- rate's choice:</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 1,5 m. Acerto: 16 (3d6 + 6) dano cortante mais 7 (2d6) dano de veneno, and o alvo suffers one of the following effects of the pirate's choice:\nO alvo fica com a condição Enfeitiçado until the start of the pirate's next turn.\nO alvo fica com a condição Envenenado until the start of the pirate's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -185,95 +185,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "REbictAazuPhefAU": {
+            "_id": "REbictAazuPhefAU",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 6,
+                  "bonus": "6",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 10,
+            "attackType": "melee",
             "damageFormula": "3d6+6",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9QgihHedkgYeq70r.xDKqQpLWRldF2HeR"
+      "_key": "!actors.items!bVLX31tWGPu829tJ.u4lUbr3l6qhPahoj"
     },
     {
-      "_id": "buNgGaoBktQpxI0f",
-      "name": "Awestruck",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The target has the Enfeitiçado condition until the start of the pirate's next turn.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!9QgihHedkgYeq70r.buNgGaoBktQpxI0f"
-    },
-    {
-      "_id": "TOWVFkRhtvYFGA7z",
-      "name": "Veneno",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The target has the Envenenado condition until the start of the pirate's next turn.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!9QgihHedkgYeq70r.TOWVFkRhtvYFGA7z"
-    },
-    {
-      "_id": "1kxXRHaB5ahUEUgE",
+      "_id": "3tlPU0Rm3dO3gsA5",
       "name": "Pistol",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância:+ 10, range 30/90 ft. Acerto: 28 (4d10 + 6) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +10, distância 9/27 m. Acerto: 28 (4d10 + 6) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -290,18 +266,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "2agjcek3yUSkff2r": {
+            "_id": "2agjcek3yUSkff2r",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 10,
+                  "bonus": "6",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 10,
+            "attackType": "ranged",
             "damageFormula": "4d10+6",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9QgihHedkgYeq70r.1kxXRHaB5ahUEUgE"
+      "_key": "!actors.items!bVLX31tWGPu829tJ.3tlPU0Rm3dO3gsA5"
     },
     {
       "_id": "ODZDOKfv2iG1ycPg",
@@ -310,7 +330,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The pirate chooses up to three other creatures it can see within 30 feet. Until the start of the pirate's next turn, o alvos have Advantage on attack rolls and saving throws.</p>",
+          "value": "<p>The pirate chooses up to three other creatures it can see within 9 m. Until the start of the pirate's next turn, the targets have Vantagem on attack rolls and saving throws.</p>",
           "chat": ""
         },
         "activation": {
@@ -340,7 +360,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9QgihHedkgYeq70r.ODZDOKfv2iG1ycPg"
+      "_key": "!actors.items!bVLX31tWGPu829tJ.ODZDOKfv2iG1ycPg"
     },
     {
       "_id": "a0hFlEWRupNw3mYx",
@@ -349,7 +369,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: The pirate is hit by a melee attack roll while holding a weapon. Response: The pirate adds 4 to its AC against melee attack rolls (including the tri gge ring attack) u nti I the start of its next turn, possibly causing the attacks to miss. , PIT FIEND Devil of Domination</p>",
+          "value": "<p>The pirate is hit by a melee attack roll while holding a weapon. The pirate adds 4 to its AC against melee attack rolls (including the triggering attack) until the start of its next turn, possibly causing the attacks to miss.</p>",
           "chat": ""
         },
         "activation": {
@@ -374,13 +394,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9QgihHedkgYeq70r.a0hFlEWRupNw3mYx"
+      "_key": "!actors.items!bVLX31tWGPu829tJ.a0hFlEWRupNw3mYx"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Pirate Admiral",
-      "page": 244,
+      "page": 242,
       "cr": "12",
       "warnings": []
     }

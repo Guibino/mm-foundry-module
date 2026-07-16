@@ -1,6 +1,6 @@
 {
-  "_id": "Rpl0rzaphcfb5m2c",
-  "_key": "!actors!Rpl0rzaphcfb5m2c",
+  "_id": "PF9HcRf1YCW8miCh",
+  "_key": "!actors!PF9HcRf1YCW8miCh",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Azer Pyromancer",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 97,
         "max": 97,
-        "formula": "l 3d8 + 39",
+        "formula": "13d8 + 39",
         "temp": null,
         "tempmax": null
       },
@@ -68,7 +68,7 @@
       "alignment": "Leal e Neutro",
       "cr": 6,
       "xp": {
-        "value": 2300
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,16 +102,16 @@
       },
       "languages": {
         "value": [],
-        "custom": "Primordial (lgnan)"
+        "custom": "Primordial (Ignan)"
       }
     },
     "skills": {
       "arc": {
-        "value": 1,
+        "value": 2,
         "ability": "int"
       },
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       }
     }
@@ -129,13 +129,13 @@
   },
   "items": [
     {
-      "_id": "Ky69kWaGTf4neN2u",
-      "name": "Fogo Aura",
+      "_id": "6XPmXCQ2c2PuvZGn",
+      "name": "Aura de Fogo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>At the end of each of the azer's turns, cada criatura of the azer's choice in a 5-foot Emanation originating from the azer takes 11 (2d10) Fogo de dano unless the azer has the Incapacitado condition.</p>",
+          "value": "<p>At the end of each of the azer's turns, cada criatura of the azer's choice in a 1,5 m Emanation originating from the azer takes 11 (2d10) dano de fogo unless the azer fica com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -159,16 +159,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Rpl0rzaphcfb5m2c.Ky69kWaGTf4neN2u"
+      "_key": "!actors.items!PF9HcRf1YCW8miCh.6XPmXCQ2c2PuvZGn"
     },
     {
-      "_id": "OPhG13hxEBj2iZ2R",
-      "name": "Illumination",
+      "_id": "W8p3SRoXFsrHenFI",
+      "name": "Iluminação",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The azer sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet.</p>",
+          "value": "<p>A criatura emite Luz Plena em um raio de 3 m e Luz Fraca por mais 3 m.</p>",
           "chat": ""
         },
         "activation": {
@@ -192,7 +192,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Rpl0rzaphcfb5m2c.OPhG13hxEBj2iZ2R"
+      "_key": "!actors.items!PF9HcRf1YCW8miCh.W8p3SRoXFsrHenFI"
     },
     {
       "_id": "SILGYWbAbOABi5Nq",
@@ -226,7 +226,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Rpl0rzaphcfb5m2c.SILGYWbAbOABi5Nq"
+      "_key": "!actors.items!PF9HcRf1YCW8miCh.SILGYWbAbOABi5Nq"
     },
     {
       "_id": "Y1ilTbMigWSudWKi",
@@ -235,7 +235,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 5 ft. or range 120 ft. Hit : 15 (2d10 + 4) Fogo de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 1,5 m. or distância 36 m. Acerto: 15 (2d10 + 4) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -273,7 +273,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "4",
+                  "types": [
+                    "fire"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -282,46 +300,14 @@
         "mm2024": {
           "mechanics": {
             "toHit": 7,
-            "attackType": "ranged"
+            "attackType": "ranged",
+            "damageFormula": "2d10+4",
+            "damageType": "fire"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Rpl0rzaphcfb5m2c.Y1ilTbMigWSudWKi"
-    },
-    {
-      "_id": "9KZSaJgoXPBBtD4X",
-      "name": "Habilidade",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Cr:'. 1- Hellish Rebuke (2/Dia). The azer casts Hellish Rebuke Cr:'. in response to that spell's trigger, using the same spell- <t: casting ability as Conjuração. AZER SENTINEL Medium Elemental, Lawful Neutral AC17 Iniciativa+ l (11) HP 39 (6d8 + 12) Speed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "reaction",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!Rpl0rzaphcfb5m2c.9KZSaJgoXPBBtD4X"
+      "_key": "!actors.items!PF9HcRf1YCW8miCh.Y1ilTbMigWSudWKi"
     },
     {
       "_id": "z5dcHwDKffww1e3q",
@@ -330,7 +316,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The azer casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save DC 15): À Vontade: Elementalism, Mage Hand 1/Dia: Fogoball</p>",
+          "value": "<p>The azer casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save CD 15):</p>",
           "chat": ""
         },
         "activation": {
@@ -355,13 +341,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Rpl0rzaphcfb5m2c.z5dcHwDKffww1e3q"
+      "_key": "!actors.items!PF9HcRf1YCW8miCh.z5dcHwDKffww1e3q"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Azer Pyromancer",
-      "page": 27,
+      "page": 25,
       "cr": "6",
       "warnings": []
     }

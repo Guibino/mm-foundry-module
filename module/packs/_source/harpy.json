@@ -1,6 +1,6 @@
 {
-  "_id": "GqdRRTv7QBSGfWt8",
-  "_key": "!actors!GqdRRTv7QBSGfWt8",
+  "_id": "U7PKha5ksTRWBF2y",
+  "_key": "!actors!U7PKha5ksTRWBF2y",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Harpy",
   "type": "npc",
@@ -67,9 +67,9 @@
         "custom": ""
       },
       "alignment": "Caótico e Mau",
-      "cr": 0,
+      "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -98,7 +98,7 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum"
       }
     },
     "skills": {}
@@ -116,13 +116,13 @@
   },
   "items": [
     {
-      "_id": "dIrWLwfGaQCkpgaM",
-      "name": "Claw",
+      "_id": "4bK0kxMTPn4y1cTe",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 6 (2d4 + 1) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 6 (2d4 + 1) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -140,8 +140,8 @@
           "subtype": ""
         },
         "activities": {
-          "Y97KtvzKyoxw7ExS": {
-            "_id": "Y97KtvzKyoxw7ExS",
+          "TdZCLLg6jCfC3hHS": {
+            "_id": "TdZCLLg6jCfC3hHS",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -194,7 +194,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GqdRRTv7QBSGfWt8.dIrWLwfGaQCkpgaM"
+      "_key": "!actors.items!U7PKha5ksTRWBF2y.4bK0kxMTPn4y1cTe"
     },
     {
       "_id": "t384gXu4ulqaeqoU",
@@ -203,7 +203,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The harpy sings a magical melody, which lasts until the harpy's Concentration ends on it. Sabedoria Teste de Resistência: DC 11, each Humanoid and Gigante in a 300-foot Emanation originating from the harpy when the song starts. Falha: The target has the Enfeitiçado condition until the song ends and repeats the save at the end of each of its turns .• While Enfeitiçado, o alvo has the Incapacitado condition and ignores the Luring</p>",
+          "value": "<p>The harpy sings a magical melody, which lasts until the harpy's Concentration ends on it. Teste de Resistência de Sabedoria: CD 11, each Humanoid and Gigante in a 90 m Emanation originating from the harpy when the song starts. O alvo fica com a condição Enfeitiçado until the song ends and repeats the save at the end of each of its turns. While Enfeitiçado, o alvo fica com a condição Incapacitado and ignores the Luring Song of other harpies. If o alvo is more than 1,5 m from the harpy, o alvo moves on its turn toward the harpy by the most direct route, trying to get within 1,5 m of the harpy. It doesn't avoid Opportunity Attacks; however, before moving into damaging terrain (such as lava or a pit) and whenever it takes de dano from a source other than the harpy, o alvo repeats the save. O alvo is immune to this harpy's Luring Song for 24 hours.</p>",
           "chat": ""
         },
         "activation": {
@@ -255,82 +255,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GqdRRTv7QBSGfWt8.t384gXu4ulqaeqoU"
-    },
-    {
-      "_id": "sxT3G3JFakeDjYbM",
-      "name": "Song of other harpies",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If o alvo is more than 5 feet from the harpy, o alvo moves on its turn toward the harpy by the most direct route, trying to get within 5 feet of the harpy. It doesn't avoid Opportunity Attacks; however, before moving into damaging terrain (such as lava or a pit) and whenever it takes de dano from a source other than the harpy, o alvo repeats the save. lJ Sucesso: The target is immune to this harpy's Luring N</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!GqdRRTv7QBSGfWt8.sxT3G3JFakeDjYbM"
-    },
-    {
-      "_id": "yIXlarbOMBjXAxMd",
-      "name": "Song for 24 hours",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p><l'. HELL HOUND Medium Fiend, Lawful E1Ji! AC 75 Iniciativa +l (11) HP 58 (9d8 + 78) Speed 50 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!GqdRRTv7QBSGfWt8.yIXlarbOMBjXAxMd"
+      "_key": "!actors.items!U7PKha5ksTRWBF2y.t384gXu4ulqaeqoU"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Harpy",
-      "page": 166,
-      "cr": "0",
+      "page": 164,
+      "cr": "1",
       "warnings": []
     }
   }

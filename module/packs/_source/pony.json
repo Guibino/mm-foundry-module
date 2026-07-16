@@ -1,6 +1,6 @@
 {
-  "_id": "IcLhJk2d9sb8cAph",
-  "_key": "!actors!IcLhJk2d9sb8cAph",
+  "_id": "GaO2vJWuUl1U4wWp",
+  "_key": "!actors!GaO2vJWuUl1U4wWp",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Pony",
   "type": "npc",
@@ -66,9 +66,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 0.125,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,7 +97,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
@@ -113,12 +113,94 @@
     },
     "disposition": -1
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "leQcX2JotbpBDSpA",
+      "name": "Cascos",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 4 (1d4 + 2) dano de concussão.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "e4urPHN9lkw8OQM8": {
+            "_id": "e4urPHN9lkw8OQM8",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "1d4+2",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!GaO2vJWuUl1U4wWp.leQcX2JotbpBDSpA"
+    }
+  ],
   "flags": {
     "mm2024": {
       "nameEn": "Pony",
-      "page": 369,
-      "cr": "0",
+      "page": 367,
+      "cr": "1/8",
       "warnings": []
     }
   }

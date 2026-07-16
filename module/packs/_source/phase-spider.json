@@ -1,6 +1,6 @@
 {
-  "_id": "NcbCUFc5kgvcob8s",
-  "_key": "!actors!NcbCUFc5kgvcob8s",
+  "_id": "jUE4t1junmya6SPh",
+  "_key": "!actors!jUE4t1junmya6SPh",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Phase Spider",
   "type": "npc",
@@ -8,19 +8,19 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 10,
+        "value": 15,
         "proficient": 0
       },
       "dex": {
-        "value": 10,
+        "value": 16,
         "proficient": 0
       },
       "con": {
-        "value": 10,
+        "value": 12,
         "proficient": 0
       },
       "int": {
-        "value": 10,
+        "value": 6,
         "proficient": 0
       },
       "wis": {
@@ -28,7 +28,7 @@
         "proficient": 0
       },
       "cha": {
-        "value": 10,
+        "value": 6,
         "proficient": 0
       }
     },
@@ -48,7 +48,8 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "climb": 30
       },
       "senses": {
         "units": "ft",
@@ -69,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -127,7 +128,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The spider can see 60 feet into the Ethe- real Plane while on the Material Plane and vice versa.</p>",
+          "value": "<p>The spider can see 18 m into the Ethereal Plane while on the Material Plane and vice versa.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,16 +152,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NcbCUFc5kgvcob8s.PiocEtbNk8o5sVz5"
+      "_key": "!actors.items!jUE4t1junmya6SPh.PiocEtbNk8o5sVz5"
     },
     {
-      "_id": "DEMcotawMpe9CTrT",
-      "name": "Spider Climb",
+      "_id": "m3KVqlISy4Tr4vhg",
+      "name": "Escalada de Aranha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>",
+          "value": "<p>A criatura pode escalar superfícies difíceis, inclusive tetos, sem precisar fazer um teste de habilidade.</p>",
           "chat": ""
         },
         "activation": {
@@ -184,16 +185,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NcbCUFc5kgvcob8s.DEMcotawMpe9CTrT"
+      "_key": "!actors.items!jUE4t1junmya6SPh.m3KVqlISy4Tr4vhg"
     },
     {
-      "_id": "1KR5xpAvPOxo43uD",
-      "name": "Web Walker",
+      "_id": "3flmdWIdjRH5BDEE",
+      "name": "Andarilho de Teias",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The spider ignores movement restrictions caused by webs, and the spider knows the ·location of any other creature in contact with the same web.</p>",
+          "value": "<p>A criatura ignora restrições de movimento causadas por teias e sabe a localização de qualquer outra criatura em contato com a mesma teia.</p>",
           "chat": ""
         },
         "activation": {
@@ -217,7 +218,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NcbCUFc5kgvcob8s.1KR5xpAvPOxo43uD"
+      "_key": "!actors.items!jUE4t1junmya6SPh.3flmdWIdjRH5BDEE"
     },
     {
       "_id": "ACTGqTovZuwJmshU",
@@ -226,7 +227,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The spider makes two Bite attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Mordida.</p>",
           "chat": ""
         },
         "activation": {
@@ -251,16 +252,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NcbCUFc5kgvcob8s.ACTGqTovZuwJmshU"
+      "_key": "!actors.items!jUE4t1junmya6SPh.ACTGqTovZuwJmshU"
     },
     {
-      "_id": "oPmIazKQohKR6KF7",
-      "name": "Bite",
+      "_id": "LmbqRH5ABOS44XL0",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 8 (1d10 + 3) Perfurante de dano plus 9 (2d8) Veneno de dano. If this de dano reduces o alvo to 0 Pontos de Vida, o alvo becomes Stable, and it has the Envenenado condition for 1 hour. While Envenenado, o alvo also has the Paralisado condition. >- B ONUS A CTIO N S 2 Ethereal jaunt. The spider teleports from the Material w Plane to the Ethereal Plane or vice versa. Vl PHASE SPIDER Plane-Shifting Arachnid Ambusher</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 8 (1d10 + 3) dano perfurante mais 9 (2d8) dano de veneno. If this de dano reduces o alvo to 0 Pontos de Vida, o alvo becomes Stable, and it fica com a condição Envenenado for 1 hour. While Envenenado, o alvo also fica com a condição Paralisado.</p>",
           "chat": ""
         },
         "activation": {
@@ -278,8 +279,8 @@
           "subtype": ""
         },
         "activities": {
-          "yUraYdUZWGdJ6wUb": {
-            "_id": "yUraYdUZWGdJ6wUb",
+          "etOOr2sG2uerPc92": {
+            "_id": "etOOr2sG2uerPc92",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -332,17 +333,49 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NcbCUFc5kgvcob8s.oPmIazKQohKR6KF7"
+      "_key": "!actors.items!jUE4t1junmya6SPh.LmbqRH5ABOS44XL0"
+    },
+    {
+      "_id": "yB2RPIwT7zlVavMa",
+      "name": "Ethereal Jaunt",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The spider teleports from the Material Plane to the Ethereal Plane or vice versa.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!jUE4t1junmya6SPh.yB2RPIwT7zlVavMa"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Phase Spider",
-      "page": 241,
+      "page": 239,
       "cr": "3",
-      "warnings": [
-        "Atributos nao reconhecidos"
-      ]
+      "warnings": []
     }
   }
 }

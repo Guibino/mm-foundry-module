@@ -1,0 +1,359 @@
+{
+  "_id": "qMURuYn2mJbQkZrD",
+  "_key": "!actors!qMURuYn2mJbQkZrD",
+  "folder": "1QPcErIwVgACFlzi",
+  "name": "Archpriest",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/tokens/archpriest.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 1
+      },
+      "dex": {
+        "value": 12,
+        "proficient": 0
+      },
+      "con": {
+        "value": 17,
+        "proficient": 1
+      },
+      "int": {
+        "value": 14,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 21,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 14,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 16,
+        "formula": ""
+      },
+      "hp": {
+        "value": 240,
+        "max": 240,
+        "formula": "32d8 + 96",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "humanoid",
+        "subtype": "cleric",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 12,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "sm",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Common plus two other languages"
+      }
+    },
+    "skills": {
+      "ins": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "med": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "rel": {
+        "value": 2,
+        "ability": "int"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Archpriest",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/archpriest.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "dpPeDEZqfyaDjkBC",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The archpriest makes three Radiante Burst attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qMURuYn2mJbQkZrD.dpPeDEZqfyaDjkBC"
+    },
+    {
+      "_id": "UjgDMY8YdtHpW3yo",
+      "name": "Radiante Burst",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +9, alcance 1,5 m. or distância 18 m. Acerto: 27 (4d10 + 5) dano radiante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "vMPr1RHZwIwjNPVK": {
+            "_id": "vMPr1RHZwIwjNPVK",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "9",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 10,
+                  "bonus": "5",
+                  "types": [
+                    "radiant"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9,
+            "attackType": "ranged",
+            "damageFormula": "4d10+5",
+            "damageType": "radiant"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qMURuYn2mJbQkZrD.UjgDMY8YdtHpW3yo"
+    },
+    {
+      "_id": "QsBmiN7m09mKN9LO",
+      "name": "Holy Word (Recharge 4)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Sabedoria: CD 17, each enemy in a 6 m Emanation originating from the archpriest. 21 (6d6) dano radiante, and o alvo fica com a condição Atordoado until the end of the archpriest's next turn. Metade do dano only.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "4"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "epiINhlb8ghwrNWc": {
+            "_id": "epiINhlb8ghwrNWc",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "17"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 17,
+            "saveAbility": "wis"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qMURuYn2mJbQkZrD.QsBmiN7m09mKN9LO"
+    },
+    {
+      "_id": "VlMTIGcC3eryNbuQ",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The archpriest casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save CD 17):</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qMURuYn2mJbQkZrD.VlMTIGcC3eryNbuQ"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Archpriest",
+      "page": 248,
+      "cr": "12",
+      "warnings": []
+    }
+  }
+}

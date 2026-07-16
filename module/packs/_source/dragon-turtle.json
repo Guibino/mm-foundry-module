@@ -1,8 +1,8 @@
 {
-  "_id": "08lbadwSg0mooI3l",
-  "_key": "!actors!08lbadwSg0mooI3l",
-  "folder": "kCLi0hD5goTIU7AM",
-  "name": "Dragão Turtle",
+  "_id": "qqQeCcF8D2aO4xJd",
+  "_key": "!actors!qqQeCcF8D2aO4xJd",
+  "folder": "lhndsA6Aflaa0nF6",
+  "name": "Dragon Turtle",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/dragon-turtle.webp",
   "system": {
@@ -48,10 +48,12 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 20,
+        "swim": 50
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 120
       },
       "init": {
         "ability": "dex",
@@ -60,15 +62,15 @@
     },
     "details": {
       "type": {
-        "value": "",
+        "value": "dragon",
         "subtype": "",
         "swarm": "",
-        "custom": "Unknown"
+        "custom": ""
       },
-      "alignment": "Sem Tendência",
+      "alignment": "Neutro",
       "cr": 17,
       "xp": {
-        "value": 18000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,13 +80,15 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "grg",
       "di": {
         "value": [],
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "fire"
+        ],
         "custom": ""
       },
       "dv": {
@@ -97,13 +101,13 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Dracônico, Primordial (Aquan)"
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Dragão Turtle",
+    "name": "Dragon Turtle",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -115,13 +119,13 @@
   },
   "items": [
     {
-      "_id": "m6HVVCY4LgufSOrq",
-      "name": "Amphibious",
+      "_id": "18XlWpvOVcFxnYYp",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,7 +149,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!08lbadwSg0mooI3l.m6HVVCY4LgufSOrq"
+      "_key": "!actors.items!qqQeCcF8D2aO4xJd.18XlWpvOVcFxnYYp"
     },
     {
       "_id": "mdRP6NENwQqf7mR2",
@@ -154,7 +158,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Bite attacks. It can replace one attack with a Tail attack.</p>",
+          "value": "<p>The dragon makes three Mordida attacks. It can replace one attack with a Cauda attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -179,16 +183,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!08lbadwSg0mooI3l.mdRP6NENwQqf7mR2"
+      "_key": "!actors.items!qqQeCcF8D2aO4xJd.mdRP6NENwQqf7mR2"
     },
     {
-      "_id": "ahDtmHZRdmVY9yzr",
-      "name": "Bite",
+      "_id": "0iyy1ko2LK9sH4na",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Me lee Attack Roll:+ 13, alcance 15 ft. Acerto: 23 (3d1 0 + 7) Perfurante de dano plus 7 (2d6) Fogo de dano. Being underwater doesn't grant Resistance to this Fogo de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +13, alcance 4,5 m. Acerto: 23 (3d10 + 7) dano perfurante mais 7 (2d6) dano de fogo. Being underwater doesn't grant Resistance to this dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -205,27 +209,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "1aJh3VcRRLEicDS2": {
+            "_id": "1aJh3VcRRLEicDS2",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "13",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 10,
+                  "bonus": "7",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 13,
+            "attackType": "melee",
             "damageFormula": "3d10+7",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!08lbadwSg0mooI3l.ahDtmHZRdmVY9yzr"
+      "_key": "!actors.items!qqQeCcF8D2aO4xJd.0iyy1ko2LK9sH4na"
     },
     {
-      "_id": "s1QkCxuUEeudz40b",
-      "name": "Tail",
+      "_id": "pVnRENgdFANracPI",
+      "name": "Cauda",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Melee Attack Ro - II:+ 13, alcance 15 ft. Acerto: 18 (2d1 0 + 7) Concussão de dano. If o alvo is a Huge or • smaller creature, it has the Caído condition.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +13, alcance 4,5 m. Acerto: 18 (2d10 + 7) dano de concussão. If o alvo is a Huge or smaller creature, it fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -242,27 +290,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "2qlnEmZnRxY6uIMJ": {
+            "_id": "2qlnEmZnRxY6uIMJ",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "13",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "7",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 13,
+            "attackType": "melee",
             "damageFormula": "2d10+7",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!08lbadwSg0mooI3l.s1QkCxuUEeudz40b"
+      "_key": "!actors.items!qqQeCcF8D2aO4xJd.pVnRENgdFANracPI"
     },
     {
       "_id": "gV2OizXdMO6fT4sc",
-      "name": "Steam Breath (Recharge 5-6)",
+      "name": "Steam Breath (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Sa1.1ing Throw: DC 19, cada criatura in a 60-foot Cone. Falha: 56 (l 6d6) Fogo de dano. Sucesso: Metade do dano. Falha ou Sucesso: Being underwater doesn't grant Resistance to this Fogo de dano. D RAGON TURTLE 1 03 DRETCHES Demons of Frenzy and Vulgarity</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 19, cada criatura in a 18 m Cone. 56 (16d6) dano de fogo. Metade do dano. Being underwater doesn't grant Resistance to this dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -285,24 +377,48 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "CVWILsYhj6GDdyMd": {
+            "_id": "CVWILsYhj6GDdyMd",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "19"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "l6d6",
-            "damageType": "fire"
+            "saveDc": 19,
+            "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!08lbadwSg0mooI3l.gV2OizXdMO6fT4sc"
+      "_key": "!actors.items!qqQeCcF8D2aO4xJd.gV2OizXdMO6fT4sc"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Dragon Turtle",
-      "page": 105,
+      "page": 103,
       "cr": "17",
       "warnings": []
     }

@@ -1,6 +1,6 @@
 {
-  "_id": "EDzfaRas0iwPmOHN",
-  "_key": "!actors!EDzfaRas0iwPmOHN",
+  "_id": "zCsmWddlmxaYuY4P",
+  "_key": "!actors!zCsmWddlmxaYuY4P",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Blood Hawk",
   "type": "npc",
@@ -24,7 +24,7 @@
         "proficient": 0
       },
       "wis": {
-        "value": 74,
+        "value": 14,
         "proficient": 0
       },
       "cha": {
@@ -48,6 +48,7 @@
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 10,
         "fly": 60
       },
       "senses": {
@@ -68,7 +69,7 @@
       "alignment": "Sem Tendência",
       "cr": 0.125,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -100,7 +101,12 @@
         "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Blood Hawk",
@@ -115,13 +121,13 @@
   },
   "items": [
     {
-      "_id": "kln8kTrYZGhcCpfj",
-      "name": "Bloodied Fury",
+      "_id": "PGa7HBBtGkQZVkyP",
+      "name": "Táticas de Matilha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While Bloodied, the boar has Advantage on attack rolls.</p>",
+          "value": "<p>A criatura tem Vantagem em uma rolagem de ataque contra uma criatura se pelo menos um dos aliados dela estiver a até 1,5 m do alvo e esse aliado não estiver com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,16 +151,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!EDzfaRas0iwPmOHN.kln8kTrYZGhcCpfj"
+      "_key": "!actors.items!zCsmWddlmxaYuY4P.PGa7HBBtGkQZVkyP"
     },
     {
-      "_id": "R047CHdY7BwV76f8",
-      "name": "Gore",
+      "_id": "tb69N282X8t2I1lq",
+      "name": "Bico",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 4 (1d6 + l)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 4 (1d4 + 2) dano perfurante, or 6 (1d8 + 2) dano perfurante if o alvo is Bloodied.</p>",
           "chat": ""
         },
         "activation": {
@@ -172,8 +178,8 @@
           "subtype": ""
         },
         "activities": {
-          "16giMucO59fZUEiE": {
-            "_id": "16giMucO59fZUEiE",
+          "nx6M8xGoaoyv7yWo": {
+            "_id": "nx6M8xGoaoyv7yWo",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -183,7 +189,7 @@
             },
             "attack": {
               "ability": "",
-              "bonus": "3",
+              "bonus": "4",
               "flat": true,
               "type": {
                 "value": "melee",
@@ -192,7 +198,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -200,53 +224,21 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "toHit": 3,
-            "attackType": "melee"
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "1d4+2",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!EDzfaRas0iwPmOHN.R047CHdY7BwV76f8"
-    },
-    {
-      "_id": "p42YZhHtTJpkpuak",
-      "name": "Perfurante de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If o alvo is a Medium or smaller creature and the boar moved 20+ feet straight toward it immediately before the hit, o alvo takes an extra 3 (1d6) Perfurante de dano and has the Caído condition. BROWN BEAR L arge Beast, Unaligned AC 11 Initiativ e+ l (l l) HP 22 (3d70 + 6) S peed 40 ft., Climb 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!EDzfaRas0iwPmOHN.p42YZhHtTJpkpuak"
+      "_key": "!actors.items!zCsmWddlmxaYuY4P.tb69N282X8t2I1lq"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Blood Hawk",
-      "page": 352,
+      "page": 350,
       "cr": "1/8",
       "warnings": []
     }

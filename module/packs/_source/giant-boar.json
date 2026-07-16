@@ -1,8 +1,8 @@
 {
-  "_id": "TkS1qGZt2P6cEXIW",
-  "_key": "!actors!TkS1qGZt2P6cEXIW",
+  "_id": "vgZzsNzoH39twvLW",
+  "_key": "!actors!vgZzsNzoH39twvLW",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Gigante Boar",
+  "name": "Giant Boar",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/giant-boar.webp",
   "system": {
@@ -12,7 +12,7 @@
         "proficient": 1
       },
       "dex": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "con": {
@@ -41,14 +41,14 @@
       "hp": {
         "value": 42,
         "max": 42,
-        "formula": "Sdl O + 15",
+        "formula": "5d10 + 15",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40
       },
       "senses": {
         "units": "ft"
@@ -68,7 +68,7 @@
       "alignment": "Sem Tendência",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,13 +97,13 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Gigante Boar",
+    "name": "Giant Boar",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -115,13 +115,13 @@
   },
   "items": [
     {
-      "_id": "EEqjbQNrWO29IHnh",
-      "name": "Bloodied Fury",
+      "_id": "OwS2ZEwyzroSZfp7",
+      "name": "Fúria Sangrenta",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The boar has Advantage on melee attack rolls while it is Bloodied.</p>",
+          "value": "<p>The boar has Vantagem on melee attack rolls while it is Bloodied.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,16 +145,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TkS1qGZt2P6cEXIW.EEqjbQNrWO29IHnh"
+      "_key": "!actors.items!vgZzsNzoH39twvLW.OwS2ZEwyzroSZfp7"
     },
     {
-      "_id": "dfWFMjYT8ecTb2nL",
-      "name": "Gore",
+      "_id": "no6INk24q2W5iR72",
+      "name": "Chifrada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: l O (2d6 + 3) Perfurante de dano. If o alvo is a Large or smaller UJ creature and the boar moved 20+ feet straight toward UJ it immediately before the hit, o alvo takes an extra 7 Ci'.'. 0 (2d6) Perfurante de dano and has the Caído condition. WE SK IRT ED T HE COAS T LI NE S O F SE V E RA L ISL A N DS, SAILI N G SO U TH BY W EST UN TIL W E RE A CHED A SMALL PE N I N SU L /\\ C UT O FF FR O M THE MA I N I SL AN D BY A MASS I VE STO NE WAL L. WE WERE W ELL RE C E I VED BY TH E PE O PLE OF T A NAR OA, THE SMA L L V IL LAGE THA T GU A R D S TH I S W A LL . T H E V I LLAGERS HAYE N O NAM E F O R THE L A RGE I SLAN D OTHE R T HA N THE lsLE OF DREAD . - RORY BARBAR OSA , LOG O F T H E GAL LIVANT GIANT CENTIPEDE Sm all B ea st, Un a ligned AC 74 Iniciativa +2 (12) HP 9 (2d6 + 2) Speed 30 ft., Climb 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 10 (2d6 + 3) dano perfurante. If o alvo is a Large or smaller creature and the boar moved 20+ feet straight toward it immediately before the hit, o alvo takes an extra 7 (2d6) dano perfurante and fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -172,8 +172,8 @@
           "subtype": ""
         },
         "activities": {
-          "UNxi1lTJbjVEhCdx": {
-            "_id": "UNxi1lTJbjVEhCdx",
+          "llJmr3F4dLnQCdDM": {
+            "_id": "llJmr3F4dLnQCdDM",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -192,7 +192,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -201,18 +219,20 @@
         "mm2024": {
           "mechanics": {
             "toHit": 5,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d6+3",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TkS1qGZt2P6cEXIW.dfWFMjYT8ecTb2nL"
+      "_key": "!actors.items!vgZzsNzoH39twvLW.no6INk24q2W5iR72"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Giant Boar",
-      "page": 357,
+      "page": 355,
       "cr": "2",
       "warnings": []
     }

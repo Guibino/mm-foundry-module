@@ -1,6 +1,6 @@
 {
-  "_id": "aAgMUZ1hfNlfx7ch",
-  "_key": "!actors!aAgMUZ1hfNlfx7ch",
+  "_id": "g2zeqiAVN1NxgOFE",
+  "_key": "!actors!g2zeqiAVN1NxgOFE",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Thri-kreen Marauder",
   "type": "npc",
@@ -47,10 +47,12 @@
       },
       "movement": {
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "walk": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -67,7 +69,7 @@
       "alignment": "Neutro",
       "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -96,10 +98,23 @@
       },
       "languages": {
         "value": [],
-        "custom": "Th ri-kreen"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      },
+      "sur": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Thri-kreen Marauder",
@@ -145,7 +160,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!aAgMUZ1hfNlfx7ch.Eq3AMiEEvaSE34KJ"
+      "_key": "!actors.items!g2zeqiAVN1NxgOFE.Eq3AMiEEvaSE34KJ"
     },
     {
       "_id": "g5e8gwXDcW75Q8RL",
@@ -154,7 +169,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 5 (1d8 + 1) Cortante de dano plus 2 (1d4) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 5 (1d8 + 1) dano cortante mais 2 (1d4) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -226,7 +241,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!aAgMUZ1hfNlfx7ch.g5e8gwXDcW75Q8RL"
+      "_key": "!actors.items!g2zeqiAVN1NxgOFE.g5e8gwXDcW75Q8RL"
     },
     {
       "_id": "FaZcNIMbPwnOA9Oy",
@@ -235,7 +250,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +4, range 30/120 ft. Acerto: 5 (1d6 + 2) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +4, distância 9/36 m. Acerto: 5 (1d6 + 2) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -307,16 +322,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!aAgMUZ1hfNlfx7ch.FaZcNIMbPwnOA9Oy"
+      "_key": "!actors.items!g2zeqiAVN1NxgOFE.FaZcNIMbPwnOA9Oy"
     },
     {
-      "_id": "6oQ14Ln1IfAWFP8C",
-      "name": "Leap",
+      "_id": "v69Pe8G5vGr8eaH4",
+      "name": "Salto",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The thri-kreen jumps up to 15 feet by spending 5 feet of movement. 306 THRI --K R EEN TH RI-KREEN PSION Medium Monstrosity, Neutral AC 16 In itiat ive +6 (16) HP 149 (23d8 + 46) S peed 40 ft., Fly 20 ft. (hover) MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>The thri-kreen jumps up to 4,5 m by spending 1,5 m of movement.</p>",
           "chat": ""
         },
         "activation": {
@@ -341,13 +356,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!aAgMUZ1hfNlfx7ch.6oQ14Ln1IfAWFP8C"
+      "_key": "!actors.items!g2zeqiAVN1NxgOFE.v69Pe8G5vGr8eaH4"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Thri-kreen Marauder",
-      "page": 308,
+      "page": 306,
       "cr": "1",
       "warnings": []
     }

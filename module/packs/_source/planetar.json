@@ -1,6 +1,6 @@
 {
-  "_id": "SqBwLpDNfQJi9I2p",
-  "_key": "!actors!SqBwLpDNfQJi9I2p",
+  "_id": "ItDbRl4tnAbv0DGY",
+  "_key": "!actors!ItDbRl4tnAbv0DGY",
   "folder": "IQP9BfRMl9yEsYGp",
   "name": "Planetar",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 262,
         "max": 262,
-        "formula": "21d10+ 147",
+        "formula": "21d10 + 147",
         "temp": null,
         "tempmax": null
       },
@@ -53,7 +53,7 @@
       },
       "senses": {
         "units": "ft",
-        "truesight": 720
+        "truesight": 120
       },
       "init": {
         "ability": "dex",
@@ -63,14 +63,14 @@
     "details": {
       "type": {
         "value": "celestial",
-        "subtype": "Angel",
+        "subtype": "angel",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Bom",
       "cr": 16,
       "xp": {
-        "value": 15000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -83,7 +83,7 @@
       "size": "lg",
       "di": {
         "value": [],
-        "custom": "Charmed; Exhaustion; Frightened"
+        "custom": ""
       },
       "dr": {
         "value": [
@@ -96,12 +96,16 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "All"
+        "custom": ""
       }
     },
     "skills": {
@@ -154,16 +158,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SqBwLpDNfQJi9I2p.GVujhl9KAfNcZCBv"
+      "_key": "!actors.items!ItDbRl4tnAbv0DGY.GVujhl9KAfNcZCBv"
     },
     {
-      "_id": "wpSeQsbS9Uu3UQ3v",
-      "name": "Exalted Restoration",
+      "_id": "btJ25x1blyNPu9IT",
+      "name": "Restauração Exaltada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the planetar dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its Pontos de Vida somewhere in 0 Mount Celestia. w Magic Resistance. The planetar has Advantage on sav- 0 ing throws against spells ahd other magical effects.</p>",
+          "value": "<p>If the planetar dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its Pontos de Vida somewhere in Mount Celestia.</p>",
           "chat": ""
         },
         "activation": {
@@ -187,7 +191,40 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SqBwLpDNfQJi9I2p.wpSeQsbS9Uu3UQ3v"
+      "_key": "!actors.items!ItDbRl4tnAbv0DGY.btJ25x1blyNPu9IT"
+    },
+    {
+      "_id": "N3Gx451mE0LbudL2",
+      "name": "Resistência a Magia",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ItDbRl4tnAbv0DGY.N3Gx451mE0LbudL2"
     },
     {
       "_id": "Fp9qwUJCyklNfdtI",
@@ -221,7 +258,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SqBwLpDNfQJi9I2p.Fp9qwUJCyklNfdtI"
+      "_key": "!actors.items!ItDbRl4tnAbv0DGY.Fp9qwUJCyklNfdtI"
     },
     {
       "_id": "sXlaGGP8dSaRDwyk",
@@ -230,7 +267,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 12, -alcance l Oft. Acerto: 74 (2d6 + 7) Cortante de dano plus 78 (4d8) Radi- ant de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +12, alcance 3 m. Acerto: 14 (2d6 + 7) dano cortante mais 18 (4d8) dano radiante.</p>",
           "chat": ""
         },
         "activation": {
@@ -247,18 +284,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "GjKCzF4XFuf613zI": {
+            "_id": "GjKCzF4XFuf613zI",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "12",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "7",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 12,
+            "attackType": "melee",
             "damageFormula": "2d6+7",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SqBwLpDNfQJi9I2p.sXlaGGP8dSaRDwyk"
+      "_key": "!actors.items!ItDbRl4tnAbv0DGY.sXlaGGP8dSaRDwyk"
     },
     {
       "_id": "jZtOpBLcEStLlidz",
@@ -267,7 +348,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 20, each enemy in a 20-foot-radius Sphere centered on a point the plan- etar can see within 720 feet. Falha: 24 (7d6) Radiante de dano. Sucesso: Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 20, each enemy in a 6 m-radius Sphere centered on a point the planetar can see within 36 m. 24 (7d6) dano radiante. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -305,25 +386,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 7,
-                  "denomination": 6,
-                  "bonus": "",
-                  "types": [
-                    "radiant"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -331,54 +394,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "7d6",
-            "damageType": "radiant",
             "saveDc": 20,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SqBwLpDNfQJi9I2p.jZtOpBLcEStLlidz"
-    },
-    {
-      "_id": "YaUyLfaXsc9Xj4rA",
-      "name": "Divine Aid (2/Day)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The planetar casts Cure Wounds, In- visibility, Lesser Restoration, or Remove Curse, using the same spellcasting ability as Conjuração. PLANETAR ~ 245 POLTERGEIST Malevolent or Mischievous Spirit</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "2",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!SqBwLpDNfQJi9I2p.YaUyLfaXsc9Xj4rA"
+      "_key": "!actors.items!ItDbRl4tnAbv0DGY.jZtOpBLcEStLlidz"
     },
     {
       "_id": "qyJq4NWZQMQpo9hr",
@@ -387,7 +409,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The planetar casts one of the following spells, requiring no Material components and using Carisma as spellca?ting ability (spell save DC 20): À Vontade: Detect Evil and Good - 1/Dia Each: Commune, Control Weather, Dispel Evil and Good, Raise Dead</p>",
+          "value": "<p>The planetar casts one of the following spells, requiring no Material components and using Carisma as spellcasting ability (spell save CD 20):</p>",
           "chat": ""
         },
         "activation": {
@@ -412,13 +434,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SqBwLpDNfQJi9I2p.qyJq4NWZQMQpo9hr"
+      "_key": "!actors.items!ItDbRl4tnAbv0DGY.qyJq4NWZQMQpo9hr"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Planetar",
-      "page": 247,
+      "page": 245,
       "cr": "16",
       "warnings": []
     }

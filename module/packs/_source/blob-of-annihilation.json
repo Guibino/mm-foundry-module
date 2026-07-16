@@ -1,8 +1,8 @@
 {
-  "_id": "AHtKl8XvfMOk5Zny",
-  "_key": "!actors!AHtKl8XvfMOk5Zny",
+  "_id": "k8uNPxa9TaB1rQfH",
+  "_key": "!actors!k8uNPxa9TaB1rQfH",
   "folder": "BaJiyGJk3g8zXFNV",
-  "name": "Blob Of Annihilation",
+  "name": "Blob of Annihilation",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/blob-of-annihilation.webp",
   "system": {
@@ -28,7 +28,7 @@
         "proficient": 0
       },
       "cha": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       }
     },
@@ -52,7 +52,7 @@
       },
       "senses": {
         "units": "ft",
-        "blindsight": 720
+        "blindsight": 120
       },
       "init": {
         "ability": "dex",
@@ -62,14 +62,14 @@
     "details": {
       "type": {
         "value": "ooze",
-        "subtype": "",
+        "subtype": "titan",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Neutro e Mau",
       "cr": 23,
       "xp": {
-        "value": 50000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,19 +102,29 @@
       },
       "ci": {
         "value": [
-          "charmed"
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "prone",
+          "restrained",
+          "stunned",
+          "unconscious"
         ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Blob Of Annihilation",
+    "name": "Blob of Annihilation",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -132,7 +142,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the blob is reduced to 0 Pontos de Vida, it implodes and ejects any creatures and objects en- gulfed by it into the Astral Sea. The blob itself vanishes, leaving behind a layer of slime on everything that was within 600 feet of it. In 1d20 years, the blob reconsti- tutes on a random world in the Material Plane.</p>",
+          "value": "<p>If the blob is reduced to 0 Pontos de Vida, it implodes and ejects any creatures and objects engulfed by it into the Astral Sea. The blob itself vanishes, leaving behind a layer of slime on everything that was within 180 m of it. In 1d20 years, the blob reconstitutes on a random world in the Material Plane.</p>",
           "chat": ""
         },
         "activation": {
@@ -156,7 +166,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!AHtKl8XvfMOk5Zny.siCfQdg1DhzpPrAV"
+      "_key": "!actors.items!k8uNPxa9TaB1rQfH.siCfQdg1DhzpPrAV"
     },
     {
       "_id": "eyvWicbxWRUMmIcY",
@@ -165,7 +175,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the blob fails a saving throw, it can choose to succeed instead.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -194,16 +204,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!AHtKl8XvfMOk5Zny.eyvWicbxWRUMmIcY"
+      "_key": "!actors.items!k8uNPxa9TaB1rQfH.eyvWicbxWRUMmIcY"
     },
     {
-      "_id": "PezZ84W6mlDWZHQP",
-      "name": "Magic Resistance",
+      "_id": "iI01PPme65MAGX6I",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The blob has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -227,7 +237,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!AHtKl8XvfMOk5Zny.PezZ84W6mlDWZHQP"
+      "_key": "!actors.items!k8uNPxa9TaB1rQfH.iI01PPme65MAGX6I"
     },
     {
       "_id": "3FB3JP7zorlKw0jy",
@@ -236,7 +246,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The blob makes two Pseudopod attacks and uses Engulf. It can replace one attack with a use of Restraining Glob.</p>",
+          "value": "<p>The blob makes two Pseudópode attacks and uses Engulf. It can replace one attack with a use of Restraining Glob.</p>",
           "chat": ""
         },
         "activation": {
@@ -261,16 +271,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!AHtKl8XvfMOk5Zny.3FB3JP7zorlKw0jy"
+      "_key": "!actors.items!k8uNPxa9TaB1rQfH.3FB3JP7zorlKw0jy"
     },
     {
-      "_id": "xkkaZc7I9L6OaGpr",
-      "name": "Pseudopod",
+      "_id": "08x1y7rKTrKEvePU",
+      "name": "Pseudópode",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 15, alcance 30 ft. Acerto: 24 (3d10 + 8) Energia de dano. Engulf The blob moves up to its Speed and can move through the spaces of Huge or smaller creatures and objects. Força Teste de Resistência: DC 23, cada criatura or object whose space the blob enters for the first time during this move. Falha: The target is engulfed. While engulfed, a target has Total Cover against attacks and other effects outside the blob, and when the blob moves, the engulfed target moves with it. A nonmagical object is destroyed after spending l minute engulfed. While engulfed, a creature takes 21 (6d6) Energia dam- age at the start of each of its turns, is suffocating, has the Impedido condition, and repeats the save at the end of each of its turns. An engulfed creature that is l/l 0 reduced to 0 Pontos de Vida dissolves into ash, which is 0 ejected into the Astral Sea. l/l <i:: Sucesso: The target escapes and enters the nearest ~ unoccupied space.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +15, alcance 9 m. Acerto: 24 (3d10 + 8) dano de energia.</p>",
           "chat": ""
         },
         "activation": {
@@ -288,26 +298,26 @@
           "subtype": ""
         },
         "activities": {
-          "rbsTptNw8KTFMria": {
-            "_id": "rbsTptNw8KTFMria",
-            "type": "save",
+          "CiTgCZgLWgOLPdb1": {
+            "_id": "CiTgCZgLWgOLPdb1",
+            "type": "attack",
             "activation": {
               "type": "action",
               "value": null,
               "override": true,
               "condition": ""
             },
-            "save": {
-              "ability": [
-                "str"
-              ],
-              "dc": {
-                "calculation": "",
-                "formula": "23"
+            "attack": {
+              "ability": "",
+              "bonus": "15",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
               }
             },
             "damage": {
-              "onSave": "half",
+              "includeBase": false,
               "parts": [
                 {
                   "number": 3,
@@ -334,24 +344,24 @@
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 15,
+            "attackType": "melee",
             "damageFormula": "3d10+8",
-            "damageType": "force",
-            "saveDc": 23,
-            "saveAbility": "str"
+            "damageType": "force"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!AHtKl8XvfMOk5Zny.xkkaZc7I9L6OaGpr"
+      "_key": "!actors.items!k8uNPxa9TaB1rQfH.08x1y7rKTrKEvePU"
     },
     {
-      "_id": "UsEoozHwrvblTomf",
-      "name": "Restraining Glob",
+      "_id": "33LmOhVsKbDKihFP",
+      "name": "Engulf",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The blob lobs a slimy glob at one Large or smaller creature it can see within 600 feet of itself. Destreza Teste de Resistência: DC 23, o alvoed creature. Falha: 18 (3d6 + 8) Ácido de dano. The glob rolls o alvo 60 feet straight toward the blob, and the / target has the Impedido condition until the end of its next turn, when the glob harmlessly dissolves. Sucesso: Metade do dano only.</p>",
+          "value": "<p>The blob moves up to its Speed and can move through the spaces of Huge or smaller creatures and objects. Teste de Resistência de Força: CD 23, cada criatura or object whose space the blob enters for the first time during this move. O alvo is engulfed. While engulfed, a target has Total Cover against attacks and other effects outside the blob, and when the blob moves, the engulfed target moves with it. A nonmagical object is destroyed after spending 1 minute engulfed.\nWhile engulfed, uma criatura takes 21 (6d6) dano de energia at the start of each of its turns, is suffocating, fica com a condição Impedido, and repeats the save at the end of each of its turns. An engulfed creature that is reduced to 0 Pontos de Vida dissolves into ash, which is ejected into the Astral Sea. O alvo escapes and enters the nearest unoccupied space.</p>",
           "chat": ""
         },
         "activation": {
@@ -369,8 +379,69 @@
           "subtype": ""
         },
         "activities": {
-          "yIpv10qLGOW4ClUj": {
-            "_id": "yIpv10qLGOW4ClUj",
+          "7l7LUGG7wPPWpJht": {
+            "_id": "7l7LUGG7wPPWpJht",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "23"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 23,
+            "saveAbility": "str"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!k8uNPxa9TaB1rQfH.33LmOhVsKbDKihFP"
+    },
+    {
+      "_id": "asKTzJdLne51lzdG",
+      "name": "Restraining Glob",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The blob lobs a slimy glob at one Large or smaller creature it can see within 180 m of itself. Teste de Resistência de Destreza: CD 23, the targeted creature. 18 (3d6 + 8) dano de ácido. The glob rolls o alvo 18 m straight toward the blob, and o alvo fica com a condição Impedido until the end of its next turn, when the glob harmlessly dissolves. Metade do dano only.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "sKah87yroPdZ4SXT": {
+            "_id": "sKah87yroPdZ4SXT",
             "type": "save",
             "activation": {
               "type": "action",
@@ -389,25 +460,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 3,
-                  "denomination": 6,
-                  "bonus": "8",
-                  "types": [
-                    "acid"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -415,15 +468,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "3d6+8",
-            "damageType": "acid",
             "saveDc": 23,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!AHtKl8XvfMOk5Zny.UsEoozHwrvblTomf"
+      "_key": "!actors.items!k8uNPxa9TaB1rQfH.asKTzJdLne51lzdG"
     },
     {
       "_id": "ArufaKv4iGTbCTvQ",
@@ -432,7 +483,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The blob deals 14 (4d6) Necrótico de dano to cada criatura engulfed by it. The blob can't take this action again until the start of its next turn.</p>",
+          "value": "<p>The blob deals 14 (4d6) dano necrótico to cada criatura engulfed by it. The blob can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -457,7 +508,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!AHtKl8XvfMOk5Zny.ArufaKv4iGTbCTvQ"
+      "_key": "!actors.items!k8uNPxa9TaB1rQfH.ArufaKv4iGTbCTvQ"
     },
     {
       "_id": "jPdYah4ymhYUcY3H",
@@ -491,7 +542,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!AHtKl8XvfMOk5Zny.jPdYah4ymhYUcY3H"
+      "_key": "!actors.items!k8uNPxa9TaB1rQfH.jPdYah4ymhYUcY3H"
     },
     {
       "_id": "bgSCnTcAgVJY4cIM",
@@ -500,7 +551,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The blob makes one Pseudopod attack. BLOB OF ANN I HILATION 47 BLUE DR AGONS Dragons of Tyranny and Tempests</p>",
+          "value": "<p>The blob makes one Pseudópode attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -525,13 +576,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!AHtKl8XvfMOk5Zny.bgSCnTcAgVJY4cIM"
+      "_key": "!actors.items!k8uNPxa9TaB1rQfH.bgSCnTcAgVJY4cIM"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Blob of Annihilation",
-      "page": 49,
+      "page": 47,
       "cr": "23",
       "warnings": []
     }

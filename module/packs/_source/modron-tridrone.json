@@ -1,6 +1,6 @@
 {
-  "_id": "7XGUqJ0poyI6DSZv",
-  "_key": "!actors!7XGUqJ0poyI6DSZv",
+  "_id": "qF42JWJny6Y2t3z4",
+  "_key": "!actors!qF42JWJny6Y2t3z4",
   "folder": "CVeezowVb7BNP8yc",
   "name": "Modron Tridrone",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 16,
         "max": 16,
-        "formula": "3d8+3",
+        "formula": "3d8 + 3",
         "temp": null,
         "tempmax": null
       },
@@ -67,7 +67,7 @@
         "custom": ""
       },
       "alignment": "Leal e Neutro",
-      "cr": 0,
+      "cr": 0.5,
       "xp": {
         "value": 0
       },
@@ -82,7 +82,7 @@
       "size": "med",
       "di": {
         "value": [],
-        "custom": "Charmed"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -93,12 +93,14 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Madron"
+        "custom": "Modron"
       }
     },
     "skills": {}
@@ -116,13 +118,13 @@
   },
   "items": [
     {
-      "_id": "4f7VSffc3bUA84vp",
-      "name": "Disintegration",
+      "_id": "1fSCChTZpQduEE40",
+      "name": "Desintegração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the modron dies, it disintegrates into dust, leaving behind anything it was wearing or carry, ng.</p>",
+          "value": "<p>Se a criatura morrer, ela se desintegra em pó, deixando para trás tudo o que estava vestindo ou carregando.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +148,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!7XGUqJ0poyI6DSZv.4f7VSffc3bUA84vp"
+      "_key": "!actors.items!qF42JWJny6Y2t3z4.1fSCChTZpQduEE40"
     },
     {
-      "_id": "jNJ3BqVuZNXdmtVE",
-      "name": "Habilidade",
+      "_id": "pDDHfTjwXdP8ceb7",
+      "name": "Ataque Múltiplo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>• Ataque Múltiplo. The modron makes three Clockwork Spear attacks.</p>",
+          "value": "<p>The modron makes three Clockwork Lança attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -180,16 +182,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!7XGUqJ0poyI6DSZv.jNJ3BqVuZNXdmtVE"
+      "_key": "!actors.items!qF42JWJny6Y2t3z4.pDDHfTjwXdP8ceb7"
     },
     {
-      "_id": "wQ9etBpxkGnuh9yL",
-      "name": "Clockwork Spear",
+      "_id": "tavfGeZMbbixCiXg",
+      "name": "Clockwork Lança",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +3, alcance 5 ft. or range 120 ft. Acerto: 4 (1d6 + 1) Energia de dano. Hit or Erro: The spear magically returns to the modron's _ hand immediately after a ranged attack._ MODRONS ~ 217 MODRON UADRONE Quadrones are among the most relatable modrons- and those most lilzely to go rogue. M ODRON PENTADRONE Pentadrones oversee and protect contingents of lesser modrons. They're quick to call lengthy meet- ings with other modrons when making decisions. MODRON QUADRONE Medium Construct, Lawful Neutral AC 16 Ini ti ative +2 (12) HP 22 (4d8 + 4) Speed 30 ft., F ly 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +3, alcance 1,5 m. or distância 36 m. Acerto: 4 (1d6 + 1) dano de energia. The spear magically returns to the modron's hand immediately after a ranged attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -207,8 +209,8 @@
           "subtype": ""
         },
         "activities": {
-          "pwcptAzAe9t56cVR": {
-            "_id": "pwcptAzAe9t56cVR",
+          "bCgsLdTyMyyX9oSg": {
+            "_id": "bCgsLdTyMyyX9oSg",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -261,14 +263,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!7XGUqJ0poyI6DSZv.wQ9etBpxkGnuh9yL"
+      "_key": "!actors.items!qF42JWJny6Y2t3z4.tavfGeZMbbixCiXg"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Modron Tridrone",
-      "page": 219,
-      "cr": "0",
+      "page": 217,
+      "cr": "1/2",
       "warnings": []
     }
   }

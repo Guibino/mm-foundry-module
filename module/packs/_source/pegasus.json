@@ -1,6 +1,6 @@
 {
-  "_id": "5y7D1DUKtMIloyxK",
-  "_key": "!actors!5y7D1DUKtMIloyxK",
+  "_id": "zVi6prxSY96KSG9t",
+  "_key": "!actors!zVi6prxSY96KSG9t",
   "folder": "IQP9BfRMl9yEsYGp",
   "name": "Pegasus",
   "type": "npc",
@@ -69,7 +69,7 @@
       "alignment": "Caótico e Bom",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -98,10 +98,15 @@
       },
       "languages": {
         "value": [],
-        "custom": "Under stands Ce les ti al, Comum, Élfico"
+        "custom": "understands Celestial, Comum, Élfico, and Sylvan but can't speak"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Pegasus",
@@ -116,13 +121,13 @@
   },
   "items": [
     {
-      "_id": "TQKXGjGKY2BusCFV",
-      "name": "Hooves",
+      "_id": "4V6JGlYR8ZaB0Efz",
+      "name": "Cascos",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 7 (1d6 . + 4) Concussão de dano plus 5 (2d4) Radiante de dano. PEGASUS ~ 235 I/ ,I PERF O RMER S Artists and Entertainers</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 7 (1d6 + 4) dano de concussão mais 5 (2d4) dano radiante.</p>",
           "chat": ""
         },
         "activation": {
@@ -140,8 +145,8 @@
           "subtype": ""
         },
         "activities": {
-          "bAxkpH178pzKiHNL": {
-            "_id": "bAxkpH178pzKiHNL",
+          "CbsWMzSo5aWbfO66": {
+            "_id": "CbsWMzSo5aWbfO66",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -162,15 +167,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "4",
                   "types": [
                     "bludgeoning"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "1d6.+4"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -188,19 +193,19 @@
           "mechanics": {
             "toHit": 6,
             "attackType": "melee",
-            "damageFormula": "1d6.+4",
+            "damageFormula": "1d6+4",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!5y7D1DUKtMIloyxK.TQKXGjGKY2BusCFV"
+      "_key": "!actors.items!zVi6prxSY96KSG9t.4V6JGlYR8ZaB0Efz"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Pegasus",
-      "page": 237,
+      "page": 235,
       "cr": "2",
       "warnings": []
     }

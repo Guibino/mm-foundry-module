@@ -1,0 +1,250 @@
+{
+  "_id": "c3JGkLwZggXKSgZ0",
+  "_key": "!actors!c3JGkLwZggXKSgZ0",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Lemure",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/lemure.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 5,
+        "proficient": 0
+      },
+      "con": {
+        "value": 11,
+        "proficient": 0
+      },
+      "int": {
+        "value": 1,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 11,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 3,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 9,
+        "formula": ""
+      },
+      "hp": {
+        "value": 9,
+        "max": 9,
+        "formula": "2d8",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 20
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "devil",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Mau",
+      "cr": 0,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "fire",
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "cold"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "frightened",
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "understands Infernal but can't speak"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Lemure",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/lemure.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "wNOVMytIs8MLaXw1",
+      "name": "Hellish Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the lemure dies in the Nine Hells, it revives with all its Pontos de Vida in 1d10 days unless it is killed by uma criatura under the effects of a Bless spell or its remains are sprinkled with Holy Water.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!c3JGkLwZggXKSgZ0.wNOVMytIs8MLaXw1"
+    },
+    {
+      "_id": "7mfY0g8MZx8KGguS",
+      "name": "Vile Slime",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 1,5 m. Acerto: 2 (1d4) dano de veneno.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "8v7Ah7IITcnK33EK": {
+            "_id": "8v7Ah7IITcnK33EK",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "2",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "",
+                  "types": [
+                    "poison"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 2,
+            "attackType": "melee",
+            "damageFormula": "1d4",
+            "damageType": "poison"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!c3JGkLwZggXKSgZ0.7mfY0g8MZx8KGguS"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Lemure",
+      "page": 194,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

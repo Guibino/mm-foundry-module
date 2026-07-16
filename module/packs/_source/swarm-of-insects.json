@@ -1,8 +1,8 @@
 {
-  "_id": "oLw4G1v1PhrH7iEP",
-  "_key": "!actors!oLw4G1v1PhrH7iEP",
+  "_id": "niU2bi1PaviKTyVV",
+  "_key": "!actors!niU2bi1PaviKTyVV",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Enxame Of Insects",
+  "name": "Swarm of Insects",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/swarm-of-insects.webp",
   "system": {
@@ -48,8 +48,7 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 20,
-        "fly": 20
+        "walk": 20
       },
       "senses": {
         "units": "ft",
@@ -68,9 +67,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 1,
+      "cr": 0.5,
       "xp": {
-        "value": 100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -86,7 +85,11 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
         "custom": ""
       },
       "dv": {
@@ -94,7 +97,16 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed",
+          "frightened",
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "prone",
+          "restrained",
+          "stunned"
+        ],
         "custom": ""
       },
       "languages": {
@@ -105,7 +117,7 @@
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Enxame Of Insects",
+    "name": "Swarm of Insects",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -117,13 +129,13 @@
   },
   "items": [
     {
-      "_id": "YLTBAILINZ0G9ePT",
-      "name": "Spider Climb",
+      "_id": "HIR3opFvAfeZZLKp",
+      "name": "Escalada de Aranha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the swarm has a Climb Speed, the swarm can climb difficult surfaces, including along ceil- ings, without needing to make an ability check.</p>",
+          "value": "<p>If the swarm has a Climb Speed, the swarm can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,11 +159,11 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!oLw4G1v1PhrH7iEP.YLTBAILINZ0G9ePT"
+      "_key": "!actors.items!niU2bi1PaviKTyVV.HIR3opFvAfeZZLKp"
     },
     {
-      "_id": "auvQHipkJzByj5V0",
-      "name": "Swarm",
+      "_id": "xWEBu9bgAH28rSpp",
+      "name": "Enxame",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -180,16 +192,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!oLw4G1v1PhrH7iEP.auvQHipkJzByj5V0"
+      "_key": "!actors.items!niU2bi1PaviKTyVV.xWEBu9bgAH28rSpp"
     },
     {
-      "_id": "Wa0PMen4t1Txw7g6",
-      "name": "Bites",
+      "_id": "fnN71URUoxUypU1P",
+      "name": "Mordidas",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Me lee Attack Roll: +3, alcance 5 ft. Acerto: 6 (2d4 + 1) Veneno de dano, or 3 (1d4 + 1) Veneno de dano if the swarm is Bloodied. 37 0 /\\ APPENDIX A I ANIMALS SWARM OF PIRANHAS Medium S warm ofTiny Beasts, Unaligned AC 13 I ni tiative +3 (13) HP 28 (8d8 ·_ 8) Speed 5 ft., Swim 40 ft . M OD SAVE MOD SAVE M OD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 6 (2d4 + 1) dano de veneno, or 3 (1d4 + 1) dano de veneno if the swarm is Bloodied.</p>",
           "chat": ""
         },
         "activation": {
@@ -206,25 +218,69 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "8mbb6SMCv08STD05": {
+            "_id": "8mbb6SMCv08STD05",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "3",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "1",
+                  "types": [
+                    "poison"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 3,
+            "attackType": "melee",
             "damageFormula": "2d4+1",
             "damageType": "poison"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!oLw4G1v1PhrH7iEP.Wa0PMen4t1Txw7g6"
+      "_key": "!actors.items!niU2bi1PaviKTyVV.fnN71URUoxUypU1P"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Swarm of Insects",
-      "page": 372,
-      "cr": "1",
+      "page": 370,
+      "cr": "1/2",
       "warnings": []
     }
   }

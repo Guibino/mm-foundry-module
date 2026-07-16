@@ -1,6 +1,6 @@
 {
-  "_id": "awUHjAiyTQb2o2v8",
-  "_key": "!actors!awUHjAiyTQb2o2v8",
+  "_id": "C4TMovekpUjpE8RA",
+  "_key": "!actors!C4TMovekpUjpE8RA",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Nalfeshnee",
   "type": "npc",
@@ -12,7 +12,7 @@
         "proficient": 0
       },
       "dex": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "con": {
@@ -63,7 +63,7 @@
     "details": {
       "type": {
         "value": "fiend",
-        "subtype": "Demon",
+        "subtype": "demon",
         "swarm": "",
         "custom": ""
       },
@@ -82,7 +82,9 @@
     "traits": {
       "size": "lg",
       "di": {
-        "value": [],
+        "value": [
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
@@ -98,7 +100,10 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "frightened",
+          "poisoned"
+        ],
         "custom": ""
       },
       "languages": {
@@ -121,13 +126,79 @@
   },
   "items": [
     {
+      "_id": "SqVNfoT7nQjZxMkV",
+      "name": "Restauração Demoníaca",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Se a criatura morrer fora do Abismo, o corpo dela se dissolve em icor e ela ganha um novo corpo instantaneamente, revivendo com todos os seus Pontos de Vida em algum lugar do Abismo.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!C4TMovekpUjpE8RA.SqVNfoT7nQjZxMkV"
+    },
+    {
+      "_id": "KbJ8trrbdxvZNXCJ",
+      "name": "Resistência a Magia",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!C4TMovekpUjpE8RA.KbJ8trrbdxvZNXCJ"
+    },
+    {
       "_id": "NUOOfQpYVqJxdYxi",
       "name": "Ataque Múltiplo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The nalfeshnee makes three Rend attacks.</p>",
+          "value": "<p>A criatura faz três ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -152,16 +223,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!awUHjAiyTQb2o2v8.NUOOfQpYVqJxdYxi"
+      "_key": "!actors.items!C4TMovekpUjpE8RA.NUOOfQpYVqJxdYxi"
     },
     {
-      "_id": "QhF77JMrzm3rU8Xo",
-      "name": "Rend",
+      "_id": "msZgavJyPBKCeAgj",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 10 ft. Acerto: 16 (2d10 + 5) Cortante de dano plus 11 (2d10) Energia de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 3 m. Acerto: 16 (2d10 + 5) dano cortante mais 11 (2d10) dano de energia.</p>",
           "chat": ""
         },
         "activation": {
@@ -179,8 +250,8 @@
           "subtype": ""
         },
         "activities": {
-          "rOLshb0jf8z37b1H": {
-            "_id": "rOLshb0jf8z37b1H",
+          "X5IdBLaxd4TS2xyH": {
+            "_id": "X5IdBLaxd4TS2xyH",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -233,16 +304,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!awUHjAiyTQb2o2v8.QhF77JMrzm3rU8Xo"
+      "_key": "!actors.items!C4TMovekpUjpE8RA.msZgavJyPBKCeAgj"
     },
     {
-      "_id": "m6MQZI4ekZkBJNFv",
-      "name": "Teleport",
+      "_id": "CNc9PnZgw1UdBgAN",
+      "name": "Teletransporte",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The nalfeshnee teleports up to 120 feet to an unoccupied space it can see.</p>",
+          "value": "<p>The nalfeshnee teleports up to 36 m to an unoccupied space it can see.</p>",
           "chat": ""
         },
         "activation": {
@@ -267,16 +338,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!awUHjAiyTQb2o2v8.m6MQZI4ekZkBJNFv"
+      "_key": "!actors.items!C4TMovekpUjpE8RA.CNc9PnZgw1UdBgAN"
     },
     {
       "_id": "o9Ordy7vLWwzM0Xe",
-      "name": "Horror Nimbus (Recharge 5-6)",
+      "name": "Horror Nimbus (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sabedoria Sa11ing Throw: DC 15, cada criatura in a 15-foot Emanation originating from the nalfeshnee. Falha: 28 (8d6) Psíquico dam- age, and o alvo has the Amedrontado condition for l minute, until it takes de dano, or until it ends its turn with the nalfeshnee out of line of sight. Sucesso: The target is immune to this nalfeshnee's Horror Nimbus for 24 hours.</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 15, cada criatura in a 4,5 m Emanation originating from the nalfeshnee. 28 (8d6) dano psíquico, and o alvo fica com a condição Amedrontado for 1 minute, until it takes de dano, or until it ends its turn with the nalfeshnee out of line of sight. O alvo is immune to this nalfeshnee's Horror Nimbus for 24 hours.</p>",
           "chat": ""
         },
         "activation": {
@@ -299,15 +370,42 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "fzhBC6Z6jJ2ktqOZ": {
+            "_id": "fzhBC6Z6jJ2ktqOZ",
+            "type": "save",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "15"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 15,
+            "saveAbility": "wis"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!awUHjAiyTQb2o2v8.o9Ordy7vLWwzM0Xe"
+      "_key": "!actors.items!C4TMovekpUjpE8RA.o9Ordy7vLWwzM0Xe"
     },
     {
       "_id": "Ehm5sUrkWaBue7rG",
@@ -316,7 +414,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: Another creature the nalfeshnee can see ends its move within 120 feet of the nalfeshnee. . Response: The nalfeshnee uses Teleport, but its des- -< l.lJ tination space must be within 10 feet of the trigger- z ing creature. ::J NIGHT HAG Hag of Nightmare and Corruption</p>",
+          "value": "<p>Another creature the nalfeshnee can see ends its move within 36 m of the nalfeshnee. The nalfeshnee uses Teletransporte, but its destination space must be within 3 m of the triggering creature.</p>",
           "chat": ""
         },
         "activation": {
@@ -341,13 +439,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!awUHjAiyTQb2o2v8.Ehm5sUrkWaBue7rG"
+      "_key": "!actors.items!C4TMovekpUjpE8RA.Ehm5sUrkWaBue7rG"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Nalfeshnee",
-      "page": 226,
+      "page": 224,
       "cr": "13",
       "warnings": []
     }

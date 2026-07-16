@@ -1,59 +1,59 @@
 {
-  "_id": "rmqLI8fkres44vd7",
-  "_key": "!actors!rmqLI8fkres44vd7",
-  "folder": "Hp5o2ufz9hhrO2ew",
+  "_id": "d3GeIPT3VGqKgBek",
+  "_key": "!actors!d3GeIPT3VGqKgBek",
+  "folder": "3SEe9J5t05jhrkCa",
   "name": "Hydra",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/hydra.webp",
   "system": {
     "abilities": {
       "str": {
-        "value": 6,
+        "value": 20,
         "proficient": 0
       },
       "dex": {
-        "value": 17,
-        "proficient": 0
-      },
-      "con": {
-        "value": 13,
-        "proficient": 0
-      },
-      "int": {
-        "value": 11,
-        "proficient": 0
-      },
-      "wis": {
         "value": 12,
         "proficient": 0
       },
+      "con": {
+        "value": 20,
+        "proficient": 0
+      },
+      "int": {
+        "value": 2,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
       "cha": {
-        "value": 14,
+        "value": 7,
         "proficient": 0
       }
     },
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 13,
+        "flat": 15,
         "formula": ""
       },
       "hp": {
-        "value": 21,
-        "max": 21,
-        "formula": "6d4 + 6",
+        "value": 184,
+        "max": 184,
+        "formula": "16d12 + 80",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 20,
-        "fly": 40
+        "walk": 40,
+        "swim": 40
       },
       "senses": {
         "units": "ft",
-        "darkvision": 120
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -62,15 +62,15 @@
     },
     "details": {
       "type": {
-        "value": "fiend",
-        "subtype": "Devil",
+        "value": "monstrosity",
+        "subtype": "",
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Leal e Mau",
-      "cr": 0,
+      "alignment": "Sem Tendência",
+      "cr": 8,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -80,7 +80,7 @@
       }
     },
     "traits": {
-      "size": "tiny",
+      "size": "huge",
       "di": {
         "value": [],
         "custom": ""
@@ -94,7 +94,14 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "blinded",
+          "charmed",
+          "deafened",
+          "frightened",
+          "stunned",
+          "unconscious"
+        ],
         "custom": ""
       },
       "languages": {
@@ -103,17 +110,9 @@
       }
     },
     "skills": {
-      "dec": {
-        "value": 1,
-        "ability": "cha"
-      },
-      "ins": {
-        "value": 1,
+      "prc": {
+        "value": 2,
         "ability": "wis"
-      },
-      "ste": {
-        "value": 1,
-        "ability": "dex"
       }
     }
   },
@@ -130,13 +129,13 @@
   },
   "items": [
     {
-      "_id": "1k4qWbyVM03d8U6h",
-      "name": "Magic Resistance",
+      "_id": "1c5kIJaEfyCUfoBk",
+      "name": "Prender a Respiração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The imp has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura consegue prender a respiração por 1 hora.</p>",
           "chat": ""
         },
         "activation": {
@@ -160,16 +159,116 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!rmqLI8fkres44vd7.1k4qWbyVM03d8U6h"
+      "_key": "!actors.items!d3GeIPT3VGqKgBek.1c5kIJaEfyCUfoBk"
     },
     {
-      "_id": "jHhgk9ugI6kfDAdW",
-      "name": "Sting",
+      "_id": "Jwpp0n5ww74QOh1G",
+      "name": "Multiple Heads",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 6 (1d6 + 3) Perfurante de dano plus 7 (2d6) Veneno de dano.</p>",
+          "value": "<p>The hydra has five heads. Whenever the hydra takes 25 de dano or more on a single turn, one of its heads dies. The hydra dies if all its heads are dead. At the end of each of its turns when it has at least one living head, the hydra grows two heads for each of its heads that died since its last turn, unless it has taken dano de fogo since its last turn. The hydra regains 20 Pontos de Vida when it grows new heads.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!d3GeIPT3VGqKgBek.Jwpp0n5ww74QOh1G"
+    },
+    {
+      "_id": "bwx1uQ2gmVn9RHM0",
+      "name": "Reactive Heads",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>For each head the hydra has beyond one, it gets an extra Reaction that can be used only for Opportunity Attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!d3GeIPT3VGqKgBek.bwx1uQ2gmVn9RHM0"
+    },
+    {
+      "_id": "f32cLEJ0Pr6cmGYa",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The hydra makes as many Mordida attacks as it has heads.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!d3GeIPT3VGqKgBek.f32cLEJ0Pr6cmGYa"
+    },
+    {
+      "_id": "ZIGwLmmABQXC6W77",
+      "name": "Mordida",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 3 m. Acerto: 10 (1d10 + 5) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -187,8 +286,8 @@
           "subtype": ""
         },
         "activities": {
-          "RpxVcHXuinkjQfKM": {
-            "_id": "RpxVcHXuinkjQfKM",
+          "qW7bimhIkfeD8mhT": {
+            "_id": "qW7bimhIkfeD8mhT",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -198,7 +297,7 @@
             },
             "attack": {
               "ability": "",
-              "bonus": "5",
+              "bonus": "8",
               "flat": true,
               "type": {
                 "value": "melee",
@@ -210,8 +309,8 @@
               "parts": [
                 {
                   "number": 1,
-                  "denomination": 6,
-                  "bonus": "3",
+                  "denomination": 10,
+                  "bonus": "5",
                   "types": [
                     "piercing"
                   ],
@@ -233,90 +332,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "toHit": 5,
+            "toHit": 8,
             "attackType": "melee",
-            "damageFormula": "1d6+3",
+            "damageFormula": "1d10+5",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!rmqLI8fkres44vd7.jHhgk9ugI6kfDAdW"
-    },
-    {
-      "_id": "icjelQEYU4473CNC",
-      "name": "Invisibility",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The imp casts Invisibility on itself, requiring no spell components and using Carisma as the spell- casting ability.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!rmqLI8fkres44vd7.icjelQEYU4473CNC"
-    },
-    {
-      "_id": "h7IaQGcz9YWTuQ1b",
-      "name": "Shape-Shift",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The imp shape-shifts to resemble a rat (Speed 20 ft.), a raven (20 ft., Fly 60 ft.)i or a spider (20 ft., Climb 20 ft.), or it returns to its true form. Its j game statistics are the same in each form, except for :,,: its Speed. Any equipment it is wearing or carrying isn't transformed. IMP Devil of Pettiness and Suspicion</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!rmqLI8fkres44vd7.h7IaQGcz9YWTuQ1b"
+      "_key": "!actors.items!d3GeIPT3VGqKgBek.ZIGwLmmABQXC6W77"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Hydra",
-      "page": 179,
-      "cr": "0",
+      "page": 175,
+      "cr": "8",
       "warnings": []
     }
   }

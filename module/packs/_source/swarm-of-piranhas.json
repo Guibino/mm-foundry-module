@@ -1,8 +1,8 @@
 {
-  "_id": "kxw6HV7xdUVtnjv4",
-  "_key": "!actors!kxw6HV7xdUVtnjv4",
+  "_id": "QeZ4FboIveaWp4OK",
+  "_key": "!actors!QeZ4FboIveaWp4OK",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Enxame Of Piranhas",
+  "name": "Swarm of Piranhas",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/swarm-of-piranhas.webp",
   "system": {
@@ -41,7 +41,7 @@
       "hp": {
         "value": 28,
         "max": 28,
-        "formula": "8d8 ·_ 8",
+        "formula": "8d8 - 8",
         "temp": null,
         "tempmax": null
       },
@@ -70,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -83,10 +83,14 @@
       "size": "med",
       "di": {
         "value": [],
-        "custom": "Charmed; Frightened; Grappled; Paralyzed"
+        "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
         "custom": ""
       },
       "dv": {
@@ -94,18 +98,27 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed",
+          "frightened",
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "prone",
+          "restrained",
+          "stunned"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Enxame Of Piranhas",
+    "name": "Swarm of Piranhas",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -117,8 +130,8 @@
   },
   "items": [
     {
-      "_id": "BkhvhtBEaqdV1pBf",
-      "name": "Swarm",
+      "_id": "2zThQxXMUlhUuTAR",
+      "name": "Enxame",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -147,16 +160,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!kxw6HV7xdUVtnjv4.BkhvhtBEaqdV1pBf"
+      "_key": "!actors.items!QeZ4FboIveaWp4OK.2zThQxXMUlhUuTAR"
     },
     {
-      "_id": "8nTGsB3NkileHzMn",
-      "name": "Water Breathing",
+      "_id": "Yu8mWaorkFfTocMq",
+      "name": "Respiração Aquática",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The swarm can breathe only underwater.</p>",
+          "value": "<p>A criatura só consegue respirar debaixo d'água.</p>",
           "chat": ""
         },
         "activation": {
@@ -180,16 +193,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!kxw6HV7xdUVtnjv4.8nTGsB3NkileHzMn"
+      "_key": "!actors.items!QeZ4FboIveaWp4OK.Yu8mWaorkFfTocMq"
     },
     {
-      "_id": "K90iOeIGSQfsGLwe",
-      "name": "Bites",
+      "_id": "hz55TZIKzFDpNOIT",
+      "name": "Mordidas",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5 (with Advantage if o alvo doesn't have all its Pontos de Vida), alcance 5 ft. Acerto: 8 (2d4 + 3) Perfurante de dano, or 5 (1d4 + 3) Perfurante de dano if the swarm is Bloodied. SWARM OF RATS Medium S warm of Ti ny Beasts, Unaligned AC 10 Iniciativa +0 (10) HP 14 (4d8 - 4) Speed 30 ft., Climb 30 ft. MOD SAVE MOD SAVE M O D SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5 (with Vantagem if o alvo doesn't have all its Pontos de Vida), alcance 1,5 m. Acerto: 8 (2d4 + 3) dano perfurante, or 5 (1d4 + 3) dano perfurante if the swarm is Bloodied.</p>",
           "chat": ""
         },
         "activation": {
@@ -207,8 +220,8 @@
           "subtype": ""
         },
         "activities": {
-          "pD5N1ek1eyf4j8ly": {
-            "_id": "pD5N1ek1eyf4j8ly",
+          "dtmYvCWuHsGq4zo1": {
+            "_id": "dtmYvCWuHsGq4zo1",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -261,13 +274,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!kxw6HV7xdUVtnjv4.K90iOeIGSQfsGLwe"
+      "_key": "!actors.items!QeZ4FboIveaWp4OK.hz55TZIKzFDpNOIT"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Swarm of Piranhas",
-      "page": 372,
+      "page": 370,
       "cr": "1",
       "warnings": []
     }

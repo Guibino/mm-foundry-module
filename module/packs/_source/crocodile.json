@@ -1,6 +1,6 @@
 {
-  "_id": "CYktGfNlJcNBRvS7",
-  "_key": "!actors!CYktGfNlJcNBRvS7",
+  "_id": "LyWXh7cxqDVHj7PC",
+  "_key": "!actors!LyWXh7cxqDVHj7PC",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Crocodile",
   "type": "npc",
@@ -48,7 +48,8 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 20,
+        "swim": 30
       },
       "senses": {
         "units": "ft"
@@ -68,7 +69,7 @@
       "alignment": "Sem Tendência",
       "cr": 0.5,
       "xp": {
-        "value": 100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -100,7 +101,12 @@
         "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Crocodile",
@@ -115,13 +121,13 @@
   },
   "items": [
     {
-      "_id": "qmibbE3wvUar1bbY",
-      "name": "Hold Breath",
+      "_id": "dXmeBdZkVE17q6zw",
+      "name": "Prender a Respiração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The crocodile can hold its breath for 1 hour.</p>",
+          "value": "<p>A criatura consegue prender a respiração por 1 hora.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,16 +151,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CYktGfNlJcNBRvS7.qmibbE3wvUar1bbY"
+      "_key": "!actors.items!LyWXh7cxqDVHj7PC.dXmeBdZkVE17q6zw"
     },
     {
-      "_id": "oNqwAMxWuYlZs4fQ",
-      "name": "Bite",
+      "_id": "H2uvGIAdvkezQjNB",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 6 (1d8 + 2)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 6 (1d8 + 2) dano perfurante. If o alvo is a Medium or smaller creature, it fica com a condição Agarrado (CD para escapar 12). While Agarrado, o alvo fica com a condição Impedido.</p>",
           "chat": ""
         },
         "activation": {
@@ -172,8 +178,8 @@
           "subtype": ""
         },
         "activities": {
-          "JH93Bg0e4kut8T6l": {
-            "_id": "JH93Bg0e4kut8T6l",
+          "8bSlLRVfho09MPno": {
+            "_id": "8bSlLRVfho09MPno",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -192,7 +198,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -201,52 +225,20 @@
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d8+2",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CYktGfNlJcNBRvS7.oNqwAMxWuYlZs4fQ"
-    },
-    {
-      "_id": "i7QmvphyhZV9P4Kn",
-      "name": "Perfurante de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If o alvo is a Medium or smaller creature, it has the Agarrado condition (escape DC 12). While Agarrado, o alvo has the Impedido condition. DEER Medium Beast, Unaligned AC 13 Iniciativa +3 (13) HP 4 (1d8) Sp ee d 50 ft. MOD SA VE M OD SA VE M OD S AVE.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!CYktGfNlJcNBRvS7.i7QmvphyhZV9P4Kn"
+      "_key": "!actors.items!LyWXh7cxqDVHj7PC.H2uvGIAdvkezQjNB"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Crocodile",
-      "page": 354,
+      "page": 352,
       "cr": "1/2",
       "warnings": []
     }

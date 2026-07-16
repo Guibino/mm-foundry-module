@@ -1,8 +1,8 @@
 {
-  "_id": "95yOHgdLUn3eWDyp",
-  "_key": "!actors!95yOHgdLUn3eWDyp",
+  "_id": "w9Slt3aORxCkylbX",
+  "_key": "!actors!w9Slt3aORxCkylbX",
   "folder": "Hp5o2ufz9hhrO2ew",
-  "name": "Chain Diabo",
+  "name": "Chain Devil",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/chain-devil.webp",
   "system": {
@@ -41,7 +41,7 @@
       "hp": {
         "value": 85,
         "max": 85,
-        "formula": "10d8+40",
+        "formula": "10d8 + 40",
         "temp": null,
         "tempmax": null
       },
@@ -62,14 +62,14 @@
     "details": {
       "type": {
         "value": "fiend",
-        "subtype": "",
+        "subtype": "devil",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Mau",
       "cr": 8,
       "xp": {
-        "value": 3900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -91,9 +91,10 @@
         "value": [
           "bludgeoning",
           "cold",
-          "piercing"
+          "piercing",
+          "slashing"
         ],
-        "custom": "Slash ing"
+        "custom": ""
       },
       "dv": {
         "value": [],
@@ -107,13 +108,13 @@
       },
       "languages": {
         "value": [],
-        "custom": "Infernal"
+        "custom": ""
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Chain Diabo",
+    "name": "Chain Devil",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -125,13 +126,13 @@
   },
   "items": [
     {
-      "_id": "NG5WKE3euqvW9Rcm",
-      "name": "Diabolical Restoration",
+      "_id": "15dIxZohvSMKYHv4",
+      "name": "Restauração Diabólica",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Pontos de Vida somewhere in the Nine Hells.</p>",
+          "value": "<p>Se a criatura morrer fora dos Nove Infernos, o corpo dela desaparece em fumaça sulfurosa e ela ganha um novo corpo instantaneamente, revivendo com todos os seus Pontos de Vida em algum lugar dos Nove Infernos.</p>",
           "chat": ""
         },
         "activation": {
@@ -155,16 +156,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!95yOHgdLUn3eWDyp.NG5WKE3euqvW9Rcm"
+      "_key": "!actors.items!w9Slt3aORxCkylbX.15dIxZohvSMKYHv4"
     },
     {
-      "_id": "y5HL9jkfhtlUyycu",
-      "name": "Magic Resistance",
+      "_id": "kXsefkWqTOItOhBK",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The devil has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -188,7 +189,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!95yOHgdLUn3eWDyp.y5HL9jkfhtlUyycu"
+      "_key": "!actors.items!w9Slt3aORxCkylbX.kXsefkWqTOItOhBK"
     },
     {
       "_id": "tmwoNwPIVPgxd8UD",
@@ -197,7 +198,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The devil makes two Chain attacks and uses Conjure Infernal Chain. 68 CHArN DEVIL</p>",
+          "value": "<p>The devil makes two Chain attacks and uses Conjure Infernal Chain.</p>",
           "chat": ""
         },
         "activation": {
@@ -222,7 +223,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!95yOHgdLUn3eWDyp.tmwoNwPIVPgxd8UD"
+      "_key": "!actors.items!w9Slt3aORxCkylbX.tmwoNwPIVPgxd8UD"
     },
     {
       "_id": "VOZ5LmHKxM8sOj3X",
@@ -231,7 +232,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 10 ft. Acerto: 11 (2d6 + 4) Cortante de dano. If o alvo is a Large or smaller creature, it has the Agarrado condition (escape DC 14) from one of two chains, and it has the Impedido con- dition until the grapple ends. u</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 3 m. Acerto: 11 (2d6 + 4) dano cortante. If o alvo is a Large or smaller creature, it fica com a condição Agarrado (CD para escapar 14) from one of two chains, and it fica com a condição Impedido until the grapple ends.</p>",
           "chat": ""
         },
         "activation": {
@@ -303,7 +304,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!95yOHgdLUn3eWDyp.VOZ5LmHKxM8sOj3X"
+      "_key": "!actors.items!w9Slt3aORxCkylbX.VOZ5LmHKxM8sOj3X"
     },
     {
       "_id": "pVEAW9LZoh8CQjdL",
@@ -312,7 +313,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The devil conjures a fiery chain to bind a creature. Destreza Teste de Resistência: DC 15, uma criatura the devil can see within 60 feet. Falha: 9 (2d4 + 4) Fogo de dano, and o alvo has the Impedido condition until the end of the devil's next turn, at which point the chain disappears. If o alvo is Large or smaller, the devil moves o alvo up to 30 feet straight toward itself. Sucesso: The chain disappears.</p>",
+          "value": "<p>The devil conjures a fiery chain to bind uma criatura. Teste de Resistência de Destreza: CD 15, uma criatura the devil can see within 18 m. 9 (2d4 + 4) dano de fogo, and o alvo fica com a condição Impedido until the end of the devil's next turn, at which point the chain disappears. If o alvo is Large or smaller, the devil moves o alvo up to 9 m straight toward itself. The chain disappears.</p>",
           "chat": ""
         },
         "activation": {
@@ -350,25 +351,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 2,
-                  "denomination": 4,
-                  "bonus": "4",
-                  "types": [
-                    "fire"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -376,15 +359,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "2d4+4",
-            "damageType": "fire",
             "saveDc": 15,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!95yOHgdLUn3eWDyp.pVEAW9LZoh8CQjdL"
+      "_key": "!actors.items!w9Slt3aORxCkylbX.pVEAW9LZoh8CQjdL"
     },
     {
       "_id": "HPCFWj4eO8Z4Rq5v",
@@ -393,7 +374,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: A creature the devil can see starts its turn within 30 feet of the devil and can see the ~evil. Response-Sabedoria Teste de Resistência: DC 15, the trig- gering creature. Falha: The target has the Amedrontado c, ondition until the end of its turn. Sucesso: The target is er: immune to this devil's Unnerving Gaze for 24 hours. <!'. CY CD CHASME Demon of Betrayal and Sycophancy</p>",
+          "value": "<p>A creature the devil can see starts its turn within 9 m of the devil and can see the devil. dWisdom Teste de Resistência: CD 15, the triggering creature. O alvo fica com a condição Amedrontado until the end of its turn. O alvo is immune to this devil's Unnerving Gaze for 24 hours.</p>",
           "chat": ""
         },
         "activation": {
@@ -445,13 +426,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!95yOHgdLUn3eWDyp.HPCFWj4eO8Z4Rq5v"
+      "_key": "!actors.items!w9Slt3aORxCkylbX.HPCFWj4eO8Z4Rq5v"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Chain Devil",
-      "page": 70,
+      "page": 68,
       "cr": "8",
       "warnings": []
     }

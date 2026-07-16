@@ -1,8 +1,8 @@
 {
-  "_id": "Z0ScqEWiuKUQdYlz",
-  "_key": "!actors!Z0ScqEWiuKUQdYlz",
+  "_id": "CigyJUvHyThoOSNd",
+  "_key": "!actors!CigyJUvHyThoOSNd",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Jovem Vermelho Dragão",
+  "name": "Young Red Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/young-red-dragon.webp",
   "system": {
@@ -65,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "C hro mat ic",
+        "subtype": "chromatic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Mau",
       "cr": 10,
       "xp": {
-        "value": 5900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -84,7 +84,9 @@
     "traits": {
       "size": "lg",
       "di": {
-        "value": [],
+        "value": [
+          "fire"
+        ],
         "custom": ""
       },
       "dr": {
@@ -101,7 +103,7 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum, Dracônico"
       }
     },
     "skills": {
@@ -110,13 +112,13 @@
         "ability": "wis"
       },
       "ste": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       }
     }
   },
   "prototypeToken": {
-    "name": "Jovem Vermelho Dragão",
+    "name": "Young Red Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -134,7 +136,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks. R~nd. Rolagem de Ataque Corpo a Corpo:+ 10, alcance 10 ft. Hit : 13 (2d6 + 6) Cortante de dano plus 3 (1d6) Fogo de dano.</p>",
+          "value": "<p>A criatura faz três ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -159,16 +161,97 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Z0ScqEWiuKUQdYlz.FXc3iSaMQKtKujZU"
+      "_key": "!actors.items!CigyJUvHyThoOSNd.FXc3iSaMQKtKujZU"
     },
     {
-      "_id": "fQ1w5ktd10NofwC5",
-      "name": "Fogo Breath (Recharge 5-6)",
+      "_id": "gLutljR3JzHP0Y2U",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC Q_ 17, cada criatura in a 30-foot Cone. Falha: 56 (16d6) <(</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 3 m. Acerto: 13 (2d6 + 6) dano cortante mais 3 (1d6) dano de fogo.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "eNf0hSKjcmgz3SBa": {
+            "_id": "eNf0hSKjcmgz3SBa",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "6",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 10,
+            "attackType": "melee",
+            "damageFormula": "2d6+6",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!CigyJUvHyThoOSNd.gLutljR3JzHP0Y2U"
+    },
+    {
+      "_id": "baUIdS7VrHxGA3cE",
+      "name": "Sopro de Fogo (Recharge 5)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Destreza: CD 17, cada criatura in a 9 m Cone. 56 (16d6) dano de fogo. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -191,55 +274,48 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "e9DqXbnUhTxzW0xh": {
+            "_id": "e9DqXbnUhTxzW0xh",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "17"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 17,
+            "saveAbility": "dex"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Z0ScqEWiuKUQdYlz.fQ1w5ktd10NofwC5"
-    },
-    {
-      "_id": "WPCp7aaSBn02LJsg",
-      "name": "Fogo de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Sucesso: Metade do dano. __ l/1 ADULT RED DRAGON Huge Dragon (Chromat ic), Chaotic ElJi! AC 19 Iniciativa + 12 (22) HP 256 (19d12 + 133) Sp eed 40 ft., Climb 40 ft., Fly 80 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!Z0ScqEWiuKUQdYlz.WPCp7aaSBn02LJsg"
+      "_key": "!actors.items!CigyJUvHyThoOSNd.baUIdS7VrHxGA3cE"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Young Red Dragon",
-      "page": 256,
+      "page": 254,
       "cr": "10",
       "warnings": []
     }

@@ -1,6 +1,6 @@
 {
-  "_id": "2PWG2jt5XPrAwLZ7",
-  "_key": "!actors!2PWG2jt5XPrAwLZ7",
+  "_id": "TYs987tAgCubcw8r",
+  "_key": "!actors!TYs987tAgCubcw8r",
   "folder": "bKQUPthn1V2Yu6Bn",
   "name": "Bone Naga",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 65,
         "max": 65,
-        "formula": "lOd lO + 10",
+        "formula": "10d10 + 10",
         "temp": null,
         "tempmax": null
       },
@@ -51,7 +51,8 @@
         "walk": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -97,13 +98,14 @@
         "value": [
           "charmed",
           "exhaustion",
-          "paralyzed"
+          "paralyzed",
+          "poisoned"
         ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Co mm on plus one other language"
+        "custom": "Common plus one other language"
       }
     },
     "skills": {}
@@ -127,7 +129,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The naga makes two Bite attacks. It can replace any attack with a use of Serpentine Gaze.</p>",
+          "value": "<p>The naga makes two Mordida attacks. It can replace any attack with a use of Serpentine Gaze.</p>",
           "chat": ""
         },
         "activation": {
@@ -152,16 +154,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2PWG2jt5XPrAwLZ7.WUqDTVfQjVVujROn"
+      "_key": "!actors.items!TYs987tAgCubcw8r.WUqDTVfQjVVujROn"
     },
     {
-      "_id": "M7yazRPyr234RDNf",
-      "name": "Bite",
+      "_id": "N4EEi9HWVq70wutz",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance l Oft. Acerto: l O (2d6 + 3) Perfurante de dano plus 7 (2d6) Necrótico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 3 m. Acerto: 10 (2d6 + 3) dano perfurante mais 7 (2d6) dano necrótico.</p>",
           "chat": ""
         },
         "activation": {
@@ -179,8 +181,8 @@
           "subtype": ""
         },
         "activities": {
-          "gIpmmXFkfdfZXn2f": {
-            "_id": "gIpmmXFkfdfZXn2f",
+          "GTJFhvaJljQH4edw": {
+            "_id": "GTJFhvaJljQH4edw",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -199,7 +201,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -208,12 +228,14 @@
         "mm2024": {
           "mechanics": {
             "toHit": 5,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d6+3",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2PWG2jt5XPrAwLZ7.M7yazRPyr234RDNf"
+      "_key": "!actors.items!TYs987tAgCubcw8r.N4EEi9HWVq70wutz"
     },
     {
       "_id": "dhvhHANjgwHGG5vB",
@@ -222,7 +244,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sabedoria Teste de Resistência: DC 13, uma criatura the naga can see within 60 feet. Falha: 13 (3d6 + 3) Psíquico de dano, and o alvo has the Enfeitiçado condition until the start of the naga's • next turn.</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 13, uma criatura the naga can see within 18 m. 13 (3d6 + 3) dano psíquico, and o alvo fica com a condição Enfeitiçado until the start of the naga's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -260,25 +282,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 3,
-                  "denomination": 6,
-                  "bonus": "3",
-                  "types": [
-                    "psychic"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -286,15 +290,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "3d6+3",
-            "damageType": "psychic",
             "saveDc": 13,
             "saveAbility": "wis"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2PWG2jt5XPrAwLZ7.dhvhHANjgwHGG5vB"
+      "_key": "!actors.items!TYs987tAgCubcw8r.dhvhHANjgwHGG5vB"
     },
     {
       "_id": "g3JPdmAgcv8DWaoM",
@@ -303,7 +305,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The naga casts one of the following spells, requiring no Material components and using Intelli- gence as the spellcasting ability (spell save DC 13): À Vontade: Mage Hand, Thaumaturgy 1/Dia Each: Command, Detect Thoughts, Elétrico Bolt BONE NAGA 53 BRASS DR/\\GON WYRMLIN G BRASS DRAGONS Dragons of Lore and Rapport</p>",
+          "value": "<p>The naga casts one of the following spells, requiring no Material components and using Inteligência as the spellcasting ability (spell save CD 13):</p>",
           "chat": ""
         },
         "activation": {
@@ -328,13 +330,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2PWG2jt5XPrAwLZ7.g3JPdmAgcv8DWaoM"
+      "_key": "!actors.items!TYs987tAgCubcw8r.g3JPdmAgcv8DWaoM"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Bone Naga",
-      "page": 55,
+      "page": 53,
       "cr": "4",
       "warnings": []
     }

@@ -1,6 +1,6 @@
 {
-  "_id": "FlCRKIhHftw2P2sA",
-  "_key": "!actors!FlCRKIhHftw2P2sA",
+  "_id": "k4r99xQnwQ1pb8Zb",
+  "_key": "!actors!k4r99xQnwQ1pb8Zb",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Erinyes",
   "type": "npc",
@@ -63,14 +63,14 @@
     "details": {
       "type": {
         "value": "fiend",
-        "subtype": "De1Jil",
+        "subtype": "devil",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Mau",
       "cr": 12,
       "xp": {
-        "value": 8400
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -82,7 +82,10 @@
     "traits": {
       "size": "med",
       "di": {
-        "value": [],
+        "value": [
+          "fire",
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
@@ -96,17 +99,23 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "poisoned"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Infernal"
+        "custom": ""
       }
     },
     "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
       "per": {
-        "value": 1,
+        "value": 2,
         "ability": "cha"
       }
     }
@@ -124,13 +133,13 @@
   },
   "items": [
     {
-      "_id": "839xw0PpazbtceC9",
-      "name": "Diabolical Restoration",
+      "_id": "a1awglAsAlA1ApyG",
+      "name": "Restauração Diabólica",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the erinyes dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Pontos de Vida somewhere in the Nine Hells.</p>",
+          "value": "<p>Se a criatura morrer fora dos Nove Infernos, o corpo dela desaparece em fumaça sulfurosa e ela ganha um novo corpo instantaneamente, revivendo com todos os seus Pontos de Vida em algum lugar dos Nove Infernos.</p>",
           "chat": ""
         },
         "activation": {
@@ -154,16 +163,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!FlCRKIhHftw2P2sA.839xw0PpazbtceC9"
+      "_key": "!actors.items!k4r99xQnwQ1pb8Zb.a1awglAsAlA1ApyG"
     },
     {
-      "_id": "eX0cIgslZXFg12gy",
-      "name": "Magic Resistance",
+      "_id": "vXjR7mBp9rdCBQqa",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The erinyes has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -187,7 +196,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!FlCRKIhHftw2P2sA.eX0cIgslZXFg12gy"
+      "_key": "!actors.items!k4r99xQnwQ1pb8Zb.vXjR7mBp9rdCBQqa"
     },
     {
       "_id": "3otEtWQcdXmUgAaX",
@@ -196,7 +205,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The erinyes has a magic rope. While bear- ing it, the erinyes can use the Entangling Rope action. The ·rope has AC 20, HP 90, and Immunity to Veneno 114 ~ ERINYES ERINYES Devil of Vengeance and Righteous Wrath</p>",
+          "value": "<p>The erinyes has a magic rope. While bearing it, the erinyes can use the Entangling Rope action. The rope has AC 20, HP 90, and Immunity to Veneno and dano psíquico. The rope turns to dust if reduced to 0 Pontos de Vida, if it is 5+ feet away from the erinyes for 1 hour or more, or if the erinyes dies. If the rope is damaged or destroyed, the erinyes can fully restore it when finishing a Short or Long Rest.</p>",
           "chat": ""
         },
         "activation": {
@@ -220,13 +229,223 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!FlCRKIhHftw2P2sA.3otEtWQcdXmUgAaX"
+      "_key": "!actors.items!k4r99xQnwQ1pb8Zb.3otEtWQcdXmUgAaX"
+    },
+    {
+      "_id": "gfK9EOKpQ5nraB7v",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The erinyes makes three Withering Sword attacks and can use Entangling Rope.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!k4r99xQnwQ1pb8Zb.gfK9EOKpQ5nraB7v"
+    },
+    {
+      "_id": "RRleeMzvGjRDLpZY",
+      "name": "Withering Sword",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 1,5 m. Acerto: 13 (2d8 + 4) dano cortante mais 11 (2d10) dano necrótico.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "mGpuRDgC8m0cv5Ly": {
+            "_id": "mGpuRDgC8m0cv5Ly",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "8",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "4",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 8,
+            "attackType": "melee",
+            "damageFormula": "2d8+4",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!k4r99xQnwQ1pb8Zb.RRleeMzvGjRDLpZY"
+    },
+    {
+      "_id": "weFPGp3olB93MSfu",
+      "name": "Entangling Rope",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Força: CD 16, uma criatura the erinyes can see within 36 m. 14 (4d6) dano de energia, and o alvo fica com a condição Impedido until the rope is destroyed, the erinyes uses a Bonus Action to release o alvo, or the erinyes uses Entangling Rope again.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "N4VdxNHjJVucfbPW": {
+            "_id": "N4VdxNHjJVucfbPW",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "16"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 16,
+            "saveAbility": "str"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!k4r99xQnwQ1pb8Zb.weFPGp3olB93MSfu"
+    },
+    {
+      "_id": "5zIRypQg7ZP1yiVy",
+      "name": "Aparar",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The erinyes is hit by a melee attack roll while holding a weapon. The erinyes adds 4 to its AC against that attack, possibly causing it to miss.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!k4r99xQnwQ1pb8Zb.5zIRypQg7ZP1yiVy"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Erinyes",
-      "page": 116,
+      "page": 114,
       "cr": "12",
       "warnings": []
     }

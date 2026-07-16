@@ -1,6 +1,6 @@
 {
-  "_id": "ZWIc9WogrjEqUrcU",
-  "_key": "!actors!ZWIc9WogrjEqUrcU",
+  "_id": "aLjLnRcvVLyc1DkT",
+  "_key": "!actors!aLjLnRcvVLyc1DkT",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Abominable Yeti",
   "type": "npc",
@@ -48,10 +48,12 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40,
+        "climb": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -68,7 +70,7 @@
       "alignment": "Caótico e Mau",
       "cr": 9,
       "xp": {
-        "value": 5000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -80,7 +82,9 @@
     "traits": {
       "size": "huge",
       "di": {
-        "value": [],
+        "value": [
+          "cold"
+        ],
         "custom": ""
       },
       "dr": {
@@ -100,7 +104,16 @@
         "custom": "Yeti"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Abominable Yeti",
@@ -121,7 +134,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the yeti takes Fogo de dano, it has Disad- vantage on attack rolls and ability checks until the end of its next turn.</p>",
+          "value": "<p>Se a criatura sofrer dano de fogo, ela tem Desvantagem em rolagens de ataque e testes de habilidade até o fim do próximo turno dela.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,7 +158,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ZWIc9WogrjEqUrcU.992LPdgWS1B0pwWH"
+      "_key": "!actors.items!aLjLnRcvVLyc1DkT.992LPdgWS1B0pwWH"
     },
     {
       "_id": "U0mFfLlhqmZhmsZx",
@@ -154,7 +167,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yeti can use its Chilling Gaze and makes two attacks, using Claw or Ice Throw in any combination.</p>",
+          "value": "<p>The yeti can use its Chilling Gaze and makes two attacks, using Garra or Ice Throw in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -179,16 +192,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ZWIc9WogrjEqUrcU.U0mFfLlhqmZhmsZx"
+      "_key": "!actors.items!aLjLnRcvVLyc1DkT.U0mFfLlhqmZhmsZx"
     },
     {
-      "_id": "OCngeKndxIfiS0uG",
-      "name": "Claw",
+      "_id": "naVpe3V33IppKlcz",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 11, alcance 5 ft. Acerto: 14 (2d6 + 7)- Cortante de dano plus 7 (2d6) Frio de dano. 34 0 YETIS- lN THE YET I, 1 FIND N O K I NSH I P , NO UNDERST/\\ N DI N G ,</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +11, alcance 1,5 m. Acerto: 14 (2d6 + 7) dano cortante mais 7 (2d6) dano de frio.</p>",
           "chat": ""
         },
         "activation": {
@@ -205,15 +218,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "FqkQW3hSkhNPBpHd": {
+            "_id": "FqkQW3hSkhNPBpHd",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "11",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "7",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "toHit": 11,
+            "attackType": "melee",
+            "damageFormula": "2d6+7",
+            "damageType": "slashing"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ZWIc9WogrjEqUrcU.OCngeKndxIfiS0uG"
+      "_key": "!actors.items!aLjLnRcvVLyc1DkT.naVpe3V33IppKlcz"
     },
     {
       "_id": "hB8ghWObbjkfuXHE",
@@ -222,7 +282,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: + 11, range 60/240 ft. Acerto: 12 (2d4 + 7) Concussão de dano plus 7 (2d6) Frio de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +11, distância 18/72 m. Acerto: 12 (2d4 + 7) dano de concussão mais 7 (2d6) dano de frio.</p>",
           "chat": ""
         },
         "activation": {
@@ -239,18 +299,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "J42GtmCd71IlTuzr": {
+            "_id": "J42GtmCd71IlTuzr",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "11",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "7",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 11,
+            "attackType": "ranged",
             "damageFormula": "2d4+7",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ZWIc9WogrjEqUrcU.hB8ghWObbjkfuXHE"
+      "_key": "!actors.items!aLjLnRcvVLyc1DkT.hB8ghWObbjkfuXHE"
     },
     {
       "_id": "dow90Y5O3ZeyIDrj",
@@ -259,7 +363,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 18, uma criatura the yeti can see within 30 feet. Falha: 21 (6d6) Frio de dano, and o alvo has the Paralisado condi- tion until the start of the yeti's next turn unless the tar- get has Immunity to Frio de dano. Sucesso: The target is · immune to this yeti's Chilling Gaze for 1 hour. lJ</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 18, uma criatura the yeti can see within 9 m. 21 (6d6) dano de frio, and o alvo fica com a condição Paralisado until the start of the yeti's next turn unless o alvo has Immunity to dano de frio. O alvo is immune to this yeti's Chilling Gaze for 1 hour.</p>",
           "chat": ""
         },
         "activation": {
@@ -297,25 +401,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 6,
-                  "denomination": 6,
-                  "bonus": "",
-                  "types": [
-                    "cold"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -323,24 +409,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "6d6",
-            "damageType": "cold",
             "saveDc": 18,
             "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ZWIc9WogrjEqUrcU.dow90Y5O3ZeyIDrj"
+      "_key": "!actors.items!aLjLnRcvVLyc1DkT.dow90Y5O3ZeyIDrj"
     },
     {
-      "_id": "eMelDhlWrHuNUlm1",
-      "name": "Frio Breath (Recharge 6)",
+      "_id": "mVJQrg3mvkkcma8I",
+      "name": "Sopro de Frio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: ::J DC 18, cada criatura in a 30-foot Cone. Falha: 45 O::'. (10d8) ~old de dano. Sucesso: Metade do dano,. Cl::'. YOCHLOL Demon of Depraved Will</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 18, cada criatura in a 9 m Cone. 45 (10d8) dano de frio. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -350,34 +434,55 @@
         },
         "uses": {
           "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "recharge",
-              "type": "recoverAll",
-              "formula": "6"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "OjixQknGmOVKX48Y": {
+            "_id": "OjixQknGmOVKX48Y",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "18"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 18,
+            "saveAbility": "con"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ZWIc9WogrjEqUrcU.eMelDhlWrHuNUlm1"
+      "_key": "!actors.items!aLjLnRcvVLyc1DkT.mVJQrg3mvkkcma8I"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Abominable Yeti",
-      "page": 342,
+      "page": 340,
       "cr": "9",
       "warnings": []
     }

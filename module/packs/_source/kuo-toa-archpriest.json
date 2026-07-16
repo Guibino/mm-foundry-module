@@ -1,6 +1,6 @@
 {
-  "_id": "JNYLWaJd8XD3bRzN",
-  "_key": "!actors!JNYLWaJd8XD3bRzN",
+  "_id": "l1heWX5T4cLn7qPD",
+  "_key": "!actors!l1heWX5T4cLn7qPD",
   "folder": "1nioWC3kx0YxX8qj",
   "name": "Kuo-toa Archpriest",
   "type": "npc",
@@ -12,7 +12,7 @@
         "proficient": 0
       },
       "dex": {
-        "value": 74,
+        "value": 14,
         "proficient": 0
       },
       "con": {
@@ -68,10 +68,10 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Neutro",
+      "alignment": "Neutro e Mau",
       "cr": 6,
       "xp": {
-        "value": 2300
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -103,7 +103,16 @@
         "custom": "Comum Inferior"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "rel": {
+        "value": 2,
+        "ability": "int"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Kuo-toa Archpriest",
@@ -118,13 +127,13 @@
   },
   "items": [
     {
-      "_id": "hzdfqZZneKtLWdPz",
-      "name": "Amphibious",
+      "_id": "AhUtPw2Sgui7sTzN",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The kuo-toa can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -148,16 +157,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!JNYLWaJd8XD3bRzN.hzdfqZZneKtLWdPz"
+      "_key": "!actors.items!l1heWX5T4cLn7qPD.AhUtPw2Sgui7sTzN"
     },
     {
-      "_id": "fan5711SOVEn03CD",
-      "name": "Sunlight Sensitivity",
+      "_id": "p6HyeI8pJVmGFvOP",
+      "name": "Sensibilidade à Luz Solar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in sunlight, the kuo-toa has Disadvantage on ability checks and attack rolls.</p>",
+          "value": "<p>Sob luz solar, a criatura tem Desvantagem em testes de habilidade e rolagens de ataque.</p>",
           "chat": ""
         },
         "activation": {
@@ -181,7 +190,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!JNYLWaJd8XD3bRzN.fan5711SOVEn03CD"
+      "_key": "!actors.items!l1heWX5T4cLn7qPD.p6HyeI8pJVmGFvOP"
     },
     {
       "_id": "Pir2Wzqe2oNHi0Pe",
@@ -190,7 +199,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The kuo-toa makes three Strange Scep- ter attacks.</p>",
+          "value": "<p>The kuo-toa makes three Strange Scepter attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -215,7 +224,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!JNYLWaJd8XD3bRzN.Pir2Wzqe2oNHi0Pe"
+      "_key": "!actors.items!l1heWX5T4cLn7qPD.Pir2Wzqe2oNHi0Pe"
     },
     {
       "_id": "XqCN0BFix7JkSibC",
@@ -224,7 +233,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +6, alcance 5 ft. or range 120 ft. Acerto: 20 (Sd6 + 3) Light- ning de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +6, alcance 1,5 m. or distância 36 m. Acerto: 20 (5d6 + 3) dano elétrico.</p>",
           "chat": ""
         },
         "activation": {
@@ -262,7 +271,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 5,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "lightning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -271,85 +298,14 @@
         "mm2024": {
           "mechanics": {
             "toHit": 6,
-            "attackType": "ranged"
+            "attackType": "ranged",
+            "damageFormula": "5d6+3",
+            "damageType": "lightning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!JNYLWaJd8XD3bRzN.XqCN0BFix7JkSibC"
-    },
-    {
-      "_id": "q0hK8WeIhxdZ7G6N",
-      "name": "Shield of Faith (2/Day)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The kuo-toa casts Shield of Faith, using the same spellcasting ability as Conjuração. Kuo-TOA DEITY FEATURES The Deity's The Deity's 1d10 Head Is Like A ... 1d10 Body Is Like A ... l Barnacle l Hermit crab 11 2 Crab claw 2 Jellyfish 3 Hagfish 3 Kuo-toa 4 Moray eel 4 Mantis shrimp 5 Sea anemone 5 Merfolk 6 Shark 6 Plesiosau rus 7 Sunfish 7 Sea cucumber 8 Tentacle 8 Ship's figurehead 9 Treasure chest 9 Squid 10 Viperfish 10 Whale Kuo r TOA SANCTUARIES l(uo-toa typically organize their communities around sites they believe to be important to their deities. These might be structures or series of caverns, and most feature both air-filled and submerged chambers. Important places within these sites suggest the rituals of kuo-toa faiths, the demands of kuo-toa deities, or the whims of ~ omen-seeking archpriests. As with kuo-toa deities, the features of these locations vary between com- munities. Roll on or choose a result from the I(uo- toa Ritual Sites table to inspire features and suggest adventures within a kuo-toa community. Kuo-TOA RITUAL SITES 1d8 The Kuo-toa Community Features ... ·1 An arena scattered with weapons made from crustacean shells. 2 A gallery of hibernating chuuls. 3 A garden of mussels and tide pool creatures that whisper secrets. 4 A hidden shrine with a patchwork depiction of a new kuo-toa deity. 5 The lavish chamber of an animal or monster said to be prophetic, lucky , or literate. 6 A pool filled with jellyfish, eels, or fish roe that glow in organiz~d patterns. 7 A punishment chamber exposed to the light of the surface. 8 A towering statue of a kuo-toa deity. THEY CAME HERE FROM SO M E W HERE ELSE A ND BROUGH T W ITH THEM ALL THE RANK AND D AN K O F T HE SU NLE SS</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "2",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!JNYLWaJd8XD3bRzN.q0hK8WeIhxdZ7G6N"
-    },
-    {
-      "_id": "YqHboON9kcF1Ks0M",
-      "name": "SEA",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>No O N E KN OWS W HA T T HEY WANT , AN D S E E MS TO ME, NE ITHER DO THEY . -T R OSLI G A RNETGETTER , G NpME E X PLOR ER KUO-TOA LAMIA Accursed Bargainer and Ruin Raider</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!JNYLWaJd8XD3bRzN.YqHboON9kcF1Ks0M"
+      "_key": "!actors.items!l1heWX5T4cLn7qPD.XqCN0BFix7JkSibC"
     },
     {
       "_id": "cdEnqkPBrF6H9PwM",
@@ -358,7 +314,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The kuo-toa casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save DC 74): À Vontade: Detect Magic, Thaumaturgy 1/Dia Each: Destructive Wave, Divination, Hold Monster (level 6 version), Scrying, Tongues</p>",
+          "value": "<p>The kuo-toa casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save CD 14):</p>",
           "chat": ""
         },
         "activation": {
@@ -383,13 +339,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!JNYLWaJd8XD3bRzN.cdEnqkPBrF6H9PwM"
+      "_key": "!actors.items!l1heWX5T4cLn7qPD.cdEnqkPBrF6H9PwM"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Kuo-toa Archpriest",
-      "page": 193,
+      "page": 191,
       "cr": "6",
       "warnings": []
     }

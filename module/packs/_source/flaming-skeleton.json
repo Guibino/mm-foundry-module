@@ -1,8 +1,8 @@
 {
-  "_id": "gvXPHiPIewVkW971",
-  "_key": "!actors!gvXPHiPIewVkW971",
+  "_id": "x8MsNW2bPYTkdfdm",
+  "_key": "!actors!x8MsNW2bPYTkdfdm",
   "folder": "bKQUPthn1V2Yu6Bn",
-  "name": "Flaming Esqueleto",
+  "name": "Flaming Skeleton",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/flaming-skeleton.webp",
   "system": {
@@ -69,7 +69,7 @@
       "alignment": "Leal e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -92,7 +92,9 @@
         "custom": ""
       },
       "dv": {
-        "value": [],
+        "value": [
+          "bludgeoning"
+        ],
         "custom": ""
       },
       "ci": {
@@ -104,13 +106,13 @@
       },
       "languages": {
         "value": [],
-        "custom": "Understands Common plus one other"
+        "custom": "understands Common plus one other language but can't speak"
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Flaming Esqueleto",
+    "name": "Flaming Skeleton",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -122,46 +124,13 @@
   },
   "items": [
     {
-      "_id": "MAQYr8WqtBYKKesu",
-      "name": "Death Burst",
+      "_id": "G5sCmSf4BjA0mZUT",
+      "name": "Explosão Mortal",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The skeleton explodes when it dies. Dex- terity Teste de Resistência: DC 12, cada criatura in a 10-foot</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!gvXPHiPIewVkW971.MAQYr8WqtBYKKesu"
-    },
-    {
-      "_id": "SzVOIVfH61p7dPDc",
-      "name": "Emanation originating from the skeleton",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Falha: 14 (4d6) Fogo de dano. Sucesso: Metade do dano.</p>",
+          "value": "<p>The skeleton explodes when it dies. Teste de Resistência de Destreza: CD 12, cada criatura in a 3 m Emanation originating from the skeleton. 14 (4d6) dano de fogo. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -182,22 +151,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "4d6",
-            "damageType": "fire"
+            "saveDc": 12,
+            "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gvXPHiPIewVkW971.SzVOIVfH61p7dPDc"
+      "_key": "!actors.items!x8MsNW2bPYTkdfdm.G5sCmSf4BjA0mZUT"
     },
     {
-      "_id": "gerVebzzs8XTOI6w",
-      "name": "Illumination",
+      "_id": "R57FA6KJZPckFC53",
+      "name": "Iluminação",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The skeleton sheds Bright Light in a 15- foot radius and Dim Light for an additional 15 feet.</p>",
+          "value": "<p>The skeleton sheds Bright Light in a 4,5 m radius and Dim Light for an additional 4,5 m.</p>",
           "chat": ""
         },
         "activation": {
@@ -221,7 +190,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gvXPHiPIewVkW971.gerVebzzs8XTOI6w"
+      "_key": "!actors.items!x8MsNW2bPYTkdfdm.R57FA6KJZPckFC53"
     },
     {
       "_id": "WDSb7uRyDneDWVhL",
@@ -255,7 +224,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gvXPHiPIewVkW971.WDSb7uRyDneDWVhL"
+      "_key": "!actors.items!x8MsNW2bPYTkdfdm.WDSb7uRyDneDWVhL"
     },
     {
       "_id": "ZYx7w1haYPcQ0svq",
@@ -264,7 +233,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 5 (1d6 + 2) Concussão de dano plus 3 (1d6) Fogo de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano de concussão mais 3 (1d6) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -336,7 +305,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gvXPHiPIewVkW971.ZYx7w1haYPcQ0svq"
+      "_key": "!actors.items!x8MsNW2bPYTkdfdm.ZYx7w1haYPcQ0svq"
     },
     {
       "_id": "qKOequuwTunNY36a",
@@ -345,7 +314,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +4, range 60 ft. Acerto: 7 (1d10 + 2) Fogo de dano. 6-_ 283 SI<.ELETONS SLAAD I . Chaos-Spawned Hordes of Limbo</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +4, distância 18 m. Acerto: 7 (1d10 + 2) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -417,13 +386,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gvXPHiPIewVkW971.qKOequuwTunNY36a"
+      "_key": "!actors.items!x8MsNW2bPYTkdfdm.qKOequuwTunNY36a"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Flaming Skeleton",
-      "page": 285,
+      "page": 283,
       "cr": "3",
       "warnings": []
     }

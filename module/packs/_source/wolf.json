@@ -1,6 +1,6 @@
 {
-  "_id": "NVyVytKjBVM10UoS",
-  "_key": "!actors!NVyVytKjBVM10UoS",
+  "_id": "2makfetLpk41iJ2K",
+  "_key": "!actors!2makfetLpk41iJ2K",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Wolf",
   "type": "npc",
@@ -48,10 +48,11 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -66,9 +67,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 1,
+      "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,10 +98,19 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Wolf",
@@ -115,13 +125,13 @@
   },
   "items": [
     {
-      "_id": "beLELOSA0RiQY6zr",
-      "name": "Pack Tactics",
+      "_id": "4w7ag0Llb68ufhkC",
+      "name": "Táticas de Matilha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The wolf has Advantage on attack rolls against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally doesn't have the Incapacitado condition.</p>",
+          "value": "<p>The wolf has Vantagem on attack rolls against uma criatura if at least one of the wolf's allies is within 1,5 m of the creature and the ally doesn't have a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,16 +155,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NVyVytKjBVM10UoS.beLELOSA0RiQY6zr"
+      "_key": "!actors.items!2makfetLpk41iJ2K.4w7ag0Llb68ufhkC"
     },
     {
-      "_id": "0eBf0NkL7i39efOd",
-      "name": "Bite",
+      "_id": "EIbYAJatiIc8WWLr",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 5 (1d6 + 2)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano perfurante. If o alvo is a Medium or smaller creature, it fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -172,8 +182,8 @@
           "subtype": ""
         },
         "activities": {
-          "NRcrEsyEZM1axAWh": {
-            "_id": "NRcrEsyEZM1axAWh",
+          "m1whLGpXIS7x2KSP": {
+            "_id": "m1whLGpXIS7x2KSP",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -192,7 +202,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -201,53 +229,21 @@
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d6+2",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NVyVytKjBVM10UoS.0eBf0NkL7i39efOd"
-    },
-    {
-      "_id": "vitBoqdj0IazuCvj",
-      "name": "Perfurante de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If o alvo is a Medium or smaller creature, it has the Caído condition. APPENDIX HIS APPENDIX PROVIDES CONVERSIONS FOR stat blocks that have changed between the 2014 Monster Manual and this book, as well as lists of monsters organized by habitat, creature type, group, and Nível de Desafio Rating. MONSTER CONVERSIONS Every monster in 2014 Monster Manual either ap- pears in this book or has a CR-appropriate replace- ment. If you're using material published prior to this book and are unable to locate a stat block herein, consult the Stat Block Conversions table to find the equivalent stat block you should use. STAT BLOCK CONVERSIONS 2014 Stat Block 2025 Equivalent Aarakocra - Aarakocra Skirmisher Acolyte Priest Acolyte Adult Blue Dracolich Dracolich Androsphinx Sphinx of Valor Azer Azer Sentinel Bugbear Bugbear Warrior Bullywug Bullywug Warrior Centaur Centaur Trooper Cult Fanatic Cultist Fanatic Cyclops Cyclops Sentry Deep Gnome Scout Drow Priest Acolyte Drow Elite Warrior Gladiator Drow Mage Bandit Deceiver Drow Priestess of Lolth Fiend Cultist Duergar Spy Duodrone Madron Duodron ·e Faerie Dragon (if green, Faerie Dragon Adult blue, indigo, or violet) Faerie Dragon (if red, Faerie Dragon Youth orange, or yellow) Fogo Snake Salamander Fogo Snake Flying Sword Animated Flying Sword Gas Spore _ Gas Spore Fungus APPENDIX B I MONSTER LISTS 374 2014 Stat Block 2025 Equivalent Gigante Venenoous Snake Gigante Venomous Snake Gnoll Gnoll Warrior Goblin Goblin Warrior Crick Alpha G rick Ancient Gynosphinx Sphinx of Lore Ha If-Ogre (Ogri I Ion) Ogrillon Ogre Half-Red Dragon Veteran Ha If-Dragon Hobgoblin Hobgoblin Warrior Kobold l<obold Warrior Lizardfol k Scout Lizardfolk Shaman Lizardfolk Geomancer Lizard l(ing/Queen Lizardfolk Sovereign Merfolk ' Merfolk Skirmisher Minotaur Minotaur of Baphomet Monodrone Madron Monodrone Ore Tough Ore Eye ofGruumsh Cultist Fanatic Ore War Chief Tough Boss Orog Berserker Pentadrone Modron Pentadrone Venenoous Snake Venomous Snake Quadrone Madron Quadrone Quaggoth Spore Servant Myconid Spore Servant Quipper Piranha Rug of Smothering Animated Rug of Smothering _ Sahuagin Sahuagin Warrior Sahuagin Priestess Sahuagin Priest Shrieker Shrieker Fungus Swarm of Venenoous Swarm of Venomous Snakes Snakes Swarm of Quippers Swarm of Piranhas Thri-kreen Thri-kreen Marauder Thug Tough Tribal Warrior Warrior Infantry Tri drone Modron Tridrone · veteran Warrior Veteran Young Red Shadow Dragon Shadow Dragon Yuan-ti Pureblood Yuan-ti Infiltrator MONSTERS BY HABITAT The following tables organize the monster stat blocks in this book by habitat. These tables omit monsters that don't inhabit natural habitats, such as many Celestials and Fiends. ANY HABITAT MONSTERS CR Monsters O Comumer, Crawling Claw, Homunculus 1/8 Bandit, Cultist, Guard, Noble, Warrior Infantry 1/4 Priest Acolyte 1/2 Performer, Scout, Tough l Empyrean Iota, Imp, Pirate, Spy 2 Bandit Captain, Berserker, Cultist Fanatic, Druid, Mage Apprentice, Priest 3 Knight, Scout Captain, Swarm of Crawling Claws, Warrior Veteran 4 Banshee, Guard Captain, Helmed Horror, Tough Boss 5 Cambion, Flesh Golem, Gladiator, Half-Dragon 6 Mage, Performer Maestro, Pirate Captain 7 Bandit Deceiver 8 Aberrant Cultist, Assassin, Berserker Commander, Death Cultist, Elemental Cultist, Fiend Cultist 70 Cultist Hierophant, Noble Prodigy, Performer Legend, Spy Master, Stone Golem, Warrior Commander 11 Bandit Crime Lord, Death Knight Aspirant 12 Archmage, Archpriest, Pirate Admiral, Questing !(night 16 Iron Golem 17 Death Knight, Dracolich 18 Demilich 21 Arch-hag, Lich 23 Blob of Annihilation, Empyrean 25 Colossus ARCTIC MONSTERS CR Monsters 0 Hawk, Owl 1/8 Blood Hawk, Kobold Warrior 1/4 Axe Beak, Gigante Owl, Winged Kobold 1/2 Ice Mephit l Brown Bear, Ogrillon Ogre 2 Griffon, Ogre, Polar Bear, Saber-Toothed Tiger, White Qragon Wyrmling 3 Manticore, Winter Wolf, Yeti 5 Gigante Axe Beak, Troll, Werebear, Young Remorhaz 6 Mammoth, Young White Dragon 8 Frost Gigante CR Monsters 9 Abominable Yeti 11 Remorhaz, Roe 13 Adult White Dragon 20 Ancient White Dragon COASTAL MONSTERS CR Monsters 0 Crab, Eagle, Hawk, Lizard 1/8 Blood Hawk, Gigante Crab, Kobold Warrior, Merfolk Skirmisher, Venomous Snake 1/4 Gigante Lizard, Gigante Venomous Snake, Gigante Wolf ~pider, Kuo-toa, Pseudodragon, Pteranodon, Winged Kobold l/2 Crocodile, Sahuagin Warrior l Gigante Eagle, Gigante Toad, Harpy, Kuo-toa Whip 2 Bronze Dragon Wyrmling, Griffon, Merrow, Plesio- saurus, Sahuagin Priest, Sea Hag, Swarm of Venomous Snakes 3 Blue Dragon Wyrmling, l(uo-toa Monitor, Manticore 4 Chuul 5 Gigante Crocodile, Sahuagin Baron, Water Elemental Cyclops Sentry, l(uo-toa Archpriest, Merfolk Wavebender 8 Hydra, Young Bronze Dragon 9 Young Blue Dragon 10 Cyclops Oracle 11 Djinni, Marid, Roe 13 Storm Gigante 15 Adult Bronze Dragon 16 Adult Blue Dragon 17 Dragon Turtle 22 Ancient Bronze Dragon 23 Ancient Blue Dragon DESERT MONSTERS CR Monsters 0 Cat, Hyena, Jackal, Lizard, Scorpion, Spider, Vulture l/8 Camel, Flying Snake, Kobold Warrior, Mule, Stirge_, Venomous Snake 1/4 Constrictor Snake, Gigante Lizard, Gigante Venomous Snake, Gigante Wolf Spider, Pseudodragon, Winged Kobold l/2 Dust Mephit, Gnoll Warrior, Hobgoblin Warrior, J ackalwere, Swarm of Insects l Brass Dragon Wyrmling, Death Dog, Gigante Hyena, Gigante Spider, Gigante Vulture, Lion, Ogrillon Ogre, Sphinx ofWonder, Thri-kreen Marauder, Yuan-ti Infiltrator 2 Gigante Constrictor Snake, Gnoll Pack Lord, Ogre, Swarm of Stirges, Swarm of Venomous Snake~ APPENDIX B MONSTER Ll ~ A 375 CR Monsters 3 Blue Dragon Wyrmling, Gigante Scorpion, Hobgoblin Cap- tain , Mummy, Phase Spider, Wight, Yuan-ti Malison 4 Couatl, Gnoll Fang ofYeenoghu, Lamia, Weretiger 5 Air Elemental, Fogo Elemental 6 Cyclops Sentry, Hobgoblin Warlord, Medusa, Young Brass Dragon 7 Yuan-ti Abomination 8 Gnoll Demoniac, Sphinx of Secrets, Thri-kreen Psi on 9 Young Blue Dragon 70 Cyclops Oracle , Guardian Naga l l Efreeti, Roe, Sphinx of Lore 73 Adult Brass Dragon 15 Mummy Lord, Purple Worm 76 Adult Blue Dragon 17 Sphinx of Valor 20 Ancient Brass Dragon 23 Ancient Blue Drag~n FOREST MONSTERS CR Monsters 0 Awakened Shrub, Baboon, Badger, Bat, Cat, Deer, Frog, Hawk, Hyena, Lizard, Owl, Rat, Spider, Weasel 1/8 Blood Hawk, Flying Snake, Gigante Rat, Gigante Weasel, Goblin Minion, Kobold Warrior , Mastiff , Stirge, Twig Blight, Venomous Snake l/4 Blink Dog, Boar, Constrictor Snake, Elk, Gigante Badger, Gigante Bat, Gigante Frog, Gigante Lizard, Gigante Owl, Gigante Venomous Snake, Gigante Wolf Spider, Goblin Warrior, Kenku, Needle Blight, Panther, Pixie, Pseudodragon , Sprite, Swarm of Bats, Swarm of Rats, Winged Kobold , Wolf l/2 Ape, Black Bear, Gigante Wasp, Gnoll Warrior, Hobgoblin Warrior, Satyr, Swarm of Insects, Vine Blight, Worg l Brown Bear, Bugbear Warrior, Dire Wolf, Dryad, Faerie Dragon Youth, Gigante Hyena, Gigante Spider, Gigante Toad, Goblin Boss, Harpy , Ogrillon Ogre , Tiger, Y~an-ti I nfi ltrato r 2 Ankheg, Awakened Tree, Centaur Trooper, Ettercap, Faerie Dragon Adult , Gigante Boar, Gigante Constrictor Snake, Gigante Elk, Gnoll Pack Lord, Green Dragon Wyrmling, Grick, Lizardfolk Geomancer, Ogre, Pega- sus, Swarm of Stirges, Swarm of Venomous Snakes, Wererat, Will - o'-Wisp 3 Bugbear Stalker, Displacer Beast, Goblin Hexer, Gold Dragon Wyrmling, Green Hag, Hobgoblin Captain, Owlbear, Phase Spider, Werewolf , Yuan-ti Malison 4 Couatl, Gnoll Fang ofYeenoghu , Hippopotamus, Liz- ardfolk Sovereign , Wereboar , Weretiger 376 ~ APPENDIX B / MONSTER LISTS CR Monsters 5 Gorgon, Pixie Wonderbringer, Revenant, Shambling Mound , Troll, Unicorn, Werebear 6 Drider, Hobgoblin Warlord, Satyr Revelmaster - 7 Centaur Warden, Gigante Ape, Graveyard Revenant, Grick Ancient, Oni, Primeval Owlbear , Tree Blight, Yuan-ti Abomination 8 Gnoll Demoniac, Young Green Dragon 9 Brazen Gorgon, Treant 10 Dire Worg, Guardian Naga, Haunting Revenant, Young Gold Dragon 15 Adult Green Dragon 16 Gulthias Blight 17 Adult Gold Dragon 22 Ancient Green Dragon 24 Ancient Gold Dragon GRASSLAND MONSTERS CR Monsters 0 Cat, Deer , Eagle, Goat, Hawk , Hyena, Jackal, Vulture , Weasel 1/8 Blood Hawk, Flying Snake, Gigante Weasel, Goblin Min- ion, Pony, Stirge, Venomous Snake 1/4 Axe Beak, Boar, Elk, Gigante Venomous Snake, Gigante Wolf Spider, Goblin Warrior, Panther, Pteranodon, Riding Horse, Wolf l/2 Cockatrice, Gigante Goat, Gigante Wasp, Gnoll Warrior, Hobgoblin Warrior, Jackalwere, Swarm of Insects, Worg l Bugbear Warrior, Gigante Eagle, Gigante Hyena, Gigante Vulture, Goblin Boss, Hippogriff, Lion, Ogrillon Ogre, Scarecrow, Thri-kreen Marauder, Tiger 2 Allosaurus, Ankheg, Bulette Pup, Centaur Trooper, Gigante Boar, Gigante Elk, Gnoll Pack Lord , Griffon, Ogre, Pegasus, Rhinoceros , Swarm of Stirges, Swarm of Ven- omous Snakes 3 Ankylosaurus, Bugbear Stalker, Goblin Hexer, Gold Dragon Wyrmling, Hobgoblin Captain, Manticore, Phase Spider 4 Couatl,. Elephant, Gnoll Fang ofYeenoghu , Hippopota- mus, Were boar, Weretiger 5 Bulette, Gigante Axe Beak, Gorgon, Triceratops 6 Chimera , Cyclops Sentry, Hobgoblin Warlord 7 Centaur Warden 8 Cockatrice Regent, Gnoll Demoniac, Thri-kreen Psion, Tyrannosaurus Rex 9 Brazen Gorgon 70 Cyclops Oracle, Dire Worg, Young Gold Dragon 17 Adult Gold Dragon 24 Ancient Gold Dragon HILL MONSTERS CR Monsters 0 Baboon, Eagle, Goat, Hawk, Hyena, Owl, Raven, Vul- ture, Weasel 1/8 Blood Hawk, Gigante Weasel, Goblin Minion, Kobold Warrior, Mastiff, Mule, Stirge, Venomous Snake 1/4 Axe Beak, Boar, Elk, Gigante Owl, Gigante Venomous Snake, Gigante Wolf Spider, Goblin Warrior, Panther, Pseudodragon, Swarm of Ravens, Winged Kobold, Wolf 1/2 Gigante Goat, Gnoll Warrior, Hobgoblin Warrior, Swarm of Insects, Worg 1 Brown Bear, Copper Dragon Wyrmling, Dire Wolf, Gigante Eagle, Gigante Hyena, Gigante Vulture, Goblin Boss, Harpy, Hippogriff , Lion, Ogrillon Ogre 2 Bulette Pup, Gigante Boar, Gigante Elk, Gnoll Pack Lord, Griffon, Ogre, Pegasus, Peryton, Saber-Toothed Tiger, Swarm of Stirges, Swarm of Venomous Snakes 3 Goblin Hexer, Green Hag, Hobgoblin Captain, Manti- core, Phase Spider, Werewolf 4 Ettin, Gnoll Fang ofYeenoghu, Red Dragon Wyrmling, Wereboar 5 Bulette, Gigante Axe Beak, Gorgon, Hill Gigante, Troll, Were bear 6 Chimera, Cyclops Sentry, Galeb Duhr, Hobgoblin War- lord, Wyvern 7 Stone Gigante, Young Copper Dragon 8 Gnoll Demoniac 9 Brazen Gorgon 10 Cyclops Oracle, Dire Worg, Young Red Dragon 1 1 Roe 14 Adult Copper Dragon 17 Adu It Red Dragon 21 Ancient Copper Dragon 24 Ancient Red Dragon MOUNTAIN MONSTERS CR Monsters 0 Bat, Eagle, Goat, Hawk 1/8 Blood Hawk, l(obold Warrior, Stirge 1/4 Aarakocra Skirmisher, Gigante Bat, Pseudodragon, Pter- anodon, Swarm of Bats , Winged l<obold 1/2 Gigante Goat, Hobgoblin Warrior l Gigante Eagle, Harpy, Hippogriff, Lion, Ogrillon Ogre 2 Azer Sentinel, Bulette Pup, Griffon, Ogre , Peryton , Saber- Toothed Tiger, Silver Dragon Wyrmling, Swarm of Stirges CR Monsters 3 Basilisk, - Hell Hound, Hobgoblin Captain, Manticore 4 Aarakocra Aeromancer, Ettin, Red Dragon Wyrmling 5 Air Elemental, Bulette, Earth Elemental, Troll \"' 6 Azer Pyromancer, Chimera, Cyclops Sentry, Galeb Duhr, Hobgoblin Warlord, Wyvern 7 Stone Gigante 8 Frost Gigante 9 Cloud Gigante, Fogo Gigante, Young Silver Dragon 10 Cyclops Oracle, Young Red Dragon 11 Roe 16 Adult Silver Dragon 17 Adult Red Dragon 23 Ancient Silver Dragon 24 Ancient Red Dragon SWAM p MONSTERS CR Monsters 0 Frog, Lizard, Rat, Raven, Spider 1/8 Gigante Rat, Kobold Warrior, Stirge, Venomous Snake 1/4 Bullywug Warrior, Constrictor Snake, Gigante Frog, Gigante Lizard, Gigante Venomous Snake, Mud Mephit, Swarm of Rats, Swarm of Ravens, Winged Kobold 1/2 Crocodile, Swarm of Insects 1 Ghoul, Gigante Spider, Gigante Toad, Lacedon Ghoul, Ogrillon Ogre, Yuan-ti Infiltrator 2 Black Dragon Wyrmling, Ghast, Gigante Constrictor Snake, Lizardfolk Geomancer, Ogre, Swarm ofStirges, Swarm of Venomous Snakes, Will-o'-Wisp 3 Green Hag, Mummy, Wight, Yuan-ti Malison 4 Bullywug Bog Sage, Chuul, Hippopotamus , Lizardfolk Sovereign 5 Gigante Crocodile, Revenant, Shambling Mound, Troll, Water Elemental 6 Ghast Gravecaller 7 Graveyard Revenant, Young Black Dragon, Yuan-ti Abomination 8 Hydra 10 Haunting Revenant 14 Adult Black Dragon 15 Mummy Lord 21 Ancient Black Dragon APPENDIX B I MON STER LISTS 377 UNDERDARK MONSTERS CR Monsters O Bat, Gigante Fogo Beetle, Lizard, Myconid Sprout, Rat, Shrieker Fungus, Spider l/8 Flumph, Gigante Rat, Goblin Minion, Kobold Warrior, Stirge l/4 Gigante Bat, Gigante Centipede, Gigante Lizard, Goblin Warrior, Grim lock, Kuo-toa, Skeleton, Swarm of Bats, Swarm of Rats, Troglodyte, Violet Fungus, Winged Ko- bold, Zombie l /2 Darkmantle, Gas Spore Fungus, Gray Ooze, Hobgob- lin Warrior, Myconid Adult, Piercer, Rust Monster, Shadow, Swarm of Insects, Warhorse Skeleton l Bugbear Warrior, Ghoul, Gigante Spider, Gigante Toad, Goblin Boss, l<uo-toa Whip, Lacedon Ghoul, Myconid Spore Servant, Ogrillon Ogre, Psíquico Gray Ooze, Salamander Fogo Snake, Specter 2 Carrion Crawler, Gargoyle, Gelatinous Cube, Ghast, Gibbering Mouther, Grick, Intellect Devourer, Mimic, Minotaur Skeleton, Myconid Sovereign, Nothic, Ochre Jelly, Ogre, Ogre Zombie, Poltergeist, Quaggoth, Swarm of Stirges 3 Basilisk, Bugbear Stalker, Doppelganger, Flaming Skeleton, Goblin Hexer, Grell, Hell Hound, Hobgoblin Captain, Hook Horror, Kuo-toa Monitor, Minotaur of Baphomet ,- Phase Spider, Quaggoth Thonot, Spectator, Vampire Familiar, Water Weird, Wight 4 Black Pudding, Bone Naga, Chuul, Ettin, Flameskull, Ghost, Juvenile Shadow Dragon 5 Beholder Zombie, Earth Elemental, Otyugh, Roper, Sal- amander, Troll, Umber Hulk, Vampire Spawn, Wraith, Xorn 6 Cyclops Sentry, Drider, Ghast Gravecaller, Hobgoblin Warlord, l<uo-toa Arch priest 7 Grick Ancient, Mind Flayer, Stone Gigante, Violet Fungus Necrohulk 8 Cloaker, Fomorian, Spirit Naga, Vampire Nightbringer 9 FogoGiant l 0 Aboleth, Cyclops Oracle ll Behir, Dao, Mind Flayer Arcanist 13 Beholder, Shadow Dragon, Vampire 14 Death Tyrant 15 Purple Worm, Salamander Inferno Master, Vampire Umbral Lord UNDERWATER MONSTERS CR Monsters O Crab, Octopus, Piranha, Seahorse l/8 Gigante Crab, Merfolk Skirmis_her 378 APPENDIX B I MONSTER LISTS CR Monsters l/4 Constrictor Snake l/2 Gigante Seahorse, Reef Shark, Sahuagin Warrior l Gigante Octopus, Swarm of Piranhas 2 Gigante Constrictor Snake, Hunter Shark, Merrow, Plesio- saurus, Sahuagin Priest, Sea Hag 3 Killer Whale 4 Archelon 5 Gigante Shark, Sahuagin Baron, Water Elemental 6 Gigante Squid, Merfolk Wavebender 10 Aboleth ll Marid 13 Storm Gigante 17 Dragon Turtle 23 Kraken URBAN MONSTERS CR Monsters O Bat, Cat, Goat, Rat, Raven, Spider l/8 Gigante Rat, Kobold Warrior, Mastiff, Mule, Pony, Stirge l/4 Animated Broom, Animated Flying Sword, Draft Horse, Gigante Centipede, l<enku, Pseudodragon, Riding Horse, Skeleton, Swarm of Bats, Swarm of Rats, Swarm of Ravens, Winged Kobold, Zombie l/2 Crocodile, Gigante Wasp, Shadow, Swarm of Insects, Warhorse, Warhorse Skeleton l Animated Armor, Ghoul, Gigante Spider, Lacedon Ghoul, Specter, Yuan-ti Infiltrator 2 Animated Rug of Smothering, Carrion Crawler, Gar- goyle, Ghast, Mimic, Minotaur Skeleton, Ogre Zombie, Poltergeist, Silver Dragon Wyrmling, Swarm of Stirges, Wererat, Will-o'-Wisp 3 Doppelganger, Flaming Skeleton, Phase Spider, Vam- pire Familiar, Water Weird, Wight, Yuan-ti Malison 4 Couatl, Ghost, Incubus, Succubus 5 Beholder Zombie, Revenant, Vampire Spawn 6 Ghast Gravecaller, Invisível Stalker 7 Graveyard Revenant, Oni, Shield Guardian, Yuan-ti Abomination 8 Vampire Nightbringer 9 Clay Golem, Young Silver Dragon 10 Haunting Revenant 13 Rakshasa, Vampire 15 Vampire Umbral Lord 16 Adult Silver Dragon 23 Ancient Silver Dragon 30 Tarrasque MONSTERS BY CREATURE TYPE The following list organizes the monster stat blocks in this book by creature type. ABERRATION Brown Bear Aboleth Camel Beholder Cat Blue Slaad Constrictor Snake Chuul Crab Cloaker Crocodile Darkmantle Deer Death Slaad Dire Wolf Flu mph Draft Horse .., , Gibbering Mouther Eagle Githyanki Dracomancer Elephant Githyanki l<night Elk G ithyan ki Soldier Frog Githzerai Monk Gigante Ape Githzerai Psion Gigante Badger G ithzerai Zerth Gigante Bat Gray Slaad Gigante Boar Green Slaad Gigante Centipede Grell Gigante Constrictor Snake Grick Gigante Crab Grick Ancient Gigante Crocodile Grim lock Gigante Fogo Beetle Intellect Devourer Gigante Frog l<uo-toa Gigante Goat l<uo-toa Archpriest Gigante Hyena l<uo-toa Monitor Gigante Lizard l<uo-toa Whip Gigante Octopus Mind Flayer Gigante Rat Mind Flayer Arcanist Gigante Scorpion Nothic Gigante Seahorse Otyugh Gigante Shark Piercer Gigante Spider Red Slaad Gigante Squid Roper Gigante Toad Slaad Tadpole Gigante Venomous Snake Spectator Gigante Wasp Gigante Weasel BEAST Gigante Wolf Spider Allosaurus Goat Ankylosaurus Hawk Ape Hippopotamus Arch el on Hunter Shark Baboon Hyena Badger Jackal Bat Killer Whale Black Bear Lion Blood Hawk Lizard Boar Mammoth Mastiff CONSTRUCT Mule Animated Armor Octopus Animated Broom Owl Animated Flying Sword Panther Animated Rug of Piranha Smothering Plesiosaurus Brazen Gorgon Polar Bear Clay Golem Pony Colussus Pteranodon Flesh Golem Rat Gorgon Raven Helmed Horror Reef Shark Homunculus Rhinoceros Iron Golem Riding Horse Modron Duodrone Saber-Toothed Tiger Modron Monodrone Scorpion Madron Pentadrone Seahorse Madron Quadrone Spider Madron Tridrone Swarm of Bats Scarecrow Swarm of Insects Shield Guardian Swarm of Piranhas Stone Golem Swarm of Rats DRAGON Swarm of Ravens Black dragons (all) Swarm of Venomous Snakes Blue dragons (all) Tiger Brass dragons (all) Triceratops Bronze dragons (all) Tyrannosaurus Rex Copper dragons (all) Venomous Snake Dragon Turtle Vulture Faerie Dragon Adult Warhorse Faerie Dragon Youth Weasel Gold dragons (all) Wolf Green dragons (all) CELESTIAL Ha If-Dr a go n Animal Lord Juvenile Shadow Dragon Couatl Kobold Warrior Deva Pseudodragon Empyrean Red dragons (all) Empyrean Iota Shadow Dragon Gigante Eagle Silver dragons (all) Gigante Elk White dragons (all) Gigante Owl Winged Kobold Guardian Naga Wyvern Pegasus ELEMENTAL Planetar Aarakocra Aeromancer Solar Aarakocra Skirmisher Sphinx of Lore Air Elemental Sphinx of Secrets Azer Pyromancer Sphinx of Valor Azer Sentinel Sphinx of Wonder Dao Unicorn Djinni APPENDIX B I MONSTER LISTS 6 379 Dust Mephit FIEND Earth Elemental Arcanaloth Efreeti Bal or Elemental Cataclysm Barbed Devil Fogo Elemental Barlgura Galeb Duhr Bearded Devil Gargoyle Bone Devil Ice Mephit Cambion Invisível Stalker Chain Devil Lizardfolk Geomancer Chasme Lizardfolk Sovereign Dretch Magma Mephit Empyrean Magmin Empyrean Iota Marid Erinyes Merfol,k Skirmisher Glabrezu M erfol k Wavebender Gnoll Demoniac Mud Mephit Gnoll Fang of Yeenoghu Salamander Gnoll Pack Lord Salamander Fogo Snake G noll Warrior Salamander Inferno Master Goristro Smoke Mephit Hell Hound Steam Mephit Hezrou Water Elemental Horned Devil Water Weird Ice Devil Xorn Imp Incubus FEY Jackalwere Arch-hag Lamia Blink Dog Larva Bugbear Stalker Lemure Bugbear Warrior Manes Bullywug Bog Sage Manes Vaporspawn Bullywug Warrior Marilith Centaur Trooper Mezzoloth Centaur Warden Nalfeshnee Dire Worg Night Hag Dryad Nightmare Goblin Boss Nycaloth Goblin Hexer Oni Goblin Minion Pit Fiend Goblin Warrior Quasit Green Hag Rakshasa Hobgoblin Captain Sahuagin Baron Hobgoblin Warlord Sahuagin Priest Hobgoblin Warrior Sahuagin Warrior Pixie Shadow Demon Pixie Wonderbringer Spined Devil Satyr Spirit Naga Satyr Revel master Succubus Sea Hag Swarm of Dretches Sprite Swarm of Larvae Worg Swarm of Lemures 380 APPENDIX B I MONSTER LISTS U ltroloth Pirate Captain Vrock Priest Yochlol Priest Acolyte Questing Knight GIANT Scout Cloud Gigante Scout Captain Cyclops Oracle Spy Cyclops Sentry Spy Master Ettin Tough Fogo Gigante Tough Boss Fomorian Vampire Familiar Frost Gigante Warrior Commander Hill Gigante Warrior Infantry Ogre Warrior Veteran Ogrillon Ogre Stone Gigante MONSTROSITY Storm Gigante Abominable Yeti Troll Ankheg Troll Limb Axe Beak Basilisk HUMANOID Behir Aberrant Cultist Bulette Archmage Bulette Pup Arch priest Carrion Crawler Assassin Chimera Bandit Cockatrice Bandit Captain Cockatrice Regent Bandit Crime Lord Death Dog Bandit Deceiver Displacer Beast Berserker Doppelganger Berserker Commander Drider Comumer Ettercap Cultist Flying Snake Cultist Fanatic Gigante Axe Beak Cultist Hierophant Gigante Vulture Death Cultist Griffon Druid Harpy Elemental Cultist Hippogriff Fiend Cultist Hook Horror Gladiator Hydra Guard l(enku Guard Captain l<raken Knight Manticore Mage Medusa Mage Apprentice Merror Noble Mimic Noble Prodigy Minotaur of Baphomet Performer Owl bear Performer Legend Peryton Performer Maestro Phase Spider Pirate Primeval Owlbear Pirate Admiral Purple Worm Tree Blight Quaggoth Twig Blight Quaggoth Thonot Vine Blight Remorhaz Violet Fungus Roe Violet Fungus Necrohulk Rust Monster UN DEAD Sti rge Banshee Swarm of Stirges ~ Beholder Zombie Tarrasque Bone Naga Thri-kreen Marauder Crawling Claw Thri-kreen Psion Death Knight Troglodyte Death Knight Aspirant Umber Hulk Death Tyrant Were bear Demilich Wereboar Dracolich Wererat Flameskull Weretiger Flaming Skeleton Werewolf Ghast Winter Wolf Ghast Gravecaller Yeti Ghost Young Remorhaz · Ghoul Yuan-ti Abomination Graveyard Reven ant Yuan-ti Infiltrator Haunting Revenant Yuan-ti Malison Lacedon Ghoul OOZE Lich Black Pudding Minotaur Skeleton Blob of Annihilation Mummy Gelatinous Cube Mummy Lord Gray Ooze Ogre Zombie Ochre Jelly Poltergeist Psíquico Gray Ooze Reven ant Shadow PLANT Skeleton Awakened Shrub Specter Awakened Tree Swarm of Crawling Claws Gas Spore Fungus r Vampire Gulthias Blight I Vampire Nightbringer Myconid Adult Vampire Spawn Myconid Sovereign Vampire Umbral Lord Myconid Spore Servant Warhorse Skeleton Myconid Sprout Wight Needle Blight Will-o'-Wisp Shamling Mound Wraith Shrieker Fungus Zombie Treant MONSTERS BY GROUP The following lists present stat blocks that share de- scriptive tags or that are part of a group that's not reflected by their name. ANGELS DRAGONS CHROMATIC Deva Black dragons (all) Planetar Blue dragons (all) Solar Green dragons (all) Red dragons (all) - BEHOLDERS White dragons (all) Beholder Death Tyrant DRAGONS METALLIC Spectator Brass dragons (all) Zombie Beholder Bronze dragons (all) Copper dragons (all) DEMONS Gold dragons (all) Balor Silver dragons (all) Barlgura • Chasme GEN I ES Dretches (all) Dao Glabrezu Djinni Goristro Efreeti Hezrou Marid · Manes (all) GOBLINOIDS Marilith Bugbears (all) Nalfeshnee Goblins (all) Quasit Hobgoblins (all) Shadow Demon Vrock LYCANTHROPES Yochlol Were bear Wereboar DEVI LS Wererat Barbed Devil Weretiger Bearded Devil Werewolf Bone Devil Chain Devil TITANS - Eri nyes Blob of Annihilation Horned Devil Colossus Ice Devil Elemental Cataclysm Imp Empyreans (all) Lemures (all) Kraken Pit Fiend Tarrasque Spined Devil YUGOL0THS DINOSAURS Arcanoloth Allosaurus Mezzoloth • Ankylosaurus Nycaloth Archelon Ultroloth Plesiosaurus Pteranodon Triceratops Tyrannosaurus Rex APPENDIX B I MONSTER LISTS 3 81 MONSTERS BY CHALLENGE RATING The following list organizes the monster stat blocks in this book by Nível de Desafio Rating. CR o Mastiff Awakened Shrub Merfol k Skirmisher Baboon Madron Monodrone Badger Mule Bat Noble Cat Pony Comumer Slaad Tadpole Crab Stirge Crawling Claw Twig Blight Deer Venomous Snake Eagle · Warrior Infantry Frog CR 1/4 Gigante Fogo Beetle Aarakocra Skirmisher Goat Animated Broom Hawk Animated Flying Sword Homunculus Axe Beak Hyena Blink Dog Jackal Boar Larva Bullywug Warrior Lemure Constrictor Snake Lizard Draft Horse Myconid Sprout Dretch • Octopus Elk Owl Gigante Badger Piranha Gigante Bat Rat Gigante Centipede Raven Gigante Frog Scorpion Gigante Lizard \\ Seahorse Gigante Owl Shrieker Fungus Gigante Venomous Snake Spider Gigante Wolf Spider Vulture Goblin Warrior Weasel Grim lock CR 1/8 l<enku Bandit l<uo-toa Blood Hawk Madron Duodrone Camel Mud Mephit Cultist Needle Blight Flu mph Panther Flying Snake Pixie Gigante Crab Priest Acolyte Gigante Rat Pseudodragon Gigante Weasel Pteranodon Goblin Minion Riding Horse Guard Skeleton l<obold Warrior Smoke Mephit Man · es Sprite APPENDIX B I MONSTER LISTS , Steam Mephit Dire Wolf Swarm of Bats Dryad Swarm of Rats Empyrean Iota Swarm of Ravens Faerie Dragon Youth Troglodyte Ghoul Violet Fungus Gigante Eagle Winged l<obold Gigante Hyena Wolf Gigante Octopus ~ Zombie Gigante Spider Gigante Toad CR 1/2 Gigante Vulture Ape Goblin Boss Black Bear Harpy Cockatrice Hippogriff Crocodile Imp Darkmantle l<uo-toa Whip Dust Mephit Lacedon Ghoul Gas Spore Fungus Lion Gigante Goat Manes Vaporspawn Gigante Seahorse Madron Quadrone Gigante Wasp Myconid Spore Servant Gnoll Warrior Ogrillon Ogre Gray Ooze Pirate Hobgoblin Warrior Psíquico Gray Ooze Ice Mephit Quasit Jackalwere Salamander Fogo Snake Magma Mephit Scarecrow Magmin Specter Madron Tridrone Sphinx of Wonder Myconid Adult Spy Performer Swarm of Larvae Piercer Swarm of Piranhas Reef Shark Thri-kreen Marauder Rust Monster Tiger Sahuagin Warrior Yuan-ti Inn ltrator Satyr Scout CR 2 Shadow Allosaurus Swarm of Insects Animated Rug of Tough Smothering Troll Limb Ankheg Vine Blight Awakened Tree Warhorse Azer Sentinel Warhorse Skeleton • Bandit Captain Worg Berserker Black Dragon Wyrmling CR, Bronze Dragon Wyrmling Animated Armor Bulette Pup Brass Dragon Wyrmling Carrion Crawler Brown Bear Centaur Trooper Bugbear Warrior Cultist Fanatic Copper Dragon Wyrmling Druid Death Dog Ettercap Faerie Dragon Adult Flaming Skeleton Gargoyle Gigante Scorpion Gelatinous Cube Githyanki Soldier Ghast Goblin Hexer Gigante Boar Gold Dragon Wyrmling Gigante Constrictor Snake Green Hag Gigante Elk Grell Gibbering Mouther Hell Hound Githzerai Monk Hobgoblin Captain Gnoll Pack Lord Hook Horror Green Dragon Wyrmling Killer Whale Grick Knight Griffon Kuo-toa Monitor Hunter Shark Manticore Intellect Devourer Minotaur of Baphomet Lizardfolk Geomancer Mummy Mag~ Apprentice Nightmare Merrow Owlbear Mimic Phase Spider Minotaur Skeleton Quaggoth Thonot Modron Pentadrone Scout Captain Myconid Sovereign Spectator Nothic Swarm of Crawling Claws Ochre Jelly Swarm of Lemures Ogre Vampire Familiar Ogre Zombie Warrior Veteran Pegasus Water Weird Peryton Werewolf Plesiosau rus Wight Polar Bear Winter Wolf Poltergeist Yeti Priest Yuan-ti Malison Quaggoth CR 4 Rhinoceros Aarakocra Aeromancer Saber-Toothed Tiger Archelon Sa h uagi n Priest Banshee Sea Hag Black Pudding Silver Dragon Wyrmling Bone Naga Spined Devil Bullywug Bog Sage Swarm of Stirges Chuul Swarm of Venomous Snakes Couatl Wererat Elephant White Dragon Wyrmling 1 Ettin Will-0 -Wisp Flameskull CR 3 Ghost Ankylosaurus Gnoll Fang ofYeenoghu Basilisk Guard Captain Bearded Devil Helmed Horror Blue Dragon Wyrmling Hippopotamus Bugbear Stalker Incubus Displacer Beast Juvenile Shadow Dragon Doppelganger Lamia Lizardfolk Sovereign Galeb Duhr Red Dragon Wyrmling Ghast Gravecaller Shadow Demon Gigante Squid Succubus G ithzerai Zerth Swarm of Dretches Hobgoblin Warlord Tough Boss Invisível Stalker Were boar l<uo-toa Archpriest Weretiger Mage Mammoth CR 5 Medusa Air Elemental Merfolk Wavebender Barbed Devil Performer Maestro Barlgura Pirate Captain Beholder Zombie Satyr Revel master Bulette Vrock Cambion Wyvern Earth Elemental Young Brass Dragon Fogo Elemental Young White Dragon Flesh Golem Gigante Axe Beak CR 7 Gigante Crocodile Bandit Deceiver Gigante Shark Blue Slaad Gladiator Centaur Warden Gorgon Gigante Ape Ha If-Dr a go n Graveyard Reven ant Hill Gigante G rick Ancient Mezzoloth Mind Flayer Night Hag Oni Otyugh Primeval Owlbear Pixie Wonderbringer Shield Guardian Red Slaad Stone Gigante Reven ant Tree Blight Roper Violet Fungus Necrohulk Sahuagin Baron Young Black Dragon Salamander Young Copper Dragon Shambling Mound Yuan-ti Abomination Triceratops CR 8 Troll Aberrant Cultist Umber Hulk Assassin Unicorn Berserker Commander Vampire Spawn Chain Devil Water Elemental Cloaker Were bear Cockatrice Regent Wraith Death Cultist Xorn Elemental Cultist Young Remorhaz Fiend Cultist CR 6 Fomorian Azer Pyromancer Frost Gigante Chas me Githyanki l<night Chimera Gnoll Demoniac Cyclops Sentry Green Slaad Drider Hezrou APPENDI X B I MONSTER LI , 383 Hydra Nycaloth Sphinx of Secrets Treant Spirit Naga Young Blue Dragon Thri-kreen Psion Young Silver Dragon Tyrannosaurus Rex CR10 Vampire Nightbringer Aboleth Young Bronze Dragon Cultist Hierophant Young Green Dragon Cyclops Oracle CR 9 Death Slaad Abominable Yeti Deva Bone Devil Dire Worg Brazen Gorgon Guardian Naga Clay Golem Haunting Revenant Cloud Gigante Noble Prodigy Fogo Gigante Performer Legend Glabrezu Spy Master Gray Slaad Stone Golem APPE·NDIX B I MONSTER LISTS Warrior Commander Adult Silver Dragon Yochlol Githyanki Dracomancer Young Gold Dragon Gulthias Blight Young Red Dragon Iron Golem ' Marilith CR 11 Planetar Bandit Crime Lord Behir CR 17 Dao Adult Gold Dragon Death !(night Aspirant Adult Red Dragon Djinni Death !(night Efreeti Dracolich Horned Devil Dragon Turtle Marid Goristro Mind Flayer Arcanist Sphinx of Valor Remorhaz CR18 Roe Demilich Sphinx of Lore CR19 CR12 Bal or Arcanaloth Archmage CR 20 Arch priest Ancient Brass Dragon Eri nyes Ancient White Dragon Githzerai Psion Animal Lord Pirate Admiral Pit Fiend Questing !(night CR 21 CR 13 Ancient Black Dragon Adult Brass Dragon Ancient Copper Dragon Adult White Dragon Arch-hag Beholder Lich Nalfeshnee Solar Rakshasa Shadow Dragon CR 22 Storm Gigante Ancient Bronze Dragon Ultroloth Ancient Green Dragon Vampire Elemental Cataclysm CR14 CR 23 Adult Black Dragon Ancient Blue Dragon Adult Copper Dragon Ancient Silver Dragon Death Tyrant Blob of Annihilation Ice Devil Empyrean l<raken CR 15 Adult Bronze Dragon CR 24 Adult Green Dragon Ancient Gold Dragon _ Mummy Lord Ancient Red Dragon Purple Worm CR 25 Salamander Inferno Master Colossus Vampire Umbral Lord CR30 u CR16 z Tarrasque >- Adult Blue Dragon 0</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!NVyVytKjBVM10UoS.vitBoqdj0IazuCvj"
+      "_key": "!actors.items!2makfetLpk41iJ2K.EIbYAJatiIc8WWLr"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Wolf",
-      "page": 375,
-      "cr": "1",
+      "page": 373,
+      "cr": "1/4",
       "warnings": []
     }
   }

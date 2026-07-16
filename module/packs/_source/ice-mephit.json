@@ -1,6 +1,6 @@
 {
-  "_id": "I46Pk0K58I56MddG",
-  "_key": "!actors!I46Pk0K58I56MddG",
+  "_id": "LrWtqLfXZLPz6J0u",
+  "_key": "!actors!LrWtqLfXZLPz6J0u",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Ice Mephit",
   "type": "npc",
@@ -67,10 +67,10 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Neutro",
+      "alignment": "Neutro e Mau",
       "cr": 0.5,
       "xp": {
-        "value": 100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -93,8 +93,10 @@
         "custom": ""
       },
       "dv": {
-        "value": [],
-        "custom": "Fi re"
+        "value": [
+          "fire"
+        ],
+        "custom": ""
       },
       "ci": {
         "value": [
@@ -132,118 +134,18 @@
   },
   "items": [
     {
-      "_id": "ebwTfgtXzQS07Pyb",
-      "name": "Death Burst",
+      "_id": "7ft8UxnWOjCc0n8a",
+      "name": "Explosão Mortal",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mephit explodes when it dies. Con- stitution Teste de Resistência: DC 10, cada criatura in a 5-foot</p>",
+          "value": "<p>The mephit explodes when it dies. Teste de Resistência de Constituição: CD 10, cada criatura in a 1,5 m Emanation originating from the mephit. 5 (2d4) dano de frio. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
           "type": "",
           "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!I46Pk0K58I56MddG.ebwTfgtXzQS07Pyb"
-    },
-    {
-      "_id": "FnR9qao7RauNNhlv",
-      "name": "Emanation originating from the mephit",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Falha: 5 (2d4)</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!I46Pk0K58I56MddG.FnR9qao7RauNNhlv"
-    },
-    {
-      "_id": "BnzVb7G5MxHsJAQx",
-      "name": "Frio de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Sucesso: Metade do dano.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!I46Pk0K58I56MddG.BnzVb7G5MxHsJAQx"
-    },
-    {
-      "_id": "3oxHILG6MAdA0n3b",
-      "name": "Claw",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Melee Attack Ro/1: · +3, alcance 5 ft. Acerto: 3 (1d4 + 1) Cortante de dano plus 2 (1d4) Frio de dano.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
         },
         "uses": {
           "spent": 0,
@@ -259,22 +161,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "1d4+1",
-            "damageType": "slashing"
+            "saveDc": 10,
+            "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!I46Pk0K58I56MddG.3oxHILG6MAdA0n3b"
+      "_key": "!actors.items!LrWtqLfXZLPz6J0u.7ft8UxnWOjCc0n8a"
     },
     {
-      "_id": "OtN8awKjdLXHz6rl",
-      "name": "Fog Cloud (1/Day)",
+      "_id": "h6n01xWcD9156xRD",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mephit casts Fog Cloud, requir- in,g no spell components and using Carisma as the spellcasting ability.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 3 (1d4 + 1) dano cortante mais 2 (1d4) dano de frio.</p>",
           "chat": ""
         },
         "activation": {
@@ -284,61 +186,97 @@
         },
         "uses": {
           "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!I46Pk0K58I56MddG.OtN8awKjdLXHz6rl"
-    },
-    {
-      "_id": "9caioYwVtI0ECiYD",
-      "name": "Frost Breath (Recharge 6)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 10, cada criatura in a 15-foot Cone. Falha: 7 (3d4)</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "recharge",
-              "type": "recoverAll",
-              "formula": "6"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
           "subtype": ""
         },
         "activities": {
-          "ESrkre3OcP5YXhHl": {
-            "_id": "ESrkre3OcP5YXhHl",
+          "clctgsDjoqasP4Ta": {
+            "_id": "clctgsDjoqasP4Ta",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "3",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "1",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 3,
+            "attackType": "melee",
+            "damageFormula": "1d4+1",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!LrWtqLfXZLPz6J0u.h6n01xWcD9156xRD"
+    },
+    {
+      "_id": "FI1O6U9QmkIauoga",
+      "name": "Frost Breath",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Constituição: CD 10, cada criatura in a 4,5 m Cone. 7 (3d4) dano de frio. Metade do dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "hQtf57kBt3XZaNUT": {
+            "_id": "hQtf57kBt3XZaNUT",
             "type": "save",
             "activation": {
               "type": "action",
@@ -371,16 +309,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!I46Pk0K58I56MddG.9caioYwVtI0ECiYD"
+      "_key": "!actors.items!LrWtqLfXZLPz6J0u.FI1O6U9QmkIauoga"
     },
     {
-      "_id": "EdNMiQu8FYPSPlWM",
-      "name": "Frio de dano",
+      "_id": "blXU7jWIXUN1oQKc",
+      "name": "Conjuração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sucesso: Metade do dano. ~ MAGMA MEPHIT Small Elemental, Neutral Elli! AC 11 lniti at iv e+l (11) HP 18 (4d6 + 4) • Sp eed 30 ft., Fly 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>The mephit casts Fog Cloud, requiring no spell components and using Carisma as the spellcasting ability.</p>",
           "chat": ""
         },
         "activation": {
@@ -405,13 +343,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!I46Pk0K58I56MddG.EdNMiQu8FYPSPlWM"
+      "_key": "!actors.items!LrWtqLfXZLPz6J0u.blXU7jWIXUN1oQKc"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Ice Mephit",
-      "page": 208,
+      "page": 206,
       "cr": "1/2",
       "warnings": []
     }

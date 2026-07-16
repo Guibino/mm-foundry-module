@@ -1,8 +1,8 @@
 {
-  "_id": "qhjXHol6hMZt3vKL",
-  "_key": "!actors!qhjXHol6hMZt3vKL",
+  "_id": "4g1q1RGwPQqX7FM5",
+  "_key": "!actors!4g1q1RGwPQqX7FM5",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Adulto Latão Dragão",
+  "name": "Adult Brass Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/adult-brass-dragon.webp",
   "system": {
@@ -48,6 +48,7 @@
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 40,
         "burrow": 30,
         "fly": 80
       },
@@ -64,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Metallic",
+        "subtype": "metallic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Bom",
       "cr": 13,
       "xp": {
-        "value": 10000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -105,10 +106,27 @@
         "custom": "Comum, Dracônico"
       }
     },
-    "skills": {}
+    "skills": {
+      "his": {
+        "value": 2,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "per": {
+        "value": 2,
+        "ability": "cha"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Adulto Latão Dragão",
+    "name": "Adult Brass Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -121,12 +139,12 @@
   "items": [
     {
       "_id": "7ypCjN7uwPM3vnDg",
-      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "name": "Resistência Lendária",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the dragon fails a saving throw, it can choose to suc- ceed in stead.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -135,13 +153,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "3",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -155,7 +168,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qhjXHol6hMZt3vKL.7ypCjN7uwPM3vnDg"
+      "_key": "!actors.items!4g1q1RGwPQqX7FM5.7ypCjN7uwPM3vnDg"
     },
     {
       "_id": "wu0niMnynwSfiGg8",
@@ -164,7 +177,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of (A) Sleep Breath or (B) Conjuração to cast Scorching Ray.</p>",
+          "value": "<p>The dragon makes three Dilacerar attacks. It can replace one attack with a use of (A) Sopro Sonífero or (B) Conjuração to cast Scorching Ray.</p>",
           "chat": ""
         },
         "activation": {
@@ -189,16 +202,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qhjXHol6hMZt3vKL.wu0niMnynwSfiGg8"
+      "_key": "!actors.items!4g1q1RGwPQqX7FM5.wu0niMnynwSfiGg8"
     },
     {
-      "_id": "bTebdbBSjPYVDntY",
-      "name": "Rend",
+      "_id": "IG5guhQJ2ozwfalo",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 11, alcance 10 ft. Acerto: 17 (2d1 0 + 6) Cortante de dano plus 4 (1d8) Fogo de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +11, alcance 3 m. Acerto: 17 (2d10 + 6) dano cortante mais 4 (1d8) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -215,27 +228,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "QKfCMh9ZcmS3hrJe": {
+            "_id": "QKfCMh9ZcmS3hrJe",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "11",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "6",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 11,
+            "attackType": "melee",
             "damageFormula": "2d10+6",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qhjXHol6hMZt3vKL.bTebdbBSjPYVDntY"
+      "_key": "!actors.items!4g1q1RGwPQqX7FM5.IG5guhQJ2ozwfalo"
     },
     {
-      "_id": "bJfsdb4TsbzqwdCu",
-      "name": "Fogo Breath (Recharge 5-6)",
+      "_id": "qO8zpLknXcP3sIqP",
+      "name": "Sopro de Fogo (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 18, cada criatura in a 60-foot-long, 5-foot-wide Line. Falha: 45 (10d8) Fogo de dano. Sucesso: Metade do dano. 2 Sleep Breath. Constituição Teste de Resistência: DC 18, each <( creature in a 60-foot Cone. Falha: The target has the Incapacitado condition until the end of its next turn, at which point it repeats the save. Second Falha: The target has the Inconsciente condition for 10 minutes. This effect ends for o alvo if it takes de dano or a creature within 5 feet of it takes an action to wake it.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 18, cada criatura in a 18 m-long, 1,5 m-wide Line. 45 (10d8) dano de fogo. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -259,8 +316,8 @@
           "subtype": ""
         },
         "activities": {
-          "BfR4VPn87X3dAStG": {
-            "_id": "BfR4VPn87X3dAStG",
+          "3UKvMZIfopb2ijea": {
+            "_id": "3UKvMZIfopb2ijea",
             "type": "save",
             "activation": {
               "type": "action",
@@ -279,25 +336,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 10,
-                  "denomination": 8,
-                  "bonus": "",
-                  "types": [
-                    "fire"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -305,15 +344,74 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "10d8",
-            "damageType": "fire",
             "saveDc": 18,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qhjXHol6hMZt3vKL.bJfsdb4TsbzqwdCu"
+      "_key": "!actors.items!4g1q1RGwPQqX7FM5.qO8zpLknXcP3sIqP"
+    },
+    {
+      "_id": "5WcsbPMvOE0UgGtj",
+      "name": "Sopro Sonífero",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Constituição: CD 18, cada criatura in a 18 m Cone. O alvo fica com a condição Incapacitado until the end of its next turn, at which point it repeats the save. Falha: O alvo fica com a condição Inconsciente for 10 minutes. This effect ends for o alvo if it takes de dano or uma criatura within 1,5 m of it takes an action to wake it.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "6gvQiJrFwYI6MZV4": {
+            "_id": "6gvQiJrFwYI6MZV4",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "18"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 18,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!4g1q1RGwPQqX7FM5.5WcsbPMvOE0UgGtj"
     },
     {
       "_id": "0joaGhIoF39Mnisr",
@@ -347,16 +445,50 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qhjXHol6hMZt3vKL.0joaGhIoF39Mnisr"
+      "_key": "!actors.items!4g1q1RGwPQqX7FM5.0joaGhIoF39Mnisr"
     },
     {
-      "_id": "i8byauhc5DAsL6Fg",
-      "name": "Pounce",
+      "_id": "EkwyN8EzbGFoJE0w",
+      "name": "Bote",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon moves up to half its Speed, and it makes one Rend attack. - Scorching Sands. Destreza Teste de Resistência: DC 16, uma criatura the dragon can see within 120 feet. Falha: 27 • (6d8) Fogo de dano, and o alvo's Speed is halved until the end of its next turn. Falha ou Sucesso: The dragon can't take this action again until the start of its next turn. BRASS DRAGONS 55 YOUNG BRASS DRAGON Young brass dragons travel extensively, often spending a few years in a region before circling back to their lair. Some work closely with other metallic dragons, carrying information between allies. ADULT BRASS DRAGON Adult brass dragons know many secrets and have vast networks of contacts. These dragons share perspectives they've learned from across the world and passionately combat the lies of con artists and villains that lead people astray. ANCIENT BRASS DRAGON Ancient brass dragons create worlds-spanning net- works. They combat forces of repression and misin- formation, helping people learn from the mistakes of the past. Either personally or through webs of messengers, ancient brass dragons keep allies in- formed about challenges they can face together. ANCIENT BRASS DRAGON Gargantuan Dragon (Metallic), Chaotic Good AC 20 Iniciativa+ 12 (22) HP 332 (l 9d20 + 133) Speed 40 ft., Burrow 40 ft., Fly 80 ft. MOD SAVE MOD S AVE MOD SAVE</p>",
+          "value": "<p>A criatura se move até metade do seu Deslocamento e faz um ataque de Dilacerar.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!4g1q1RGwPQqX7FM5.EkwyN8EzbGFoJE0w"
+    },
+    {
+      "_id": "WAT1T2rCC8i4Gb12",
+      "name": "Scorching Sands",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Destreza: CD 16, uma criatura the dragon can see within 36 m. 27 (6d8) dano de fogo, and o alvo's Speed is halved until the end of its next turn. The dragon can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -374,8 +506,8 @@
           "subtype": ""
         },
         "activities": {
-          "CYPgXKApJ2Lu3E6v": {
-            "_id": "CYPgXKApJ2Lu3E6v",
+          "oUoGWfRK28Jj0fmL": {
+            "_id": "oUoGWfRK28Jj0fmL",
             "type": "save",
             "activation": {
               "type": "legendary",
@@ -408,7 +540,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qhjXHol6hMZt3vKL.i8byauhc5DAsL6Fg"
+      "_key": "!actors.items!4g1q1RGwPQqX7FM5.WAT1T2rCC8i4Gb12"
     },
     {
       "_id": "giA9RCrVRVkTF18y",
@@ -417,7 +549,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 16): À Vontade: Detect Magic, Minor Illusion, Scorching Ray, Shapechange (Beast or Humanoid form only, no Temporary Pontos de Vida gained from the spell, and no Concentration or Temporary Pontos de Vida required to maintain the spell), Speak with Animals\"· 1/Dia Each: Detect Thoughts, Control Weather</p>",
+          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 16):</p>",
           "chat": ""
         },
         "activation": {
@@ -442,13 +574,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qhjXHol6hMZt3vKL.giA9RCrVRVkTF18y"
+      "_key": "!actors.items!4g1q1RGwPQqX7FM5.giA9RCrVRVkTF18y"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Adult Brass Dragon",
-      "page": 57,
+      "page": 55,
       "cr": "13",
       "warnings": []
     }

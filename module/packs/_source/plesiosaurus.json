@@ -1,6 +1,6 @@
 {
-  "_id": "iEcp0SZ1l76l0TQn",
-  "_key": "!actors!iEcp0SZ1l76l0TQn",
+  "_id": "SElnp2tlOkXba1qM",
+  "_key": "!actors!SElnp2tlOkXba1qM",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Plesiosaurus",
   "type": "npc",
@@ -41,14 +41,15 @@
       "hp": {
         "value": 68,
         "max": 68,
-        "formula": "8d1 0 + 24",
+        "formula": "8d10 + 24",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 20,
+        "swim": 40
       },
       "senses": {
         "units": "ft"
@@ -61,7 +62,7 @@
     "details": {
       "type": {
         "value": "beast",
-        "subtype": "Dinosaur",
+        "subtype": "dinosaur",
         "swarm": "",
         "custom": ""
       },
@@ -101,6 +102,10 @@
       }
     },
     "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      },
       "ste": {
         "value": 1,
         "ability": "dex"
@@ -120,13 +125,13 @@
   },
   "items": [
     {
-      "_id": "Xg5IOXUc8AOvaLKw",
-      "name": "Hold Breath",
+      "_id": "SSgxB7ysGdEukXrE",
+      "name": "Prender a Respiração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The plesiosaurus can hold its breath for 1 hour.</p>",
+          "value": "<p>A criatura consegue prender a respiração por 1 hora.</p>",
           "chat": ""
         },
         "activation": {
@@ -150,16 +155,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!iEcp0SZ1l76l0TQn.Xg5IOXUc8AOvaLKw"
+      "_key": "!actors.items!SElnp2tlOkXba1qM.SSgxB7ysGdEukXrE"
     },
     {
-      "_id": "EUIoJhoneBah7FtZ",
-      "name": "Bite",
+      "_id": "8OCqH2P6rpnHkoqq",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>MeleeAttack Ro/1:+6, alcance 10ft . Acerto: 11 (2d6+4) . I</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 3 m. Acerto: 11 (2d6 + 4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -176,55 +181,68 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "MezzUnSyAtpp6GC9": {
+            "_id": "MezzUnSyAtpp6GC9",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "toHit": 6,
+            "attackType": "melee",
+            "damageFormula": "2d6+4",
+            "damageType": "piercing"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!iEcp0SZ1l76l0TQn.EUIoJhoneBah7FtZ"
-    },
-    {
-      "_id": "NKEX3mS3MIZUmsHb",
-      "name": "Perfurante de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>0 POLAR BEAR Large Beast, Unal igned AC 12 In it ia tive +2 (12) HP 42 (5d10+ 15) Sp ee d 40 ft., Swim 40 ft. MOO SAVE MOO SAVE MOO SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!iEcp0SZ1l76l0TQn.NKEX3mS3MIZUmsHb"
+      "_key": "!actors.items!SElnp2tlOkXba1qM.8OCqH2P6rpnHkoqq"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Plesiosaurus",
-      "page": 368,
+      "page": 366,
       "cr": "2",
       "warnings": []
     }

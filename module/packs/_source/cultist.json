@@ -1,6 +1,6 @@
 {
-  "_id": "u8NGOXuf2YtR2YgV",
-  "_key": "!actors!u8NGOXuf2YtR2YgV",
+  "_id": "UCKFzHrphqdywQ6H",
+  "_key": "!actors!UCKFzHrphqdywQ6H",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Cultist",
   "type": "npc",
@@ -68,7 +68,7 @@
       "alignment": "Neutro",
       "cr": 0.125,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -130,7 +130,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 3 (1d4 + 1) Cortante de dano plus 1 Necrótico~de dano. CULTIST FANATIC Medium or Small Humanoid, Neutral AC 13 Iniciativa +2 (12) HP 44 (8d8 + 8) S peed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 3 (1d4 + 1) dano cortante mais 1 dano necrótico.</p>",
           "chat": ""
         },
         "activation": {
@@ -202,13 +202,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!u8NGOXuf2YtR2YgV.ER3pggdL1RSjSm1o"
+      "_key": "!actors.items!UCKFzHrphqdywQ6H.ER3pggdL1RSjSm1o"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Cultist",
-      "page": 86,
+      "page": 84,
       "cr": "1/8",
       "warnings": []
     }

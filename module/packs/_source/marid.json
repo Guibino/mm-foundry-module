@@ -1,6 +1,6 @@
 {
-  "_id": "KO78VLMrIiQFGSCA",
-  "_key": "!actors!KO78VLMrIiQFGSCA",
+  "_id": "LEjmVbfqRGZnsdU4",
+  "_key": "!actors!LEjmVbfqRGZnsdU4",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Marid",
   "type": "npc",
@@ -53,7 +53,9 @@
         "swim": 90
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 120,
+        "blindsight": 30
       },
       "init": {
         "ability": "dex",
@@ -63,14 +65,14 @@
     "details": {
       "type": {
         "value": "elemental",
-        "subtype": "Genie",
+        "subtype": "genie",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Neutro",
       "cr": 11,
       "xp": {
-        "value": 7200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -121,13 +123,13 @@
   },
   "items": [
     {
-      "_id": "gxcZFUZCVo6AEUdn",
-      "name": "Amphibious",
+      "_id": "TpqdGG6XBnISaMpi",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The marid can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,16 +153,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KO78VLMrIiQFGSCA.gxcZFUZCVo6AEUdn"
+      "_key": "!actors.items!LEjmVbfqRGZnsdU4.TpqdGG6XBnISaMpi"
     },
     {
-      "_id": "qeLuhdMzao0m27tm",
-      "name": "Elemental Restoration",
+      "_id": "QSq8EfLuLUmMx213",
+      "name": "Restauração Elemental",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the ma rid dies outside the Elemental Plane of Water, its body dissolves into brine, and it gains a new body in 1d4 days, reviving with all its Pontos de Vida somewhere on the Plane of Water.</p>",
+          "value": "<p>If the marid dies outside the Elemental Plane of Water, its body dissolves into brine, and it gains a new body in 1d4 days, reviving with all its Pontos de Vida somewhere on the Plane of Water.</p>",
           "chat": ""
         },
         "activation": {
@@ -184,16 +186,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KO78VLMrIiQFGSCA.qeLuhdMzao0m27tm"
+      "_key": "!actors.items!LEjmVbfqRGZnsdU4.QSq8EfLuLUmMx213"
     },
     {
-      "_id": "WdozugYUXxhVAIEt",
-      "name": "Wishes",
+      "_id": "XfVzpyIuOXRaDgJf",
+      "name": "Desejos",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The ma rid has a 30 percent chance of knowing the Wish spell. If the marid knows it, the marid can cast it only on behalf of a non-genie creature who communi- cates a wish in a way the marid can understand. If the marid casts the spell for the creature, the marid suffers none of the spell's stress. Once the ma rid has cast it three times, the marid can't do so again for 365 days.</p>",
+          "value": "<p>The marid has a 30 percent chance of knowing the Wish spell. If the marid knows it, the marid can cast it only on behalf of a non-genie creature who communicates a wish in a way the marid can understand. If the marid casts the spell for the creature, the marid suffers none of the spell's stress. Once the marid has cast it three times, the marid can't do so again for 365 days.</p>",
           "chat": ""
         },
         "activation": {
@@ -217,7 +219,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KO78VLMrIiQFGSCA.WdozugYUXxhVAIEt"
+      "_key": "!actors.items!LEjmVbfqRGZnsdU4.XfVzpyIuOXRaDgJf"
     },
     {
       "_id": "dcNLlJoRTr71w25T",
@@ -251,7 +253,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KO78VLMrIiQFGSCA.dcNLlJoRTr71w25T"
+      "_key": "!actors.items!LEjmVbfqRGZnsdU4.dcNLlJoRTr71w25T"
     },
     {
       "_id": "Nm1nxOYsA33GPgHS",
@@ -260,7 +262,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 10, alcance 15 ft. Acerto: 15 (2d8 + 6) Cortante de dano plus 9 (2d8) Frio de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 4,5 m. Acerto: 15 (2d8 + 6) dano cortante mais 9 (2d8) dano de frio.</p>",
           "chat": ""
         },
         "activation": {
@@ -277,18 +279,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "CUpgmo5Dq0Vsf88D": {
+            "_id": "CUpgmo5Dq0Vsf88D",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "6",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 10,
+            "attackType": "melee",
             "damageFormula": "2d8+6",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KO78VLMrIiQFGSCA.Nm1nxOYsA33GPgHS"
+      "_key": "!actors.items!LEjmVbfqRGZnsdU4.Nm1nxOYsA33GPgHS"
     },
     {
       "_id": "bV75Ll277azLRhuo",
@@ -297,7 +343,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 18, each crea- ture in a 60-foot-long, 10-foot-wide Line. Falha: 31 l (9d6) Frio de dano. If o alvo is a Huge . or smaller creature, it is pushed up to 20 feet straight away from the marid and has the Caído condition. Sucesso: Metade do dano only.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 18, cada criatura in a 18 m-long, 3 m-wide Line. 31 (9d6) dano de frio. If o alvo is a Huge or smaller creature, it is pushed up to 6 m straight away from the marid and fica com a condição Caído. Metade do dano only.</p>",
           "chat": ""
         },
         "activation": {
@@ -349,7 +395,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KO78VLMrIiQFGSCA.bV75Ll277azLRhuo"
+      "_key": "!actors.items!LEjmVbfqRGZnsdU4.bV75Ll277azLRhuo"
     },
     {
       "_id": "5Rv7eS1DlwF6NY0m",
@@ -358,7 +404,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The marid casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 16): À Vontade: Create or Destroy Water, Detect Evil and Good, Detect Magic, Purify Food and Drink 1/Dia Each: Control Water, Gaseous Form, Invisibility, 0 • Plane Shift, Tongues V1 V1 0 B ONUS A CTIO N S aJ UJ Misty Veil <l'. (Recarga 5-6). The marid casts Fog Cloud, L using the same spellcasting ability as Conjuração. MARID Genie of the Water</p>",
+          "value": "<p>The marid casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 16):</p>",
           "chat": ""
         },
         "activation": {
@@ -383,13 +429,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KO78VLMrIiQFGSCA.5Rv7eS1DlwF6NY0m"
+      "_key": "!actors.items!LEjmVbfqRGZnsdU4.5Rv7eS1DlwF6NY0m"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Marid",
-      "page": 205,
+      "page": 203,
       "cr": "11",
       "warnings": []
     }

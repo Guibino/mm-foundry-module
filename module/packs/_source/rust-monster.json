@@ -1,6 +1,6 @@
 {
-  "_id": "7vt4WkjBGphVb0W2",
-  "_key": "!actors!7vt4WkjBGphVb0W2",
+  "_id": "rYuFbpGGwwxoAM1e",
+  "_key": "!actors!rYuFbpGGwwxoAM1e",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Rust Monster",
   "type": "npc",
@@ -16,7 +16,7 @@
         "proficient": 0
       },
       "con": {
-        "value": 3,
+        "value": 13,
         "proficient": 0
       },
       "int": {
@@ -67,9 +67,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 0.5,
       "xp": {
-        "value": 100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -98,7 +98,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
@@ -122,7 +122,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The rust monster can pinpoint the location of ferrous metal within 30 feet of itself.</p>",
+          "value": "<p>The rust monster can pinpoint the location of ferrous metal within 9 m of itself.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,7 +146,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!7vt4WkjBGphVb0W2.Q2oTB8gfYpMRbVL2"
+      "_key": "!actors.items!rYuFbpGGwwxoAM1e.Q2oTB8gfYpMRbVL2"
     },
     {
       "_id": "aOPhwIflCKZTEIMS",
@@ -155,7 +155,41 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The rust monster makes one Bite attack <( and uses Antennae twice. l > Bite. Rolagem de Ataque Corpo a Corpo: +3,, alcance 5 ft. Acerto: 5 (1d8 + l) Q:'. -Perfurante de dano. co creatures' equipment-these beetle-like scavengers rush to feed. Using their feathery antennae, rust monsters dissolve metals such as iron and steel into rusted scrap. They easily gnaw through this cor- roded metal using their mandibles. Rust monsters usually ignore creatures without metal equipment, but they defend themselves if attacked.</p>",
+          "value": "<p>The rust monster makes one Mordida attack and uses Antennae twice.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!rYuFbpGGwwxoAM1e.aOPhwIflCKZTEIMS"
+    },
+    {
+      "_id": "VcqeS9kJhRKTBlmy",
+      "name": "Mordida",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 5 (1d8 + 1) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -173,8 +207,8 @@
           "subtype": ""
         },
         "activities": {
-          "99yozU2avMpUqoBc": {
-            "_id": "99yozU2avMpUqoBc",
+          "uzNVPKlSiJo77hcQ": {
+            "_id": "uzNVPKlSiJo77hcQ",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -193,7 +227,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "1",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -202,21 +254,23 @@
         "mm2024": {
           "mechanics": {
             "toHit": 3,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d8+1",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!7vt4WkjBGphVb0W2.aOPhwIflCKZTEIMS"
+      "_key": "!actors.items!rYuFbpGGwwxoAM1e.VcqeS9kJhRKTBlmy"
     },
     {
-      "_id": "8rZin15CkfygN5H1",
+      "_id": "h5f3cYF078kmipLo",
       "name": "Antennae",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The rust monster targets one nonmagical metal object-armor or a weapon-worn or carried by a creature within 5 feet of itself. Destreza Teste de Resistência: DC l l, the creature with the object. Falha: The object takes a - l penalty to the AC it offers (armor) or to its attack rolls (weapon) . Armor is destroyed if the penalty reduces its AC to 10, and a weapon is destroyed if its penalty alcancees -5. The penalty can be removed by casting the Mending spell on the armor or weapon.</p>",
+          "value": "<p>The rust monster targets one nonmagical metal object—armor or a weapon—worn or carried by uma criatura within 1,5 m of itself. Teste de Resistência de Destreza: CD 11, the creature with the object. The object takes a -1 penalty to the AC it offers (armor) or to its attack rolls (weapon). Armor is destroyed if the penalty reduces its AC to 10, and a weapon is destroyed if its penalty reaches -5. The penalty can be removed by casting the Mending spell on the armor or weapon.</p>",
           "chat": ""
         },
         "activation": {
@@ -233,24 +287,51 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "Z592jY8QMxFqX6LK": {
+            "_id": "Z592jY8QMxFqX6LK",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "11"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 11,
+            "saveAbility": "dex"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!7vt4WkjBGphVb0W2.8rZin15CkfygN5H1"
+      "_key": "!actors.items!rYuFbpGGwwxoAM1e.h5f3cYF078kmipLo"
     },
     {
-      "_id": "2inwwNf9xd3uQ4I6",
+      "_id": "3bvbwnQTqjErFKew",
       "name": "Destroy Metal",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The rust monster touches a nonmag- ical metal object within 5 feet of itself that isn't being worn or carried. The touch destroys a l-foot Cu be of the object.</p>",
+          "value": "<p>The rust monster touches a nonmagical metal object within 1,5 m of itself that isn't being worn or carried. The touch destroys a 0,3 m Cube of the object.</p>",
           "chat": ""
         },
         "activation": {
@@ -275,16 +356,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!7vt4WkjBGphVb0W2.2inwwNf9xd3uQ4I6"
+      "_key": "!actors.items!rYuFbpGGwwxoAM1e.3bvbwnQTqjErFKew"
     },
     {
-      "_id": "g9pPfslEQj0aAKnE",
-      "name": "Habilidade",
+      "_id": "xdWX7LkHgBoaYBL2",
+      "name": "Reflexive Antennae",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>• Reflexive Antennae. Trigger: An attack ro 11 hits the rust monster. Response: The rust monster uses Antennae. RUST MONSTER 263 SAHUAGIN Ravagers from Beneath the Waves</p>",
+          "value": "<p>An attack roll hits the rust monster. The rust monster uses Antennae.</p>",
           "chat": ""
         },
         "activation": {
@@ -309,14 +390,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!7vt4WkjBGphVb0W2.g9pPfslEQj0aAKnE"
+      "_key": "!actors.items!rYuFbpGGwwxoAM1e.xdWX7LkHgBoaYBL2"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Rust Monster",
-      "page": 265,
-      "cr": "0",
+      "page": 263,
+      "cr": "1/2",
       "warnings": []
     }
   }

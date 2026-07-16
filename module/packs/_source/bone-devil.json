@@ -1,8 +1,8 @@
 {
-  "_id": "k4GgE9LbUbDwKo7H",
-  "_key": "!actors!k4GgE9LbUbDwKo7H",
-  "folder": "kCLi0hD5goTIU7AM",
-  "name": "Bone Diabo",
+  "_id": "AN3mHw1XjN7iVA0z",
+  "_key": "!actors!AN3mHw1XjN7iVA0z",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Bone Devil",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/bone-devil.webp",
   "system": {
@@ -39,16 +39,17 @@
         "formula": ""
       },
       "hp": {
-        "value": 1,
-        "max": 1,
-        "formula": "",
+        "value": 161,
+        "max": 161,
+        "formula": "17d10 + 68",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40,
+        "fly": 40
       },
       "senses": {
         "units": "ft",
@@ -61,15 +62,15 @@
     },
     "details": {
       "type": {
-        "value": "",
-        "subtype": "",
+        "value": "fiend",
+        "subtype": "devil",
         "swarm": "",
-        "custom": "Unknown"
+        "custom": ""
       },
-      "alignment": "Sem Tendência",
+      "alignment": "Leal e Mau",
       "cr": 9,
       "xp": {
-        "value": 5000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -79,12 +80,13 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "lg",
       "di": {
         "value": [
+          "fire",
           "poison"
         ],
-        "custom": "Fi re"
+        "custom": ""
       },
       "dr": {
         "value": [
@@ -104,13 +106,22 @@
       },
       "languages": {
         "value": [],
-        "custom": "Infernal"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "dec": {
+        "value": 2,
+        "ability": "cha"
+      },
+      "ins": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Bone Diabo",
+    "name": "Bone Devil",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -122,13 +133,13 @@
   },
   "items": [
     {
-      "_id": "getRAqoVYRFFDPPZ",
-      "name": "Diabolical Restoration",
+      "_id": "0U2MPqk1uzsQlGv3",
+      "name": "Restauração Diabólica",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Pontos de Vida somewhere in the Nine Hells.</p>",
+          "value": "<p>Se a criatura morrer fora dos Nove Infernos, o corpo dela desaparece em fumaça sulfurosa e ela ganha um novo corpo instantaneamente, revivendo com todos os seus Pontos de Vida em algum lugar dos Nove Infernos.</p>",
           "chat": ""
         },
         "activation": {
@@ -152,16 +163,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!k4GgE9LbUbDwKo7H.getRAqoVYRFFDPPZ"
+      "_key": "!actors.items!AN3mHw1XjN7iVA0z.0U2MPqk1uzsQlGv3"
     },
     {
-      "_id": "LwM2VV4098Zo7FrI",
-      "name": "Magic Resistance",
+      "_id": "rQsp2qrmBtfALhw4",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The devil has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -185,7 +196,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!k4GgE9LbUbDwKo7H.LwM2VV4098Zo7FrI"
+      "_key": "!actors.items!AN3mHw1XjN7iVA0z.rQsp2qrmBtfALhw4"
     },
     {
       "_id": "ypgTuWzNb3uWHd33",
@@ -194,7 +205,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The devil makes two Claw attacks and one Infernal Sting attack. ,1aw. Melee Attack ~ o/1: +8, alcance l O ft. Acerto: 13 (2d8 + 4) Cortante de dano.</p>",
+          "value": "<p>The devil makes two Garra attacks and one Infernal Ferroada attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -215,23 +226,20 @@
       },
       "flags": {
         "mm2024": {
-          "mechanics": {
-            "damageFormula": "2d8+4",
-            "damageType": "slashing"
-          },
+          "mechanics": {},
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!k4GgE9LbUbDwKo7H.ypgTuWzNb3uWHd33"
+      "_key": "!actors.items!AN3mHw1XjN7iVA0z.ypgTuWzNb3uWHd33"
     },
     {
-      "_id": "EpzbUkPyY11enMJz",
-      "name": "Infernal Sting",
+      "_id": "xVoq1fiib0dOZphd",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance l Oft. Acerto: 15 (2d10 + 4) Perfurante de dano plus 78 (4d8) Veneno dam- age, and o alvo has the Envenenado condition until the start of the devil's next turn. While Envenenado, o alvo <( Lil can't regain Pontos de Vida. .. z BONE NAGA Deathless Serpentine Mind Bender</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 3 m. Acerto: 13 (2d8 + 4) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -249,8 +257,89 @@
           "subtype": ""
         },
         "activities": {
-          "yrCf4coJyEovwsNn": {
-            "_id": "yrCf4coJyEovwsNn",
+          "kdrK2a5qPbUKyNlj": {
+            "_id": "kdrK2a5qPbUKyNlj",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "8",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "4",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 8,
+            "attackType": "melee",
+            "damageFormula": "2d8+4",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!AN3mHw1XjN7iVA0z.xVoq1fiib0dOZphd"
+    },
+    {
+      "_id": "gMAaK4ki2SbfUGtO",
+      "name": "Infernal Ferroada",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 3 m. Acerto: 15 (2d10 + 4) dano perfurante mais 18 (4d8) dano de veneno, and o alvo fica com a condição Envenenado until the start of the devil's next turn. While Envenenado, o alvo can't regain Pontos de Vida.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "D2My2TULQnueRP6V": {
+            "_id": "D2My2TULQnueRP6V",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -303,17 +392,15 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!k4GgE9LbUbDwKo7H.EpzbUkPyY11enMJz"
+      "_key": "!actors.items!AN3mHw1XjN7iVA0z.gMAaK4ki2SbfUGtO"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Bone Devil",
-      "page": 54,
+      "page": 52,
       "cr": "9",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "warnings": []
     }
   }
 }

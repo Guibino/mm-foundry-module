@@ -1,6 +1,6 @@
 {
-  "_id": "RjlgGQhST6CZRTaF",
-  "_key": "!actors!RjlgGQhST6CZRTaF",
+  "_id": "OzCE1Udw3ddDyx7S",
+  "_key": "!actors!OzCE1Udw3ddDyx7S",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Druid",
   "type": "npc",
@@ -61,14 +61,14 @@
     "details": {
       "type": {
         "value": "humanoid",
-        "subtype": "Druid",
+        "subtype": "",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Neutro",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -97,13 +97,17 @@
       },
       "languages": {
         "value": [],
-        "custom": "Commo n, Druidic, Silvestre"
+        "custom": "Comum, Druidic, Silvestre"
       }
     },
     "skills": {
       "med": {
         "value": 1,
         "ability": "wis"
+      },
+      "nat": {
+        "value": 1,
+        "ability": "int"
       },
       "prc": {
         "value": 1,
@@ -130,7 +134,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The druid makes two attacks, using Vine Staff or Verdant Wisp in any combination.</p>",
+          "value": "<p>The druid makes two attacks, using Vine Bordão or Verdant Wisp in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -155,16 +159,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!RjlgGQhST6CZRTaF.DM1y9gRBiuG9qSA1"
+      "_key": "!actors.items!OzCE1Udw3ddDyx7S.DM1y9gRBiuG9qSA1"
     },
     {
-      "_id": "kgLnPzDbR8JvwktH",
-      "name": "Vine Staff",
+      "_id": "sjn7oNifgfdFeSfA",
+      "name": "Vine Bordão",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 7 (1d8 + 3) Concussão de dano plus 2 (1d4) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 7 (1d8 + 3) dano de concussão mais 2 (1d4) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -182,8 +186,8 @@
           "subtype": ""
         },
         "activities": {
-          "tJMrPI8ebSoLpbmU": {
-            "_id": "tJMrPI8ebSoLpbmU",
+          "jhcGOIs34lKxwlPN": {
+            "_id": "jhcGOIs34lKxwlPN",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -236,7 +240,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!RjlgGQhST6CZRTaF.kgLnPzDbR8JvwktH"
+      "_key": "!actors.items!OzCE1Udw3ddDyx7S.sjn7oNifgfdFeSfA"
     },
     {
       "_id": "9lTM2rdpRH4a0qct",
@@ -245,7 +249,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +5, range 90 ft. Acerto: 10 (3d6) Radiante de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +5, distância 27 m. Acerto: 10 (3d6) dano radiante.</p>",
           "chat": ""
         },
         "activation": {
@@ -317,7 +321,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!RjlgGQhST6CZRTaF.9lTM2rdpRH4a0qct"
+      "_key": "!actors.items!OzCE1Udw3ddDyx7S.9lTM2rdpRH4a0qct"
     },
     {
       "_id": "s6JrzrYDjcbtnuV0",
@@ -326,7 +330,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The druid casts one of the following spells, using Sabedoria as the spellcasting ability (spell save DC 13): À Vontade: Druidcraft, Speak with Animals 2/Dia Each: Entangle, Trovejantewave 1/Dia Each: Animal Messenger, Longstrider, Moonbeam 106 DRUID DRUID Steward and Sage of Nature</p>",
+          "value": "<p>The druid casts one of the following spells, using Sabedoria as the spellcasting ability (spell save CD 13):</p>",
           "chat": ""
         },
         "activation": {
@@ -351,13 +355,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!RjlgGQhST6CZRTaF.s6JrzrYDjcbtnuV0"
+      "_key": "!actors.items!OzCE1Udw3ddDyx7S.s6JrzrYDjcbtnuV0"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Druid",
-      "page": 108,
+      "page": 106,
       "cr": "2",
       "warnings": []
     }

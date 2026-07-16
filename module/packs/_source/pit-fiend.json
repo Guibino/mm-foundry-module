@@ -1,6 +1,6 @@
 {
-  "_id": "Im0IqwHqZXIuQvVq",
-  "_key": "!actors!Im0IqwHqZXIuQvVq",
+  "_id": "T2zQlgaJtFWzcImf",
+  "_key": "!actors!T2zQlgaJtFWzcImf",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Pit Fiend",
   "type": "npc",
@@ -63,14 +63,14 @@
     "details": {
       "type": {
         "value": "fiend",
-        "subtype": "",
+        "subtype": "devil",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Mau",
       "cr": 20,
       "xp": {
-        "value": 25000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -89,7 +89,9 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "cold"
+        ],
         "custom": ""
       },
       "dv": {
@@ -104,12 +106,12 @@
       },
       "languages": {
         "value": [],
-        "custom": "Infernal"
+        "custom": ""
       }
     },
     "skills": {
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       },
       "per": {
@@ -131,13 +133,13 @@
   },
   "items": [
     {
-      "_id": "MiWQHtdir7G1UipQ",
-      "name": "Diabolical Restoration",
+      "_id": "punUz0DQu5bgVWMv",
+      "name": "Restauração Diabólica",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the pit fiend dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Pontos de Vida somewhere in the Nine Hells.</p>",
+          "value": "<p>Se a criatura morrer fora dos Nove Infernos, o corpo dela desaparece em fumaça sulfurosa e ela ganha um novo corpo instantaneamente, revivendo com todos os seus Pontos de Vida em algum lugar dos Nove Infernos.</p>",
           "chat": ""
         },
         "activation": {
@@ -161,7 +163,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Im0IqwHqZXIuQvVq.MiWQHtdir7G1UipQ"
+      "_key": "!actors.items!T2zQlgaJtFWzcImf.punUz0DQu5bgVWMv"
     },
     {
       "_id": "KJbXwXCaQQkpzDym",
@@ -170,7 +172,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The pit fiend emanates an aura in a 20-foot Emanation while it doesn't have the Incapacitado condition. Sabedoria Teste de Resistência: DC 21, any enemy that starts its turn in the aura. Falha: The target has the Amedrontado condition until the start of its next turn. Sucesso: The target is immune to this pit fiend's aura UJ for 24 hours. V1 OJ cc.</p>",
+          "value": "<p>The pit fiend emanates an aura in a 6 m Emanation while it doesn't have a condição Incapacitado. Teste de Resistência de Sabedoria: CD 21, any enemy that starts its turn in the aura. O alvo fica com a condição Amedrontado until the start of its next turn. O alvo is immune to this pit fiend's aura for 24 hours.</p>",
           "chat": ""
         },
         "activation": {
@@ -197,7 +199,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Im0IqwHqZXIuQvVq.KJbXwXCaQQkpzDym"
+      "_key": "!actors.items!T2zQlgaJtFWzcImf.KJbXwXCaQQkpzDym"
     },
     {
       "_id": "NVd1AqgGF7QU0hcE",
@@ -206,7 +208,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the pit fiend fails a sav- ing throw, it can choose to succeed instead.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -235,16 +237,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Im0IqwHqZXIuQvVq.NVd1AqgGF7QU0hcE"
+      "_key": "!actors.items!T2zQlgaJtFWzcImf.NVd1AqgGF7QU0hcE"
     },
     {
-      "_id": "xzwkSHhgXUeaTUJk",
-      "name": "Magic Resistance",
+      "_id": "mQQ0Tw1kb71bKy0O",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The pit fiend has Advantage on sav- ing throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -268,7 +270,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Im0IqwHqZXIuQvVq.xzwkSHhgXUeaTUJk"
+      "_key": "!actors.items!T2zQlgaJtFWzcImf.mQQ0Tw1kb71bKy0O"
     },
     {
       "_id": "u5dfDF1u7F7dyQxw",
@@ -277,7 +279,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The pit fiend makes one Bite attack, two Devilish Claw attacks, and one Fiery Mace attack.</p>",
+          "value": "<p>The pit fiend makes one Mordida attack, two Devilish Garra attacks, and one Fiery Maça attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -302,16 +304,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Im0IqwHqZXIuQvVq.u5dfDF1u7F7dyQxw"
+      "_key": "!actors.items!T2zQlgaJtFWzcImf.u5dfDF1u7F7dyQxw"
     },
     {
-      "_id": "Irc0pvOxRIoeJUb0",
-      "name": "Bite",
+      "_id": "w0MG3NHjHSuLGsa3",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 10 ft : Acerto: 18 (3d6 + 8) Perfurante de dano. If o alvo is a creature, it must make the following saving throw. Constituição Teste de Resistência: DC 21. Falha: The target has the Envenenado condition. While Envenenado, o alvo can't regain Pontos de Vida and takes 21 (6d6) Veneno de dano at the start of each of its turns, and it repeats the save at the end of each of its turns, ending the effect on itself on a suc- cess. After l minute, it succeeds automatically.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 3 m. Acerto: 18 (3d6 + 8) dano perfurante. If o alvo is uma criatura, it must make the following saving throw. Teste de Resistência de Constituição: CD 21. O alvo fica com a condição Envenenado. While Envenenado, o alvo can't regain Pontos de Vida and takes 21 (6d6) dano de veneno at the start of each of its turns, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</p>",
           "chat": ""
         },
         "activation": {
@@ -329,8 +331,8 @@
           "subtype": ""
         },
         "activities": {
-          "sbChw3eWZpUYQ4i9": {
-            "_id": "sbChw3eWZpUYQ4i9",
+          "5ytfPtQCEM16J1oA": {
+            "_id": "5ytfPtQCEM16J1oA",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -385,16 +387,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Im0IqwHqZXIuQvVq.Irc0pvOxRIoeJUb0"
+      "_key": "!actors.items!T2zQlgaJtFWzcImf.w0MG3NHjHSuLGsa3"
     },
     {
-      "_id": "5g93SFdls1NKwLBR",
-      "name": "Devilish Claw",
+      "_id": "N0P4lgWPjNUzbfxH",
+      "name": "Devilish Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 10 ft. Acerto: 26 (4d8 + 8) Necrótico de dano. _ Fiery Mace. Rolagem de Ataque Corpo a Corpo: + 14, alcance 10 ft. Acerto: 22 (4d6 + 8) Energia de dano plus 21 (6d6) Fogo de dano. · Hellfire Conjuração (Recarga 4-6). The pit fiend casts Fogoball (level 5 version) twice, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 21). It can replace one Fogoball with Hold Monster (level 7 version) or ~all of Fogo. PI T FIEND PIXIE Tiny Fey, Neutral Good AC 15 Iniciativa +5 (15) HP 9 (6d4 - 6) Speed l O ft., Fly 30 ft . MOD SAVE MOD S AVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 3 m. Acerto: 26 (4d8 + 8) dano necrótico.</p>",
           "chat": ""
         },
         "activation": {
@@ -412,8 +414,8 @@
           "subtype": ""
         },
         "activities": {
-          "QP2E08ZqABwvYgEQ": {
-            "_id": "QP2E08ZqABwvYgEQ",
+          "r5WjUkA1BvWfd7uq": {
+            "_id": "r5WjUkA1BvWfd7uq",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -466,13 +468,128 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Im0IqwHqZXIuQvVq.5g93SFdls1NKwLBR"
+      "_key": "!actors.items!T2zQlgaJtFWzcImf.N0P4lgWPjNUzbfxH"
+    },
+    {
+      "_id": "LKVKDpoSgj0WX8ni",
+      "name": "Fiery Maça",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 3 m. Acerto: 22 (4d6 + 8) dano de energia mais 21 (6d6) dano de fogo.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "oYUP8OHqOrl4j3eF": {
+            "_id": "oYUP8OHqOrl4j3eF",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "14",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 6,
+                  "bonus": "8",
+                  "types": [
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 14,
+            "attackType": "melee",
+            "damageFormula": "4d6+8",
+            "damageType": "force"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!T2zQlgaJtFWzcImf.LKVKDpoSgj0WX8ni"
+    },
+    {
+      "_id": "hl2XdNwFB6SQgxa3",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The pit fiend casts Fireball (level 5 version) twice, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 21). It can replace one Fireball with Hold Monster (level 7 version) or Wall of Fogo.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!T2zQlgaJtFWzcImf.hl2XdNwFB6SQgxa3"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Pit Fiend",
-      "page": 245,
+      "page": 243,
       "cr": "20",
       "warnings": []
     }

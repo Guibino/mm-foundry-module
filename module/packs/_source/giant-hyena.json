@@ -1,8 +1,8 @@
 {
-  "_id": "eZQ4jGBZar6XTkDV",
-  "_key": "!actors!eZQ4jGBZar6XTkDV",
+  "_id": "AZIbYFst8yInMuNV",
+  "_key": "!actors!AZIbYFst8yInMuNV",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Gigante Hyena",
+  "name": "Giant Hyena",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/giant-hyena.webp",
   "system": {
@@ -48,10 +48,11 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 50
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -66,9 +67,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,13 +98,18 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Gigante Hyena",
+    "name": "Giant Hyena",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -115,13 +121,13 @@
   },
   "items": [
     {
-      "_id": "hAgI9PeBeCUV6prR",
-      "name": "Bite",
+      "_id": "koopgSqOkaRKHkYv",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: l 0 (2d6 + 3) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 10 (2d6 + 3) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -139,8 +145,8 @@
           "subtype": ""
         },
         "activities": {
-          "YRkaWZfknL54BLd3": {
-            "_id": "YRkaWZfknL54BLd3",
+          "qymzGwAaRhfTfjOs": {
+            "_id": "qymzGwAaRhfTfjOs",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -159,7 +165,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -168,21 +192,23 @@
         "mm2024": {
           "mechanics": {
             "toHit": 5,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d6+3",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eZQ4jGBZar6XTkDV.hAgI9PeBeCUV6prR"
+      "_key": "!actors.items!AZIbYFst8yInMuNV.koopgSqOkaRKHkYv"
     },
     {
-      "_id": "mTpg66pPwSpVpIr8",
-      "name": "Rampage (1/Day)",
+      "_id": "rN9Dw2TdH2d8D7Nc",
+      "name": "Descontrole (1/Day)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Immediately after dealing de dano to a creature that was already Bloodied, the hyena can move up to half its Speed, and it makes 1 one Bite attack. APPENDIX A I ANIM ~ 357 GIANT LIZARD Large Beast, Unaligned AC 12 Iniciativa +l (11) HP 19 -(3d10 + 3) Speed 40 ft., Climb 40 ft. MOD SAVE M OD SAV E MOD SAVE</p>",
+          "value": "<p>Immediately after dealing de dano to uma criatura that was already Bloodied, the hyena can move up to half its Speed, and it makes one Mordida attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -212,14 +238,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eZQ4jGBZar6XTkDV.mTpg66pPwSpVpIr8"
+      "_key": "!actors.items!AZIbYFst8yInMuNV.rN9Dw2TdH2d8D7Nc"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Giant Hyena",
-      "page": 359,
-      "cr": "0",
+      "page": 357,
+      "cr": "1",
       "warnings": []
     }
   }

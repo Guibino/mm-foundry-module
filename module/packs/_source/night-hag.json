@@ -1,6 +1,6 @@
 {
-  "_id": "w7pl88w783aAbr8t",
-  "_key": "!actors!w7pl88w783aAbr8t",
+  "_id": "cW3oKCF4nZdqYky2",
+  "_key": "!actors!cW3oKCF4nZdqYky2",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Night Hag",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 112,
         "max": 112,
-        "formula": "15d8 + 4 5",
+        "formula": "15d8 + 45",
         "temp": null,
         "tempmax": null
       },
@@ -66,7 +66,7 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Evil",
+      "alignment": "Neutro e Mau",
       "cr": 5,
       "xp": {
         "value": 0
@@ -82,7 +82,7 @@
       "size": "med",
       "di": {
         "value": [],
-        "custom": "Charm ed"
+        "custom": ""
       },
       "dr": {
         "value": [
@@ -96,7 +96,9 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed"
+        ],
         "custom": ""
       },
       "languages": {
@@ -106,19 +108,19 @@
     },
     "skills": {
       "dec": {
-        "value": 1,
+        "value": 2,
         "ability": "cha"
       },
       "ins": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       },
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       },
       "ste": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       }
     }
@@ -136,13 +138,13 @@
   },
   "items": [
     {
-      "_id": "iLXfjOZJaIAiCGuW",
-      "name": "Habilidade",
+      "_id": "Yfeod0ioqUp3cQ2B",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>< Coven Magic. While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell's normal casting time, and using Inteligência as the spell- casting ability (spell save DC 14): Augury, Find Familiar, Identify, Locate Object, Scrying, or Unseen Servant. The hag must finish a Long Rest before using this trait to 1 cast that spell again.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -166,49 +168,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!w7pl88w783aAbr8t.iLXfjOZJaIAiCGuW"
+      "_key": "!actors.items!cW3oKCF4nZdqYky2.Yfeod0ioqUp3cQ2B"
     },
     {
-      "_id": "kD0T2ShIH9Nyaq8F",
-      "name": "Magic Resistance",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The hag has Advantage on saving throws against spells and other magical effects.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!w7pl88w783aAbr8t.kD0T2ShIH9Nyaq8F"
-    },
-    {
-      "_id": "vWEqg0fj0fw3pgK2",
+      "_id": "02obfY1yhFVatN3C",
       "name": "Soul Bag",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The hag has a soul bag. While holding or carrying the bag, the hag can use its Nightmare Haunt- ing action. , <( The bag has AC 15, HP 20, and Resistance to all dam- Cl. age. The bag turns to dust if reduced to O Pontos de Vida. If \" I Vl I the bag is destroyed, any souls the bag is holding are >- \\ released. The hag can create a new bag after 7 days.</p>",
+          "value": "<p>The hag has a soul bag. While holding or carrying the bag, the hag can use its Nightmare Haunting action.\nThe bag has AC 15, HP 20, and Resistance to all de dano. The bag turns to dust if reduced to 0 Pontos de Vida. If the bag is destroyed, any souls the bag is holding are released. The hag can create a new bag after 7 days.</p>",
           "chat": ""
         },
         "activation": {
@@ -232,7 +201,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!w7pl88w783aAbr8t.vWEqg0fj0fw3pgK2"
+      "_key": "!actors.items!cW3oKCF4nZdqYky2.02obfY1yhFVatN3C"
     },
     {
       "_id": "k6BXFHgEUfJoREKe",
@@ -241,7 +210,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The h~g makes two Claw attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Garra.</p>",
           "chat": ""
         },
         "activation": {
@@ -266,16 +235,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!w7pl88w783aAbr8t.k6BXFHgEUfJoREKe"
+      "_key": "!actors.items!cW3oKCF4nZdqYky2.k6BXFHgEUfJoREKe"
     },
     {
-      "_id": "NC6XgEJTSKQJkcEE",
-      "name": "Claw",
+      "_id": "9E8iF4s3X7iENGHK",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 13 (2d8 + 4) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 13 (2d8 + 4) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -293,8 +262,8 @@
           "subtype": ""
         },
         "activities": {
-          "YIBrKjStDKMNJ73f": {
-            "_id": "YIBrKjStDKMNJ73f",
+          "ypy2yN9wtJZwCHpT": {
+            "_id": "ypy2yN9wtJZwCHpT",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -347,59 +316,20 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!w7pl88w783aAbr8t.NC6XgEJTSKQJkcEE"
+      "_key": "!actors.items!cW3oKCF4nZdqYky2.9E8iF4s3X7iENGHK"
     },
     {
-      "_id": "ve4a96ab5hi5xPhL",
-      "name": "Nightmare Haunting (1/Day; Requires Soul Bag)",
+      "_id": "k2KkuIkYhHV9EmzT",
+      "name": "Mudar de Forma",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While on the Ethereal Plane, the hag casts Dream, using the same spellcasting ability as Conjuração. Only the hag can serve as the spell's messenger, and o alvo must be a creature the hag can see on the Material Plane. The s p e II fa i Is and is wasted if o alvo is u n de r t_ he e f- f e ct of the Protection from Evil and Good spell or within a Magic Circle spell. If o alvo takes de dano from the Dream spell, o alvo's Hit Point maximum decreases by an amount equal to that de dano. If the spell kills o alvo, its soul is trapped in the hag's soul bag, and o alvo can't be raised from the dead until its soul is released.</p>",
+          "value": "<p>A criatura se transforma em um Humanoide Pequeno ou Médio, ou retorna à sua forma verdadeira. Além do tamanho, seus atributos de jogo são os mesmos em cada forma. Qualquer equipamento que ela esteja vestindo ou carregando não é transformado.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!w7pl88w783aAbr8t.ve4a96ab5hi5xPhL"
-    },
-    {
-      "_id": "RKwgOV8efeag4nqK",
-      "name": "Shape-Shift",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The hag shape-shifts into a Small or Me- dium Humanoid, or it returns to its true form. Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. NIGHT HAG 225 NIGHTMARE Dread Steed of the Lower Planes</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
+          "type": "bonus",
           "value": null,
           "condition": ""
         },
@@ -420,7 +350,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!w7pl88w783aAbr8t.RKwgOV8efeag4nqK"
+      "_key": "!actors.items!cW3oKCF4nZdqYky2.k2KkuIkYhHV9EmzT"
     },
     {
       "_id": "as4AZ4IhH65cHP2u",
@@ -429,7 +359,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The hag casts one of the following spells, requiring no Material components and using Intelli- gence as the spellcasting ability (spell save DC 14): À Vontade: Detect Magic, Etherealness, Magic Missile (level 4 version) 2/Dia Each: Phantasmal Killer, Plane Shift (self only) - BONUS A CT IONS</p>",
+          "value": "<p>While within 9 m of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell's normal casting time, and using Inteligência as the spellcasting ability (spell save CD 14): Augury, Find Familiar, Identify, Locate Object, Scrying, or Unseen Servant. The hag must finish a Long Rest before using this trait to cast that spell again.</p>",
           "chat": ""
         },
         "activation": {
@@ -454,13 +384,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!w7pl88w783aAbr8t.as4AZ4IhH65cHP2u"
+      "_key": "!actors.items!cW3oKCF4nZdqYky2.as4AZ4IhH65cHP2u"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Night Hag",
-      "page": 227,
+      "page": 225,
       "cr": "5",
       "warnings": []
     }

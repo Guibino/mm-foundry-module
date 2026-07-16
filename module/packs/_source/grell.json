@@ -1,6 +1,6 @@
 {
-  "_id": "9ipf1o1Wekaemb9B",
-  "_key": "!actors!9ipf1o1Wekaemb9B",
+  "_id": "C5pqRduMcJpFDNC2",
+  "_key": "!actors!C5pqRduMcJpFDNC2",
   "folder": "1nioWC3kx0YxX8qj",
   "name": "Grell",
   "type": "npc",
@@ -24,7 +24,7 @@
         "proficient": 0
       },
       "wis": {
-        "value": 77,
+        "value": 11,
         "proficient": 0
       },
       "cha": {
@@ -35,19 +35,20 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 72,
+        "flat": 12,
         "formula": ""
       },
       "hp": {
         "value": 55,
         "max": 55,
-        "formula": "70d8 + 70",
+        "formula": "10d8 + 10",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": true,
+        "walk": 10,
         "fly": 30
       },
       "senses": {
@@ -69,7 +70,7 @@
       "alignment": "Neutro e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -106,7 +107,16 @@
         "custom": "Fala Profunda"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Grell",
@@ -127,7 +137,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The grell needn't spend extra movement to move a creature it is grappling.</p>",
+          "value": "<p>The grell needn't spend extra movement to move uma criatura it is grappling.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,7 +161,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9ipf1o1Wekaemb9B.4eK3q62GYFeTbhom"
+      "_key": "!actors.items!C5pqRduMcJpFDNC2.4eK3q62GYFeTbhom"
     },
     {
       "_id": "vkjdq7T1JUl9Xotw",
@@ -160,7 +170,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The grell makes one Beak attack and one Paralyzing Tentacles attack.</p>",
+          "value": "<p>The grell makes one Bico attack and one Paralyzing Tentáculos attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -185,16 +195,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9ipf1o1Wekaemb9B.vkjdq7T1JUl9Xotw"
+      "_key": "!actors.items!C5pqRduMcJpFDNC2.vkjdq7T1JUl9Xotw"
     },
     {
-      "_id": "g7wxiwKiknTB7i4U",
-      "name": "Beak",
+      "_id": "fcdiI4voB1lH37Hb",
+      "name": "Bico",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 17 (2d8 + 2) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 11 (2d8 + 2) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -212,8 +222,8 @@
           "subtype": ""
         },
         "activities": {
-          "XrnYNnXomSIaXTdR": {
-            "_id": "XrnYNnXomSIaXTdR",
+          "tImuJRV5FOwJOkJh": {
+            "_id": "tImuJRV5FOwJOkJh",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -266,16 +276,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9ipf1o1Wekaemb9B.g7wxiwKiknTB7i4U"
+      "_key": "!actors.items!C5pqRduMcJpFDNC2.fcdiI4voB1lH37Hb"
     },
     {
-      "_id": "Cnd0Czq3FGfZx2dI",
-      "name": "Paralyzing Tentacles",
+      "_id": "u7Vn3s2w2dO00hEg",
+      "name": "Paralyzing Tentáculos",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 10 ft. Acerto: 7 (1d10 + 2) Perfurante de dano. If o alvo is a Me- dium or smaller creature, it has the Agarrado condition (escape DC 12) from two of ten tentacles. The target is also subjected to the following effect. Constituição Sav- ing Throw: DC 11. Falha: The target has the Envenenado <( condition and repeats the save at the end of each of its 0 turns, ending the effect on itself on a success. After 1 w minute, it succeeds automatically. While Envenenado, the 0 target has the Paralisado condition. sometimes slip onto star-fa ring vessels or enter por- tals heedless of their destination. Roll on or choose a result from the Grell Explorations table to inspire why grells seek passage between realms. GRELL EXPLORATIONS 1d6 Grells Travel Because They Are ... l Advanced viruses, each the clone of all other grell. They exist only to feed and spread. 2 The larvae of another creature and require electrically charged environs to reproduce. 3 Seeking to escape some catastrophe or terror lurking in the depths. 4 Supernaturally connected to ravenous alien beings and serve as their feeding appendages. 5 Vestiges of an ancient evil that will return if grells collectively consume enough creatures. 6 Without souls, but convinced they can attain souls by eating certain beings. FOR MEA L, MY H U NGER G RINDS WI THIN MY TEETH . FOR MIG HT, MY H UN GE R CL EN CHE S IN MY GR IP. B UT FOR 1 RE T 1 T KN OW, MY HU WHAT WE OLD WE MUST N NGER SNAPS A RAPTOR S BE AK AN D MAKES MY M IN D A M USC LE THAT KN OWS ONLY HOW TO CHEW . - E vARD , EIGHTH EYE O F THE N ECROPHILOSO PH E R GRELL 1 57 GRICK Me di um Ab er rat ion , Un a lig ned AC 14 Iniciativa +2 (12) HP 54 (12d8) Speed 30 ft., Climb 30 ft. M OD SAVE MO D SAVE M O D SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 3 m. Acerto: 7 (1d10 + 2) dano perfurante. If o alvo is a Medium or smaller creature, it fica com a condição Agarrado (CD para escapar 12) from two of ten tentacles. O alvo is also subjected to the following effect. Teste de Resistência de Constituição: CD 11. O alvo fica com a condição Envenenado and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. While Envenenado, o alvo fica com a condição Paralisado.</p>",
           "chat": ""
         },
         "activation": {
@@ -293,8 +303,8 @@
           "subtype": ""
         },
         "activities": {
-          "sSvfFyH6zBOd0axh": {
-            "_id": "sSvfFyH6zBOd0axh",
+          "x2iI2rGFlWwP7n1k": {
+            "_id": "x2iI2rGFlWwP7n1k",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -342,18 +352,20 @@
             "toHit": 4,
             "attackType": "melee",
             "damageFormula": "1d10+2",
-            "damageType": "piercing"
+            "damageType": "piercing",
+            "saveDc": 11,
+            "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9ipf1o1Wekaemb9B.Cnd0Czq3FGfZx2dI"
+      "_key": "!actors.items!C5pqRduMcJpFDNC2.u7Vn3s2w2dO00hEg"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Grell",
-      "page": 159,
+      "page": 157,
       "cr": "3",
       "warnings": []
     }

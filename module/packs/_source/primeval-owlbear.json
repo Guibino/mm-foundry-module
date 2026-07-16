@@ -1,0 +1,349 @@
+{
+  "_id": "9wmDcjtiAyDmItjr",
+  "_key": "!actors!9wmDcjtiAyDmItjr",
+  "folder": "3SEe9J5t05jhrkCa",
+  "name": "Primeval Owlbear",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/tokens/primeval-owlbear.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 22,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0
+      },
+      "con": {
+        "value": 19,
+        "proficient": 1
+      },
+      "int": {
+        "value": 8,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 15,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 7,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 16,
+        "formula": ""
+      },
+      "hp": {
+        "value": 126,
+        "max": 126,
+        "formula": "12d12 + 48",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40,
+        "climb": 40,
+        "fly": 5
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "monstrosity",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 7,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Primeval Owlbear",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/primeval-owlbear.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "rGONMskQ0xr0WMyy",
+      "name": "Resistência a Magia",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!9wmDcjtiAyDmItjr.rGONMskQ0xr0WMyy"
+    },
+    {
+      "_id": "AZ0jDdbRUieiZZii",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The owlbear makes two Ravage attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!9wmDcjtiAyDmItjr.AZ0jDdbRUieiZZii"
+    },
+    {
+      "_id": "28rAUu8iBrFDH7WG",
+      "name": "Ravage",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 1,5 m. Acerto: 15 (2d8 + 6) dano cortante. If o alvo is a Huge or smaller creature and the owlbear moved 20+ feet straight toward it immediately before the hit, o alvo takes an extra 9 (2d8) dano cortante and fica com a condição Caído.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "lGxRWa2iIGbPXBww": {
+            "_id": "lGxRWa2iIGbPXBww",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "9",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "6",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9,
+            "attackType": "melee",
+            "damageFormula": "2d8+6",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!9wmDcjtiAyDmItjr.28rAUu8iBrFDH7WG"
+    },
+    {
+      "_id": "AT7mcQ0J4nCEH8fH",
+      "name": "Screech (Recharge 5)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Constituição: CD 15, cada criatura in a 9 m Emanation originating from the owlbear. 27 (6d8) dano trovejante, and o alvo fica com a condição Incapacitado until the end of its next turn. Metade do dano only.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "RH1HNC2Bf65fbbIp": {
+            "_id": "RH1HNC2Bf65fbbIp",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "15"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 15,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!9wmDcjtiAyDmItjr.AT7mcQ0J4nCEH8fH"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Primeval Owlbear",
+      "page": 234,
+      "cr": "7",
+      "warnings": []
+    }
+  }
+}

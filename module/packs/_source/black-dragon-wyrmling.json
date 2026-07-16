@@ -1,14 +1,14 @@
 {
-  "_id": "NP1cBqVUbNpBRGw2",
-  "_key": "!actors!NP1cBqVUbNpBRGw2",
+  "_id": "SlJes4uKPPlR8CI7",
+  "_key": "!actors!SlJes4uKPPlR8CI7",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Negro Dragão Filhote",
+  "name": "Black Dragon Wyrmling",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/black-dragon-wyrmling.webp",
   "system": {
     "abilities": {
       "str": {
-        "value": 75,
+        "value": 15,
         "proficient": 0
       },
       "dex": {
@@ -20,7 +20,7 @@
         "proficient": 0
       },
       "int": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "wis": {
@@ -55,7 +55,7 @@
       "senses": {
         "units": "ft",
         "darkvision": 60,
-        "blindsight": 70
+        "blindsight": 10
       },
       "init": {
         "ability": "dex",
@@ -65,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Chromatic",
+        "subtype": "chromatic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Mau",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -106,10 +106,19 @@
         "custom": "Dracônico"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Negro Dragão Filhote",
+    "name": "Black Dragon Wyrmling",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -121,13 +130,13 @@
   },
   "items": [
     {
-      "_id": "AdmoWoFE0YQYUa1S",
-      "name": "Amphibious",
+      "_id": "rgPZUzT9sBH83WMf",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,7 +160,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NP1cBqVUbNpBRGw2.AdmoWoFE0YQYUa1S"
+      "_key": "!actors.items!SlJes4uKPPlR8CI7.rgPZUzT9sBH83WMf"
     },
     {
       "_id": "kI8UyYaG7Y9M6BUx",
@@ -160,7 +169,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes two Rend attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -185,16 +194,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NP1cBqVUbNpBRGw2.kI8UyYaG7Y9M6BUx"
+      "_key": "!actors.items!SlJes4uKPPlR8CI7.kI8UyYaG7Y9M6BUx"
     },
     {
-      "_id": "hR07nBeJjlzf0lf0",
-      "name": "Rend",
+      "_id": "wWzT76Uh7KeVKZU5",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 5 (1d6 + 2) Cortante de dano plus 2 (1d4) Ácido de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano cortante mais 2 (1d4) dano de ácido.</p>",
           "chat": ""
         },
         "activation": {
@@ -212,8 +221,8 @@
           "subtype": ""
         },
         "activities": {
-          "h9AqZkRmD3lB4a2i": {
-            "_id": "h9AqZkRmD3lB4a2i",
+          "eWp0eLdgWUkjEYPe": {
+            "_id": "eWp0eLdgWUkjEYPe",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -266,16 +275,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NP1cBqVUbNpBRGw2.hR07nBeJjlzf0lf0"
+      "_key": "!actors.items!SlJes4uKPPlR8CI7.wWzT76Uh7KeVKZU5"
     },
     {
-      "_id": "sfOjgExR43o1daOo",
-      "name": "Ácido Breath (Recharge 5-6)",
+      "_id": "gmvIHkMNtN6cIRPI",
+      "name": "Sopro de Ácido (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 77, cada criatura in a 75-foot-long, 5-foot-wide Line. Falha: 22 (5d8) Ácido de dano. Sucesso: Metade do dano. YOUNG BLACK DRAGON Large Dragon (Chromatic), Chaotic Evil AC 18 Iniciativa +5 (15) HP 727 (15d10 + 45) Sp eed 40 ft., Fly 80 ft., Swim 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 11, cada criatura in a 4,5 m-long, 1,5 m-wide Line. 22 (5d8) dano de ácido. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -299,8 +308,8 @@
           "subtype": ""
         },
         "activities": {
-          "ivKB0qIQHyJQxepM": {
-            "_id": "ivKB0qIQHyJQxepM",
+          "fcMcU8Cp13t6svbd": {
+            "_id": "fcMcU8Cp13t6svbd",
             "type": "save",
             "activation": {
               "type": "action",
@@ -314,30 +323,12 @@
               ],
               "dc": {
                 "calculation": "",
-                "formula": "77"
+                "formula": "11"
               }
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 5,
-                  "denomination": 8,
-                  "bonus": "",
-                  "types": [
-                    "acid"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -345,21 +336,19 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "5d8",
-            "damageType": "acid",
-            "saveDc": 77,
+            "saveDc": 11,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NP1cBqVUbNpBRGw2.sfOjgExR43o1daOo"
+      "_key": "!actors.items!SlJes4uKPPlR8CI7.gmvIHkMNtN6cIRPI"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Black Dragon Wyrmling",
-      "page": 40,
+      "page": 38,
       "cr": "2",
       "warnings": []
     }

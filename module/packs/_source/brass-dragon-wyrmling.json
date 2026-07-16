@@ -1,8 +1,8 @@
 {
-  "_id": "ZCYGvNfwRQtNuwYh",
-  "_key": "!actors!ZCYGvNfwRQtNuwYh",
+  "_id": "5l22AMbXnceNGdRf",
+  "_key": "!actors!5l22AMbXnceNGdRf",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Latão Dragão Filhote",
+  "name": "Brass Dragon Wyrmling",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/brass-dragon-wyrmling.webp",
   "system": {
@@ -20,15 +20,15 @@
         "proficient": 0
       },
       "int": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "wis": {
-        "value": 77,
+        "value": 11,
         "proficient": 1
       },
       "cha": {
-        "value": 73,
+        "value": 13,
         "proficient": 0
       }
     },
@@ -49,10 +49,13 @@
         "units": "ft",
         "hover": false,
         "walk": 30,
-        "burrow": 15
+        "burrow": 15,
+        "fly": 60
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60,
+        "blindsight": 10
       },
       "init": {
         "ability": "dex",
@@ -62,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Metallic",
+        "subtype": "metallic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Bom",
-      "cr": 0,
+      "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -81,8 +84,10 @@
     "traits": {
       "size": "med",
       "di": {
-        "value": [],
-        "custom": "Fi re"
+        "value": [
+          "fire"
+        ],
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -98,7 +103,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Dracon ic"
+        "custom": "Dracônico"
       }
     },
     "skills": {
@@ -113,7 +118,7 @@
     }
   },
   "prototypeToken": {
-    "name": "Latão Dragão Filhote",
+    "name": "Brass Dragon Wyrmling",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -125,13 +130,13 @@
   },
   "items": [
     {
-      "_id": "1Zum9PWFc514QCri",
-      "name": "Rend",
+      "_id": "rOzTt6h0C1Nje0on",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 7 (1d1 O + 2) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 7 (1d10 + 2) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -149,8 +154,8 @@
           "subtype": ""
         },
         "activities": {
-          "b6y2GSg467UIrfaE": {
-            "_id": "b6y2GSg467UIrfaE",
+          "ktuPHifEmxeK5ohU": {
+            "_id": "ktuPHifEmxeK5ohU",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -171,15 +176,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 1,
+                  "denomination": 10,
+                  "bonus": "2",
                   "types": [
                     "slashing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "1d1O+2"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -197,22 +202,22 @@
           "mechanics": {
             "toHit": 4,
             "attackType": "melee",
-            "damageFormula": "1d1O+2",
+            "damageFormula": "1d10+2",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ZCYGvNfwRQtNuwYh.1Zum9PWFc514QCri"
+      "_key": "!actors.items!5l22AMbXnceNGdRf.rOzTt6h0C1Nje0on"
     },
     {
-      "_id": "NCzbfAFLjVqqQQ2I",
-      "name": "Fogo Breath (Recharge 5-6)",
+      "_id": "oV8RuC9iWw3juU8a",
+      "name": "Sopro de Fogo (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 11, cada criatura in a 20-foot-long, 5-foot-wide Line. Falha: 14 (4d6) Fogo de dano. Sucesso: Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 11, cada criatura in a 6 m-long, 1,5 m-wide Line. 14 (4d6) dano de fogo. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -236,8 +241,8 @@
           "subtype": ""
         },
         "activities": {
-          "o6eZ2adhTrbx8D3P": {
-            "_id": "o6eZ2adhTrbx8D3P",
+          "Res6KlAO5SQ2sU3W": {
+            "_id": "Res6KlAO5SQ2sU3W",
             "type": "save",
             "activation": {
               "type": "action",
@@ -256,25 +261,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 4,
-                  "denomination": 6,
-                  "bonus": "",
-                  "types": [
-                    "fire"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -282,24 +269,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "4d6",
-            "damageType": "fire",
             "saveDc": 11,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ZCYGvNfwRQtNuwYh.NCzbfAFLjVqqQQ2I"
+      "_key": "!actors.items!5l22AMbXnceNGdRf.oV8RuC9iWw3juU8a"
     },
     {
-      "_id": "hybIiOVFSdIqdfEq",
-      "name": "Sleep Breath",
+      "_id": "QFwcFBDHroSTOhxb",
+      "name": "Sopro Sonífero",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 11, cada criatura in a 15 -foot Cone. Falha: The target has the Incapacitado condition until the end of its next turn, at which point it repeats the save. Second Falha: The target has the Inconsciente condition for l minute. This effect ends for o alvo if it takes de dano or a crea- ture .with in 5 feet of it takes an action to wake it. 54 B RAS& DRAGO NS from combat when necessary, thwarting foes with magical sleep and searing them with flame. Brass dragons favor warm climes, particularly steppes and rocky or sandy deserts, and they usu- ally dwell near prominent crossroads or oases that regularly draw visitors. They enjoy adopting Hu- manoid forms, disguising themselves as traveling merchants, scholars, storytellers, or anyone else invested in others' stories.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 11, cada criatura in a 4,5 m Cone. O alvo fica com a condição Incapacitado until the end of its next turn, at which point it repeats the save. Falha: O alvo fica com a condição Inconsciente for 1 minute. This effect ends for o alvo if it takes de dano or uma criatura within 1,5 m of it takes an action to wake it.</p>",
           "chat": ""
         },
         "activation": {
@@ -317,8 +302,8 @@
           "subtype": ""
         },
         "activities": {
-          "rsYliv7c9JFWqei9": {
-            "_id": "rsYliv7c9JFWqei9",
+          "tu7RWLUIbbUh2kgr": {
+            "_id": "tu7RWLUIbbUh2kgr",
             "type": "save",
             "activation": {
               "type": "action",
@@ -351,48 +336,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ZCYGvNfwRQtNuwYh.hybIiOVFSdIqdfEq"
-    },
-    {
-      "_id": "qw2H8VnjldQYDbSm",
-      "name": "Brass dragons collect eclectic objects",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>While such items might seem like knickl<nacks, each is part of a story-perhaps a nostalgic memento or evidence of a tale passed into myth. An old friend's hat and the crown of the last ruler of a forgotten dynasty could occupy the same shelf in a brass dragon's hoard . BRASS DRAGON WYRM L ING Brass dragon wyrmlings are relentlessly curious. These dragons eagerly engage approachable crea- tures and are quick to explore any place that has an interesting story. Once they hear tales of adventure, many are keen to start their own quests. YOUNG BRASS DRAGON Large Dragon (Metallic), Chaotic Good AC 17 Iniciativa +3 (13) HP 1 10 (13d1 0 + 39) Speed 40 ft., Burrow 20 ft. , Fly 80 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!ZCYGvNfwRQtNuwYh.qw2H8VnjldQYDbSm"
+      "_key": "!actors.items!5l22AMbXnceNGdRf.QFwcFBDHroSTOhxb"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Brass Dragon Wyrmling",
-      "page": 56,
-      "cr": "0",
+      "page": 54,
+      "cr": "1",
       "warnings": []
     }
   }

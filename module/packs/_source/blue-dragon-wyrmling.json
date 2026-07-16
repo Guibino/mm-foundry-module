@@ -1,34 +1,34 @@
 {
-  "_id": "6gu6SgEHFThP9y94",
-  "_key": "!actors!6gu6SgEHFThP9y94",
+  "_id": "QhycBQcKC2OxhBwd",
+  "_key": "!actors!QhycBQcKC2OxhBwd",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Azul Dragão Filhote",
+  "name": "Blue Dragon Wyrmling",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/blue-dragon-wyrmling.webp",
   "system": {
     "abilities": {
       "str": {
-        "value": 10,
+        "value": 17,
         "proficient": 0
       },
       "dex": {
         "value": 10,
-        "proficient": 0
+        "proficient": 1
       },
       "con": {
-        "value": 10,
+        "value": 15,
         "proficient": 0
       },
       "int": {
-        "value": 10,
+        "value": 12,
         "proficient": 0
       },
       "wis": {
-        "value": 10,
-        "proficient": 0
+        "value": 11,
+        "proficient": 1
       },
       "cha": {
-        "value": 10,
+        "value": 15,
         "proficient": 0
       }
     },
@@ -41,17 +41,21 @@
       "hp": {
         "value": 65,
         "max": 65,
-        "formula": "l 0d8 + 20",
+        "formula": "10d8 + 20",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "burrow": 15,
+        "fly": 60
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60,
+        "blindsight": 10
       },
       "init": {
         "ability": "dex",
@@ -61,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "C hromatic",
+        "subtype": "chromatic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -114,7 +118,7 @@
     }
   },
   "prototypeToken": {
-    "name": "Azul Dragão Filhote",
+    "name": "Blue Dragon Wyrmling",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -132,7 +136,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes two Rend attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -157,16 +161,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6gu6SgEHFThP9y94.UE16fgdPycqSzfBc"
+      "_key": "!actors.items!QhycBQcKC2OxhBwd.UE16fgdPycqSzfBc"
     },
     {
-      "_id": "lVl1YirELeyjzVjW",
-      "name": "Rend",
+      "_id": "xBmo0Dz76FEVyB2u",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 8 (1d1 0 + 3) Cortante de dano plus 3 (1d6) Elétrico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 8 (1d10 + 3) dano cortante mais 3 (1d6) dano elétrico.</p>",
           "chat": ""
         },
         "activation": {
@@ -184,8 +188,8 @@
           "subtype": ""
         },
         "activities": {
-          "VWU9NID9F5WKXUx8": {
-            "_id": "VWU9NID9F5WKXUx8",
+          "XtKmOK8SU6cmlAAz": {
+            "_id": "XtKmOK8SU6cmlAAz",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -238,16 +242,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6gu6SgEHFThP9y94.lVl1YirELeyjzVjW"
+      "_key": "!actors.items!QhycBQcKC2OxhBwd.xBmo0Dz76FEVyB2u"
     },
     {
-      "_id": "N0e3zFEDQjZPifxb",
-      "name": "Elétrico Breath (Recharge 5-6)",
+      "_id": "8aXfkZVnL8GRzSnk",
+      "name": "Sopro Elétrico (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 12, cada criatura in a 30-foot-long, 5-foot- , wide Line. Falha: 21 (6d6) Elétrico de dano. Sucesso: Metade do dano. YOUNG BLUE DRAGON Large Dragon (Chromatic), Lawful Evil AC 18 Iniciativa +4 (14) HP 152 (16d10 + 64) Sp eed 40 ft., Burrow 20 ft., Fly 80 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 12, cada criatura in a 9 m-long, 1,5 m-wide Line. 21 (6d6) dano elétrico. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -271,8 +275,8 @@
           "subtype": ""
         },
         "activities": {
-          "nbhuYSECm2rBzAVi": {
-            "_id": "nbhuYSECm2rBzAVi",
+          "Dk2jRvKc9hJUmF3v": {
+            "_id": "Dk2jRvKc9hJUmF3v",
             "type": "save",
             "activation": {
               "type": "action",
@@ -291,25 +295,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 6,
-                  "denomination": 6,
-                  "bonus": "",
-                  "types": [
-                    "lightning"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -317,25 +303,21 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "6d6",
-            "damageType": "lightning",
             "saveDc": 12,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6gu6SgEHFThP9y94.N0e3zFEDQjZPifxb"
+      "_key": "!actors.items!QhycBQcKC2OxhBwd.8aXfkZVnL8GRzSnk"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Blue Dragon Wyrmling",
-      "page": 50,
+      "page": 48,
       "cr": "3",
-      "warnings": [
-        "Atributos nao reconhecidos"
-      ]
+      "warnings": []
     }
   }
 }

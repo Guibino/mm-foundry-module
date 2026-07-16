@@ -1,6 +1,6 @@
 {
-  "_id": "3e7rrUgbAy9czcfs",
-  "_key": "!actors!3e7rrUgbAy9czcfs",
+  "_id": "cEujE3laAGWFzp9X",
+  "_key": "!actors!cEujE3laAGWFzp9X",
   "folder": "inkH4oLnh3yP5W9M",
   "name": "Centaur Warden",
   "type": "npc",
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 16,
         "formula": ""
       },
       "hp": {
@@ -68,7 +68,7 @@
       "alignment": "Neutro e Bom",
       "cr": 7,
       "xp": {
-        "value": 2900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,7 +102,7 @@
     },
     "skills": {
       "ath": {
-        "value": 1,
+        "value": 2,
         "ability": "str"
       },
       "nat": {
@@ -110,7 +110,7 @@
         "ability": "int"
       },
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       }
     }
@@ -134,7 +134,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The centaur makes two attacks, using For- est Staff or Sun Ray in any combination .</p>",
+          "value": "<p>The centaur makes two attacks, using Forest Bordão or Sun Ray in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -159,16 +159,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3e7rrUgbAy9czcfs.KImtLfQbZZKicnok"
+      "_key": "!actors.items!cEujE3laAGWFzp9X.KImtLfQbZZKicnok"
     },
     {
-      "_id": "YleLQN5u0Q5KsIaF",
-      "name": "Forest Staff",
+      "_id": "oHvg0zete3HLtAlb",
+      "name": "Forest Bordão",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5. Acerto: 13 (2d8 + 4) Concussão de dano plus 14 (4d6) Poi- son de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 13 (2d8 + 4) dano de concussão mais 14 (4d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -186,8 +186,8 @@
           "subtype": ""
         },
         "activities": {
-          "59mdURctkh1NIQOR": {
-            "_id": "59mdURctkh1NIQOR",
+          "ZgyVNzlMFAjikg9Z": {
+            "_id": "ZgyVNzlMFAjikg9Z",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -240,7 +240,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3e7rrUgbAy9czcfs.YleLQN5u0Q5KsIaF"
+      "_key": "!actors.items!cEujE3laAGWFzp9X.oHvg0zete3HLtAlb"
     },
     {
       "_id": "jDSohAArvL8u93yG",
@@ -249,7 +249,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +7, range 90 ft. Acerto: 14 (3d6 + 4) Radiante de dano, and o alvo has the Cego condition until the start of the centaur's next turn.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +7, distância 27 m. Acerto: 14 (3d6 + 4) dano radiante, and o alvo fica com a condição Cego until the start of the centaur's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -321,16 +321,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3e7rrUgbAy9czcfs.jDSohAArvL8u93yG"
+      "_key": "!actors.items!cEujE3laAGWFzp9X.jDSohAArvL8u93yG"
     },
     {
       "_id": "OEw1DegUkeRScZTr",
-      "name": "Entangling Trail (Recharge 5-6)",
+      "name": "Entangling Trail (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The centaur moves up to its Speed without provoking Opportunity Attacks. Each creature within 5 feet of the centaur as it moves is targeted once by the following effect. Força Saving ' LJJ Throw: DC 15. Failure : 11 (2d6 + 4) Concussão dam- L/1 LJJ age, and o alvo has the Impedido condition until co ;:;::: the end of its next turn. . CENTAUR TROOPER Large Fey , Neut ral Good AC 16 Iniciativa +2 (12) HP 45 (6d1 0 + 12) Speed 50 ft. MOD SAVE MOD SAVE MOD SA VE</p>",
+          "value": "<p>The centaur moves up to its Speed without provoking Opportunity Attacks. Each creature within 1,5 m of the centaur as it moves is targeted once by the following effect. Teste de Resistência de Força: CD 15. 11 (2d6 + 4) dano de concussão, and o alvo fica com a condição Impedido until the end of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -353,15 +353,42 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "hZuYfRBh8U4U1ru8": {
+            "_id": "hZuYfRBh8U4U1ru8",
+            "type": "save",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "15"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 15,
+            "saveAbility": "str"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3e7rrUgbAy9czcfs.OEw1DegUkeRScZTr"
+      "_key": "!actors.items!cEujE3laAGWFzp9X.OEw1DegUkeRScZTr"
     },
     {
       "_id": "bIBe3c0Py8qxqUEL",
@@ -370,7 +397,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The centaur casts one of the following spells, using Sabedoria as the spellcasting ability (spell save DC 15): À Vontade: Druidcraft, Speak with Animals</p>",
+          "value": "<p>The centaur casts one of the following spells, using Sabedoria as the spellcasting ability (spell save CD 15):</p>",
           "chat": ""
         },
         "activation": {
@@ -395,13 +422,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3e7rrUgbAy9czcfs.bIBe3c0Py8qxqUEL"
+      "_key": "!actors.items!cEujE3laAGWFzp9X.bIBe3c0Py8qxqUEL"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Centaur Warden",
-      "page": 69,
+      "page": 67,
       "cr": "7",
       "warnings": []
     }

@@ -1,8 +1,8 @@
 {
-  "_id": "cCOgpqM8LLPHfPiB",
-  "_key": "!actors!cCOgpqM8LLPHfPiB",
+  "_id": "go10oFWdrfhQdh79",
+  "_key": "!actors!go10oFWdrfhQdh79",
   "folder": "bKQUPthn1V2Yu6Bn",
-  "name": "Ogre Zumbi",
+  "name": "Ogre Zombie",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/ogre-zombie.webp",
   "system": {
@@ -41,7 +41,7 @@
       "hp": {
         "value": 85,
         "max": 85,
-        "formula": "9d1 O + 36",
+        "formula": "9d10 + 36",
         "temp": null,
         "tempmax": null
       },
@@ -69,7 +69,7 @@
       "alignment": "Neutro e Mau",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -103,13 +103,13 @@
       },
       "languages": {
         "value": [],
-        "custom": "Understands Common and Giant but can't"
+        "custom": "understands Common and Giant but can't speak"
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Ogre Zumbi",
+    "name": "Ogre Zombie",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -121,13 +121,13 @@
   },
   "items": [
     {
-      "_id": "mZL6dSqZvyPDBrep",
-      "name": "Undead Fortitude",
+      "_id": "fAN5PgjcCw2WE6Zz",
+      "name": "Fortitude Morta-Viva",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If de dano reduces the zombie to 0 Pontos de Vida, it makes a Constituição saving throw (DC 5 plus the de dano taken) unless the de dano is Radiante or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead.</p>",
+          "value": "<p>If de dano reduces the zombie to 0 Pontos de Vida, it makes a Constituição saving throw (CD 5 mais the de dano taken) unless the de dano is Radiante or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,16 +151,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!cCOgpqM8LLPHfPiB.mZL6dSqZvyPDBrep"
+      "_key": "!actors.items!go10oFWdrfhQdh79.fAN5PgjcCw2WE6Zz"
     },
     {
-      "_id": "cRQ744HRyJCXHTtI",
-      "name": "Slam",
+      "_id": "aouv9wPu0PJfR9h1",
+      "name": "Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 13 (2d8 + 4) Concussão de dano. BEHOLDER ZOMBIE Large Undead Neutral EtJi! AC 15 Iniciativa - l (9) HP 93 (11d1 0 + 33) Speed 5 ft., Fly 20 ft. (hover) MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 13 (2d8 + 4) dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
@@ -178,8 +178,8 @@
           "subtype": ""
         },
         "activities": {
-          "bDb1AwCQ0n6W13AM": {
-            "_id": "bDb1AwCQ0n6W13AM",
+          "3DT8qrOb1mfHsxIg": {
+            "_id": "3DT8qrOb1mfHsxIg",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -232,13 +232,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!cCOgpqM8LLPHfPiB.cRQ744HRyJCXHTtI"
+      "_key": "!actors.items!go10oFWdrfhQdh79.aouv9wPu0PJfR9h1"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Ogre Zombie",
-      "page": 348,
+      "page": 346,
       "cr": "2",
       "warnings": []
     }

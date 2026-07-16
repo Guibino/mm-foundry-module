@@ -1,8 +1,8 @@
 {
-  "_id": "L8HReXYweNq9XaDo",
-  "_key": "!actors!L8HReXYweNq9XaDo",
+  "_id": "UxhZAnPI6smInoWC",
+  "_key": "!actors!UxhZAnPI6smInoWC",
   "folder": "Hp5o2ufz9hhrO2ew",
-  "name": "Gnoll Guerreiro",
+  "name": "Gnoll Warrior",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/gnoll-warrior.webp",
   "system": {
@@ -67,7 +67,7 @@
         "custom": ""
       },
       "alignment": "Caótico e Mau",
-      "cr": 0,
+      "cr": 0.5,
       "xp": {
         "value": 0
       },
@@ -104,7 +104,7 @@
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Gnoll Guerreiro",
+    "name": "Gnoll Warrior",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -116,13 +116,13 @@
   },
   "items": [
     {
-      "_id": "eIc3fgHOjIj6OEbd",
-      "name": "Rend",
+      "_id": "pYNDxTJJT1pjTxuR",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: S (1d6 + 2) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -140,8 +140,8 @@
           "subtype": ""
         },
         "activities": {
-          "GN87WobNbeSabmLo": {
-            "_id": "GN87WobNbeSabmLo",
+          "yzkoGycKW6DfrrRN": {
+            "_id": "yzkoGycKW6DfrrRN",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -160,7 +160,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -169,12 +187,14 @@
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d6+2",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!L8HReXYweNq9XaDo.eIc3fgHOjIj6OEbd"
+      "_key": "!actors.items!UxhZAnPI6smInoWC.pYNDxTJJT1pjTxuR"
     },
     {
       "_id": "4fdGjYSwX1u3fuH9",
@@ -183,7 +203,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +3, range 7 50/600 ft. Acerto: 6 (7d70 + l) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +3, distância 45/180 m. Acerto: 6 (1d10 + 1) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -223,15 +243,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 1,
+                  "denomination": 10,
+                  "bonus": "1",
                   "types": [
                     "piercing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "7d70+l"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -249,22 +269,22 @@
           "mechanics": {
             "toHit": 3,
             "attackType": "ranged",
-            "damageFormula": "7d70+l",
+            "damageFormula": "1d10+1",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!L8HReXYweNq9XaDo.4fdGjYSwX1u3fuH9"
+      "_key": "!actors.items!UxhZAnPI6smInoWC.4fdGjYSwX1u3fuH9"
     },
     {
-      "_id": "dk8lhswmSfPiQRDI",
-      "name": "Rampage (1/Day)",
+      "_id": "x1pYmDLWaTFEHcEM",
+      "name": "Descontrole (1/Day)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Immediately after dealing de dano to a creature that is already Bloodied, the gnoll moves up to half its Speed, and it makes one Rend attack. GNOLLS YEENOGHU CL A I MS GN OLLS NO T AS HIS BR OOD B U T AS M AGGOTS PU R POS EF ULLY RELEASED TO INFES T A</p>",
+          "value": "<p>Immediately after dealing de dano to uma criatura that is already Bloodied, the gnoll moves up to half its Speed, and it makes one Dilacerar attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -294,14 +314,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!L8HReXYweNq9XaDo.dk8lhswmSfPiQRDI"
+      "_key": "!actors.items!UxhZAnPI6smInoWC.x1pYmDLWaTFEHcEM"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Gnoll Warrior",
-      "page": 142,
-      "cr": "0",
+      "page": 140,
+      "cr": "1/2",
       "warnings": []
     }
   }

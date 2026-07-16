@@ -1,0 +1,241 @@
+{
+  "_id": "2W9PM5hcFbznPs2o",
+  "_key": "!actors!2W9PM5hcFbznPs2o",
+  "folder": "9eORFRgLi2o0urFB",
+  "name": "Ankylosaurus",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/ankylosaurus.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 19,
+        "proficient": 1
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 15,
+        "proficient": 0
+      },
+      "int": {
+        "value": 2,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 5,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 15,
+        "formula": ""
+      },
+      "hp": {
+        "value": 68,
+        "max": 68,
+        "formula": "8d12 + 16",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast",
+        "subtype": "dinosaur",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 3,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Ankylosaurus",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/ankylosaurus.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "6oB4PSPRaPM6HaoU",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The ankylosaurus makes two Cauda attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!2W9PM5hcFbznPs2o.6oB4PSPRaPM6HaoU"
+    },
+    {
+      "_id": "LUcgHoJ9y8UclUyW",
+      "name": "Cauda",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 3 m. Acerto: 9 (1d10 + 4) dano de concussão. If o alvo is a Huge or smaller creature, it fica com a condição Caído.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "RTgJd9EfpUSlmnHb": {
+            "_id": "RTgJd9EfpUSlmnHb",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 10,
+                  "bonus": "4",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 6,
+            "attackType": "melee",
+            "damageFormula": "1d10+4",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!2W9PM5hcFbznPs2o.LUcgHoJ9y8UclUyW"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Ankylosaurus",
+      "page": 348,
+      "cr": "3",
+      "warnings": []
+    }
+  }
+}

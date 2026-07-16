@@ -1,8 +1,8 @@
 {
-  "_id": "g65grdP3HEnadtSk",
-  "_key": "!actors!g65grdP3HEnadtSk",
+  "_id": "52N64UNYdPbWqrAz",
+  "_key": "!actors!52N64UNYdPbWqrAz",
   "folder": "3SEe9J5t05jhrkCa",
-  "name": "Yuan-ti Malison (type 3)",
+  "name": "Yuan-ti Malison (Type 3)",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/yuan-ti-malison-type-3.webp",
   "system": {
@@ -70,7 +70,7 @@
       "alignment": "Neutro e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -96,18 +96,25 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
-        "custom": "Po is oned"
+        "value": [
+          "poisoned"
+        ],
+        "custom": ""
       },
       "languages": {
         "value": [],
         "custom": "Abissal, Comum, Dracônico"
       }
     },
-    "skills": {}
+    "skills": {
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Yuan-ti Malison (type 3)",
+    "name": "Yuan-ti Malison (Type 3)",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -119,13 +126,13 @@
   },
   "items": [
     {
-      "_id": "eU2dCspiDFyCLAjf",
-      "name": "Magic Resistance",
+      "_id": "Q4uXbIZyNdkoKDxi",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yuan-ti has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -149,7 +156,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!g65grdP3HEnadtSk.eU2dCspiDFyCLAjf"
+      "_key": "!actors.items!52N64UNYdPbWqrAz.Q4uXbIZyNdkoKDxi"
     },
     {
       "_id": "3whJczYRMOZviyyl",
@@ -158,7 +165,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yuan-ti makes two Veneno Burst at- tacks, and it can use Conjuração to cast Suggestion if available.</p>",
+          "value": "<p>The yuan-ti makes two Veneno Burst attacks, and it can use Conjuração to cast Suggestion if available.</p>",
           "chat": ""
         },
         "activation": {
@@ -183,16 +190,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!g65grdP3HEnadtSk.3whJczYRMOZviyyl"
+      "_key": "!actors.items!52N64UNYdPbWqrAz.3whJczYRMOZviyyl"
     },
     {
       "_id": "DWGYdNeqhLM8IH9E",
-      "name": "Veneno Burst (Yuan-ti Form Only)",
+      "name": "Veneno Burst",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +5, alcance 5 ft. or range 120 ft. Acerto: 12 (2d8 + 3) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +5, alcance 1,5 m. or distância 36 m. Acerto: 12 (2d8 + 3) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -264,16 +271,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!g65grdP3HEnadtSk.DWGYdNeqhLM8IH9E"
+      "_key": "!actors.items!52N64UNYdPbWqrAz.DWGYdNeqhLM8IH9E"
     },
     {
-      "_id": "KlxC37PAKDdu3yW4",
-      "name": "Constrict",
+      "_id": "9ezp1n7KYSIwYcE4",
+      "name": "Constrição",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Força Teste de Resistência: DC 13, one Medium or smaller creature within 5 feet. Falha: 21 (4d8 + 3)</p>",
+          "value": "<p>Teste de Resistência de Força: CD 13, one Medium or smaller creature within 1,5 m. 21 (4d8 + 3) dano de concussão. O alvo fica com a condição Agarrado (CD para escapar 13), and it fica com a condição Impedido until the grapple ends.</p>",
           "chat": ""
         },
         "activation": {
@@ -291,8 +298,8 @@
           "subtype": ""
         },
         "activities": {
-          "jngpKC7f9ioO2lFK": {
-            "_id": "jngpKC7f9ioO2lFK",
+          "JvgbRN0OWyFu50AX": {
+            "_id": "JvgbRN0OWyFu50AX",
             "type": "save",
             "activation": {
               "type": "action",
@@ -325,50 +332,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!g65grdP3HEnadtSk.KlxC37PAKDdu3yW4"
+      "_key": "!actors.items!52N64UNYdPbWqrAz.9ezp1n7KYSIwYcE4"
     },
     {
-      "_id": "unZ72Afbnnpc1jcD",
-      "name": "Concussão de dano",
+      "_id": "6keb592iG5AUay0W",
+      "name": "Mudar de Forma",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The target has the Agarrado con- dition (escape DC 13), and it has the Impedido condi- tion until the grapple ends.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!g65grdP3HEnadtSk.unZ72Afbnnpc1jcD"
-    },
-    {
-      "_id": "b1wxa31ysn8Dlfik",
-      "name": "Shape-Shift",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The yuan-ti shape-shifts into a Medium snake or returns to its true form. If it dies, it stays in its w current form. The yuan-ti's game statistics are the same z in each form, except where noted. Any equipment it is > wearing or carrying isn't transformed. '- er: Cl] YUAN-Tl ABOMINATION Large Monstrosity, Neutral Evil AC 15 Iniciativa +6 (16) HP 127 (15d10 + 45) Sp eed 40 ft ., Climb 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>The yuan-ti shape-shifts into a Medium snake or returns to its true form. If it dies, it stays in its current form. The yuan-ti's game statistics are the same in each form, except where noted. Any equipment it is wearing or carrying isn't transformed.</p>",
           "chat": ""
         },
         "activation": {
@@ -393,7 +366,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!g65grdP3HEnadtSk.b1wxa31ysn8Dlfik"
+      "_key": "!actors.items!52N64UNYdPbWqrAz.6keb592iG5AUay0W"
     },
     {
       "_id": "DLgmx7iQtfmciOUH",
@@ -402,7 +375,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yuan-ti casts one of the following spells, requiring no Material com- ponents and using Sabedoria as the spellcasting ability (spell save DC 13): À Vontade: Animal Friendship (snakes only) 2/Dia: Suggestion</p>",
+          "value": "<p>The yuan-ti casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save CD 13):</p>",
           "chat": ""
         },
         "activation": {
@@ -427,13 +400,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!g65grdP3HEnadtSk.DLgmx7iQtfmciOUH"
+      "_key": "!actors.items!52N64UNYdPbWqrAz.DLgmx7iQtfmciOUH"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Yuan-ti Malison (Type 3)",
-      "page": 346,
+      "page": 344,
       "cr": "3",
       "warnings": []
     }

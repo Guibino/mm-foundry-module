@@ -1,8 +1,8 @@
 {
-  "_id": "6FmQIFeADsdvubNW",
-  "_key": "!actors!6FmQIFeADsdvubNW",
+  "_id": "WDzzJYbhXoyWnrjQ",
+  "_key": "!actors!WDzzJYbhXoyWnrjQ",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Ancião Dourado Dragão",
+  "name": "Ancient Gold Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/ancient-gold-dragon.webp",
   "system": {
@@ -65,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "M _ etallic",
+        "subtype": "metallic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Bom",
       "cr": 24,
       "xp": {
-        "value": 62000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -106,10 +106,27 @@
         "custom": "Comum, Dracônico"
       }
     },
-    "skills": {}
+    "skills": {
+      "ins": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "per": {
+        "value": 2,
+        "ability": "cha"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Ancião Dourado Dragão",
+    "name": "Ancient Gold Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -121,13 +138,13 @@
   },
   "items": [
     {
-      "_id": "daBOmVghQCdubGgN",
-      "name": "Amphibious",
+      "_id": "Y4NUQFttaO96wNrr",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,16 +168,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6FmQIFeADsdvubNW.daBOmVghQCdubGgN"
+      "_key": "!actors.items!WDzzJYbhXoyWnrjQ.Y4NUQFttaO96wNrr"
     },
     {
       "_id": "5B3mnxXRp3zRTWck",
-      "name": "Resistência Lendária (4/Day, or 5/Day in Lair)",
+      "name": "Resistência Lendária",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the dragon fails a saving throw, it can choose to suc- ceed instead.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -169,13 +186,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "4",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -189,7 +201,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6FmQIFeADsdvubNW.5B3mnxXRp3zRTWck"
+      "_key": "!actors.items!WDzzJYbhXoyWnrjQ.5B3mnxXRp3zRTWck"
     },
     {
       "_id": "RCvAwskkTFYGANcc",
@@ -198,7 +210,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of (A) Conjuração to cast Guiding Bolt (level 4 version) or (B) Weaken- ing Breath.</p>",
+          "value": "<p>The dragon makes three Dilacerar attacks. It can replace one attack with a use of (A) Conjuração to cast Guiding Bolt (level 4 version) or (B) Sopro Enfraquecedor.</p>",
           "chat": ""
         },
         "activation": {
@@ -223,16 +235,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6FmQIFeADsdvubNW.RCvAwskkTFYGANcc"
+      "_key": "!actors.items!WDzzJYbhXoyWnrjQ.RCvAwskkTFYGANcc"
     },
     {
-      "_id": "fEqRLUvf6KEIYR5R",
-      "name": "Rend",
+      "_id": "DDiLXW6fGCcOREN4",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 17 to hit, alcance 15 ft. Acerto: 19 (2d8 + 10) Cortante de dano plus 9 (2d8) Fogo de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +17 to hit, alcance 4,5 m. Acerto: 19 (2d8 + 10) dano cortante mais 9 (2d8) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -249,27 +261,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "TL012drCthVSLMI3": {
+            "_id": "TL012drCthVSLMI3",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "17",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "10",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 17,
+            "attackType": "melee",
             "damageFormula": "2d8+10",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6FmQIFeADsdvubNW.fEqRLUvf6KEIYR5R"
+      "_key": "!actors.items!WDzzJYbhXoyWnrjQ.DDiLXW6fGCcOREN4"
     },
     {
-      "_id": "tfiJdHJecGtbEdOo",
-      "name": "Fogo Breath (Recharge 5-6)",
+      "_id": "6LdAxhImFhQsEI8V",
+      "name": "Sopro de Fogo (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 24, cada criatura in a 90-foot Cone. Falha: 71 (13d10)</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 24, cada criatura in a 27 m Cone. 71 (13d10) dano de fogo. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -293,8 +349,8 @@
           "subtype": ""
         },
         "activities": {
-          "BQtbd28Pgfr7PFMl": {
-            "_id": "BQtbd28Pgfr7PFMl",
+          "iVkKjUezsxhpUqcK": {
+            "_id": "iVkKjUezsxhpUqcK",
             "type": "save",
             "activation": {
               "type": "action",
@@ -327,152 +383,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6FmQIFeADsdvubNW.tfiJdHJecGtbEdOo"
+      "_key": "!actors.items!WDzzJYbhXoyWnrjQ.6LdAxhImFhQsEI8V"
     },
     {
-      "_id": "wkgT4pIpohx2zEmu",
-      "name": "Fogo de dano",
+      "_id": "njqpxi5kqxl4UzKP",
+      "name": "Sopro Enfraquecedor",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sucesso: Metade do dano.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!6FmQIFeADsdvubNW.wkgT4pIpohx2zEmu"
-    },
-    {
-      "_id": "mHEjyWvmCoOkUGO3",
-      "name": "Dream Messenger",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>While in its lair, the dragon can cast Dream, requiring no Material components and using Carisma as the spellcasting ability. When casting the spell this way, the dragon can target any creature within 6 miles.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!6FmQIFeADsdvubNW.mHEjyWvmCoOkUGO3"
-    },
-    {
-      "_id": "2XJWVWfRrY5RxMBR",
-      "name": "Foretelling Fog",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The area within 1 mile of the lair is</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!6FmQIFeADsdvubNW.2XJWVWfRrY5RxMBR"
-    },
-    {
-      "_id": "WlSH1B5zfaTNlHiO",
-      "name": "Lightly Obscured by opalescent fog",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>While in that area, creatures can't be surprised, as the fog swirls into shapes that warn of danger. If the dragon dies or moves its lair elsewhere, these effects end immediately. À Vontade: Detect Magic, Guiding Bolt (level 4 version), Shapechange (Beast or Humanoid form only, no . Temporary H it Poi n ts ga i n e d from the s p e 11 ·, and no Concentration or Temporary Pontos de Vida required to maintain the spell) 1/Dia Each: Flame Strike (level 6 version), Word of Re- call, Zone of Truth</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!6FmQIFeADsdvubNW.WlSH1B5zfaTNlHiO"
-    },
-    {
-      "_id": "Qpy8idKCOuMX4mq7",
-      "name": "Weakening Breath",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Força Teste de Resistência: DC 24, cada criatura that isn't currently affected by this breath in a 90-foot Cone. Falha: The target has Disadvantage on Força-based D20 Tests and subtracts 5 (1d10) from its de dano rolls. It repeats the save at the end of each of its tu r n s, end i n g the effect on its e If on a success. A f- te r 1 minute, it succeeds automatically.</p>",
+          "value": "<p>Teste de Resistência de Força: CD 24, cada criatura that isn't currently affected by this breath in a 27 m Cone. O alvo has Desvantagem on Força-based D20 Tests and subtracts 5 (1d10) from its de dano rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</p>",
           "chat": ""
         },
         "activation": {
@@ -490,8 +410,8 @@
           "subtype": ""
         },
         "activities": {
-          "GQuZ87GJij9hYZuq": {
-            "_id": "GQuZ87GJij9hYZuq",
+          "cPW1fAEpFGYOPEYP": {
+            "_id": "cPW1fAEpFGYOPEYP",
             "type": "save",
             "activation": {
               "type": "action",
@@ -524,7 +444,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6FmQIFeADsdvubNW.Qpy8idKCOuMX4mq7"
+      "_key": "!actors.items!WDzzJYbhXoyWnrjQ.njqpxi5kqxl4UzKP"
     },
     {
       "_id": "gPihUAh8Y2lFAJGd",
@@ -533,7 +453,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Carisma Sal)ing Throw: DC 24, uma criatura the dragon can see within 120 feet. Falha: 24 (7d6) Energia de dano, and o alvo has the Incapacitado condition and is transported to a harmless demiplane until the start of the dragon's next turn, at which point it reappears in an unoccupied space of the dragon's choice within 120 feet of the dragon. Falha ou Sucesso: The dragon can't take this action again until the start of its next turn.</p>",
+          "value": "<p>Teste de Resistência de Carisma: CD 24, uma criatura the dragon can see within 36 m. 24 (7d6) dano de energia, and o alvo fica com a condição Incapacitado and is transported to a harmless demiplane until the start of the dragon's next turn, at which point it reappears in an unoccupied space of the dragon's choice within 36 m of the dragon. The dragon can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -550,18 +470,42 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "KV8rvePMFpwCmjKM": {
+            "_id": "KV8rvePMFpwCmjKM",
+            "type": "save",
+            "activation": {
+              "type": "legendary",
+              "value": 1,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "cha"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "24"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "7d6",
-            "damageType": "force"
+            "saveDc": 24,
+            "saveAbility": "cha"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6FmQIFeADsdvubNW.gPihUAh8Y2lFAJGd"
+      "_key": "!actors.items!WDzzJYbhXoyWnrjQ.gPihUAh8Y2lFAJGd"
     },
     {
       "_id": "U8hk8TYMqmDL95Tr",
@@ -570,7 +514,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon uses Conjuração to cast G·uiding Bolt (level 4 version). 3</p>",
+          "value": "<p>The dragon uses Conjuração to cast Guiding Bolt (level 4 version).</p>",
           "chat": ""
         },
         "activation": {
@@ -595,16 +539,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6FmQIFeADsdvubNW.U8hk8TYMqmDL95Tr"
+      "_key": "!actors.items!WDzzJYbhXoyWnrjQ.U8hk8TYMqmDL95Tr"
     },
     {
-      "_id": "Y89gBFLjozRsQENr",
-      "name": "Pounce",
+      "_id": "nn2KJkaa5c73ORs4",
+      "name": "Bote",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon moves up to half its Speed, and it 0 LLJ makes one Rend attack. 0 uJ GORGONS Bull-like Guardians with Petrifying Breath</p>",
+          "value": "<p>A criatura se move até metade do seu Deslocamento e faz um ataque de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -629,7 +573,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6FmQIFeADsdvubNW.Y89gBFLjozRsQENr"
+      "_key": "!actors.items!WDzzJYbhXoyWnrjQ.nn2KJkaa5c73ORs4"
     },
     {
       "_id": "XsDClDrqocUezwcC",
@@ -638,7 +582,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 24): GOLD - DRAGONS GOLD DRAGON LAIRS Gold dragons make their homes in places of natural and magical wonder. The region containing an adult or ancient gold dragon's lair is altered by its presence, creating the following effects:</p>",
+          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 24, +16 to hit with spell attacks):</p>",
           "chat": ""
         },
         "activation": {
@@ -655,21 +599,47 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "c1WcDZcoeAiE295h": {
+            "_id": "c1WcDZcoeAiE295h",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "16",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "toHit": 16
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6FmQIFeADsdvubNW.XsDClDrqocUezwcC"
+      "_key": "!actors.items!WDzzJYbhXoyWnrjQ.XsDClDrqocUezwcC"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Ancient Gold Dragon",
-      "page": 148,
+      "page": 146,
       "cr": "24",
       "warnings": []
     }

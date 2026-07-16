@@ -1,6 +1,6 @@
 {
-  "_id": "i6bL7BEwVxzEHN46",
-  "_key": "!actors!i6bL7BEwVxzEHN46",
+  "_id": "cbpZpyTZBVNQ6StQ",
+  "_key": "!actors!cbpZpyTZBVNQ6StQ",
   "folder": "inkH4oLnh3yP5W9M",
   "name": "Centaur Trooper",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 45,
         "max": 45,
-        "formula": "6d1 0 + 12",
+        "formula": "6d10 + 12",
         "temp": null,
         "tempmax": null
       },
@@ -68,7 +68,7 @@
       "alignment": "Neutro e Bom",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -101,6 +101,10 @@
       }
     },
     "skills": {
+      "ath": {
+        "value": 1,
+        "ability": "str"
+      },
       "prc": {
         "value": 1,
         "ability": "wis"
@@ -126,7 +130,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The centaur makes two attacks, using Pike or Longbow in any combination.</p>",
+          "value": "<p>The centaur makes two attacks, using Pique or Arco Longo in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,16 +155,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!i6bL7BEwVxzEHN46.h0FfCPdRpTtCcryS"
+      "_key": "!actors.items!cbpZpyTZBVNQ6StQ.h0FfCPdRpTtCcryS"
     },
     {
-      "_id": "eoQkOmVqUFA6fTKJ",
-      "name": "Pike",
+      "_id": "XVkxbKxcrvbOy3h0",
+      "name": "Pique",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 10 ft. Acerto: 9 (1d10 + 4) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 3 m. Acerto: 9 (1d10 + 4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -178,8 +182,8 @@
           "subtype": ""
         },
         "activities": {
-          "ItZbnfsJ8E6pCyVz": {
-            "_id": "ItZbnfsJ8E6pCyVz",
+          "X02GOp1u1p0n1baM": {
+            "_id": "X02GOp1u1p0n1baM",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -232,16 +236,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!i6bL7BEwVxzEHN46.eoQkOmVqUFA6fTKJ"
+      "_key": "!actors.items!cbpZpyTZBVNQ6StQ.XVkxbKxcrvbOy3h0"
     },
     {
-      "_id": "F0ddwTrX1vCL7vDw",
-      "name": "Longbow",
+      "_id": "Ua04uzwkN4dMC3BZ",
+      "name": "Arco Longo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +4, range 150/600 ft. Acerto: 6 (1d8 + 2) Perfurante de dano. BONUS ACT I ONS -</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +4, distância 45/180 m. Acerto: 6 (1d8 + 2) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -259,8 +263,8 @@
           "subtype": ""
         },
         "activities": {
-          "n9rWikzKHggK4rMj": {
-            "_id": "n9rWikzKHggK4rMj",
+          "Hk7kFh6FqSTuPgvA": {
+            "_id": "Hk7kFh6FqSTuPgvA",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -313,20 +317,20 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!i6bL7BEwVxzEHN46.F0ddwTrX1vCL7vDw"
+      "_key": "!actors.items!cbpZpyTZBVNQ6StQ.Ua04uzwkN4dMC3BZ"
     },
     {
-      "_id": "CeseyQynDIfZuHSK",
-      "name": "Trampling Charge (Recharge 5-6)",
+      "_id": "YaeYuqUnVFA0Qlab",
+      "name": "Trampling Investida (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The centaur moves up to its Speed without provoking Opportunity At- tacks and can move through the spaces of Medium · or smaller creatures. Each creature whose space the centaur enters is targeted once by the following effect. Força Teste de Resistência: DC 14. Falha: 7 (1d6 + 4) Concussão de dano, and o alvo has the Caído condition . \\ CENTAURS 67 -----~--------=--<--::a.--7 • -........::::-.- CHAIN DEVIL Devil of Pain and Control</p>",
+          "value": "<p>The centaur moves up to its Speed without provoking Opportunity Attacks and can move through the spaces of Medium or smaller creatures. Each creature whose space the centaur enters is targeted once by the following effect. Teste de Resistência de Força: CD 14. 7 (1d6 + 4) dano de concussão, and o alvo fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "action",
+          "type": "bonus",
           "value": null,
           "condition": ""
         },
@@ -346,11 +350,11 @@
           "subtype": ""
         },
         "activities": {
-          "ArF8fzVK4FCMpr7Z": {
-            "_id": "ArF8fzVK4FCMpr7Z",
+          "UmFo7KtnCtckJPx5": {
+            "_id": "UmFo7KtnCtckJPx5",
             "type": "save",
             "activation": {
-              "type": "action",
+              "type": "bonus",
               "value": null,
               "override": true,
               "condition": ""
@@ -366,25 +370,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 1,
-                  "denomination": 6,
-                  "bonus": "4",
-                  "types": [
-                    "bludgeoning"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -392,21 +378,19 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "1d6+4",
-            "damageType": "bludgeoning",
             "saveDc": 14,
             "saveAbility": "str"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!i6bL7BEwVxzEHN46.CeseyQynDIfZuHSK"
+      "_key": "!actors.items!cbpZpyTZBVNQ6StQ.YaeYuqUnVFA0Qlab"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Centaur Trooper",
-      "page": 69,
+      "page": 67,
       "cr": "2",
       "warnings": []
     }

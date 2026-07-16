@@ -1,6 +1,6 @@
 {
-  "_id": "YcgO4u6NgYA2ACGu",
-  "_key": "!actors!YcgO4u6NgYA2ACGu",
+  "_id": "3egIIQLANoi4eIau",
+  "_key": "!actors!3egIIQLANoi4eIau",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Glabrezu",
   "type": "npc",
@@ -51,7 +51,8 @@
         "walk": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "truesight": 120
       },
       "init": {
         "ability": "dex",
@@ -61,14 +62,14 @@
     "details": {
       "type": {
         "value": "fiend",
-        "subtype": "Demon",
+        "subtype": "demon",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Mau",
       "cr": 9,
       "xp": {
-        "value": 5000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -80,7 +81,9 @@
     "traits": {
       "size": "lg",
       "di": {
-        "value": [],
+        "value": [
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
@@ -96,21 +99,23 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "poisoned"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Abissal"
+        "custom": ""
       }
     },
     "skills": {
       "dec": {
-        "value": 1,
+        "value": 2,
         "ability": "cha"
       },
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       }
     }
@@ -128,13 +133,13 @@
   },
   "items": [
     {
-      "_id": "TTfGvtgRU8TK2wX8",
-      "name": "Demonic Restoration",
+      "_id": "GIyPtU4AtEMuu14B",
+      "name": "Restauração Demoníaca",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the glabrezu dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Pontos de Vida some- where in the Abyss.</p>",
+          "value": "<p>Se a criatura morrer fora do Abismo, o corpo dela se dissolve em icor e ela ganha um novo corpo instantaneamente, revivendo com todos os seus Pontos de Vida em algum lugar do Abismo.</p>",
           "chat": ""
         },
         "activation": {
@@ -158,16 +163,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!YcgO4u6NgYA2ACGu.TTfGvtgRU8TK2wX8"
+      "_key": "!actors.items!3egIIQLANoi4eIau.GIyPtU4AtEMuu14B"
     },
     {
-      "_id": "GdLl6ikGYJSH7imD",
-      "name": "Magic Resistance",
+      "_id": "hHs7i3edKUysWmL5",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The glabrezu has Advantage on sav- ing throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -191,7 +196,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!YcgO4u6NgYA2ACGu.GdLl6ikGYJSH7imD"
+      "_key": "!actors.items!3egIIQLANoi4eIau.hHs7i3edKUysWmL5"
     },
     {
       "_id": "j7xhNkh2ns3q7aUc",
@@ -200,7 +205,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The glabrezu makes two Pincer a.ttacks and uses Pummel or Conjuração.</p>",
+          "value": "<p>The glabrezu makes two Pincer attacks and uses Pummel or Conjuração.</p>",
           "chat": ""
         },
         "activation": {
@@ -225,7 +230,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!YcgO4u6NgYA2ACGu.j7xhNkh2ns3q7aUc"
+      "_key": "!actors.items!3egIIQLANoi4eIau.j7xhNkh2ns3q7aUc"
     },
     {
       "_id": "1slxajga15YalrE0",
@@ -234,7 +239,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 10 ft. Acerto: 16 (2d1 0 + 5) Cortante de dano. If o alvo is a Medium or smaller creature, it has the Agarrado condition (escape DC 15) from one of two pircers.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 3 m. Acerto: 16 (2d10 + 5) dano cortante. If o alvo is a Medium or smaller creature, it fica com a condição Agarrado (CD para escapar 15) from one of two pincers.</p>",
           "chat": ""
         },
         "activation": {
@@ -306,7 +311,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!YcgO4u6NgYA2ACGu.1slxajga15YalrE0"
+      "_key": "!actors.items!3egIIQLANoi4eIau.1slxajga15YalrE0"
     },
     {
       "_id": "JA7XdEMoh959qF2H",
@@ -315,7 +320,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 17, uma criatura</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 17, uma criatura Agarrado by the glabrezu. 15 (3d6 + 5) dano de concussão. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -367,41 +372,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!YcgO4u6NgYA2ACGu.JA7XdEMoh959qF2H"
-    },
-    {
-      "_id": "ZrTelP5enqioEe4G",
-      "name": "Agarrado by the glabrezu",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Falha: 15 (3d6 + 5) Blud- geoning de dano. Sucesso: Metade do dano.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!YcgO4u6NgYA2ACGu.ZrTelP5enqioEe4G"
+      "_key": "!actors.items!3egIIQLANoi4eIau.JA7XdEMoh959qF2H"
     },
     {
       "_id": "CfhutspBKlKSAI5t",
@@ -410,7 +381,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The glabrezu casts one of the following spells, requiring no Material components and using In- telligence as the spellcasting ability (spell save DC 16): À Vontade: Darkness, Detect Magic, Dispel Magic 1/Dia Each: Confusion, Fly, Power Word Stun GLABREZU GLABREZU Demon of Delusion and Entrapment</p>",
+          "value": "<p>The glabrezu casts one of the following spells, requiring no Material components and using Inteligência as the spellcasting ability (spell save CD 16):</p>",
           "chat": ""
         },
         "activation": {
@@ -435,13 +406,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!YcgO4u6NgYA2ACGu.CfhutspBKlKSAI5t"
+      "_key": "!actors.items!3egIIQLANoi4eIau.CfhutspBKlKSAI5t"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Glabrezu",
-      "page": 140,
+      "page": 138,
       "cr": "9",
       "warnings": []
     }

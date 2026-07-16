@@ -1,8 +1,8 @@
 {
-  "_id": "go77ayYwfVymHsgb",
-  "_key": "!actors!go77ayYwfVymHsgb",
+  "_id": "G1vQ0C1f61Nevtrf",
+  "_key": "!actors!G1vQ0C1f61Nevtrf",
   "folder": "BaJiyGJk3g8zXFNV",
-  "name": "Negro Pudding",
+  "name": "Black Pudding",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/black-pudding.webp",
   "system": {
@@ -70,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 4,
       "xp": {
-        "value": 1100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -100,19 +100,25 @@
       },
       "ci": {
         "value": [
-          "charmed"
+          "charmed",
+          "deafened",
+          "exhaustion",
+          "frightened",
+          "grappled",
+          "prone",
+          "restrained"
         ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Negro Pudding",
+    "name": "Black Pudding",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -124,13 +130,13 @@
   },
   "items": [
     {
-      "_id": "Kag6lbaE5flmw46x",
-      "name": "Amorphous",
+      "_id": "FsZRCN7bPDG5hXJE",
+      "name": "Amorfo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The pudding can move through a space as narrow as l inch without expending extra move- ment to do so.</p>",
+          "value": "<p>A criatura pode se mover por um espaço tão estreito quanto 2,5 cm sem gastar movimento extra para isso.</p>",
           "chat": ""
         },
         "activation": {
@@ -154,7 +160,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!go77ayYwfVymHsgb.Kag6lbaE5flmw46x"
+      "_key": "!actors.items!G1vQ0C1f61Nevtrf.FsZRCN7bPDG5hXJE"
     },
     {
       "_id": "M1UWNuDQKusdYnT4",
@@ -163,7 +169,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A creature that hits the pudding with a melee attack roll takes 4 (1d8) Ácido de dano. Nonmag- ical ammunition is destroyed immediately after hitting the pudding and dealing any de dano. Any nonmagical weapon takes a cumulative - l penalty to attack rolls immediately after dealing dam~ge to the pudding and coming into contact with it. The weapon is destroyed if 42 BLACK PUDDING BLACK PUDDING Divisible, Corrosive Blob</p>",
+          "value": "<p>A creature that hits the pudding with a melee attack roll takes 4 (1d8) dano de ácido. Nonmagical ammunition is destroyed immediately after hitting the pudding and dealing any de dano. Any nonmagical weapon takes a cumulative -1 penalty to attack rolls immediately after dealing de dano to the pudding and coming into contact with it. The weapon is destroyed if the penalty reaches -5. The penalty can be removed by casting the Mending spell on the weapon.\nIn 1 minute, the pudding can eat through 0,6 m of nonmagical wood or metal.</p>",
           "chat": ""
         },
         "activation": {
@@ -187,13 +193,161 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!go77ayYwfVymHsgb.M1UWNuDQKusdYnT4"
+      "_key": "!actors.items!G1vQ0C1f61Nevtrf.M1UWNuDQKusdYnT4"
+    },
+    {
+      "_id": "zPqCr0yrX0yKGZLC",
+      "name": "Escalada de Aranha",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura pode escalar superfícies difíceis, inclusive tetos, sem precisar fazer um teste de habilidade.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!G1vQ0C1f61Nevtrf.zPqCr0yrX0yKGZLC"
+    },
+    {
+      "_id": "HyJqA2wU9uSF357k",
+      "name": "Dissolving Pseudópode",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 3 m. Acerto: 17 (4d6 + 3) dano de ácido. Nonmagical armor worn by o alvo takes a -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10. The penalty can be removed by casting the Mending spell on the armor.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "K80cec8eGwoqnUEI": {
+            "_id": "K80cec8eGwoqnUEI",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "acid"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "4d6+3",
+            "damageType": "acid"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!G1vQ0C1f61Nevtrf.HyJqA2wU9uSF357k"
+    },
+    {
+      "_id": "QAtm8DKTfEseUjQb",
+      "name": "Split",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>While the pudding is Large or Medium and has 10+ Pontos de Vida, it becomes Bloodied or is subjected to Elétrico or dano cortante. The pudding splits into two new Black Puddings. Each new pudding is one size smaller than the original pudding and acts on its Iniciativa. The original pudding's Pontos de Vida are divided evenly between the new puddings (round down).</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!G1vQ0C1f61Nevtrf.QAtm8DKTfEseUjQb"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Black Pudding",
-      "page": 44,
+      "page": 42,
       "cr": "4",
       "warnings": []
     }

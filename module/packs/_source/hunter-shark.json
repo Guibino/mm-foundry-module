@@ -1,6 +1,6 @@
 {
-  "_id": "CHsWB2uulNdy2xdD",
-  "_key": "!actors!CHsWB2uulNdy2xdD",
+  "_id": "e07RH2dcU0j1tBCX",
+  "_key": "!actors!e07RH2dcU0j1tBCX",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Hunter Shark",
   "type": "npc",
@@ -8,23 +8,23 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 12,
+        "value": 18,
         "proficient": 0
       },
       "dex": {
-        "value": 16,
+        "value": 14,
         "proficient": 0
       },
       "con": {
-        "value": 13,
+        "value": 15,
         "proficient": 0
       },
       "int": {
-        "value": 3,
+        "value": 1,
         "proficient": 0
       },
       "wis": {
-        "value": 12,
+        "value": 10,
         "proficient": 0
       },
       "cha": {
@@ -35,24 +35,25 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 13,
+        "flat": 12,
         "formula": ""
       },
       "hp": {
-        "value": 1,
-        "max": 1,
-        "formula": "",
+        "value": 45,
+        "max": 45,
+        "formula": "6d10 + 12",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 5,
+        "swim": 40
       },
       "senses": {
         "units": "ft",
-        "darkvision": 60
+        "blindsight": 60
       },
       "init": {
         "ability": "dex",
@@ -67,9 +68,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 2,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -79,7 +80,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "lg",
       "di": {
         "value": [],
         "custom": ""
@@ -101,7 +102,12 @@
         "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Hunter Shark",
@@ -116,13 +122,13 @@
   },
   "items": [
     {
-      "_id": "u7Y6eXq0lXLKhacU",
-      "name": "Spider Climb",
+      "_id": "A8pHHmEqdBolS4iu",
+      "name": "Respiração Aquática",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>",
+          "value": "<p>A criatura só consegue respirar debaixo d'água.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +152,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CHsWB2uulNdy2xdD.u7Y6eXq0lXLKhacU"
+      "_key": "!actors.items!e07RH2dcU0j1tBCX.A8pHHmEqdBolS4iu"
     },
     {
-      "_id": "wtdi8f4UEPnUtjtD",
-      "name": "Bite",
+      "_id": "WWNRdVo3gBjWe22j",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Me lee Attack Roll: +5, alcance 5 ft. Acerto: 5 (1d4 + 3) Perfurante de dano plus 5 (2d4) Veneno de dano. GOAT Medi um Beast , Unaligned AC l 0 Iniciativa +O (l 0) HP 4 (1d8) Speed 40 ft., Climb 30 ft. MO D SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6 (with Vantagem if o alvo doesn't have all its Pontos de Vida), alcance 1,5 m. Acerto: 14 (3d6 + 4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -172,28 +178,70 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "sgNJfggQk9flfVMU": {
+            "_id": "sgNJfggQk9flfVMU",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "1d4+3",
+            "toHit": 6,
+            "attackType": "melee",
+            "damageFormula": "3d6+4",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CHsWB2uulNdy2xdD.wtdi8f4UEPnUtjtD"
+      "_key": "!actors.items!e07RH2dcU0j1tBCX.WWNRdVo3gBjWe22j"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Hunter Shark",
-      "page": 364,
-      "cr": "0",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "page": 363,
+      "cr": "2",
+      "warnings": []
     }
   }
 }

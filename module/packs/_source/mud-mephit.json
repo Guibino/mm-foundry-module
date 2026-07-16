@@ -1,6 +1,6 @@
 {
-  "_id": "UyQm06Ze7IHUnIBx",
-  "_key": "!actors!UyQm06Ze7IHUnIBx",
+  "_id": "RQL2wPLp8TJ7IIii",
+  "_key": "!actors!RQL2wPLp8TJ7IIii",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Mud Mephit",
   "type": "npc",
@@ -48,6 +48,7 @@
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 20,
         "fly": 20,
         "swim": 20
       },
@@ -70,7 +71,7 @@
       "alignment": "Neutro e Mau",
       "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -82,7 +83,9 @@
     "traits": {
       "size": "sm",
       "di": {
-        "value": [],
+        "value": [
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
@@ -94,15 +97,23 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "exhaustion",
+          "poisoned"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Primordial (Aquan, Terran)"
       }
     },
-    "skills": {}
+    "skills": {
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Mud Mephit",
@@ -117,13 +128,13 @@
   },
   "items": [
     {
-      "_id": "ZpZfKGLxvuEkJepK",
-      "name": "Death Burst",
+      "_id": "Hgyqu2u917BUJztF",
+      "name": "Explosão Mortal",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mephit explodes when it dies. Dex- terity Teste de Resistência: DC 11, cada criatura in a 5-foot</p>",
+          "value": "<p>The mephit explodes when it dies. Teste de Resistência de Destreza: CD 11, cada criatura in a 1,5 m Emanation originating from the mephit. O alvo fica com a condição Impedido until the end of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -143,53 +154,23 @@
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 11,
+            "saveAbility": "dex"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!UyQm06Ze7IHUnIBx.ZpZfKGLxvuEkJepK"
+      "_key": "!actors.items!RQL2wPLp8TJ7IIii.Hgyqu2u917BUJztF"
     },
     {
-      "_id": "Hn2IzUhCAvEiYhCg",
-      "name": "Emanation originating from the mephit",
+      "_id": "TLJJ1KU84fcas8v1",
+      "name": "Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Falha: The target has the Impedido condition until the end of its next turn.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!UyQm06Ze7IHUnIBx.Hn2IzUhCAvEiYhCg"
-    },
-    {
-      "_id": "yXlMww7f1jb9fabH",
-      "name": "Slam",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 4 (1d6 + l) Concussão de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 4 (1d6 + 1) dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
@@ -207,8 +188,8 @@
           "subtype": ""
         },
         "activities": {
-          "BmFkhI1E07NDTJCd": {
-            "_id": "BmFkhI1E07NDTJCd",
+          "w2ehC0iWROQ1OFc6": {
+            "_id": "w2ehC0iWROQ1OFc6",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -229,15 +210,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "1",
                   "types": [
                     "bludgeoning"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "1d6+l"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -255,22 +236,22 @@
           "mechanics": {
             "toHit": 3,
             "attackType": "melee",
-            "damageFormula": "1d6+l",
+            "damageFormula": "1d6+1",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!UyQm06Ze7IHUnIBx.yXlMww7f1jb9fabH"
+      "_key": "!actors.items!RQL2wPLp8TJ7IIii.TLJJ1KU84fcas8v1"
     },
     {
       "_id": "iu8rOICsHjFAxxLc",
-      "name": "Mud Breath (Recharge 6)",
+      "name": "Mud Breath",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 11, uma criatura the mephit can see within 15 feet. Fail- ure: The target has the Impedido condition until the - end of the mephit's next turn. ~ MEPHITS SMOKE MEPHIT Small Elemental, Neutral Evil AC 12 Iniciativa +2 (12) HP 13(3d6+3) Speed 30 ft., Fly 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 11, uma criatura the mephit can see within 4,5 m. O alvo fica com a condição Impedido until the end of the mephit's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -280,14 +261,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "recharge",
-              "type": "recoverAll",
-              "formula": "6"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -328,13 +303,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!UyQm06Ze7IHUnIBx.iu8rOICsHjFAxxLc"
+      "_key": "!actors.items!RQL2wPLp8TJ7IIii.iu8rOICsHjFAxxLc"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Mud Mephit",
-      "page": 209,
+      "page": 207,
       "cr": "1/4",
       "warnings": []
     }

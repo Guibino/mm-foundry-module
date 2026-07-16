@@ -1,6 +1,6 @@
 {
-  "_id": "YhSNHnbRARgSTDU2",
-  "_key": "!actors!YhSNHnbRARgSTDU2",
+  "_id": "eMuHehdXjoyzoYgV",
+  "_key": "!actors!eMuHehdXjoyzoYgV",
   "folder": "bKQUPthn1V2Yu6Bn",
   "name": "Wight",
   "type": "npc",
@@ -69,7 +69,7 @@
       "alignment": "Neutro e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -132,13 +132,13 @@
   },
   "items": [
     {
-      "_id": "GAgrHDnCv9Alc2y3",
-      "name": "Sunlight Sensitivity",
+      "_id": "cROl7jEeOveVCDy8",
+      "name": "Sensibilidade à Luz Solar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in sunlight, the wight has Disadvantage on ability checks and attack rolls.</p>",
+          "value": "<p>Sob luz solar, a criatura tem Desvantagem em testes de habilidade e rolagens de ataque.</p>",
           "chat": ""
         },
         "activation": {
@@ -162,7 +162,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!YhSNHnbRARgSTDU2.GAgrHDnCv9Alc2y3"
+      "_key": "!actors.items!eMuHehdXjoyzoYgV.cROl7jEeOveVCDy8"
     },
     {
       "_id": "fvRKD7U1jnLrZ2tZ",
@@ -171,7 +171,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The wight makes two attacks; using Ne- crotic Sword or Necrótico Bow in any combination. It can replace one attack with a use of Life Drain.</p>",
+          "value": "<p>The wight makes two attacks, using Necrótico Sword or Necrótico Bow in any combination. It can replace one attack with a use of Life Drain.</p>",
           "chat": ""
         },
         "activation": {
@@ -196,7 +196,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!YhSNHnbRARgSTDU2.fvRKD7U1jnLrZ2tZ"
+      "_key": "!actors.items!eMuHehdXjoyzoYgV.fvRKD7U1jnLrZ2tZ"
     },
     {
       "_id": "8z9mXPsf05d2FWqk",
@@ -205,7 +205,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 6 (1d8 + 2) Cortante de dano plus 4 (1d8) Ne- crotic de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 6 (1d8 + 2) dano cortante mais 4 (1d8) dano necrótico.</p>",
           "chat": ""
         },
         "activation": {
@@ -277,7 +277,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!YhSNHnbRARgSTDU2.8z9mXPsf05d2FWqk"
+      "_key": "!actors.items!eMuHehdXjoyzoYgV.8z9mXPsf05d2FWqk"
     },
     {
       "_id": "0E8tWLim2B44QP9g",
@@ -286,7 +286,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +4, range 150/600 ft. Acerto: 6 (1d8 + 2) Perfurante de dano plus 4 (1d8) Ne- crotic de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +4, distância 45/180 m. Acerto: 6 (1d8 + 2) dano perfurante mais 4 (1d8) dano necrótico.</p>",
           "chat": ""
         },
         "activation": {
@@ -358,7 +358,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!YhSNHnbRARgSTDU2.0E8tWLim2B44QP9g"
+      "_key": "!actors.items!eMuHehdXjoyzoYgV.0E8tWLim2B44QP9g"
     },
     {
       "_id": "gebbF6xrkk25wZNT",
@@ -367,7 +367,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Sa1Jing Throw: DC 13, one crea- ture within 5 feet. Falha: 6 (1d8 + 2) Necrótico de dano, and o alvo's Hit Point maximum decreases by an amount equal to the de dano taken. A Humanoid slain by this attack rises 24 hours later as a Zombie under the wight's control, unless the Hu- manoid is restored to life or its body is destroyed. The LL wight can have no more than twelve zombies under its <( Cl:'. control at a time. <( WILL-0' -WISP Guide on the Path to Doom</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 13, uma criatura within 1,5 m. 6 (1d8 + 2) dano necrótico, and o alvo's Hit Point maximum decreases by an amount equal to the de dano taken.\nA Humanoid slain by this attack rises 24 hours later as a Zombie under the wight's control, unless the Humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at a time.</p>",
           "chat": ""
         },
         "activation": {
@@ -384,24 +384,48 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "IZ2eO6TBmS1mfl7A": {
+            "_id": "IZ2eO6TBmS1mfl7A",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "13"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "1d8+2",
-            "damageType": "necrotic"
+            "saveDc": 13,
+            "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!YhSNHnbRARgSTDU2.gebbF6xrkk25wZNT"
+      "_key": "!actors.items!eMuHehdXjoyzoYgV.gebbF6xrkk25wZNT"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Wight",
-      "page": 334,
+      "page": 332,
       "cr": "3",
       "warnings": []
     }

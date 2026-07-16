@@ -1,6 +1,6 @@
 {
-  "_id": "TJuw2DvLxbxoQdCO",
-  "_key": "!actors!TJuw2DvLxbxoQdCO",
+  "_id": "UTY2uLdVhbhWRlhJ",
+  "_key": "!actors!UTY2uLdVhbhWRlhJ",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Weasel",
   "type": "npc",
@@ -48,7 +48,8 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "climb": 30
       },
       "senses": {
         "units": "ft",
@@ -69,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 0,
       "xp": {
-        "value": 10
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -129,13 +130,13 @@
   },
   "items": [
     {
-      "_id": "axpQ0blo6HI6nKbG",
-      "name": "Bite",
+      "_id": "FZQzonUCuaCe06fI",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 1 Perfurante de dano. WOLF Medium Beast, Unaligned AC 12 Iniciativa +2 (12) HP 11 (2d8 + 2) Spe ed 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 1 dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -153,8 +154,8 @@
           "subtype": ""
         },
         "activities": {
-          "2nETg9yDXzs1x2ez": {
-            "_id": "2nETg9yDXzs1x2ez",
+          "ht0gjf0sQLdpb4Sl": {
+            "_id": "ht0gjf0sQLdpb4Sl",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -187,13 +188,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TJuw2DvLxbxoQdCO.axpQ0blo6HI6nKbG"
+      "_key": "!actors.items!UTY2uLdVhbhWRlhJ.FZQzonUCuaCe06fI"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Weasel",
-      "page": 375,
+      "page": 372,
       "cr": "0",
       "warnings": []
     }

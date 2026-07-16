@@ -1,6 +1,6 @@
 {
-  "_id": "uwTUJTE6gUj1GHz0",
-  "_key": "!actors!uwTUJTE6gUj1GHz0",
+  "_id": "W2yM0LFVOe7p5H0U",
+  "_key": "!actors!W2yM0LFVOe7p5H0U",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Hawk",
   "type": "npc",
@@ -41,13 +41,14 @@
       "hp": {
         "value": 1,
         "max": 1,
-        "formula": "",
+        "formula": "1d4 - 1",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 10,
         "fly": 60
       },
       "senses": {
@@ -68,7 +69,7 @@
       "alignment": "Sem Tendência",
       "cr": 0,
       "xp": {
-        "value": 10
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,10 +98,15 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Hawk",
@@ -115,13 +121,13 @@
   },
   "items": [
     {
-      "_id": "30OWDYafxyLiRcWX",
-      "name": "Talons",
+      "_id": "C9z6D3aqTYZCbCnQ",
+      "name": "Garras",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: l Slash- ing de dano. HIPPOPOTAMUS Large Beast, Unaligned AC 14 I ni t ia t ive -2 (8) HP 82 ( 11d10 + 22) Speed 30 ft., Swim 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 1 dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -139,8 +145,8 @@
           "subtype": ""
         },
         "activities": {
-          "Yel1qahcTiuIZP3R": {
-            "_id": "Yel1qahcTiuIZP3R",
+          "iyVKsXZVvzCyT4sW": {
+            "_id": "iyVKsXZVvzCyT4sW",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -173,17 +179,15 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!uwTUJTE6gUj1GHz0.30OWDYafxyLiRcWX"
+      "_key": "!actors.items!W2yM0LFVOe7p5H0U.C9z6D3aqTYZCbCnQ"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Hawk",
-      "page": 364,
+      "page": 362,
       "cr": "0",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "warnings": []
     }
   }
 }

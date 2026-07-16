@@ -1,6 +1,6 @@
 {
-  "_id": "nxd4atbmDXKWtwQN",
-  "_key": "!actors!nxd4atbmDXKWtwQN",
+  "_id": "iTzSD34TNipvEhFR",
+  "_key": "!actors!iTzSD34TNipvEhFR",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Ultroloth",
   "type": "npc",
@@ -63,14 +63,14 @@
     "details": {
       "type": {
         "value": "fiend",
-        "subtype": "Yugo/0th",
+        "subtype": "yugoloth",
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Neutro",
+      "alignment": "Neutro e Mau",
       "cr": 13,
       "xp": {
-        "value": 10000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -103,26 +103,27 @@
       "ci": {
         "value": [
           "charmed",
-          "frightened"
+          "frightened",
+          "poisoned"
         ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Abissal, Infernal"
+        "custom": "Abissal"
       }
     },
     "skills": {
       "dec": {
-        "value": 1,
+        "value": 2,
         "ability": "cha"
       },
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       },
       "ste": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       }
     }
@@ -140,13 +141,13 @@
   },
   "items": [
     {
-      "_id": "8veivAZygYKukt5R",
-      "name": "Fiendish Restoration",
+      "_id": "TQacVcqu2NuZabvz",
+      "name": "Restauração Corruptora",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the ultroloth dies outside Ge- henna, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Pontos de Vida some- where in Gehenna.</p>",
+          "value": "<p>If the ultroloth dies outside Gehenna, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Pontos de Vida somewhere in Gehenna.</p>",
           "chat": ""
         },
         "activation": {
@@ -170,16 +171,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!nxd4atbmDXKWtwQN.8veivAZygYKukt5R"
+      "_key": "!actors.items!iTzSD34TNipvEhFR.TQacVcqu2NuZabvz"
     },
     {
-      "_id": "Jk0tZ15QylLHs67P",
-      "name": "Magic Resistance",
+      "_id": "TAU5Yf0oeKFwgsPx",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The ultroloth has Advantage on sav- ing throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -203,16 +204,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!nxd4atbmDXKWtwQN.Jk0tZ15QylLHs67P"
+      "_key": "!actors.items!iTzSD34TNipvEhFR.TAU5Yf0oeKFwgsPx"
     },
     {
-      "_id": "s0bSemKXr44uFRyB",
-      "name": "Habilidade",
+      "_id": "m1LC8fkdqo590TUs",
+      "name": "Ataque Múltiplo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>er:: lJ Ataque Múltiplo. The ultroloth uses Hypnotic Gaze and er:: :5 makes two Mercurial Whip attacks.</p>",
+          "value": "<p>The ultroloth uses Hypnotic Gaze and makes two Mercurial Chicote attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -237,16 +238,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!nxd4atbmDXKWtwQN.s0bSemKXr44uFRyB"
+      "_key": "!actors.items!iTzSD34TNipvEhFR.m1LC8fkdqo590TUs"
     },
     {
-      "_id": "bdu6MfLZnChEVpy8",
-      "name": "Mercurial Whip",
+      "_id": "afQ6uctCSIlIeWMr",
+      "name": "Mercurial Chicote",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 15 ft. Acerto: 25 (6d6 + 4) Energia de dano, and the ultroloth can tele- port o alvo up to 10 feet to an unoccupied space the ultroloth can see that isn't in the air.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 4,5 m. Acerto: 25 (6d6 + 4) dano de energia, and the ultroloth can teleport o alvo up to 3 m to an unoccupied space the ultroloth can see that isn't in the air.</p>",
           "chat": ""
         },
         "activation": {
@@ -264,8 +265,8 @@
           "subtype": ""
         },
         "activities": {
-          "c8dToix1RmVTBQl4": {
-            "_id": "c8dToix1RmVTBQl4",
+          "37eaZO4XSRPJ1zDv": {
+            "_id": "37eaZO4XSRPJ1zDv",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -318,7 +319,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!nxd4atbmDXKWtwQN.bdu6MfLZnChEVpy8"
+      "_key": "!actors.items!iTzSD34TNipvEhFR.afQ6uctCSIlIeWMr"
     },
     {
       "_id": "oVps8scZDdaA2HO8",
@@ -327,7 +328,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sabedoria Teste de Resistência: DC 17, cada criatura in a 30-foot Cone. Falha: 10 (3d6) Psíquico de dano, and o alvo has the Atordoado condition until the start of the ultroloth's next turn. Sucesso: The target is immune to this ultroloth's Hypnotic Gaze for 24 hours.</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 17, cada criatura in a 9 m Cone. 10 (3d6) dano psíquico, and o alvo fica com a condição Atordoado until the start of the ultroloth's next turn. O alvo is immune to this ultroloth's Hypnotic Gaze for 24 hours.</p>",
           "chat": ""
         },
         "activation": {
@@ -365,25 +366,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 3,
-                  "denomination": 6,
-                  "bonus": "",
-                  "types": [
-                    "psychic"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -391,55 +374,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "3d6",
-            "damageType": "psychic",
             "saveDc": 17,
             "saveAbility": "wis"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!nxd4atbmDXKWtwQN.oVps8scZDdaA2HO8"
-    },
-    {
-      "_id": "DPv4viYmdteYyifV",
-      "name": "Fiendish Guile (Recharge 4-6)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The ultroloth casts Dis- pel Magic, Invisibility (self only), Misty Step, or Sugges- , tion, requiring no Material components and using the same spellcasting ability as Conjuração. UUTROLOTH 3n UMBER HULK Burrowing Brute from Below</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "recharge",
-              "type": "recoverAll",
-              "formula": "4"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!nxd4atbmDXKWtwQN.DPv4viYmdteYyifV"
+      "_key": "!actors.items!iTzSD34TNipvEhFR.oVps8scZDdaA2HO8"
     },
     {
       "_id": "9MLG1pRYBWXym3RE",
@@ -448,7 +389,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The ultroloth casts one of the following spells, requiring no Material components and using In- telligence as the spellcasting ability (spell save DC. 17): À Vontade: Alter Self, Clairvoyance, Detect Magic 1/Dia Each: Dimension Door, Fogoball (level 5 version), Wall of Fogo</p>",
+          "value": "<p>The ultroloth casts one of the following spells, requiring no Material components and using Inteligência as the spellcasting ability (spell save CD 17):</p>",
           "chat": ""
         },
         "activation": {
@@ -473,13 +414,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!nxd4atbmDXKWtwQN.9MLG1pRYBWXym3RE"
+      "_key": "!actors.items!iTzSD34TNipvEhFR.9MLG1pRYBWXym3RE"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Ultroloth",
-      "page": 313,
+      "page": 311,
       "cr": "13",
       "warnings": []
     }

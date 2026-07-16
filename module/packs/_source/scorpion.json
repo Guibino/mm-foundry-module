@@ -1,6 +1,6 @@
 {
-  "_id": "VRdYcKQu8gddPd70",
-  "_key": "!actors!VRdYcKQu8gddPd70",
+  "_id": "xrUhCoF0piaLwMRO",
+  "_key": "!actors!xrUhCoF0piaLwMRO",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Scorpion",
   "type": "npc",
@@ -17,7 +17,7 @@
       },
       "con": {
         "value": 8,
-        "proficient": 1
+        "proficient": 0
       },
       "int": {
         "value": 1,
@@ -35,23 +35,24 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 11,
         "formula": ""
       },
       "hp": {
         "value": 1,
         "max": 1,
-        "formula": "",
+        "formula": "1d4 - 1",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 70
+        "walk": 10
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "blindsight": 10
       },
       "init": {
         "ability": "dex",
@@ -68,7 +69,7 @@
       "alignment": "Sem Tendência",
       "cr": 0,
       "xp": {
-        "value": 70
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,7 +98,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
@@ -113,15 +114,75 @@
     },
     "disposition": -1
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "NKNKZkTIXp1n1gB6",
+      "name": "Ferroada",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 1,5 m. Acerto: 1 dano perfurante mais 3 (1d6) dano de veneno.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "tchKINaHM6XxdPRn": {
+            "_id": "tchKINaHM6XxdPRn",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "2",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 2,
+            "attackType": "melee"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xrUhCoF0piaLwMRO.NKNKZkTIXp1n1gB6"
+    }
+  ],
   "flags": {
     "mm2024": {
       "nameEn": "Scorpion",
-      "page": 371,
+      "page": 369,
       "cr": "0",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "warnings": []
     }
   }
 }

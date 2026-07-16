@@ -1,8 +1,8 @@
 {
-  "_id": "jvz5HXlAU5GvX61W",
-  "_key": "!actors!jvz5HXlAU5GvX61W",
+  "_id": "cXLBH1H99PKdUAs6",
+  "_key": "!actors!cXLBH1H99PKdUAs6",
   "folder": "inkH4oLnh3yP5W9M",
-  "name": "Verde Hag",
+  "name": "Green Hag",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/green-hag.webp",
   "system": {
@@ -48,7 +48,8 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "swim": 30
       },
       "senses": {
         "units": "ft",
@@ -69,7 +70,7 @@
       "alignment": "Neutro e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -98,13 +99,30 @@
       },
       "languages": {
         "value": [],
-        "custom": "Common Elvish Sylvan"
+        "custom": "Comum, Élfico, Silvestre"
       }
     },
-    "skills": {}
+    "skills": {
+      "arc": {
+        "value": 2,
+        "ability": "int"
+      },
+      "dec": {
+        "value": 1,
+        "ability": "cha"
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Verde Hag",
+    "name": "Green Hag",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -116,13 +134,13 @@
   },
   "items": [
     {
-      "_id": "El4nuSLcfS5kQlQf",
-      "name": "Amphibious",
+      "_id": "DHz9PlY6eTDcEult",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The hag can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +164,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!jvz5HXlAU5GvX61W.El4nuSLcfS5kQlQf"
+      "_key": "!actors.items!cXLBH1H99PKdUAs6.DHz9PlY6eTDcEult"
     },
     {
-      "_id": "qslR9yT4WpE64cZB",
-      "name": "Coven Magic",
+      "_id": "BxaWMawdS8uay4AD",
+      "name": "Mímica",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell's normal casting time, and using Inteligência as the spell- casting ability (spell save DC 11): Augury Find Familiar 1 1 Identify, Locate Object, Scrying, or Unseen Servant. The 156 A GREEN HAG GREEN H AG •' Foul Witch of the Wicked Wild</p>",
+          "value": "<p>The hag can mimic animal sounds and humanoid voices. A creature that hears the sounds can tell they are imitations only with a successful CD 14 Sabedoria (Insight) check.</p>",
           "chat": ""
         },
         "activation": {
@@ -175,17 +193,169 @@
       },
       "flags": {
         "mm2024": {
+          "mechanics": {
+            "saveDc": 14,
+            "saveAbility": "wis"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!cXLBH1H99PKdUAs6.BxaWMawdS8uay4AD"
+    },
+    {
+      "_id": "bLT8bRvKfGI4lbfe",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura faz dois ataques de Garra.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
           "mechanics": {},
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!jvz5HXlAU5GvX61W.qslR9yT4WpE64cZB"
+      "_key": "!actors.items!cXLBH1H99PKdUAs6.bLT8bRvKfGI4lbfe"
+    },
+    {
+      "_id": "8hO6PqQBrlL0kcKL",
+      "name": "Garra",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 8 (1d8 + 4) dano cortante mais 3 (1d6) dano de veneno.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "jBCq0E7WyR1jA0yw": {
+            "_id": "jBCq0E7WyR1jA0yw",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "4",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 6,
+            "attackType": "melee",
+            "damageFormula": "1d8+4",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!cXLBH1H99PKdUAs6.8hO6PqQBrlL0kcKL"
+    },
+    {
+      "_id": "3u9cRCLYrC04I5GQ",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>While within 9 m of at least two hag allies, the hag can cast one of the following spells, requiring no Material components, using the spell's normal casting time, and using Inteligência as the spellcasting ability (spell save CD 11): Augury, Find Familiar, Identify, Locate Object, Scrying, or Unseen Servant. The hag must finish a Long Rest before using this trait to cast that spell again.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!cXLBH1H99PKdUAs6.3u9cRCLYrC04I5GQ"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Green Hag",
-      "page": 158,
+      "page": 156,
       "cr": "3",
       "warnings": []
     }

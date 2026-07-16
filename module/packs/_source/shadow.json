@@ -1,6 +1,6 @@
 {
-  "_id": "edBhki79mhvPmEO5",
-  "_key": "!actors!edBhki79mhvPmEO5",
+  "_id": "Splgfk9LCexVOFtc",
+  "_key": "!actors!Splgfk9LCexVOFtc",
   "folder": "bKQUPthn1V2Yu6Bn",
   "name": "Shadow",
   "type": "npc",
@@ -51,7 +51,8 @@
         "walk": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -65,8 +66,8 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Chaotic",
-      "cr": 0,
+      "alignment": "Caótico e Mau",
+      "cr": 0.5,
       "xp": {
         "value": 0
       },
@@ -80,24 +81,45 @@
     "traits": {
       "size": "med",
       "di": {
-        "value": [],
+        "value": [
+          "necrotic",
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "acid",
+          "cold",
+          "fire",
+          "lightning",
+          "thunder"
+        ],
         "custom": ""
       },
       "dv": {
-        "value": [],
+        "value": [
+          "radiant"
+        ],
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "exhaustion",
+          "frightened",
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "prone",
+          "restrained",
+          "unconscious"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {
@@ -120,13 +142,13 @@
   },
   "items": [
     {
-      "_id": "Maxy6A553TUJ4SHM",
-      "name": "Amorphous",
+      "_id": "2ii9sVEB3ikqU3S9",
+      "name": "Amorfo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The shadow can move through a space as narrow as l inch without expending extra move- ment to do so.</p>",
+          "value": "<p>A criatura pode se mover por um espaço tão estreito quanto 2,5 cm sem gastar movimento extra para isso.</p>",
           "chat": ""
         },
         "activation": {
@@ -150,7 +172,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!edBhki79mhvPmEO5.Maxy6A553TUJ4SHM"
+      "_key": "!actors.items!Splgfk9LCexVOFtc.2ii9sVEB3ikqU3S9"
     },
     {
       "_id": "XpMtjU7WGHi4JtLg",
@@ -159,7 +181,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in sunlight, the shadow has Disadvantage on D20 Tests.</p>",
+          "value": "<p>While in sunlight, the shadow has Desvantagem on D20 Tests.</p>",
           "chat": ""
         },
         "activation": {
@@ -183,7 +205,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!edBhki79mhvPmEO5.XpMtjU7WGHi4JtLg"
+      "_key": "!actors.items!Splgfk9LCexVOFtc.XpMtjU7WGHi4JtLg"
     },
     {
       "_id": "4Ck3p1JaC4ZROLLp",
@@ -192,7 +214,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4 alcance 5 ft. Acerto: 5 (1d6 + 2) Necrótico de dano, and o alvo's Força score decreases by 1d4. The target dies if this reduces that score to 0. If a Humanoid is slain by this attack, a Shadow rises from the corpse 1d4 hours later. 0 Vl VI BONUS ACTIONS 0 aJ</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano necrótico, and o alvo's Força score decreases by 1d4. O alvo dies if this reduces that score to 0. If a Humanoid is slain by this attack, a Shadow rises from the corpse 1d4 hours later.</p>",
           "chat": ""
         },
         "activation": {
@@ -264,20 +286,20 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!edBhki79mhvPmEO5.4Ck3p1JaC4ZROLLp"
+      "_key": "!actors.items!Splgfk9LCexVOFtc.4Ck3p1JaC4ZROLLp"
     },
     {
-      "_id": "A6JrhmKAjXzKTBP8",
-      "name": "Shadow Stealth",
+      "_id": "LVSj40M6XpdZqi6f",
+      "name": "Furtividade nas Sombras",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in Dim Light or Darkness, the 4: shadow takes the Hide action. \\ 2 SHADOW DEMON Vestige of Evil</p>",
+          "value": "<p>Sob Luz Fraca ou Escuridão, a criatura realiza a ação Esconder-se.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "action",
+          "type": "bonus",
           "value": null,
           "condition": ""
         },
@@ -298,14 +320,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!edBhki79mhvPmEO5.A6JrhmKAjXzKTBP8"
+      "_key": "!actors.items!Splgfk9LCexVOFtc.LVSj40M6XpdZqi6f"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Shadow",
-      "page": 274,
-      "cr": "0",
+      "page": 272,
+      "cr": "1/2",
       "warnings": []
     }
   }

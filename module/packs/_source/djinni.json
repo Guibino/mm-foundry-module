@@ -1,6 +1,6 @@
 {
-  "_id": "eyTYwW9xEBEptME4",
-  "_key": "!actors!eyTYwW9xEBEptME4",
+  "_id": "pEgNVPmtK2wH91uu",
+  "_key": "!actors!pEgNVPmtK2wH91uu",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Djinni",
   "type": "npc",
@@ -48,6 +48,7 @@
       "movement": {
         "units": "ft",
         "hover": true,
+        "walk": 30,
         "fly": 90
       },
       "senses": {
@@ -62,14 +63,14 @@
     "details": {
       "type": {
         "value": "elemental",
-        "subtype": "G enie",
+        "subtype": "genie",
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Neutro",
+      "alignment": "Caótico e Bom",
       "cr": 11,
       "xp": {
-        "value": 7200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -119,13 +120,13 @@
   },
   "items": [
     {
-      "_id": "rILcxYbUP5L051IN",
-      "name": "Elemental Restoration",
+      "_id": "pG315TfaTT7dgsF4",
+      "name": "Restauração Elemental",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the djinni d~es outside the Elemental Plane of Air, its body dissolves into mist, and it gains a new body in 1d4 days, reviving with all its Pontos de Vida somewhere on the Plane of Air.</p>",
+          "value": "<p>If the djinni dies outside the Elemental Plane of Air, its body dissolves into mist, and it gains a new body in 1d4 days, reviving with all its Pontos de Vida somewhere on the Plane of Air.</p>",
           "chat": ""
         },
         "activation": {
@@ -149,16 +150,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eyTYwW9xEBEptME4.rILcxYbUP5L051IN"
+      "_key": "!actors.items!pEgNVPmtK2wH91uu.pG315TfaTT7dgsF4"
     },
     {
-      "_id": "meZAafzYakdkCSve",
-      "name": "Magic Resistance",
+      "_id": "9xRePaBEWJQn8igX",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The djinni has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -182,16 +183,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eyTYwW9xEBEptME4.meZAafzYakdkCSve"
+      "_key": "!actors.items!pEgNVPmtK2wH91uu.9xRePaBEWJQn8igX"
     },
     {
-      "_id": "ougLcSJOTo5kxLim",
-      "name": "Wishes",
+      "_id": "UpcYd0H07U10x2Wm",
+      "name": "Desejos",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The djinni has a 30 percent chance of knowing the Wish spell. If the djinni knows it, the djinni can cast it only on behalf of a non-genie creature who commu- nicates a wish in a way the djinni can understand. If the djinni casts the spell for the creature, the djinni suffers none of the spell's stress. Once the djinni has cast it three times, the djinni can't do so again for 365 days. er:: ACTIONS ti) ti) 0 Ataque Múltiplo. The djinni makes three attacks, using er:: co w Storm Blade or Storm Bolt Jn any combination.</p>",
+          "value": "<p>The djinni has a 30 percent chance of knowing the Wish spell. If the djinni knows it, the djinni can cast it only on behalf of a non-genie creature who communicates a wish in a way the djinni can understand. If the djinni casts the spell for the creature, the djinni suffers none of the spell's stress. Once the djinni has cast it three times, the djinni can't do so again for 365 days.</p>",
           "chat": ""
         },
         "activation": {
@@ -215,128 +216,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eyTYwW9xEBEptME4.ougLcSJOTo5kxLim"
+      "_key": "!actors.items!pEgNVPmtK2wH91uu.UpcYd0H07U10x2Wm"
     },
     {
-      "_id": "wvBKc3ahdR8WCbob",
-      "name": "Storm Blade",
+      "_id": "rDjHUWJpvT55sxVM",
+      "name": "Ataque Múltiplo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 5 feet. Acerto: 12 (2d6 + 5) Cortante de dano plus 7 (2d6) Light- ning de dano.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {
-            "toHit": 9,
-            "attackType": "melee",
-            "damageFormula": "2d6+5",
-            "damageType": "slashing"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!eyTYwW9xEBEptME4.wvBKc3ahdR8WCbob"
-    },
-    {
-      "_id": "TF55Xtijhr6oZ8LF",
-      "name": "Storm Bolt",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +9, range 120 feet. Acerto: 13 (3d8) Trovejante de dano. If o alvo is a Large or smaller creature, it has the Caído condition.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {
-            "toHit": 9,
-            "attackType": "ranged",
-            "damageFormula": "3d8",
-            "damageType": "thunder"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!eyTYwW9xEBEptME4.TF55Xtijhr6oZ8LF"
-    },
-    {
-      "_id": "SGmAad0gS24fG5yu",
-      "name": "Create Whirlwind",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The djinni conjures a whirlwind at a point it can see within 120 feet. The whirlwind fills a 20-foot-radius, 60-foot-high Cylinder centered on that point. The whirlwind lasts until the djinni's Concentra- tion on it ends. The djinni can move the whirlwind up to 20 feet at the start of each of its turns. Whenever the whirlwind enters a creature's space or a creature enters the whirlwind, that creature is subjected to the following effect. Força Teste de Resistência: DC 17 (a creature makes this save qnly once per turn, and the djinni is unaffected). Falha: While in the whirlwind, o alvo has the Impedido condition and moves with the whirlwind. At the start of each of its turns, the Impedido target takes 21 (6d6) Trovejante de dano. At the end of each of its turns, o alvo repeats the save, ending the effect on itself on a success.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {
-            "saveDc": 17,
-            "saveAbility": "str"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!eyTYwW9xEBEptME4.SGmAad0gS24fG5yu"
-    },
-    {
-      "_id": "9RdjCdcFsUD5RfXt",
-      "name": "Conjuração",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The djinni casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell sav~ DC 17): , À Vontade: Detect Evil and Good, Detect Magic 2/Dia Each: Create Food and Water (can create wine instead of water), Tongues, Wind Walk 1/Dia Each: Creation, Gaseous Form, Invisibility, Major Image, Plane Shift ~ D JINNI A 99 DOPPELGANGE R . Shape-Shifting Infiltrator</p>",
+          "value": "<p>The djinni makes three attacks, using Storm Blade or Storm Bolt in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -361,13 +250,270 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eyTYwW9xEBEptME4.9RdjCdcFsUD5RfXt"
+      "_key": "!actors.items!pEgNVPmtK2wH91uu.rDjHUWJpvT55sxVM"
+    },
+    {
+      "_id": "tBgCvvs48W3OuU7k",
+      "name": "Storm Blade",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 1,5 m. Acerto: 12 (2d6 + 5) dano cortante mais 7 (2d6) dano elétrico.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "loTZULg6e2dTzbOA": {
+            "_id": "loTZULg6e2dTzbOA",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "9",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "5",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9,
+            "attackType": "melee",
+            "damageFormula": "2d6+5",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!pEgNVPmtK2wH91uu.tBgCvvs48W3OuU7k"
+    },
+    {
+      "_id": "bC8pW0I6H7S82dwd",
+      "name": "Storm Bolt",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +9, distância 36 m. Acerto: 13 (3d8) dano trovejante. If o alvo is a Large or smaller creature, it fica com a condição Caído.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "lELX9UAXeihOg0b9": {
+            "_id": "lELX9UAXeihOg0b9",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "9",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 8,
+                  "bonus": "",
+                  "types": [
+                    "thunder"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9,
+            "attackType": "ranged",
+            "damageFormula": "3d8",
+            "damageType": "thunder"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!pEgNVPmtK2wH91uu.bC8pW0I6H7S82dwd"
+    },
+    {
+      "_id": "c73w2FugGkbE0lSu",
+      "name": "Create Whirlwind",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The djinni conjures a whirlwind at a point it can see within 36 m. The whirlwind fills a 6 m-radius, 18 m-high Cylinder centered on that point. The whirlwind lasts until the djinni's Concentration on it ends. The djinni can move the whirlwind up to 6 m at the start of each of its turns.\nWhenever the whirlwind enters uma criatura's space or uma criatura enters the whirlwind, that creature is subjected to the following effect. Teste de Resistência de Força: CD 17 (uma criatura makes this save only once per turn, and the djinni is unaffected). While in the whirlwind, o alvo fica com a condição Impedido and moves with the whirlwind. At the start of each of its turns, the Impedido target takes 21 (6d6) dano trovejante. At the end of each of its turns, o alvo repeats the save, ending the effect on itself on a success.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "0IXy1VUp3tsSaqjA": {
+            "_id": "0IXy1VUp3tsSaqjA",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "17"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 17,
+            "saveAbility": "str"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!pEgNVPmtK2wH91uu.c73w2FugGkbE0lSu"
+    },
+    {
+      "_id": "9RdjCdcFsUD5RfXt",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The djinni casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 17):</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!pEgNVPmtK2wH91uu.9RdjCdcFsUD5RfXt"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Djinni",
-      "page": 101,
+      "page": 99,
       "cr": "11",
       "warnings": []
     }

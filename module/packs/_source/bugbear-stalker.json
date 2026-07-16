@@ -1,6 +1,6 @@
 {
-  "_id": "MKVFV0Xh72XGumxf",
-  "_key": "!actors!MKVFV0Xh72XGumxf",
+  "_id": "uCnUqF5TYaNO7xSM",
+  "_key": "!actors!uCnUqF5TYaNO7xSM",
   "folder": "inkH4oLnh3yP5W9M",
   "name": "Bugbear Stalker",
   "type": "npc",
@@ -62,14 +62,14 @@
     "details": {
       "type": {
         "value": "fey",
-        "subtype": "Gohlinoid",
+        "subtype": "goblinoid",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -131,7 +131,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The bugbear needn't spend extra movement to move a creature it is grappling.</p>",
+          "value": "<p>The bugbear needn't spend extra movement to move uma criatura it is grappling.</p>",
           "chat": ""
         },
         "activation": {
@@ -155,7 +155,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MKVFV0Xh72XGumxf.2ObSaHEIonS4sLUe"
+      "_key": "!actors.items!uCnUqF5TYaNO7xSM.2ObSaHEIonS4sLUe"
     },
     {
       "_id": "URla2xbAiYxzBGk1",
@@ -164,7 +164,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The bugbear makes two Javelin or Morn- ingstar attacks.</p>",
+          "value": "<p>The bugbear makes two Azagaia or Estrela-da-Manhã attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -189,16 +189,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MKVFV0Xh72XGumxf.URla2xbAiYxzBGk1"
+      "_key": "!actors.items!uCnUqF5TYaNO7xSM.URla2xbAiYxzBGk1"
     },
     {
-      "_id": "5IT8qfAZNlSWP0lF",
-      "name": "Javelin",
+      "_id": "GFceZCZ6zcid97OK",
+      "name": "Azagaia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>· Rolagem de Ataque Corpo a Corpo ou à Distância: +5, alcance 10 ft. or range 30/120 ft. Acerto: 13 (3d6 + 3) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +5, alcance 3 m. or distância 9/36 m. Acerto: 13 (3d6 + 3) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -216,8 +216,8 @@
           "subtype": ""
         },
         "activities": {
-          "KYbXbiobQh6e2eUw": {
-            "_id": "KYbXbiobQh6e2eUw",
+          "m6h2xvbfUb3054Gr": {
+            "_id": "m6h2xvbfUb3054Gr",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -270,16 +270,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MKVFV0Xh72XGumxf.5IT8qfAZNlSWP0lF"
+      "_key": "!actors.items!uCnUqF5TYaNO7xSM.GFceZCZ6zcid97OK"
     },
     {
-      "_id": "3i89fvamMykHb13g",
-      "name": "Morningstar",
+      "_id": "Wm7JT2KR1LK3m9BM",
+      "name": "Estrela-da-Manhã",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5 (with Advantage if o alvo is Agarrado by the bugbear), alcance 10 ft. Acerto: 12 (2d8 + 3) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5 (with Vantagem if o alvo is Agarrado by the bugbear), alcance 3 m. Acerto: 12 (2d8 + 3) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -297,8 +297,8 @@
           "subtype": ""
         },
         "activities": {
-          "fxvi6vMz60vG7YsI": {
-            "_id": "fxvi6vMz60vG7YsI",
+          "gCNgzprBaUsn59l4": {
+            "_id": "gCNgzprBaUsn59l4",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -351,7 +351,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MKVFV0Xh72XGumxf.3i89fvamMykHb13g"
+      "_key": "!actors.items!uCnUqF5TYaNO7xSM.Wm7JT2KR1LK3m9BM"
     },
     {
       "_id": "lVHRdZ5RrcTyQmdS",
@@ -360,7 +360,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 13, one Medium or smaller creature the bugbear can see within 10 feet. Falha: The target has the Agarrado condition (escape DC 13). BUGBEARS BUGBEAR WARRIOR Medium Fey (Goblinoid), Chaotic Ev il AC 14 Iniciativa +2 (12) HP 33 (6d8 + 6) Speed 30 ft. MO D SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 13, one Medium or smaller creature the bugbear can see within 3 m. O alvo fica com a condição Agarrado (CD para escapar 13).</p>",
           "chat": ""
         },
         "activation": {
@@ -412,13 +412,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MKVFV0Xh72XGumxf.lVHRdZ5RrcTyQmdS"
+      "_key": "!actors.items!uCnUqF5TYaNO7xSM.lVHRdZ5RrcTyQmdS"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Bugbear Stalker",
-      "page": 64,
+      "page": 62,
       "cr": "3",
       "warnings": []
     }

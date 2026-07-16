@@ -1,6 +1,6 @@
 {
-  "_id": "rqQdiah9P4gk2FGV",
-  "_key": "!actors!rqQdiah9P4gk2FGV",
+  "_id": "KhdJ1cmTKtqexlrC",
+  "_key": "!actors!KhdJ1cmTKtqexlrC",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Noble",
   "type": "npc",
@@ -68,7 +68,7 @@
       "alignment": "Neutro",
       "cr": 0.125,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -97,7 +97,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Common plus two othe r languages"
+        "custom": "Common plus two other languages"
       }
     },
     "skills": {
@@ -128,13 +128,13 @@
   },
   "items": [
     {
-      "_id": "GebiniOGzdvBEBH9",
-      "name": "Rapier",
+      "_id": "lak3aPLNob7sAWis",
+      "name": "Rapieira",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 5 (1d8 + l) Perfurante de dano. < R EACTIONS 1 0 . ' 2 Parry. Trigger: The noble is hit by a melee attack roll a: while holding a weapon. Response : The noble adds 2 to its AC against that attack, possibly causing it to miss. NOBL ES Ro y als and Rich Folk</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 5 (1d8 + 1) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -152,8 +152,8 @@
           "subtype": ""
         },
         "activities": {
-          "cwcSwPazc1UGkNqd": {
-            "_id": "cwcSwPazc1UGkNqd",
+          "g3g3JCCoQAz4uExT": {
+            "_id": "g3g3JCCoQAz4uExT",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -174,15 +174,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "1",
                   "types": [
                     "piercing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "1d8+l"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -200,19 +200,53 @@
           "mechanics": {
             "toHit": 3,
             "attackType": "melee",
-            "damageFormula": "1d8+l",
+            "damageFormula": "1d8+1",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!rqQdiah9P4gk2FGV.GebiniOGzdvBEBH9"
+      "_key": "!actors.items!KhdJ1cmTKtqexlrC.lak3aPLNob7sAWis"
+    },
+    {
+      "_id": "jOqUICO6FbOvb0Y8",
+      "name": "Aparar",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura é atingida por uma rolagem de ataque corpo a corpo enquanto empunha uma arma. Ela adiciona 2 à sua CA contra esse ataque, podendo fazê-lo errar.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!KhdJ1cmTKtqexlrC.jOqUICO6FbOvb0Y8"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Noble",
-      "page": 229,
+      "page": 227,
       "cr": "1/8",
       "warnings": []
     }

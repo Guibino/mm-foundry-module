@@ -1,6 +1,6 @@
 {
-  "_id": "rRgVj53ijiZeFcky",
-  "_key": "!actors!rRgVj53ijiZeFcky",
+  "_id": "DmS2oBCQu0hZ1lQI",
+  "_key": "!actors!DmS2oBCQu0hZ1lQI",
   "folder": "UIhMG4gNrr0aGWHc",
   "name": "Myconid Sovereign",
   "type": "npc",
@@ -12,7 +12,7 @@
         "proficient": 0
       },
       "dex": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "con": {
@@ -51,7 +51,8 @@
         "walk": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 120
       },
       "init": {
         "ability": "dex",
@@ -68,7 +69,7 @@
       "alignment": "Leal e Neutro",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -115,13 +116,13 @@
   },
   "items": [
     {
-      "_id": "PQ0Nvm6L42UjHvpg",
-      "name": "Sun Sickness",
+      "_id": "JG0feDPaXAp9L1bs",
+      "name": "Enfermidade Solar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in sunlight, the myconid has Dis- advantage on D20 Tests. The myconid dies if it spends more than 1 hour in sunlight.</p>",
+          "value": "<p>While in sunlight, the myconid has Desvantagem on D20 Tests. The myconid dies if it spends more than 1 hour in sunlight.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,7 +146,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!rRgVj53ijiZeFcky.PQ0Nvm6L42UjHvpg"
+      "_key": "!actors.items!DmS2oBCQu0hZ1lQI.JG0feDPaXAp9L1bs"
     },
     {
       "_id": "aDd3OA55F1392aBx",
@@ -154,7 +155,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The myconid makes one Slam attack and uses Pacifying Spores.</p>",
+          "value": "<p>The myconid makes one Pancada attack and uses Pacifying Spores.</p>",
           "chat": ""
         },
         "activation": {
@@ -179,16 +180,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!rRgVj53ijiZeFcky.aDd3OA55F1392aBx"
+      "_key": "!actors.items!DmS2oBCQu0hZ1lQI.aDd3OA55F1392aBx"
     },
     {
-      "_id": "zqjqSZ9Ji7lk25ot",
-      "name": "Slam",
+      "_id": "cJtWSg0bYkd2ogXp",
+      "name": "Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 6 (2d4 + l) Concussão de dano plus 5 (2d4) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 6 (2d4 + 1) dano de concussão mais 5 (2d4) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -206,8 +207,8 @@
           "subtype": ""
         },
         "activities": {
-          "DBsi8lNK8pza7tWB": {
-            "_id": "DBsi8lNK8pza7tWB",
+          "853Cq77QqVHlteUt": {
+            "_id": "853Cq77QqVHlteUt",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -228,15 +229,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "1",
                   "types": [
                     "bludgeoning"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "2d4+l"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -254,13 +255,13 @@
           "mechanics": {
             "toHit": 3,
             "attackType": "melee",
-            "damageFormula": "2d4+l",
+            "damageFormula": "2d4+1",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!rRgVj53ijiZeFcky.zqjqSZ9Ji7lk25ot"
+      "_key": "!actors.items!DmS2oBCQu0hZ1lQI.cJtWSg0bYkd2ogXp"
     },
     {
       "_id": "Bfc2RgOCJMlZtZiV",
@@ -269,7 +270,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The myconid releases spores at a Medium or Small corpse within 5 feet of it that wasn't a Construct or an Undead. In 24 hours, the corpse rises as a Myconid Spore Servant. The corpse stays animate for 1d4 + 1 weeks or until destroyed, and it can't be animated again in this way.</p>",
+          "value": "<p>The myconid releases spores at a Medium or Small corpse within 1,5 m of it that wasn't a Construct or an Undead. In 24 hours, the corpse rises as a Myconid Spore Servant. The corpse stays animate for 1d4 + 1 weeks or until destroyed, and it can't be animated again in this way.</p>",
           "chat": ""
         },
         "activation": {
@@ -299,7 +300,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!rRgVj53ijiZeFcky.Bfc2RgOCJMlZtZiV"
+      "_key": "!actors.items!DmS2oBCQu0hZ1lQI.Bfc2RgOCJMlZtZiV"
     },
     {
       "_id": "ctC6HSEKgqNeQxJG",
@@ -308,7 +309,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 12, uma criatura the myconid can see within 70 feet. Falha: The target has the Atordoado condition and repeats the' save at the end of each of its turns, ending the effect on itself on a success. After l minute, it succeeds au- • tomatically.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 12, uma criatura the myconid can see within 3 m. O alvo fica com a condição Atordoado and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</p>",
           "chat": ""
         },
         "activation": {
@@ -360,7 +361,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!rRgVj53ijiZeFcky.ctC6HSEKgqNeQxJG"
+      "_key": "!actors.items!DmS2oBCQu0hZ1lQI.ctC6HSEKgqNeQxJG"
     },
     {
       "_id": "Ch6aGjNHILXX2CLh",
@@ -369,7 +370,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The myconid expels spores in a 30-foot</p>",
+          "value": "<p>The myconid expels spores in a 9 m Emanation originating from itself. Creatures in that area with an Inteligência score of 2 or higher that aren't Constructs, Elementals, or Undead gain telepatia with a distância of 9 m for 1 hour.</p>",
           "chat": ""
         },
         "activation": {
@@ -394,47 +395,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!rRgVj53ijiZeFcky.Ch6aGjNHILXX2CLh"
-    },
-    {
-      "_id": "cnDaDqnNREhWgRuX",
-      "name": "Emanation originating from itself",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Creatures in that area with an Inteligência score of 2 or higher that aren't Constructs, Elementals, or Undead gain telepatia with a range of 30 feet for l hour. MYCONIDS 223 NALF ES HN EE Demon of Intimidation and Hopelessness</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!rRgVj53ijiZeFcky.cnDaDqnNREhWgRuX"
+      "_key": "!actors.items!DmS2oBCQu0hZ1lQI.Ch6aGjNHILXX2CLh"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Myconid Sovereign",
-      "page": 225,
+      "page": 223,
       "cr": "2",
       "warnings": []
     }

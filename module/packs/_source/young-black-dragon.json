@@ -1,8 +1,8 @@
 {
-  "_id": "OoYL5DVJpZlvAdZu",
-  "_key": "!actors!OoYL5DVJpZlvAdZu",
+  "_id": "JHx7m8o8KhUT0zLB",
+  "_key": "!actors!JHx7m8o8KhUT0zLB",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Jovem Negro Dragão",
+  "name": "Young Black Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/young-black-dragon.webp",
   "system": {
@@ -39,8 +39,8 @@
         "formula": ""
       },
       "hp": {
-        "value": 727,
-        "max": 727,
+        "value": 127,
+        "max": 127,
         "formula": "15d10 + 45",
         "temp": null,
         "tempmax": null
@@ -48,7 +48,9 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40,
+        "fly": 80,
+        "swim": 40
       },
       "senses": {
         "units": "ft",
@@ -63,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Chromatic",
+        "subtype": "chromatic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Mau",
       "cr": 7,
       "xp": {
-        "value": 2900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -110,13 +112,13 @@
         "ability": "wis"
       },
       "ste": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       }
     }
   },
   "prototypeToken": {
-    "name": "Jovem Negro Dragão",
+    "name": "Young Black Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -128,13 +130,13 @@
   },
   "items": [
     {
-      "_id": "Ylp566Ks7USS4kgZ",
-      "name": "Amphibious",
+      "_id": "Np4gHiuPQPkK0izX",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -158,7 +160,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!OoYL5DVJpZlvAdZu.Ylp566Ks7USS4kgZ"
+      "_key": "!actors.items!JHx7m8o8KhUT0zLB.Np4gHiuPQPkK0izX"
     },
     {
       "_id": "eOll9knFV95HEzo7",
@@ -167,7 +169,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks.</p>",
+          "value": "<p>A criatura faz três ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -192,16 +194,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!OoYL5DVJpZlvAdZu.eOll9knFV95HEzo7"
+      "_key": "!actors.items!JHx7m8o8KhUT0zLB.eOll9knFV95HEzo7"
     },
     {
-      "_id": "fQNoCTU2hOLsUogq",
-      "name": "Rend",
+      "_id": "QgKaY8R43HJmQknM",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 10 ft. Acerto: 9 (2d4 + 4) Cortante de dano plus 3 (1d6) Ácido de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 3 m. Acerto: 9 (2d4 + 4) dano cortante mais 3 (1d6) dano de ácido.</p>",
           "chat": ""
         },
         "activation": {
@@ -219,8 +221,8 @@
           "subtype": ""
         },
         "activities": {
-          "E8le01ZSxxX37PJF": {
-            "_id": "E8le01ZSxxX37PJF",
+          "fa7oTBVew29rBpkg": {
+            "_id": "fa7oTBVew29rBpkg",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -273,16 +275,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!OoYL5DVJpZlvAdZu.fQNoCTU2hOLsUogq"
+      "_key": "!actors.items!JHx7m8o8KhUT0zLB.QgKaY8R43HJmQknM"
     },
     {
-      "_id": "sMFo9jonjQ2EhJih",
-      "name": "Ácido Breath (Recharge 5-6)",
+      "_id": "6VTMNXAVraqcaSDo",
+      "name": "Sopro de Ácido (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 0 14, cada criatura in a 30-foot-long, 5-foot-wide Line. z CY Falha: 49 (14d6) Ácido de dano. Sucesso: Metade do dano. <( ADULT BLACK DRAGON Hug e Dr ago n (Chromat ic), Chaot ic E1Ji l AC 19 Ini tiative + 12 (22) HP 195 (17d12 + 85) Spe ed 40 ft., Fly 80 ft., Swim 40 ft. MOD SA VE MOD SA VE MOD SAVE</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 14, cada criatura in a 9 m-long, 1,5 m-wide Line. 49 (14d6) dano de ácido. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -306,8 +308,8 @@
           "subtype": ""
         },
         "activities": {
-          "BHghEoklfHConf3P": {
-            "_id": "BHghEoklfHConf3P",
+          "hIJlLquMRcRppGV3": {
+            "_id": "hIJlLquMRcRppGV3",
             "type": "save",
             "activation": {
               "type": "action",
@@ -321,30 +323,12 @@
               ],
               "dc": {
                 "calculation": "",
-                "formula": "0"
+                "formula": "14"
               }
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 14,
-                  "denomination": 6,
-                  "bonus": "",
-                  "types": [
-                    "acid"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -352,21 +336,19 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "14d6",
-            "damageType": "acid",
-            "saveDc": 0,
+            "saveDc": 14,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!OoYL5DVJpZlvAdZu.sMFo9jonjQ2EhJih"
+      "_key": "!actors.items!JHx7m8o8KhUT0zLB.6VTMNXAVraqcaSDo"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Young Black Dragon",
-      "page": 40,
+      "page": 38,
       "cr": "7",
       "warnings": []
     }

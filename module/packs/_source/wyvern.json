@@ -1,6 +1,6 @@
 {
-  "_id": "NGbVuqsGGGxQqi1Y",
-  "_key": "!actors!NGbVuqsGGGxQqi1Y",
+  "_id": "JovGb4aYNpuxUbEU",
+  "_key": "!actors!JovGb4aYNpuxUbEU",
   "folder": "lhndsA6Aflaa0nF6",
   "name": "Wyvern",
   "type": "npc",
@@ -48,7 +48,8 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "fly": 80
       },
       "senses": {
         "units": "ft",
@@ -69,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 6,
       "xp": {
-        "value": 2300
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -98,10 +99,15 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Wyvern",
@@ -122,7 +128,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The wyvern makes one Bite attack and one Sting attack.</p>",
+          "value": "<p>The wyvern makes one Mordida attack and one Ferroada attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,16 +153,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NGbVuqsGGGxQqi1Y.Uxd8gTMelbE2iPs1"
+      "_key": "!actors.items!JovGb4aYNpuxUbEU.Uxd8gTMelbE2iPs1"
     },
     {
-      "_id": "d9aNbNtzFblTqbKK",
-      "name": "Bite",
+      "_id": "Uv8Bendn2gmk9Goh",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 13 (2d8 + 4) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 13 (2d8 + 4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -174,8 +180,8 @@
           "subtype": ""
         },
         "activities": {
-          "oUyTgMaXrOqiunMr": {
-            "_id": "oUyTgMaXrOqiunMr",
+          "oDWlUvxlIAX4e7OM": {
+            "_id": "oDWlUvxlIAX4e7OM",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -228,16 +234,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NGbVuqsGGGxQqi1Y.d9aNbNtzFblTqbKK"
+      "_key": "!actors.items!JovGb4aYNpuxUbEU.Uv8Bendn2gmk9Goh"
     },
     {
-      "_id": "MZFqacVXsmBFXhpw",
-      "name": "Sting",
+      "_id": "tdpvBg2RGE8TiCL4",
+      "name": "Ferroada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 10 ft. Acerto: 11 (2d6 + 4) Perfurante de dano plus 24 (7d6) Veneno de dano, and o alvo has the Envenenado condition until the start of the wyvern's next turn. WYVERN 337 XORN Treasure-Devouring Glutton</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 3 m. Acerto: 11 (2d6 + 4) dano perfurante mais 24 (7d6) dano de veneno, and o alvo fica com a condição Envenenado until the start of the wyvern's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -255,8 +261,8 @@
           "subtype": ""
         },
         "activities": {
-          "1kP5RIphYahyITop": {
-            "_id": "1kP5RIphYahyITop",
+          "duRaTkvU49JMMEjm": {
+            "_id": "duRaTkvU49JMMEjm",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -309,13 +315,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NGbVuqsGGGxQqi1Y.MZFqacVXsmBFXhpw"
+      "_key": "!actors.items!JovGb4aYNpuxUbEU.tdpvBg2RGE8TiCL4"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Wyvern",
-      "page": 339,
+      "page": 337,
       "cr": "6",
       "warnings": []
     }

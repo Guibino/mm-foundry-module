@@ -1,6 +1,6 @@
 {
-  "_id": "4QkfCFED8cOglWoY",
-  "_key": "!actors!4QkfCFED8cOglWoY",
+  "_id": "6usxIxbQOyPJsaaW",
+  "_key": "!actors!6usxIxbQOyPJsaaW",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Wererat",
   "type": "npc",
@@ -29,7 +29,7 @@
       },
       "cha": {
         "value": 8,
-        "proficient": 1
+        "proficient": 0
       }
     },
     "attributes": {
@@ -63,14 +63,14 @@
     "details": {
       "type": {
         "value": "monstrosity",
-        "subtype": "Lycanthrope",
+        "subtype": "lycanthrope",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Mau",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -80,7 +80,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -132,7 +132,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The wererat makes two attacks, using Scratch or Hand Crossbow in any combination. It can replace one attack with a Bite attack.</p>",
+          "value": "<p>The wererat makes two attacks, using Scratch or Besta de Mão in any combination. It can replace one attack with a Mordida attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -157,16 +157,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!4QkfCFED8cOglWoY.IAb5U9CaktEOmH6k"
+      "_key": "!actors.items!6usxIxbQOyPJsaaW.IAb5U9CaktEOmH6k"
     },
     {
-      "_id": "muwrqvlV0sloXavW",
-      "name": "Bite (Rat or Hybrid Form Only)",
+      "_id": "qBeUVp69GwpQ0Mhm",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 8 (2d4 + 3) Perfurante darY!age. If the tar- get is a Humanoid, it is subjected to the following ef- fect. Constituição Teste de Resistência: DC 11. Falha: The tar- get is cursed. If the cursed target drops to O Pontos de Vida, it instead becomes a Wererat under the DM's control and has 70 Pontos de Vida. Sucesso: The target is immune to this wererat's curse for 24 hours .</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 8 (2d4 + 3) dano perfurante. If o alvo is a Humanoid, it is subjected to the following effect. Teste de Resistência de Constituição: CD 11. O alvo is cursed. If the cursed target drops to 0 Pontos de Vida, it instead becomes a Wererat under the DM's control and has 10 Pontos de Vida. O alvo is immune to this wererat's curse for 24 hours.</p>",
           "chat": ""
         },
         "activation": {
@@ -184,8 +184,8 @@
           "subtype": ""
         },
         "activities": {
-          "C3hSNf5COONAakK6": {
-            "_id": "C3hSNf5COONAakK6",
+          "3fKS2g3V2pNkcW43": {
+            "_id": "3fKS2g3V2pNkcW43",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -204,7 +204,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -214,13 +232,15 @@
           "mechanics": {
             "toHit": 5,
             "attackType": "melee",
+            "damageFormula": "2d4+3",
+            "damageType": "piercing",
             "saveDc": 11,
             "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!4QkfCFED8cOglWoY.muwrqvlV0sloXavW"
+      "_key": "!actors.items!6usxIxbQOyPJsaaW.qBeUVp69GwpQ0Mhm"
     },
     {
       "_id": "tw7gWwLU6phYjNSk",
@@ -229,7 +249,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 6 (1d6 + 3) Cortante de dano. Hand Crossbow (Humanoid or Hybrid Form Only). Rolagem de Ataque à Distância: +5, range 30/120 ft . Acerto: 6 (1d6 + 3) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 6 (1d6 + 3) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -301,16 +321,97 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!4QkfCFED8cOglWoY.tw7gWwLU6phYjNSk"
+      "_key": "!actors.items!6usxIxbQOyPJsaaW.tw7gWwLU6phYjNSk"
     },
     {
-      "_id": "ehSyDNXWSjeRnkAs",
-      "name": "Habilidade",
+      "_id": "6jBXG2CbF2oxqmzi",
+      "name": "Besta de Mão",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>. Shape-Shift. The wererat shape-shifts into a Medium rat-humanoid hybrid or a Small rat, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is , wearing or carrying isn't transformed. ~ WEREBOAR I WERERAT WERETIGER Medium or Small Monstrosity (Lycanth r ope), Neutral AC 72 Iniciativa +2 (12) HP 120 (l 6d8 + 48) . Speed 30 ft., 40 ft. (tiger form only) M OD SAV E MOD S AVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +5, distância 9/36 m. Acerto: 6 (1d6 + 3) dano perfurante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "mBNbsgzRDIv0aD4Q": {
+            "_id": "mBNbsgzRDIv0aD4Q",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "ranged",
+            "damageFormula": "1d6+3",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!6usxIxbQOyPJsaaW.6jBXG2CbF2oxqmzi"
+    },
+    {
+      "_id": "IFGkAx8Q7Wz2j5kH",
+      "name": "Mudar de Forma",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The wererat shape-shifts into a Medium rat-humanoid hybrid or a Small rat, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed.</p>",
           "chat": ""
         },
         "activation": {
@@ -335,13 +436,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!4QkfCFED8cOglWoY.ehSyDNXWSjeRnkAs"
+      "_key": "!actors.items!6usxIxbQOyPJsaaW.IFGkAx8Q7Wz2j5kH"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Wererat",
-      "page": 327,
+      "page": 325,
       "cr": "2",
       "warnings": []
     }

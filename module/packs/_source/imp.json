@@ -1,0 +1,330 @@
+{
+  "_id": "OR78eGhjhWteEp0B",
+  "_key": "!actors!OR78eGhjhWteEp0B",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Imp",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/imp.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 6,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 17,
+        "proficient": 0
+      },
+      "con": {
+        "value": 13,
+        "proficient": 0
+      },
+      "int": {
+        "value": 11,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 14,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13,
+        "formula": ""
+      },
+      "hp": {
+        "value": 21,
+        "max": 21,
+        "formula": "6d4 + 6",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 20,
+        "fly": 40
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "devil",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Mau",
+      "cr": 1,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "tiny",
+      "di": {
+        "value": [
+          "fire",
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "cold"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comum, Infernal"
+      }
+    },
+    "skills": {
+      "dec": {
+        "value": 1,
+        "ability": "cha"
+      },
+      "ins": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Imp",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/imp.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "Wu1zpi7MgsAWfd08",
+      "name": "Resistência a Magia",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!OR78eGhjhWteEp0B.Wu1zpi7MgsAWfd08"
+    },
+    {
+      "_id": "M3o995K7EOVFDQxP",
+      "name": "Ferroada",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 6 (1d6 + 3) dano perfurante mais 7 (2d6) dano de veneno.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "gkAbNijw56YTo59m": {
+            "_id": "gkAbNijw56YTo59m",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "1d6+3",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!OR78eGhjhWteEp0B.M3o995K7EOVFDQxP"
+    },
+    {
+      "_id": "ytMaPksb2Hck61V1",
+      "name": "Mudar de Forma",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The imp shape-shifts to resemble a rat (Speed 6 m.), a raven (6 m., Fly 18 m.), or a spider (6 m., Climb 6 m.), or it returns to its true form. Its statistics are the same in each form, except for its Speed. Any equipment it is wearing or carrying isn't transformed.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!OR78eGhjhWteEp0B.ytMaPksb2Hck61V1"
+    },
+    {
+      "_id": "0zbRo48ljCGOxGaR",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The imp casts Invisibility on itself, requiring no spell components and using Carisma as the spellcasting ability.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!OR78eGhjhWteEp0B.0zbRo48ljCGOxGaR"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Imp",
+      "page": 177,
+      "cr": "1",
+      "warnings": []
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "_id": "8LhE0npllk0kOElW",
-  "_key": "!actors!8LhE0npllk0kOElW",
+  "_id": "2eC8gbngxqZYhZaU",
+  "_key": "!actors!2eC8gbngxqZYhZaU",
   "folder": "bKQUPthn1V2Yu6Bn",
   "name": "Death Tyrant",
   "type": "npc",
@@ -12,7 +12,7 @@
         "proficient": 0
       },
       "dex": {
-        "value": 74,
+        "value": 14,
         "proficient": 0
       },
       "con": {
@@ -24,7 +24,7 @@
         "proficient": 0
       },
       "wis": {
-        "value": 75,
+        "value": 15,
         "proficient": 1
       },
       "cha": {
@@ -41,7 +41,7 @@
       "hp": {
         "value": 195,
         "max": 195,
-        "formula": "26d1 0 + 52",
+        "formula": "26d10 + 52",
         "temp": null,
         "tempmax": null
       },
@@ -63,14 +63,14 @@
     "details": {
       "type": {
         "value": "undead",
-        "subtype": "B eholder",
+        "subtype": "beholder",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Mau",
       "cr": 14,
       "xp": {
-        "value": 77500
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,16 +97,26 @@
       },
       "ci": {
         "value": [
-          "paralyzed"
+          "charmed",
+          "exhaustion",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "prone"
         ],
-        "custom": "Charm ed; Exhaus tion"
+        "custom": ""
       },
       "languages": {
         "value": [],
         "custom": "Fala Profunda, Comum Inferior"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Death Tyrant",
@@ -122,12 +132,12 @@
   "items": [
     {
       "_id": "fBB6iRouIvf5ypG0",
-      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "name": "Resistência Lendária",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the death tyrant fails a saving throw, it can choose to suc- ceed in stead.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -136,13 +146,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "3",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -156,7 +161,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8LhE0npllk0kOElW.fBB6iRouIvf5ypG0"
+      "_key": "!actors.items!2eC8gbngxqZYhZaU.fBB6iRouIvf5ypG0"
     },
     {
       "_id": "LWk0sM7XphhXgjvv",
@@ -190,16 +195,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8LhE0npllk0kOElW.LWk0sM7XphhXgjvv"
+      "_key": "!actors.items!2eC8gbngxqZYhZaU.LWk0sM7XphhXgjvv"
     },
     {
-      "_id": "cdJ3WersTJ5AXZTD",
-      "name": "Bite",
+      "_id": "r4sEiyFvErGzKva9",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 5 feet. Acerto: 13 (2d8 + 4) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 1,5 m. Acerto: 13 (2d8 + 4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -217,8 +222,8 @@
           "subtype": ""
         },
         "activities": {
-          "mVBsSHam6hs6wMyW": {
-            "_id": "mVBsSHam6hs6wMyW",
+          "cG3zvpR2OSI29PEO": {
+            "_id": "cG3zvpR2OSI29PEO",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -271,7 +276,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8LhE0npllk0kOElW.cdJ3WersTJ5AXZTD"
+      "_key": "!actors.items!2eC8gbngxqZYhZaU.r4sEiyFvErGzKva9"
     },
     {
       "_id": "zuI95lLDjcJa1znO",
@@ -280,7 +285,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The death tyrant randomly shoots one of the following magical rays at a target it can see within 120 feet of itself (roll 1d1 O; re roll if the death tyrant has al- ready used that ray during this turn): l: Charm Ray. Sabedoria Teste de Resistência: DC 17. Falha: 13 (3d8) Psíquico de dano, and o alvo has the Enfeitiçado condition for 7 hour or until it takes dam- age. Sucesso: Metade do dano only. 2: Paralyzing Ray. Constituição Teste de Resistência: DC 17. Falha: The target has the Paralisado condition and repeats the save at the end of each of its turns, end- . L ing the effect on itself on a success. After 7 minute, it succeeds automatically. ' 3: Fear Ray. Sabedoria Teste de Resistência: DC 17. Falha: 10 (3d6) Psíquico de dano, and o alvo has the Fright- ened condition until the end of its next turn. Sucesso: Metade do dano only. 4: Slowing Ray. Constituição Sa11ing Throw: DC 17. Fail- ure: 18 (4d8) Necrótico de dano. Until the end of o alvo's next turn, o alvo can't take Reactions; its Speed is halved; and it can take either an action or a Bonus Action on its turn, not both. Sucesso: Metade do dano only. 5: Enervation Ray. Constituição Teste de Resistência: DC 17. Falha: 16 (3d7 0) Veneno de dano, and o alvo has the Envenenado condition until the end of its next turn. While Envenenado, o alvo can't regain Pontos de Vida. Sucesso: Metade do dano only. 6: Telekinetic Ray. Força Teste de Resistência: DC 17 (o alvo succeeds automatically if it is Gargantuan). Falha: The death tyrant moves o alvo up to 30 feet in any direction. The target has the Impedido condition until the start of the death tyrant's next turn or until the death tyrant has the Incapacitado condition. The death tyrant can also exert fine control on objects with this ray, such as manipulating a tool or opening a door or container. 7: Sleep Ray. Sabedoria Teste de Resistência: DC 17 (o alvo succeeds automatically if it is a Construct or an Un- dead). Falha: The target has the Inconsciente con- dition for 1 minute. The condition ends if o alvo takes de dano or a creature within 5 feet of it takes an action to wake it. 8: Petrification Ray. Constituição Teste de Resistência: DC 17. First Falha: The target has the Impedido condition and repeats the save at the end of its next turn if it is still Impedido, ending the effect on itself on a success. Second Falha: The target has the Petrificado condition instead of the Impedido condition. 9: Disintegration Ray. Destreza Teste de Resistência: DC 17. Falha: 36 (8d8) Energia de dano. If o alvo is a non- magical object or a creation of magical force, a 10- foot Cube of it disintegrates into dust. Sucesso: Metade do dano. Falha ou Sucesso: If o alvo is a creature and this de dano reduces it to 0 Pontos de Vida, it disinte- grates into dust. 10: Death Ray. Destreza Teste de Resistência: DC 77. Falha: 55 (1 0d1 0) Necrótico de dano. Sucesso: Metade do dano. Falha ou Sucesso: The target dies if the ray reduces it to O Pontos de Vida.</p>",
+          "value": "<p>The death tyrant randomly shoots one of the following magical rays at a target it can see within 36 m of itself (roll 1d10; reroll if the death tyrant has already used that ray during this turn):\nTeste de Resistência de Sabedoria: CD 17. 13 (3d8) dano psíquico, and o alvo fica com a condição Enfeitiçado for 1 hour or until it takes de dano. Metade do dano only.\nTeste de Resistência de Constituição: CD 17. O alvo fica com a condição Paralisado and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.\nTeste de Resistência de Sabedoria: CD 17. 10 (3d6) dano psíquico, and o alvo fica com a condição Amedrontado until the end of its next turn. Metade do dano only.\nTeste de Resistência de Constituição: CD 17. 18 (4d8) dano necrótico. Until the end of o alvo's next turn, o alvo can't take Reactions; its Speed is halved; and it can take either an action or a Bonus Action on its turn, not both. Metade do dano only.\nTeste de Resistência de Constituição: CD 17. 16 (3d10) dano de veneno, and o alvo fica com a condição Envenenado until the end of its next turn. While Envenenado, o alvo can't regain Pontos de Vida. Metade do dano only.\nTeste de Resistência de Força: CD 17 (o alvo succeeds automatically if it is Gargantuan). The death tyrant moves o alvo up to 9 m in any direction. O alvo fica com a condição Impedido until the start of the death tyrant's next turn or until the death tyrant fica com a condição Incapacitado. The death tyrant can also exert fine control on objects with this ray, such as manipulating a tool or opening a door or container.\nTeste de Resistência de Sabedoria: CD 17 (o alvo succeeds automatically if it is a Construct or an Undead). O alvo fica com a condição Inconsciente for 1 minute. The condição ends if o alvo takes de dano or uma criatura within 1,5 m of it takes an action to wake it.\nTeste de Resistência de Constituição: CD 17. Falha: O alvo fica com a condição Impedido and repeats the save at the end of its next turn if it is still Impedido, ending the effect on itself on a success. Falha: O alvo fica com a condição Petrificado instead of a condição Impedido.\nTeste de Resistência de Destreza: CD 17. 36 (8d8) dano de energia. If o alvo is a nonmagical object or a creation of magical force, a 3 m Cube of it disintegrates into dust. Metade do dano. If o alvo is uma criatura and this de dano reduces it to 0 Pontos de Vida, it disintegrates into dust.\nTeste de Resistência de Destreza: CD 17. 55 (10d10) dano necrótico. Metade do dano. O alvo dies if the ray reduces it to 0 Pontos de Vida.</p>",
           "chat": ""
         },
         "activation": {
@@ -318,25 +323,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 3,
-                  "denomination": 8,
-                  "bonus": "",
-                  "types": [
-                    "psychic"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -344,15 +331,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "3d8",
-            "damageType": "psychic",
             "saveDc": 17,
             "saveAbility": "wis"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8LhE0npllk0kOElW.zuI95lLDjcJa1znO"
+      "_key": "!actors.items!2eC8gbngxqZYhZaU.zuI95lLDjcJa1znO"
     },
     {
       "_id": "mSvzYW6nYjgAUJvF",
@@ -361,7 +346,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The death tyrant's central eye emits an imperceptible, magical wave of negative en- ergy in a 750-foot Cone. Creatures in that area can't re- gain Pontos de Vida until the start of the death tyrant's next turn. An intact Humanoid corpse there instantly rises as a Zombie under the death tyrant's control and takes its turn immediately aft~r the death tyrant on the same initiative count.</p>",
+          "value": "<p>The death tyrant's central eye emits an imperceptible, magical wave of negative energy in a 45 m Cone. Creatures in that area can't regain Pontos de Vida until the start of the death tyrant's next turn. An intact Humanoid corpse there instantly rises as a Zombie under the death tyrant's control and takes its turn immediately after the death tyrant on the same initiative count.</p>",
           "chat": ""
         },
         "activation": {
@@ -386,7 +371,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8LhE0npllk0kOElW.mSvzYW6nYjgAUJvF"
+      "_key": "!actors.items!2eC8gbngxqZYhZaU.mSvzYW6nYjgAUJvF"
     },
     {
       "_id": "5RusCyOZfkvqPd5W",
@@ -395,7 +380,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The death tyrant makes two Bite attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Mordida.</p>",
           "chat": ""
         },
         "activation": {
@@ -420,7 +405,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8LhE0npllk0kOElW.5RusCyOZfkvqPd5W"
+      "_key": "!actors.items!2eC8gbngxqZYhZaU.5RusCyOZfkvqPd5W"
     },
     {
       "_id": "0f5Pqko3NfwwGdV1",
@@ -429,7 +414,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The death tyrant uses Eye Rays. DEMILI CH What Lies beyond Lichdom</p>",
+          "value": "<p>The death tyrant uses Eye Rays.</p>",
           "chat": ""
         },
         "activation": {
@@ -454,13 +439,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8LhE0npllk0kOElW.0f5Pqko3NfwwGdV1"
+      "_key": "!actors.items!2eC8gbngxqZYhZaU.0f5Pqko3NfwwGdV1"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Death Tyrant",
-      "page": 97,
+      "page": 95,
       "cr": "14",
       "warnings": []
     }

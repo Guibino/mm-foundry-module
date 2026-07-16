@@ -1,6 +1,6 @@
 {
-  "_id": "H7kfx2hBC8XQlERf",
-  "_key": "!actors!H7kfx2hBC8XQlERf",
+  "_id": "KblKSVgpHo5AioaC",
+  "_key": "!actors!KblKSVgpHo5AioaC",
   "folder": "UIhMG4gNrr0aGWHc",
   "name": "Shambling Mound",
   "type": "npc",
@@ -48,7 +48,8 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "swim": 20
       },
       "senses": {
         "units": "ft",
@@ -69,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 5,
       "xp": {
-        "value": 1800
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -87,7 +88,10 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "cold",
+          "fire"
+        ],
         "custom": ""
       },
       "dv": {
@@ -108,7 +112,7 @@
     },
     "skills": {
       "ste": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       }
     }
@@ -132,7 +136,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Whenever the shambling mound is subjected to Elétrico de dano, it regains a number of Pontos de Vida equal to the Elétrico de dano dealt.</p>",
+          "value": "<p>Whenever the shambling mound is subjected to dano elétrico, it regains a number of Pontos de Vida equal to the dano elétrico dealt.</p>",
           "chat": ""
         },
         "activation": {
@@ -156,7 +160,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!H7kfx2hBC8XQlERf.aegwVTE91ssTFWSA"
+      "_key": "!actors.items!KblKSVgpHo5AioaC.aegwVTE91ssTFWSA"
     },
     {
       "_id": "wtPjQfyEd30ezVeu",
@@ -165,7 +169,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The shambling mound makes three</p>",
+          "value": "<p>The shambling mound makes three Charged Tendril attacks. It can replace one attack with a use of Engulf.</p>",
           "chat": ""
         },
         "activation": {
@@ -190,50 +194,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!H7kfx2hBC8XQlERf.wtPjQfyEd30ezVeu"
+      "_key": "!actors.items!KblKSVgpHo5AioaC.wtPjQfyEd30ezVeu"
     },
     {
-      "_id": "8jCkFp9cxWLZWXHr",
-      "name": "Charged Tendril attacks",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>It can replace one attack with a use of Engulf.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!H7kfx2hBC8XQlERf.8jCkFp9cxWLZWXHr"
-    },
-    {
-      "_id": "W59orsqtqyJ3JThH",
+      "_id": "ga30eyjLlieMoRzo",
       "name": "Charged Tendril",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance l Oft. Acerto: 7 (1d6 + 4) Concussão de dano plus 5 (2d4) Elétrico de dano. If o alvo is a Medium or smaller creature, the shambling mound pulls o alvo 5 feet straight toward itself. Engulf Força Sa~ing Throw: DC 15, one Medium or smaller creature within 5 feet. Falha: The target is pulled into the shambling mound's space and has the</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 3 m. Acerto: 7 (1d6 + 4) dano de concussão mais 5 (2d4) dano elétrico. If o alvo is a Medium or smaller creature, the shambling mound pulls o alvo 1,5 m straight toward itself.</p>",
           "chat": ""
         },
         "activation": {
@@ -251,8 +221,8 @@
           "subtype": ""
         },
         "activities": {
-          "XdccMv5VEwFqMuVV": {
-            "_id": "XdccMv5VEwFqMuVV",
+          "jxNnaEhhRgaD7DjJ": {
+            "_id": "jxNnaEhhRgaD7DjJ",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -305,16 +275,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!H7kfx2hBC8XQlERf.W59orsqtqyJ3JThH"
+      "_key": "!actors.items!KblKSVgpHo5AioaC.ga30eyjLlieMoRzo"
     },
     {
-      "_id": "kuA490ouZ8BVudkH",
-      "name": "Agarrado condition (escape DC 14)",
+      "_id": "SLkGGYgu1t6OuOJ9",
+      "name": "Engulf",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Until the grapple ends, o alvo has the Cego and Impedido con- ditions, and it takes 10 (3d6) Elétrico de dano at the start of each of its turns. When the shambling mound _j -moves, the Agarrado target moves with it, costing it no extra movement. The shambling mound can have only 0 VJ co uma criatura Agarrado by this action at a tilyle. 0 Cr SHIELD GUARDIAN Device-Controlled Magical Bodyguard</p>",
+          "value": "<p>Teste de Resistência de Força: CD 15, one Medium or smaller creature within 1,5 m. O alvo is pulled into the shambling mound's space and fica com a condição Agarrado (CD para escapar 14). Until the grapple ends, o alvo has the Cego and Impedido conditions, and it takes 10 (3d6) dano elétrico at the start of each of its turns. When the shambling mound moves, the Agarrado target moves with it, costing it no extra movement. The shambling mound can have only uma criatura Agarrado by this action at a time.</p>",
           "chat": ""
         },
         "activation": {
@@ -331,21 +301,48 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "nUAtCMHhb0iG1LWd": {
+            "_id": "nUAtCMHhb0iG1LWd",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "15"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 15,
+            "saveAbility": "str"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!H7kfx2hBC8XQlERf.kuA490ouZ8BVudkH"
+      "_key": "!actors.items!KblKSVgpHo5AioaC.SLkGGYgu1t6OuOJ9"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Shambling Mound",
-      "page": 278,
+      "page": 276,
       "cr": "5",
       "warnings": []
     }

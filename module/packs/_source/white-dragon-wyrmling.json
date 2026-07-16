@@ -1,8 +1,8 @@
 {
-  "_id": "uNBHXJ633zR9OyfJ",
-  "_key": "!actors!uNBHXJ633zR9OyfJ",
+  "_id": "pkbnTKPVS8zKXgXE",
+  "_key": "!actors!pkbnTKPVS8zKXgXE",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Branco Dragão Filhote",
+  "name": "White Dragon Wyrmling",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/white-dragon-wyrmling.webp",
   "system": {
@@ -48,7 +48,10 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "burrow": 15,
+        "fly": 60,
+        "swim": 30
       },
       "senses": {
         "units": "ft",
@@ -63,7 +66,7 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Ch romat ic",
+        "subtype": "chromatic",
         "swarm": "",
         "custom": ""
       },
@@ -104,10 +107,19 @@
         "custom": "Dracônico"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Branco Dragão Filhote",
+    "name": "White Dragon Wyrmling",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -119,8 +131,8 @@
   },
   "items": [
     {
-      "_id": "JDPDi9XGuZAndtEc",
-      "name": "Ice Walk",
+      "_id": "ktue0WmUJcb9mmQr",
+      "name": "Andar no Gelo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -149,7 +161,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!uNBHXJ633zR9OyfJ.JDPDi9XGuZAndtEc"
+      "_key": "!actors.items!pkbnTKPVS8zKXgXE.ktue0WmUJcb9mmQr"
     },
     {
       "_id": "I30Kf08nj8EzibTv",
@@ -158,7 +170,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes two Rend attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -183,16 +195,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!uNBHXJ633zR9OyfJ.I30Kf08nj8EzibTv"
+      "_key": "!actors.items!pkbnTKPVS8zKXgXE.I30Kf08nj8EzibTv"
     },
     {
-      "_id": "jFfNugR5NPpiuTnR",
-      "name": "Rend",
+      "_id": "nhnUTg6Cqe5a6h24",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Me lee Attack Roll: +4, alcance 5 ft. Acerto: 6 (1d8 + 2) Cortante de dano plus 2 (1d4) Frio de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 6 (1d8 + 2) dano cortante mais 2 (1d4) dano de frio.</p>",
           "chat": ""
         },
         "activation": {
@@ -209,27 +221,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "tS5EH7aHnih38naQ": {
+            "_id": "tS5EH7aHnih38naQ",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "2",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
             "damageFormula": "1d8+2",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!uNBHXJ633zR9OyfJ.jFfNugR5NPpiuTnR"
+      "_key": "!actors.items!pkbnTKPVS8zKXgXE.nhnUTg6Cqe5a6h24"
     },
     {
-      "_id": "6SixrD5eivYf0dka",
-      "name": "Frio Breath (Recharge 5-6)",
+      "_id": "GfgHtVTD7nNfysdx",
+      "name": "Sopro de Frio (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 12, cada criatura in a 15-foot Cone. Falha: 22 (5d8)</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 12, cada criatura in a 4,5 m Cone. 22 (5d8) dano de frio. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -253,8 +309,8 @@
           "subtype": ""
         },
         "activities": {
-          "kpnmwhuP9EApeC4Z": {
-            "_id": "kpnmwhuP9EApeC4Z",
+          "7yy3UbqrK1BeQz7T": {
+            "_id": "7yy3UbqrK1BeQz7T",
             "type": "save",
             "activation": {
               "type": "action",
@@ -287,47 +343,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!uNBHXJ633zR9OyfJ.6SixrD5eivYf0dka"
-    },
-    {
-      "_id": "evVszdoOf1EkPuut",
-      "name": "Frio de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Sucesso: Metade do dano. WHIT·E DRAGONS dragons fiercely protect their territories, scouring - the frigid regions for food and evidence of trespass- ers. Most white dragons ignore the plots of smaller creatures and other dragons, concerning them- selves only with their own survival. White dragons create lairs to defend themselves from other deadly arctic creatures and from dan- gerous natural conditions. Within these shelters, white dragons hoard testaments to their superior- ity, such as monstrous skulls, the gear of defeated rivals, and curiosities that capture their interest. To protect such treasure, white dragons coax ice to form over their hoards or sink their wealth in frigid pools. For white dragons, each piece of treasure embodies a victory-the details of which inflate as these dragons age. WHITE DRAGON WYRMLING White dragon wyrmlings usually head off on their own soon after hatching. While the cold means little to these creatures, food is scarce in arctic realms, and predators there are merciless. Most white dragon wyrmlings survive by scavenging, hunting opportunistically, and quickly fleeing foes-includ- ing other white dragons. YOUNG WHITE DRAGON L ar ge Dragon (Chromati c) Chaot ic E r;i / AC 17 In itiative +3 (13) HP 123 (13d10 + 52) Sp ee d 40 ft., Burrow 20 ft., Fly 80 ft., Swim 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!uNBHXJ633zR9OyfJ.evVszdoOf1EkPuut"
+      "_key": "!actors.items!pkbnTKPVS8zKXgXE.GfgHtVTD7nNfysdx"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "White Dragon Wyrmling",
-      "page": 330,
+      "page": 328,
       "cr": "2",
       "warnings": []
     }

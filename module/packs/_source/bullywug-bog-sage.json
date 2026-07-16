@@ -1,6 +1,6 @@
 {
-  "_id": "Mov3Z89njNezfQcL",
-  "_key": "!actors!Mov3Z89njNezfQcL",
+  "_id": "ryBXQmzi6NS5wcrK",
+  "_key": "!actors!ryBXQmzi6NS5wcrK",
   "folder": "inkH4oLnh3yP5W9M",
   "name": "Bullywug Bog Sage",
   "type": "npc",
@@ -29,7 +29,7 @@
       },
       "cha": {
         "value": 12,
-        "proficient": 0
+        "proficient": 1
       }
     },
     "attributes": {
@@ -69,7 +69,7 @@
       "alignment": "Neutro",
       "cr": 4,
       "xp": {
-        "value": 1100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -98,7 +98,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Bullywug, Comum, Silvestre"
+        "custom": "Bullywug, Comum"
       }
     },
     "skills": {
@@ -125,13 +125,13 @@
   },
   "items": [
     {
-      "_id": "LATpGuqVOTSaH9hR",
-      "name": "Amphibious",
+      "_id": "cvgWom9eTk2XYKWT",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The bullywug can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -155,7 +155,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Mov3Z89njNezfQcL.LATpGuqVOTSaH9hR"
+      "_key": "!actors.items!ryBXQmzi6NS5wcrK.cvgWom9eTk2XYKWT"
     },
     {
       "_id": "ZPZfH9g7TdfBdrVm",
@@ -164,7 +164,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The bullywug can com- municate simple concepts to frogs and toads when it speaks in Bullywug.</p>",
+          "value": "<p>The bullywug can communicate simple concepts to frogs and toads when it speaks in Bullywug.</p>",
           "chat": ""
         },
         "activation": {
@@ -188,7 +188,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Mov3Z89njNezfQcL.ZPZfH9g7TdfBdrVm"
+      "_key": "!actors.items!ryBXQmzi6NS5wcrK.ZPZfH9g7TdfBdrVm"
     },
     {
       "_id": "owPwc3yPxeO3GWjU",
@@ -197,7 +197,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The bullywug makes two Bog Staff attacks. It can replace any attack with a use of Conjuração to cast Ray of Sickness.</p>",
+          "value": "<p>The bullywug makes two Bog Bordão attacks. It can replace any attack with a use of Conjuração to cast Ray of Sickness.</p>",
           "chat": ""
         },
         "activation": {
@@ -222,16 +222,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Mov3Z89njNezfQcL.owPwc3yPxeO3GWjU"
+      "_key": "!actors.items!ryBXQmzi6NS5wcrK.owPwc3yPxeO3GWjU"
     },
     {
-      "_id": "G8Cxg3FuNF7WLglz",
-      "name": "Bog Staff",
+      "_id": "Me3e1dMazzc9qv42",
+      "name": "Bog Bordão",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 7 (1d8 + 3) Concussão de dano plus 10 (3d6) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 7 (1d8 + 3) dano de concussão mais 10 (3d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -249,8 +249,8 @@
           "subtype": ""
         },
         "activities": {
-          "B73urudE8kXpq8we": {
-            "_id": "B73urudE8kXpq8we",
+          "blS4VWdBhRTu06PZ": {
+            "_id": "blS4VWdBhRTu06PZ",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -303,16 +303,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Mov3Z89njNezfQcL.G8Cxg3FuNF7WLglz"
+      "_key": "!actors.items!ryBXQmzi6NS5wcrK.Me3e1dMazzc9qv42"
     },
     {
-      "_id": "xDZeb7w96c2VBMpj",
-      "name": "Leap",
+      "_id": "nGuJS6b0VFibm5vP",
+      "name": "Salto",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The bullywug jumps up to 30 feet by spending 10 feet of movement. 64 h, BULLYWUGS BULLYWUG WARRIOR M edium Fey, Neutral AC 15 Iniciativa +2 (12) HP 11 (2d8 + 2) S peed 30 ft., Swim 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>The bullywug can jump up to 9 m by spending 3 m of movement.</p>",
           "chat": ""
         },
         "activation": {
@@ -337,7 +337,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Mov3Z89njNezfQcL.xDZeb7w96c2VBMpj"
+      "_key": "!actors.items!ryBXQmzi6NS5wcrK.nGuJS6b0VFibm5vP"
     },
     {
       "_id": "IboeRG0jNtoNQgh6",
@@ -346,7 +346,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The bullywug casts one of the following spells, using Sabedoria as the spellcasting ability (spell save DC 13, +5 to hit with spell attacks): À Vontade: Dancing Lights; Druidcraft, Ray of Sickness 1/Dia Each: Speak with Plants, Vitriolic Sphere</p>",
+          "value": "<p>The bullywug casts one of the following spells, using Sabedoria as the spellcasting ability (spell save CD 13, +5 to hit with spell attacks):</p>",
           "chat": ""
         },
         "activation": {
@@ -397,13 +397,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Mov3Z89njNezfQcL.IboeRG0jNtoNQgh6"
+      "_key": "!actors.items!ryBXQmzi6NS5wcrK.IboeRG0jNtoNQgh6"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Bullywug Bog Sage",
-      "page": 66,
+      "page": 64,
       "cr": "4",
       "warnings": []
     }

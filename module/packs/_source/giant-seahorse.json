@@ -1,8 +1,8 @@
 {
-  "_id": "z1e0o8todNiQet2z",
-  "_key": "!actors!z1e0o8todNiQet2z",
+  "_id": "hWkgYeJckO3jksNU",
+  "_key": "!actors!hWkgYeJckO3jksNU",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Gigante Seahorse",
+  "name": "Giant Seahorse",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/giant-seahorse.webp",
   "system": {
@@ -41,13 +41,14 @@
       "hp": {
         "value": 16,
         "max": 16,
-        "formula": "3d1 0",
+        "formula": "3d10",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 5,
         "swim": 40
       },
       "senses": {
@@ -66,7 +67,7 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 0.5,
       "xp": {
         "value": 0
       },
@@ -103,7 +104,7 @@
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Gigante Seahorse",
+    "name": "Giant Seahorse",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -115,13 +116,13 @@
   },
   "items": [
     {
-      "_id": "czyEhOAX314CkYTo",
-      "name": "Water Breathing",
+      "_id": "10gSI11tJNWIZ9rg",
+      "name": "Respiração Aquática",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The seahorse can breathe only underwater.</p>",
+          "value": "<p>A criatura só consegue respirar debaixo d'água.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,16 +146,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!z1e0o8todNiQet2z.czyEhOAX314CkYTo"
+      "_key": "!actors.items!hWkgYeJckO3jksNU.10gSI11tJNWIZ9rg"
     },
     {
-      "_id": "o3lgF0weK0Te6m1E",
-      "name": "Ram",
+      "_id": "NQRuxFbs3lOTdp6H",
+      "name": "Marrada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 9 (2d6 + 2) Concussão de dano, or 11 (2d8 + 2) Concussão . de dano if the seahorse moved 20+ feet straight toward o alvo immediately before the hit.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 9 (2d6 + 2) dano de concussão, or 11 (2d8 + 2) dano de concussão if the seahorse moved 20+ feet straight toward o alvo immediately before the hit.</p>",
           "chat": ""
         },
         "activation": {
@@ -172,8 +173,8 @@
           "subtype": ""
         },
         "activities": {
-          "yz8CICNn7pyioCpx": {
-            "_id": "yz8CICNn7pyioCpx",
+          "T98XRbrEJJd5T2DN": {
+            "_id": "T98XRbrEJJd5T2DN",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -226,7 +227,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!z1e0o8todNiQet2z.o3lgF0weK0Te6m1E"
+      "_key": "!actors.items!hWkgYeJckO3jksNU.NQRuxFbs3lOTdp6H"
     },
     {
       "_id": "FgnUajko8g6xT0tb",
@@ -235,7 +236,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While underwater, the seahorse moves up to half its Swim Speed without provoking Opportu- nity Attacks. GIANT SHARK Huge Beast, Unaligned AC 13 Iniciativa +3 (13) HP 92 (8d12+40) Speed 5 ft., Swim 60 ft. MOD SAVE MO D SAVE MOD SAVE</p>",
+          "value": "<p>While underwater, the seahorse moves up to half its Swim Speed without provoking Opportunity Attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -260,14 +261,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!z1e0o8todNiQet2z.FgnUajko8g6xT0tb"
+      "_key": "!actors.items!hWkgYeJckO3jksNU.FgnUajko8g6xT0tb"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Giant Seahorse",
-      "page": 361,
-      "cr": "0",
+      "page": 359,
+      "cr": "1/2",
       "warnings": []
     }
   }

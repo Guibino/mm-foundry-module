@@ -1,0 +1,513 @@
+{
+  "_id": "edvGGhcRalmcZJkt",
+  "_key": "!actors!edvGGhcRalmcZJkt",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Balor",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/balor.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 26,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 0
+      },
+      "con": {
+        "value": 22,
+        "proficient": 1
+      },
+      "int": {
+        "value": 20,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 16,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 22,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 19,
+        "formula": ""
+      },
+      "hp": {
+        "value": 287,
+        "max": 287,
+        "formula": "23d12 + 138",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40,
+        "fly": 80
+      },
+      "senses": {
+        "units": "ft",
+        "truesight": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "demon",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Mau",
+      "cr": 19,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [
+          "fire",
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "cold",
+          "lightning"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "frightened",
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Balor",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/balor.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "xgUQtALDSJmtMU3K",
+      "name": "Death Throes",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The balor explodes when it dies. Teste de Resistência de Destreza: CD 20, cada criatura in a 9 m Emanation originating from the balor. 31 (9d6) dano de fogo mais 31 (9d6) dano de energia. Metade do dano. If the balor dies outside the Abyss, it gains a new body instantly, reviving with all its Pontos de Vida somewhere in the Abyss.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 20,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!edvGGhcRalmcZJkt.xgUQtALDSJmtMU3K"
+    },
+    {
+      "_id": "JSd5vF4R79TgmQy6",
+      "name": "Aura de Fogo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>At the end of each of the balor's turns, cada criatura in a 1,5 m Emanation originating from the balor takes 13 (3d8) dano de fogo.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!edvGGhcRalmcZJkt.JSd5vF4R79TgmQy6"
+    },
+    {
+      "_id": "ObMTXCmsr94ZYAKF",
+      "name": "Resistência Lendária (3/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "3",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!edvGGhcRalmcZJkt.ObMTXCmsr94ZYAKF"
+    },
+    {
+      "_id": "OsUE5vfdKH392GQy",
+      "name": "Resistência a Magia",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!edvGGhcRalmcZJkt.OsUE5vfdKH392GQy"
+    },
+    {
+      "_id": "6xydd6sDfSPEAR6x",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The balor makes one Flame Chicote attack and one Elétrico Blade attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!edvGGhcRalmcZJkt.6xydd6sDfSPEAR6x"
+    },
+    {
+      "_id": "n7hLQDK62Q5NMceb",
+      "name": "Flame Chicote",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 9 m. Acerto: 18 (3d6 + 8) dano de energia mais 17 (5d6) dano de fogo. If o alvo is a Huge or smaller creature, the balor pulls o alvo up to 7,5 m straight toward itself, and o alvo fica com a condição Caído.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "oJ6Zf40xRZq7Tnoq": {
+            "_id": "oJ6Zf40xRZq7Tnoq",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "14",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 6,
+                  "bonus": "8",
+                  "types": [
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 14,
+            "attackType": "melee",
+            "damageFormula": "3d6+8",
+            "damageType": "force"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!edvGGhcRalmcZJkt.n7hLQDK62Q5NMceb"
+    },
+    {
+      "_id": "pPpq5wLHF4eVAZLA",
+      "name": "Elétrico Blade",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 3 m. Acerto: 21 (3d8 + 8) dano de energia mais 22 (4d10) dano elétrico, and o alvo can't take Reactions until the start of the balor's next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "RT0XrXJG4mlEXOfI": {
+            "_id": "RT0XrXJG4mlEXOfI",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "14",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 8,
+                  "bonus": "8",
+                  "types": [
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 14,
+            "attackType": "melee",
+            "damageFormula": "3d8+8",
+            "damageType": "force"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!edvGGhcRalmcZJkt.pPpq5wLHF4eVAZLA"
+    },
+    {
+      "_id": "GFRDgm2wbkiZcRxX",
+      "name": "Teletransporte",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The balor teleports itself or a willing demon within 3 m of itself up to 18 m to an unoccupied space the balor can see.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!edvGGhcRalmcZJkt.GFRDgm2wbkiZcRxX"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Balor",
+      "page": 26,
+      "cr": "19",
+      "warnings": []
+    }
+  }
+}

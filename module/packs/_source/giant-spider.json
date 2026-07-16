@@ -1,8 +1,8 @@
 {
-  "_id": "BhK665H0elZQ4oDX",
-  "_key": "!actors!BhK665H0elZQ4oDX",
+  "_id": "Lu9UIf7edVFdxjJn",
+  "_key": "!actors!Lu9UIf7edVFdxjJn",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Gigante Spider",
+  "name": "Giant Spider",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/giant-spider.webp",
   "system": {
@@ -12,12 +12,12 @@
         "proficient": 0
       },
       "dex": {
-        "value": 76,
+        "value": 16,
         "proficient": 0
       },
       "con": {
         "value": 12,
-        "proficient": 1
+        "proficient": 0
       },
       "int": {
         "value": 2,
@@ -41,17 +41,19 @@
       "hp": {
         "value": 26,
         "max": 26,
-        "formula": "4d1 0 + 4",
+        "formula": "4d10 + 4",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 30,
         "climb": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -66,9 +68,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,13 +99,22 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Gigante Spider",
+    "name": "Giant Spider",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -115,13 +126,13 @@
   },
   "items": [
     {
-      "_id": "q7WgRIhSdqAQ6XCH",
-      "name": "Spider Climb",
+      "_id": "GGcnOnkg4xU6MuZK",
+      "name": "Escalada de Aranha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>",
+          "value": "<p>A criatura pode escalar superfícies difíceis, inclusive tetos, sem precisar fazer um teste de habilidade.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,11 +156,11 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!BhK665H0elZQ4oDX.q7WgRIhSdqAQ6XCH"
+      "_key": "!actors.items!Lu9UIf7edVFdxjJn.GGcnOnkg4xU6MuZK"
     },
     {
-      "_id": "0lK4r1cRhuaL0oHr",
-      "name": "Web Walker",
+      "_id": "cmg1pRLM3ejDDRP5",
+      "name": "Andarilho de Teias",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -178,16 +189,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!BhK665H0elZQ4oDX.0lK4r1cRhuaL0oHr"
+      "_key": "!actors.items!Lu9UIf7edVFdxjJn.cmg1pRLM3ejDDRP5"
     },
     {
-      "_id": "32Kv9tOhXJdO6MLE",
-      "name": "Bite",
+      "_id": "yputPL31bnm1ZlUx",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 7 (1d8 + 3) Perfurante de dano plus 7 (2d6) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 7 (1d8 + 3) dano perfurante mais 7 (2d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -205,8 +216,8 @@
           "subtype": ""
         },
         "activities": {
-          "z4QQkX70SoU6IADe": {
-            "_id": "z4QQkX70SoU6IADe",
+          "ee2RAdZaFJeIbzgE": {
+            "_id": "ee2RAdZaFJeIbzgE",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -259,16 +270,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!BhK665H0elZQ4oDX.32Kv9tOhXJdO6MLE"
+      "_key": "!actors.items!Lu9UIf7edVFdxjJn.yputPL31bnm1ZlUx"
     },
     {
       "_id": "x5J8lK4kWTfS56oN",
-      "name": "Web (Recharge 5-6)",
+      "name": "Web (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 13, uma criatura the spider can see within 60 feet. Falha: The target has the Impedido condition until the web is destroyed (AC 10; HP 5; Vulnerability to Fogo de dano; Immunity to Veneno and Psíquico de dano). 6_ 359 APPENDIX A I ANIMALS GIANT SQUID GIANT SQU ID Huge Beast, Unaligned AC 12 Iniciativa +2 (1 2) HP 120 (16d12 + 1 6) Speed 5 ft., Swim 80 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 13, uma criatura the spider can see within 18 m. O alvo fica com a condição Impedido until the web is destroyed (AC 10; HP 5; Vulnerability to dano de fogo; Immunity to Veneno and dano psíquico).</p>",
           "chat": ""
         },
         "activation": {
@@ -326,14 +337,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!BhK665H0elZQ4oDX.x5J8lK4kWTfS56oN"
+      "_key": "!actors.items!Lu9UIf7edVFdxjJn.x5J8lK4kWTfS56oN"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Giant Spider",
-      "page": 361,
-      "cr": "0",
+      "page": 359,
+      "cr": "1",
       "warnings": []
     }
   }

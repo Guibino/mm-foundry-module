@@ -1,0 +1,395 @@
+{
+  "_id": "xmPo9J2EMoWD4NEi",
+  "_key": "!actors!xmPo9J2EMoWD4NEi",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Spirit Naga",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/spirit-naga.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 17,
+        "proficient": 1
+      },
+      "con": {
+        "value": 14,
+        "proficient": 1
+      },
+      "int": {
+        "value": 16,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 15,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 16,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 17,
+        "formula": ""
+      },
+      "hp": {
+        "value": 135,
+        "max": 135,
+        "formula": "18d10 + 36",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Mau",
+      "cr": 8,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Abissal, Comum"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Spirit Naga",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/spirit-naga.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "7PEldWncNTfgOvKV",
+      "name": "Restauração Corruptora",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If it dies, the naga returns to life in 1d6 days and regains all its Pontos de Vida. Only a Wish spell can prevent this trait from functioning.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xmPo9J2EMoWD4NEi.7PEldWncNTfgOvKV"
+    },
+    {
+      "_id": "F1GFH6BNiZffEPCW",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The naga makes three attacks, using Mordida or Necrótico Ray in any combination.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xmPo9J2EMoWD4NEi.F1GFH6BNiZffEPCW"
+    },
+    {
+      "_id": "t9hrQVEraPDOp74i",
+      "name": "Mordida",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 3 m. Acerto: 7 (1d6 + 4) dano perfurante mais 14 (4d6) dano de veneno.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "UUS8RGsI6aUqsHBX": {
+            "_id": "UUS8RGsI6aUqsHBX",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "melee",
+            "damageFormula": "1d6+4",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xmPo9J2EMoWD4NEi.t9hrQVEraPDOp74i"
+    },
+    {
+      "_id": "utqDdDijxHGz38rQ",
+      "name": "Necrótico Ray",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +6, distância 18 m. Acerto: 21 (6d6) dano necrótico.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "4h4ckh5M7uaczgwK": {
+            "_id": "4h4ckh5M7uaczgwK",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 6,
+                  "denomination": 6,
+                  "bonus": "",
+                  "types": [
+                    "necrotic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 6,
+            "attackType": "ranged",
+            "damageFormula": "6d6",
+            "damageType": "necrotic"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xmPo9J2EMoWD4NEi.utqDdDijxHGz38rQ"
+    },
+    {
+      "_id": "pilXuIxnflQvj6Ca",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The naga casts one of the following spells, requiring no Somatic or Material components and using Inteligência as the spellcasting ability (spell save CD 14):</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xmPo9J2EMoWD4NEi.pilXuIxnflQvj6Ca"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Spirit Naga",
+      "page": 297,
+      "cr": "8",
+      "warnings": []
+    }
+  }
+}

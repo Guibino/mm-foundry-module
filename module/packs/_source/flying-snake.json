@@ -1,6 +1,6 @@
 {
-  "_id": "gN9JK4kSceL2oaFx",
-  "_key": "!actors!gN9JK4kSceL2oaFx",
+  "_id": "8eb1canQQU8bEbdz",
+  "_key": "!actors!8eb1canQQU8bEbdz",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Flying Snake",
   "type": "npc",
@@ -12,11 +12,11 @@
         "proficient": 0
       },
       "dex": {
-        "value": 75,
+        "value": 15,
         "proficient": 0
       },
       "con": {
-        "value": 77,
+        "value": 11,
         "proficient": 0
       },
       "int": {
@@ -24,7 +24,7 @@
         "proficient": 0
       },
       "wis": {
-        "value": 72,
+        "value": 12,
         "proficient": 0
       },
       "cha": {
@@ -49,11 +49,12 @@
         "units": "ft",
         "hover": false,
         "walk": 30,
-        "fly": 60
+        "fly": 60,
+        "swim": 30
       },
       "senses": {
         "units": "ft",
-        "blindsight": 70
+        "blindsight": 10
       },
       "init": {
         "ability": "dex",
@@ -68,9 +69,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 0.125,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -99,7 +100,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
@@ -117,13 +118,13 @@
   },
   "items": [
     {
-      "_id": "n7qf7JP5rql8bxOe",
-      "name": "Flyby",
+      "_id": "NTB7VAd9WwbGTouc",
+      "name": "Voo Rasante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The snake doesn't provoke an Opportunity At- tack when it flies out of an enemy's alcance.</p>",
+          "value": "<p>A criatura não provoca Ataque de Oportunidade ao sair voando do alcance de um inimigo.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,16 +148,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gN9JK4kSceL2oaFx.n7qf7JP5rql8bxOe"
+      "_key": "!actors.items!8eb1canQQU8bEbdz.NTB7VAd9WwbGTouc"
     },
     {
-      "_id": "mTknaeDNS8AJZva8",
-      "name": "Bite",
+      "_id": "jPAnfDFJxO6JmIjI",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: l Perfurante . de dano plus 5 (2d4) Veneno de dano. APPENDIX A I ANIMALS 353 Tiny Beast, Unaligned AC ll Initiativ e+ l ( l l) HP l (1d4 - l) Speed 20 ft., Swim 20 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 1 dano perfurante mais 5 (2d4) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -174,8 +175,8 @@
           "subtype": ""
         },
         "activities": {
-          "kXMME6sZhueBRS4i": {
-            "_id": "kXMME6sZhueBRS4i",
+          "r3IHqB2TjZhYYdvc": {
+            "_id": "r3IHqB2TjZhYYdvc",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -208,14 +209,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gN9JK4kSceL2oaFx.mTknaeDNS8AJZva8"
+      "_key": "!actors.items!8eb1canQQU8bEbdz.jPAnfDFJxO6JmIjI"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Flying Snake",
-      "page": 355,
-      "cr": "0",
+      "page": 353,
+      "cr": "1/8",
       "warnings": []
     }
   }

@@ -1,8 +1,8 @@
 {
-  "_id": "JEIje7v9riJsdCMu",
-  "_key": "!actors!JEIje7v9riJsdCMu",
+  "_id": "ldTXebhBupPQZrSx",
+  "_key": "!actors!ldTXebhBupPQZrSx",
   "folder": "IQP9BfRMl9yEsYGp",
-  "name": "Sphinx Of Wonder",
+  "name": "Sphinx of Wonder",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/sphinx-of-wonder.webp",
   "system": {
@@ -68,9 +68,9 @@
         "custom": ""
       },
       "alignment": "Leal e Bom",
-      "cr": 0,
+      "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -106,10 +106,23 @@
         "custom": "Celestial, Comum"
       }
     },
-    "skills": {}
+    "skills": {
+      "arc": {
+        "value": 1,
+        "ability": "int"
+      },
+      "rel": {
+        "value": 1,
+        "ability": "int"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Sphinx Of Wonder",
+    "name": "Sphinx of Wonder",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -121,13 +134,13 @@
   },
   "items": [
     {
-      "_id": "hxyXs6eNO2cwo62s",
-      "name": "Magic Resistance",
+      "_id": "FTAGdUA7EnCMmDXZ",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The sphinx has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,16 +164,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!JEIje7v9riJsdCMu.hxyXs6eNO2cwo62s"
+      "_key": "!actors.items!ldTXebhBupPQZrSx.FTAGdUA7EnCMmDXZ"
     },
     {
-      "_id": "kDHP8gN1aR4sFupM",
-      "name": "Rend",
+      "_id": "tAItsUg6IkwSOVeL",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 5 (1d4 + 3) Cortante de dano plus 7 (2d6) Radiante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 5 (1d4 + 3) dano cortante mais 7 (2d6) dano radiante.</p>",
           "chat": ""
         },
         "activation": {
@@ -178,8 +191,8 @@
           "subtype": ""
         },
         "activities": {
-          "5c0I6o6mHyjriv06": {
-            "_id": "5c0I6o6mHyjriv06",
+          "UNZwpf5UpRob31qp": {
+            "_id": "UNZwpf5UpRob31qp",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -232,16 +245,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!JEIje7v9riJsdCMu.kDHP8gN1aR4sFupM"
+      "_key": "!actors.items!ldTXebhBupPQZrSx.tAItsUg6IkwSOVeL"
     },
     {
-      "_id": "1Jqb6kDVn0vGbpBz",
-      "name": "Habilidade",
+      "_id": "g6H2gInKgBROzBKh",
+      "name": "Burst of Ingenuity (2/Day)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Burst of Ingenuity (2/Dia)., Trigger: The sphinx or an- other creature within 1 30 feet makes an ability check or a saving throw. Response: The sphinx adds 2 to the roll. SPHINXES SPHINX OF SECRETS Large Celestial, Law f ul Neutral AC 16 Iniciativa +5 ( 15 ) HP 136 (16d10 + 48) S peed 40 ft., Fly 60 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>The sphinx or another creature within 9 m makes an ability check or a saving throw. The sphinx adds 2 to the roll.</p>",
           "chat": ""
         },
         "activation": {
@@ -251,8 +264,13 @@
         },
         "uses": {
           "spent": 0,
-          "max": "",
-          "recovery": []
+          "max": "2",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
         },
         "type": {
           "value": "monster",
@@ -266,14 +284,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!JEIje7v9riJsdCMu.1Jqb6kDVn0vGbpBz"
+      "_key": "!actors.items!ldTXebhBupPQZrSx.g6H2gInKgBROzBKh"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Sphinx of Wonder",
-      "page": 293,
-      "cr": "0",
+      "page": 291,
+      "cr": "1",
       "warnings": []
     }
   }

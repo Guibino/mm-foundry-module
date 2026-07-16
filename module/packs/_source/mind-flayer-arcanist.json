@@ -1,6 +1,6 @@
 {
-  "_id": "hN1hNpZOLVv52qiK",
-  "_key": "!actors!hN1hNpZOLVv52qiK",
+  "_id": "Obo8aImCm1l82Qth",
+  "_key": "!actors!Obo8aImCm1l82Qth",
   "folder": "1nioWC3kx0YxX8qj",
   "name": "Mind Flayer Arcanist",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 143,
         "max": 143,
-        "formula": "26d8+26",
+        "formula": "26d8 + 26",
         "temp": null,
         "tempmax": null
       },
@@ -67,10 +67,10 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Lawful",
+      "alignment": "Leal e Mau",
       "cr": 11,
       "xp": {
-        "value": 7200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -104,20 +104,24 @@
       },
       "languages": {
         "value": [],
-        "custom": "Fala Profunda, Comum Inferior"
+        "custom": "Fala Profunda"
       }
     },
     "skills": {
+      "arc": {
+        "value": 2,
+        "ability": "int"
+      },
       "ins": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       },
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       },
       "ste": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       }
     }
@@ -135,13 +139,13 @@
   },
   "items": [
     {
-      "_id": "aGiiKci7yYpOrS1G",
-      "name": "Magic Resistance",
+      "_id": "aVymRDDlmwaQQntN",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mind flayer has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>The mind flayer has Vantagem on saving throws against spells and other magical effects.</p>",
           "chat": ""
         },
         "activation": {
@@ -165,7 +169,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hN1hNpZOLVv52qiK.aGiiKci7yYpOrS1G"
+      "_key": "!actors.items!Obo8aImCm1l82Qth.aVymRDDlmwaQQntN"
     },
     {
       "_id": "iEE1I19SvLwojVYb",
@@ -174,7 +178,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mind flayer makes three Arcane Tenta- cles attacks.</p>",
+          "value": "<p>The mind flayer makes three Arcane Tentáculos attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -199,16 +203,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hN1hNpZOLVv52qiK.iEE1I19SvLwojVYb"
+      "_key": "!actors.items!Obo8aImCm1l82Qth.iEE1I19SvLwojVYb"
     },
     {
-      "_id": "ptQyJh3pITbGqHA7",
-      "name": "Arcane Tentacles",
+      "_id": "u0cTEebZPFstCbLy",
+      "name": "Arcane Tentáculos",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +9, alcance 5 ft. or range 120 ft. Hit : 27 (4d70 + 5) Psíquico de dano, and the mind flayer can teleport o alvo up to 30 feet to an unoccupied space the mind flayer can see on a surface or liquid large enough to support o alvo. If this de dano reduces o alvo to 0 Pontos de Vida, the mind flayer kills it and magically devours its brain.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +9, alcance 1,5 m. or distância 36 m. Acerto: 27 (4d10 + 5) dano psíquico, and the mind flayer can teleport o alvo up to 9 m to an unoccupied space the mind flayer can see on a surface or liquid large enough to support o alvo. If this de dano reduces o alvo to 0 Pontos de Vida, the mind flayer kills it and magically devours its brain.</p>",
           "chat": ""
         },
         "activation": {
@@ -226,8 +230,8 @@
           "subtype": ""
         },
         "activities": {
-          "cgYie8fDkwtblPNy": {
-            "_id": "cgYie8fDkwtblPNy",
+          "ngvnWcrAt5zCjYdV": {
+            "_id": "ngvnWcrAt5zCjYdV",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -246,7 +250,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 10,
+                  "bonus": "5",
+                  "types": [
+                    "psychic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -255,21 +277,23 @@
         "mm2024": {
           "mechanics": {
             "toHit": 9,
-            "attackType": "ranged"
+            "attackType": "ranged",
+            "damageFormula": "4d10+5",
+            "damageType": "psychic"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hN1hNpZOLVv52qiK.ptQyJh3pITbGqHA7"
+      "_key": "!actors.items!Obo8aImCm1l82Qth.u0cTEebZPFstCbLy"
     },
     {
       "_id": "iT67ELbkjtEUZVbZ",
-      "name": "Mind Burst (Recharge 5-6)",
+      "name": "Mind Burst (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Inteligência Teste de Resistência: DC 17, cada criatura in a 40-foot Emanation originat- ing from the mind flayer. Falha: 41 (8d8 + 5) Psíquico de dano, and o alvo has the Atordoado condition until the end of the mind flayer's next turn. Sucesso: Metade do dano only. v 1.</p>",
+          "value": "<p>Teste de Resistência de Inteligência: CD 17, cada criatura in a 12 m Emanation originating from the mind flayer. 41 (8d8 + 5) dano psíquico, and o alvo fica com a condição Atordoado until the end of the mind flayer's next turn. Metade do dano only.</p>",
           "chat": ""
         },
         "activation": {
@@ -313,25 +337,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 8,
-                  "denomination": 8,
-                  "bonus": "5",
-                  "types": [
-                    "psychic"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -339,54 +345,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "8d8+5",
-            "damageType": "psychic",
             "saveDc": 17,
             "saveAbility": "int"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hN1hNpZOLVv52qiK.iT67ELbkjtEUZVbZ"
-    },
-    {
-      "_id": "mphKtdh2m9ucLZUU",
-      "name": "Shield (2/Day)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The mind flayer casts Shield in response to that spell's trigger, using the same spellcasting abil- ity as Conjuração. \\ MINOTAUR OF BAPHOMET Berserker of the Demon Lord of Beasts</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "reaction",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "2",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!hN1hNpZOLVv52qiK.mphKtdh2m9ucLZUU"
+      "_key": "!actors.items!Obo8aImCm1l82Qth.iT67ELbkjtEUZVbZ"
     },
     {
       "_id": "wni6wduFdu25P0ad",
@@ -395,7 +360,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mind flayer casts one of the following spells, requiring no spell components and using Intelli- gence as the spellcasting ability (spell save DC 17) : À Vontade: Detect Magic, Detect Thoughts, Disguise Self, Mage Hand (the hand is Invisível) 1/Dia Each: C f_ airvoyance, Dimension Door, Fogoball .(level 5 version), Elétrico Bolt (level 5 version) , Plane Shift (self only), Sending</p>",
+          "value": "<p>The mind flayer casts one of the following spells, requiring no spell components and using Inteligência as the spellcasting ability (spell save CD 17):</p>",
           "chat": ""
         },
         "activation": {
@@ -420,13 +385,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hN1hNpZOLVv52qiK.wni6wduFdu25P0ad"
+      "_key": "!actors.items!Obo8aImCm1l82Qth.wni6wduFdu25P0ad"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Mind Flayer Arcanist",
-      "page": 216,
+      "page": 214,
       "cr": "11",
       "warnings": []
     }

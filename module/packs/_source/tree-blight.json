@@ -1,6 +1,6 @@
 {
-  "_id": "QTgx16ad0A5AnWES",
-  "_key": "!actors!QTgx16ad0A5AnWES",
+  "_id": "G6xZQYfrYLnSI2De",
+  "_key": "!actors!G6xZQYfrYLnSI2De",
   "folder": "UIhMG4gNrr0aGWHc",
   "name": "Tree Blight",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 115,
         "max": 115,
-        "formula": "10d1 2 + 50",
+        "formula": "10d12 + 50",
         "temp": null,
         "tempmax": null
       },
@@ -51,7 +51,8 @@
         "walk": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "blindsight": 60
       },
       "init": {
         "ability": "dex",
@@ -68,7 +69,7 @@
       "alignment": "Neutro e Mau",
       "cr": 7,
       "xp": {
-        "value": 2900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -81,7 +82,7 @@
       "size": "huge",
       "di": {
         "value": [],
-        "custom": "Deafened"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -92,12 +93,14 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "deafened"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Unde rstands Common and Druidic bu t"
+        "custom": "understands Common and Druidic but can't speak"
       }
     },
     "skills": {}
@@ -146,7 +149,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!QTgx16ad0A5AnWES.li0YrF0W8qcIt4MR"
+      "_key": "!actors.items!G6xZQYfrYLnSI2De.li0YrF0W8qcIt4MR"
     },
     {
       "_id": "dtmerngBjC4QZqlm",
@@ -155,7 +158,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 15 ft. Acerto: 16 (3d6 + 6) Concussão de dano. (</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 4,5 m. Acerto: 16 (3d6 + 6) dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
@@ -227,7 +230,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!QTgx16ad0A5AnWES.dtmerngBjC4QZqlm"
+      "_key": "!actors.items!G6xZQYfrYLnSI2De.dtmerngBjC4QZqlm"
     },
     {
       "_id": "sypFeag14RMENN5N",
@@ -236,7 +239,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Força Teste de Resistência: DC 17, one Large or smaller creature the blight can see within 15 feet. Falha: The target is pulled up to 10 feet straight to- ward the blight and has -the Agarrado condition (escape DC 16) from one of six roots. Until the grapple ends, o alvo takes 13 (2d6 + 6) Concussão de dano at the start of each of its turns. , ·</p>",
+          "value": "<p>Teste de Resistência de Força: CD 17, one Large or smaller creature the blight can see within 4,5 m. O alvo is pulled up to 3 m straight toward the blight and fica com a condição Agarrado (CD para escapar 16) from one of six roots. Until the grapple ends, o alvo takes 13 (2d6 + 6) dano de concussão at the start of each of its turns.</p>",
           "chat": ""
         },
         "activation": {
@@ -288,7 +291,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!QTgx16ad0A5AnWES.sypFeag14RMENN5N"
+      "_key": "!actors.items!G6xZQYfrYLnSI2De.sypFeag14RMENN5N"
     },
     {
       "_id": "wDDFfWmhEiIgYE3r",
@@ -297,7 +300,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 17, uma criatura N uJ</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 17, uma criatura Agarrado by the blight. 19 (3d8 + 6) dano perfurante. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -349,47 +352,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!QTgx16ad0A5AnWES.wDDFfWmhEiIgYE3r"
-    },
-    {
-      "_id": "tfOafb32NULEKc9w",
-      "name": "Agarrado by the blight",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Falha: 19 (3d8 + 6) Perfurante > de dano. Sucesso: Metade do dano. , 0::: CD VINE BLIGHT Vine blights resemble humans wrapped in vines common to the areas in which they grow, from hairy ivy vines to flowering kudzu. They can cause plants to burst from the ground around themselves and entangle nearby foes. Unlike most other blights, vine blights can speak. They do so rarely, typically only to convey messages from their masters or to repeat the words of their victims in rasping voices. TREE BLIGHT Tree blights look like ancient, dead trees with gnarled limbs and splintered hollows. Imbued with bloodlust, these blights feed on the living. Evidence of their past meals is often tangled amid• their branches and roots. Tree blights cooperate with other blights, but they attack other tree-shaped beings they encounter, such as awakened trees and [ treants. GULTHI A S BLIGHT Ancient plants twisted by evil, Gulthias blights feed on blood and despoil the surrounding land, often giving rise to subservient blights. These cursed plants take their name from the story of their cre- ation; the first of their kind was a tree that grew N from the stake piercing the heart of the vampire > Gulthias. These blights consider all creatures either 0:: servants or fertilizer for the blights' corruption. co IT LI VES , TH OUG H IT LO OK S D EA D . IN AN A GE L ON G P AST, SO MEONE STAKE D A VAM PIR E T O T HE E AR TH O N T HIS VERY J</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!QTgx16ad0A5AnWES.tfOafb32NULEKc9w"
+      "_key": "!actors.items!G6xZQYfrYLnSI2De.wDDFfWmhEiIgYE3r"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Tree Blight",
-      "page": 46,
+      "page": 44,
       "cr": "7",
       "warnings": []
     }

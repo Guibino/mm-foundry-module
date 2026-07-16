@@ -1,0 +1,427 @@
+{
+  "_id": "cjCw7kdwhHDtWlUT",
+  "_key": "!actors!cjCw7kdwhHDtWlUT",
+  "folder": "UIhMG4gNrr0aGWHc",
+  "name": "Gulthias Blight",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/gulthias-blight.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 25,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0
+      },
+      "con": {
+        "value": 22,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 18,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 12,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 20,
+        "formula": ""
+      },
+      "hp": {
+        "value": 264,
+        "max": 264,
+        "formula": "16d20 + 96",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 50
+      },
+      "senses": {
+        "units": "ft",
+        "blindsight": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "plant",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Mau",
+      "cr": 16,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "grg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "fire",
+          "necrotic"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "deafened"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comum, Druidic"
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Gulthias Blight",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/gulthias-blight.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "eRLyBvObEfsiSAd2",
+      "name": "Blight Seeds",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>When it finishes a Long Rest, the blight expels 1d6 seeds into unoccupied spaces on the ground within 9 m of itself. After 24 hours, the seeds become creatures under the blight's control. Roll 1d8 for each seed to determine the creature it becomes: on 1-4, Twig Blight; on 5-6, Needle Blight; on 7-8, Vine Blight.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!cjCw7kdwhHDtWlUT.eRLyBvObEfsiSAd2"
+    },
+    {
+      "_id": "dQbKkVGP2ACxVNCD",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The blight makes two attacks, using Pancada or Thorn Volley in any combination. It also uses Life-Draining Root.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!cjCw7kdwhHDtWlUT.dQbKkVGP2ACxVNCD"
+    },
+    {
+      "_id": "eNevgGtVf8MnjmVj",
+      "name": "Pancada",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +12, alcance 3 m. Acerto: 25 (4d8 + 7) dano de concussão.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "xhvtGRD4npBDDvlF": {
+            "_id": "xhvtGRD4npBDDvlF",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "12",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 8,
+                  "bonus": "7",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 12,
+            "attackType": "melee",
+            "damageFormula": "4d8+7",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!cjCw7kdwhHDtWlUT.eNevgGtVf8MnjmVj"
+    },
+    {
+      "_id": "qjiJAMdVFHVl7A95",
+      "name": "Thorn Volley",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +12, distância 18/54 m. Acerto: 20 (3d8 + 7) dano perfurante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "xMyR4QH5qyhlez72": {
+            "_id": "xMyR4QH5qyhlez72",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "12",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 8,
+                  "bonus": "7",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 12,
+            "attackType": "ranged",
+            "damageFormula": "3d8+7",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!cjCw7kdwhHDtWlUT.qjiJAMdVFHVl7A95"
+    },
+    {
+      "_id": "yvHByCVv6uuEPANc",
+      "name": "Life-Draining Root",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Constituição: CD 20, one Huge or smaller creature the blight can see within 9 m. 14 (2d6 + 7) dano necrótico, and o alvo fica com a condição Agarrado (CD para escapar 17) from one of six roots. Until the grapple ends, o alvo fica com a condição Impedido and takes 14 (4d6) dano necrótico at the start of each of its turns. O alvo's Hit Point maximum decreases by an amount equal to the dano necrótico taken, and the blight regains Pontos de Vida equal to that amount.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "6j91jYcZ0UCSSGmK": {
+            "_id": "6j91jYcZ0UCSSGmK",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "20"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 20,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!cjCw7kdwhHDtWlUT.yvHByCVv6uuEPANc"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Gulthias Blight",
+      "page": 45,
+      "cr": "16",
+      "warnings": []
+    }
+  }
+}

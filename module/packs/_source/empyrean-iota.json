@@ -1,0 +1,308 @@
+{
+  "_id": "ocUBc8hJfwTU4yco",
+  "_key": "!actors!ocUBc8hJfwTU4yco",
+  "folder": "IQP9BfRMl9yEsYGp",
+  "name": "Empyrean Iota",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/tokens/empyrean-iota.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 1,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0
+      },
+      "int": {
+        "value": 15,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 16,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 16,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13,
+        "formula": ""
+      },
+      "hp": {
+        "value": 22,
+        "max": 22,
+        "formula": "5d8",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 5,
+        "fly": 30
+      },
+      "senses": {
+        "units": "ft",
+        "truesight": 30
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "celestial",
+        "subtype": "titan",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 1,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "prone"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "all"
+      }
+    },
+    "skills": {
+      "his": {
+        "value": 1,
+        "ability": "int"
+      },
+      "ins": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Empyrean Iota",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/empyrean-iota.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "D24o9qbd6gTySncP",
+      "name": "Movimento Incorpóreo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura pode se mover através de outras criaturas e objetos como se fossem Terreno Difícil. Ela sofre 5 (1d10) de dano de energia se terminar o turno dentro de um objeto.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ocUBc8hJfwTU4yco.D24o9qbd6gTySncP"
+    },
+    {
+      "_id": "hJi7msjP26wjwlWx",
+      "name": "Resistência a Magia",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ocUBc8hJfwTU4yco.hJi7msjP26wjwlWx"
+    },
+    {
+      "_id": "atqmiNtedt2lJ4BM",
+      "name": "Otherworldly Strike",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +5, alcance 1,5 m. or distância 9 m. Acerto: 7 (1d8 + 3) Necrótico or dano radiante (empyrean's choice).</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "FgzGPcKxv3cIU2X1": {
+            "_id": "FgzGPcKxv3cIU2X1",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "ranged"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ocUBc8hJfwTU4yco.atqmiNtedt2lJ4BM"
+    },
+    {
+      "_id": "mePHe1BmH1u3X7BC",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The empyrean casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability:</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ocUBc8hJfwTU4yco.mePHe1BmH1u3X7BC"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Empyrean Iota",
+      "page": 112,
+      "cr": "1",
+      "warnings": []
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "_id": "CsTX5HgfvHcaQceR",
-  "_key": "!actors!CsTX5HgfvHcaQceR",
+  "_id": "4YLPxJUSjQMHehu1",
+  "_key": "!actors!4YLPxJUSjQMHehu1",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Earth Elemental",
   "type": "npc",
@@ -53,6 +53,7 @@
       },
       "senses": {
         "units": "ft",
+        "darkvision": 60,
         "tremorsense": 60
       },
       "init": {
@@ -70,7 +71,7 @@
       "alignment": "Neutro",
       "cr": 5,
       "xp": {
-        "value": 1800
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -99,13 +100,17 @@
       },
       "ci": {
         "value": [
-          "petrified"
+          "exhaustion",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "unconscious"
         ],
-        "custom": "Exhaust ion; Paralyze d"
+        "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Primordial (Ter r an)"
+        "custom": "Primordial (Terran)"
       }
     },
     "skills": {}
@@ -123,13 +128,13 @@
   },
   "items": [
     {
-      "_id": "ExxgtVajmbtP5VR6",
-      "name": "Earth Glide",
+      "_id": "wLQAic7DcM3TLfr5",
+      "name": "Deslizar pela Terra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The elemental can burrow through nonmagical, unworked earth and stone. While do- ing so, the elemental doesn't disturb the material it moves through.</p>",
+          "value": "<p>The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through.</p>",
           "chat": ""
         },
         "activation": {
@@ -153,16 +158,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CsTX5HgfvHcaQceR.ExxgtVajmbtP5VR6"
+      "_key": "!actors.items!4YLPxJUSjQMHehu1.wLQAic7DcM3TLfr5"
     },
     {
-      "_id": "0ha3Dcg1hCuGg2wJ",
-      "name": "Siege Monster",
+      "_id": "JWgsvg7MDMQFtoXl",
+      "name": "Monstro de Cerco",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The elemental deals double de dano to objects and structures.</p>",
+          "value": "<p>A criatura causa o dobro de dano a objetos e estruturas.</p>",
           "chat": ""
         },
         "activation": {
@@ -186,7 +191,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CsTX5HgfvHcaQceR.0ha3Dcg1hCuGg2wJ"
+      "_key": "!actors.items!4YLPxJUSjQMHehu1.JWgsvg7MDMQFtoXl"
     },
     {
       "_id": "em0gdVhoeofD0hgb",
@@ -195,7 +200,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The elemental makes two attacks, using Slam or Rock Launch in any combination.</p>",
+          "value": "<p>The elemental makes two attacks, using Pancada or Rock Launch in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -220,16 +225,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CsTX5HgfvHcaQceR.em0gdVhoeofD0hgb"
+      "_key": "!actors.items!4YLPxJUSjQMHehu1.em0gdVhoeofD0hgb"
     },
     {
-      "_id": "utpMpUxYd4qpCWqh",
-      "name": "Slam",
+      "_id": "bQ37MRobTu2mjoIK",
+      "name": "Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>M~lee Attack Roll: +8, alcance l O ft . Acerto: 14 (2d8 +' 5) Concussão de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 3 m. Acerto: 14 (2d8 + 5) dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
@@ -246,18 +251,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "ICv7VdlQYHyUZtHX": {
+            "_id": "ICv7VdlQYHyUZtHX",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "8",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "5",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "2d8+'5",
+            "toHit": 8,
+            "attackType": "melee",
+            "damageFormula": "2d8+5",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CsTX5HgfvHcaQceR.utpMpUxYd4qpCWqh"
+      "_key": "!actors.items!4YLPxJUSjQMHehu1.bQ37MRobTu2mjoIK"
     },
     {
       "_id": "BnzZR85i6Tz8tsCS",
@@ -266,7 +315,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +8 , range 60 ft. Acerto: 8 0 (1d6 + 5) Concussão de dano. If o alvo is a Large u or smaller creature, it has the Caído condition. I --- - ----z~~r-~ EFREETI Genie of Fogo</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +8, distância 18 m. Acerto: 8 (1d6 + 5) dano de concussão. If o alvo is a Large or smaller creature, it fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -304,7 +353,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "5",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -313,18 +380,20 @@
         "mm2024": {
           "mechanics": {
             "toHit": 8,
-            "attackType": "ranged"
+            "attackType": "ranged",
+            "damageFormula": "1d6+5",
+            "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CsTX5HgfvHcaQceR.BnzZR85i6Tz8tsCS"
+      "_key": "!actors.items!4YLPxJUSjQMHehu1.BnzZR85i6Tz8tsCS"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Earth Elemental",
-      "page": 110,
+      "page": 108,
       "cr": "5",
       "warnings": []
     }

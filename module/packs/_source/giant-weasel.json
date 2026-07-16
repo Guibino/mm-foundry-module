@@ -1,8 +1,8 @@
 {
-  "_id": "3Swmgw4HvhIvJacM",
-  "_key": "!actors!3Swmgw4HvhIvJacM",
+  "_id": "gJBIs43k2Wpq19B8",
+  "_key": "!actors!gJBIs43k2Wpq19B8",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Gigante Weasel",
+  "name": "Giant Weasel",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/giant-weasel.webp",
   "system": {
@@ -48,10 +48,12 @@
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 40,
         "climb": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -66,7 +68,7 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 0.125,
       "xp": {
         "value": 0
       },
@@ -97,13 +99,26 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "acr": {
+        "value": 1,
+        "ability": "dex"
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Gigante Weasel",
+    "name": "Giant Weasel",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -115,13 +130,13 @@
   },
   "items": [
     {
-      "_id": "DiueForqOQzJzNv5",
-      "name": "Bite",
+      "_id": "qR9SFTtljqLf3wR8",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 5 (1d4 + 3) . Perfurante de dano. APPENDIX A I ANIMALS GI A NT W OLF S P I DER GIANT WOLF SPIDER Medium Beast, Unal ign ed AC 13 Iniciativa +3 (13) HP ll (2d8+2) S pee d 40 ft., Climb 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 5 (1d4 + 3) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -139,8 +154,8 @@
           "subtype": ""
         },
         "activities": {
-          "M3TUbgn2sBByhUfO": {
-            "_id": "M3TUbgn2sBByhUfO",
+          "z3549W31LZH4uP59": {
+            "_id": "z3549W31LZH4uP59",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -159,7 +174,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -168,19 +201,21 @@
         "mm2024": {
           "mechanics": {
             "toHit": 5,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d4+3",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3Swmgw4HvhIvJacM.DiueForqOQzJzNv5"
+      "_key": "!actors.items!gJBIs43k2Wpq19B8.qR9SFTtljqLf3wR8"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Giant Weasel",
-      "page": 363,
-      "cr": "0",
+      "page": 361,
+      "cr": "1/8",
       "warnings": []
     }
   }

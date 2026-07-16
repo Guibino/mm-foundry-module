@@ -1,6 +1,6 @@
 {
-  "_id": "5fbnPvGqaKowdMQ7",
-  "_key": "!actors!5fbnPvGqaKowdMQ7",
+  "_id": "6xGxXyojFX6osOFV",
+  "_key": "!actors!6xGxXyojFX6osOFV",
   "folder": "CVeezowVb7BNP8yc",
   "name": "Animated Armor",
   "type": "npc",
@@ -51,7 +51,8 @@
         "walk": 25
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "blindsight": 60
       },
       "init": {
         "ability": "dex",
@@ -68,7 +69,7 @@
       "alignment": "Sem Tendência",
       "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -80,7 +81,10 @@
     "traits": {
       "size": "med",
       "di": {
-        "value": [],
+        "value": [
+          "poison",
+          "psychic"
+        ],
         "custom": ""
       },
       "dr": {
@@ -92,12 +96,20 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed",
+          "deafened",
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "petrified",
+          "poisoned"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
@@ -121,7 +133,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The armor makes two Slam attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Pancada.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +158,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!5fbnPvGqaKowdMQ7.5B3zJDb4ElSeocrn"
+      "_key": "!actors.items!6xGxXyojFX6osOFV.5B3zJDb4ElSeocrn"
     },
     {
-      "_id": "Oft4e7TRfqiDl7Xq",
-      "name": "Slam",
+      "_id": "YTOuTzdjqBQAHgkh",
+      "name": "Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 5 (1d6 + 2) Concussão de dano. 16 ANIMATED OBJECTS ANIMATED ARMOR Animated suits of armor might move with steady deliberateness or awkward gaits. They're often constructed from plate armor, making them easy to mistake for soldiers or helmed horrors. Other types of armor or even metal statuary might also become animated armor. ANIMATED BROOM Animated brooms keep their surroundings tidy and defend them when necessary. Launching into the air, these brooms dart about, attacking foes from unexpected angles. Other flying objects, like ani- mated tools or staffs, might also use this stat block. ANIMATED FLYING SWORD Animated flying swords move as if wielded by un- seen warriors. Whether an animated blade is newly forged or a constellation of broken fragments, the object behaves the same. Other weapons from the Player's Handbook can also be animated and use game statistics similar to those here. ANIMATED Rua OF SMOTHERING Animated rugs of smothering might attack any creature that steps on them, or they might be passed off as superficially similar magic items, such as Carpets of Flying, and attack those who speak a supposed command word. Deadly tapestries, furs, and similar items also use this stat block. ANIMATED BROOM Small Co nstruct, Unaligned AC 15 In itiative +5 ( 15) HP 14 (4d6) Speed 5 ft., Fly 50 ft. (hover) MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
@@ -173,8 +185,8 @@
           "subtype": ""
         },
         "activities": {
-          "tbD8bDdCEPvZZK2z": {
-            "_id": "tbD8bDdCEPvZZK2z",
+          "9MSyxr1I6twSHVRe": {
+            "_id": "9MSyxr1I6twSHVRe",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -227,13 +239,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!5fbnPvGqaKowdMQ7.Oft4e7TRfqiDl7Xq"
+      "_key": "!actors.items!6xGxXyojFX6osOFV.YTOuTzdjqBQAHgkh"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Animated Armor",
-      "page": 18,
+      "page": 16,
       "cr": "1",
       "warnings": []
     }

@@ -1,6 +1,6 @@
 {
-  "_id": "HeP1STxqXaFR2ux1",
-  "_key": "!actors!HeP1STxqXaFR2ux1",
+  "_id": "hOdfwub7mOFUgtGU",
+  "_key": "!actors!hOdfwub7mOFUgtGU",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Owlbear",
   "type": "npc",
@@ -70,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,7 +102,12 @@
         "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Owlbear",
@@ -123,7 +128,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The owlbear makes two Rend attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -148,16 +153,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!HeP1STxqXaFR2ux1.gJXiXY8WdBIPSFcc"
+      "_key": "!actors.items!hOdfwub7mOFUgtGU.gJXiXY8WdBIPSFcc"
     },
     {
-      "_id": "Ej8lTad8MtzGMzZk",
-      "name": "Rend",
+      "_id": "7WLJOFoRBzccpbBa",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 14 (2d8 + 5) Cortante de dano. OWLBEARS 0wlbears dwell in distinctive dens. Roll on or choose a result\" from the 0wlbear Den Features ta- ble to inspire an owlbear den's noteworthy traits. OWLBEAR DEN FEATURES 1d4 An Owlbear Den Contains ... 1 Evidence of previous occupants, like bandits, wolves, or dragons. 2 Heaps of regurgitated pellets studded with coins or other treasure. 3 A nest with 1d6 owlbear eggs. 4 Passages through the earth or hollow trees. O W LBEAR 0wlbears are tenacious hunters that might track prey over miles and rarely give up their hunts. PRIMEVAL OWLBEAR Ancient forests and Feywild demesnes steeped in magic can give rise to particularly large and vicious owlbears. These · primeval specimens can fly-albeit poorly-and emit thunderous screeches that can rattle foes and even tear them asunder. PRIMEVAL 0WLBEAR Huge Monstrosity, Unaligned AC 16 Iniciativa +5 (15) HP 126 (12d12 + 48) Speed 40 ft., Climb 40 ft., Fly 5 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 14 (2d8 + 5) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -175,8 +180,8 @@
           "subtype": ""
         },
         "activities": {
-          "AQvV8dSRS772lvAg": {
-            "_id": "AQvV8dSRS772lvAg",
+          "EDOT83OhvbUd0bTn": {
+            "_id": "EDOT83OhvbUd0bTn",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -229,13 +234,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!HeP1STxqXaFR2ux1.Ej8lTad8MtzGMzZk"
+      "_key": "!actors.items!hOdfwub7mOFUgtGU.7WLJOFoRBzccpbBa"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Owlbear",
-      "page": 236,
+      "page": 234,
       "cr": "3",
       "warnings": []
     }

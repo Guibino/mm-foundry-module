@@ -1,8 +1,8 @@
 {
-  "_id": "FM31grZdcmORzPKQ",
-  "_key": "!actors!FM31grZdcmORzPKQ",
+  "_id": "Zb46pTNrQjJQCsf5",
+  "_key": "!actors!Zb46pTNrQjJQCsf5",
   "folder": "1QPcErIwVgACFlzi",
-  "name": "Sacerdote",
+  "name": "Priest",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/priest.webp",
   "system": {
@@ -61,14 +61,14 @@
     "details": {
       "type": {
         "value": "humanoid",
-        "subtype": "",
+        "subtype": "cleric",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Neutro",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -116,7 +116,7 @@
     }
   },
   "prototypeToken": {
-    "name": "Sacerdote",
+    "name": "Priest",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -134,7 +134,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The archpriest makes three Radiante Burst attacks.</p>",
+          "value": "<p>The priest makes two attacks, using Maça or Radiante Flame in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -159,16 +159,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!FM31grZdcmORzPKQ.ir2vYLlbYONmomad"
+      "_key": "!actors.items!Zb46pTNrQjJQCsf5.ir2vYLlbYONmomad"
     },
     {
-      "_id": "vC1ib94f6lCtfjhv",
-      "name": "Radiante Burst",
+      "_id": "CY8fRtnt5AHe7JeJ",
+      "name": "Maça",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +9, alcance 5 ft. or range 60 ft. Acerto: 27 (4d10 + 5) Radiante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 6 (1d6 + 3) dano de concussão mais 5 (2d4) dano radiante.</p>",
           "chat": ""
         },
         "activation": {
@@ -186,8 +186,8 @@
           "subtype": ""
         },
         "activities": {
-          "Kc9BUInuqtOlLs3N": {
-            "_id": "Kc9BUInuqtOlLs3N",
+          "4XDckQmMQz5QawrP": {
+            "_id": "4XDckQmMQz5QawrP",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -197,10 +197,10 @@
             },
             "attack": {
               "ability": "",
-              "bonus": "9",
+              "bonus": "5",
               "flat": true,
               "type": {
-                "value": "ranged",
+                "value": "melee",
                 "classification": "weapon"
               }
             },
@@ -208,11 +208,11 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": 4,
-                  "denomination": 10,
-                  "bonus": "5",
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "3",
                   "types": [
-                    "radiant"
+                    "bludgeoning"
                   ],
                   "custom": {
                     "enabled": false,
@@ -232,24 +232,24 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "toHit": 9,
-            "attackType": "ranged",
-            "damageFormula": "4d10+5",
-            "damageType": "radiant"
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "1d6+3",
+            "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!FM31grZdcmORzPKQ.vC1ib94f6lCtfjhv"
+      "_key": "!actors.items!Zb46pTNrQjJQCsf5.CY8fRtnt5AHe7JeJ"
     },
     {
-      "_id": "oQMSf4kyl72QWSEF",
-      "name": "Holy Word (Recharge 4-6)",
+      "_id": "Mhh0Kk4HXpchEebe",
+      "name": "Radiante Flame",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sabedoria Teste de Resistência: DC 17, each enemy in a 20-foot Emanation originating from the archpriest. Falha: 21 (6d6) Radiante de dano, and o alvo has the Atordoado condition until the end of the arch priest's next turn. Sucesso: Metade do dano only.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +5, distância 18 m. Acerto: 11 (2d10) dano radiante.</p>",
           "chat": ""
         },
         "activation": {
@@ -259,44 +259,38 @@
         },
         "uses": {
           "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "recharge",
-              "type": "recoverAll",
-              "formula": "4"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
           "subtype": ""
         },
         "activities": {
-          "qheCRxQKrG7ehUMv": {
-            "_id": "qheCRxQKrG7ehUMv",
-            "type": "save",
+          "f6Mf3smffar3j6Qa": {
+            "_id": "f6Mf3smffar3j6Qa",
+            "type": "attack",
             "activation": {
               "type": "action",
               "value": null,
               "override": true,
               "condition": ""
             },
-            "save": {
-              "ability": [
-                "wis"
-              ],
-              "dc": {
-                "calculation": "",
-                "formula": "17"
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
               }
             },
             "damage": {
-              "onSave": "half",
+              "includeBase": false,
               "parts": [
                 {
-                  "number": 6,
-                  "denomination": 6,
+                  "number": 2,
+                  "denomination": 10,
                   "bonus": "",
                   "types": [
                     "radiant"
@@ -319,54 +313,15 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "6d6",
-            "damageType": "radiant",
-            "saveDc": 17,
-            "saveAbility": "wis"
+            "toHit": 5,
+            "attackType": "ranged",
+            "damageFormula": "2d10",
+            "damageType": "radiant"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!FM31grZdcmORzPKQ.oQMSf4kyl72QWSEF"
-    },
-    {
-      "_id": "kJ5BVM24cF5ReQCm",
-      "name": "Divine Aid (3/Day)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The priest casts Bless, Dispel Magic, Healing Word, or Lesser Restoration, using the same spellcasting ability as Conjuração. \\ PSEUDODRAGON Tiny D rag o n, Neutral Goo d AC 14 Initiat ive +2 (1 2) HP 10(3d4+3) Speed 15 ft., Fly 60 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "3",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!FM31grZdcmORzPKQ.kJ5BVM24cF5ReQCm"
+      "_key": "!actors.items!Zb46pTNrQjJQCsf5.Mhh0Kk4HXpchEebe"
     },
     {
       "_id": "d1LFb7yktBtV32P0",
@@ -375,7 +330,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The arch priest casts one of the following spells, requiring no Material components and using Sabedoria as the spellcast_ing ability (spell save DC 17): À Vontade: Light, Thaumaturgy 1/Dia Each: Flame Strike (level 6 version)i Greater Res- toration, Raise Dead, Zone of Truth</p>",
+          "value": "<p>The priest casts one of the following spells, using Sabedoria as the spellcasting ability:</p>",
           "chat": ""
         },
         "activation": {
@@ -400,13 +355,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!FM31grZdcmORzPKQ.d1LFb7yktBtV32P0"
+      "_key": "!actors.items!Zb46pTNrQjJQCsf5.d1LFb7yktBtV32P0"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Priest",
-      "page": 250,
+      "page": 248,
       "cr": "2",
       "warnings": []
     }

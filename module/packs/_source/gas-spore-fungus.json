@@ -1,6 +1,6 @@
 {
-  "_id": "8sEe9nlpAAHPiXSu",
-  "_key": "!actors!8sEe9nlpAAHPiXSu",
+  "_id": "oaeh0PILCASrWjOO",
+  "_key": "!actors!oaeh0PILCASrWjOO",
   "folder": "UIhMG4gNrr0aGWHc",
   "name": "Gas Spore Fungus",
   "type": "npc",
@@ -68,7 +68,7 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 0.5,
       "xp": {
         "value": 0
       },
@@ -82,7 +82,9 @@
     "traits": {
       "size": "lg",
       "di": {
-        "value": [],
+        "value": [
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
@@ -94,12 +96,20 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "blinded",
+          "charmed",
+          "deafened",
+          "frightened",
+          "paralyzed",
+          "poisoned",
+          "prone"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
@@ -117,46 +127,13 @@
   },
   "items": [
     {
-      "_id": "iKsJdylsGGebAPaj",
-      "name": "Death Burst",
+      "_id": "Ekl1pAGHZoOq8qVh",
+      "name": "Explosão Mortal",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The gas spore bursts when it dies. Consti- tution Sa~ing Throw: DC 10, cada criatura in a 20-foot</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!8sEe9nlpAAHPiXSu.iKsJdylsGGebAPaj"
-    },
-    {
-      "_id": "uVDbfRJ1biAfgNcI",
-      "name": "Emanation originating from the gas spore",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Falha: The target takes l 0 (3d6) Veneno de dano and has the Poi- soned condition for 1d12 hours. Unless the Envenenado condition is removed, o alvo dies at the end of that time and sprouts 2d4 Tiny Gas Spore Fungi (each with 1 Hit Point). After 2d6 days, they become Large and have 13 Pontos de Vida. • A C TIONS LU <t: Tendril. Rolagem de Ataque Corpo a Corpo: +0, alcance 5 ft. Acerto: 3 (1d6) en Veneno de dano, and o alvo has the Envenenado condi- LLJ lJ LLJ tion until the end of its next turn. SHRIEKER FUNGUS Medium Plant, Unaligned AC 5 Iniciativa - 5 (5) HP 13 (3d8) Speed 5 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>The gas spore bursts when it dies. Teste de Resistência de Constituição: CD 10, cada criatura in a 6 m Emanation originating from the gas spore. O alvo takes 10 (3d6) dano de veneno and fica com a condição Envenenado for 1d12 hours. Unless a condição Envenenado is removed, o alvo dies at the end of that time and sprouts 2d4 Tiny Gas Spore Fungi (each with 1 Hit Point). After 2d6 days, they become Large and have 13 Pontos de Vida.</p>",
           "chat": ""
         },
         "activation": {
@@ -177,20 +154,101 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "toHit": 0,
-            "attackType": "melee"
+            "saveDc": 10,
+            "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8sEe9nlpAAHPiXSu.uVDbfRJ1biAfgNcI"
+      "_key": "!actors.items!oaeh0PILCASrWjOO.Ekl1pAGHZoOq8qVh"
+    },
+    {
+      "_id": "KYVtsmoAiFUcV7aJ",
+      "name": "Tendril",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +0, alcance 1,5 m. Acerto: 3 (1d6) dano de veneno, and o alvo fica com a condição Envenenado until the end of its next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "P455Vym6M4LnL9S4": {
+            "_id": "P455Vym6M4LnL9S4",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "0",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "",
+                  "types": [
+                    "poison"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 0,
+            "attackType": "melee",
+            "damageFormula": "1d6",
+            "damageType": "poison"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!oaeh0PILCASrWjOO.KYVtsmoAiFUcV7aJ"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Gas Spore Fungus",
-      "page": 127,
-      "cr": "0",
+      "page": 125,
+      "cr": "1/2",
       "warnings": []
     }
   }

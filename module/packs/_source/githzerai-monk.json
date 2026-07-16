@@ -1,6 +1,6 @@
 {
-  "_id": "gkXDqga8UMGkNyPd",
-  "_key": "!actors!gkXDqga8UMGkNyPd",
+  "_id": "ev4RipFVNs3h6xHx",
+  "_key": "!actors!ev4RipFVNs3h6xHx",
   "folder": "1nioWC3kx0YxX8qj",
   "name": "Githzerai Monk",
   "type": "npc",
@@ -48,7 +48,7 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40
       },
       "senses": {
         "units": "ft"
@@ -61,14 +61,14 @@
     "details": {
       "type": {
         "value": "aberration",
-        "subtype": "Gith",
+        "subtype": "gith",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Neutro",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,7 +97,7 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum, Gith"
       }
     },
     "skills": {
@@ -124,29 +124,24 @@
   },
   "items": [
     {
-      "_id": "l5abqpCC402wEu3V",
-      "name": "Psi-Powered Leap (2/Day)",
+      "_id": "X7a3CAzAdtTw9aok",
+      "name": "Ataque Múltiplo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The githyanki castsjump, requiring no spell components and using the same spellcasting ability as Conjuração.</p>",
+          "value": "<p>The githzerai makes two Psi Strike attacks.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "bonus",
+          "type": "action",
           "value": null,
           "condition": ""
         },
         "uses": {
           "spent": 0,
-          "max": "2",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -160,32 +155,108 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gkXDqga8UMGkNyPd.l5abqpCC402wEu3V"
+      "_key": "!actors.items!ev4RipFVNs3h6xHx.X7a3CAzAdtTw9aok"
     },
     {
-      "_id": "JPkzEL9DwPZG1tYN",
-      "name": "Psionic Defense (2/Day)",
+      "_id": "CtYufSmAICCEYOB0",
+      "name": "Psi Strike",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The githyanki casts Feather Fall or Shield in response to the spell's trigger, requiring no spell components and using the same spellcasting ability as Conjuração. ~ rJ GITHZERAI ZERTH Medium Ab err ation ( Gi th), Lawful Neutral ~ AC 17 Iniciativa +7 (17) HP 84 (13d8 + 26) Speed 40 ft. MOD SAVE MOD SAVE M OD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 6 (1d8 + 2) dano de concussão mais 9 (2d8) dano psíquico.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "reaction",
+          "type": "action",
           "value": null,
           "condition": ""
         },
         "uses": {
           "spent": 0,
-          "max": "2",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "sAEaDne28vAtIgep": {
+            "_id": "sAEaDne28vAtIgep",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "2",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
-          ]
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "1d8+2",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ev4RipFVNs3h6xHx.CtYufSmAICCEYOB0"
+    },
+    {
+      "_id": "6X5iEpLlmfdSCMym",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The githzerai casts one of the following spells, requiring no spell components and using Sabedoria as the spellcasting ability:</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -199,13 +270,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gkXDqga8UMGkNyPd.JPkzEL9DwPZG1tYN"
+      "_key": "!actors.items!ev4RipFVNs3h6xHx.6X5iEpLlmfdSCMym"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Githzerai Monk",
-      "page": 138,
+      "page": 136,
       "cr": "2",
       "warnings": []
     }

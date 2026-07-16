@@ -1,8 +1,8 @@
 {
-  "_id": "a80noz0mJgRur3C2",
-  "_key": "!actors!a80noz0mJgRur3C2",
+  "_id": "4QZvCZrCHYmAQJkP",
+  "_key": "!actors!4QZvCZrCHYmAQJkP",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Faerie Dragão Adulto",
+  "name": "Faerie Dragon Adult",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/faerie-dragon-adult.webp",
   "system": {
@@ -70,7 +70,7 @@
       "alignment": "Caótico e Bom",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -99,7 +99,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Dracônico, Silvestre"
+        "custom": "Dracônico"
       }
     },
     "skills": {
@@ -118,7 +118,7 @@
     }
   },
   "prototypeToken": {
-    "name": "Faerie Dragão Adulto",
+    "name": "Faerie Dragon Adult",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -130,13 +130,13 @@
   },
   "items": [
     {
-      "_id": "tJ8PQ1DfLNi25ZRd",
-      "name": "Magic Resistance",
+      "_id": "aQYBM8Ptzf59j3v2",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>The dragon has Vantagem on saving throws against spells and other magical effects.</p>",
           "chat": ""
         },
         "activation": {
@@ -160,16 +160,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!a80noz0mJgRur3C2.tJ8PQ1DfLNi25ZRd"
+      "_key": "!actors.items!4QZvCZrCHYmAQJkP.aQYBM8Ptzf59j3v2"
     },
     {
-      "_id": "fqMAWgHBjdCT4xHb",
-      "name": "Bite",
+      "_id": "l3KqlxNMgKn5DbxP",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 7 (1d4 + 5) Perfurante de dano plus 3 (1d6) Psíquico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 7 (1d4 + 5) dano perfurante mais 3 (1d6) dano psíquico.</p>",
           "chat": ""
         },
         "activation": {
@@ -187,8 +187,8 @@
           "subtype": ""
         },
         "activities": {
-          "9F11E6bweaSIKeQp": {
-            "_id": "9F11E6bweaSIKeQp",
+          "lmDbmxFth7b90Qif": {
+            "_id": "lmDbmxFth7b90Qif",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -241,16 +241,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!a80noz0mJgRur3C2.fqMAWgHBjdCT4xHb"
+      "_key": "!actors.items!4QZvCZrCHYmAQJkP.l3KqlxNMgKn5DbxP"
     },
     {
       "_id": "rYuxIwa4fl0FKEo7",
-      "name": "Euphoria Breath (Recharge 5-6)",
+      "name": "Euphoria Breath (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sabedoria Teste de Resistência: DC 13, cada criatura in a 15-foot Cone. Falha: The target has the Incapacitado condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds au- tomatically. While Incapacitado, o alvo uses all its movement on each of its turns to move in a random direction.</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 13, cada criatura in a 4,5 m Cone. O alvo fica com a condição Incapacitado and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. While Incapacitado, o alvo uses all its movement on each of its turns to move in a random direction.</p>",
           "chat": ""
         },
         "activation": {
@@ -308,41 +308,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!a80noz0mJgRur3C2.rYuxIwa4fl0FKEo7"
-    },
-    {
-      "_id": "312PwoeOylGGjhdb",
-      "name": "Habilidade",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>lJ z Superior Invisibility. The dragon casts Greater Invisibil- a::: ity on itself, requiring no spell components and using CL w the same spellcasting ability as Conjuração. FAERIE DRAGON YOUTH Tiny Dragon, Chaotic Good AC 13 Iniciativa +3 (13) HP 21 (6d4 + 6) Speed 10 ft., Fly 60 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!a80noz0mJgRur3C2.312PwoeOylGGjhdb"
+      "_key": "!actors.items!4QZvCZrCHYmAQJkP.rYuxIwa4fl0FKEo7"
     },
     {
       "_id": "faAwSs8M4nIMNHnT",
@@ -351,7 +317,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 13): À Vontade: Dancing Lights, Mage Hand, Minor Illusion 1/Dia Each: Hallucinatory Terrain, Polymorph</p>",
+          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 13):</p>",
           "chat": ""
         },
         "activation": {
@@ -376,13 +342,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!a80noz0mJgRur3C2.faAwSs8M4nIMNHnT"
+      "_key": "!actors.items!4QZvCZrCHYmAQJkP.faAwSs8M4nIMNHnT"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Faerie Dragon Adult",
-      "page": 119,
+      "page": 117,
       "cr": "2",
       "warnings": []
     }

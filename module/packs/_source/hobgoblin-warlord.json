@@ -1,6 +1,6 @@
 {
-  "_id": "e61iVNOIhns56QEx",
-  "_key": "!actors!e61iVNOIhns56QEx",
+  "_id": "hchws7q1Xj2svTX2",
+  "_key": "!actors!hchws7q1Xj2svTX2",
   "folder": "inkH4oLnh3yP5W9M",
   "name": "Hobgoblin Warlord",
   "type": "npc",
@@ -8,27 +8,27 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 77,
+        "value": 17,
         "proficient": 0
       },
       "dex": {
-        "value": 74,
+        "value": 14,
         "proficient": 1
       },
       "con": {
-        "value": 76,
+        "value": 16,
         "proficient": 0
       },
       "int": {
-        "value": 74,
+        "value": 14,
         "proficient": 1
       },
       "wis": {
-        "value": 77,
+        "value": 11,
         "proficient": 1
       },
       "cha": {
-        "value": 75,
+        "value": 15,
         "proficient": 1
       }
     },
@@ -39,9 +39,9 @@
         "formula": ""
       },
       "hp": {
-        "value": 772,
-        "max": 772,
-        "formula": "75d8 + 45",
+        "value": 112,
+        "max": 112,
+        "formula": "15d8 + 45",
         "temp": null,
         "tempmax": null
       },
@@ -51,7 +51,8 @@
         "walk": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -61,14 +62,14 @@
     "details": {
       "type": {
         "value": "fey",
-        "subtype": "Gohl i noid",
+        "subtype": "goblinoid",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Mau",
       "cr": 6,
       "xp": {
-        "value": 2300
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -121,7 +122,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in a 30-foot Emanation origi- nating from the hobgoblin, the hobgoblin and its allies have Advantage on attack rolls and saving throws, provided the hobgoblin doesn't have the Incapacitado condition.</p>",
+          "value": "<p>While in a 9 m Emanation originating from the hobgoblin, the hobgoblin and its allies have Vantagem on attack rolls and saving throws, provided the hobgoblin doesn't have a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,7 +146,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!e61iVNOIhns56QEx.RHJC3AwCC5YwREO7"
+      "_key": "!actors.items!hchws7q1Xj2svTX2.RHJC3AwCC5YwREO7"
     },
     {
       "_id": "3AM9qcdPVMfwTg31",
@@ -154,7 +155,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The hobgoblin makes three attacks, using Javelin or Longsword in any combination.</p>",
+          "value": "<p>The hobgoblin makes three attacks, using Azagaia or Espada Longa in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -179,16 +180,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!e61iVNOIhns56QEx.3AM9qcdPVMfwTg31"
+      "_key": "!actors.items!hchws7q1Xj2svTX2.3AM9qcdPVMfwTg31"
     },
     {
-      "_id": "3in2N3tcDjhjjBmO",
-      "name": "Javelin",
+      "_id": "Pd2in9VgoJh4KD7y",
+      "name": "Azagaia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +6, alcance 5 ft. or range 30/720 ft. Acerto: 77 (-2d6 + 4) Perfurante de dano, and o alvo's Speed decreases by 70 feet until the start of · the hobgoblin's next.turn.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +6, alcance 1,5 m. or distância 9/36 m. Acerto: 11 (2d6 + 4) dano perfurante, and o alvo's Speed decreases by 3 m until the start of the hobgoblin's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -206,8 +207,8 @@
           "subtype": ""
         },
         "activities": {
-          "GOpwjQ55DQhhDmIx": {
-            "_id": "GOpwjQ55DQhhDmIx",
+          "bUEbk55pEhHhg287": {
+            "_id": "bUEbk55pEhHhg287",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -228,15 +229,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "4",
                   "types": [
                     "piercing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "-2d6+4"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -254,22 +255,22 @@
           "mechanics": {
             "toHit": 6,
             "attackType": "ranged",
-            "damageFormula": "-2d6+4",
+            "damageFormula": "2d6+4",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!e61iVNOIhns56QEx.3in2N3tcDjhjjBmO"
+      "_key": "!actors.items!hchws7q1Xj2svTX2.Pd2in9VgoJh4KD7y"
     },
     {
-      "_id": "NvwIXqNNx7qJ0z73",
-      "name": "Longsword",
+      "_id": "JUWaFJwHah4rYZqY",
+      "name": "Espada Longa",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 72 (2d8 + 3) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 12 (2d8 + 3) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -287,8 +288,8 @@
           "subtype": ""
         },
         "activities": {
-          "GbX3pFNhU6uf8pbU": {
-            "_id": "GbX3pFNhU6uf8pbU",
+          "IhXhI5bZh3kRk1Bf": {
+            "_id": "IhXhI5bZh3kRk1Bf",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -341,16 +342,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!e61iVNOIhns56QEx.NvwIXqNNx7qJ0z73"
+      "_key": "!actors.items!hchws7q1Xj2svTX2.JUWaFJwHah4rYZqY"
     },
     {
-      "_id": "WQKJTofZ2v0GM0Nh",
-      "name": "Parry",
+      "_id": "gS21jlT9uo5hUaoD",
+      "name": "Aparar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: The hobgoblin is hit by a melee attack roll while holding a weapon: Response: The hobgoblin adds 3 t~ its AC against that attack, possib~y causing - it to miss. HOBGOBLINS HOM U N C ULUS Winged Servant Given Magical Life</p>",
+          "value": "<p>The hobgoblin is hit by a melee attack roll while holding a weapon. The hobgoblin adds 3 to its AC against that attack, possibly causing it to miss.</p>",
           "chat": ""
         },
         "activation": {
@@ -375,13 +376,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!e61iVNOIhns56QEx.WQKJTofZ2v0GM0Nh"
+      "_key": "!actors.items!hchws7q1Xj2svTX2.gS21jlT9uo5hUaoD"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Hobgoblin Warlord",
-      "page": 173,
+      "page": 171,
       "cr": "6",
       "warnings": []
     }

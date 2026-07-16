@@ -1,6 +1,6 @@
 {
-  "_id": "b4eyvqXhCgWYPVbi",
-  "_key": "!actors!b4eyvqXhCgWYPVbi",
+  "_id": "cQY4MaAFlm9J4oPY",
+  "_key": "!actors!cQY4MaAFlm9J4oPY",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Gnoll Pack Lord",
   "type": "npc",
@@ -66,10 +66,10 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Chaotic",
+      "alignment": "Caótico e Mau",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -122,7 +122,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The gnoll makes two attacks, using Bone Whip or Bone Javelin in any combination, and it uses Incite Rampage if available.</p>",
+          "value": "<p>The gnoll makes two attacks, using Bone Chicote or Bone Azagaia in any combination, and it uses Incite Descontrole if available.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,16 +147,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!b4eyvqXhCgWYPVbi.eHIY154mgrK5jkp7"
+      "_key": "!actors.items!cQY4MaAFlm9J4oPY.eHIY154mgrK5jkp7"
     },
     {
-      "_id": "bhnyYehBUdUjLZkQ",
-      "name": "Bone Whip",
+      "_id": "gcMBM9PywvnDHyQ3",
+      "name": "Bone Chicote",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 10 ft. Acerto: 8 (2d4 + 3) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 3 m. Acerto: 8 (2d4 + 3) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -174,8 +174,8 @@
           "subtype": ""
         },
         "activities": {
-          "Vg8iD6lYkj4qIXKz": {
-            "_id": "Vg8iD6lYkj4qIXKz",
+          "wgT0uKRSd5vHG11v": {
+            "_id": "wgT0uKRSd5vHG11v",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -228,16 +228,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!b4eyvqXhCgWYPVbi.bhnyYehBUdUjLZkQ"
+      "_key": "!actors.items!cQY4MaAFlm9J4oPY.gcMBM9PywvnDHyQ3"
     },
     {
-      "_id": "9THTyrkAd9ZADbvH",
-      "name": "Bonejavelin",
+      "_id": "TQuEE9qIb4h0J6yD",
+      "name": "Bone Azagaia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +5, range 30/120 ft. Acerto: 7 (1d8 + 3) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +5, distância 9/36 m. Acerto: 7 (1d8 + 3) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -255,8 +255,8 @@
           "subtype": ""
         },
         "activities": {
-          "bGMworvlY53nO7gQ": {
-            "_id": "bGMworvlY53nO7gQ",
+          "eEb7Ljd0aGtmqp69": {
+            "_id": "eEb7Ljd0aGtmqp69",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -309,16 +309,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!b4eyvqXhCgWYPVbi.9THTyrkAd9ZADbvH"
+      "_key": "!actors.items!cQY4MaAFlm9J4oPY.TQuEE9qIb4h0J6yD"
     },
     {
-      "_id": "LcBKo5GUgGI0a2Tc",
-      "name": "Incite Rampage (Recharge 5-6)",
+      "_id": "AU6zGZyQtnj6lhUf",
+      "name": "Incite Descontrole (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The gnoll targets an- other creature it can see within 60 feet of itself that has the Rampage Bonus Action. The target can take a Reac- tion to make one melee attack.</p>",
+          "value": "<p>The gnoll targets another creature it can see within 18 m of itself that has the Descontrole Bonus Action. O alvo can take a Reaction to make one melee attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -349,16 +349,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!b4eyvqXhCgWYPVbi.LcBKo5GUgGI0a2Tc"
+      "_key": "!actors.items!cQY4MaAFlm9J4oPY.AU6zGZyQtnj6lhUf"
     },
     {
-      "_id": "PNMu0L4XxJQusA5Y",
-      "name": "Rampage (2/Day)",
+      "_id": "erMlxnBU1DgLpMnu",
+      "name": "Descontrole (2/Day)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Immediately after dealing de dano to a creature that is already Bloodied, the gnoll moves up to half its Speed, and it makes one Bone Whip attack. _, GNOLL FANG OF YEENOGHU Medi um Fiend, Chaotic Evil AC14 Initia ti ve +4 (14) HP71 (11d8+22) Speed 30 ft. MOD SA VE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Immediately after dealing de dano to uma criatura that is already Bloodied, the gnoll moves up to half its Speed, and it makes one Bone Chicote attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -388,13 +388,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!b4eyvqXhCgWYPVbi.PNMu0L4XxJQusA5Y"
+      "_key": "!actors.items!cQY4MaAFlm9J4oPY.erMlxnBU1DgLpMnu"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Gnoll Pack Lord",
-      "page": 142,
+      "page": 140,
       "cr": "2",
       "warnings": []
     }

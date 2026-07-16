@@ -1,6 +1,6 @@
 {
-  "_id": "4sIxH6tJvVcJUtGO",
-  "_key": "!actors!4sIxH6tJvVcJUtGO",
+  "_id": "d2jNbvuByI4Pl86o",
+  "_key": "!actors!d2jNbvuByI4Pl86o",
   "folder": "1nioWC3kx0YxX8qj",
   "name": "Nothic",
   "type": "npc",
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 15,
         "formula": ""
       },
       "hp": {
@@ -69,7 +69,7 @@
       "alignment": "Neutro e Mau",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -101,7 +101,24 @@
         "custom": "Comum Inferior"
       }
     },
-    "skills": {}
+    "skills": {
+      "arc": {
+        "value": 1,
+        "ability": "int"
+      },
+      "ins": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Nothic",
@@ -122,7 +139,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The nothic makes two Claw attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Garra.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,16 +164,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!4sIxH6tJvVcJUtGO.AKPkALa8lWidjzqs"
+      "_key": "!actors.items!d2jNbvuByI4Pl86o.AKPkALa8lWidjzqs"
     },
     {
-      "_id": "bdA8eNE88CHWjzCi",
-      "name": "Claw",
+      "_id": "abZtiAwfbaqqDyLh",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5 ; alcance 5 ft. Acerto: 8 (1d1 O + 3) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 8 (1d10 + 3) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -174,8 +191,8 @@
           "subtype": ""
         },
         "activities": {
-          "MuZ3Fj1VF2gXmBIe": {
-            "_id": "MuZ3Fj1VF2gXmBIe",
+          "RDYrU8XwZOhYZdgM": {
+            "_id": "RDYrU8XwZOhYZdgM",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -196,15 +213,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 1,
+                  "denomination": 10,
+                  "bonus": "3",
                   "types": [
                     "slashing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "1d1O+3"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -222,13 +239,13 @@
           "mechanics": {
             "toHit": 5,
             "attackType": "melee",
-            "damageFormula": "1d1O+3",
+            "damageFormula": "1d10+3",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!4sIxH6tJvVcJUtGO.bdA8eNE88CHWjzCi"
+      "_key": "!actors.items!d2jNbvuByI4Pl86o.abZtiAwfbaqqDyLh"
     },
     {
       "_id": "5wya1mdC6rWUyJQH",
@@ -237,7 +254,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Sa'.ling Throw: DC 13, uma criatura the nothic can see within 120 feet. Falha: 17 ·(5d6) Necrótico de dano. Sucesso: Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 13, uma criatura the nothic can see within 36 m. 17 (5d6) dano necrótico. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -254,24 +271,51 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "8Xx9RS3iITuxr9fQ": {
+            "_id": "8Xx9RS3iITuxr9fQ",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "13"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 13,
+            "saveAbility": "con"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!4sIxH6tJvVcJUtGO.5wya1mdC6rWUyJQH"
+      "_key": "!actors.items!d2jNbvuByI4Pl86o.5wya1mdC6rWUyJQH"
     },
     {
       "_id": "H2wUuxJ1Mgx3DK5u",
-      "name": "Weird Insight (Recharge 6)",
+      "name": "Weird Insight",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sabedoria Teste de Resistência: DC w 14, uma criatura the nothic can see within 120 feet. w Falha: The nothic magically learns one fact or secret z about o alvo. ~ 0: o:J NOTHIC NYCALOTH Yugoloth of Strategy and Strife</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 14, uma criatura the nothic can see within 36 m. The nothic magically learns one fact or secret about o alvo.</p>",
           "chat": ""
         },
         "activation": {
@@ -281,34 +325,55 @@
         },
         "uses": {
           "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "recharge",
-              "type": "recoverAll",
-              "formula": "6"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "jVrTttpFwL9stdYh": {
+            "_id": "jVrTttpFwL9stdYh",
+            "type": "save",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "14"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 14,
+            "saveAbility": "wis"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!4sIxH6tJvVcJUtGO.H2wUuxJ1Mgx3DK5u"
+      "_key": "!actors.items!d2jNbvuByI4Pl86o.H2wUuxJ1Mgx3DK5u"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Nothic",
-      "page": 230,
+      "page": 228,
       "cr": "2",
       "warnings": []
     }

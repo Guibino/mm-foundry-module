@@ -1,6 +1,6 @@
 {
-  "_id": "352k7UNTBMSrKlcO",
-  "_key": "!actors!352k7UNTBMSrKlcO",
+  "_id": "Of9apWu3yad3BebO",
+  "_key": "!actors!Of9apWu3yad3BebO",
   "folder": "IQP9BfRMl9yEsYGp",
   "name": "Empyrean",
   "type": "npc",
@@ -8,51 +8,53 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 1,
-        "proficient": 0
+        "value": 30,
+        "proficient": 1
       },
       "dex": {
-        "value": 14,
+        "value": 21,
         "proficient": 0
       },
       "con": {
-        "value": 10,
+        "value": 30,
         "proficient": 0
       },
       "int": {
-        "value": 15,
+        "value": 21,
         "proficient": 0
       },
       "wis": {
-        "value": 16,
-        "proficient": 0
+        "value": 22,
+        "proficient": 1
       },
       "cha": {
-        "value": 16,
+        "value": 27,
         "proficient": 0
       }
     },
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 13,
+        "flat": 22,
         "formula": ""
       },
       "hp": {
-        "value": 22,
-        "max": 22,
-        "formula": "Sd8",
+        "value": 346,
+        "max": 346,
+        "formula": "21d12 + 210",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": true,
-        "walk": 5,
-        "fly": 30
+        "walk": 50,
+        "fly": 50,
+        "swim": 50
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "truesight": 120
       },
       "init": {
         "ability": "dex",
@@ -62,14 +64,14 @@
     "details": {
       "type": {
         "value": "celestial",
-        "subtype": "TitC1n",
+        "subtype": "titan",
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Sem Tendência",
-      "cr": 1,
+      "alignment": "Neutro",
+      "cr": 23,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -79,17 +81,21 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "huge",
       "di": {
-        "value": [],
-        "custom": "Prone"
+        "value": [
+          "necrotic",
+          "radiant"
+        ],
+        "custom": ""
       },
       "dr": {
         "value": [
           "bludgeoning",
-          "piercing"
+          "piercing",
+          "slashing"
         ],
-        "custom": "Sl ashing"
+        "custom": ""
       },
       "dv": {
         "value": [],
@@ -101,10 +107,19 @@
       },
       "languages": {
         "value": [],
-        "custom": "All"
+        "custom": "all"
       }
     },
-    "skills": {}
+    "skills": {
+      "ins": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Empyrean",
@@ -119,13 +134,13 @@
   },
   "items": [
     {
-      "_id": "0n6uPguDcuW0xM5v",
-      "name": "Incorporeal Movement",
+      "_id": "kRQWmoxhHsUdcsgo",
+      "name": "Resistência Lendária (4/Day)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The empyrean can move through other creatures and objects as if they were Dif- ficult Terrain. It takes 5 (1d10) Energia de dano ifit ends its turn inside an object.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -134,108 +149,7 @@
         },
         "uses": {
           "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!352k7UNTBMSrKlcO.0n6uPguDcuW0xM5v"
-    },
-    {
-      "_id": "09adzJQ9VA8Y8GPl",
-      "name": "Magic Resistance",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The empyrean has Advantage on sav- ing throws against spells and other magical effects.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!352k7UNTBMSrKlcO.09adzJQ9VA8Y8GPl"
-    },
-    {
-      "_id": "PJOWr4JMKN6aRk6a",
-      "name": "Otherworldly Strike",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Melee or RC1nged AttC1ck Roll: +5, alcance 5 ft. or range 30 ft. Acerto: 7 (1d8 + 3) Necrótico or Radiante de dano (empyrean's choice).</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!352k7UNTBMSrKlcO.PJOWr4JMKN6aRk6a"
-    },
-    {
-      "_id": "7r07a9rNBgQlnx97",
-      "name": "Healing Word (1/Day)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The empyrean casts Heal- ing Word, using the · same spell casting ability as Conjuração. EMPYREAN Huge Celestial or Fiend (Titan), Neutral AC 22 Iniciativa + 19 (29) HP 346 (21d12 + 210) Speed 50 ft., Fly 50 ft. (hover), Swim 50 ft. MOD SAVE MOD SAVE M OD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "1",
+          "max": "4",
           "recovery": [
             {
               "period": "day",
@@ -255,16 +169,49 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!352k7UNTBMSrKlcO.7r07a9rNBgQlnx97"
+      "_key": "!actors.items!Of9apWu3yad3BebO.kRQWmoxhHsUdcsgo"
     },
     {
-      "_id": "X1nSxmzXLbDzQmMz",
-      "name": "Conjuração",
+      "_id": "PgvechHJzHOqXD2I",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The empyrean casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability: 1/Dia Each: Bless, Lesser Restoration (as an action) B' oNUS AC T IONS</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Of9apWu3yad3BebO.PgvechHJzHOqXD2I"
+    },
+    {
+      "_id": "WpTn5IDcZatrR36H",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The empyrean makes two attacks, using Sacred Weapon or Divine Ray in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -289,14 +236,319 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!352k7UNTBMSrKlcO.X1nSxmzXLbDzQmMz"
+      "_key": "!actors.items!Of9apWu3yad3BebO.WpTn5IDcZatrR36H"
+    },
+    {
+      "_id": "fSCTZTohaZMA2tN2",
+      "name": "Sacred Weapon",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +17, alcance 3 m. Acerto: 31 (6d6 + 10) dano de energia, and o alvo fica com a condição Atordoado until the start of the empyrean's next turn. O alvo can choose not to be Atordoado, in which case it takes an extra 21 dano de energia that bypasses Resistance or Immunity.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "nwwrau5UvWDYzz8F": {
+            "_id": "nwwrau5UvWDYzz8F",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "17",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 6,
+                  "denomination": 6,
+                  "bonus": "10",
+                  "types": [
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 17,
+            "attackType": "melee",
+            "damageFormula": "6d6+10",
+            "damageType": "force"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Of9apWu3yad3BebO.fSCTZTohaZMA2tN2"
+    },
+    {
+      "_id": "Z7O5b958yucyVnq7",
+      "name": "Divine Ray",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +15, distância 180 m. Acerto: 35 (6d8 + 8) Necrótico or dano radiante (empyrean's choice).</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "sPK6zdaUYfrjWv6d": {
+            "_id": "sPK6zdaUYfrjWv6d",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "15",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 15,
+            "attackType": "ranged"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Of9apWu3yad3BebO.Z7O5b958yucyVnq7"
+    },
+    {
+      "_id": "2I9hqtyGqrQeCfR0",
+      "name": "Bolster",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The empyrean gains 10 Temporary Pontos de Vida, and the empyrean and each ally within 9 m of it gain Vantagem on D20 Tests until the end of the empyrean's next turn. The empyrean can't take this action again until the start of its next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Of9apWu3yad3BebO.2I9hqtyGqrQeCfR0"
+    },
+    {
+      "_id": "mDRY09apr0cWfAce",
+      "name": "Shockwave of Glory",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Constituição: CD 23, cada criatura in a 9 m Emanation originating from the empyrean. 27 (6d8) dano de energia, and o alvo fica com a condição Caído. Metade do dano only. The empyrean can't take this action again until the start of its next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "f6SYgPQq47uQIUJx": {
+            "_id": "f6SYgPQq47uQIUJx",
+            "type": "save",
+            "activation": {
+              "type": "legendary",
+              "value": 1,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "23"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 23,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Of9apWu3yad3BebO.mDRY09apr0cWfAce"
+    },
+    {
+      "_id": "wJBcVT5emlSfW4x3",
+      "name": "Smite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The empyrean makes one Divine Ray attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Of9apWu3yad3BebO.wJBcVT5emlSfW4x3"
+    },
+    {
+      "_id": "X1nSxmzXLbDzQmMz",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The empyrean casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 23):</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Of9apWu3yad3BebO.X1nSxmzXLbDzQmMz"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Empyrean",
-      "page": 114,
-      "cr": "1",
+      "page": 113,
+      "cr": "23",
       "warnings": []
     }
   }

@@ -1,6 +1,6 @@
 {
-  "_id": "E5xoSHAw1xPGmIe5",
-  "_key": "!actors!E5xoSHAw1xPGmIe5",
+  "_id": "z0tp3SXKItmneeCf",
+  "_key": "!actors!z0tp3SXKItmneeCf",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Umber Hulk",
   "type": "npc",
@@ -24,7 +24,7 @@
         "proficient": 0
       },
       "wis": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "cha": {
@@ -41,7 +41,7 @@
       "hp": {
         "value": 93,
         "max": 93,
-        "formula": "11d10+33",
+        "formula": "11d10 + 33",
         "temp": null,
         "tempmax": null
       },
@@ -52,7 +52,9 @@
         "burrow": 20
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 120,
+        "tremorsense": 60
       },
       "init": {
         "ability": "dex",
@@ -69,7 +71,7 @@
       "alignment": "Caótico e Mau",
       "cr": 5,
       "xp": {
-        "value": 1800
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -116,13 +118,13 @@
   },
   "items": [
     {
-      "_id": "7q3DJOibeSjUUVlZ",
-      "name": "Tunneler",
+      "_id": "YRhk2XdKouVgdjS0",
+      "name": "Escavador",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The umber hulk can burrow through solid rock at half its Burrow Speed and leaves a l 0-foot-diam- eter tunnel in its wake.</p>",
+          "value": "<p>A criatura pode escavar rocha sólida na metade do seu Deslocamento de Escavação e deixa um túnel de 3 m de diâmetro em seu rastro.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,7 +148,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!E5xoSHAw1xPGmIe5.7q3DJOibeSjUUVlZ"
+      "_key": "!actors.items!z0tp3SXKItmneeCf.YRhk2XdKouVgdjS0"
     },
     {
       "_id": "3vk66Pn7kM3aoPJ1",
@@ -155,7 +157,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The umber hulk makes three Rend attacks.</p>",
+          "value": "<p>A criatura faz três ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -180,16 +182,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!E5xoSHAw1xPGmIe5.3vk66Pn7kM3aoPJ1"
+      "_key": "!actors.items!z0tp3SXKItmneeCf.3vk66Pn7kM3aoPJ1"
     },
     {
-      "_id": "DU8nW5DCbEuGKcDC",
-      "name": "Rend",
+      "_id": "94MvWgo2jJpyyVaU",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Me lee Attack Roll: +8, alcance l Oft. Acerto: 12 (2d6 + 5) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 3 m. Acerto: 12 (2d6 + 5) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -206,27 +208,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "PdKHoN9Lh33KaOUb": {
+            "_id": "PdKHoN9Lh33KaOUb",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "8",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "5",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 8,
+            "attackType": "melee",
             "damageFormula": "2d6+5",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!E5xoSHAw1xPGmIe5.DU8nW5DCbEuGKcDC"
+      "_key": "!actors.items!z0tp3SXKItmneeCf.94MvWgo2jJpyyVaU"
     },
     {
       "_id": "kJQO6dwp6moqBbwm",
-      "name": "Confusing Gaze (Recharge 5-6)",
+      "name": "Confusing Gaze (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sabedoria Salling Throw: DC 14, cada criatura in a 30-foot Cone. Falha: The target can't take Reacti~ns until the start of the umber hulk's next turn, and o alvo rolls 1d8 to determine what it does on its next turn: 1-4. The target does nothing. 5~6. The target takes no action or Bonus Action and uses all its movement to move in a random direction. 7-8. The target makes a melee attack against a random z Vl creature within its alcance or does nothing if it can't Cl:'. make such an attack. · , ~ UNICO RN Majestic and Magical Forest Master</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 14, cada criatura in a 9 m Cone. O alvo can't take Reactions until the start of the umber hulk's next turn, and o alvo rolls 1d8 to determine what it does on its next turn:\nO alvo does nothing.\nO alvo takes no action or Bonus Action and uses all its movement to move in a random direction.\nO alvo makes a melee attack against a random creature within its alcance or does nothing if it can't make such an attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -249,21 +295,48 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "ltT3aZV7seYo4f9D": {
+            "_id": "ltT3aZV7seYo4f9D",
+            "type": "save",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "14"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 14,
+            "saveAbility": "wis"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!E5xoSHAw1xPGmIe5.kJQO6dwp6moqBbwm"
+      "_key": "!actors.items!z0tp3SXKItmneeCf.kJQO6dwp6moqBbwm"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Umber Hulk",
-      "page": 314,
+      "page": 312,
       "cr": "5",
       "warnings": []
     }

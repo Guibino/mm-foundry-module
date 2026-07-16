@@ -1,6 +1,6 @@
 {
-  "_id": "iE5FAFfoRg7jVvOK",
-  "_key": "!actors!iE5FAFfoRg7jVvOK",
+  "_id": "HjAT0e8cA9fY2cL4",
+  "_key": "!actors!HjAT0e8cA9fY2cL4",
   "folder": "IQP9BfRMl9yEsYGp",
   "name": "Solar",
   "type": "npc",
@@ -35,20 +35,21 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 21,
         "formula": ""
       },
       "hp": {
         "value": 297,
         "max": 297,
-        "formula": "22d1 0 + 176",
+        "formula": "22d10 + 176",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": true,
-        "walk": 50
+        "walk": 50,
+        "fly": 150
       },
       "senses": {
         "units": "ft",
@@ -62,14 +63,14 @@
     "details": {
       "type": {
         "value": "celestial",
-        "subtype": "Angel",
+        "subtype": "angel",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Bom",
       "cr": 21,
       "xp": {
-        "value": 33000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -82,9 +83,10 @@
       "size": "lg",
       "di": {
         "value": [
-          "poison"
+          "poison",
+          "radiant"
         ],
-        "custom": "Ra diant"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -97,18 +99,20 @@
       "ci": {
         "value": [
           "charmed",
-          "exhaustion"
+          "exhaustion",
+          "frightened",
+          "poisoned"
         ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "All"
+        "custom": ""
       }
     },
     "skills": {
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       }
     }
@@ -156,11 +160,11 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!iE5FAFfoRg7jVvOK.itCnPJIq9s2yIgPo"
+      "_key": "!actors.items!HjAT0e8cA9fY2cL4.itCnPJIq9s2yIgPo"
     },
     {
-      "_id": "4Nj8BKPast1IyK2m",
-      "name": "Exalted Restoration",
+      "_id": "cniAJPCS6BIOLOH0",
+      "name": "Restauração Exaltada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -189,7 +193,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!iE5FAFfoRg7jVvOK.4Nj8BKPast1IyK2m"
+      "_key": "!actors.items!HjAT0e8cA9fY2cL4.cniAJPCS6BIOLOH0"
     },
     {
       "_id": "eBXFBb0EPcwiYZwq",
@@ -198,7 +202,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the solar fails a saving throw, it can choose to succeed instead.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -227,16 +231,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!iE5FAFfoRg7jVvOK.eBXFBb0EPcwiYZwq"
+      "_key": "!actors.items!HjAT0e8cA9fY2cL4.eBXFBb0EPcwiYZwq"
     },
     {
-      "_id": "UfyIhRlDKz1mZI92",
-      "name": "Magic Resistance",
+      "_id": "A23eiDschNr8SdgM",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The solar has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -260,7 +264,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!iE5FAFfoRg7jVvOK.UfyIhRlDKz1mZI92"
+      "_key": "!actors.items!HjAT0e8cA9fY2cL4.A23eiDschNr8SdgM"
     },
     {
       "_id": "awH9vt0r2ZLwyRWy",
@@ -294,7 +298,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!iE5FAFfoRg7jVvOK.awH9vt0r2ZLwyRWy"
+      "_key": "!actors.items!HjAT0e8cA9fY2cL4.awH9vt0r2ZLwyRWy"
     },
     {
       "_id": "ix3tRR34VVJSMnr0",
@@ -303,7 +307,271 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Me lee or Rolagem de Ataque à Distância:+ 15, alcance 10 ft. or range 120 ft. Acerto: 22 (4d6 + 8) Cortante de dano plus 36 (8d8) Radiante de dano. Hit or Erro: The sword magically returns to the solar's-hand or hovers within 5 feet · of the solar immediately after a ranged attack. 288 SOLAR SOLAR Angelic Protector of the Multiverse</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +15, alcance 3 m. or distância 36 m. Acerto: 22 (4d6 + 8) dano cortante mais 36 (8d8) dano radiante. The sword magically returns to the solar's hand or hovers within 1,5 m of the solar immediately after a ranged attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "FQN47o9YkBTieRQn": {
+            "_id": "FQN47o9YkBTieRQn",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "15",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 6,
+                  "bonus": "8",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 15,
+            "attackType": "ranged",
+            "damageFormula": "4d6+8",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HjAT0e8cA9fY2cL4.ix3tRR34VVJSMnr0"
+    },
+    {
+      "_id": "oGhLvjJrpKwyl0ZL",
+      "name": "Slaying Bow",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Destreza: CD 21, uma criatura the solar can see within 180 m. If the creature has 100 Pontos de Vida or fewer, it dies. It otherwise takes 24 (4d8 + 6) dano perfurante mais 36 (8d8) dano radiante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "pAuXUHuoyKPAB8ju": {
+            "_id": "pAuXUHuoyKPAB8ju",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "21"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 21,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HjAT0e8cA9fY2cL4.oGhLvjJrpKwyl0ZL"
+    },
+    {
+      "_id": "niIRDcgjaC4FBjFM",
+      "name": "Blinding Gaze",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Constituição: CD 25, uma criatura the solar can see within 36 m. O alvo fica com a condição Cego for 1 minute. The solar can't take this action again until the start of its next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "fULKcdPJxX2gL9Ka": {
+            "_id": "fULKcdPJxX2gL9Ka",
+            "type": "save",
+            "activation": {
+              "type": "legendary",
+              "value": 1,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "25"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 25,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HjAT0e8cA9fY2cL4.niIRDcgjaC4FBjFM"
+    },
+    {
+      "_id": "qiHS0gIITw6dKDYz",
+      "name": "Radiante Teletransporte",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The solar teleports up to 18 m to an unoccupied space it can see. Teste de Resistência de Destreza: CD 25, cada criatura in a 3 m Emanation originating from the solar at its destination space. 11 (2d10) dano radiante. Metade do dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "Hm0H7kAzwvb0kvLZ": {
+            "_id": "Hm0H7kAzwvb0kvLZ",
+            "type": "save",
+            "activation": {
+              "type": "legendary",
+              "value": 1,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "25"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 25,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HjAT0e8cA9fY2cL4.qiHS0gIITw6dKDYz"
+    },
+    {
+      "_id": "rsJX7QHc3Lgh6jVY",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The solar casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 25):</p>",
           "chat": ""
         },
         "activation": {
@@ -324,20 +592,17 @@
       },
       "flags": {
         "mm2024": {
-          "mechanics": {
-            "damageFormula": "4d6+8",
-            "damageType": "slashing"
-          },
+          "mechanics": {},
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!iE5FAFfoRg7jVvOK.ix3tRR34VVJSMnr0"
+      "_key": "!actors.items!HjAT0e8cA9fY2cL4.rsJX7QHc3Lgh6jVY"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Solar",
-      "page": 290,
+      "page": 288,
       "cr": "21",
       "warnings": []
     }

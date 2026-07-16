@@ -1,8 +1,8 @@
 {
-  "_id": "VtJI04AgL7WBBBCi",
-  "_key": "!actors!VtJI04AgL7WBBBCi",
+  "_id": "AWGbIlmfur9sJhDL",
+  "_key": "!actors!AWGbIlmfur9sJhDL",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Gigante Fire Beetle",
+  "name": "Giant Fire Beetle",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/giant-fire-beetle.webp",
   "system": {
@@ -41,13 +41,14 @@
       "hp": {
         "value": 4,
         "max": 4,
-        "formula": "1d6+l",
+        "formula": "1d6 + 1",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 30,
         "climb": 30
       },
       "senses": {
@@ -85,7 +86,9 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "fire"
+        ],
         "custom": ""
       },
       "dv": {
@@ -98,13 +101,13 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Gigante Fire Beetle",
+    "name": "Giant Fire Beetle",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -116,13 +119,13 @@
   },
   "items": [
     {
-      "_id": "3fQ6ilf6aZD8Ho7f",
-      "name": "Illumination",
+      "_id": "amToBbiRlYLTWqBS",
+      "name": "Iluminação",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The beetle sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet.</p>",
+          "value": "<p>A criatura emite Luz Plena em um raio de 3 m e Luz Fraca por mais 3 m.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +149,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VtJI04AgL7WBBBCi.3fQ6ilf6aZD8Ho7f"
+      "_key": "!actors.items!AWGbIlmfur9sJhDL.amToBbiRlYLTWqBS"
     },
     {
-      "_id": "xzHVpsOm2qLkp3ic",
-      "name": "Bite",
+      "_id": "nXC3M22KUZNk5RPN",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ l, alcance 5 ft. Acerto: 1 Fi re de dano. GIANT FROG Medium Beast, Unaligned AC ll Initiativ e+ l ( l l) HP 18 (4d8) Sp eed 30 ft., Swim 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +1, alcance 1,5 m. Acerto: 1 dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -172,21 +175,48 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "BZKszRXFbIGuJ3c9": {
+            "_id": "BZKszRXFbIGuJ3c9",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "1",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "toHit": 1,
+            "attackType": "melee"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VtJI04AgL7WBBBCi.xzHVpsOm2qLkp3ic"
+      "_key": "!actors.items!AWGbIlmfur9sJhDL.nXC3M22KUZNk5RPN"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Giant Fire Beetle",
-      "page": 359,
+      "page": 357,
       "cr": "0",
       "warnings": []
     }

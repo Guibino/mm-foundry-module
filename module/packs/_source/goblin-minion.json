@@ -1,6 +1,6 @@
 {
-  "_id": "Bl85a6EZc0X9yrXw",
-  "_key": "!actors!Bl85a6EZc0X9yrXw",
+  "_id": "weQvJKUNiV0Qmjet",
+  "_key": "!actors!weQvJKUNiV0Qmjet",
   "folder": "inkH4oLnh3yP5W9M",
   "name": "Goblin Minion",
   "type": "npc",
@@ -29,7 +29,7 @@
       },
       "cha": {
         "value": 8,
-        "proficient": 1
+        "proficient": 0
       }
     },
     "attributes": {
@@ -62,14 +62,14 @@
     "details": {
       "type": {
         "value": "fey",
-        "subtype": "Goblinoid",
+        "subtype": "goblinoid",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Neutro",
-      "cr": 1,
+      "cr": 0.125,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -101,7 +101,12 @@
         "custom": "Comum, Goblin"
       }
     },
-    "skills": {}
+    "skills": {
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Goblin Minion",
@@ -116,13 +121,13 @@
   },
   "items": [
     {
-      "_id": "n1NV1O6zLmuI2KKq",
-      "name": "Dagger",
+      "_id": "huOmSnixE6NJsF4e",
+      "name": "Adaga",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +4, alcance 5 ft. or range 20/60 ft. Acerto: 4 (1d4 + 2) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +4, alcance 1,5 m. or distância 6/18 m. Acerto: 4 (1d4 + 2) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -140,8 +145,8 @@
           "subtype": ""
         },
         "activities": {
-          "2i4zwA1ZlDYg41QQ": {
-            "_id": "2i4zwA1ZlDYg41QQ",
+          "7GFq72YxiwT0ireo": {
+            "_id": "7GFq72YxiwT0ireo",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -194,16 +199,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Bl85a6EZc0X9yrXw.n1NV1O6zLmuI2KKq"
+      "_key": "!actors.items!weQvJKUNiV0Qmjet.huOmSnixE6NJsF4e"
     },
     {
-      "_id": "t1hmtZ1VmWd3OUCk",
-      "name": "Nimble Escape",
+      "_id": "wq5Rc7cOcDzJ8ghL",
+      "name": "Fuga Ágil",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The goblin takes the Disengage or Hide action. GOBLINS GOBLIN MINION Goblin minions enjoy participating in the disruptive schemes of clever leaders but are quick to flee when confronted by their comeuppance. GOBLIN WARRIOR</p>",
+          "value": "<p>A criatura realiza a ação Desengajar ou Esconder-se.</p>",
           "chat": ""
         },
         "activation": {
@@ -228,48 +233,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Bl85a6EZc0X9yrXw.t1hmtZ1VmWd3OUCk"
-    },
-    {
-      "_id": "7UB6iE4reGYEzJ6A",
-      "name": "Goblin warriors excel at causing mischief",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Those in service to Maglubiyet have greater discipline and are likely to withdraw to set up ambushes. GOBLIN Boss Goblin bosses are often the most imaginative, dis- ruptive, or forceful goblins. Through a combination of luck, cowardice, and callousness, these leaders avoid harm at the expense of their followers. GOBLIN HEXER Goblin hexers use flashy and disruptive magic. Many goblin hexers are theatrical, dressing and be- having in exaggerated mimicry of archmages. -A P PROX I MATE TRA N S L ATION FR O M G o B LI N TO Co MM o N : ,. 1 -i EY , R. U BE.' 11 GOBLIN WARRIOR Sm al l Fey (Gohlinoid) , Ch aotic Neutral AC 15 Iniciativa +2 (12) HP 10 (3d6) Speed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!Bl85a6EZc0X9yrXw.7UB6iE4reGYEzJ6A"
+      "_key": "!actors.items!weQvJKUNiV0Qmjet.wq5Rc7cOcDzJ8ghL"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Goblin Minion",
-      "page": 144,
-      "cr": "1",
+      "page": 142,
+      "cr": "1/8",
       "warnings": []
     }
   }

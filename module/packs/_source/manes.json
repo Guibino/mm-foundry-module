@@ -1,6 +1,6 @@
 {
-  "_id": "PdwqTUHAzdOlXbb0",
-  "_key": "!actors!PdwqTUHAzdOlXbb0",
+  "_id": "rEFi4iYvgAdVFFU8",
+  "_key": "!actors!rEFi4iYvgAdVFFU8",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Manes",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 9,
         "max": 9,
-        "formula": "2d6+2",
+        "formula": "2d6 + 2",
         "temp": null,
         "tempmax": null
       },
@@ -51,7 +51,8 @@
         "walk": 20
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -61,14 +62,14 @@
     "details": {
       "type": {
         "value": "fiend",
-        "subtype": "Demon",
+        "subtype": "demon",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Mau",
       "cr": 0.125,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -86,7 +87,11 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "cold",
+          "fire",
+          "lightning"
+        ],
         "custom": ""
       },
       "dv": {
@@ -103,7 +108,7 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "understands Abyssal but can't speak"
       }
     },
     "skills": {}
@@ -121,13 +126,13 @@
   },
   "items": [
     {
-      "_id": "mqMEDoUC3y0t7mFB",
-      "name": "Claw",
+      "_id": "f8vji7Ugf7TeKNxu",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 5 ft. Acerto: 5 (2d4) Cortante de dano. MANES VAPORSPAWN Medium Fiend (D emon), Chaotic E1Ji I AC 13 Initiati ve +1 (11) HP 19 (3d8 + 6) Speed 30 ft. MOD SAVE MOD SAV E MOD SAV E</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 1,5 m. Acerto: 5 (2d4) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,8 +150,8 @@
           "subtype": ""
         },
         "activities": {
-          "RuyxWKiTfUYoPr12": {
-            "_id": "RuyxWKiTfUYoPr12",
+          "xcQfMIQNn1tQp2cr": {
+            "_id": "xcQfMIQNn1tQp2cr",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -199,13 +204,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!PdwqTUHAzdOlXbb0.mqMEDoUC3y0t7mFB"
+      "_key": "!actors.items!rEFi4iYvgAdVFFU8.f8vji7Ugf7TeKNxu"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Manes",
-      "page": 203,
+      "page": 201,
       "cr": "1/8",
       "warnings": []
     }

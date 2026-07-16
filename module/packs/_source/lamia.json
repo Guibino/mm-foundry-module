@@ -1,6 +1,6 @@
 {
-  "_id": "L2l52EdLi8pZs4jY",
-  "_key": "!actors!L2l52EdLi8pZs4jY",
+  "_id": "WD3Z72HDREwCMYfv",
+  "_key": "!actors!WD3Z72HDREwCMYfv",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Lamia",
   "type": "npc",
@@ -66,10 +66,10 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Chaotic",
+      "alignment": "Caótico e Mau",
       "cr": 4,
       "xp": {
-        "value": 1
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -98,10 +98,23 @@
       },
       "languages": {
         "value": [],
-        "custom": "Abissal, Com mon"
+        "custom": "Abissal, Comum"
       }
     },
-    "skills": {}
+    "skills": {
+      "dec": {
+        "value": 2,
+        "ability": "cha"
+      },
+      "ins": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Lamia",
@@ -122,7 +135,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The lamia makes two Claw attacks. It can replace one attack with a use of Corrupting Touch .</p>",
+          "value": "<p>The lamia makes two Garra attacks. It can replace one attack with a use of Corrupting Touch.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,16 +160,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!L2l52EdLi8pZs4jY.DFKkh08TavdaapV2"
+      "_key": "!actors.items!WD3Z72HDREwCMYfv.DFKkh08TavdaapV2"
     },
     {
-      "_id": "1MinwRXLz8nf67DN",
-      "name": "Claw",
+      "_id": "XQI7R0RXEdQiQt11",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo : +5 , alcance 5 ft. Acerto: 7 (1d8 + 3) Cortante de dano plus 7 (2d6) Psíquico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 7 (1d8 + 3) dano cortante mais 7 (2d6) dano psíquico.</p>",
           "chat": ""
         },
         "activation": {
@@ -173,18 +186,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "EaoONHqfe8xkFKTf": {
+            "_id": "EaoONHqfe8xkFKTf",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "3",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
             "damageFormula": "1d8+3",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!L2l52EdLi8pZs4jY.1MinwRXLz8nf67DN"
+      "_key": "!actors.items!WD3Z72HDREwCMYfv.XQI7R0RXEdQiQt11"
     },
     {
       "_id": "XzVPw6nkGP5wk8eI",
@@ -193,7 +250,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sabedoria Teste de Resistência: DC 13, uma criatura the lamia can see within 5 feet. Failure : 13 (3d8) Psíquico de dano, and o alvo is cursed for l hour. Until the curse ends, o alvo has the Enfeitiçado and Envenenado conditions.</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 13, uma criatura the lamia can see within 1,5 m. 13 (3d8) dano psíquico, and o alvo is cursed for 1 hour. Until the curse ends, o alvo has the Enfeitiçado and Envenenado conditions.</p>",
           "chat": ""
         },
         "activation": {
@@ -245,20 +302,20 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!L2l52EdLi8pZs4jY.XzVPw6nkGP5wk8eI"
+      "_key": "!actors.items!WD3Z72HDREwCMYfv.XzVPw6nkGP5wk8eI"
     },
     {
-      "_id": "xOhF5fZ0LWQwcIJU",
-      "name": "Leap",
+      "_id": "IKsbhfe8fvplyU6E",
+      "name": "Salto",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The lamia jumps up to 30 feet by spending 10 2 feet of movement. LARVAE Fitting Fates for Depraved Souls</p>",
+          "value": "<p>A criatura salta até 9 m gastando 3 m de movimento.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "action",
+          "type": "bonus",
           "value": null,
           "condition": ""
         },
@@ -279,7 +336,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!L2l52EdLi8pZs4jY.xOhF5fZ0LWQwcIJU"
+      "_key": "!actors.items!WD3Z72HDREwCMYfv.IKsbhfe8fvplyU6E"
     },
     {
       "_id": "qnRMcrIu8ZYTNNDa",
@@ -288,7 +345,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The lamia casts one of the following spells, requiring no Ma~erial components and using Carisma as the spellcasting ability (spell save DC 13): À Vontade: Disguise Self (can appear as a Large or Medium biped), Minor Illusion 1/Dia Each: Geas, Major Image, Scrying V1 BO NU S A C TI O N S w t3</p>",
+          "value": "<p>The lamia casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 13):</p>",
           "chat": ""
         },
         "activation": {
@@ -313,13 +370,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!L2l52EdLi8pZs4jY.qnRMcrIu8ZYTNNDa"
+      "_key": "!actors.items!WD3Z72HDREwCMYfv.qnRMcrIu8ZYTNNDa"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Lamia",
-      "page": 194,
+      "page": 192,
       "cr": "4",
       "warnings": []
     }

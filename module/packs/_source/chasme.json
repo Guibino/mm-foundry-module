@@ -1,0 +1,383 @@
+{
+  "_id": "py85VpzQquqXd0rN",
+  "_key": "!actors!py85VpzQquqXd0rN",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Chasme",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/chasme.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 15,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 1
+      },
+      "con": {
+        "value": 12,
+        "proficient": 0
+      },
+      "int": {
+        "value": 11,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 15,
+        "formula": ""
+      },
+      "hp": {
+        "value": 78,
+        "max": 78,
+        "formula": "12d10 + 12",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 20,
+        "fly": 60
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120,
+        "blindsight": 10
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "demon",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Mau",
+      "cr": 6,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "cold",
+          "fire",
+          "lightning"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Chasme",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/chasme.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "GnrCJsoZXf6PmaN1",
+      "name": "Restauração Demoníaca",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Se a criatura morrer fora do Abismo, o corpo dela se dissolve em icor e ela ganha um novo corpo instantaneamente, revivendo com todos os seus Pontos de Vida em algum lugar do Abismo.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!py85VpzQquqXd0rN.GnrCJsoZXf6PmaN1"
+    },
+    {
+      "_id": "uxsS0l4ukGL2UAkj",
+      "name": "Resistência a Magia",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!py85VpzQquqXd0rN.uxsS0l4ukGL2UAkj"
+    },
+    {
+      "_id": "ct1iyqkXF9Q5xTDK",
+      "name": "Escalada de Aranha",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura pode escalar superfícies difíceis, inclusive tetos, sem precisar fazer um teste de habilidade.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!py85VpzQquqXd0rN.ct1iyqkXF9Q5xTDK"
+    },
+    {
+      "_id": "BZtpUvfYJCB5hmvw",
+      "name": "Proboscis",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 16 (4d6 + 2) dano perfurante mais 21 (6d6) dano necrótico. If o alvo is uma criatura, its Hit Point maximum decreases by an amount equal to the dano necrótico taken.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "J2gD6cQPnyJzvHg2": {
+            "_id": "J2gD6cQPnyJzvHg2",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "4d6+2",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!py85VpzQquqXd0rN.BZtpUvfYJCB5hmvw"
+    },
+    {
+      "_id": "Y7LlE1Gah736Xp7a",
+      "name": "Drone",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Constituição: CD 12, cada criatura in a 9 m Emanation originating from the chasme (demons automatically succeed on this save). O alvo fica com a condição Inconsciente and repeats the save at the end of each of its turns. O alvo succeeds automatically after 10 minutes or if it takes de dano or uma criatura within 1,5 m of it takes an action to empty a flask of Holy Water on it. O alvo is immune to this chasme's Drone for 24 hours.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "VD5HnNlAvdlaSwqB": {
+            "_id": "VD5HnNlAvdlaSwqB",
+            "type": "save",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "12"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 12,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!py85VpzQquqXd0rN.Y7LlE1Gah736Xp7a"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Chasme",
+      "page": 69,
+      "cr": "6",
+      "warnings": []
+    }
+  }
+}

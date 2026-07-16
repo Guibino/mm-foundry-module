@@ -1,8 +1,8 @@
 {
-  "_id": "dCPlDjFT19yvCiOP",
-  "_key": "!actors!dCPlDjFT19yvCiOP",
+  "_id": "x0N6x4OUXRJmjTti",
+  "_key": "!actors!x0N6x4OUXRJmjTti",
   "folder": "EgPgmtpb4EiltKUV",
-  "name": "Cloud Gigante",
+  "name": "Cloud Giant",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/cloud-giant.webp",
   "system": {
@@ -41,14 +41,15 @@
       "hp": {
         "value": 200,
         "max": 200,
-        "formula": "1 6d12 + 96",
+        "formula": "16d12 + 96",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
-        "hover": false,
-        "walk": 30
+        "hover": true,
+        "walk": 40,
+        "fly": 20
       },
       "senses": {
         "units": "ft"
@@ -68,7 +69,7 @@
       "alignment": "Neutro",
       "cr": 9,
       "xp": {
-        "value": 5000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -100,10 +101,19 @@
         "custom": "Comum, Gigante"
       }
     },
-    "skills": {}
+    "skills": {
+      "ins": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Cloud Gigante",
+    "name": "Cloud Giant",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -121,7 +131,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The giant makes two attacks, using Thun- derous Mace or Trovejantecloud in any combination. It can replace one attack with a use of Conjuração to cast Fog Cloud.</p>",
+          "value": "<p>The giant makes two attacks, using Thunderous Maça or Thundercloud in any combination. It can replace one attack with a use of Conjuração to cast Fog Cloud.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +156,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!dCPlDjFT19yvCiOP.nWShJ6h8ukhUXwIw"
+      "_key": "!actors.items!x0N6x4OUXRJmjTti.nWShJ6h8ukhUXwIw"
     },
     {
-      "_id": "CYynn92hCCugpuOv",
-      "name": "Trovejanteous Mace",
+      "_id": "6VXZLUrjpak2po0P",
+      "name": "Thunderous Maça",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 12, alcance 10 ft. Acerto: 21 (3d8 + 8) Concussão de dano plus 7 (2d6) Trovejante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +12, alcance 3 m. Acerto: 21 (3d8 + 8) dano de concussão mais 7 (2d6) dano trovejante.</p>",
           "chat": ""
         },
         "activation": {
@@ -172,27 +182,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "hTWENyffyKnEae4Y": {
+            "_id": "hTWENyffyKnEae4Y",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "12",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 8,
+                  "bonus": "8",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 12,
+            "attackType": "melee",
             "damageFormula": "3d8+8",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!dCPlDjFT19yvCiOP.CYynn92hCCugpuOv"
+      "_key": "!actors.items!x0N6x4OUXRJmjTti.6VXZLUrjpak2po0P"
     },
     {
-      "_id": "vzaKac6CiWaE24MN",
-      "name": "Trovejantecloud",
+      "_id": "43lodIcyuV1qQsHa",
+      "name": "Thundercloud",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância:+ 12, range 240 ft. Acerto: 18 (3d6 + 8) Trovejante de dano, and o alvo has the Incapacitado condi_ tion until the end of its next turn.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +12, distância 72 m. Acerto: 18 (3d6 + 8) dano trovejante, and o alvo fica com a condição Incapacitado until the end of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -209,52 +263,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "fb67gLx48Usl0vx2": {
+            "_id": "fb67gLx48Usl0vx2",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "12",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 6,
+                  "bonus": "8",
+                  "types": [
+                    "thunder"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 12,
+            "attackType": "ranged",
             "damageFormula": "3d6+8",
             "damageType": "thunder"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!dCPlDjFT19yvCiOP.vzaKac6CiWaE24MN"
-    },
-    {
-      "_id": "jeRgiMEdWJZeEf2h",
-      "name": "Misty Step",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The giant casts the Misty Step spell, using l/l l/l er: the same spellcasting ability as Conjuração. COCKATRICES Accursed Avians with the Power to Petrify</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!dCPlDjFT19yvCiOP.jeRgiMEdWJZeEf2h"
+      "_key": "!actors.items!x0N6x4OUXRJmjTti.43lodIcyuV1qQsHa"
     },
     {
       "_id": "5BJBkYYLidFv4fAW",
@@ -263,7 +327,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The giant casts one of the following spells, requiring no Material components and using Carisma ~s the spellcasting ab _ ility (spell save DC 15): À Vontade: Detect Magic, Fog Cloud, Light 1/Dia Each: Control Weather, Gaseous Form, Telekinesis B O N US A CTI ON S :,:'.'.</p>",
+          "value": "<p>The giant casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 15):</p>",
           "chat": ""
         },
         "activation": {
@@ -288,13 +352,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!dCPlDjFT19yvCiOP.5BJBkYYLidFv4fAW"
+      "_key": "!actors.items!x0N6x4OUXRJmjTti.5BJBkYYLidFv4fAW"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Cloud Giant",
-      "page": 76,
+      "page": 74,
       "cr": "9",
       "warnings": []
     }

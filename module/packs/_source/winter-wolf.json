@@ -1,6 +1,6 @@
 {
-  "_id": "9zyiGIrt098oXtb6",
-  "_key": "!actors!9zyiGIrt098oXtb6",
+  "_id": "rFOo2HkaT95lWc8a",
+  "_key": "!actors!rFOo2HkaT95lWc8a",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Winter Wolf",
   "type": "npc",
@@ -68,7 +68,7 @@
       "alignment": "Neutro e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,7 +102,16 @@
         "custom": "Comum, Gigante"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Winter Wolf",
@@ -117,13 +126,13 @@
   },
   "items": [
     {
-      "_id": "NIO9xwlkLhWxbRgy",
-      "name": "Pack Tactics",
+      "_id": "G85jqG9tmIy9CvFJ",
+      "name": "Táticas de Matilha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The wolf has Advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 feet of the creature and the ally doesn't have the Incapacitado condition.</p>",
+          "value": "<p>A criatura tem Vantagem em uma rolagem de ataque contra uma criatura se pelo menos um dos aliados dela estiver a até 1,5 m do alvo e esse aliado não estiver com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,16 +156,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9zyiGIrt098oXtb6.NIO9xwlkLhWxbRgy"
+      "_key": "!actors.items!rFOo2HkaT95lWc8a.G85jqG9tmIy9CvFJ"
     },
     {
-      "_id": "Pc3cvO1YkN5kZ4sx",
-      "name": "Bite",
+      "_id": "X375ucIlGae50Uhe",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: l l (2d~ + 4) P.iercing de dano. If o alvo is a Large or smaller crea- ture, it has the Caído condition.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 11 (2d6 + 4) dano perfurante. If o alvo is a Large or smaller creature, it fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -174,8 +183,8 @@
           "subtype": ""
         },
         "activities": {
-          "kRybolzY2E1WCHpm": {
-            "_id": "kRybolzY2E1WCHpm",
+          "7TALvfTmp5hhpknA": {
+            "_id": "7TALvfTmp5hhpknA",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -194,7 +203,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -203,21 +230,23 @@
         "mm2024": {
           "mechanics": {
             "toHit": 6,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d6+4",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9zyiGIrt098oXtb6.Pc3cvO1YkN5kZ4sx"
+      "_key": "!actors.items!rFOo2HkaT95lWc8a.X375ucIlGae50Uhe"
     },
     {
-      "_id": "xK0GywkKLB9wQgAE",
-      "name": "Frio Breath (Recharge 5-6)",
+      "_id": "oSO1cSIPRXDPM7jN",
+      "name": "Sopro de Frio (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Sa1Jing Throw: :::.:'. DC 12, cada criatura in al 5-foot Cone. Falha: 18 (4d8) . I- I</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 12, cada criatura in a 4,5 m Cone. 18 (4d8) dano de frio. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -240,55 +269,48 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "QUGEyPyGqQWxJajr": {
+            "_id": "QUGEyPyGqQWxJajr",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "12"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 12,
+            "saveAbility": "con"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9zyiGIrt098oXtb6.xK0GywkKLB9wQgAE"
-    },
-    {
-      "_id": "QpdVPCS9zZBOdCeU",
-      "name": "Frio de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Sucesso: Metade do dano. 0 WORGS Malicious Lupine Ravagers</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!9zyiGIrt098oXtb6.QpdVPCS9zZBOdCeU"
+      "_key": "!actors.items!rFOo2HkaT95lWc8a.oSO1cSIPRXDPM7jN"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Winter Wolf",
-      "page": 336,
+      "page": 334,
       "cr": "3",
       "warnings": []
     }

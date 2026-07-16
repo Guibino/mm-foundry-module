@@ -1,6 +1,6 @@
 {
-  "_id": "myb9Vfn8SNLMzKbc",
-  "_key": "!actors!myb9Vfn8SNLMzKbc",
+  "_id": "l9uBotXNGGKwDxYg",
+  "_key": "!actors!l9uBotXNGGKwDxYg",
   "folder": "1nioWC3kx0YxX8qj",
   "name": "Aboleth",
   "type": "npc",
@@ -28,7 +28,7 @@
         "proficient": 1
       },
       "cha": {
-        "value": 78,
+        "value": 18,
         "proficient": 0
       }
     },
@@ -68,9 +68,9 @@
         "custom": ""
       },
       "alignment": "Leal e Mau",
-      "cr": 70,
+      "cr": 10,
       "xp": {
-        "value": 5900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -99,13 +99,17 @@
       },
       "languages": {
         "value": [],
-        "custom": "Fala Profunda"
+        "custom": ""
       }
     },
     "skills": {
       "his": {
         "value": 2,
         "ability": "int"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
       }
     }
   },
@@ -122,13 +126,13 @@
   },
   "items": [
     {
-      "_id": "n3z1ci5aw3jmYlfw",
-      "name": "Amphibious",
+      "_id": "dlAp1u9gbPcf4AEm",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The aboleth can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -152,7 +156,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!myb9Vfn8SNLMzKbc.n3z1ci5aw3jmYlfw"
+      "_key": "!actors.items!l9uBotXNGGKwDxYg.dlAp1u9gbPcf4AEm"
     },
     {
       "_id": "I3eiry1NQGYEupjq",
@@ -161,7 +165,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If aestroyed, the aboleth gains a new body in Sdl0 days, reviving with all its Pontos de Vida in the Far Realm or another location chosen by the OM.</p>",
+          "value": "<p>If destroyed, the aboleth gains a new body in 5d10 days, reviving with all its Pontos de Vida in the Far Realm or another location chosen by the DM.</p>",
           "chat": ""
         },
         "activation": {
@@ -185,16 +189,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!myb9Vfn8SNLMzKbc.I3eiry1NQGYEupjq"
+      "_key": "!actors.items!l9uBotXNGGKwDxYg.I3eiry1NQGYEupjq"
     },
     {
       "_id": "Jt5uaAebuSIc21vf",
-      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "name": "Resistência Lendária",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the aboleth fails a saving throw, it can choose to suc- ceed in stead.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -203,13 +207,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "3",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -223,7 +222,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!myb9Vfn8SNLMzKbc.Jt5uaAebuSIc21vf"
+      "_key": "!actors.items!l9uBotXNGGKwDxYg.Jt5uaAebuSIc21vf"
     },
     {
       "_id": "jTC4BEJQuiv724yY",
@@ -232,7 +231,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While underwater, the aboleth is sur- rounded by mucus. Constituição Sa1Jing Throw : DC 74, cada criatura in a 5-foot Emanation originating from the aboleth at the end of the aboleth's turn. Falha: The target is cursed. Until the curse ends, o alvo's skin becomes slimy, o alvo can breathe air and water, and it can't regain Pontos de Vida unless it is underwater. While the cursed creature is outside a body of water, the creature takes 6 (1d1 2) Ácido de dano at the end of every 10 minutes unless moisture is applied to its skin before those minutes have passed.</p>",
+          "value": "<p>While underwater, the aboleth is surrounded by mucus. Teste de Resistência de Constituição: CD 14, cada criatura in a 1,5 m Emanation originating from the aboleth at the end of the aboleth's turn. O alvo is cursed. Until the curse ends, o alvo's skin becomes slimy, o alvo can breathe air and water, and it can't regain Pontos de Vida unless it is underwater.\nWhile the cursed creature is outside a body of water, the creature takes 6 (1d12) dano de ácido at the end of every 10 minutes unless moisture is applied to its skin before those minutes have passed.</p>",
           "chat": ""
         },
         "activation": {
@@ -252,11 +251,14 @@
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 14,
+            "saveAbility": "con"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!myb9Vfn8SNLMzKbc.jTC4BEJQuiv724yY"
+      "_key": "!actors.items!l9uBotXNGGKwDxYg.jTC4BEJQuiv724yY"
     },
     {
       "_id": "2viUCNSeMr5FrcSg",
@@ -265,7 +267,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If a creature the aboleth can see communicates telepathically with the aboleth, the abo- leth learns the creature's greatest desires. A BOL ETH</p>",
+          "value": "<p>If uma criatura the aboleth can see communicates telepathically with the aboleth, the aboleth learns the creature's greatest desires.</p>",
           "chat": ""
         },
         "activation": {
@@ -289,40 +291,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!myb9Vfn8SNLMzKbc.2viUCNSeMr5FrcSg"
-    },
-    {
-      "_id": "kCyZs1szjoiWRtdb",
-      "name": "Psionic Projection",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>While in its lair, the aboleth can cast Project Image, requiring no spell compo- nents and using Inteligência as the spellcasting ability (spell save DC 16). When casting the spell this way, the spell's range is 1 mile, and the aboleth can use its telepatia as if it were in the illusion's space. If the aboleth dies or moves its lair elsewhere, these effects end immediately.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!myb9Vfn8SNLMzKbc.kCyZs1szjoiWRtdb"
+      "_key": "!actors.items!l9uBotXNGGKwDxYg.2viUCNSeMr5FrcSg"
     },
     {
       "_id": "FPzjlu9sy26dZE3y",
@@ -331,7 +300,41 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The aboleth makes two Tentacle attacks and uses either Consume Memories or Dominate Mind if available. Te!Jtacle. Rolagem de Ataque Corpo a Corpo: +9, alcance 15 ft. Acerto: 12 (2d6 + 5) Concussão de dano. If o alvo is a Large or smaller creature, it has the Agarrado condition (escape DC 74) from one of four tentacles.</p>",
+          "value": "<p>The aboleth makes two Tentáculo attacks and uses either Consume Memories or Dominate Mind if available.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!l9uBotXNGGKwDxYg.FPzjlu9sy26dZE3y"
+    },
+    {
+      "_id": "YoetasUe7KNeZ9sa",
+      "name": "Tentáculo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 4,5 m. Acerto: 12 (2d6 + 5) dano de concussão. If o alvo is a Large or smaller creature, it fica com a condição Agarrado (CD para escapar 14) from one of four tentacles.</p>",
           "chat": ""
         },
         "activation": {
@@ -349,8 +352,8 @@
           "subtype": ""
         },
         "activities": {
-          "TGRkAM2Xthi6qx3Q": {
-            "_id": "TGRkAM2Xthi6qx3Q",
+          "tEWXMha30JkaKoLT": {
+            "_id": "tEWXMha30JkaKoLT",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -403,16 +406,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!myb9Vfn8SNLMzKbc.FPzjlu9sy26dZE3y"
+      "_key": "!actors.items!l9uBotXNGGKwDxYg.YoetasUe7KNeZ9sa"
     },
     {
-      "_id": "TcOam7AAWp7Ed4p8",
+      "_id": "hEmYHrO4OIz9h5TJ",
       "name": "Consume Memories",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Inteligência Sa1Jing Throw: DC 16, uma criatura within 30 feet that is Enfeitiçado or Grap- pled by the aboleth. Falha: 10 (3d6) Psíquico de dano. Sucesso: Metade do dano. Falha ou Sucesso: The aboleth gains o alvo's memories if o alvo is a Humanoid and is reduced to 0 Pontos de Vida by this action.</p>",
+          "value": "<p>Teste de Resistência de Inteligência: CD 16, uma criatura within 9 m that is Enfeitiçado or Agarrado by the aboleth. 10 (3d6) dano psíquico. Metade do dano. The aboleth gains o alvo's memories if o alvo is a Humanoid and is reduced to 0 Pontos de Vida by this action.</p>",
           "chat": ""
         },
         "activation": {
@@ -429,27 +432,51 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "iGVI0KLnpQCif3pv": {
+            "_id": "iGVI0KLnpQCif3pv",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "int"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "16"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "3d6",
-            "damageType": "psychic"
+            "saveDc": 16,
+            "saveAbility": "int"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!myb9Vfn8SNLMzKbc.TcOam7AAWp7Ed4p8"
+      "_key": "!actors.items!l9uBotXNGGKwDxYg.hEmYHrO4OIz9h5TJ"
     },
     {
-      "_id": "yHNzWgpgjT2fEoVT",
+      "_id": "hHRDpthxwVAefaiq",
       "name": "Dominate Mind (2/Day)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sabedoria Sa1Jing Throw: DC 16, uma criatura the aboleth can see within 30 feet. Falha: The target has the Enfeitiçado condition until the aboleth dies or is on a different plane of existence from o alvo. While Enfeitiçado, o alvo acts as an ally to the aboleth and is under its control while within 60 feet of it. In addition, the aboleth and o alvo can communi- cate telepathically with each other over any distance. The target repeats the save whenever it takes de dano as well as after every 24 hours it spends at least 7 mile away from the aboleth, ending the effect on itself on a success .</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 16, uma criatura the aboleth can see within 9 m. O alvo fica com a condição Enfeitiçado until the aboleth dies or is on a different plane of existence from o alvo. While Enfeitiçado, o alvo acts as an ally to the aboleth and is under its control while within 18 m of it. In addition, the aboleth and o alvo can communicate telepathically with each other over any distance.\nO alvo repeats the save whenever it takes de dano as well as after every 24 hours it spends at least 1 mile away from the aboleth, ending the effect on itself on a success.</p>",
           "chat": ""
         },
         "activation": {
@@ -471,15 +498,42 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "1SPtdpRFLtoNvQkM": {
+            "_id": "1SPtdpRFLtoNvQkM",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "16"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 16,
+            "saveAbility": "wis"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!myb9Vfn8SNLMzKbc.yHNzWgpgjT2fEoVT"
+      "_key": "!actors.items!l9uBotXNGGKwDxYg.hHRDpthxwVAefaiq"
     },
     {
       "_id": "pSGLTZaU9jkQ2q1a",
@@ -488,7 +542,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The aboleth makes one Tentacle attack.</p>",
+          "value": "<p>The aboleth makes one Tentáculo attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -513,7 +567,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!myb9Vfn8SNLMzKbc.pSGLTZaU9jkQ2q1a"
+      "_key": "!actors.items!l9uBotXNGGKwDxYg.pSGLTZaU9jkQ2q1a"
     },
     {
       "_id": "TzZUqav3O7gRbJ6H",
@@ -522,7 +576,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the aboleth has at least uma criatura Enfeitiçado or Agarrado, it uses Consume Memories and regains 5 (1d10) Pontos de Vida. .. A I R ELEMENTAL Primal Spirit of Wind and Storm</p>",
+          "value": "<p>If the aboleth has at least uma criatura Enfeitiçado or Agarrado, it uses Consume Memories and regains 5 (1d10) Pontos de Vida.</p>",
           "chat": ""
         },
         "activation": {
@@ -547,14 +601,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!myb9Vfn8SNLMzKbc.TzZUqav3O7gRbJ6H"
+      "_key": "!actors.items!l9uBotXNGGKwDxYg.TzZUqav3O7gRbJ6H"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Aboleth",
-      "page": 14,
-      "cr": "70",
+      "page": 12,
+      "cr": "10",
       "warnings": []
     }
   }

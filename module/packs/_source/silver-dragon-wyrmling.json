@@ -1,8 +1,8 @@
 {
-  "_id": "gBKXPj9jVIQWDB0V",
-  "_key": "!actors!gBKXPj9jVIQWDB0V",
+  "_id": "VaMhGSEU1kCHtHFC",
+  "_key": "!actors!VaMhGSEU1kCHtHFC",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Prateado Dragão Filhote",
+  "name": "Silver Dragon Wyrmling",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/silver-dragon-wyrmling.webp",
   "system": {
@@ -64,7 +64,7 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Metallic",
+        "subtype": "metallic",
         "swarm": "",
         "custom": ""
       },
@@ -83,7 +83,9 @@
     "traits": {
       "size": "med",
       "di": {
-        "value": [],
+        "value": [
+          "cold"
+        ],
         "custom": ""
       },
       "dr": {
@@ -115,7 +117,7 @@
     }
   },
   "prototypeToken": {
-    "name": "Prateado Dragão Filhote",
+    "name": "Silver Dragon Wyrmling",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -133,7 +135,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes two Rend attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -158,16 +160,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gBKXPj9jVIQWDB0V.i3kABbIUvgeBiYSb"
+      "_key": "!actors.items!VaMhGSEU1kCHtHFC.i3kABbIUvgeBiYSb"
     },
     {
-      "_id": "IEqQYFbvclhQxDY0",
-      "name": "Rend",
+      "_id": "iV3DKLKD56K4Aq4T",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 9 (1d1 0 + 4) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 9 (1d10 + 4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -185,8 +187,8 @@
           "subtype": ""
         },
         "activities": {
-          "6FDvElxGQs0Z8Pdp": {
-            "_id": "6FDvElxGQs0Z8Pdp",
+          "3XQ8z5keeJUxZvb9": {
+            "_id": "3XQ8z5keeJUxZvb9",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -239,16 +241,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gBKXPj9jVIQWDB0V.IEqQYFbvclhQxDY0"
+      "_key": "!actors.items!VaMhGSEU1kCHtHFC.iV3DKLKD56K4Aq4T"
     },
     {
-      "_id": "XUne5CcVHdtyCJML",
-      "name": "Frio Breath (Recharge 5-6)",
+      "_id": "jvtcWnRLiUwIQAK2",
+      "name": "Sopro de Frio (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 13, cada criatura in a 15-foot Cone. Falha: 18 (4d8)</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 13, cada criatura in a 4,5 m Cone. 18 (4d8) dano de frio. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -272,8 +274,8 @@
           "subtype": ""
         },
         "activities": {
-          "omFbH6QNu6J3J6p5": {
-            "_id": "omFbH6QNu6J3J6p5",
+          "ZjxjO21VfFSRxlIx": {
+            "_id": "ZjxjO21VfFSRxlIx",
             "type": "save",
             "activation": {
               "type": "action",
@@ -306,50 +308,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gBKXPj9jVIQWDB0V.XUne5CcVHdtyCJML"
+      "_key": "!actors.items!VaMhGSEU1kCHtHFC.jvtcWnRLiUwIQAK2"
     },
     {
-      "_id": "KynYS6lh1wKlKGPH",
-      "name": "Frio de dano",
+      "_id": "rsiIaZQ7SnRwYAKX",
+      "name": "Sopro Paralisante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sucesso: Metade do dano.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!gBKXPj9jVIQWDB0V.KynYS6lh1wKlKGPH"
-    },
-    {
-      "_id": "hJ5ulG7m6V0xyz8g",
-      "name": "Paralyzing Breath",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 13 , cada criatura in a 15-foot Cone. First Falha: The target has the Incapacitado condition until the end of its next turn, when it repeats the save. Second Falha: The tar- get has the Paralisado condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. SILVER DRAGONS Silver dragons typically dwell amid snow-capped mountains, though aspirations and congeniality drive some to instead live among cosmopolitan soci- eties. Disguised as humanoids, they ally with artists, historians, knights, and humble leaders who learn from the past to create better futures. Silve n_ dragons take inspiration from legendary heroes and have grand ambitions. Many collect treasures that reflect these interests, such as histo- ries, ancient art, and the gear of famous champions. SILVER DRAGON WYRMLING Silver dragon wyrmlings typically live with one or more parents or mentors, learning much about the world and its past before living on their own. YOUNG SILVER DRAGO N Young silver dragons usually have close ties with elder metallic dragons or heroic role models, helping those with great goals achieve their ambitions. They might serve as messengers for or representatives of ✓ such do-gooders. YOUNG SILVER DRAGON Large D ragon (Metal lic), Lawful Good AC 18 Iniciativa +4 (1 4) HP 168 (16d10 + 80)</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 13, cada criatura in a 4,5 m Cone. Falha: O alvo fica com a condição Incapacitado until the end of its next turn, when it repeats the save. Falha: O alvo fica com a condição Paralisado, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</p>",
           "chat": ""
         },
         "activation": {
@@ -367,8 +335,8 @@
           "subtype": ""
         },
         "activities": {
-          "8CARmUQZTaIJG2GY": {
-            "_id": "8CARmUQZTaIJG2GY",
+          "JgnRzU1czYclfXgJ": {
+            "_id": "JgnRzU1czYclfXgJ",
             "type": "save",
             "activation": {
               "type": "action",
@@ -401,13 +369,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gBKXPj9jVIQWDB0V.hJ5ulG7m6V0xyz8g"
+      "_key": "!actors.items!VaMhGSEU1kCHtHFC.rsiIaZQ7SnRwYAKX"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Silver Dragon Wyrmling",
-      "page": 280,
+      "page": 278,
       "cr": "2",
       "warnings": []
     }

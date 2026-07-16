@@ -1,6 +1,6 @@
 {
-  "_id": "y7SYlxjufStdAlTb",
-  "_key": "!actors!y7SYlxjufStdAlTb",
+  "_id": "dtuf4Mc6EiQMXT9q",
+  "_key": "!actors!dtuf4Mc6EiQMXT9q",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Octopus",
   "type": "npc",
@@ -48,7 +48,8 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 5
+        "walk": 5,
+        "swim": 30
       },
       "senses": {
         "units": "ft",
@@ -69,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 0,
       "xp": {
-        "value": 10
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -98,10 +99,14 @@
       },
       "languages": {
         "value": [],
-        "custom": "Non e"
+        "custom": ""
       }
     },
     "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      },
       "ste": {
         "value": 2,
         "ability": "dex"
@@ -127,7 +132,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The octopus can move through a space as narrow as 1 inch without expending extra move- ment to do so.</p>",
+          "value": "<p>A criatura pode se mover por um espaço tão estreito quanto 2,5 cm sem gastar movimento extra para isso.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,16 +156,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!y7SYlxjufStdAlTb.TaqxwowtBrIzkTzb"
+      "_key": "!actors.items!dtuf4Mc6EiQMXT9q.TaqxwowtBrIzkTzb"
     },
     {
-      "_id": "pi8bAeIRZzdbaCq1",
-      "name": "Water Breathing",
+      "_id": "Wblu79vrYRZVZnbp",
+      "name": "Respiração Aquática",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The octopus can breathe only underwater.</p>",
+          "value": "<p>A criatura só consegue respirar debaixo d'água.</p>",
           "chat": ""
         },
         "activation": {
@@ -184,16 +189,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!y7SYlxjufStdAlTb.pi8bAeIRZzdbaCq1"
+      "_key": "!actors.items!dtuf4Mc6EiQMXT9q.Wblu79vrYRZVZnbp"
     },
     {
-      "_id": "4ivdctlMXbcNbMQk",
-      "name": "Tentacles",
+      "_id": "RbOdNQmW099GXRLm",
+      "name": "Tentáculos",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 1 Blud- geoning de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 1 dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
@@ -211,8 +216,8 @@
           "subtype": ""
         },
         "activities": {
-          "Rg3NhhjnlvTNqi94": {
-            "_id": "Rg3NhhjnlvTNqi94",
+          "qh19CY1AGWLL3jL3": {
+            "_id": "qh19CY1AGWLL3jL3",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -245,7 +250,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!y7SYlxjufStdAlTb.4ivdctlMXbcNbMQk"
+      "_key": "!actors.items!dtuf4Mc6EiQMXT9q.RbOdNQmW099GXRLm"
     },
     {
       "_id": "XfDGtrfIB4zSyJqn",
@@ -254,7 +259,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: A creature ends its turn within 5 feet of the octopus while underwater. Response: The octopus releases ink that fills a 5-foot Cube cen- tered on itself, and the octopus moves up to its Swim</p>",
+          "value": "<p>A creature ends its turn within 1,5 m of the octopus while underwater. The octopus releases ink that fills a 1,5 m Cube centered on itself, and the octopus moves up to its Swim Speed. The Cube is Heavily Obscured for 1 minute or until a strong current or similar effect disperses the ink.</p>",
           "chat": ""
         },
         "activation": {
@@ -284,47 +289,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!y7SYlxjufStdAlTb.XfDGtrfIB4zSyJqn"
-    },
-    {
-      "_id": "xVVhRsEJG9G0cVBV",
-      "name": "Sp eed 5 ft",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>, Fly 60 ft. MOD SAVE MOD SAV E MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "reaction",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!y7SYlxjufStdAlTb.xVVhRsEJG9G0cVBV"
+      "_key": "!actors.items!dtuf4Mc6EiQMXT9q.XfDGtrfIB4zSyJqn"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Octopus",
-      "page": 367,
+      "page": 365,
       "cr": "0",
       "warnings": []
     }

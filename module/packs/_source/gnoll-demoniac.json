@@ -1,14 +1,14 @@
 {
-  "_id": "KihZ7ZBIaVlRNm99",
-  "_key": "!actors!KihZ7ZBIaVlRNm99",
-  "folder": "kCLi0hD5goTIU7AM",
+  "_id": "h3atAdmQPjpJhGT6",
+  "_key": "!actors!h3atAdmQPjpJhGT6",
+  "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Gnoll Demoniac",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/gnoll-demoniac.webp",
   "system": {
     "abilities": {
       "str": {
-        "value": 76,
+        "value": 16,
         "proficient": 1
       },
       "dex": {
@@ -16,7 +16,7 @@
         "proficient": 0
       },
       "con": {
-        "value": 7,
+        "value": 17,
         "proficient": 1
       },
       "int": {
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 76,
+        "flat": 16,
         "formula": ""
       },
       "hp": {
@@ -47,10 +47,12 @@
       },
       "movement": {
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "walk": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -59,15 +61,15 @@
     },
     "details": {
       "type": {
-        "value": "",
+        "value": "fiend",
         "subtype": "",
         "swarm": "",
-        "custom": "Unknown"
+        "custom": ""
       },
-      "alignment": "Sem Tendência",
+      "alignment": "Caótico e Mau",
       "cr": 8,
       "xp": {
-        "value": 3900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -96,12 +98,12 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Abissal, Comum, Gnoll"
       }
     },
     "skills": {
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       }
     }
@@ -150,7 +152,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KihZ7ZBIaVlRNm99.nPxH63xcFVz6fIf1"
+      "_key": "!actors.items!h3atAdmQPjpJhGT6.nPxH63xcFVz6fIf1"
     },
     {
       "_id": "l8d73uFFIj8RhEmd",
@@ -159,7 +161,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +6, alcance 5 ft. or range 60 ft. Acerto: 20 (Sd6 + 3) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +6, alcance 1,5 m. or distância 18 m. Acerto: 20 (5d6 + 3) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -199,15 +201,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 5,
+                  "denomination": 6,
+                  "bonus": "3",
                   "types": [
                     "poison"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "Sd6+3"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -225,22 +227,22 @@
           "mechanics": {
             "toHit": 6,
             "attackType": "ranged",
-            "damageFormula": "Sd6+3",
+            "damageFormula": "5d6+3",
             "damageType": "poison"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KihZ7ZBIaVlRNm99.l8d73uFFIj8RhEmd"
+      "_key": "!actors.items!h3atAdmQPjpJhGT6.l8d73uFFIj8RhEmd"
     },
     {
-      "_id": "4sGh4e6HuHsSM4ng",
-      "name": "Hunger ofYeenoghu (Recharge 5-6)",
+      "_id": "TMhOFwEK3LdEmMw8",
+      "name": "Hunger of Yeenoghu (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The gnoll conjures a 30-foot Cube of magical Darkness originating from a point it can see within 60 feet, which lasts for 7 minute or until the gnoll's Concentration ends on it. This area is</p>",
+          "value": "<p>The gnoll conjures a 9 m Cube of magical Darkness originating from a point it can see within 18 m, which lasts for 1 minute or until the gnoll's Concentration ends on it. This area is Difficult Terrain. Teste de Resistência de Destreza: CD 14, any creature that starts its turn in this area or enters it for the first time on a turn. 28 (8d6) dano necrótico, and the gnoll or uma criatura of its choice it can see gains 10 Temporary Pontos de Vida. Metade do dano only.</p>",
           "chat": ""
         },
         "activation": {
@@ -263,43 +265,9 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!KihZ7ZBIaVlRNm99.4sGh4e6HuHsSM4ng"
-    },
-    {
-      "_id": "pbGbh23ajHoLYz6r",
-      "name": "Difficult Terrain",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 14, any crea- ture that starts its turn in this area or enters it for the first time on a turn. Falha: 28 (8d6) Necrótico de dano, and the gnoll or a creature of its choice it can see gains . 10 Temporary Pontos de Vida. Sucesso: Metade do dano only.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
         "activities": {
-          "8hltHZ5NYRrpAFcj": {
-            "_id": "8hltHZ5NYRrpAFcj",
+          "tmsM3hIOGol4m0pA": {
+            "_id": "tmsM3hIOGol4m0pA",
             "type": "save",
             "activation": {
               "type": "action",
@@ -318,25 +286,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 8,
-                  "denomination": 6,
-                  "bonus": "",
-                  "types": [
-                    "necrotic"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -344,24 +294,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "8d6",
-            "damageType": "necrotic",
             "saveDc": 14,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KihZ7ZBIaVlRNm99.pbGbh23ajHoLYz6r"
+      "_key": "!actors.items!h3atAdmQPjpJhGT6.TMhOFwEK3LdEmMw8"
     },
     {
-      "_id": "a1CnL67BkUU016Yx",
-      "name": "Rampage (2/Day)",
+      "_id": "Zsft2XHHl3G6DQ56",
+      "name": "Descontrole (2/Day)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Immediately after dealing dam- age to a creature that is already Bloodied, the gnoll m_oves up to half its Speed, and it makes one Abissal_ Strike attack. GNOLLS GOBLINS Wild Tricksters and Troublemakers</p>",
+          "value": "<p>Immediately after dealing de dano to uma criatura that is already Bloodied, the gnoll moves up to half its Speed, and it makes one Abissal Strike attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -391,13 +339,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KihZ7ZBIaVlRNm99.a1CnL67BkUU016Yx"
+      "_key": "!actors.items!h3atAdmQPjpJhGT6.Zsft2XHHl3G6DQ56"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Gnoll Demoniac",
-      "page": 143,
+      "page": 141,
       "cr": "8",
       "warnings": []
     }

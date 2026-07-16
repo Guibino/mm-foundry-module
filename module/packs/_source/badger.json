@@ -1,6 +1,6 @@
 {
-  "_id": "d09oFLmo91Xg5kTc",
-  "_key": "!actors!d09oFLmo91Xg5kTc",
+  "_id": "hebd8WkK5FQVIt1A",
+  "_key": "!actors!hebd8WkK5FQVIt1A",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Badger",
   "type": "npc",
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 17,
+        "flat": 11,
         "formula": ""
       },
       "hp": {
@@ -48,10 +48,12 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 20,
+        "burrow": 5
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 30
       },
       "init": {
         "ability": "dex",
@@ -99,10 +101,15 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Badger",
@@ -117,13 +124,13 @@
   },
   "items": [
     {
-      "_id": "90JIsXdPdi12rc5c",
-      "name": "Bite",
+      "_id": "Uo4kXg5IQuI9ofq8",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 5 ft. Acerto: l Perfurante de dano. BAT T in y Be ast Un al igned A C12 lnitiativ e+2 (12) HP l (1d4 - l) . Sp eed 5 ft., Fly 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 1,5 m. Acerto: 1 dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -141,8 +148,8 @@
           "subtype": ""
         },
         "activities": {
-          "lKPXhw66d6wh5ZMj": {
-            "_id": "lKPXhw66d6wh5ZMj",
+          "tEnCSgtEMiwQdcWj": {
+            "_id": "tEnCSgtEMiwQdcWj",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -175,13 +182,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!d09oFLmo91Xg5kTc.90JIsXdPdi12rc5c"
+      "_key": "!actors.items!hebd8WkK5FQVIt1A.Uo4kXg5IQuI9ofq8"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Badger",
-      "page": 351,
+      "page": 349,
       "cr": "0",
       "warnings": []
     }

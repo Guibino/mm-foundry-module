@@ -1,6 +1,6 @@
 {
-  "_id": "8Y7Qkn4U6zwpxRB5",
-  "_key": "!actors!8Y7Qkn4U6zwpxRB5",
+  "_id": "bXEGbd3gIkWrzys1",
+  "_key": "!actors!bXEGbd3gIkWrzys1",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Doppelganger",
   "type": "npc",
@@ -39,9 +39,9 @@
         "formula": ""
       },
       "hp": {
-        "value": 1,
-        "max": 1,
-        "formula": "",
+        "value": 52,
+        "max": 52,
+        "formula": "8d8 + 16",
         "temp": null,
         "tempmax": null
       },
@@ -51,7 +51,8 @@
         "walk": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -68,7 +69,7 @@
       "alignment": "Neutro",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -81,7 +82,7 @@
       "size": "med",
       "di": {
         "value": [],
-        "custom": "Charmed"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -92,7 +93,9 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed"
+        ],
         "custom": ""
       },
       "languages": {
@@ -124,13 +127,189 @@
   },
   "items": [
     {
-      "_id": "RmKSNtyj18RXSTNJ",
-      "name": "Shape-Shift",
+      "_id": "bbBwOOzdWZeV63YG",
+      "name": "Ataque Múltiplo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The doppelganger shape-shifts into a Me- dium or Small Humanoid, or it returns to its true form. . Its game statistics, other than its size, are the same in <( each . form. Any equipment it is wearing or carrying isn't _ ~ transformed. , w Vl DR AC OLI CH Dracônico Tyrant Reborn</p>",
+          "value": "<p>The doppelganger makes two Pancada attacks and uses Unsettling Visage if available.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bXEGbd3gIkWrzys1.bbBwOOzdWZeV63YG"
+    },
+    {
+      "_id": "gajtgJXWUDTMNRgf",
+      "name": "Pancada",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6 (with Vantagem during the first round of each combat), alcance 1,5 m. Acerto: 11 (2d6 + 4) dano de concussão.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "4924uZeguarmWO6H": {
+            "_id": "4924uZeguarmWO6H",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 6,
+            "attackType": "melee",
+            "damageFormula": "2d6+4",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bXEGbd3gIkWrzys1.gajtgJXWUDTMNRgf"
+    },
+    {
+      "_id": "NozWmlw3HaU4OqWl",
+      "name": "Unsettling Visage",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Sabedoria: CD 12, cada criatura in a 4,5 m Emanation originating from the doppelganger that can see the doppelganger. O alvo fica com a condição Amedrontado and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "gOtYmAY8sFTg0aD1": {
+            "_id": "gOtYmAY8sFTg0aD1",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "12"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 12,
+            "saveAbility": "wis"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bXEGbd3gIkWrzys1.NozWmlw3HaU4OqWl"
+    },
+    {
+      "_id": "yRrYCJI30XsDukgH",
+      "name": "Mudar de Forma",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The doppelganger shape-shifts into a Medium or Small Humanoid, or it returns to its true form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed.</p>",
           "chat": ""
         },
         "activation": {
@@ -155,17 +334,49 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8Y7Qkn4U6zwpxRB5.RmKSNtyj18RXSTNJ"
+      "_key": "!actors.items!bXEGbd3gIkWrzys1.yRrYCJI30XsDukgH"
+    },
+    {
+      "_id": "dEAl4nsJT0ThhpA2",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The doppelganger casts Detect Thoughts, requiring no spell components and using Carisma as the spellcasting ability (spell save CD 12).</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bXEGbd3gIkWrzys1.dEAl4nsJT0ThhpA2"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Doppelganger",
-      "page": 102,
+      "page": 100,
       "cr": "3",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "warnings": []
     }
   }
 }

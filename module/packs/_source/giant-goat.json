@@ -1,8 +1,8 @@
 {
-  "_id": "5faPd4jf65uwzvXJ",
-  "_key": "!actors!5faPd4jf65uwzvXJ",
+  "_id": "OTUUmrKFHdLLsXxj",
+  "_key": "!actors!OTUUmrKFHdLLsXxj",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Gigante Goat",
+  "name": "Giant Goat",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/giant-goat.webp",
   "system": {
@@ -48,10 +48,12 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40,
+        "climb": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -66,7 +68,7 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 0.5,
       "xp": {
         "value": 0
       },
@@ -97,13 +99,18 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Gigante Goat",
+    "name": "Giant Goat",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -115,13 +122,13 @@
   },
   "items": [
     {
-      "_id": "Raz6i3uNiRMY4stt",
-      "name": "Ram",
+      "_id": "frfeVKZaiDQBhsGm",
+      "name": "Marrada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 6 (1d6 + 3)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 6 (1d6 + 3) dano de concussão. If o alvo is a Large or smaller creature and the goat moved 20+ feet straight toward it immediately before the hit, o alvo takes an extra 5 (2d4) dano de concussão and fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -139,8 +146,8 @@
           "subtype": ""
         },
         "activities": {
-          "YCxWg5C20Z7aQm3I": {
-            "_id": "YCxWg5C20Z7aQm3I",
+          "y2WY4VfbR46pSWtt": {
+            "_id": "y2WY4VfbR46pSWtt",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -159,7 +166,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -168,53 +193,21 @@
         "mm2024": {
           "mechanics": {
             "toHit": 5,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d6+3",
+            "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!5faPd4jf65uwzvXJ.Raz6i3uNiRMY4stt"
-    },
-    {
-      "_id": "EbZ0EelzBCXPnejD",
-      "name": "Concussão de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If o alvo is a Large or smaller creature and the goat moved 20+ feet straight toward it immediately before the hit, o alvo takes an extra 5 (2d4) Concussão de dano and has the Caído condition. GIANT HYENA Large Beast, Unaligned AC 12 Iniciativa +2 (12) HP 45 (6d10 + 12) Sp eed 50 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!5faPd4jf65uwzvXJ.EbZ0EelzBCXPnejD"
+      "_key": "!actors.items!OTUUmrKFHdLLsXxj.frfeVKZaiDQBhsGm"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Giant Goat",
-      "page": 359,
-      "cr": "0",
+      "page": 357,
+      "cr": "1/2",
       "warnings": []
     }
   }

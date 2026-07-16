@@ -1,6 +1,6 @@
 {
-  "_id": "e5H8nNp6bLag0443",
-  "_key": "!actors!e5H8nNp6bLag0443",
+  "_id": "aHdYtyeRMCPzffl9",
+  "_key": "!actors!aHdYtyeRMCPzffl9",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Cockatrice Regent",
   "type": "npc",
@@ -8,27 +8,27 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 10,
+        "value": 19,
         "proficient": 0
       },
       "dex": {
-        "value": 10,
+        "value": 14,
         "proficient": 0
       },
       "con": {
-        "value": 10,
+        "value": 16,
         "proficient": 0
       },
       "int": {
-        "value": 10,
+        "value": 3,
         "proficient": 0
       },
       "wis": {
-        "value": 10,
-        "proficient": 0
+        "value": 16,
+        "proficient": 1
       },
       "cha": {
-        "value": 10,
+        "value": 5,
         "proficient": 0
       }
     },
@@ -41,14 +41,15 @@
       "hp": {
         "value": 136,
         "max": 136,
-        "formula": "l 6d1 O + 48",
+        "formula": "16d10 + 48",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "fly": 60
       },
       "senses": {
         "units": "ft",
@@ -69,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 8,
       "xp": {
-        "value": 3900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -82,7 +83,7 @@
       "size": "lg",
       "di": {
         "value": [],
-        "custom": "Petrined"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -93,7 +94,9 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "petrified"
+        ],
         "custom": ""
       },
       "languages": {
@@ -116,13 +119,13 @@
   },
   "items": [
     {
-      "_id": "V17RF57pYTicvMZn",
-      "name": "Flyby",
+      "_id": "ELpwkdAVYx85zgCn",
+      "name": "Voo Rasante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cockatrice doesn't provoke an Opportunity Attack when it flies out of an enemy's alcance.</p>",
+          "value": "<p>A criatura não provoca Ataque de Oportunidade ao sair voando do alcance de um inimigo.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,7 +149,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!e5H8nNp6bLag0443.V17RF57pYTicvMZn"
+      "_key": "!actors.items!aHdYtyeRMCPzffl9.ELpwkdAVYx85zgCn"
     },
     {
       "_id": "93AocXekMnhamv0r",
@@ -155,7 +158,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cockatrice makes one Petrifying Bite attack and two Talons attacks.</p>",
+          "value": "<p>The cockatrice makes one Petrifying Mordida attack and two Garras attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -180,16 +183,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!e5H8nNp6bLag0443.93AocXekMnhamv0r"
+      "_key": "!actors.items!aHdYtyeRMCPzffl9.93AocXekMnhamv0r"
     },
     {
-      "_id": "HKMa2cRWq5ZIUaB7",
-      "name": "Petrifying Bite",
+      "_id": "yrEa5rsTZ7BaFIlK",
+      "name": "Petrifying Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 13 (2d8 + 4) Perfurante de dano. If o alvo is a creature, it is subjected to the following effect. Constituição Teste de Resistência: DC 14. First Falha: The target has the Impedido condition and repeats the save at the end of its next turn if it is still Impedido, ending the effect on itself on a success. Second Falha: The target has the Petrined condition instead of the Impedido condition.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 13 (2d8 + 4) dano perfurante. If o alvo is uma criatura, it is subjected to the following effect. Teste de Resistência de Constituição: CD 14. Falha: O alvo fica com a condição Impedido and repeats the save at the end of its next turn if it is still Impedido, ending the effect on itself on a success. Falha: O alvo fica com a condição Petrificado instead of a condição Impedido.</p>",
           "chat": ""
         },
         "activation": {
@@ -207,8 +210,8 @@
           "subtype": ""
         },
         "activities": {
-          "iNJgwgzO1L9MoATV": {
-            "_id": "iNJgwgzO1L9MoATV",
+          "LzchDa6lHfptG8W9": {
+            "_id": "LzchDa6lHfptG8W9",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -263,16 +266,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!e5H8nNp6bLag0443.HKMa2cRWq5ZIUaB7"
+      "_key": "!actors.items!aHdYtyeRMCPzffl9.yrEa5rsTZ7BaFIlK"
     },
     {
-      "_id": "smaKAxzip5hKqIAW",
-      "name": "Talons",
+      "_id": "wTwpKMqsNwue3A5K",
+      "name": "Garras",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 18 (4d6 + 4) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 18 (4d6 + 4) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -290,8 +293,8 @@
           "subtype": ""
         },
         "activities": {
-          "5SKBGHKiogpuYFDG": {
-            "_id": "5SKBGHKiogpuYFDG",
+          "0CRalbq5qPb5twl2": {
+            "_id": "0CRalbq5qPb5twl2",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -344,7 +347,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!e5H8nNp6bLag0443.smaKAxzip5hKqIAW"
+      "_key": "!actors.items!aHdYtyeRMCPzffl9.wTwpKMqsNwue3A5K"
     },
     {
       "_id": "uugIdsORJOq0Zi7e",
@@ -353,7 +356,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: A creature within 120 feet of CY w the cockatrice deals de dano to it. Response-Destreza co z Teste de Resistência: DC 14, the triggering creature. Falha: 13 <t: (3d6 + 3) Energia de dano. COCKATRICE Small Monstrosity, Unaligned AC 11 Iniciativa +l (11) HP 22 (5d6 + 5) Speed 20 ft., Fly 40 ft. MOD SAVE MO D SAVE MOD SAVE</p>",
+          "value": "<p>A creature within 36 m of the cockatrice deals de dano to it. dDexterity Teste de Resistência: CD 14, the triggering creature. 13 (3d6 + 3) dano de energia.</p>",
           "chat": ""
         },
         "activation": {
@@ -370,25 +373,50 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "WnmQ3AR8vnAsGB5t": {
+            "_id": "WnmQ3AR8vnAsGB5t",
+            "type": "save",
+            "activation": {
+              "type": "reaction",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "14"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 14,
+            "saveAbility": "dex"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!e5H8nNp6bLag0443.uugIdsORJOq0Zi7e"
+      "_key": "!actors.items!aHdYtyeRMCPzffl9.uugIdsORJOq0Zi7e"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Cockatrice Regent",
-      "page": 77,
+      "page": 75,
       "cr": "8",
-      "warnings": [
-        "Atributos nao reconhecidos"
-      ]
+      "warnings": []
     }
   }
 }

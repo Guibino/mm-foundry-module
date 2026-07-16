@@ -1,6 +1,6 @@
 {
-  "_id": "qwJ45cIErAJpqwAR",
-  "_key": "!actors!qwJ45cIErAJpqwAR",
+  "_id": "kcgWR5bVxAQvd0Mc",
+  "_key": "!actors!kcgWR5bVxAQvd0Mc",
   "folder": "bKQUPthn1V2Yu6Bn",
   "name": "Vampire",
   "type": "npc",
@@ -8,7 +8,7 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 78,
+        "value": 18,
         "proficient": 0
       },
       "dex": {
@@ -24,11 +24,11 @@
         "proficient": 0
       },
       "wis": {
-        "value": 75,
+        "value": 15,
         "proficient": 1
       },
       "cha": {
-        "value": 78,
+        "value": 18,
         "proficient": 1
       }
     },
@@ -39,8 +39,8 @@
         "formula": ""
       },
       "hp": {
-        "value": 795,
-        "max": 795,
+        "value": 195,
+        "max": 195,
         "formula": "23d8 + 92",
         "temp": null,
         "tempmax": null
@@ -52,7 +52,8 @@
         "climb": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 120
       },
       "init": {
         "ability": "dex",
@@ -69,7 +70,7 @@
       "alignment": "Leal e Mau",
       "cr": 13,
       "xp": {
-        "value": 10000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -79,13 +80,15 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "necrotic"
+        ],
         "custom": ""
       },
       "dv": {
@@ -103,11 +106,11 @@
     },
     "skills": {
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       },
       "ste": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       }
     }
@@ -126,12 +129,12 @@
   "items": [
     {
       "_id": "eoN5IhyaSsw9MV0H",
-      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "name": "Resistência Lendária",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the vampire fails a saving throw, it can choose to suc- ceed instead .</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -140,13 +143,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "3",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -160,7 +158,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qwJ45cIErAJpqwAR.eoN5IhyaSsw9MV0H"
+      "_key": "!actors.items!kcgWR5bVxAQvd0Mc.eoN5IhyaSsw9MV0H"
     },
     {
       "_id": "eDiw6Tn6JTNMwqMh",
@@ -169,7 +167,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the vampire drops to O Pontos de Vida out- side its resting place, the vampire uses Shape-Shift to become mist (no action required). If it can't use Shape- Shift, it is destroyed. While it has O Pontos de Vida in mist form, it can't return to its vampire form, and it must alcance its resting place within 2 hours or be destroyed. Once in its resting place, it returns to its vampire form and has the Par- alyzed condition until it regains any Pontos de Vida, and it regains l Hit Point after spending 1 hour there.</p>",
+          "value": "<p>If the vampire drops to 0 Pontos de Vida outside its resting place, the vampire uses Mudar de Forma to become mist (no action required). If it can't use Mudar de Forma, it is destroyed.\nWhile it has 0 Pontos de Vida in mist form, it can't return to its vampire form, and it must alcance its resting place within 2 hours or be destroyed. Once in its resting place, it returns to its vampire form and fica com a condição Paralisado until it regains any Pontos de Vida, and it regains 1 Hit Point after spending 1 hour there.</p>",
           "chat": ""
         },
         "activation": {
@@ -193,16 +191,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qwJ45cIErAJpqwAR.eDiw6Tn6JTNMwqMh"
+      "_key": "!actors.items!kcgWR5bVxAQvd0Mc.eDiw6Tn6JTNMwqMh"
     },
     {
-      "_id": "a8uXt7llgMYbG93f",
-      "name": "Spider Climb",
+      "_id": "JzvuptSg8EGLEzgg",
+      "name": "Escalada de Aranha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The vampire can climb difficult surfaces, including along ceilings, without needing to make an ability check. - Vampire Weakness. The vampire has these weaknesses:</p>",
+          "value": "<p>A criatura pode escalar superfícies difíceis, inclusive tetos, sem precisar fazer um teste de habilidade.</p>",
           "chat": ""
         },
         "activation": {
@@ -226,16 +224,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qwJ45cIErAJpqwAR.a8uXt7llgMYbG93f"
+      "_key": "!actors.items!kcgWR5bVxAQvd0Mc.JzvuptSg8EGLEzgg"
     },
     {
-      "_id": "kczjIVpFtpPMNiYh",
-      "name": "Forbiddance",
+      "_id": "YOsQdcgOrCyiJpYc",
+      "name": "Vampire Weakness",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The vampire can't enter a residence with- out an invitation from an occupant .</p>",
+          "value": "<p>The vampire has these weaknesses:\nThe vampire can't enter a residence without an invitation from an occupant.\nThe vampire takes 20 dano de ácido if it ends its turn in running water.\nIf a weapon that deals dano perfurante is driven into the vampire's heart while the vampire fica com a condição Incapacitado in its resting place, the vampire fica com a condição Paralisado until the weapon is removed.\nThe vampire takes 20 dano radiante if it starts its turn in sunlight. While in sunlight, it has Desvantagem on attack rolls and ability checks.</p>",
           "chat": ""
         },
         "activation": {
@@ -259,115 +257,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qwJ45cIErAJpqwAR.kczjIVpFtpPMNiYh"
-    },
-    {
-      "_id": "2JzcOZW6oCsRQlvL",
-      "name": "Running Water",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The vampire takes 20 Ácido de dano if it ends its turn in running water.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!qwJ45cIErAJpqwAR.2JzcOZW6oCsRQlvL"
-    },
-    {
-      "_id": "Np77dRKnQeRNlyLN",
-      "name": "Stake to the Heart",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If a weapon that deals Perfurante de dano is driven into the vampire's heart while the vampire has the Incapacitado condition in its resting place, the vampire has the Paralisado condition until the weapon is removed.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!qwJ45cIErAJpqwAR.Np77dRKnQeRNlyLN"
-    },
-    {
-      "_id": "Bc7lfvJKCCsdJiFF",
-      "name": "Sunlight",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The vampire takes 20 Radiante de dano if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!qwJ45cIErAJpqwAR.Bc7lfvJKCCsdJiFF"
+      "_key": "!actors.items!kcgWR5bVxAQvd0Mc.YOsQdcgOrCyiJpYc"
     },
     {
       "_id": "1qWYDzzNz1J8d4Jq",
-      "name": "Ataque Múltiplo (Vampire Form Only)",
+      "name": "Ataque Múltiplo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The vampire makes two Grave Strike attacks and uses Bite.</p>",
+          "value": "<p>The vampire makes two Grave Strike attacks and uses Mordida.</p>",
           "chat": ""
         },
         "activation": {
@@ -392,16 +291,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qwJ45cIErAJpqwAR.1qWYDzzNz1J8d4Jq"
+      "_key": "!actors.items!kcgWR5bVxAQvd0Mc.1qWYDzzNz1J8d4Jq"
     },
     {
       "_id": "OxIIw0DERDoUOpQu",
-      "name": "Grave Strike (Vampire Form Only)",
+      "name": "Grave Strike",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 5 ft. Acerto: 8 (1d8 + 4) Concussão de dano plus 7 (2d6) Necrótico de dano. If o alvo is a Large or smaller creature, it has.the Agarrado condition (escape DC 14) from one of two hands.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 1,5 m. Acerto: 8 (1d8 + 4) dano de concussão mais 7 (2d6) dano necrótico. If o alvo is a Large or smaller creature, it fica com a condição Agarrado (CD para escapar 14) from one of two hands.</p>",
           "chat": ""
         },
         "activation": {
@@ -473,16 +372,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qwJ45cIErAJpqwAR.OxIIw0DERDoUOpQu"
+      "_key": "!actors.items!kcgWR5bVxAQvd0Mc.OxIIw0DERDoUOpQu"
     },
     {
-      "_id": "Sy8qcLFJLf4C1Z1M",
-      "name": "Bite (Bat or Vampire Form Only)",
+      "_id": "prR291j0Nf16KYZN",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 17, uma criatura within 5 feet that is willing or that has the Agarrado, Incapacitado, or Impedido condition. Failure : 6 (1d4 + 4) Perfurante de dano plus 73 (3d8) Necrótico dam vage. The target's Hit Point maximum decreases by an amount equal to the Ne- crotic de dano taken, and the vampire regains Hit</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 17, uma criatura within 1,5 m that is willing or that has the Agarrado, Incapacitado, or Impedido condição. 6 (1d4 + 4) dano perfurante mais 13 (3d8) dano necrótico. O alvo's Hit Point maximum decreases by an amount equal to the dano necrótico taken, and the vampire regains Pontos de Vida equal to that amount. A Humanoid reduced to 0 Pontos de Vida by this de dano and then buried rises the following sunset as a Vampire Spawn under the vampire's control.</p>",
           "chat": ""
         },
         "activation": {
@@ -500,8 +399,8 @@
           "subtype": ""
         },
         "activities": {
-          "0zszL7935powtsaw": {
-            "_id": "0zszL7935powtsaw",
+          "yGnafVJllnZaotvA": {
+            "_id": "yGnafVJllnZaotvA",
             "type": "save",
             "activation": {
               "type": "action",
@@ -534,16 +433,84 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qwJ45cIErAJpqwAR.Sy8qcLFJLf4C1Z1M"
+      "_key": "!actors.items!kcgWR5bVxAQvd0Mc.prR291j0Nf16KYZN"
     },
     {
-      "_id": "p8mA86BV23H1dyEm",
-      "name": "Points equal to that amount",
+      "_id": "EKvEYQhsj1bc5lzZ",
+      "name": "Mudar de Forma",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A Humanoid reduced to 0 Pontos de Vida by this de dano and then buried rises the following sunset as a Vampire Spawn under the vam- pire's control.</p>",
+          "value": "<p>If the vampire isn't in sunlight or running water, it shape-shifts into a Tiny bat (Speed 1,5 m., Fly Speed 9 m.) or a Medium cloud of mist (Speed 1,5 m., Fly Speed 6 m. [hover]), or it returns to its vampire form. Anything it is wearing transforms with it.\nWhile in bat form, the vampire can't speak. Its game statistics, other than its size and Speed, are unchanged.\nWhile in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless and can enter an enemy's space and stop there. If air can pass through a space, the mist can do so, but it can't pass through liquid. It has Resistance to all de dano, except the de dano it takes from sunlight.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!kcgWR5bVxAQvd0Mc.EKvEYQhsj1bc5lzZ"
+    },
+    {
+      "_id": "L5RiN3fZLiyh3g5p",
+      "name": "Deathless Strike",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The vampire moves up to half its Speed, and it makes one Grave Strike attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!kcgWR5bVxAQvd0Mc.L5RiN3fZLiyh3g5p"
+    },
+    {
+      "_id": "Vc5GbaTHepRvTArO",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The vampire casts Charm Person, requiring no spell components and using Carisma as the spellcasting ability (spell save CD 17), and the duration is 24 hours. The Enfeitiçado target is a willing recipient of the vampire's Mordida, the de dano of which doesn't end the spell. When the spell ends, o alvo is unaware it was Enfeitiçado by the vampire.</p>",
           "chat": ""
         },
         "activation": {
@@ -568,189 +535,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qwJ45cIErAJpqwAR.p8mA86BV23H1dyEm"
-    },
-    {
-      "_id": "ASFGA2vfr3P7UDFU",
-      "name": "Charm (Recharge 5-6)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The vampire casts Charm Per- son, requiring no spell components and using Carisma · as the spellcasting ability (spell save DC 17), and the duration is 24 hours. The Enfeitiçado target is a willing recipient of the vampire's Bite, the de dano of which doesn't end the spell. When the spell ends, o alvo is unaware it was Enfeitiçado by the vampire.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "recharge",
-              "type": "recoverAll",
-              "formula": "5"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!qwJ45cIErAJpqwAR.ASFGA2vfr3P7UDFU"
-    },
-    {
-      "_id": "2VP3aCmV19Lxq0bA",
-      "name": "Shape-Shift",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If the vampire isn't in sun light or running water , it shape-shifts into a Tiny bat (Speed 5 ft., Fly Speed 30 ft .) or a Medium cloud of mist (Speed 5 ft.,</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!qwJ45cIErAJpqwAR.2VP3aCmV19Lxq0bA"
-    },
-    {
-      "_id": "W9FQHcIF1jR3bFpz",
-      "name": "Fly Speed 20 ft",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>[hover]), or it returns to its vampire form. Anything it is wearing transforms with it. While in bat form, the vampire can't speak. Its game statistics, other than its size and Speed, are unchanged. While in mist form, the vampire can't take any ac- tions, speak, or manipulate objects. It is weightless and can enter an enemy's space and stop there. If air can pass through a space, the mist can do so, but it can't pass through liquid. It has Resistance to all de dano, except the de dano it takes from sunlight.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!qwJ45cIErAJpqwAR.W9FQHcIF1jR3bFpz"
-    },
-    {
-      "_id": "4eFMB4sLaJ1Pf1Av",
-      "name": "Beguile",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The vampire casts Command, requiring no spell components and using Carisma as the spellcast- ing ability (spell save DC 17). The vampire can_ 't take this action again until the start of its next turn.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "legendary",
-          "value": 1,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!qwJ45cIErAJpqwAR.4eFMB4sLaJ1Pf1Av"
-    },
-    {
-      "_id": "Hl9bP4QRsPHz5Qf6",
-      "name": "Deathless Strike",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The vampire moves up to half its Speed, and it makes one Grave Strike attack. VAMPIRES 317 VAMPIRE UMBRAL LORD Medium or Small Undead, Lawful E1Ji l AC 16 Iniciativa + 14 (24) HP 187 (22d8 + 88) Speed 40 ft., Climb 40 ft., Fly 40 ft. (hover) MOD SAVE MO D SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "legendary",
-          "value": 1,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!qwJ45cIErAJpqwAR.Hl9bP4QRsPHz5Qf6"
+      "_key": "!actors.items!kcgWR5bVxAQvd0Mc.Vc5GbaTHepRvTArO"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Vampire",
-      "page": 319,
+      "page": 317,
       "cr": "13",
       "warnings": []
     }

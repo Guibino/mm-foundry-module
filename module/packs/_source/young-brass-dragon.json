@@ -1,8 +1,8 @@
 {
-  "_id": "lvfolmvHnEDH5O86",
-  "_key": "!actors!lvfolmvHnEDH5O86",
+  "_id": "1zKMtGCGhRXLyReo",
+  "_key": "!actors!1zKMtGCGhRXLyReo",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Jovem Latão Dragão",
+  "name": "Young Brass Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/young-brass-dragon.webp",
   "system": {
@@ -41,7 +41,7 @@
       "hp": {
         "value": 110,
         "max": 110,
-        "formula": "13d10+39",
+        "formula": "13d10 + 39",
         "temp": null,
         "tempmax": null
       },
@@ -53,7 +53,9 @@
         "fly": 80
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 120,
+        "blindsight": 30
       },
       "init": {
         "ability": "dex",
@@ -63,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Metallic",
+        "subtype": "metallic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Bom",
       "cr": 6,
       "xp": {
-        "value": 2300
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -82,8 +84,10 @@
     "traits": {
       "size": "lg",
       "di": {
-        "value": [],
-        "custom": "Fi re"
+        "value": [
+          "fire"
+        ],
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -99,13 +103,26 @@
       },
       "languages": {
         "value": [],
-        "custom": "Co mmon, Dracônico"
+        "custom": "Comum, Dracônico"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "per": {
+        "value": 2,
+        "ability": "cha"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Jovem Latão Dragão",
+    "name": "Young Brass Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -123,7 +140,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks. It can replace two attacks with a use of Sleep Breath.</p>",
+          "value": "<p>The dragon makes three Dilacerar attacks. It can replace two attacks with a use of Sopro Sonífero.</p>",
           "chat": ""
         },
         "activation": {
@@ -148,16 +165,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!lvfolmvHnEDH5O86.EehdbgbMUshDM7VW"
+      "_key": "!actors.items!1zKMtGCGhRXLyReo.EehdbgbMUshDM7VW"
     },
     {
-      "_id": "h5zbO1TbI5nNfWvc",
-      "name": "Rend",
+      "_id": "gENKUnuyK4Pqdaax",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance l Oft. Acerto: 15 (2d1 0 + 4) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 3 m. Acerto: 15 (2d10 + 4) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -175,8 +192,8 @@
           "subtype": ""
         },
         "activities": {
-          "m6oAgQqH5LMOVOlp": {
-            "_id": "m6oAgQqH5LMOVOlp",
+          "U7IgCgCh6sL9SWf9": {
+            "_id": "U7IgCgCh6sL9SWf9",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -229,16 +246,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!lvfolmvHnEDH5O86.h5zbO1TbI5nNfWvc"
+      "_key": "!actors.items!1zKMtGCGhRXLyReo.gENKUnuyK4Pqdaax"
     },
     {
-      "_id": "NGeRfDj0C2AxrVP3",
-      "name": "Fogo Breath (Recharge 5-6)",
+      "_id": "K1kG6otkivMyEZEB",
+      "name": "Sopro de Fogo (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 14, cada criatura in a 4q-foot-long, 5-foot-wide Line. Falha: 38 (11d6) Fogo de dano. Sucesso: Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 14, cada criatura in a 12 m-long, 1,5 m-wide Line. 38 (11d6) dano de fogo. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -262,8 +279,8 @@
           "subtype": ""
         },
         "activities": {
-          "M2SwM1D3m8BeVFXX": {
-            "_id": "M2SwM1D3m8BeVFXX",
+          "0IdzbcxSVL7KXw6B": {
+            "_id": "0IdzbcxSVL7KXw6B",
             "type": "save",
             "activation": {
               "type": "action",
@@ -282,25 +299,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 11,
-                  "denomination": 6,
-                  "bonus": "",
-                  "types": [
-                    "fire"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -308,24 +307,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "11d6",
-            "damageType": "fire",
             "saveDc": 14,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!lvfolmvHnEDH5O86.NGeRfDj0C2AxrVP3"
+      "_key": "!actors.items!1zKMtGCGhRXLyReo.K1kG6otkivMyEZEB"
     },
     {
-      "_id": "cNKH0GKVBIoTtVq5",
-      "name": "Sleep Breath",
+      "_id": "eHJFpKZBontumvqK",
+      "name": "Sopro Sonífero",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 14 , cada criatura in a 30-foot Cone. Falha: The target has-the Incapacitado condition until the end of its next turn, at which point it repeats the save. Second Falha: The .target has the Inconsciente condition for l minute. This w effect ends for o alvo if it takes de dano or a crea- 0 ture within 5 feet of it takes an action to wake it. <( ADULT BRASS DRAGON Huge Dragon (Metallic), Ch aot ic Good AC 18 In itiative + 10 (20) HP 172 (15d12 + 75) S peed 40 ft., Burrow 30 ft., Fly 80 ft. MOD SA VE M OD SAVE M OD SA VE</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 14, cada criatura in a 9 m Cone. O alvo fica com a condição Incapacitado until the end of its next turn, at which point it repeats the save. Falha: O alvo fica com a condição Inconsciente for 1 minute. This effect ends for o alvo if it takes de dano or uma criatura within 1,5 m of it takes an action to wake it.</p>",
           "chat": ""
         },
         "activation": {
@@ -343,8 +340,8 @@
           "subtype": ""
         },
         "activities": {
-          "HMvcOdSZ8lsUWR9I": {
-            "_id": "HMvcOdSZ8lsUWR9I",
+          "gIPIceXm3jj9s70p": {
+            "_id": "gIPIceXm3jj9s70p",
             "type": "save",
             "activation": {
               "type": "action",
@@ -377,13 +374,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!lvfolmvHnEDH5O86.cNKH0GKVBIoTtVq5"
+      "_key": "!actors.items!1zKMtGCGhRXLyReo.eHJFpKZBontumvqK"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Young Brass Dragon",
-      "page": 56,
+      "page": 54,
       "cr": "6",
       "warnings": []
     }

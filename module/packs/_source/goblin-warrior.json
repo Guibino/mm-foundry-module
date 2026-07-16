@@ -1,8 +1,8 @@
 {
-  "_id": "U8eDQlbbGahpUUZ4",
-  "_key": "!actors!U8eDQlbbGahpUUZ4",
+  "_id": "4MisAFLfq7kiwIzN",
+  "_key": "!actors!4MisAFLfq7kiwIzN",
   "folder": "inkH4oLnh3yP5W9M",
-  "name": "Goblin Guerreiro",
+  "name": "Goblin Warrior",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/goblin-warrior.webp",
   "system": {
@@ -62,14 +62,14 @@
     "details": {
       "type": {
         "value": "fey",
-        "subtype": "Gohlinoid",
+        "subtype": "goblinoid",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Neutro",
       "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -101,10 +101,15 @@
         "custom": "Comum, Goblin"
       }
     },
-    "skills": {}
+    "skills": {
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Goblin Guerreiro",
+    "name": "Goblin Warrior",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -116,13 +121,13 @@
   },
   "items": [
     {
-      "_id": "Ppaoq9CZ8jfO625X",
-      "name": "Scimitar",
+      "_id": "TRKe8rzKjkxQ46bi",
+      "name": "Cimitarra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 5 (7d6 + 2) Cortante de dano, plus 2 (1d4) Cortante de dano if the attack roll had Advantage.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano cortante, mais 2 (1d4) dano cortante se a rolagem de ataque teve Vantagem.</p>",
           "chat": ""
         },
         "activation": {
@@ -140,8 +145,8 @@
           "subtype": ""
         },
         "activities": {
-          "VwLIynTafqqg0klk": {
-            "_id": "VwLIynTafqqg0klk",
+          "y4CIKaFEDFVQsrdI": {
+            "_id": "y4CIKaFEDFVQsrdI",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -162,7 +167,7 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": 7,
+                  "number": 1,
                   "denomination": 6,
                   "bonus": "2",
                   "types": [
@@ -188,22 +193,22 @@
           "mechanics": {
             "toHit": 4,
             "attackType": "melee",
-            "damageFormula": "7d6+2",
+            "damageFormula": "1d6+2",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!U8eDQlbbGahpUUZ4.Ppaoq9CZ8jfO625X"
+      "_key": "!actors.items!4MisAFLfq7kiwIzN.TRKe8rzKjkxQ46bi"
     },
     {
-      "_id": "fYhOvB50YpHvMG8q",
-      "name": "Shortbow",
+      "_id": "9dVcG4za8eRcObNn",
+      "name": "Arco Curto",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +4, range 80/320 ft. Acerto: 5 (1d6 + 2) Perfurante de dano, plus 2 (1d4) Perfurante dam- age if the attack roll had Advantage.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +4, distância 24/96 m. Acerto: 5 (1d6 + 2) dano perfurante, mais 2 (1d4) dano perfurante se a rolagem de ataque teve Vantagem.</p>",
           "chat": ""
         },
         "activation": {
@@ -221,8 +226,8 @@
           "subtype": ""
         },
         "activities": {
-          "4jmXX1PVnE9Urw7b": {
-            "_id": "4jmXX1PVnE9Urw7b",
+          "94bc5DCkjhBVnnkK": {
+            "_id": "94bc5DCkjhBVnnkK",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -275,16 +280,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!U8eDQlbbGahpUUZ4.fYhOvB50YpHvMG8q"
+      "_key": "!actors.items!4MisAFLfq7kiwIzN.9dVcG4za8eRcObNn"
     },
     {
-      "_id": "nCAcLvwidSukgUs1",
-      "name": "Nimble Escape",
+      "_id": "EOgYWnfgahzDds4T",
+      "name": "Fuga Ágil",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The goblin takes the Disengage or Hide action. GoeL1 N Boss Sm all Fey ( Goblinoid), Ch aotic Neutral AC 17 lnitiative+2 (12) HP 21 (6d6) Speed 30 ft. MOD S AVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>A criatura realiza a ação Desengajar ou Esconder-se.</p>",
           "chat": ""
         },
         "activation": {
@@ -309,13 +314,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!U8eDQlbbGahpUUZ4.nCAcLvwidSukgUs1"
+      "_key": "!actors.items!4MisAFLfq7kiwIzN.EOgYWnfgahzDds4T"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Goblin Warrior",
-      "page": 144,
+      "page": 142,
       "cr": "1/4",
       "warnings": []
     }

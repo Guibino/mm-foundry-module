@@ -1,6 +1,6 @@
 {
-  "_id": "mCK20JvPFqLTSs4u",
-  "_key": "!actors!mCK20JvPFqLTSs4u",
+  "_id": "fJ7cF03d6OmmEd7k",
+  "_key": "!actors!fJ7cF03d6OmmEd7k",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Reef Shark",
   "type": "npc",
@@ -48,7 +48,8 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 5,
+        "swim": 30
       },
       "senses": {
         "units": "ft",
@@ -67,7 +68,7 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 0.5,
       "xp": {
         "value": 0
       },
@@ -98,10 +99,15 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Reef Shark",
@@ -116,13 +122,13 @@
   },
   "items": [
     {
-      "_id": "pj2yGHL7xUzwZ1Ao",
-      "name": "Pack Tactics",
+      "_id": "zfwJ1JNOaFHJG6Qi",
+      "name": "Táticas de Matilha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The shark has Advantage on an attack roll against a creature if at least one of the shark's allies is within 5 feet of the creature and the ally doesn't have the Incapacitado condition.</p>",
+          "value": "<p>A criatura tem Vantagem em uma rolagem de ataque contra uma criatura se pelo menos um dos aliados dela estiver a até 1,5 m do alvo e esse aliado não estiver com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +152,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!mCK20JvPFqLTSs4u.pj2yGHL7xUzwZ1Ao"
+      "_key": "!actors.items!fJ7cF03d6OmmEd7k.zfwJ1JNOaFHJG6Qi"
     },
     {
-      "_id": "dBm9wFA1rQRpqEh5",
-      "name": "Water Breathing",
+      "_id": "Jah5WxIPUT1e0uvu",
+      "name": "Respiração Aquática",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The shark can breathe only underwater.</p>",
+          "value": "<p>A criatura só consegue respirar debaixo d'água.</p>",
           "chat": ""
         },
         "activation": {
@@ -179,16 +185,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!mCK20JvPFqLTSs4u.dBm9wFA1rQRpqEh5"
+      "_key": "!actors.items!fJ7cF03d6OmmEd7k.Jah5WxIPUT1e0uvu"
     },
     {
-      "_id": "YFbReBBfNbtoMvOW",
-      "name": "Bite",
+      "_id": "HbypfnMLjlMg1QL3",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Hit : 7 (2d4 + 2) Perfurante de dano. APPENDIX A I ANIMALS RH I N OCEROS RHINOCEROS Large Be as t, Unaligned - AC 13 Iniciativa -1 (9) HP 45 (6d10 + 12) Speed 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 7 (2d4 + 2) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -206,8 +212,8 @@
           "subtype": ""
         },
         "activities": {
-          "4yc4GkHhfZ4RSLUW": {
-            "_id": "4yc4GkHhfZ4RSLUW",
+          "O4OBf8DZJdU6jvo6": {
+            "_id": "O4OBf8DZJdU6jvo6",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -226,7 +232,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -235,19 +259,21 @@
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d4+2",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!mCK20JvPFqLTSs4u.YFbReBBfNbtoMvOW"
+      "_key": "!actors.items!fJ7cF03d6OmmEd7k.HbypfnMLjlMg1QL3"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Reef Shark",
-      "page": 370,
-      "cr": "0",
+      "page": 368,
+      "cr": "1/2",
       "warnings": []
     }
   }

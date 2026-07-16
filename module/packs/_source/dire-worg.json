@@ -1,6 +1,6 @@
 {
-  "_id": "lzrNWTbuQ5UJM7H2",
-  "_key": "!actors!lzrNWTbuQ5UJM7H2",
+  "_id": "zwh3i10ncrtWNO7x",
+  "_key": "!actors!zwh3i10ncrtWNO7x",
   "folder": "inkH4oLnh3yP5W9M",
   "name": "Dire Worg",
   "type": "npc",
@@ -16,7 +16,7 @@
         "proficient": 1
       },
       "con": {
-        "value": 78,
+        "value": 18,
         "proficient": 0
       },
       "int": {
@@ -24,7 +24,7 @@
         "proficient": 0
       },
       "wis": {
-        "value": 76,
+        "value": 16,
         "proficient": 1
       },
       "cha": {
@@ -39,20 +39,20 @@
         "formula": ""
       },
       "hp": {
-        "value": 1,
-        "max": 1,
-        "formula": "",
+        "value": 147,
+        "max": 147,
+        "formula": "14d12 + 56",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 50
       },
       "senses": {
         "units": "ft",
-        "darkvision": 720
+        "darkvision": 120
       },
       "init": {
         "ability": "dex",
@@ -66,10 +66,10 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Neutro",
-      "cr": 70,
+      "alignment": "Neutro e Mau",
+      "cr": 10,
       "xp": {
-        "value": 5900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -101,7 +101,12 @@
         "custom": "Goblin, Silvestre, Worg"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Dire Worg",
@@ -116,13 +121,13 @@
   },
   "items": [
     {
-      "_id": "suKCdCOWq4eBe5Pg",
-      "name": "Magic Resistance",
+      "_id": "kqLq4cbyJM6LFVaY",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The worg has Advantage on saving throws against spells and other magica_l effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,7 +151,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!lzrNWTbuQ5UJM7H2.suKCdCOWq4eBe5Pg"
+      "_key": "!actors.items!zwh3i10ncrtWNO7x.kqLq4cbyJM6LFVaY"
     },
     {
       "_id": "iPpwB33Z0dEgZNIb",
@@ -155,7 +160,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The worg makes three Bite attacks.</p>",
+          "value": "<p>The worg makes three Mordida attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -180,16 +185,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!lzrNWTbuQ5UJM7H2.iPpwB33Z0dEgZNIb"
+      "_key": "!actors.items!zwh3i10ncrtWNO7x.iPpwB33Z0dEgZNIb"
     },
     {
-      "_id": "Tjn8kZOphkkSxHbe",
-      "name": "Bite",
+      "_id": "1Vax5I8po1gSnFH8",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ l 0, alcance 5 ft. Acerto: 15 (2d8 + 6) Perfurante de dano plus 7 (2d6) Veneno de dano, and o alvo has the Envenenado condition until the start of the worg's next turn. While Envenenado, o alvo can't re- gain Pontos de Vida.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 1,5 m. Acerto: 15 (2d8 + 6) dano perfurante mais 7 (2d6) dano de veneno, and o alvo fica com a condição Envenenado until the start of the worg's next turn. While Envenenado, o alvo can't regain Pontos de Vida.</p>",
           "chat": ""
         },
         "activation": {
@@ -206,27 +211,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "kbLtwOKy5jVyXN0X": {
+            "_id": "kbLtwOKy5jVyXN0X",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "6",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 10,
+            "attackType": "melee",
             "damageFormula": "2d8+6",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!lzrNWTbuQ5UJM7H2.Tjn8kZOphkkSxHbe"
+      "_key": "!actors.items!zwh3i10ncrtWNO7x.1Vax5I8po1gSnFH8"
     },
     {
       "_id": "MtSHee3d3ZgHebBc",
-      "name": "Dreadful Howl (Recharge 5-6)",
+      "name": "Dreadful Howl (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sabedoria Teste de Resistência: DC 16, cada criatura within 30 feet that isn't a worg. Falha: 36 (8d8) Psíquico de dano, and o alvo has the Amedrontado condition until the start of the worg's next turn. Sucesso: Metade do dano only.</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 16, cada criatura within 9 m that isn't a worg. 36 (8d8) dano psíquico, and o alvo fica com a condição Amedrontado until the start of the worg's next turn. Metade do dano only.</p>",
           "chat": ""
         },
         "activation": {
@@ -270,25 +319,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 8,
-                  "denomination": 8,
-                  "bonus": "",
-                  "types": [
-                    "psychic"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -296,15 +327,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "8d8",
-            "damageType": "psychic",
             "saveDc": 16,
             "saveAbility": "wis"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!lzrNWTbuQ5UJM7H2.MtSHee3d3ZgHebBc"
+      "_key": "!actors.items!zwh3i10ncrtWNO7x.MtSHee3d3ZgHebBc"
     },
     {
       "_id": "OnPCkbDQyLJhgLHX",
@@ -313,7 +342,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The worg teleports, along with a willing creature of its choice within 5 feet of it, up to 30 feet to an unoccupied space it can see. WORGS 335 WRAITH Essence of Evil</p>",
+          "value": "<p>The worg teleports, along with a willing creature of its choice within 1,5 m of it, up to 9 m to an unoccupied space it can see.</p>",
           "chat": ""
         },
         "activation": {
@@ -338,17 +367,15 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!lzrNWTbuQ5UJM7H2.OnPCkbDQyLJhgLHX"
+      "_key": "!actors.items!zwh3i10ncrtWNO7x.OnPCkbDQyLJhgLHX"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Dire Worg",
-      "page": 337,
-      "cr": "70",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "page": 335,
+      "cr": "10",
+      "warnings": []
     }
   }
 }

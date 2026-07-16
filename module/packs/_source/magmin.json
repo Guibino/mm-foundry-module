@@ -1,6 +1,6 @@
 {
-  "_id": "Fok8tViRBJnEncTq",
-  "_key": "!actors!Fok8tViRBJnEncTq",
+  "_id": "brO2kv9AcDLA5CGe",
+  "_key": "!actors!brO2kv9AcDLA5CGe",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Magmin",
   "type": "npc",
@@ -69,7 +69,7 @@
       "alignment": "Caótico e Neutro",
       "cr": 0.5,
       "xp": {
-        "value": 100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -81,7 +81,9 @@
     "traits": {
       "size": "sm",
       "di": {
-        "value": [],
+        "value": [
+          "fire"
+        ],
         "custom": ""
       },
       "dr": {
@@ -98,7 +100,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Primordial (lgnan)"
+        "custom": "Primordial (Ignan)"
       }
     },
     "skills": {}
@@ -116,46 +118,13 @@
   },
   "items": [
     {
-      "_id": "02O5ItuUm1VaieNw",
-      "name": "Death Burst",
+      "_id": "LbEx8c30jGEYcmsd",
+      "name": "Explosão Mortal",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The magmin explodes when it dies. Dex- terity Teste de Resistência: DC 11, cada criatura in a l 0-foot</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!Fok8tViRBJnEncTq.02O5ItuUm1VaieNw"
-    },
-    {
-      "_id": "xXXH8avF6F8hMsTt",
-      "name": "Emanation originating from the magmin",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Falha: 7 (2d6) Fogo de dano. Sucesso: Metade do dano.</p>",
+          "value": "<p>The magmin explodes when it dies. Teste de Resistência de Destreza: CD 11, cada criatura in a 3 m Emanation originating from the magmin. 7 (2d6) dano de fogo. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -176,13 +145,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "2d6",
-            "damageType": "fire"
+            "saveDc": 11,
+            "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Fok8tViRBJnEncTq.xXXH8avF6F8hMsTt"
+      "_key": "!actors.items!brO2kv9AcDLA5CGe.LbEx8c30jGEYcmsd"
     },
     {
       "_id": "D33BM08zAfhD28fY",
@@ -191,7 +160,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4 , alcance 5 ft. Acerto: 7 (2d4 + 2)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 7 (2d4 + 2) dano de fogo. If o alvo is uma criatura or a flammable object that isn't being worn or carried, it starts burning.</p>",
           "chat": ""
         },
         "activation": {
@@ -229,7 +198,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "fire"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -238,55 +225,23 @@
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d4+2",
+            "damageType": "fire"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Fok8tViRBJnEncTq.D33BM08zAfhD28fY"
+      "_key": "!actors.items!brO2kv9AcDLA5CGe.D33BM08zAfhD28fY"
     },
     {
-      "_id": "3X9aR5oRELfQsGfl",
-      "name": "Fogo de dano",
+      "_id": "AGLiSqPGWfnMqv15",
+      "name": "Ignited Iluminação",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If o alvo is a creature or a flammable object that isn't being worn or carried, it starts burning.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!Fok8tViRBJnEncTq.3X9aR5oRELfQsGfl"
-    },
-    {
-      "_id": "nx4yTnCh4X3ESmol",
-      "name": "Ignited Illumination",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The magmin sets itself ablaze or extinguishes its flames. While ablaze, the magmin er: sheds Bright Light in a 10-foot radius and Dim Light for w an additional 10 feet. ' MANES Demons of Panic and Frenzy</p>",
+          "value": "<p>The magmin sets itself ablaze or extinguishes its flames. While ablaze, the magmin sheds Bright Light in a 3 m radius and Dim Light for an additional 3 m.</p>",
           "chat": ""
         },
         "activation": {
@@ -311,13 +266,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Fok8tViRBJnEncTq.nx4yTnCh4X3ESmol"
+      "_key": "!actors.items!brO2kv9AcDLA5CGe.AGLiSqPGWfnMqv15"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Magmin",
-      "page": 202,
+      "page": 200,
       "cr": "1/2",
       "warnings": []
     }

@@ -1,6 +1,6 @@
 {
-  "_id": "ZHLpGuGvPMDddw9X",
-  "_key": "!actors!ZHLpGuGvPMDddw9X",
+  "_id": "dEFxbNUPC7Xlc2Hz",
+  "_key": "!actors!dEFxbNUPC7Xlc2Hz",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Mule",
   "type": "npc",
@@ -66,9 +66,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 1,
+      "cr": 0.125,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,7 +97,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
@@ -145,16 +145,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ZHLpGuGvPMDddw9X.8HiQk0v6Wh9n9I63"
+      "_key": "!actors.items!dEFxbNUPC7Xlc2Hz.8HiQk0v6Wh9n9I63"
     },
     {
-      "_id": "mXj8BJ0ALtkj6och",
-      "name": "Hooves",
+      "_id": "segqfiugNKEQ0IgP",
+      "name": "Cascos",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4 , alcance 5 ft. Hit : 4 (1d4 + 2) Concussão de dano. . OCTOPUS Small Beast, Unaligned AC 12 Iniciativa +2 (1 2) HP 3 (1d6) Speed 5 ft., Sw im 30 ft. MO D SAVE MOD SAVE MO D SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 4 (1d4 + 2) dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
@@ -172,8 +172,8 @@
           "subtype": ""
         },
         "activities": {
-          "jfuYkl3hBJEXmo33": {
-            "_id": "jfuYkl3hBJEXmo33",
+          "0rhHL3ej7iawh1n7": {
+            "_id": "0rhHL3ej7iawh1n7",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -192,7 +192,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -201,19 +219,21 @@
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d4+2",
+            "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ZHLpGuGvPMDddw9X.mXj8BJ0ALtkj6och"
+      "_key": "!actors.items!dEFxbNUPC7Xlc2Hz.segqfiugNKEQ0IgP"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Mule",
-      "page": 367,
-      "cr": "1",
+      "page": 365,
+      "cr": "1/8",
       "warnings": []
     }
   }

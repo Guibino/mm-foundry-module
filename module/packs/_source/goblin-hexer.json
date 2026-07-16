@@ -1,6 +1,6 @@
 {
-  "_id": "NqQL2PE5fxS5eRCU",
-  "_key": "!actors!NqQL2PE5fxS5eRCU",
+  "_id": "Q6vRK0YCDUshmQsG",
+  "_key": "!actors!Q6vRK0YCDUshmQsG",
   "folder": "inkH4oLnh3yP5W9M",
   "name": "Goblin Hexer",
   "type": "npc",
@@ -47,10 +47,12 @@
       },
       "movement": {
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "walk": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -60,14 +62,14 @@
     "details": {
       "type": {
         "value": "fey",
-        "subtype": "Goblinoid",
+        "subtype": "goblinoid",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Neutro",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -99,7 +101,16 @@
         "custom": "Comum, Goblin"
       }
     },
-    "skills": {}
+    "skills": {
+      "slt": {
+        "value": 1,
+        "ability": "dex"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Goblin Hexer",
@@ -145,7 +156,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NqQL2PE5fxS5eRCU.86fapiirNzBNq9Xm"
+      "_key": "!actors.items!Q6vRK0YCDUshmQsG.86fapiirNzBNq9Xm"
     },
     {
       "_id": "1W95kJ5mr3OrYbLD",
@@ -154,7 +165,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +5, alcance 5 ft. or range 60 ft. Acerto: 12 (2d8 + 3) Psíquico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +5, alcance 1,5 m. or distância 18 m. Acerto: 12 (2d8 + 3) dano psíquico.</p>",
           "chat": ""
         },
         "activation": {
@@ -226,7 +237,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NqQL2PE5fxS5eRCU.1W95kJ5mr3OrYbLD"
+      "_key": "!actors.items!Q6vRK0YCDUshmQsG.1W95kJ5mr3OrYbLD"
     },
     {
       "_id": "g0rdAaNnByYDZzzV",
@@ -235,7 +246,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: A creature the goblin can see hits it with an attack roll. Response-Sabedoria Teste de Resistência: DC 13, the triggering creature. Falha: The attack misses instead. __________ G_o_ B_L :: ~ 143 GOLD DRAGO N WYRM LI NG GOLD DRAGONS Dragons of Hope and Majesty</p>",
+          "value": "<p>A creature the goblin can see hits it with an attack roll. dWisdom Teste de Resistência: CD 13, the triggering creature. The attack misses instead.</p>",
           "chat": ""
         },
         "activation": {
@@ -287,7 +298,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NqQL2PE5fxS5eRCU.g0rdAaNnByYDZzzV"
+      "_key": "!actors.items!Q6vRK0YCDUshmQsG.g0rdAaNnByYDZzzV"
     },
     {
       "_id": "DueBEYWzJZC8e7GG",
@@ -296,7 +307,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The goblin casts one of the following spells, using Inteligência as the spellcasting ability (spell save DC 13): À Vontade: Minor Illusion 1/Dia Each: Blindness/Deafness, Faerie Fogo, Grease</p>",
+          "value": "<p>The goblin casts one of the following spells, using Inteligência as the spellcasting ability (spell save CD 13):</p>",
           "chat": ""
         },
         "activation": {
@@ -321,13 +332,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!NqQL2PE5fxS5eRCU.DueBEYWzJZC8e7GG"
+      "_key": "!actors.items!Q6vRK0YCDUshmQsG.DueBEYWzJZC8e7GG"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Goblin Hexer",
-      "page": 145,
+      "page": 143,
       "cr": "3",
       "warnings": []
     }

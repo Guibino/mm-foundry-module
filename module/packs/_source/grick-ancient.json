@@ -1,8 +1,8 @@
 {
-  "_id": "HPe8Sm6Vr85xX0vY",
-  "_key": "!actors!HPe8Sm6Vr85xX0vY",
+  "_id": "iYtCPQ1dhUOzFauI",
+  "_key": "!actors!iYtCPQ1dhUOzFauI",
   "folder": "1nioWC3kx0YxX8qj",
-  "name": "Grick Ancião",
+  "name": "Grick Ancient",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/grick-ancient.webp",
   "system": {
@@ -39,15 +39,17 @@
         "formula": ""
       },
       "hp": {
-        "value": 735,
-        "max": 735,
+        "value": 135,
+        "max": 135,
         "formula": "18d10 + 36",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "walk": 30,
+        "climb": 30
       },
       "senses": {
         "units": "ft",
@@ -97,13 +99,18 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Grick Ancião",
+    "name": "Grick Ancient",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -121,7 +128,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The grick makes one Beak attack, one . Slam attack, and one Tentacles attack.</p>",
+          "value": "<p>The grick makes one Bico attack, one Pancada attack, and one Tentáculos attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +153,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!HPe8Sm6Vr85xX0vY.rolqcqjd5e04XXWb"
+      "_key": "!actors.items!iYtCPQ1dhUOzFauI.rolqcqjd5e04XXWb"
     },
     {
-      "_id": "UB3bBUMoh8KQ6Epu",
-      "name": "Beak",
+      "_id": "CSqicrdBMTh2hLm3",
+      "name": "Bico",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 10 ft. Acerto: 22 (4d8 + 4) Perfurante de dano. • ~lam. Rolagem de Ataque Corpo a Corpo: +7, alcance 10 ft. Acerto: 7 (1d6 + 4)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 3 m. Acerto: 22 (4d8 + 4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -173,8 +180,8 @@
           "subtype": ""
         },
         "activities": {
-          "MIzPKzrQQ9x3Uytm": {
-            "_id": "MIzPKzrQQ9x3Uytm",
+          "meRJoz82KI5Ac9a6": {
+            "_id": "meRJoz82KI5Ac9a6",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -227,50 +234,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!HPe8Sm6Vr85xX0vY.UB3bBUMoh8KQ6Epu"
+      "_key": "!actors.items!iYtCPQ1dhUOzFauI.CSqicrdBMTh2hLm3"
     },
     {
-      "_id": "OMtucRte73CwTdUY",
-      "name": "Concussão de dano",
+      "_id": "CeKKY5QqCvJCJ5CZ",
+      "name": "Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If o alvo is a Large or smaller creature, it has the Caído condition.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!HPe8Sm6Vr85xX0vY.OMtucRte73CwTdUY"
-    },
-    {
-      "_id": "GcTEXbBfpx8xP14T",
-      "name": "Tentacles",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance l 0 ft. Acerto: 15 <l'. • (2d10 + 4) Cortante de dano. If o alvo is a Large or smaller creature, it has the Agarrado condition (escape · z u.J DC 14) from all four tentacles. ~ 0 P E OPLE TH I N K WE FL E W HIG H O VER THE CI TY TO /\\V OI D W E A TH ER VANE S AN D L A U NDRY LI N E S /\\N D WHAT N O T . T RU TH IS , I F THE GRIFFO NS SM E LLED HOW M UCH HORS E M EAT TROTTE D .JU ST B ELO W , F O LKS W OULD H AV E W ORSE THAN .J OY-FL Y I NG MAGE S AN D STIRGES T O W OR R Y /\\ BOUT_/ - 5 I L DAR 17 A LL W I NT ER, RE T I R E D M EM B ER O F TH E WAT ERD E EP GR I FF O N C AVALRY GRIFFON L ar ge Mo nstrosity, Unalig ned AC 12 lnitiative +2 (12) HP 59 (7d10 + 21) Speed 30 ft., Fly 80 ft . MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 3 m. Acerto: 7 (1d6 + 4) dano de concussão. If o alvo is a Large or smaller creature, it fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -288,8 +261,8 @@
           "subtype": ""
         },
         "activities": {
-          "24P3otWg3jyqil9C": {
-            "_id": "24P3otWg3jyqil9C",
+          "YmQYDp9y7wc6EVXT": {
+            "_id": "YmQYDp9y7wc6EVXT",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -308,7 +281,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -317,18 +308,101 @@
         "mm2024": {
           "mechanics": {
             "toHit": 7,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d6+4",
+            "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!HPe8Sm6Vr85xX0vY.GcTEXbBfpx8xP14T"
+      "_key": "!actors.items!iYtCPQ1dhUOzFauI.CeKKY5QqCvJCJ5CZ"
+    },
+    {
+      "_id": "y6Cfj2K1e2bJLfXz",
+      "name": "Tentáculos",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 3 m. Acerto: 15 (2d10 + 4) dano cortante. If o alvo is a Large or smaller creature, it fica com a condição Agarrado (CD para escapar 14) from all four tentacles.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "O0fvJjYWIeURZwfr": {
+            "_id": "O0fvJjYWIeURZwfr",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "4",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "melee",
+            "damageFormula": "2d10+4",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!iYtCPQ1dhUOzFauI.y6Cfj2K1e2bJLfXz"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Grick Ancient",
-      "page": 160,
+      "page": 158,
       "cr": "7",
       "warnings": []
     }

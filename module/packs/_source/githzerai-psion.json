@@ -1,6 +1,6 @@
 {
-  "_id": "lImBcA9smX1QbQ82",
-  "_key": "!actors!lImBcA9smX1QbQ82",
+  "_id": "ZKVMs8OQjvVVvHkm",
+  "_key": "!actors!ZKVMs8OQjvVVvHkm",
   "folder": "1nioWC3kx0YxX8qj",
   "name": "Githzerai Psion",
   "type": "npc",
@@ -62,14 +62,14 @@
     "details": {
       "type": {
         "value": "aberration",
-        "subtype": "G ith",
+        "subtype": "gith",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Neutro",
       "cr": 12,
       "xp": {
-        "value": 8400
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -98,10 +98,23 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum, Gith"
       }
     },
-    "skills": {}
+    "skills": {
+      "arc": {
+        "value": 2,
+        "ability": "int"
+      },
+      "ins": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Githzerai Psion",
@@ -147,7 +160,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!lImBcA9smX1QbQ82.nm8SMnHKNXuHURy5"
+      "_key": "!actors.items!ZKVMs8OQjvVVvHkm.nm8SMnHKNXuHURy5"
     },
     {
       "_id": "aXaEnLXZkpmVcTIw",
@@ -156,7 +169,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +8, alcance 5 ft. or range 120 ft. Acerto: 26 (4d10 + 4) Psíquico de dano, and o alvo has the githzerai's choice of (A) the Enfeitiçado condition until the start of the githzerai's next turn or (B) the Caído condition, provided o alvo is a Large or smaller creature.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +8, alcance 1,5 m. or distância 36 m. Acerto: 26 (4d10 + 4) dano psíquico, and o alvo has the githzerai's choice of (A) a condição Enfeitiçado until the start of the githzerai's next turn or (B) a condição Caído, provided o alvo is a Large or smaller creature.</p>",
           "chat": ""
         },
         "activation": {
@@ -228,41 +241,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!lImBcA9smX1QbQ82.aXaEnLXZkpmVcTIw"
-    },
-    {
-      "_id": "nn58exFGfyYLWI1Y",
-      "name": "Psionic Defense",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The githyanki casts Feather Fall or Shield in response to the spell's trigger, requiring no spel I components and using the same spellcasting abil- ity as Conjuração. GITHZERA I 1 37 GLABREZU L arge Fiend (Demon) , Chaotic Evil AC 17 Iniciativa +6 (16) HP 189 (18d10 + 90) Speed 40 ft. MOD SAVE MOD SA VE M OD S AVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "reaction",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!lImBcA9smX1QbQ82.nn58exFGfyYLWI1Y"
+      "_key": "!actors.items!ZKVMs8OQjvVVvHkm.aXaEnLXZkpmVcTIw"
     },
     {
       "_id": "sQGe9SGvjl4cc6kj",
@@ -271,7 +250,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The githzerai casts one of the following spells, requiring no spell components and using Intelli- gence as the spellca?ting ability (spell save DC 16): À Vontade: Mage Hand (the hand is Invisível) 1/Dia Each: Plane Shift, See Invisibility</p>",
+          "value": "<p>The githzerai casts one of the following spells, requiring no spell components and using Inteligência as the spellcasting ability (spell save CD 16):</p>",
           "chat": ""
         },
         "activation": {
@@ -296,13 +275,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!lImBcA9smX1QbQ82.sQGe9SGvjl4cc6kj"
+      "_key": "!actors.items!ZKVMs8OQjvVVvHkm.sQGe9SGvjl4cc6kj"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Githzerai Psion",
-      "page": 139,
+      "page": 137,
       "cr": "12",
       "warnings": []
     }

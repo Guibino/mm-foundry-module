@@ -1,6 +1,6 @@
 {
-  "_id": "v4hrtS60650nW6Tw",
-  "_key": "!actors!v4hrtS60650nW6Tw",
+  "_id": "y1XApDc7j8bOMPDR",
+  "_key": "!actors!y1XApDc7j8bOMPDR",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Vrock",
   "type": "npc",
@@ -63,14 +63,14 @@
     "details": {
       "type": {
         "value": "fiend",
-        "subtype": "Demon",
+        "subtype": "demon",
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Evil",
+      "alignment": "Caótico e Mau",
       "cr": 6,
       "xp": {
-        "value": 2300
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -107,7 +107,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Abissal"
+        "custom": ""
       }
     },
     "skills": {}
@@ -125,13 +125,13 @@
   },
   "items": [
     {
-      "_id": "1ILtzB6pbqOwQdga",
-      "name": "Demonic Restoration",
+      "_id": "FnqI42bsdpTyqFKB",
+      "name": "Restauração Demoníaca",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the vrock dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Pontos de Vida some- where in the Abyss. ,</p>",
+          "value": "<p>Se a criatura morrer fora do Abismo, o corpo dela se dissolve em icor e ela ganha um novo corpo instantaneamente, revivendo com todos os seus Pontos de Vida em algum lugar do Abismo.</p>",
           "chat": ""
         },
         "activation": {
@@ -155,16 +155,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!v4hrtS60650nW6Tw.1ILtzB6pbqOwQdga"
+      "_key": "!actors.items!y1XApDc7j8bOMPDR.FnqI42bsdpTyqFKB"
     },
     {
-      "_id": "fgBfgnV3c0J9LhI4",
-      "name": "Magic Resistance",
+      "_id": "OvgWhmScZV46bG2q",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The vrock has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -188,7 +188,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!v4hrtS60650nW6Tw.fgBfgnV3c0J9LhI4"
+      "_key": "!actors.items!y1XApDc7j8bOMPDR.OvgWhmScZV46bG2q"
     },
     {
       "_id": "aFDd7tgVH53OmbXH",
@@ -222,7 +222,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!v4hrtS60650nW6Tw.aFDd7tgVH53OmbXH"
+      "_key": "!actors.items!y1XApDc7j8bOMPDR.aFDd7tgVH53OmbXH"
     },
     {
       "_id": "W23DJ49fpW2BZlAp",
@@ -231,7 +231,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 10 (2d6 + 3) Perfurante de dano plus l O (3d6) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 10 (2d6 + 3) dano perfurante mais 10 (3d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -303,16 +303,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!v4hrtS60650nW6Tw.W23DJ49fpW2BZlAp"
+      "_key": "!actors.items!y1XApDc7j8bOMPDR.W23DJ49fpW2BZlAp"
     },
     {
       "_id": "aAGmi6lMPQqI8LOp",
-      "name": "Spores (Recharge 6)",
+      "name": "Spores",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 15, cada criatura in a 20-foot Emanation originating from the vrock. Falha: The target has the Envenenado condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. While Envenenado, o alvo takes 5 (1d10) Veneno de dano at the start of each of its !urns. Emptying a flask of Holy Water on o alvo ends the effect early.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 15, cada criatura in a 6 m Emanation originating from the vrock. O alvo fica com a condição Envenenado and repeats the save at the end of each of its turns, ending the effect on itself on a success. While Envenenado, o alvo takes 5 (1d10) dano de veneno at the start of each of its turns. Emptying a flask of Holy Water on o alvo ends the effect early.</p>",
           "chat": ""
         },
         "activation": {
@@ -322,14 +322,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "recharge",
-              "type": "recoverAll",
-              "formula": "6"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -370,7 +364,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!v4hrtS60650nW6Tw.aAGmi6lMPQqI8LOp"
+      "_key": "!actors.items!y1XApDc7j8bOMPDR.aAGmi6lMPQqI8LOp"
     },
     {
       "_id": "vCd5uBQn772FUe30",
@@ -379,7 +373,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 15, cada criatura in a 20-foot Emanation originat- _J ing from the vrock (demons succeed automatically). LL Falha: 10 (3d6) Trovejante de dano, and o alvo has <( the Atordoado condition until-the end of the vrock's <( next turn. WARRIORS Soldiers and Scrappers</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 15, cada criatura in a 6 m Emanation originating from the vrock (demons succeed automatically). 10 (3d6) dano trovejante, and o alvo fica com a condição Atordoado until the end of the vrock's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -422,25 +416,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 3,
-                  "denomination": 6,
-                  "bonus": "",
-                  "types": [
-                    "thunder"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -448,21 +424,19 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "3d6",
-            "damageType": "thunder",
             "saveDc": 15,
             "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!v4hrtS60650nW6Tw.vCd5uBQn772FUe30"
+      "_key": "!actors.items!y1XApDc7j8bOMPDR.vCd5uBQn772FUe30"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Vrock",
-      "page": 321,
+      "page": 319,
       "cr": "6",
       "warnings": []
     }

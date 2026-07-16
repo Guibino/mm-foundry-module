@@ -1,6 +1,6 @@
 {
-  "_id": "HENZz5f7BSK6sWWF",
-  "_key": "!actors!HENZz5f7BSK6sWWF",
+  "_id": "q4gYgsPn5FVfZCLb",
+  "_key": "!actors!q4gYgsPn5FVfZCLb",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Deer",
   "type": "npc",
@@ -48,10 +48,11 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 50
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -68,7 +69,7 @@
       "alignment": "Sem Tendência",
       "cr": 0,
       "xp": {
-        "value": 10
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -100,7 +101,12 @@
         "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Deer",
@@ -145,21 +151,22 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!HENZz5f7BSK6sWWF.nFHBUL36In6wlh57"
+      "_key": "!actors.items!q4gYgsPn5FVfZCLb.nFHBUL36In6wlh57"
     },
     {
-      "_id": "3LWMsGBZ33l2CuPn",
-      "name": "Ram",
+      "_id": "Kjq2sB40T3ZvEN39",
+      "name": "Marrada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 5 ft. Acerto: 2 (1d4) Blud- geoning de dano. 352 APPENDIX A I AN I MALS DIRE WOLF DIRE WOLF Large Beast, Unaligned AC 14 Iniciativa +2 (12) HP 22 (3d10 + 6) Sp ee d 50 ft. MOD SAVE MOD SAVE MOD SA VE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 1,5 m. Acerto: 2 (1d4) dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "",
-          "value": null
+          "type": "action",
+          "value": null,
+          "condition": ""
         },
         "uses": {
           "spent": 0,
@@ -170,24 +177,68 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "wjFMlTnHwhgOcT5e": {
+            "_id": "wjFMlTnHwhgOcT5e",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "2",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
             "toHit": 2,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d4",
+            "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!HENZz5f7BSK6sWWF.3LWMsGBZ33l2CuPn"
+      "_key": "!actors.items!q4gYgsPn5FVfZCLb.Kjq2sB40T3ZvEN39"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Deer",
-      "page": 354,
+      "page": 352,
       "cr": "0",
       "warnings": []
     }

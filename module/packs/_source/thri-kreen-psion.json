@@ -1,6 +1,6 @@
 {
-  "_id": "MgUqf5cXs4BPFgqc",
-  "_key": "!actors!MgUqf5cXs4BPFgqc",
+  "_id": "D39vXXbU141z4asT",
+  "_key": "!actors!D39vXXbU141z4asT",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Thri-kreen Psion",
   "type": "npc",
@@ -48,10 +48,12 @@
       "movement": {
         "units": "ft",
         "hover": true,
+        "walk": 40,
         "fly": 20
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -68,7 +70,7 @@
       "alignment": "Neutro",
       "cr": 8,
       "xp": {
-        "value": 3900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -84,7 +86,9 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "psychic"
+        ],
         "custom": ""
       },
       "dv": {
@@ -100,7 +104,16 @@
         "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Thri-kreen Psion",
@@ -121,7 +134,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The thri-kreen makes three Psionic Lance attacks.</p>",
+          "value": "<p>The thri-kreen makes three Psionic Lança de Cavaleiro attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +159,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MgUqf5cXs4BPFgqc.c7eqgCsPetVGYuNC"
+      "_key": "!actors.items!D39vXXbU141z4asT.c7eqgCsPetVGYuNC"
     },
     {
-      "_id": "Jar7KGtKFzcJ8j1d",
-      "name": "Psionic Lance",
+      "_id": "jvcbbH1s3Zfio9vH",
+      "name": "Psionic Lança de Cavaleiro",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance l 0 ft. or range 120 ft. Acerto: 18 (4d6 + 4) Psíquico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 3 m. or distância 36 m. Acerto: 18 (4d6 + 4) dano psíquico.</p>",
           "chat": ""
         },
         "activation": {
@@ -173,8 +186,8 @@
           "subtype": ""
         },
         "activities": {
-          "pLfzMAtNaRp0zxCV": {
-            "_id": "pLfzMAtNaRp0zxCV",
+          "jOpIpw93ooRGd42q": {
+            "_id": "jOpIpw93ooRGd42q",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -227,7 +240,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MgUqf5cXs4BPFgqc.Jar7KGtKFzcJ8j1d"
+      "_key": "!actors.items!D39vXXbU141z4asT.jvcbbH1s3Zfio9vH"
     },
     {
       "_id": "zgFZmLS9MRLRo45p",
@@ -236,7 +249,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The thri-kreen casts one of the following spells, requiring no spell components and using Intelli- gence as the spellcasting ability (spell save DC 15): >- À Vontade: Mage Hand (the hand is Invisível) ~ 1/Dia Each: Detect Thoughts, Sending, Synaptic Static w V1 TOUGHS Brawlers and Bullies</p>",
+          "value": "<p>The thri-kreen casts one of the following spells, requiring no spell components and using Inteligência as the spellcasting ability (spell save CD 15):</p>",
           "chat": ""
         },
         "activation": {
@@ -261,13 +274,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MgUqf5cXs4BPFgqc.zgFZmLS9MRLRo45p"
+      "_key": "!actors.items!D39vXXbU141z4asT.zgFZmLS9MRLRo45p"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Thri-kreen Psion",
-      "page": 308,
+      "page": 306,
       "cr": "8",
       "warnings": []
     }

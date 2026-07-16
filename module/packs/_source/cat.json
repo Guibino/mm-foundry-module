@@ -1,6 +1,6 @@
 {
-  "_id": "KvcgLOMSrFUNMzzf",
-  "_key": "!actors!KvcgLOMSrFUNMzzf",
+  "_id": "1WNWnMhoPXOb4a5i",
+  "_key": "!actors!1WNWnMhoPXOb4a5i",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Cat",
   "type": "npc",
@@ -16,7 +16,7 @@
         "proficient": 1
       },
       "con": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "int": {
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 72,
+        "flat": 12,
         "formula": ""
       },
       "hp": {
@@ -48,7 +48,8 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40,
+        "climb": 40
       },
       "senses": {
         "units": "ft",
@@ -98,10 +99,19 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Cat",
@@ -114,11 +124,106 @@
     },
     "disposition": -1
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "o4YnFVUhZRM3VNp4",
+      "name": "Jumper",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The cat's jump distance is determined using its Destreza rather than its Força.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!1WNWnMhoPXOb4a5i.o4YnFVUhZRM3VNp4"
+    },
+    {
+      "_id": "GEY2DUth9xfvexFB",
+      "name": "Scratch",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 1 dano cortante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "6EocaziOTKy2uUu6": {
+            "_id": "6EocaziOTKy2uUu6",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!1WNWnMhoPXOb4a5i.GEY2DUth9xfvexFB"
+    }
+  ],
   "flags": {
     "mm2024": {
       "nameEn": "Cat",
-      "page": 353,
+      "page": 351,
       "cr": "0",
       "warnings": []
     }

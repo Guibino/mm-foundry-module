@@ -1,7 +1,7 @@
 {
-  "_id": "HRKdbC1EM7HGQqgp",
-  "_key": "!actors!HRKdbC1EM7HGQqgp",
-  "folder": "kCLi0hD5goTIU7AM",
+  "_id": "OHZKzHZbTaCP7khT",
+  "_key": "!actors!OHZKzHZbTaCP7khT",
+  "folder": "EgPgmtpb4EiltKUV",
   "name": "Cyclops Oracle",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/cyclops-oracle.webp",
@@ -47,7 +47,8 @@
       },
       "movement": {
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "walk": 40
       },
       "senses": {
         "units": "ft",
@@ -60,15 +61,15 @@
     },
     "details": {
       "type": {
-        "value": "",
+        "value": "giant",
         "subtype": "",
         "swarm": "",
-        "custom": "Unknown"
+        "custom": ""
       },
-      "alignment": "Sem Tendência",
-      "cr": 0,
+      "alignment": "Caótico e Neutro",
+      "cr": 10,
       "xp": {
-        "value": 5900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +79,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "huge",
       "di": {
         "value": [],
         "custom": ""
@@ -97,10 +98,19 @@
       },
       "languages": {
         "value": [],
-        "custom": "Giant _"
+        "custom": "Gigante"
       }
     },
-    "skills": {}
+    "skills": {
+      "his": {
+        "value": 2,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Cyclops Oracle",
@@ -146,7 +156,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!HRKdbC1EM7HGQqgp.UT1RIBVixSftrUJN"
+      "_key": "!actors.items!OHZKzHZbTaCP7khT.UT1RIBVixSftrUJN"
     },
     {
       "_id": "5l2b2mlcyLflqK7Z",
@@ -155,7 +165,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Me lee Attack Roll:+ l 0, alcance l Oft. Acerto: 22 (3d10 + 6) Radiante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 3 m. Acerto: 22 (3d10 + 6) dano radiante.</p>",
           "chat": ""
         },
         "activation": {
@@ -172,18 +182,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "bBi2mzYW3kE5HXde": {
+            "_id": "bBi2mzYW3kE5HXde",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 10,
+                  "bonus": "6",
+                  "types": [
+                    "radiant"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 10,
+            "attackType": "melee",
             "damageFormula": "3d10+6",
             "damageType": "radiant"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!HRKdbC1EM7HGQqgp.5l2b2mlcyLflqK7Z"
+      "_key": "!actors.items!OHZKzHZbTaCP7khT.5l2b2mlcyLflqK7Z"
     },
     {
       "_id": "4OPQ6LpOQpYnurOG",
@@ -192,7 +246,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância:+ l 0, range 120 ft. · Acerto: 17 (2d1 O + 6) Radiante de dano, and o alvo has Disadvantage on attack rolls until the end of the cy- clops's next turn.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +10, distância 36 m. Acerto: 17 (2d10 + 6) dano radiante, and o alvo has Desvantagem on attack rolls until the end of the cyclops's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -209,27 +263,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "ixuJIcWRHgR3oZy3": {
+            "_id": "ixuJIcWRHgR3oZy3",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "6",
+                  "types": [
+                    "radiant"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "2d1O+6",
+            "toHit": 10,
+            "attackType": "ranged",
+            "damageFormula": "2d10+6",
             "damageType": "radiant"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!HRKdbC1EM7HGQqgp.4OPQ6LpOQpYnurOG"
+      "_key": "!actors.items!OHZKzHZbTaCP7khT.4OPQ6LpOQpYnurOG"
     },
     {
       "_id": "C0cs9aR3DLRcpObW",
-      "name": "Portent (Recharge 4-6)",
+      "name": "Portent (Recharge 4)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: The cyclops or an ally it can see makes a D20 Test. Response: The cyclops rolls 1d20 and chooses whether to use that roll in place of the d20 rolled for the D20 Test. 88 CYCLOPES CYCLOPS SENTRY Huge Gigante, Chaotic Neutral AC 14 Iniciativa +O (l 0) HP 1 38 (12d12 + 60) S peed 40 ft. MOD SA VE MOD SA VE M OD SAVE</p>",
+          "value": "<p>The cyclops or an ally it can see makes a D20 Test. The cyclops rolls 1d20 and chooses whether to use that roll in place of the d20 rolled for the D20 Test.</p>",
           "chat": ""
         },
         "activation": {
@@ -260,7 +358,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!HRKdbC1EM7HGQqgp.C0cs9aR3DLRcpObW"
+      "_key": "!actors.items!OHZKzHZbTaCP7khT.C0cs9aR3DLRcpObW"
     },
     {
       "_id": "pgrda1YFELkPgQCe",
@@ -269,7 +367,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cyclops casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save DC 16): 2/Dia Each: Arcane Eye, Detect Magic, Locate Object 1/Dia: Legend Lore</p>",
+          "value": "<p>The cyclops casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save CD 16):</p>",
           "chat": ""
         },
         "activation": {
@@ -294,14 +392,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!HRKdbC1EM7HGQqgp.pgrda1YFELkPgQCe"
+      "_key": "!actors.items!OHZKzHZbTaCP7khT.pgrda1YFELkPgQCe"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Cyclops Oracle",
-      "page": 90,
-      "cr": "0",
+      "page": 88,
+      "cr": "10",
       "warnings": []
     }
   }

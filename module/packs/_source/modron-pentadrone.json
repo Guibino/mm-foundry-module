@@ -1,6 +1,6 @@
 {
-  "_id": "JfRIwQbPsQHOTEdm",
-  "_key": "!actors!JfRIwQbPsQHOTEdm",
+  "_id": "S1tzDQNLPeO0pDfN",
+  "_key": "!actors!S1tzDQNLPeO0pDfN",
   "folder": "CVeezowVb7BNP8yc",
   "name": "Modron Pentadrone",
   "type": "npc",
@@ -41,17 +41,18 @@
       "hp": {
         "value": 32,
         "max": 32,
-        "formula": "SdlO + 5",
+        "formula": "5d10 + 5",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "truesight": 120
       },
       "init": {
         "ability": "dex",
@@ -68,7 +69,7 @@
       "alignment": "Leal e Neutro",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -81,7 +82,7 @@
       "size": "lg",
       "di": {
         "value": [],
-        "custom": "Charmed"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -92,7 +93,9 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed"
+        ],
         "custom": ""
       },
       "languages": {
@@ -100,7 +103,12 @@
         "custom": "Modron"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Modron Pentadrone",
@@ -115,13 +123,13 @@
   },
   "items": [
     {
-      "_id": "XA5RJmPneUeaPtMS",
-      "name": "Disintegration",
+      "_id": "psY7q4zHdo3eMfxq",
+      "name": "Desintegração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the modron dies, it disintegrates into dust, leaving behind anything it was wearing or carrying.</p>",
+          "value": "<p>Se a criatura morrer, ela se desintegra em pó, deixando para trás tudo o que estava vestindo ou carregando.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,7 +153,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!JfRIwQbPsQHOTEdm.XA5RJmPneUeaPtMS"
+      "_key": "!actors.items!S1tzDQNLPeO0pDfN.psY7q4zHdo3eMfxq"
     },
     {
       "_id": "1dr2LqyFesXJLElF",
@@ -154,7 +162,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The modron makes five Slam attacks or five Electrical Discharge attacks.</p>",
+          "value": "<p>The modron makes five Pancada attacks or five Electrical Discharge attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -179,16 +187,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!JfRIwQbPsQHOTEdm.1dr2LqyFesXJLElF"
+      "_key": "!actors.items!S1tzDQNLPeO0pDfN.1dr2LqyFesXJLElF"
     },
     {
-      "_id": "aVXTep8VCAlkpu69",
-      "name": "Slam",
+      "_id": "v5fJMIdMXC7b0COr",
+      "name": "Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4,· alcance 5 ft. Acerto: 5 (1d6 + 2) Energia de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano de energia.</p>",
           "chat": ""
         },
         "activation": {
@@ -206,8 +214,8 @@
           "subtype": ""
         },
         "activities": {
-          "Vms2wkPpNbMzOjFS": {
-            "_id": "Vms2wkPpNbMzOjFS",
+          "RJMwmqKDZ07muVnP": {
+            "_id": "RJMwmqKDZ07muVnP",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -260,7 +268,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!JfRIwQbPsQHOTEdm.aVXTep8VCAlkpu69"
+      "_key": "!actors.items!S1tzDQNLPeO0pDfN.v5fJMIdMXC7b0COr"
     },
     {
       "_id": "lsBSotaZSfX4pE3E",
@@ -269,7 +277,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +4, range 120 ft. Acerto: 5 (1d6 + 2) Elétrico de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +4, distância 36 m. Acerto: 5 (1d6 + 2) dano elétrico.</p>",
           "chat": ""
         },
         "activation": {
@@ -341,16 +349,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!JfRIwQbPsQHOTEdm.lsBSotaZSfX4pE3E"
+      "_key": "!actors.items!S1tzDQNLPeO0pDfN.lsBSotaZSfX4pE3E"
     },
     {
       "_id": "CNLBjWkmlqdgGwwv",
-      "name": "Paralysis Gas (Recharge 5-6)",
+      "name": "Paralysis Gas (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Saving_ Throws: DC l l, cada criatura in a 30-foot Cone. Falha: The target has the Paralisado condition and repeats . the save at the end of each of its tu r n s, ending the ef- fect on itself on a success. After l minute, it succeeds 0 automatically. ::i MUMMIES Deathless Ancients with Ageless Ambitions</p>",
+          "value": "<p>Constituição Saving Throws: CD 11, cada criatura in a 9 m Cone. O alvo fica com a condição Paralisado and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</p>",
           "chat": ""
         },
         "activation": {
@@ -381,13 +389,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!JfRIwQbPsQHOTEdm.CNLBjWkmlqdgGwwv"
+      "_key": "!actors.items!S1tzDQNLPeO0pDfN.CNLBjWkmlqdgGwwv"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Modron Pentadrone",
-      "page": 220,
+      "page": 218,
       "cr": "2",
       "warnings": []
     }

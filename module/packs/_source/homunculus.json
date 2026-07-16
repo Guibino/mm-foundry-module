@@ -1,6 +1,6 @@
 {
-  "_id": "XDpJUmsB4HyKqrYU",
-  "_key": "!actors!XDpJUmsB4HyKqrYU",
+  "_id": "XKgWidjyBfwMGPYI",
+  "_key": "!actors!XKgWidjyBfwMGPYI",
   "folder": "CVeezowVb7BNP8yc",
   "name": "Homunculus",
   "type": "npc",
@@ -70,7 +70,7 @@
       "alignment": "Neutro",
       "cr": 0,
       "xp": {
-        "value": 10
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -104,7 +104,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Understands Common plus one other"
+        "custom": "understands Common plus one other language but can't speak"
       }
     },
     "skills": {}
@@ -128,7 +128,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While the homunculus is on the same plane of existence as its master, the two of them can communicate telepathically\"with each other.</p>",
+          "value": "<p>While the homunculus is on the same plane of existence as its master, the two of them can communicate telepathically with each other.</p>",
           "chat": ""
         },
         "activation": {
@@ -152,16 +152,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!XDpJUmsB4HyKqrYU.Tm0mbl3XMaSfHhDl"
+      "_key": "!actors.items!XKgWidjyBfwMGPYI.Tm0mbl3XMaSfHhDl"
     },
     {
-      "_id": "Yr9ECOi79BtwJSkJ",
-      "name": "Bite",
+      "_id": "lB3UN7dXc8lqAZgq",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 1 Perfurante de dano, and o alvo is subjected to the following effect. Constituição Sa1Jing Throw: DC 12. Falha: The target has the Envenenado condition until the end of the homunculus's next turn. Failure by 5 or More: The target has the Envenenado condition for 1 minute. While Poi- <( ~ V1 soned, o alvo has the Inconsciente condition, which · V) ends early if o alvo takes any de dano. ~ H oo KHORROR Echo-Stalking Underdark Hunter</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 1 dano perfurante, and o alvo is subjected to the following effect. Teste de Resistência de Constituição: CD 12. O alvo fica com a condição Envenenado until the end of the homunculus's next turn. 5 O alvo fica com a condição Envenenado for 1 minute. While Envenenado, o alvo fica com a condição Inconsciente, which ends early if o alvo takes any de dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -179,8 +179,8 @@
           "subtype": ""
         },
         "activities": {
-          "WIZ7CSNBNiUEsMaw": {
-            "_id": "WIZ7CSNBNiUEsMaw",
+          "W8Wilx50nAhU9ZPe": {
+            "_id": "W8Wilx50nAhU9ZPe",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -208,18 +208,20 @@
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "melee"
+            "attackType": "melee",
+            "saveDc": 12,
+            "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!XDpJUmsB4HyKqrYU.Yr9ECOi79BtwJSkJ"
+      "_key": "!actors.items!XKgWidjyBfwMGPYI.lB3UN7dXc8lqAZgq"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Homunculus",
-      "page": 174,
+      "page": 172,
       "cr": "0",
       "warnings": []
     }

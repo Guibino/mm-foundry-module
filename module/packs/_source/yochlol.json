@@ -1,6 +1,6 @@
 {
-  "_id": "x0fEPjZdQGda8emq",
-  "_key": "!actors!x0fEPjZdQGda8emq",
+  "_id": "pclZJVaw1w4eeWy3",
+  "_key": "!actors!pclZJVaw1w4eeWy3",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Yochlol",
   "type": "npc",
@@ -41,17 +41,19 @@
       "hp": {
         "value": 153,
         "max": 153,
-        "formula": "l 8d8 + 72",
+        "formula": "18d8 + 72",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "climb": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 120
       },
       "init": {
         "ability": "dex",
@@ -61,14 +63,14 @@
     "details": {
       "type": {
         "value": "fiend",
-        "subtype": "Demon",
+        "subtype": "demon",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Mau",
       "cr": 10,
       "xp": {
-        "value": 5900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -114,7 +116,7 @@
         "ability": "cha"
       },
       "ins": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       }
     }
@@ -132,13 +134,13 @@
   },
   "items": [
     {
-      "_id": "yasVygFNSsbMXfiy",
-      "name": "Demonic Restoration",
+      "_id": "1c62eKKi5MhupNpf",
+      "name": "Restauração Demoníaca",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the yochlol dies outside the Abyss, its body dissolves, and it gains a new body in- stantly, reviving with all its Pontos de Vida in the Abyss.</p>",
+          "value": "<p>If the yochlol dies outside the Abyss, its body dissolves, and it gains a new body instantly, reviving with all its Pontos de Vida in the Abyss.</p>",
           "chat": ""
         },
         "activation": {
@@ -162,16 +164,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!x0fEPjZdQGda8emq.yasVygFNSsbMXfiy"
+      "_key": "!actors.items!pclZJVaw1w4eeWy3.1c62eKKi5MhupNpf"
     },
     {
-      "_id": "VBigP6xHDfH7hH4N",
-      "name": "Magic Resistance",
+      "_id": "YGhJalaggzr3IIjj",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yochlol has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -195,16 +197,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!x0fEPjZdQGda8emq.VBigP6xHDfH7hH4N"
+      "_key": "!actors.items!pclZJVaw1w4eeWy3.YGhJalaggzr3IIjj"
     },
     {
-      "_id": "ugZVw12WKpD4VM5i",
-      "name": "Spider Climb",
+      "_id": "kdaNXjPyAIJ8o3dx",
+      "name": "Escalada de Aranha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yochlol can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>",
+          "value": "<p>A criatura pode escalar superfícies difíceis, inclusive tetos, sem precisar fazer um teste de habilidade.</p>",
           "chat": ""
         },
         "activation": {
@@ -228,11 +230,11 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!x0fEPjZdQGda8emq.ugZVw12WKpD4VM5i"
+      "_key": "!actors.items!pclZJVaw1w4eeWy3.kdaNXjPyAIJ8o3dx"
     },
     {
-      "_id": "JhbUWUJRzbSM8nMp",
-      "name": "Web Walker",
+      "_id": "RDcnygFP5LyicjrY",
+      "name": "Andarilho de Teias",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -261,7 +263,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!x0fEPjZdQGda8emq.JhbUWUJRzbSM8nMp"
+      "_key": "!actors.items!pclZJVaw1w4eeWy3.RDcnygFP5LyicjrY"
     },
     {
       "_id": "W0fShUij00zY70GT",
@@ -270,7 +272,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yochlol makes two Caustic Lash at- tacks, and it can use Conjuração to cast Web or Domi- nate Person if avai I able.</p>",
+          "value": "<p>The yochlol makes two Caustic Lash attacks, and it can use Conjuração to cast Web or Dominate Person if available.</p>",
           "chat": ""
         },
         "activation": {
@@ -295,7 +297,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!x0fEPjZdQGda8emq.W0fShUij00zY70GT"
+      "_key": "!actors.items!pclZJVaw1w4eeWy3.W0fShUij00zY70GT"
     },
     {
       "_id": "Vjg9l8VqZ856YxoC",
@@ -304,7 +306,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +8, alcance l 0 ft. or range 120 ft. Acerto: 25 (6d6 + 4) Ácido de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +8, alcance 3 m. or distância 36 m. Acerto: 25 (6d6 + 4) dano de ácido.</p>",
           "chat": ""
         },
         "activation": {
@@ -376,11 +378,11 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!x0fEPjZdQGda8emq.Vjg9l8VqZ856YxoC"
+      "_key": "!actors.items!pclZJVaw1w4eeWy3.Vjg9l8VqZ856YxoC"
     },
     {
-      "_id": "3jJrOIgzhdJr6uQd",
-      "name": "Shape-Shift",
+      "_id": "wtRVezhnAbzywSWN",
+      "name": "Mudar de Forma",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -410,7 +412,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!x0fEPjZdQGda8emq.3jJrOIgzhdJr6uQd"
+      "_key": "!actors.items!pclZJVaw1w4eeWy3.wtRVezhnAbzywSWN"
     },
     {
       "_id": "kXRXlLJXr83ckjdG",
@@ -419,7 +421,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: The yochlol is hit by an attack roll. Response: The yochlol halves the attack's de dano to itself (round down), and it teleports to an unoccupied . space it can see within 30 feet of itself. Constituição Teste de Resistência: DC 15, cada criatura within 5 feet of the yochlol's destination space. Falha: The target has the Envenenado condition until the end of its next turn. While Envenenado, it has the Incapacitado condition. YOCHLOL 341 YUAN-TI Power-Hungry Serpentine Conspirators</p>",
+          "value": "<p>The yochlol is hit by an attack roll. The yochlol halves the attack's de dano to itself (round down), and it teleports to an unoccupied space it can see within 9 m of itself. Teste de Resistência de Constituição: CD 15, cada criatura within 1,5 m of the yochlol's destination space. O alvo fica com a condição Envenenado until the end of its next turn. While Envenenado, it fica com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -471,7 +473,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!x0fEPjZdQGda8emq.kXRXlLJXr83ckjdG"
+      "_key": "!actors.items!pclZJVaw1w4eeWy3.kXRXlLJXr83ckjdG"
     },
     {
       "_id": "Higb20HXG12pBeen",
@@ -480,7 +482,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yochlol casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 15): À Vontade: Detect Thoughts, Gaseous Form (self only), Web 1/Dia: Dorryinate Person</p>",
+          "value": "<p>The yochlol casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 15):</p>",
           "chat": ""
         },
         "activation": {
@@ -505,13 +507,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!x0fEPjZdQGda8emq.Higb20HXG12pBeen"
+      "_key": "!actors.items!pclZJVaw1w4eeWy3.Higb20HXG12pBeen"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Yochlol",
-      "page": 343,
+      "page": 341,
       "cr": "10",
       "warnings": []
     }

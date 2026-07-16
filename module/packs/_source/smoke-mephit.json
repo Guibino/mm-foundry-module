@@ -1,6 +1,6 @@
 {
-  "_id": "QC4Motqc5rmnWuBg",
-  "_key": "!actors!QC4Motqc5rmnWuBg",
+  "_id": "9NSPvc7yOlFrukAP",
+  "_key": "!actors!9NSPvc7yOlFrukAP",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Smoke Mephit",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 13,
         "max": 13,
-        "formula": "3d6+3",
+        "formula": "3d6 + 3",
         "temp": null,
         "tempmax": null
       },
@@ -68,9 +68,9 @@
         "custom": ""
       },
       "alignment": "Neutro e Mau",
-      "cr": 0,
+      "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -82,7 +82,10 @@
     "traits": {
       "size": "sm",
       "di": {
-        "value": [],
+        "value": [
+          "fire",
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
@@ -94,12 +97,15 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "exhaustion",
+          "poisoned"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Primordial (Auran, Ignan)"
       }
     },
     "skills": {
@@ -126,13 +132,13 @@
   },
   "items": [
     {
-      "_id": "UNaiKQZ3R9cy0S2W",
-      "name": "Death Burst",
+      "_id": "DRNksn6xZmdBVspc",
+      "name": "Explosão Mortal",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mephit explodes when it dies. Con- stitution Teste de Resistência: DC 11, cada criatura in a 5-foot</p>",
+          "value": "<p>The mephit explodes when it dies. Teste de Resistência de Constituição: CD 11, cada criatura in a 1,5 m Emanation originating from the mephit. O alvo fica com a condição Envenenado until the end of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -152,53 +158,23 @@
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 11,
+            "saveAbility": "con"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!QC4Motqc5rmnWuBg.UNaiKQZ3R9cy0S2W"
+      "_key": "!actors.items!9NSPvc7yOlFrukAP.DRNksn6xZmdBVspc"
     },
     {
-      "_id": "K4ymwyzumKbpw6VO",
-      "name": "Emanation originating from the mephit",
+      "_id": "GM6lQFMrO0WHkJgN",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Falha: The target has the Envenenado condition until the end of its next turn.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!QC4Motqc5rmnWuBg.K4ymwyzumKbpw6VO"
-    },
-    {
-      "_id": "DFqE3hLtApGOyyPZ",
-      "name": "Claw",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 4 (1d4 + 2)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 4 (1d4 + 2) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -216,8 +192,8 @@
           "subtype": ""
         },
         "activities": {
-          "WzvM2TPjV7ZIPz56": {
-            "_id": "WzvM2TPjV7ZIPz56",
+          "WHgBP6Lm7iROLcV9": {
+            "_id": "WHgBP6Lm7iROLcV9",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -236,7 +212,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -245,21 +239,23 @@
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d4+2",
+            "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!QC4Motqc5rmnWuBg.DFqE3hLtApGOyyPZ"
+      "_key": "!actors.items!9NSPvc7yOlFrukAP.GM6lQFMrO0WHkJgN"
     },
     {
-      "_id": "73svPJislafcjbzL",
-      "name": "Cortante de dano",
+      "_id": "cbLueJ90QUXYkZTt",
+      "name": "Cinder Breath",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>~</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 11, uma criatura the mephit can see within 4,5 m. O alvo fica com a condição Cego until the end of the mephit's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -276,49 +272,9 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!QC4Motqc5rmnWuBg.73svPJislafcjbzL"
-    },
-    {
-      "_id": "XcrJ8OBoh3aET4uy",
-      "name": "Cinder Breath (Recharge 6)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 11, uma criatura the mephit can see within 15 feet. Fail- ure: The target has the Cego condition until the end of the mephit's next turn. 208 MEPHITS SMOKE MEPHIT Smoke mephits are elusive beings formed of fiery- cinders and hot air. They love misleading creatures and then mocking them for their gullibility. S T EA M M EPHIT These arrogant mephits are made of heat and va- porous water. They often trick creatures into doing them favors, then renege on promised rewards. l AM 5EAM U SX.ANTHUS-Z.ENU5, SLAYER OF F IE N DS, M ERCHANT M os T Ex cELL ENT, P U RVEY O R O F DEATH .' -5 EAMUSX ANTH US-Z.ENU5, SMOKE ME P HIT W I TH A TYP IC A L LY INFLATED IMPRESSI O N OF ITSELF STEAM MEPHIT Small Elemental, Neutral Evil AC l O Iniciativa +0 (l 0) HP 17 (Sd6) Sp eed 30 ft., Fly 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "recharge",
-              "type": "recoverAll",
-              "formula": "6"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
         "activities": {
-          "22udIEdXDmUVMFPy": {
-            "_id": "22udIEdXDmUVMFPy",
+          "YnymqA3PU5XndQdV": {
+            "_id": "YnymqA3PU5XndQdV",
             "type": "save",
             "activation": {
               "type": "action",
@@ -351,14 +307,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!QC4Motqc5rmnWuBg.XcrJ8OBoh3aET4uy"
+      "_key": "!actors.items!9NSPvc7yOlFrukAP.cbLueJ90QUXYkZTt"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Smoke Mephit",
-      "page": 210,
-      "cr": "0",
+      "page": 208,
+      "cr": "1/4",
       "warnings": []
     }
   }

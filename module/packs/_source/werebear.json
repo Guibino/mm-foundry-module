@@ -1,0 +1,446 @@
+{
+  "_id": "8Rzc1RbIQdNExaIB",
+  "_key": "!actors!8Rzc1RbIQdNExaIB",
+  "folder": "3SEe9J5t05jhrkCa",
+  "name": "Werebear",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/tokens/werebear.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 19,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0
+      },
+      "con": {
+        "value": 17,
+        "proficient": 0
+      },
+      "int": {
+        "value": 11,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 12,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 15,
+        "formula": ""
+      },
+      "hp": {
+        "value": 135,
+        "max": 135,
+        "formula": "18d8 + 54",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30,
+        "climb": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "monstrosity",
+        "subtype": "lycanthrope",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Bom",
+      "cr": 5,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "sm",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Common (can't speak in bear form)"
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Werebear",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/werebear.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "KMXvy6dLWzrSPBmb",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The werebear makes two attacks, using Machadinha or Dilacerar in any combination. It can replace one attack with a Mordida attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8Rzc1RbIQdNExaIB.KMXvy6dLWzrSPBmb"
+    },
+    {
+      "_id": "gp1gYAxQVbn3QR5Y",
+      "name": "Mordida",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 17 (2d12 + 4) dano perfurante. If o alvo is a Humanoid, it is subjected to the following effect. Teste de Resistência de Constituição: CD 14. O alvo is cursed. If the cursed target drops to 0 Pontos de Vida, it instead becomes a Werebear under the DM's control and has 10 Pontos de Vida. O alvo is immune to this werebear's curse for 24 hours.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "b3XnaV0cJwfJcmAr": {
+            "_id": "b3XnaV0cJwfJcmAr",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 12,
+                  "bonus": "4",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "melee",
+            "damageFormula": "2d12+4",
+            "damageType": "piercing",
+            "saveDc": 14,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8Rzc1RbIQdNExaIB.gp1gYAxQVbn3QR5Y"
+    },
+    {
+      "_id": "dyRaT3NJtyuaRmn5",
+      "name": "Machadinha",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 1,5 m or distância 6/18 m. Acerto: 14 (3d6 + 4) dano cortante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "YahRim51cids52LU": {
+            "_id": "YahRim51cids52LU",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "ranged",
+            "damageFormula": "3d6+4",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8Rzc1RbIQdNExaIB.dyRaT3NJtyuaRmn5"
+    },
+    {
+      "_id": "aTH6Mv8r8VENNtbh",
+      "name": "Dilacerar",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 13 (2d8 + 4) dano cortante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "gyJRflvwOdUXXvI1": {
+            "_id": "gyJRflvwOdUXXvI1",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "4",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "melee",
+            "damageFormula": "2d8+4",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8Rzc1RbIQdNExaIB.aTH6Mv8r8VENNtbh"
+    },
+    {
+      "_id": "pXG9qDZEI5SR4FBk",
+      "name": "Mudar de Forma",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The werebear shape-shifts into a Large bear-humanoid hybrid form or a Large bear, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8Rzc1RbIQdNExaIB.pXG9qDZEI5SR4FBk"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Werebear",
+      "page": 324,
+      "cr": "5",
+      "warnings": []
+    }
+  }
+}

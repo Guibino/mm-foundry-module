@@ -1,6 +1,6 @@
 {
-  "_id": "6QeqsFCNbefden82",
-  "_key": "!actors!6QeqsFCNbefden82",
+  "_id": "isAI5vgomcHK40Kc",
+  "_key": "!actors!isAI5vgomcHK40Kc",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Roc",
   "type": "npc",
@@ -41,14 +41,15 @@
       "hp": {
         "value": 248,
         "max": 248,
-        "formula": "l 6d20 + 80",
+        "formula": "16d20 + 80",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 20,
+        "fly": 120
       },
       "senses": {
         "units": "ft"
@@ -68,7 +69,7 @@
       "alignment": "Sem Tendência",
       "cr": 11,
       "xp": {
-        "value": 7200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -126,7 +127,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The roe makes two Beak attacks. It can replace one attack with a Talons attack.</p>",
+          "value": "<p>The roc makes two Bico attacks. It can replace one attack with a Garras attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,16 +152,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6QeqsFCNbefden82.Rgpg2TFkF8yXb26K"
+      "_key": "!actors.items!isAI5vgomcHK40Kc.Rgpg2TFkF8yXb26K"
     },
     {
-      "_id": "wjYpsxoztzr9aTtY",
-      "name": "Beak",
+      "_id": "teD0PE0DfV008VHJ",
+      "name": "Bico",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +13 alcance 10 ft. Acerto: 28 (3d12 + 9) Perfurante de dano. .</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +13, alcance 3 m. Acerto: 28 (3d12 + 9) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -178,8 +179,8 @@
           "subtype": ""
         },
         "activities": {
-          "RFgp8DjPgmYcb5SH": {
-            "_id": "RFgp8DjPgmYcb5SH",
+          "xFOiww4lQWaAKfh9": {
+            "_id": "xFOiww4lQWaAKfh9",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -232,16 +233,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6QeqsFCNbefden82.wjYpsxoztzr9aTtY"
+      "_key": "!actors.items!isAI5vgomcHK40Kc.teD0PE0DfV008VHJ"
     },
     {
-      "_id": "grDfbgxwgFpnlnA4",
-      "name": "Talons",
+      "_id": "2r5bYCM7Tesw2zxt",
+      "name": "Garras",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 13, alcance 5 ft. Acerto: 23 (4d6 + 9) Cortante de dano. If o alvo is a Huge or smaller creature, it has the Agarrado condition (escape DC 19) from both talons, and it has the Impedido condition until the grapple ends.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +13, alcance 1,5 m. Acerto: 23 (4d6 + 9) dano cortante. If o alvo is a Huge or smaller creature, it fica com a condição Agarrado (CD para escapar 19) from both talons, and it fica com a condição Impedido until the grapple ends.</p>",
           "chat": ""
         },
         "activation": {
@@ -258,27 +259,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "t5QYF7MaDRwX8mIs": {
+            "_id": "t5QYF7MaDRwX8mIs",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "13",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 6,
+                  "bonus": "9",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 13,
+            "attackType": "melee",
             "damageFormula": "4d6+9",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6QeqsFCNbefden82.grDfbgxwgFpnlnA4"
+      "_key": "!actors.items!isAI5vgomcHK40Kc.2r5bYCM7Tesw2zxt"
     },
     {
       "_id": "pZyQMdKA9OFBJgBe",
-      "name": "Swoop (Recharge 5-6)",
+      "name": "Swoop (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the roe has a creature Grap- pled, the roe flies up to half its Fly Speed without prq- voking Opportunity Attacks and drops , that creature. ROC ~61 c'l:1 ==---=-----=----_-_- _-_-_ -:__-:__-:_-:_-:_-:_-:._-:._-:_-:_-:_-=.-::.===____..,,-:~07.,,... ~ ROPER Tentacled Subterranean Trapper</p>",
+          "value": "<p>If the roc has uma criatura Agarrado, the roc flies up to half its Fly Speed without provoking Opportunity Attacks and drops that creature.</p>",
           "chat": ""
         },
         "activation": {
@@ -309,13 +354,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6QeqsFCNbefden82.pZyQMdKA9OFBJgBe"
+      "_key": "!actors.items!isAI5vgomcHK40Kc.pZyQMdKA9OFBJgBe"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Roc",
-      "page": 263,
+      "page": 261,
       "cr": "11",
       "warnings": []
     }

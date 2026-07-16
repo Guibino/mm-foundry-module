@@ -1,6 +1,6 @@
 {
-  "_id": "M0wsfwGzUj6znmXL",
-  "_key": "!actors!M0wsfwGzUj6znmXL",
+  "_id": "VzKbQHmLhHC54yRj",
+  "_key": "!actors!VzKbQHmLhHC54yRj",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Efreeti",
   "type": "npc",
@@ -41,14 +41,15 @@
       "hp": {
         "value": 212,
         "max": 212,
-        "formula": "17d10 + 11 9",
+        "formula": "17d10 + 119",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": true,
-        "walk": 40
+        "walk": 40,
+        "fly": 60
       },
       "senses": {
         "units": "ft",
@@ -62,14 +63,14 @@
     "details": {
       "type": {
         "value": "elemental",
-        "subtype": "",
+        "subtype": "genie",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Neutro",
       "cr": 11,
       "xp": {
-        "value": 7200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -100,7 +101,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Pr im ord ia l (lgnan)"
+        "custom": "Primordial (Ignan)"
       }
     },
     "skills": {}
@@ -118,13 +119,13 @@
   },
   "items": [
     {
-      "_id": "Xuo8bkgcUywozzgV",
-      "name": "Elemental Restoration",
+      "_id": "VwBHCu1TYoxd4Uuu",
+      "name": "Restauração Elemental",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the efreeti dies outside the Elemental Pl _ane of Fogo, its body dissolves into ash, and it gains a new body in 1d4 days, reviving with all its Pontos de Vida somewhere on the Plane of Fogo. cc <! Magic Resistance. The efreeti has Advantage on saving l/1 l/1 0 throws against spells and other magical effects. cc ro LU of knowing <{ Wishes. The efreeti has a 30. percent chance 2 the Wish spell. If the efreeti knows it, the efreeti can cast it only on behalf of a non-genie creature who communi- cates a wish in a way the efreeti can understand. If the efreeti casts the spell for the creature, the efreeti suffers none of the spell's stress. Once the efreeti has cast it three times, the efreeti can't do so again for 365 days.</p>",
+          "value": "<p>If the efreeti dies outside the Elemental Plane of Fogo, its body dissolves into ash, and it gains a new body in 1d4 days, reviving with all its Pontos de Vida somewhere on the Plane of Fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -148,7 +149,73 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!M0wsfwGzUj6znmXL.Xuo8bkgcUywozzgV"
+      "_key": "!actors.items!VzKbQHmLhHC54yRj.VwBHCu1TYoxd4Uuu"
+    },
+    {
+      "_id": "qxCXoxCWdivr3e5M",
+      "name": "Resistência a Magia",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!VzKbQHmLhHC54yRj.qxCXoxCWdivr3e5M"
+    },
+    {
+      "_id": "w0Vi4TJNGV96yRsN",
+      "name": "Desejos",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The efreeti has a 30 percent chance of knowing the Wish spell. If the efreeti knows it, the efreeti can cast it only on behalf of a non-genie creature who communicates a wish in a way the efreeti can understand. If the efreeti casts the spell for the creature, the efreeti suffers none of the spell's stress. Once the efreeti has cast it three times, the efreeti can't do so again for 365 days.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!VzKbQHmLhHC54yRj.w0Vi4TJNGV96yRsN"
     },
     {
       "_id": "RNWeRf9dGeeByMVH",
@@ -182,7 +249,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!M0wsfwGzUj6znmXL.RNWeRf9dGeeByMVH"
+      "_key": "!actors.items!VzKbQHmLhHC54yRj.RNWeRf9dGeeByMVH"
     },
     {
       "_id": "Zv5ncAEjfmyrXGSI",
@@ -191,7 +258,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 10, alcance 5 ft. Acerto: 13 (2d6 + 6) Cortante de dano plus 13 (2d12) Fogo de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 1,5 m. Acerto: 13 (2d6 + 6) dano cortante mais 13 (2d12) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -208,18 +275,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "fM4Z8fzY5lIecYlW": {
+            "_id": "fM4Z8fzY5lIecYlW",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "6",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 10,
+            "attackType": "melee",
             "damageFormula": "2d6+6",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!M0wsfwGzUj6znmXL.Zv5ncAEjfmyrXGSI"
+      "_key": "!actors.items!VzKbQHmLhHC54yRj.Zv5ncAEjfmyrXGSI"
     },
     {
       "_id": "7a9epSqjZHBwsOQm",
@@ -228,7 +339,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +8, range 120 ft. Acerto: 24 (7d6) Fogo de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +8, distância 36 m. Acerto: 24 (7d6) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -300,7 +411,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!M0wsfwGzUj6znmXL.7a9epSqjZHBwsOQm"
+      "_key": "!actors.items!VzKbQHmLhHC54yRj.7a9epSqjZHBwsOQm"
     },
     {
       "_id": "8cLhw4mUesfBOcZU",
@@ -309,7 +420,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The efreeti casts one of the following spells, requiring no Material components and _ using Carisma as the spellcasting ability (spell save DC 16): À Vontade: Detect Magic, Elementalism 1/Dia Each: Gaseous Form, Invisibility, Major Image, Plane Shift, Tongues, Wall of Fogo (level 7 version) EFREETI 109 ELEMENTAL CATACLYSM The End and Beginning of Ages</p>",
+          "value": "<p>The efreeti casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 16):</p>",
           "chat": ""
         },
         "activation": {
@@ -334,13 +445,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!M0wsfwGzUj6znmXL.8cLhw4mUesfBOcZU"
+      "_key": "!actors.items!VzKbQHmLhHC54yRj.8cLhw4mUesfBOcZU"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Efreeti",
-      "page": 111,
+      "page": 109,
       "cr": "11",
       "warnings": []
     }

@@ -1,6 +1,6 @@
 {
-  "_id": "H3tBxCgxwIitEuKe",
-  "_key": "!actors!H3tBxCgxwIitEuKe",
+  "_id": "3amujYg9HB4Ldgw5",
+  "_key": "!actors!3amujYg9HB4Ldgw5",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Weretiger",
   "type": "npc",
@@ -8,19 +8,19 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 77,
+        "value": 17,
         "proficient": 0
       },
       "dex": {
-        "value": 75,
+        "value": 15,
         "proficient": 0
       },
       "con": {
-        "value": 76,
+        "value": 16,
         "proficient": 0
       },
       "int": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "wis": {
@@ -28,20 +28,20 @@
         "proficient": 0
       },
       "cha": {
-        "value": 77,
+        "value": 11,
         "proficient": 0
       }
     },
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 72,
+        "flat": 12,
         "formula": ""
       },
       "hp": {
         "value": 120,
         "max": 120,
-        "formula": "l 6d8 + 48",
+        "formula": "16d8 + 48",
         "temp": null,
         "tempmax": null
       },
@@ -62,14 +62,14 @@
     "details": {
       "type": {
         "value": "monstrosity",
-        "subtype": "Lycanth r ope",
+        "subtype": "lycanthrope",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Neutro",
       "cr": 4,
       "xp": {
-        "value": 1100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -79,7 +79,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -102,6 +102,10 @@
       }
     },
     "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
       "ste": {
         "value": 1,
         "ability": "dex"
@@ -127,7 +131,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The weretiger makes two attacks, using</p>",
+          "value": "<p>The weretiger makes two attacks, using Scratch or Arco Longo in any combination. It can replace one attack with a Mordida attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -152,50 +156,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!H3tBxCgxwIitEuKe.NqEaZrZ3PbN9fffe"
+      "_key": "!actors.items!3amujYg9HB4Ldgw5.NqEaZrZ3PbN9fffe"
     },
     {
-      "_id": "qM59FbS26lotqA2G",
-      "name": "Scratch or Longbow in any combination",
+      "_id": "5jO8BtzHKxxoQGBo",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>It can replace one attack with a Bite attack.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!H3tBxCgxwIitEuKe.qM59FbS26lotqA2G"
-    },
-    {
-      "_id": "hPYQ1Q9esbbmt0rf",
-      "name": "Bite (Tiger or Hybrid Form Only)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 72 (2d8 + 3) Perfurante de dano. If o alvo is a Humanoid, it is subjected to the following effect. Constituição Teste de Resistência: DC 13. Falha: The WERETIGER WERETIGER Changed by the Power of the Tiger</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 12 (2d8 + 3) dano perfurante. If o alvo is a Humanoid, it is subjected to the following effect. Teste de Resistência de Constituição: CD 13. O alvo is cursed. If the cursed target drops to 0 Pontos de Vida, it instead becomes a Weretiger under the DM's control and has 10 Pontos de Vida. O alvo is immune to this weretiger's curse for 24 hours.</p>",
           "chat": ""
         },
         "activation": {
@@ -213,8 +183,8 @@
           "subtype": ""
         },
         "activities": {
-          "LcpPuvogAm14KzvI": {
-            "_id": "LcpPuvogAm14KzvI",
+          "80CIxQMuGaFHE5X7": {
+            "_id": "80CIxQMuGaFHE5X7",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -269,13 +239,243 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!H3tBxCgxwIitEuKe.hPYQ1Q9esbbmt0rf"
+      "_key": "!actors.items!3amujYg9HB4Ldgw5.5jO8BtzHKxxoQGBo"
+    },
+    {
+      "_id": "xevqxKVY5jggu48D",
+      "name": "Scratch",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 10 (2d6 + 3) dano cortante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "FXVbuDteT2gToyRP": {
+            "_id": "FXVbuDteT2gToyRP",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "2d6+3",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!3amujYg9HB4Ldgw5.xevqxKVY5jggu48D"
+    },
+    {
+      "_id": "oAAoA5KaIAGBUt7l",
+      "name": "Arco Longo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +4, distância 45/180 m. Acerto: 11 (2d8 + 2) dano perfurante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "cqhsIVp5Kig2uxKy": {
+            "_id": "cqhsIVp5Kig2uxKy",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "ranged",
+            "damageFormula": "2d8+2",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!3amujYg9HB4Ldgw5.oAAoA5KaIAGBUt7l"
+    },
+    {
+      "_id": "St8f2nDSy43c1gUJ",
+      "name": "Prowl",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The weretiger moves up to its Speed without provoking Opportunity Attacks. At the end of this movement, the weretiger can take the Hide action.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!3amujYg9HB4Ldgw5.St8f2nDSy43c1gUJ"
+    },
+    {
+      "_id": "5setQvNDnXdF28mg",
+      "name": "Mudar de Forma",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The weretiger shape-shifts into a Large tiger-humanoid hybrid or a Large tiger, or it returns to its true humanoid form. Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!3amujYg9HB4Ldgw5.5setQvNDnXdF28mg"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Weretiger",
-      "page": 328,
+      "page": 326,
       "cr": "4",
       "warnings": []
     }

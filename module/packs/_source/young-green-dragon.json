@@ -1,8 +1,8 @@
 {
-  "_id": "YblNmgmy2qnDrwqO",
-  "_key": "!actors!YblNmgmy2qnDrwqO",
+  "_id": "uvvt6Flb3JqTArtn",
+  "_key": "!actors!uvvt6Flb3JqTArtn",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Jovem Verde Dragão",
+  "name": "Young Green Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/young-green-dragon.webp",
   "system": {
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 18,
         "formula": ""
       },
       "hp": {
@@ -65,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Chro m atic",
+        "subtype": "chromatic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Mau",
       "cr": 8,
       "xp": {
-        "value": 3900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -108,10 +108,23 @@
         "custom": "Comum, Dracônico"
       }
     },
-    "skills": {}
+    "skills": {
+      "dec": {
+        "value": 2,
+        "ability": "cha"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Jovem Verde Dragão",
+    "name": "Young Green Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -123,13 +136,13 @@
   },
   "items": [
     {
-      "_id": "mk5m0Vth78G5dhFA",
-      "name": "Amphibious",
+      "_id": "XJ3uoR9Mc48RARgN",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -153,7 +166,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!YblNmgmy2qnDrwqO.mk5m0Vth78G5dhFA"
+      "_key": "!actors.items!uvvt6Flb3JqTArtn.XJ3uoR9Mc48RARgN"
     },
     {
       "_id": "MGBY2gi85xPDZX7o",
@@ -162,7 +175,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks.</p>",
+          "value": "<p>A criatura faz três ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -187,16 +200,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!YblNmgmy2qnDrwqO.MGBY2gi85xPDZX7o"
+      "_key": "!actors.items!uvvt6Flb3JqTArtn.MGBY2gi85xPDZX7o"
     },
     {
-      "_id": "XkYLIyqMf6MAWkaE",
-      "name": "Rend",
+      "_id": "5drZBfbvdvawYtul",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance l Oft. Acerto: 11 (2d6 - ::oL V1 + . 4) Cortante de dano plus 7 (2d6) Veneno de dano. Ct'.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 3 m. Acerto: 11 (2d6 + 4) dano cortante mais 7 (2d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -214,8 +227,8 @@
           "subtype": ""
         },
         "activities": {
-          "xiCO2J4sbnf2KeOv": {
-            "_id": "xiCO2J4sbnf2KeOv",
+          "TbbWk7fkGeDMJcU2": {
+            "_id": "TbbWk7fkGeDMJcU2",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -236,15 +249,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "4",
                   "types": [
                     "slashing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "2d6-::oLV1+.4"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -262,22 +275,22 @@
           "mechanics": {
             "toHit": 7,
             "attackType": "melee",
-            "damageFormula": "2d6-::oLV1+.4",
+            "damageFormula": "2d6+4",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!YblNmgmy2qnDrwqO.XkYLIyqMf6MAWkaE"
+      "_key": "!actors.items!uvvt6Flb3JqTArtn.5drZBfbvdvawYtul"
     },
     {
-      "_id": "9NnQkvfaCIyDGTf9",
-      "name": "Veneno Breath (Recharge 5-6)",
+      "_id": "dht9ReGADJMHzdb0",
+      "name": "Sopro de Veneno (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Saving Ct'. u.J Throw: DC 14 , cada criatura in a 30-foot Cone. Falha: z 42 (12d6) Veneno de dano. Sucesso: Metade do dano. _j ADUL T GREEN DRAGON Huge D rag on (C hromatic), Lawful Ei;il AC 79 Iniciativa + 17 (27) HP 207 (18d72 + 90) Speed 40 ft., Fly 80 ft. , Swim 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 14, cada criatura in a 9 m Cone. 42 (12d6) dano de veneno. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -300,21 +313,48 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "yCoypTjSED1LhSGp": {
+            "_id": "yCoypTjSED1LhSGp",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "14"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 14,
+            "saveAbility": "con"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!YblNmgmy2qnDrwqO.9NnQkvfaCIyDGTf9"
+      "_key": "!actors.items!uvvt6Flb3JqTArtn.dht9ReGADJMHzdb0"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Young Green Dragon",
-      "page": 154,
+      "page": 152,
       "cr": "8",
       "warnings": []
     }

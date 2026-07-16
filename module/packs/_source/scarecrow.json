@@ -1,6 +1,6 @@
 {
-  "_id": "bZWvuXw4vdjnaxE2",
-  "_key": "!actors!bZWvuXw4vdjnaxE2",
+  "_id": "zcCYCL3kxCYvsc2r",
+  "_key": "!actors!zcCYCL3kxCYvsc2r",
   "folder": "CVeezowVb7BNP8yc",
   "name": "Scarecrow",
   "type": "npc",
@@ -16,7 +16,7 @@
         "proficient": 0
       },
       "con": {
-        "value": 1,
+        "value": 11,
         "proficient": 0
       },
       "int": {
@@ -24,7 +24,7 @@
         "proficient": 0
       },
       "wis": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "cha": {
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 11,
         "formula": ""
       },
       "hp": {
@@ -67,9 +67,9 @@
         "custom": ""
       },
       "alignment": "Caótico e Mau",
-      "cr": 0,
+      "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -91,14 +91,20 @@
         "custom": ""
       },
       "dv": {
-        "value": [],
+        "value": [
+          "fire"
+        ],
         "custom": ""
       },
       "ci": {
         "value": [
           "charmed",
           "exhaustion",
-          "frightened"
+          "frightened",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "unconscious"
         ],
         "custom": ""
       },
@@ -122,13 +128,13 @@
   },
   "items": [
     {
-      "_id": "qPD5pwD0VclFwZNs",
-      "name": "Fearsome Claw",
+      "_id": "te9TYW6ynlmIsSUN",
+      "name": "Fearsome Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 6 (2d4 + l) Cortante de dano, and o alvo has the Amedrontado condition until the end of the scarecrow's next turn.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 6 (2d4 + 1) dano cortante, and o alvo fica com a condição Amedrontado until the end of the scarecrow's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,8 +152,8 @@
           "subtype": ""
         },
         "activities": {
-          "LUHWKN0tNPyIP0AF": {
-            "_id": "LUHWKN0tNPyIP0AF",
+          "Ti8iEsypVPKf76w9": {
+            "_id": "Ti8iEsypVPKf76w9",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -168,15 +174,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "1",
                   "types": [
                     "slashing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "2d4+l"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -194,13 +200,13 @@
           "mechanics": {
             "toHit": 3,
             "attackType": "melee",
-            "damageFormula": "2d4+l",
+            "damageFormula": "2d4+1",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!bZWvuXw4vdjnaxE2.qPD5pwD0VclFwZNs"
+      "_key": "!actors.items!zcCYCL3kxCYvsc2r.te9TYW6ynlmIsSUN"
     },
     {
       "_id": "d3g7kIAvsktnNviH",
@@ -209,7 +215,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sabedoria Teste de Resistência: DC l l, uma criatura the scarecrow can see within 30 feet. Falha: The target has the Amedrontado condition until the end of</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 11, uma criatura the scarecrow can see within 9 m. O alvo fica com a condição Amedrontado until the end of the scarecrow's next turn. While Amedrontado, o alvo fica com a condição Paralisado.</p>",
           "chat": ""
         },
         "activation": {
@@ -226,56 +232,49 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "662TVybjy751KMJV": {
+            "_id": "662TVybjy751KMJV",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "11"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 11,
+            "saveAbility": "wis"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!bZWvuXw4vdjnaxE2.d3g7kIAvsktnNviH"
-    },
-    {
-      "_id": "K7Ajq0O73f4tAAhK",
-      "name": "Y'",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>the scarecrow's next turn. While Amedrontado, o alvo Cl:'. <( has the Paralisado condition. SCOUT Medium or Small Humanoid, Neutral AC 13 Iniciativa +2 (12) HP 16(3d8+3) Speed 30 ft. M OD SAVE MOD SAVE M OD SA VE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!bZWvuXw4vdjnaxE2.K7Ajq0O73f4tAAhK"
+      "_key": "!actors.items!zcCYCL3kxCYvsc2r.d3g7kIAvsktnNviH"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Scarecrow",
-      "page": 271,
-      "cr": "0",
+      "page": 269,
+      "cr": "1",
       "warnings": []
     }
   }

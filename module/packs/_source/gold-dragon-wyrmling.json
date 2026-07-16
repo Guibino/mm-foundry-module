@@ -1,8 +1,8 @@
 {
-  "_id": "Phyra4Sv8liEjYk1",
-  "_key": "!actors!Phyra4Sv8liEjYk1",
+  "_id": "TbRg7Krag5andxk9",
+  "_key": "!actors!TbRg7Krag5andxk9",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Dourado Dragão Filhote",
+  "name": "Gold Dragon Wyrmling",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/gold-dragon-wyrmling.webp",
   "system": {
@@ -65,7 +65,7 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Metallic",
+        "subtype": "metallic",
         "swarm": "",
         "custom": ""
       },
@@ -84,8 +84,10 @@
     "traits": {
       "size": "med",
       "di": {
-        "value": [],
-        "custom": "Fi re"
+        "value": [
+          "fire"
+        ],
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -116,7 +118,7 @@
     }
   },
   "prototypeToken": {
-    "name": "Dourado Dragão Filhote",
+    "name": "Gold Dragon Wyrmling",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -128,13 +130,13 @@
   },
   "items": [
     {
-      "_id": "2G7bLg0Gb4Y32hj6",
-      "name": "Amphibious",
+      "_id": "hWFCBi74ifGHPL3Y",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -158,7 +160,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Phyra4Sv8liEjYk1.2G7bLg0Gb4Y32hj6"
+      "_key": "!actors.items!TbRg7Krag5andxk9.hWFCBi74ifGHPL3Y"
     },
     {
       "_id": "TFSVxn6IBsywTL14",
@@ -167,7 +169,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes two Rend attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -192,16 +194,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Phyra4Sv8liEjYk1.TFSVxn6IBsywTL14"
+      "_key": "!actors.items!TbRg7Krag5andxk9.TFSVxn6IBsywTL14"
     },
     {
-      "_id": "Itw8OChbuZBX7iNf",
-      "name": "Rend",
+      "_id": "DcI4f5IgwLNOZzeq",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 9 (1d10 + 4) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 9 (1d10 + 4) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -219,8 +221,8 @@
           "subtype": ""
         },
         "activities": {
-          "L5wN1aYmlTv0Vpbd": {
-            "_id": "L5wN1aYmlTv0Vpbd",
+          "naT52J7egdmdWVPC": {
+            "_id": "naT52J7egdmdWVPC",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -273,16 +275,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Phyra4Sv8liEjYk1.Itw8OChbuZBX7iNf"
+      "_key": "!actors.items!TbRg7Krag5andxk9.DcI4f5IgwLNOZzeq"
     },
     {
-      "_id": "GbzgHaZdPATe6Ms8",
-      "name": "Fogo Breath (Recharge 5-6)",
+      "_id": "UQPXLEcRNybSOYeh",
+      "name": "Sopro de Fogo (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 13, cada criatura in a 15-foot Cone. Falha: 22 (4d10)</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 13, cada criatura in a 4,5 m Cone. 22 (4d10) dano de fogo. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -306,8 +308,8 @@
           "subtype": ""
         },
         "activities": {
-          "1og8842XNb4AlgwG": {
-            "_id": "1og8842XNb4AlgwG",
+          "K62HYE0zFo5nmWam": {
+            "_id": "K62HYE0zFo5nmWam",
             "type": "save",
             "activation": {
               "type": "action",
@@ -340,50 +342,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Phyra4Sv8liEjYk1.GbzgHaZdPATe6Ms8"
+      "_key": "!actors.items!TbRg7Krag5andxk9.UQPXLEcRNybSOYeh"
     },
     {
-      "_id": "Vq0JaZq93IoYOJuE",
-      "name": "Fogo de dano",
+      "_id": "PMK60LFduSjcslh7",
+      "name": "Sopro Enfraquecedor",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sucesso: Metade do dano.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!Phyra4Sv8liEjYk1.Vq0JaZq93IoYOJuE"
-    },
-    {
-      "_id": "pOy9yaAKl2plSepe",
-      "name": "Weakening Breath",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Força Teste de Resistência: DC 13, cada criatura that isn't currently affected by this breath in a 15-foot Cone. Falha: The target has Disadvantage on Força-based D20 Tests and subtracts 2 (1d4) from its de dano rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. Af- ter l minute, it succeeds automatically. 144 h</p>",
+          "value": "<p>Teste de Resistência de Força: CD 13, cada criatura that isn't currently affected by this breath in a 4,5 m Cone. O alvo has Desvantagem on Força-based D20 Tests and subtracts 2 (1d4) from its de dano rolls. It repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</p>",
           "chat": ""
         },
         "activation": {
@@ -401,8 +369,8 @@
           "subtype": ""
         },
         "activities": {
-          "tU7GpZyjm2DDl8tz": {
-            "_id": "tU7GpZyjm2DDl8tz",
+          "Hkm3y4nUquMz2T8Y": {
+            "_id": "Hkm3y4nUquMz2T8Y",
             "type": "save",
             "activation": {
               "type": "action",
@@ -435,13 +403,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Phyra4Sv8liEjYk1.pOy9yaAKl2plSepe"
+      "_key": "!actors.items!TbRg7Krag5andxk9.PMK60LFduSjcslh7"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Gold Dragon Wyrmling",
-      "page": 146,
+      "page": 144,
       "cr": "3",
       "warnings": []
     }

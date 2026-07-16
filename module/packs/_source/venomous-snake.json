@@ -1,6 +1,6 @@
 {
-  "_id": "fKCSGUDjRxROcaU8",
-  "_key": "!actors!fKCSGUDjRxROcaU8",
+  "_id": "ugVKY2krm0EhBLzf",
+  "_key": "!actors!ugVKY2krm0EhBLzf",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Venomous Snake",
   "type": "npc",
@@ -16,7 +16,7 @@
         "proficient": 0
       },
       "con": {
-        "value": 77,
+        "value": 11,
         "proficient": 0
       },
       "int": {
@@ -70,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 0.125,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -99,7 +99,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
@@ -117,13 +117,13 @@
   },
   "items": [
     {
-      "_id": "EJc30l40q9F0w0gq",
-      "name": "Bite",
+      "_id": "4ds4CduSKszpQ6yi",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Me lee Attack Roll: +4, alcance 5 ft. Acerto: 4 (1d4 + 2) Perfurante de dano plus 3 (1d6) Veneno de dano. VULTURE Medium Beast Unalig ned AC 10 Iniciativa +0 (10) HP 5 (1d8 + 1) Speed 10 ft., Fly 50 ft. MOD SAVE MOD SAV E MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 4 (1d4 + 2) dano perfurante mais 3 (1d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -140,24 +140,68 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "UDgY3IFosBzxWDS4": {
+            "_id": "UDgY3IFosBzxWDS4",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
             "damageFormula": "1d4+2",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!fKCSGUDjRxROcaU8.EJc30l40q9F0w0gq"
+      "_key": "!actors.items!ugVKY2krm0EhBLzf.4ds4CduSKszpQ6yi"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Venomous Snake",
-      "page": 374,
+      "page": 372,
       "cr": "1/8",
       "warnings": []
     }

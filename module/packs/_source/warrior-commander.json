@@ -1,8 +1,8 @@
 {
-  "_id": "367xPDEMJo4pgleg",
-  "_key": "!actors!367xPDEMJo4pgleg",
+  "_id": "eOzJY8XJS6gI13Ex",
+  "_key": "!actors!eOzJY8XJS6gI13Ex",
   "folder": "1QPcErIwVgACFlzi",
-  "name": "Guerreiro Commander",
+  "name": "Warrior Commander",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/warrior-commander.webp",
   "system": {
@@ -41,7 +41,7 @@
       "hp": {
         "value": 161,
         "max": 161,
-        "formula": "19d8+76",
+        "formula": "19d8 + 76",
         "temp": null,
         "tempmax": null
       },
@@ -66,9 +66,9 @@
         "custom": ""
       },
       "alignment": "Neutro",
-      "cr": 0,
+      "cr": 10,
       "xp": {
-        "value": 5900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -97,13 +97,26 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Common plus one other language"
       }
     },
-    "skills": {}
+    "skills": {
+      "ath": {
+        "value": 2,
+        "ability": "str"
+      },
+      "ins": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Guerreiro Commander",
+    "name": "Warrior Commander",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -121,7 +134,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The warrior makes three attacks, using Greatsword or Longbow in any combination.</p>",
+          "value": "<p>The warrior makes three attacks, using Montante or Arco Longo in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +159,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!367xPDEMJo4pgleg.YBl9LTZMm53tlmed"
+      "_key": "!actors.items!eOzJY8XJS6gI13Ex.YBl9LTZMm53tlmed"
     },
     {
-      "_id": "m6oKUxWTaNuhcKwj",
-      "name": "Greatsword",
+      "_id": "dfWi1oMrtCKda0dU",
+      "name": "Montante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 5 ft. Acerto: 19 (4d6 + 5) Cortante.de dano. The warrior also creates one of the following effects: V1 UJ</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 1,5 m. Acerto: 19 (4d6 + 5) dano cortante. The warrior also creates one of the following effects:\nO alvo has Desvantagem on its next attack roll before the start of the warrior's next turn.\nOne ally who can see or hear the warrior can take a Reaction to move up to half the ally's Speed without provoking Opportunity Attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -173,8 +186,8 @@
           "subtype": ""
         },
         "activities": {
-          "vfMypSgmOsvzFTRd": {
-            "_id": "vfMypSgmOsvzFTRd",
+          "JpGFzo7ajPdRgbPY": {
+            "_id": "JpGFzo7ajPdRgbPY",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -193,7 +206,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 6,
+                  "bonus": "5",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -202,89 +233,23 @@
         "mm2024": {
           "mechanics": {
             "toHit": 9,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "4d6+5",
+            "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!367xPDEMJo4pgleg.m6oKUxWTaNuhcKwj"
+      "_key": "!actors.items!eOzJY8XJS6gI13Ex.dfWi1oMrtCKda0dU"
     },
     {
-      "_id": "64hFddKRxOydRPQZ",
-      "name": "V1 Sap",
+      "_id": "aY2WNnyg8Q8fIo4k",
+      "name": "Arco Longo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The target has Disadvantage on its next attack roll Cl'.: co • before the start of the warrior's next turn.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!367xPDEMJo4pgleg.64hFddKRxOydRPQZ"
-    },
-    {
-      "_id": "jSzHYQCUMF62YpnV",
-      "name": "Maneuver",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>One ally who can see or hear the warrior can take a Reaction to move up to half the ally's Speed without provoking Opportunity Attacks.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!367xPDEMJo4pgleg.jSzHYQCUMF62YpnV"
-    },
-    {
-      "_id": "p9rufmtlc8pO44ex",
-      "name": "Longbow",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +9, range 150/600 ft. Acerto: 18 (3d8 + 5) Perfurante de dano, and o alvo's Speed decreases by 10 feet until the end of o alvo's next turn.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +9, distância 45/180 m. Acerto: 18 (3d8 + 5) dano perfurante, and o alvo's Speed decreases by 3 m until the end of o alvo's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -302,8 +267,8 @@
           "subtype": ""
         },
         "activities": {
-          "M5aDzfuDRdzbckUD": {
-            "_id": "M5aDzfuDRdzbckUD",
+          "fXKX5h8UOZycRqra": {
+            "_id": "fXKX5h8UOZycRqra",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -356,16 +321,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!367xPDEMJo4pgleg.p9rufmtlc8pO44ex"
+      "_key": "!actors.items!eOzJY8XJS6gI13Ex.aY2WNnyg8Q8fIo4k"
     },
     {
-      "_id": "jjzrJImdHFsIaHWc",
-      "name": "Tactical Charge",
+      "_id": "opShIPpHlaVVathx",
+      "name": "Tactical Investida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The warrior moves up to half its Speed _ straight toward an enemy it can see without provoking Opportunity Attacks.</p>",
+          "value": "<p>The warrior moves up to half its Speed straight toward an enemy it can see without provoking Opportunity Attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -390,7 +355,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!367xPDEMJo4pgleg.jjzrJImdHFsIaHWc"
+      "_key": "!actors.items!eOzJY8XJS6gI13Ex.opShIPpHlaVVathx"
     },
     {
       "_id": "lnpG9grakZriPZWE",
@@ -399,7 +364,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: The warrior is hit by an attack roll. Response: The warrior adds 4 to its AC against , that attack, possibly causing it to miss. On a miss, the warrior can make one Greatsword or Longbow attack against the attacker. 6._ 3~I WARRI ORS W AT ER ELE M ENT AL Primal Spirit of Waves and Tides</p>",
+          "value": "<p>The warrior is hit by an attack roll. The warrior adds 4 to its AC against that attack, possibly causing it to miss. On a miss, the warrior can make one Montante or Arco Longo attack against the attacker.</p>",
           "chat": ""
         },
         "activation": {
@@ -424,14 +389,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!367xPDEMJo4pgleg.lnpG9grakZriPZWE"
+      "_key": "!actors.items!eOzJY8XJS6gI13Ex.lnpG9grakZriPZWE"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Warrior Commander",
-      "page": 323,
-      "cr": "0",
+      "page": 321,
+      "cr": "10",
       "warnings": []
     }
   }

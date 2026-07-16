@@ -1,6 +1,6 @@
 {
-  "_id": "sLgGjfWeM07pDrbp",
-  "_key": "!actors!sLgGjfWeM07pDrbp",
+  "_id": "eBC0ytoOArfPJ1x4",
+  "_key": "!actors!eBC0ytoOArfPJ1x4",
   "folder": "bKQUPthn1V2Yu6Bn",
   "name": "Ghoul",
   "type": "npc",
@@ -51,7 +51,8 @@
         "walk": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -66,9 +67,9 @@
         "custom": ""
       },
       "alignment": "Caótico e Mau",
-      "cr": 0,
+      "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -96,13 +97,14 @@
       "ci": {
         "value": [
           "charmed",
-          "exhaustion"
+          "exhaustion",
+          "poisoned"
         ],
-        "custom": "Poi _soned"
+        "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum"
       }
     },
     "skills": {}
@@ -126,7 +128,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The ghoul makes two Bite attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Mordida.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,16 +153,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!sLgGjfWeM07pDrbp.QWP9GTdPCgqn7Hdj"
+      "_key": "!actors.items!eBC0ytoOArfPJ1x4.QWP9GTdPCgqn7Hdj"
     },
     {
-      "_id": "PaxP1IrQXtMXY0Wy",
-      "name": "Bite",
+      "_id": "Fh9YxKmXx7eEMvGa",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 5 (1d6 + 2) Perfurante de dano plus 3 (1d6) Necrótico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano perfurante mais 3 (1d6) dano necrótico.</p>",
           "chat": ""
         },
         "activation": {
@@ -178,8 +180,8 @@
           "subtype": ""
         },
         "activities": {
-          "hjwWeyBer1TnKKaL": {
-            "_id": "hjwWeyBer1TnKKaL",
+          "FbIY7rgg6VU2AfqH": {
+            "_id": "FbIY7rgg6VU2AfqH",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -232,16 +234,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!sLgGjfWeM07pDrbp.PaxP1IrQXtMXY0Wy"
+      "_key": "!actors.items!eBC0ytoOArfPJ1x4.Fh9YxKmXx7eEMvGa"
     },
     {
-      "_id": "112dkVdjm4CNB6pp",
-      "name": "Claw",
+      "_id": "P51L5jKd3J8i06Xm",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 4 (1d4 + 2) Cortante de dano. If o alvo is a creature that isn't an Undead or elf, it is subjected to the following effect. Constituição Teste de Resistência: DC l 0. Falha: The target has the Paralisado condition until the end of its next turn. I32 GHOULS LACEDON GHOUL Medium Undead, Chaotic EtJil AC 12 Iniciativa +2 (12) HP 22 (5d8) Speed 30 ft., Swim 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 4 (1d4 + 2) dano cortante. If o alvo is uma criatura that isn't an Undead or elf, it is subjected to the following effect. Teste de Resistência de Constituição: CD 10. O alvo fica com a condição Paralisado until the end of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -259,8 +261,8 @@
           "subtype": ""
         },
         "activities": {
-          "FgrmuGvXPTffwk57": {
-            "_id": "FgrmuGvXPTffwk57",
+          "zvKlLC9lbM2C29XR": {
+            "_id": "zvKlLC9lbM2C29XR",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -308,19 +310,21 @@
             "toHit": 4,
             "attackType": "melee",
             "damageFormula": "1d4+2",
-            "damageType": "slashing"
+            "damageType": "slashing",
+            "saveDc": 10,
+            "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!sLgGjfWeM07pDrbp.112dkVdjm4CNB6pp"
+      "_key": "!actors.items!eBC0ytoOArfPJ1x4.P51L5jKd3J8i06Xm"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Ghoul",
-      "page": 134,
-      "cr": "0",
+      "page": 132,
+      "cr": "1",
       "warnings": []
     }
   }

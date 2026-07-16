@@ -1,8 +1,8 @@
 {
-  "_id": "qzFsf68HBQPRchAc",
-  "_key": "!actors!qzFsf68HBQPRchAc",
+  "_id": "kPixAgshtifJgB4G",
+  "_key": "!actors!kPixAgshtifJgB4G",
   "folder": "EgPgmtpb4EiltKUV",
-  "name": "Fire Gigante",
+  "name": "Fire Giant",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/fire-giant.webp",
   "system": {
@@ -17,7 +17,7 @@
       },
       "con": {
         "value": 23,
-        "proficient": 0
+        "proficient": 1
       },
       "int": {
         "value": 10,
@@ -68,7 +68,7 @@
       "alignment": "Leal e Mau",
       "cr": 9,
       "xp": {
-        "value": 5000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,10 +102,19 @@
         "custom": "Gigante"
       }
     },
-    "skills": {}
+    "skills": {
+      "ath": {
+        "value": 2,
+        "ability": "str"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Fire Gigante",
+    "name": "Fire Giant",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -123,7 +132,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The giant makes two attacks, using Flame Sword or Hammer Throw in any combination .</p>",
+          "value": "<p>The giant makes two attacks, using Flame Sword or Hammer Throw in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -148,7 +157,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qzFsf68HBQPRchAc.Ix1gLFKk7VD5nUv4"
+      "_key": "!actors.items!kPixAgshtifJgB4G.Ix1gLFKk7VD5nUv4"
     },
     {
       "_id": "jTiu3loVbkcdxSb1",
@@ -157,7 +166,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 11, alcance l 0 ft. Acerto: 21 (4d6 + 7) Cortante de dano plus 10 (3d6) Fogo de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +11, alcance 3 m. Acerto: 21 (4d6 + 7) dano cortante mais 10 (3d6) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -174,18 +183,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "wcgFTMjlfr7pbTL3": {
+            "_id": "wcgFTMjlfr7pbTL3",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "11",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 6,
+                  "bonus": "7",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 11,
+            "attackType": "melee",
             "damageFormula": "4d6+7",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qzFsf68HBQPRchAc.jTiu3loVbkcdxSb1"
+      "_key": "!actors.items!kPixAgshtifJgB4G.jTiu3loVbkcdxSb1"
     },
     {
       "_id": "hnf8zdgLvwdT4xan",
@@ -194,7 +247,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância:+ 11, range 60/240 ft. Acerto: 23 (3d10 + 7) Concussão de dano plus 4 (1d8) Fogo de dano, and o alvo is pushed up to 15 feet straight away from the giant and has Disadvantage on the next attack roll it makes before the end of its next turn. FLAMES KULL Skull Smoldering with Magical Obsession</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +11, distância 18/72 m. Acerto: 23 (3d10 + 7) dano de concussão mais 4 (1d8) dano de fogo, and o alvo is pushed up to 4,5 m straight away from the giant and has Desvantagem on the next attack roll it makes before the end of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -211,24 +264,68 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "PkCxVS8tv6RrlrwC": {
+            "_id": "PkCxVS8tv6RrlrwC",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "11",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 10,
+                  "bonus": "7",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 11,
+            "attackType": "ranged",
             "damageFormula": "3d10+7",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qzFsf68HBQPRchAc.hnf8zdgLvwdT4xan"
+      "_key": "!actors.items!kPixAgshtifJgB4G.hnf8zdgLvwdT4xan"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Fire Giant",
-      "page": 121,
+      "page": 119,
       "cr": "9",
       "warnings": []
     }

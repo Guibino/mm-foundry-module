@@ -1,6 +1,6 @@
 {
-  "_id": "BaamKTGBiaTRUJQe",
-  "_key": "!actors!BaamKTGBiaTRUJQe",
+  "_id": "8W2wCMpQLLBjcpJJ",
+  "_key": "!actors!8W2wCMpQLLBjcpJJ",
   "folder": "CVeezowVb7BNP8yc",
   "name": "Animated Broom",
   "type": "npc",
@@ -70,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -99,13 +99,18 @@
       "ci": {
         "value": [
           "charmed",
-          "deafened"
+          "deafened",
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "petrified",
+          "poisoned"
         ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
@@ -123,13 +128,13 @@
   },
   "items": [
     {
-      "_id": "Tly4bDZJhDdPkOM2",
-      "name": "Flyby",
+      "_id": "EskB3juWZSOD4j3s",
+      "name": "Voo Rasante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The broom doesn't provoke an Opportunity At- tack when it flies out of an enemy's alcance .</p>",
+          "value": "<p>A criatura não provoca Ataque de Oportunidade ao sair voando do alcance de um inimigo.</p>",
           "chat": ""
         },
         "activation": {
@@ -153,16 +158,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!BaamKTGBiaTRUJQe.Tly4bDZJhDdPkOM2"
+      "_key": "!actors.items!8W2wCMpQLLBjcpJJ.EskB3juWZSOD4j3s"
     },
     {
-      "_id": "mXzfh58nEY5uZdmc",
-      "name": "Slam",
+      "_id": "bgNiFS57gqX16enc",
+      "name": "Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 5 (1d4 + 3) Concussão de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 5 (1d4 + 3) dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
@@ -180,8 +185,8 @@
           "subtype": ""
         },
         "activities": {
-          "pVLkdnD3dQ1uXer7": {
-            "_id": "pVLkdnD3dQ1uXer7",
+          "zi0jVdU5696sInJr": {
+            "_id": "zi0jVdU5696sInJr",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -234,13 +239,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!BaamKTGBiaTRUJQe.mXzfh58nEY5uZdmc"
+      "_key": "!actors.items!8W2wCMpQLLBjcpJJ.bgNiFS57gqX16enc"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Animated Broom",
-      "page": 18,
+      "page": 16,
       "cr": "1/4",
       "warnings": []
     }

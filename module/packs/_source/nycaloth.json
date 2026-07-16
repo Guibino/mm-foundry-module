@@ -1,6 +1,6 @@
 {
-  "_id": "xrTo39WlcNhQaU6N",
-  "_key": "!actors!xrTo39WlcNhQaU6N",
+  "_id": "vc3k8ay4rYh80RTL",
+  "_key": "!actors!vc3k8ay4rYh80RTL",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Nycaloth",
   "type": "npc",
@@ -20,15 +20,15 @@
         "proficient": 0
       },
       "int": {
-        "value": 72,
+        "value": 12,
         "proficient": 0
       },
       "wis": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "cha": {
-        "value": 75,
+        "value": 15,
         "proficient": 0
       }
     },
@@ -39,19 +39,21 @@
         "formula": ""
       },
       "hp": {
-        "value": 1,
-        "max": 1,
-        "formula": "",
+        "value": 152,
+        "max": 152,
+        "formula": "16d10 + 64",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40,
+        "fly": 60
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "blindsight": 60
       },
       "init": {
         "ability": "dex",
@@ -61,14 +63,14 @@
     "details": {
       "type": {
         "value": "fiend",
-        "subtype": "Yugo/0th",
+        "subtype": "yugoloth",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Neutro e Mau",
       "cr": 9,
       "xp": {
-        "value": 5000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -106,16 +108,16 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Abissal"
       }
     },
     "skills": {
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       },
       "ste": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       }
     }
@@ -133,13 +135,13 @@
   },
   "items": [
     {
-      "_id": "OtqVEcyd1AyuZXh8",
-      "name": "V1 Fiendish Restoration",
+      "_id": "DCfrv7z0hpd7ul3u",
+      "name": "Restauração Corruptora",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the nycaloth dies outside Ge- f..'.. henna, its body dissolves into ichor, and it gains a new \\.J body instantly, reviving with all its Pontos de Vida some- l/1 Cle'. <( '-- where in Gehenna.</p>",
+          "value": "<p>If the nycaloth dies outside Gehenna, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Pontos de Vida somewhere in Gehenna.</p>",
           "chat": ""
         },
         "activation": {
@@ -163,16 +165,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xrTo39WlcNhQaU6N.OtqVEcyd1AyuZXh8"
+      "_key": "!actors.items!vc3k8ay4rYh80RTL.DCfrv7z0hpd7ul3u"
     },
     {
-      "_id": "K7eyfxsttW4tGtGS",
-      "name": "Magic Resistance",
+      "_id": "Pd1fuyZbAfkpzq6K",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The nycaloth has Advantage on sav- ing throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -196,7 +198,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xrTo39WlcNhQaU6N.K7eyfxsttW4tGtGS"
+      "_key": "!actors.items!vc3k8ay4rYh80RTL.Pd1fuyZbAfkpzq6K"
     },
     {
       "_id": "NZssss3RdGmEcrB2",
@@ -230,7 +232,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xrTo39WlcNhQaU6N.NZssss3RdGmEcrB2"
+      "_key": "!actors.items!vc3k8ay4rYh80RTL.NZssss3RdGmEcrB2"
     },
     {
       "_id": "Z8ht68rhMH7Rome3",
@@ -239,7 +241,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +9, alcance l 0 ft . or range 30/90 ft. Acerto: 78 (2d12 + 5) Cortante dam- age plus 10 (3d6) Energia de dano. Hit or Erro: The axe magically returns to the nycaloth's hand immediately after a ranged attack. - BONUS ACT IO N S</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +9, alcance 3 m. or distância 9/27 m. Acerto: 18 (2d12 + 5) dano cortante mais 10 (3d6) dano de energia. The axe magically returns to the nycaloth's hand immediately after a ranged attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -277,7 +279,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 12,
+                  "bonus": "5",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -286,25 +306,27 @@
         "mm2024": {
           "mechanics": {
             "toHit": 9,
-            "attackType": "ranged"
+            "attackType": "ranged",
+            "damageFormula": "2d12+5",
+            "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xrTo39WlcNhQaU6N.Z8ht68rhMH7Rome3"
+      "_key": "!actors.items!vc3k8ay4rYh80RTL.Z8ht68rhMH7Rome3"
     },
     {
-      "_id": "lh7BPGV6lGOfnBuf",
-      "name": "Shadowy Teleport",
+      "_id": "TJ7kUUbGEqbeUq9A",
+      "name": "Shadowy Teletransporte",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The nycaloth has the Invisível con- dition for l minute, and it teleports up to 30 feet to an unoccupied space it can see. The condition ends early immediately after it deals de dano. NY CALOTHA '2:'2:9 ~---..._ ______ ..::::;2~7 0 C HRE]ELL Y Multiplying Amoeboid Hunter</p>",
+          "value": "<p>The nycaloth fica com a condição Invisível for 1 minute, and it teleports up to 9 m to an unoccupied space it can see. The condição ends early immediately after it deals de dano.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "action",
+          "type": "bonus",
           "value": null,
           "condition": ""
         },
@@ -325,17 +347,15 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xrTo39WlcNhQaU6N.lh7BPGV6lGOfnBuf"
+      "_key": "!actors.items!vc3k8ay4rYh80RTL.TJ7kUUbGEqbeUq9A"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Nycaloth",
-      "page": 231,
+      "page": 229,
       "cr": "9",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "warnings": []
     }
   }
 }

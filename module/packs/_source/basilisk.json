@@ -1,6 +1,6 @@
 {
-  "_id": "VN8poLnPtc38O0Ty",
-  "_key": "!actors!VN8poLnPtc38O0Ty",
+  "_id": "riPQC7cFfPFT0Foq",
+  "_key": "!actors!riPQC7cFfPFT0Foq",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Basilisk",
   "type": "npc",
@@ -47,10 +47,12 @@
       },
       "movement": {
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "walk": 20
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -67,7 +69,7 @@
       "alignment": "Sem Tendência",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -96,7 +98,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
@@ -114,13 +116,13 @@
   },
   "items": [
     {
-      "_id": "ndJfIjxEAwq0xaP8",
-      "name": "Bite",
+      "_id": "l9p0BQC9mON8tlV8",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 10 (2d6 + 3) Perfurante de dano plus 7 (2d6) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 10 (2d6 + 3) dano perfurante mais 7 (2d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -138,8 +140,8 @@
           "subtype": ""
         },
         "activities": {
-          "GK90K4WnN7aAIhmG": {
-            "_id": "GK90K4WnN7aAIhmG",
+          "NrwKqqJ2MM2QP1HB": {
+            "_id": "NrwKqqJ2MM2QP1HB",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -192,16 +194,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VN8poLnPtc38O0Ty.ndJfIjxEAwq0xaP8"
+      "_key": "!actors.items!riPQC7cFfPFT0Foq.l9p0BQC9mON8tlV8"
     },
     {
       "_id": "ScAehCh6Mq6opsAn",
-      "name": "Petrifying Gaze (Recharge 4-6)",
+      "name": "Petrifying Gaze (Recharge 4)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Sa~ing Throw: DC 12, cada criatura in a 30-foot Cone. If the basilisk sees its reflection in the Cone, the basilisk must make this save. First Falha: The target has the Impedido condition and repeats the save at the end of its next turn if it is still Impedido, ending the effect on ~ itself on a success. Second Falha: The target has the > Petrificado condition instead of the Impedido condition. De'. =_=_~_~.:..._-_7-_'\"-\".~r- BEARDED DEVIL Medium Fi en d (D e tJi!), Lawful EtJil AC 13 Iniciativa +2 (12) HP 58(9d8+18) Speed 30 ft. MOD SA VE MOO SA VE MOO SA VE</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 12, cada criatura in a 9 m Cone. If the basilisk sees its reflection within the Cone, the basilisk must make this save. Falha: O alvo fica com a condição Impedido and repeats the save at the end of its next turn if it is still Impedido, ending the effect on itself on a success. Falha: O alvo fica com a condição Petrificado instead of a condição Impedido.</p>",
           "chat": ""
         },
         "activation": {
@@ -224,21 +226,48 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "ylrnLqg99dG07a0d": {
+            "_id": "ylrnLqg99dG07a0d",
+            "type": "save",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "12"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 12,
+            "saveAbility": "con"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VN8poLnPtc38O0Ty.ScAehCh6Mq6opsAn"
+      "_key": "!actors.items!riPQC7cFfPFT0Foq.ScAehCh6Mq6opsAn"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Basilisk",
-      "page": 34,
+      "page": 32,
       "cr": "3",
       "warnings": []
     }

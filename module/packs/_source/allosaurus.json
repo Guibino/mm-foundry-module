@@ -1,6 +1,6 @@
 {
-  "_id": "gSKdeErskAw6qjFY",
-  "_key": "!actors!gSKdeErskAw6qjFY",
+  "_id": "HrwyDnjoWaBBIhKE",
+  "_key": "!actors!HrwyDnjoWaBBIhKE",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Allosaurus",
   "type": "npc",
@@ -16,7 +16,7 @@
         "proficient": 0
       },
       "con": {
-        "value": 7,
+        "value": 17,
         "proficient": 0
       },
       "int": {
@@ -35,20 +35,20 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 13,
         "formula": ""
       },
       "hp": {
         "value": 51,
         "max": 51,
-        "formula": "6d10+18",
+        "formula": "6d10 + 18",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 60
       },
       "senses": {
         "units": "ft"
@@ -61,14 +61,14 @@
     "details": {
       "type": {
         "value": "beast",
-        "subtype": "Dinosaur",
+        "subtype": "dinosaur",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Sem Tendência",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,10 +97,15 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Allosaurus",
@@ -115,13 +120,13 @@
   },
   "items": [
     {
-      "_id": "jwkkYQfJkQPtbZkH",
-      "name": "Bite",
+      "_id": "fwNsMULMl4Eoe7F8",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 15 (2d1 O + 4) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 15 (2d10 + 4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -139,8 +144,8 @@
           "subtype": ""
         },
         "activities": {
-          "gajPOivh8qMu9qxK": {
-            "_id": "gajPOivh8qMu9qxK",
+          "ehpu1HZLaiZKieZv": {
+            "_id": "ehpu1HZLaiZKieZv",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -161,15 +166,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "4",
                   "types": [
                     "piercing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "2d1O+4"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -187,22 +192,22 @@
           "mechanics": {
             "toHit": 6,
             "attackType": "melee",
-            "damageFormula": "2d1O+4",
+            "damageFormula": "2d10+4",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gSKdeErskAw6qjFY.jwkkYQfJkQPtbZkH"
+      "_key": "!actors.items!HrwyDnjoWaBBIhKE.fwNsMULMl4Eoe7F8"
     },
     {
-      "_id": "Yh0tvTBcLe9LtiT1",
-      "name": "Claws",
+      "_id": "7ypKVHcrXdJ4KjTe",
+      "name": "Garras",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 8 (1d8 + 4)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 8 (1d8 + 4) dano cortante. If o alvo is a Large or smaller creature and the allosaurus moved 30+ feet straight toward it immediately before the hit, o alvo fica com a condição Caído, and the allosaurus can make one Mordida attack against it.</p>",
           "chat": ""
         },
         "activation": {
@@ -220,8 +225,8 @@
           "subtype": ""
         },
         "activities": {
-          "7UOmUZNvaljIGSub": {
-            "_id": "7UOmUZNvaljIGSub",
+          "suVFhLc9FvhgAZWu": {
+            "_id": "suVFhLc9FvhgAZWu",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -240,7 +245,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "4",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -249,52 +272,20 @@
         "mm2024": {
           "mechanics": {
             "toHit": 6,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d8+4",
+            "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gSKdeErskAw6qjFY.Yh0tvTBcLe9LtiT1"
-    },
-    {
-      "_id": "N80FmquE18sQanIZ",
-      "name": "Cortante de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If o alvo is a Large or smaller creature and the allosaurus moved 30+ feet straight toward it immediately before the hit, o alvo has the Caído condition, and the allosaurus can make one Bite attack against it. ANKYLOSAURUS 348 APPENDIX A I AN IMAL S Use these stat blocks to represent the creatures they're named for or other similar creatures. For example, the Panther stat block can also represe nt a mountain lion, while the Gigante Goat stat block might represent a buffalo. Any of these stat blocks might also serve as fantastical animals with dis- ~inctive names and cosmetic details unique to your D&D adventures. ANKYLOSAURUS Huge Beast (Dinosaur), Unaligned AC 15 Iniciativa +O (l 0) HP 68 (8d12 + 16) Sp eed 30 ft. MOD SAV E MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!gSKdeErskAw6qjFY.N80FmquE18sQanIZ"
+      "_key": "!actors.items!HrwyDnjoWaBBIhKE.7ypKVHcrXdJ4KjTe"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Allosaurus",
-      "page": 350,
+      "page": 348,
       "cr": "2",
       "warnings": []
     }

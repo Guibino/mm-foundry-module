@@ -1,8 +1,8 @@
 {
-  "_id": "nCrCW6u3YkdTHzvj",
-  "_key": "!actors!nCrCW6u3YkdTHzvj",
+  "_id": "ocqHFZrBPn7Iz3zR",
+  "_key": "!actors!ocqHFZrBPn7Iz3zR",
   "folder": "1QPcErIwVgACFlzi",
-  "name": "Scout Capitão",
+  "name": "Scout Captain",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/scout-captain.webp",
   "system": {
@@ -69,7 +69,7 @@
       "alignment": "Neutro",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -79,7 +79,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -98,7 +98,7 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Common plus one other language"
       }
     },
     "skills": {
@@ -117,7 +117,7 @@
     }
   },
   "prototypeToken": {
-    "name": "Scout Capitão",
+    "name": "Scout Captain",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -135,7 +135,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The scout makes two attacks, using Shortsword or Longbow in any combination.</p>",
+          "value": "<p>The scout makes two attacks, using Espada Curta or Arco Longo in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -160,16 +160,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!nCrCW6u3YkdTHzvj.mNHQZOEe0g2TSjkY"
+      "_key": "!actors.items!ocqHFZrBPn7Iz3zR.mNHQZOEe0g2TSjkY"
     },
     {
-      "_id": "VZXeBCfqSJrPn0pt",
-      "name": "Shortsword",
+      "_id": "WFRhuC8HmHR8KNoH",
+      "name": "Espada Curta",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 6 (1d6 + 3) Perfurante de dano, plus 10 (3d6) Perfurante dam- age if the attack was made with Advantage.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 6 (1d6 + 3) dano perfurante, mais 10 (3d6) dano perfurante if the attack was made with Vantagem.</p>",
           "chat": ""
         },
         "activation": {
@@ -187,8 +187,8 @@
           "subtype": ""
         },
         "activities": {
-          "wNGPu5CjcV1VB6zI": {
-            "_id": "wNGPu5CjcV1VB6zI",
+          "8cMVOJEw4XP91NXg": {
+            "_id": "8cMVOJEw4XP91NXg",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -241,16 +241,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!nCrCW6u3YkdTHzvj.VZXeBCfqSJrPn0pt"
+      "_key": "!actors.items!ocqHFZrBPn7Iz3zR.WFRhuC8HmHR8KNoH"
     },
     {
-      "_id": "xLgnHxBzX5ZtHeo6",
-      "name": "Longbow",
+      "_id": "ZbBQ7dxVfMbQmrYs",
+      "name": "Arco Longo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Distânciad Attack Ro ! I: +5, range 150/600 ft. Hit : 7 (1d8 + 3) Perfurante de dano, plus 10 (3d6) Perfurante de dano if the attack was made with Advantage.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +5, distância 45/180 m. Acerto: 7 (1d8 + 3) dano perfurante, mais 10 (3d6) dano perfurante if the attack was made with Vantagem.</p>",
           "chat": ""
         },
         "activation": {
@@ -267,15 +267,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "qwxMp4ZQ8H2L5cO3": {
+            "_id": "qwxMp4ZQ8H2L5cO3",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "ranged",
+            "damageFormula": "1d8+3",
+            "damageType": "piercing"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!nCrCW6u3YkdTHzvj.xLgnHxBzX5ZtHeo6"
+      "_key": "!actors.items!ocqHFZrBPn7Iz3zR.ZbBQ7dxVfMbQmrYs"
     },
     {
       "_id": "LjjInaSTZE4GAZNf",
@@ -284,7 +331,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The scout has Advantage on the next attack roll it makes during the current turn. REACT IO N S ~</p>",
+          "value": "<p>The scout has Vantagem on the next attack roll it makes during the current turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -309,20 +356,20 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!nCrCW6u3YkdTHzvj.LjjInaSTZE4GAZNf"
+      "_key": "!actors.items!ocqHFZrBPn7Iz3zR.LjjInaSTZE4GAZNf"
     },
     {
-      "_id": "f7vrSPJ7dbYzap4e",
+      "_id": "kxdkap0KJM3tSBdu",
       "name": "Uncanny Dodge",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: The scout is hit by an attack 2 roll. 0 Response: The scout halves the de dano (round O::'. down) it takes from that attack. u L O::'. SEA H AG Hag of Despair and the Dismal Deep</p>",
+          "value": "<p>The scout is hit by an attack roll. The scout halves the de dano (round down) it takes from that attack.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "bonus",
+          "type": "reaction",
           "value": null,
           "condition": ""
         },
@@ -343,13 +390,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!nCrCW6u3YkdTHzvj.f7vrSPJ7dbYzap4e"
+      "_key": "!actors.items!ocqHFZrBPn7Iz3zR.kxdkap0KJM3tSBdu"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Scout Captain",
-      "page": 272,
+      "page": 270,
       "cr": "3",
       "warnings": []
     }

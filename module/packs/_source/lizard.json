@@ -1,6 +1,6 @@
 {
-  "_id": "j5btUPCMaJXrUOwJ",
-  "_key": "!actors!j5btUPCMaJXrUOwJ",
+  "_id": "nOeDgEfA8Q0MoRB9",
+  "_key": "!actors!nOeDgEfA8Q0MoRB9",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Lizard",
   "type": "npc",
@@ -35,23 +35,25 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 70,
+        "flat": 10,
         "formula": ""
       },
       "hp": {
         "value": 2,
         "max": 2,
-        "formula": "7d4",
+        "formula": "1d4",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 20,
+        "climb": 20
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 30
       },
       "init": {
         "ability": "dex",
@@ -68,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 0,
       "xp": {
-        "value": 1
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,7 +99,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None •"
+        "custom": ""
       }
     },
     "skills": {}
@@ -115,13 +117,13 @@
   },
   "items": [
     {
-      "_id": "jIPvs6oGZculmw0p",
-      "name": "Spider Climb",
+      "_id": "ylponKBEQfxFC6IY",
+      "name": "Escalada de Aranha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The lizard can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>",
+          "value": "<p>A criatura pode escalar superfícies difíceis, inclusive tetos, sem precisar fazer um teste de habilidade.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,16 +147,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!j5btUPCMaJXrUOwJ.jIPvs6oGZculmw0p"
+      "_key": "!actors.items!nOeDgEfA8Q0MoRB9.ylponKBEQfxFC6IY"
     },
     {
-      "_id": "zorPIFoQ68VeN0lD",
-      "name": "Bite",
+      "_id": "9nXUeLnVz69a3Oay",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo : +2, alcance 5 ft. Acerto: 7 Perfurante I de dano. 0 OCTOPUS MAMMOTH Huge Beast, Unaligned AC 13 lnitiativ e+2 (12) HP 126 (11d12 + 55) Speed 50 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 1,5 m. Acerto: 1 dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -171,21 +173,48 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "rI6E3bJoDia8axx7": {
+            "_id": "rI6E3bJoDia8axx7",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "2",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "toHit": 2,
+            "attackType": "melee"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!j5btUPCMaJXrUOwJ.zorPIFoQ68VeN0lD"
+      "_key": "!actors.items!nOeDgEfA8Q0MoRB9.9nXUeLnVz69a3Oay"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Lizard",
-      "page": 366,
+      "page": 364,
       "cr": "0",
       "warnings": []
     }

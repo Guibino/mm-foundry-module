@@ -1,6 +1,6 @@
 {
-  "_id": "Q9QpAm4vZVX3GIhY",
-  "_key": "!actors!Q9QpAm4vZVX3GIhY",
+  "_id": "PwlEYMx3km6wf6OM",
+  "_key": "!actors!PwlEYMx3km6wf6OM",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Tyrannosaurus Rex",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 136,
         "max": 136,
-        "formula": "13d12+ 52",
+        "formula": "13d12 + 52",
         "temp": null,
         "tempmax": null
       },
@@ -61,14 +61,14 @@
     "details": {
       "type": {
         "value": "beast",
-        "subtype": "Dinosa ur",
+        "subtype": "dinosaur",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Sem Tendência",
       "cr": 8,
       "xp": {
-        "value": 3900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,12 +97,12 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       }
     }
@@ -126,7 +126,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The tyrannosaurus makes one Bite attack and one Tail attack.</p>",
+          "value": "<p>The tyrannosaurus makes one Mordida attack and one Cauda attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,16 +151,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Q9QpAm4vZVX3GIhY.WjlZ1NgndzumL3sy"
+      "_key": "!actors.items!PwlEYMx3km6wf6OM.WjlZ1NgndzumL3sy"
     },
     {
-      "_id": "UPRI73VF2HvzpSaX",
-      "name": "Bite",
+      "_id": "sDxPBKWuOtusPv6Q",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 10 ft. Acerto: 33 (4d72 + 7) Perfurante de dano. If o alvo is a Large or smaller creature, it has the Agarrado condition (escape DC 17). While Agarrado, o alvo has the Impedido condition and can't be targeted by the tyrannosaurus's Tail.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 3 m. Acerto: 33 (4d12 + 7) dano perfurante. If o alvo is a Large or smaller creature, it fica com a condição Agarrado (CD para escapar 17). While Agarrado, o alvo fica com a condição Impedido and can't be targeted by the tyrannosaurus's Cauda.</p>",
           "chat": ""
         },
         "activation": {
@@ -178,8 +178,8 @@
           "subtype": ""
         },
         "activities": {
-          "Z0dfisczFO7XcpJm": {
-            "_id": "Z0dfisczFO7XcpJm",
+          "IsB7TYi1zi5MToeF": {
+            "_id": "IsB7TYi1zi5MToeF",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -201,7 +201,7 @@
               "parts": [
                 {
                   "number": 4,
-                  "denomination": 72,
+                  "denomination": 12,
                   "bonus": "7",
                   "types": [
                     "piercing"
@@ -226,22 +226,22 @@
           "mechanics": {
             "toHit": 10,
             "attackType": "melee",
-            "damageFormula": "4d72+7",
+            "damageFormula": "4d12+7",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Q9QpAm4vZVX3GIhY.UPRI73VF2HvzpSaX"
+      "_key": "!actors.items!PwlEYMx3km6wf6OM.sDxPBKWuOtusPv6Q"
     },
     {
-      "_id": "wBtnaNrcwhmsGgZY",
-      "name": "Tail",
+      "_id": "CCFw4DunpageuXDv",
+      "name": "Cauda",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 10, alcance 15 ft. Acerto: 25 (4d8 + 7) Concussão de dano. If o alvo is a Huge or smaller creature, it has the Caído condition. APPENDIX A I ANIMALS VENOMOUS SNAKE Tiny Beast, Una!tgned AC 12 Iniciativa +2 (12) HP 5 (2d4) Speed 30 ft., Swim 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 4,5 m. Acerto: 25 (4d8 + 7) dano de concussão. If o alvo is a Huge or smaller creature, it fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -258,24 +258,68 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "H9y9vUqs2RhcvrpU": {
+            "_id": "H9y9vUqs2RhcvrpU",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 8,
+                  "bonus": "7",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 10,
+            "attackType": "melee",
             "damageFormula": "4d8+7",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Q9QpAm4vZVX3GIhY.wBtnaNrcwhmsGgZY"
+      "_key": "!actors.items!PwlEYMx3km6wf6OM.CCFw4DunpageuXDv"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Tyrannosaurus Rex",
-      "page": 374,
+      "page": 372,
       "cr": "8",
       "warnings": []
     }

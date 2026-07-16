@@ -1,8 +1,8 @@
 {
-  "_id": "DCxHAP2YAF1p2f9o",
-  "_key": "!actors!DCxHAP2YAF1p2f9o",
+  "_id": "xRN6d2iCgC8hzV1i",
+  "_key": "!actors!xRN6d2iCgC8hzV1i",
   "folder": "bKQUPthn1V2Yu6Bn",
-  "name": "Death Cavaleiro",
+  "name": "Death Knight",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/death-knight.webp",
   "system": {
@@ -69,7 +69,7 @@
       "alignment": "Caótico e Mau",
       "cr": 17,
       "xp": {
-        "value": 18000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -79,9 +79,12 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
-        "value": [],
+        "value": [
+          "necrotic",
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
@@ -93,18 +96,22 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "exhaustion",
+          "frightened",
+          "poisoned"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Abissal, Comum"
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Death Cavaleiro",
+    "name": "Death Knight",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -122,7 +129,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the death knight fails a saving throw, it can choose to succeed instead.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,16 +158,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DCxHAP2YAF1p2f9o.iSlaKJF7hULl7yJ8"
+      "_key": "!actors.items!xRN6d2iCgC8hzV1i.iSlaKJF7hULl7yJ8"
     },
     {
-      "_id": "DvtK8911aVkhuZGW",
-      "name": "Magic Resistance",
+      "_id": "YaqanFRaqz0X3asE",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The death knight has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -184,7 +191,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DCxHAP2YAF1p2f9o.DvtK8911aVkhuZGW"
+      "_key": "!actors.items!xRN6d2iCgC8hzV1i.YaqanFRaqz0X3asE"
     },
     {
       "_id": "ni2bjdPTc5g13KAG",
@@ -193,7 +200,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Un dead creatures of the death knight's choice (excluding itself) in a 60-foot ~ma na- tion originating from it have Advantage on attack rolls and saving throws. It can't use this trait if it has the In- capacitated condition.</p>",
+          "value": "<p>Undead creatures of the death knight's choice (excluding itself) in a 18 m Emanation originating from it have Vantagem on attack rolls and saving throws. It can't use this trait if it fica com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -217,16 +224,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DCxHAP2YAF1p2f9o.ni2bjdPTc5g13KAG"
+      "_key": "!actors.items!xRN6d2iCgC8hzV1i.ni2bjdPTc5g13KAG"
     },
     {
-      "_id": "DOYLMChKdBig6DGk",
-      "name": "Undead Restoration",
+      "_id": "zgc7JfXwbqvESBH2",
+      "name": "Restauração Morta-Viva",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the death knight is destroyed before it atones for its evil, it gains a new body in 1d10 days, reviving with all its Pontos de Vida. The new body ap- pears in a location significant to the death knight.</p>",
+          "value": "<p>If the death knight is destroyed before it atones for its evil, it gains a new body in 1d10 days, reviving with all its Pontos de Vida. The new body appears in a location significant to the death knight.</p>",
           "chat": ""
         },
         "activation": {
@@ -250,7 +257,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DCxHAP2YAF1p2f9o.DOYLMChKdBig6DGk"
+      "_key": "!actors.items!xRN6d2iCgC8hzV1i.zgc7JfXwbqvESBH2"
     },
     {
       "_id": "Xz0BWMj8MRvdlBaH",
@@ -284,7 +291,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DCxHAP2YAF1p2f9o.Xz0BWMj8MRvdlBaH"
+      "_key": "!actors.items!xRN6d2iCgC8hzV1i.Xz0BWMj8MRvdlBaH"
     },
     {
       "_id": "liDrxdPxLXRHeAbQ",
@@ -293,7 +300,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ l l, alcance 5 ft. Acerto: 12 (2d6 + 5) Cortante de dano -plus 13 (3d8) Ne- crotic de dano. DEATH KNIGHTS 92 though their selfish souls eternally shackle them to their fates. Others, like the infamous death knight Lord Soth, brood in dismal ruins for centuries, rousing themselves to action only when something reignites their deathless evil. DEATH KNIGHT ASPIRANT When the leader of a villainous order rises as a death knight, their wicked devotees might join them in their cursed existence as death knight aspirants. These followers bear a measure of their leader's power and serve as they did in life, obediently fol- lowing the death knight's decrees and heralding its terrible will.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +11, alcance 1,5 m. Acerto: 12 (2d6 + 5) dano cortante mais 13 (3d8) dano necrótico.</p>",
           "chat": ""
         },
         "activation": {
@@ -310,27 +317,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "ZWbZW3b1X04osRFV": {
+            "_id": "ZWbZW3b1X04osRFV",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "11",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "5",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 11,
+            "attackType": "melee",
             "damageFormula": "2d6+5",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DCxHAP2YAF1p2f9o.liDrxdPxLXRHeAbQ"
+      "_key": "!actors.items!xRN6d2iCgC8hzV1i.liDrxdPxLXRHeAbQ"
     },
     {
       "_id": "wK4a7Hlkl9EUUT2Z",
-      "name": "Hellfire Orb (Recharge 5-6)",
+      "name": "Hellfire Orb (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 18, cada criatura in a 20-foot-radius Sphere centered on a point the death knight can see within l20feet. Falha: 35 (10d6) Fogo de dano plus 35 (10d6) Necrótico de dano. Sucesso: Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 18, cada criatura in a 6 m-radius Sphere centered on a point the death knight can see within 36 m. 35 (10d6) dano de fogo mais 35 (10d6) dano necrótico. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -374,25 +425,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 10,
-                  "denomination": 6,
-                  "bonus": "",
-                  "types": [
-                    "fire"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -400,24 +433,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "10d6",
-            "damageType": "fire",
             "saveDc": 18,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DCxHAP2YAF1p2f9o.wK4a7Hlkl9EUUT2Z"
+      "_key": "!actors.items!xRN6d2iCgC8hzV1i.wK4a7Hlkl9EUUT2Z"
     },
     {
-      "_id": "RTuxVfj1ORI5J1CT",
-      "name": "Parry",
+      "_id": "5j24Tbdo3t3Vqqkj",
+      "name": "Aparar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: The death knight is hit by a melee attack roll while holding a weapon. Response: The death knight adds 6 to its AC against that attack, possibly causing it to miss.</p>",
+          "value": "<p>The death knight is hit by a melee attack roll while holding a weapon. The death knight adds 6 to its AC against that attack, possibly causing it to miss.</p>",
           "chat": ""
         },
         "activation": {
@@ -442,7 +473,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DCxHAP2YAF1p2f9o.RTuxVfj1ORI5J1CT"
+      "_key": "!actors.items!xRN6d2iCgC8hzV1i.5j24Tbdo3t3Vqqkj"
     },
     {
       "_id": "CyLRgINjRlE0toyB",
@@ -451,7 +482,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The death knight uses Conjuração to cast Command. The death l~night can't take this action again until the start of its next turn.</p>",
+          "value": "<p>The death knight uses Conjuração to cast Command. The death knight can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -476,7 +507,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DCxHAP2YAF1p2f9o.CyLRgINjRlE0toyB"
+      "_key": "!actors.items!xRN6d2iCgC8hzV1i.CyLRgINjRlE0toyB"
     },
     {
       "_id": "9ewdXbG1luKhE7Bd",
@@ -485,7 +516,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição ?aving Throw: DC 18, one crea- ture the death knight can see within 120 feet. Falha: 17 (5d6) Necrótico de dano, and o alvo's Hit Point max- imum decreases by an amount equal to the dam~ge t~ken. Falha ou Sucesso: The death knight can't take this action again until the start of its next turn.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 18, uma criatura the death knight can see within 36 m. 17 (5d6) dano necrótico, and o alvo's Hit Point maximum decreases by an amount equal to the de dano taken. The death knight can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -502,18 +533,42 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "837oA0q5K4rXc1YY": {
+            "_id": "837oA0q5K4rXc1YY",
+            "type": "save",
+            "activation": {
+              "type": "legendary",
+              "value": 1,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "18"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "5d6",
-            "damageType": "necrotic"
+            "saveDc": 18,
+            "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DCxHAP2YAF1p2f9o.9ewdXbG1luKhE7Bd"
+      "_key": "!actors.items!xRN6d2iCgC8hzV1i.9ewdXbG1luKhE7Bd"
     },
     {
       "_id": "FhzWR5Vzp4AdW3ga",
@@ -522,7 +577,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The death knight moves up to half its Speed, and it makes one Dread Blade attack. DEATH KNIGHT ASPIRANT Medium or Small Undead, Chaotic f l)il AC 20 Iniciativa +4 (14) HP 178 (21d8 + 84) Sp eed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>The death knight moves up to half its Speed, and it makes one Dread Blade attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -547,7 +602,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DCxHAP2YAF1p2f9o.FhzWR5Vzp4AdW3ga"
+      "_key": "!actors.items!xRN6d2iCgC8hzV1i.FhzWR5Vzp4AdW3ga"
     },
     {
       "_id": "PtR6WdFI1ZeYU46n",
@@ -556,7 +611,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The death knight casts one of the follow- ing spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 18): À Vontade: Command, Phantom Steed 2/Dia: Destructive Wave (Necrótico), Dispel Magic</p>",
+          "value": "<p>The death knight casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 18):</p>",
           "chat": ""
         },
         "activation": {
@@ -581,13 +636,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DCxHAP2YAF1p2f9o.PtR6WdFI1ZeYU46n"
+      "_key": "!actors.items!xRN6d2iCgC8hzV1i.PtR6WdFI1ZeYU46n"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Death Knight",
-      "page": 94,
+      "page": 92,
       "cr": "17",
       "warnings": []
     }

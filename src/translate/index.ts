@@ -8,23 +8,24 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { paths } from "../config.js";
 import { makeLogger } from "../util/log.js";
-import { glossary, translateText, translateName } from "./glossary.js";
+import { glossary, translateText, translateName, translateEntryText } from "./glossary.js";
 import type { Monster, NamedText } from "../parse/schema.js";
 
 const log = makeLogger("translate");
 
 /** Traduz o nome de uma habilidade: usa frase oficial se existir, senao mantem. */
 function translateEntryName(name: string): string {
+  if (glossary.names?.[name]) return glossary.names[name]!;
   if (glossary.phrases[name]) return glossary.phrases[name]!;
   // remove sufixo de recarga/uso ja extraido; traduz tokens conhecidos
   return translateText(name);
 }
 
-function translateEntries(entries: NamedText[]): NamedText[] {
+function translateEntries(entries: NamedText[], monsterName: string): NamedText[] {
   return entries.map((e) => ({
     ...e,
     name: translateEntryName(e.name),
-    text: translateText(e.text),
+    text: translateEntryText(e.text, monsterName),
     // preserva o texto EN para deteccao de mecanica (to-hit/dano/CD) no normalize
     textEn: e.text,
   }));
@@ -39,14 +40,14 @@ async function main() {
     sizePt: glossary.sizes[m.size] ?? m.size,
     typePt: glossary.types[m.type] ?? m.type,
     description: m.description ? translateText(m.description) : undefined,
-    traits: translateEntries(m.traits),
-    actions: translateEntries(m.actions),
-    bonusActions: translateEntries(m.bonusActions),
-    reactions: translateEntries(m.reactions),
-    legendaryActions: translateEntries(m.legendaryActions),
-    mythicActions: translateEntries(m.mythicActions),
-    lairActions: translateEntries(m.lairActions),
-    regionalEffects: translateEntries(m.regionalEffects),
+    traits: translateEntries(m.traits, m.name),
+    actions: translateEntries(m.actions, m.name),
+    bonusActions: translateEntries(m.bonusActions, m.name),
+    reactions: translateEntries(m.reactions, m.name),
+    legendaryActions: translateEntries(m.legendaryActions, m.name),
+    mythicActions: translateEntries(m.mythicActions, m.name),
+    lairActions: translateEntries(m.lairActions, m.name),
+    regionalEffects: translateEntries(m.regionalEffects, m.name),
     legendaryIntro: m.legendaryIntro ? translateText(m.legendaryIntro) : undefined,
     mythicIntro: m.mythicIntro ? translateText(m.mythicIntro) : undefined,
     spellcasting: m.spellcasting

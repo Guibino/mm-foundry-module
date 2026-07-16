@@ -1,6 +1,6 @@
 {
-  "_id": "XufwhsxefH2RyVov",
-  "_key": "!actors!XufwhsxefH2RyVov",
+  "_id": "N7y24yR6rNiAnerC",
+  "_key": "!actors!N7y24yR6rNiAnerC",
   "folder": "IQP9BfRMl9yEsYGp",
   "name": "Guardian Naga",
   "type": "npc",
@@ -35,13 +35,13 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 18,
         "formula": ""
       },
       "hp": {
         "value": 136,
         "max": 136,
-        "formula": "l 6d1 0 + 48",
+        "formula": "16d10 + 48",
         "temp": null,
         "tempmax": null
       },
@@ -53,7 +53,8 @@
         "swim": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -68,9 +69,9 @@
         "custom": ""
       },
       "alignment": "Leal e Bom",
-      "cr": 0,
+      "cr": 10,
       "xp": {
-        "value": 5900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -99,16 +100,30 @@
         "value": [
           "charmed",
           "paralyzed",
-          "poisoned"
+          "poisoned",
+          "restrained"
         ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Celestial, Comum"
       }
     },
-    "skills": {}
+    "skills": {
+      "arc": {
+        "value": 2,
+        "ability": "int"
+      },
+      "his": {
+        "value": 2,
+        "ability": "int"
+      },
+      "rel": {
+        "value": 2,
+        "ability": "int"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Guardian Naga",
@@ -129,7 +144,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the naga dies, it returns to life in 1d6 days and regains all its Pontos de Vida unless Dispel E11il and Good is cast on its remains.</p>",
+          "value": "<p>If the naga dies, it returns to life in 1d6 days and regains all its Pontos de Vida unless Dispel Evil and Good is cast on its remains.</p>",
           "chat": ""
         },
         "activation": {
@@ -153,7 +168,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!XufwhsxefH2RyVov.2emJuKw79U8YZTUm"
+      "_key": "!actors.items!N7y24yR6rNiAnerC.2emJuKw79U8YZTUm"
     },
     {
       "_id": "O81TSkn0zbi1rZEp",
@@ -162,7 +177,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The naga makes two Bite attacks. It can replace any attack with a use of Venenoous Spittle.</p>",
+          "value": "<p>The naga makes two Mordida attacks. It can replace any attack with a use of Poisonous Spittle.</p>",
           "chat": ""
         },
         "activation": {
@@ -187,16 +202,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!XufwhsxefH2RyVov.O81TSkn0zbi1rZEp"
+      "_key": "!actors.items!N7y24yR6rNiAnerC.O81TSkn0zbi1rZEp"
     },
     {
-      "_id": "ssiUH70MqDaR9GFT",
-      "name": "Bite",
+      "_id": "gBkty3WWS69nnToH",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 10 ft. Acerto: 17 (2d12 + 4) Perfurante de dano plus 22 (4d1 0) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 3 m. Acerto: 17 (2d12 + 4) dano perfurante mais 22 (4d10) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -214,8 +229,8 @@
           "subtype": ""
         },
         "activities": {
-          "5HQowN89ZD0PBX5s": {
-            "_id": "5HQowN89ZD0PBX5s",
+          "g5QDSyDvvqOkiho2": {
+            "_id": "g5QDSyDvvqOkiho2",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -268,16 +283,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!XufwhsxefH2RyVov.ssiUH70MqDaR9GFT"
+      "_key": "!actors.items!N7y24yR6rNiAnerC.gBkty3WWS69nnToH"
     },
     {
-      "_id": "0dMjzjjnlsj1PYXL",
-      "name": "Venenoous Spittle",
+      "_id": "FSxzUxEoAxO4Hrht",
+      "name": "Poisonous Spittle",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 16, uma criatura the naga can see within 60 feet. Falha: 31 (7d8) Veneno de dano, and o alvo has the Cego condition until the start of the naga's next turn. Sucesso: Metade do dano only.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 16, uma criatura the naga can see within 18 m. 31 (7d8) dano de veneno, and o alvo fica com a condição Cego until the start of the naga's next turn. Metade do dano only.</p>",
           "chat": ""
         },
         "activation": {
@@ -295,8 +310,8 @@
           "subtype": ""
         },
         "activities": {
-          "iRJ2dcvFsyYOGi3Q": {
-            "_id": "iRJ2dcvFsyYOGi3Q",
+          "4WPhnDmVOPAlstxp": {
+            "_id": "4WPhnDmVOPAlstxp",
             "type": "save",
             "activation": {
               "type": "action",
@@ -315,25 +330,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 7,
-                  "denomination": 8,
-                  "bonus": "",
-                  "types": [
-                    "poison"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -341,15 +338,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "7d8",
-            "damageType": "poison",
             "saveDc": 16,
             "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!XufwhsxefH2RyVov.0dMjzjjnlsj1PYXL"
+      "_key": "!actors.items!N7y24yR6rNiAnerC.FSxzUxEoAxO4Hrht"
     },
     {
       "_id": "UbacaNkh1WAQd83b",
@@ -358,7 +353,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The naga casts one of the following spells, requiring no Somatic or Material components and using Sabedoria as the spellcasting ability (spell u save DC 16): À Vontade: Thaumaturgy ex z 1/Dia Each: Clair11oyance, Cure Wounds (level 6 version), _J • Flame Strike (level 6 version), Geas, True Seeing G U ARDIAN NA GA Enduring Serpentine Lore J(eeper</p>",
+          "value": "<p>The naga casts one of the following spells, requiring no Somatic or Material components and using Sabedoria as the spellcasting ability (spell save CD 16):</p>",
           "chat": ""
         },
         "activation": {
@@ -383,14 +378,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!XufwhsxefH2RyVov.UbacaNkh1WAQd83b"
+      "_key": "!actors.items!N7y24yR6rNiAnerC.UbacaNkh1WAQd83b"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Guardian Naga",
-      "page": 163,
-      "cr": "0",
+      "page": 161,
+      "cr": "10",
       "warnings": []
     }
   }

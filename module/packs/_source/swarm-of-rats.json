@@ -1,8 +1,8 @@
 {
-  "_id": "5srFGBIXraZVQR4d",
-  "_key": "!actors!5srFGBIXraZVQR4d",
+  "_id": "AGn3LDQT6Jz05cce",
+  "_key": "!actors!AGn3LDQT6Jz05cce",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Enxame Of Rats",
+  "name": "Swarm of Rats",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/swarm-of-rats.webp",
   "system": {
@@ -13,7 +13,7 @@
       },
       "dex": {
         "value": 11,
-        "proficient": 1
+        "proficient": 0
       },
       "con": {
         "value": 9,
@@ -52,7 +52,8 @@
         "climb": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 30
       },
       "init": {
         "ability": "dex",
@@ -69,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,18 +98,27 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed",
+          "frightened",
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "prone",
+          "restrained",
+          "stunned"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Enxame Of Rats",
+    "name": "Swarm of Rats",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -120,8 +130,8 @@
   },
   "items": [
     {
-      "_id": "XxFyeCQJgazF9tmF",
-      "name": "Swarm",
+      "_id": "dImVfkkja2Jxqc06",
+      "name": "Enxame",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -150,16 +160,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!5srFGBIXraZVQR4d.XxFyeCQJgazF9tmF"
+      "_key": "!actors.items!AGn3LDQT6Jz05cce.dImVfkkja2Jxqc06"
     },
     {
-      "_id": "U3lQB5Tq7YPaJV9d",
-      "name": "Bites",
+      "_id": "5oQDSJeof7aaSITs",
+      "name": "Mordidas",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 5 ft. Acerto: 5 (2d4) Perfurante de dano, or 2 (1d4) Perfurante de dano if the swarm is Bloodied. S W AR M OF R AV ENS SWARM OF RAVENS Medium S warm of Tiny Beasts, Unaligned AC 12 Iniciativa +2 (12) HP ll (2d8 + 2) Speed l 0 ft., Fly 50 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 1,5 m. Acerto: 5 (2d4) dano perfurante, or 2 (1d4) dano perfurante if the swarm is Bloodied.</p>",
           "chat": ""
         },
         "activation": {
@@ -177,8 +187,8 @@
           "subtype": ""
         },
         "activities": {
-          "dddyGtFnoIxYhIy3": {
-            "_id": "dddyGtFnoIxYhIy3",
+          "iIvZfngBjAx7sPNs": {
+            "_id": "iIvZfngBjAx7sPNs",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -231,13 +241,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!5srFGBIXraZVQR4d.U3lQB5Tq7YPaJV9d"
+      "_key": "!actors.items!AGn3LDQT6Jz05cce.5oQDSJeof7aaSITs"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Swarm of Rats",
-      "page": 372,
+      "page": 370,
       "cr": "1/4",
       "warnings": []
     }

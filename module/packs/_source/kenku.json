@@ -1,6 +1,6 @@
 {
-  "_id": "ReaMsfWizSYaj6Os",
-  "_key": "!actors!ReaMsfWizSYaj6Os",
+  "_id": "4r2nW3d063HusCB4",
+  "_key": "!actors!4r2nW3d063HusCB4",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Kenku",
   "type": "npc",
@@ -69,7 +69,7 @@
       "alignment": "Neutro",
       "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -129,13 +129,13 @@
   },
   "items": [
     {
-      "_id": "bKxNFIZ3WqMFylb4",
-      "name": "Mimicry",
+      "_id": "Tz8gp4tOrEO7akYi",
+      "name": "Mímica",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The kenku can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC 14 Sabedoria (Insight) check.</p>",
+          "value": "<p>The kenku can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful CD 14 Sabedoria (Insight) check.</p>",
           "chat": ""
         },
         "activation": {
@@ -162,7 +162,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ReaMsfWizSYaj6Os.bKxNFIZ3WqMFylb4"
+      "_key": "!actors.items!4r2nW3d063HusCB4.Tz8gp4tOrEO7akYi"
     },
     {
       "_id": "yNx5hjwMnEgbSQLD",
@@ -171,7 +171,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +5, alcance 5 ft. or range 60 ft. Acerto: 6 (1d6 + 3) Necrótico de dano. Hit or Erro: The blade magically returns to the kenku's hand immediately after a ranged attack.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +5, alcance 1,5 m. or distância 18 m. Acerto: 6 (1d6 + 3) dano necrótico. The blade magically returns to the kenku's hand immediately after a ranged attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -243,20 +243,20 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ReaMsfWizSYaj6Os.yNx5hjwMnEgbSQLD"
+      "_key": "!actors.items!4r2nW3d063HusCB4.yNx5hjwMnEgbSQLD"
     },
     {
-      "_id": "Btza2tt1ha2k03O9",
-      "name": "Habilidade",
+      "_id": "xBOcwrfd4fQDuhfg",
+      "name": "Conjuração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>__J Eldritch Lantern (Recarga 4-6). The kenku casts Faerie Fogo, using Inteligência as the spellcasting ability (spell save DC 10). KNIGHT Medium or Small Humanoid, Neutral AC 18 In iti ative +O (l 0) HP 52 (8d8 + 16) Spe ed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>The kenku casts Faerie Fogo, using Inteligência as the spellcasting ability (spell save CD 10).</p>",
           "chat": ""
         },
         "activation": {
-          "type": "bonus",
+          "type": "action",
           "value": null,
           "condition": ""
         },
@@ -277,13 +277,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ReaMsfWizSYaj6Os.Btza2tt1ha2k03O9"
+      "_key": "!actors.items!4r2nW3d063HusCB4.xBOcwrfd4fQDuhfg"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Kenku",
-      "page": 185,
+      "page": 183,
       "cr": "1/4",
       "warnings": []
     }

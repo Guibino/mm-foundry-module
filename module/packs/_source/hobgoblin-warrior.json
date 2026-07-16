@@ -1,8 +1,8 @@
 {
-  "_id": "9hcpJbwOMRDhBGl5",
-  "_key": "!actors!9hcpJbwOMRDhBGl5",
+  "_id": "eiAOIbt0IyIzZqt8",
+  "_key": "!actors!eiAOIbt0IyIzZqt8",
   "folder": "inkH4oLnh3yP5W9M",
-  "name": "Hobgoblin Guerreiro",
+  "name": "Hobgoblin Warrior",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/hobgoblin-warrior.webp",
   "system": {
@@ -62,14 +62,14 @@
     "details": {
       "type": {
         "value": "fey",
-        "subtype": "G oblinoid",
+        "subtype": "goblinoid",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Mau",
-      "cr": 1,
+      "cr": 0.5,
       "xp": {
-        "value": 100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -104,7 +104,7 @@
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Hobgoblin Guerreiro",
+    "name": "Hobgoblin Warrior",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -116,13 +116,13 @@
   },
   "items": [
     {
-      "_id": "H67suVN8QiHa6l8N",
-      "name": "Pack Tactics",
+      "_id": "e1tPrmBGmCAZNYIb",
+      "name": "Táticas de Matilha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The hobgoblin has Advantage on an attack roll against a creature if at least one of the hob- goblin's allies is within 5 feet of the creature and the ally doesn't have the Incapacitado condition.</p>",
+          "value": "<p>A criatura tem Vantagem em uma rolagem de ataque contra uma criatura se pelo menos um dos aliados dela estiver a até 1,5 m do alvo e esse aliado não estiver com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +146,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9hcpJbwOMRDhBGl5.H67suVN8QiHa6l8N"
+      "_key": "!actors.items!eiAOIbt0IyIzZqt8.e1tPrmBGmCAZNYIb"
     },
     {
-      "_id": "IPQ1P5Ek0ao1Z1dI",
-      "name": "Longsword",
+      "_id": "lMRM3gvsTnOD3XTQ",
+      "name": "Espada Longa",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 12 (2d10 + 1) Cortante de dano. • Longbow. Rolagem de Ataque à Distância: +3, range 150/600 ft. <{ Vl Acerto: 5 (1d8 + 1) Perfurante de dano plus 7 (3d4) Poi- V) son de dano. ~ ;::: HOBGOBLIN W ARRIOR Hobgoblin warriors mjght hunt and raid alone or with trained mastiffs, worgs, goblin gangs, or other allies. They employ simple tactics and exploit every advantage their allies provide. They willingly sacri- fice companions in their pursuit of victory. HOBGOBLIN CAPTAIN Hobgoblin _ captains are battlefield tacticians. They lead their allies to victory by employing martial skill and rallying others with orders and threats. Hobgoblin captains usually oversee hobgoblin battle groups or gangs of weaker monsters. H O B GOBL IN WAR LO RD Hobgoblin warlords lead armies of hobgoblins and their allies, using their experience and strategic minds to command amjd the ebb and flow of battle. H O B GO BL IN WA R FARE The drive to subjugate and pillage is part of hob- goblins' supernatural nature, though a few might repress their warlike tendencies or turn them to HOBGOBLIN CAPTAIN Medium Fey (Gohlinoid), Lawful Evil AC 17 Iniciativa +4 (14) HP 58 (9d8 + 78) Speed 30 ft . MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 12 (2d10 + 1) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -173,8 +173,8 @@
           "subtype": ""
         },
         "activities": {
-          "r25mYRzp4Zl0yaFh": {
-            "_id": "r25mYRzp4Zl0yaFh",
+          "EKKsyImMOFyGVG1E": {
+            "_id": "EKKsyImMOFyGVG1E",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -227,14 +227,95 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9hcpJbwOMRDhBGl5.IPQ1P5Ek0ao1Z1dI"
+      "_key": "!actors.items!eiAOIbt0IyIzZqt8.lMRM3gvsTnOD3XTQ"
+    },
+    {
+      "_id": "CF4dUShvm1b86xVs",
+      "name": "Arco Longo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +3, distância 45/180 m. Acerto: 5 (1d8 + 1) dano perfurante mais 7 (3d4) dano de veneno.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "IpwccigOzO7IzmcC": {
+            "_id": "IpwccigOzO7IzmcC",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "3",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "1",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 3,
+            "attackType": "ranged",
+            "damageFormula": "1d8+1",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!eiAOIbt0IyIzZqt8.CF4dUShvm1b86xVs"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Hobgoblin Warrior",
-      "page": 172,
-      "cr": "1",
+      "page": 170,
+      "cr": "1/2",
       "warnings": []
     }
   }

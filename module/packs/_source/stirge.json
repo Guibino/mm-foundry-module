@@ -1,6 +1,6 @@
 {
-  "_id": "WF85lnnWIrybBTEc",
-  "_key": "!actors!WF85lnnWIrybBTEc",
+  "_id": "HibXwdRNoTPPMN7i",
+  "_key": "!actors!HibXwdRNoTPPMN7i",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Stirge",
   "type": "npc",
@@ -48,7 +48,8 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 10,
+        "fly": 40
       },
       "senses": {
         "units": "ft",
@@ -69,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 0.125,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -122,7 +123,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 6 (1d6 + 3) Perfurante de dano, and the stirge attaches to o alvo. While attached, the stirge can't make Proboscis attacks, and o alvo takes 5 (2d4) Necrótico de dano at the start of each of the stirge's turns. The stirge can detach itself by spending 5 feet of its u.J 1- movement. The target or a -creature within 5 feet of it 0 can detach the stirge as an action. SWARM OF STIRGES Medium Swarm of Tiny Monstrosities, Unaligned AC 14 Iniciativa +3 (13) HP 36 (8d8) Speed 10 ft., Fly 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 6 (1d6 + 3) dano perfurante, and the stirge attaches to o alvo. While attached, the stirge can't make Proboscis attacks, and o alvo takes 5 (2d4) dano necrótico at the start of each of the stirge's turns.\nThe stirge can detach itself by spending 1,5 m of its movement. O alvo or uma criatura within 1,5 m of it can detach the stirge as an action.</p>",
           "chat": ""
         },
         "activation": {
@@ -194,13 +195,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!WF85lnnWIrybBTEc.M2s2z8iA0wKMQBhe"
+      "_key": "!actors.items!HibXwdRNoTPPMN7i.M2s2z8iA0wKMQBhe"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Stirge",
-      "page": 301,
+      "page": 299,
       "cr": "1/8",
       "warnings": []
     }

@@ -1,6 +1,6 @@
 {
-  "_id": "tfx2O1Jl1aPKhQ5h",
-  "_key": "!actors!tfx2O1Jl1aPKhQ5h",
+  "_id": "ol8CFKsCYUhFJLWk",
+  "_key": "!actors!ol8CFKsCYUhFJLWk",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Bulette Pup",
   "type": "npc",
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 76,
+        "flat": 16,
         "formula": ""
       },
       "hp": {
@@ -71,7 +71,7 @@
       "alignment": "Sem Tendência",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -100,7 +100,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {
@@ -123,13 +123,13 @@
   },
   "items": [
     {
-      "_id": "YZgZcM2H9sMlQ8kh",
-      "name": "Bite",
+      "_id": "iRkZqhEhFIn2ODBF",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 74 (2d10 + 3) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 14 (2d10 + 3) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,8 +147,8 @@
           "subtype": ""
         },
         "activities": {
-          "TSY6IPps4WtR1Nd5": {
-            "_id": "TSY6IPps4WtR1Nd5",
+          "q1SqY1qIOS8bx22r": {
+            "_id": "q1SqY1qIOS8bx22r",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -201,16 +201,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!tfx2O1Jl1aPKhQ5h.YZgZcM2H9sMlQ8kh"
+      "_key": "!actors.items!ol8CFKsCYUhFJLWk.iRkZqhEhFIn2ODBF"
     },
     {
-      "_id": "J2rOL66A6EPREggw",
-      "name": "Leap",
+      "_id": "1hkMsu4wtxsWu4PK",
+      "name": "Salto",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The bulette jumps up to 30 feet by spending 10. feet of movement. -'----------\" ---------- B_U_ L_E_T_ :,. _____, E~ B U LLYWUGS Amphibious Appreciators of Marsh and Muck</p>",
+          "value": "<p>A criatura salta até 9 m gastando 3 m de movimento.</p>",
           "chat": ""
         },
         "activation": {
@@ -235,13 +235,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!tfx2O1Jl1aPKhQ5h.J2rOL66A6EPREggw"
+      "_key": "!actors.items!ol8CFKsCYUhFJLWk.1hkMsu4wtxsWu4PK"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Bulette Pup",
-      "page": 65,
+      "page": 63,
       "cr": "2",
       "warnings": []
     }

@@ -1,6 +1,6 @@
 {
-  "_id": "fXHKpoRI3zMzr6PR",
-  "_key": "!actors!fXHKpoRI3zMzr6PR",
+  "_id": "jeeKnjDdO2iiyl3G",
+  "_key": "!actors!jeeKnjDdO2iiyl3G",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Baboon",
   "type": "npc",
@@ -16,7 +16,7 @@
         "proficient": 0
       },
       "con": {
-        "value": 77,
+        "value": 11,
         "proficient": 0
       },
       "int": {
@@ -41,13 +41,14 @@
       "hp": {
         "value": 3,
         "max": 3,
-        "formula": "7d6",
+        "formula": "1d6",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 30,
         "climb": 30
       },
       "senses": {
@@ -68,7 +69,7 @@
       "alignment": "Sem Tendência",
       "cr": 0,
       "xp": {
-        "value": 70
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,7 +98,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
@@ -115,13 +116,13 @@
   },
   "items": [
     {
-      "_id": "s4McTjQOplJC6A01",
-      "name": "Pack Tactics",
+      "_id": "wf18b1qjAA0pVcYD",
+      "name": "Táticas de Matilha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The baboon has Advantage on an attack roll against a creature if at least one of the baboon's allies is within 5 feet of the creature and the ally doesn't have the Incapacitado condition.</p>",
+          "value": "<p>A criatura tem Vantagem em uma rolagem de ataque contra uma criatura se pelo menos um dos aliados dela estiver a até 1,5 m do alvo e esse aliado não estiver com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,16 +146,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!fXHKpoRI3zMzr6PR.s4McTjQOplJC6A01"
+      "_key": "!actors.items!jeeKnjDdO2iiyl3G.wf18b1qjAA0pVcYD"
     },
     {
-      "_id": "8cDPG4YTMmf8dLUC",
-      "name": "Habilidade",
+      "_id": "uMzLLYoiJzTeeJj0",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Q_ Bite. Rolagem de Ataque Corpo a Corpo: + l, alcance 5 ft. Acerto: l (1d4 - l) 0.. Perfurante de dano. BADGER T iny Beast, u·naligned AC 17 Iniciativa +0 (l 0) HP 5 (1d4 + 3) Sp eed 20 ft., Burrow 5 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +1, alcance 1,5 m. Acerto: 1 (1d4 - 1) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -171,21 +172,68 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "93y0XtuAwFYNOF34": {
+            "_id": "93y0XtuAwFYNOF34",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "1",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "-1",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "toHit": 1,
+            "attackType": "melee",
+            "damageFormula": "1d4-1",
+            "damageType": "piercing"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!fXHKpoRI3zMzr6PR.8cDPG4YTMmf8dLUC"
+      "_key": "!actors.items!jeeKnjDdO2iiyl3G.uMzLLYoiJzTeeJj0"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Baboon",
-      "page": 351,
+      "page": 349,
       "cr": "0",
       "warnings": []
     }

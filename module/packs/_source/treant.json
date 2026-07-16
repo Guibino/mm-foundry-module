@@ -1,6 +1,6 @@
 {
-  "_id": "mhWw5YKXGnMDoePk",
-  "_key": "!actors!mhWw5YKXGnMDoePk",
+  "_id": "SP0BlHFjpnc6Gge8",
+  "_key": "!actors!SP0BlHFjpnc6Gge8",
   "folder": "UIhMG4gNrr0aGWHc",
   "name": "Treant",
   "type": "npc",
@@ -68,7 +68,7 @@
       "alignment": "Caótico e Bom",
       "cr": 9,
       "xp": {
-        "value": 5000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -91,8 +91,10 @@
         "custom": ""
       },
       "dv": {
-        "value": [],
-        "custom": "Fi re"
+        "value": [
+          "fire"
+        ],
+        "custom": ""
       },
       "ci": {
         "value": [],
@@ -118,13 +120,13 @@
   },
   "items": [
     {
-      "_id": "CciWKkSTxQDCL3Qd",
-      "name": "Siege Monster",
+      "_id": "SZXUFxBkWOb0luOZ",
+      "name": "Monstro de Cerco",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The treant deals double da ·mage to ob- jects and structures.</p>",
+          "value": "<p>A criatura causa o dobro de dano a objetos e estruturas.</p>",
           "chat": ""
         },
         "activation": {
@@ -148,7 +150,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!mhWw5YKXGnMDoePk.CciWKkSTxQDCL3Qd"
+      "_key": "!actors.items!SP0BlHFjpnc6Gge8.SZXUFxBkWOb0luOZ"
     },
     {
       "_id": "xJyMKNAdgttia9aw",
@@ -157,7 +159,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The treant makes two Slam attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Pancada.</p>",
           "chat": ""
         },
         "activation": {
@@ -182,16 +184,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!mhWw5YKXGnMDoePk.xJyMKNAdgttia9aw"
+      "_key": "!actors.items!SP0BlHFjpnc6Gge8.xJyMKNAdgttia9aw"
     },
     {
-      "_id": "vPCXHO37RF1CeiSX",
-      "name": "Slam",
+      "_id": "VEPN2gGFKV5YNCGd",
+      "name": "Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: + l 0, alcance 5 ft. Acerto: 16 (3d6 + 6) Concussão de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 1,5 m. Acerto: 16 (3d6 + 6) dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
@@ -208,18 +210,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "aNrxQkUuqULJsCOF": {
+            "_id": "aNrxQkUuqULJsCOF",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 6,
+                  "bonus": "6",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 10,
+            "attackType": "melee",
             "damageFormula": "3d6+6",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!mhWw5YKXGnMDoePk.vPCXHO37RF1CeiSX"
+      "_key": "!actors.items!SP0BlHFjpnc6Gge8.VEPN2gGFKV5YNCGd"
     },
     {
       "_id": "5t2fxUpx6qr0bcXC",
@@ -228,7 +274,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância:+ l 0, range 180 ft. Acerto: 28 (4d10 + 6) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +10, distância 54 m. Acerto: 28 (4d10 + 6) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -245,18 +291,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "l2jIu4Ras0eiUjDa": {
+            "_id": "l2jIu4Ras0eiUjDa",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 10,
+                  "bonus": "6",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 10,
+            "attackType": "ranged",
             "damageFormula": "4d10+6",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!mhWw5YKXGnMDoePk.5t2fxUpx6qr0bcXC"
+      "_key": "!actors.items!SP0BlHFjpnc6Gge8.5t2fxUpx6qr0bcXC"
     },
     {
       "_id": "gDdur5J3qdbqWDly",
@@ -265,7 +355,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The treant magically animates up to two trees it can see within 60 feet of itself. Each tree uses the Treant stat block, except it has Inteligência and Carisma scores of l, it can't speak, and it lacks this action. The tree takes its turn immediately after the treant on the same Iniciativa count, and it obeys the tre- .....J UJ ant. A tree remains animate for l day or until it dies, the treant dies, or it is more than 120 feet from the treant. 0 oJ The tree then takes root if possible. 0 er: TROGLODYTE Reeking Subterranean Hunter</p>",
+          "value": "<p>The treant magically animates up to two trees it can see within 18 m of itself. Each tree uses the Treant stat block, except it has Inteligência and Carisma scores of 1, it can't speak, and it lacks this action. The tree takes its turn immediately after the treant on the same Iniciativa count, and it obeys the treant. A tree remains animate for 1 day or until it dies, the treant dies, or it is more than 36 m from the treant. The tree then takes root if possible.</p>",
           "chat": ""
         },
         "activation": {
@@ -295,13 +385,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!mhWw5YKXGnMDoePk.gDdur5J3qdbqWDly"
+      "_key": "!actors.items!SP0BlHFjpnc6Gge8.gDdur5J3qdbqWDly"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Treant",
-      "page": 310,
+      "page": 308,
       "cr": "9",
       "warnings": []
     }

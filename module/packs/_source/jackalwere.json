@@ -1,6 +1,6 @@
 {
-  "_id": "rJ8bok3YeSndnNjr",
-  "_key": "!actors!rJ8bok3YeSndnNjr",
+  "_id": "66wnyRsYqPd8bD9U",
+  "_key": "!actors!66wnyRsYqPd8bD9U",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Jackalwere",
   "type": "npc",
@@ -8,23 +8,23 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 10,
+        "value": 11,
         "proficient": 0
       },
       "dex": {
-        "value": 10,
+        "value": 15,
         "proficient": 0
       },
       "con": {
-        "value": 10,
+        "value": 12,
         "proficient": 0
       },
       "int": {
-        "value": 10,
+        "value": 13,
         "proficient": 0
       },
       "wis": {
-        "value": 10,
+        "value": 11,
         "proficient": 0
       },
       "cha": {
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 12,
         "formula": ""
       },
       "hp": {
@@ -67,9 +67,9 @@
         "custom": ""
       },
       "alignment": "Caótico e Mau",
-      "cr": 0,
+      "cr": 0.5,
       "xp": {
-        "value": 100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -111,7 +111,7 @@
         "ability": "wis"
       },
       "ste": {
-        "value": 2,
+        "value": 1,
         "ability": "dex"
       }
     }
@@ -129,13 +129,13 @@
   },
   "items": [
     {
-      "_id": "Utz40jL10cW8vFbW",
-      "name": "Pack Tactics",
+      "_id": "gwYAMusa5gO3icR9",
+      "name": "Táticas de Matilha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The jackalwere has Advantage on an attack roll against a creature if at least one of the jackalwere's allies is within 5 feet of the creature and the ally doesn't have the Incapacitado condition.</p>",
+          "value": "<p>A criatura tem Vantagem em uma rolagem de ataque contra uma criatura se pelo menos um dos aliados dela estiver a até 1,5 m do alvo e esse aliado não estiver com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -159,7 +159,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!rJ8bok3YeSndnNjr.Utz40jL10cW8vFbW"
+      "_key": "!actors.items!66wnyRsYqPd8bD9U.gwYAMusa5gO3icR9"
     },
     {
       "_id": "qE0TryPzuOnTFuEp",
@@ -168,7 +168,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The jackalwere makes two Rend or Slam attacks. 18~ JACKALWERE ] ACKALWERE Shape-Shifting Trickster of the Wilds</p>",
+          "value": "<p>The jackalwere makes two Dilacerar or Pancada attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -193,17 +193,278 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!rJ8bok3YeSndnNjr.qE0TryPzuOnTFuEp"
+      "_key": "!actors.items!66wnyRsYqPd8bD9U.qE0TryPzuOnTFuEp"
+    },
+    {
+      "_id": "yA7QJxSN8DW10Vai",
+      "name": "Dilacerar",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano perfurante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "IriV2xMDsaBtoXLg": {
+            "_id": "IriV2xMDsaBtoXLg",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "1d6+2",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!66wnyRsYqPd8bD9U.yA7QJxSN8DW10Vai"
+    },
+    {
+      "_id": "KCr0xoQvQLdRXjL1",
+      "name": "Pancada",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 4 (1d4 + 2) dano de concussão.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "zdKooYwMwWUcg2tt": {
+            "_id": "zdKooYwMwWUcg2tt",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "1d4+2",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!66wnyRsYqPd8bD9U.KCr0xoQvQLdRXjL1"
+    },
+    {
+      "_id": "eDr7TRJmi3gswhJP",
+      "name": "Sleep Gaze (Recharge 5)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Sabedoria: CD 10, uma criatura the jackalwere can see within 9 m (Constructs and Undead succeed automatically). O alvo fica com a condição Inconsciente for 10 minutes or until it takes de dano or uma criatura within 1,5 m of it takes an action to wake it. O alvo is immune to this jackalwere's Sleep Gaze for 24 hours.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "MUjWm0uzVqcRKKaj": {
+            "_id": "MUjWm0uzVqcRKKaj",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "10"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 10,
+            "saveAbility": "wis"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!66wnyRsYqPd8bD9U.eDr7TRJmi3gswhJP"
+    },
+    {
+      "_id": "hdxGRzAfHabZa4Ph",
+      "name": "Mudar de Forma",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The jackalwere shape-shifts into a Medium human or a Medium jackal-humanoid hybrid, or it returns to its true form (that of a Small jackal). Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!66wnyRsYqPd8bD9U.hdxGRzAfHabZa4Ph"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Jackalwere",
-      "page": 184,
-      "cr": "0",
-      "warnings": [
-        "Atributos nao reconhecidos"
-      ]
+      "page": 182,
+      "cr": "1/2",
+      "warnings": []
     }
   }
 }

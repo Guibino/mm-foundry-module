@@ -1,6 +1,6 @@
 {
-  "_id": "9SZKvPAWfI7ijXkF",
-  "_key": "!actors!9SZKvPAWfI7ijXkF",
+  "_id": "k3SXik20MV5QHaLo",
+  "_key": "!actors!k3SXik20MV5QHaLo",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Tough Boss",
   "type": "npc",
@@ -47,7 +47,8 @@
       },
       "movement": {
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "walk": 30
       },
       "senses": {
         "units": "ft"
@@ -67,7 +68,7 @@
       "alignment": "Neutro",
       "cr": 4,
       "xp": {
-        "value": 1
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -77,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -96,7 +97,7 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Common plus one other language"
       }
     },
     "skills": {}
@@ -114,13 +115,13 @@
   },
   "items": [
     {
-      "_id": "Sh25HkPzeJ4k50FW",
-      "name": "Pack Tactics",
+      "_id": "TExtEL4SN3vtpYPl",
+      "name": "Táticas de Matilha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The tough has Advantage on an attack roll against a creature if at least one of the tough's allies is within 5 feet of the creature and the ally doesn't have the Incapacitado condition.</p>",
+          "value": "<p>A criatura tem Vantagem em uma rolagem de ataque contra uma criatura se pelo menos um dos aliados dela estiver a até 1,5 m do alvo e esse aliado não estiver com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -144,7 +145,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9SZKvPAWfI7ijXkF.Sh25HkPzeJ4k50FW"
+      "_key": "!actors.items!k3SXik20MV5QHaLo.TExtEL4SN3vtpYPl"
     },
     {
       "_id": "bQxlspyiRRRPMSyh",
@@ -153,7 +154,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The tough makes two attacks, using War- hammer or Heavy Crossbow in any combination.</p>",
+          "value": "<p>The tough makes two attacks, using Martelo de Guerra or Besta Pesada in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -178,16 +179,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9SZKvPAWfI7ijXkF.bQxlspyiRRRPMSyh"
+      "_key": "!actors.items!k3SXik20MV5QHaLo.bQxlspyiRRRPMSyh"
     },
     {
-      "_id": "jTb2WBFQgWLudJfL",
-      "name": "Warhammer",
+      "_id": "gg9XaA9mK6SaID5Y",
+      "name": "Martelo de Guerra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 12 (2d8 + 3) Concussão de dano. If o alvo is a Large or smaller creature, the tough pushes o alvo up to 10 feet straight away from itself.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 12 (2d8 + 3) dano de concussão. If o alvo is a Large or smaller creature, the tough pushes o alvo up to 3 m straight away from itself.</p>",
           "chat": ""
         },
         "activation": {
@@ -205,8 +206,8 @@
           "subtype": ""
         },
         "activities": {
-          "jFKCqgFsN0fuoPtk": {
-            "_id": "jFKCqgFsN0fuoPtk",
+          "q2Euy4Urc4jR9z6r": {
+            "_id": "q2Euy4Urc4jR9z6r",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -259,16 +260,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9SZKvPAWfI7ijXkF.jTb2WBFQgWLudJfL"
+      "_key": "!actors.items!k3SXik20MV5QHaLo.gg9XaA9mK6SaID5Y"
     },
     {
-      "_id": "5rtU5ZTmtLyv8220",
-      "name": "Heavy Crossbow",
+      "_id": "fcY7jsJrxRbVlhVM",
+      "name": "Besta Pesada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +4, range 100/400 ft. Acerto: 13 (2d10 + 2) Perfurante de dano. 1 TREANT Wise and Mighty Animate Tree</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +4, distância 30/120 m. Acerto: 13 (2d10 + 2) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -286,8 +287,8 @@
           "subtype": ""
         },
         "activities": {
-          "6BhQ6m0FD6iRWZCu": {
-            "_id": "6BhQ6m0FD6iRWZCu",
+          "OqbOs3Myp5A6wWzx": {
+            "_id": "OqbOs3Myp5A6wWzx",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -340,13 +341,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9SZKvPAWfI7ijXkF.5rtU5ZTmtLyv8220"
+      "_key": "!actors.items!k3SXik20MV5QHaLo.fcY7jsJrxRbVlhVM"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Tough Boss",
-      "page": 309,
+      "page": 307,
       "cr": "4",
       "warnings": []
     }

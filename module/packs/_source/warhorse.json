@@ -1,6 +1,6 @@
 {
-  "_id": "WKvr28UrKnUl7Z3D",
-  "_key": "!actors!WKvr28UrKnUl7Z3D",
+  "_id": "19tf1maX9VMaIn23",
+  "_key": "!actors!19tf1maX9VMaIn23",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Warhorse",
   "type": "npc",
@@ -48,7 +48,7 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 60
       },
       "senses": {
         "units": "ft"
@@ -68,7 +68,7 @@
       "alignment": "Sem Tendência",
       "cr": 0.5,
       "xp": {
-        "value": 100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -115,13 +115,13 @@
   },
   "items": [
     {
-      "_id": "kbdNUaNBYNtRyt3M",
-      "name": "Hooves",
+      "_id": "Nw6aMD2mh6uDy4e9",
+      "name": "Cascos",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 9 (2d4 + 4)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 9 (2d4 + 4) dano de concussão. If o alvo is a Large or smaller creature and the horse moved 20+ feet straight toward it immediately before the hit, o alvo takes an extra 5 (2d4) dano de concussão and fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -139,8 +139,8 @@
           "subtype": ""
         },
         "activities": {
-          "3Kee8Ea2jSDh7Y7d": {
-            "_id": "3Kee8Ea2jSDh7Y7d",
+          "WgSdS5NXfYRRR7oD": {
+            "_id": "WgSdS5NXfYRRR7oD",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -159,7 +159,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "4",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -168,52 +186,20 @@
         "mm2024": {
           "mechanics": {
             "toHit": 6,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d4+4",
+            "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!WKvr28UrKnUl7Z3D.kbdNUaNBYNtRyt3M"
-    },
-    {
-      "_id": "RgkIl8ddeUoPZpYc",
-      "name": "Concussão de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If o alvo is a Large or smaller creature and the horse moved 20+ feet straight toward it immediately before the hit, o alvo takes an extra 5 (2d4) Concussão de dano and has the Caído condition. WEASEL Tiny Beast, Una li gned AC 13 Iniciativa +3 (13) HP 1 (1d4 - 1) Sp eed 30 ft., Climb 30 ft. MO D SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!WKvr28UrKnUl7Z3D.RgkIl8ddeUoPZpYc"
+      "_key": "!actors.items!19tf1maX9VMaIn23.Nw6aMD2mh6uDy4e9"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Warhorse",
-      "page": 375,
+      "page": 373,
       "cr": "1/2",
       "warnings": []
     }

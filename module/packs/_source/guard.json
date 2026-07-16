@@ -1,8 +1,8 @@
 {
-  "_id": "n7yKfCiSlRxpAaTc",
-  "_key": "!actors!n7yKfCiSlRxpAaTc",
+  "_id": "zLMGfehYNSUKfyhY",
+  "_key": "!actors!zLMGfehYNSUKfyhY",
   "folder": "1QPcErIwVgACFlzi",
-  "name": "Guarda",
+  "name": "Guard",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/guard.webp",
   "system": {
@@ -66,9 +66,9 @@
         "custom": ""
       },
       "alignment": "Neutro",
-      "cr": 0,
+      "cr": 0.125,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -108,7 +108,7 @@
     }
   },
   "prototypeToken": {
-    "name": "Guarda",
+    "name": "Guard",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -120,13 +120,13 @@
   },
   "items": [
     {
-      "_id": "xKUgh1hWeILcXAtX",
-      "name": "Spear",
+      "_id": "PCkoppFijU0d7Uch",
+      "name": "Lança",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Melee or Distânciad Attack - Roll: +3, alcance 5 ft. or range 20/60 ft. Acerto: 4 (1d6 + l) Perfurante de dano. GUARDS GUARDS Sentries and Watch Members</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +3, alcance 1,5 m. or distância 6/18 m. Acerto: 4 (1d6 + 1) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -143,25 +143,69 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "nBY3sh20EtQlR8r6": {
+            "_id": "nBY3sh20EtQlR8r6",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "3",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "1",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "1d6+l",
+            "toHit": 3,
+            "attackType": "ranged",
+            "damageFormula": "1d6+1",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!n7yKfCiSlRxpAaTc.xKUgh1hWeILcXAtX"
+      "_key": "!actors.items!zLMGfehYNSUKfyhY.PCkoppFijU0d7Uch"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Guard",
-      "page": 164,
-      "cr": "0",
+      "page": 162,
+      "cr": "1/8",
       "warnings": []
     }
   }

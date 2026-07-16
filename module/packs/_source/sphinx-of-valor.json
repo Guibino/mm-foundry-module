@@ -1,8 +1,8 @@
 {
-  "_id": "1Dku5wwCeZefeMpN",
-  "_key": "!actors!1Dku5wwCeZefeMpN",
-  "folder": "kCLi0hD5goTIU7AM",
-  "name": "Sphinx Of Valor",
+  "_id": "ZvVbMytP4becqrOo",
+  "_key": "!actors!ZvVbMytP4becqrOo",
+  "folder": "IQP9BfRMl9yEsYGp",
+  "name": "Sphinx of Valor",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/sphinx-of-valor.webp",
   "system": {
@@ -20,7 +20,7 @@
         "proficient": 1
       },
       "int": {
-        "value": 76,
+        "value": 16,
         "proficient": 1
       },
       "wis": {
@@ -39,9 +39,9 @@
         "formula": ""
       },
       "hp": {
-        "value": 799,
-        "max": 799,
-        "formula": "79d70 + 95",
+        "value": 199,
+        "max": 199,
+        "formula": "19d10 + 95",
         "temp": null,
         "tempmax": null
       },
@@ -62,15 +62,15 @@
     },
     "details": {
       "type": {
-        "value": "",
+        "value": "celestial",
         "subtype": "",
         "swarm": "",
-        "custom": "Unknown"
+        "custom": ""
       },
-      "alignment": "Sem Tendência",
-      "cr": 77,
+      "alignment": "Leal e Neutro",
+      "cr": 17,
       "xp": {
-        "value": 78000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -80,7 +80,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "lg",
       "di": {
         "value": [
           "psychic"
@@ -112,11 +112,11 @@
     },
     "skills": {
       "arc": {
-        "value": 1,
+        "value": 2,
         "ability": "int"
       },
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       },
       "rel": {
@@ -126,7 +126,7 @@
     }
   },
   "prototypeToken": {
-    "name": "Sphinx Of Valor",
+    "name": "Sphinx of Valor",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -144,7 +144,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>No magic can observe the sphinx remotely or detect its thoughts without its permission. Sabedoria (Insight) checks made to ascertain its intentions or sin- cerity are made with Disadvantage. Resistência Lendária (3/Dia, or 4/Dia in Laitj. If the sphinx fails a saving throw, it can choose to suc- ceed in stead.</p>",
+          "value": "<p>No magic can observe the sphinx remotely or detect its thoughts without its permission. Sabedoria (Insight) checks made to ascertain its intentions or sincerity are made with Desvantagem.</p>",
           "chat": ""
         },
         "activation": {
@@ -168,7 +168,40 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!1Dku5wwCeZefeMpN.lOzsCpXdTEuQqZRW"
+      "_key": "!actors.items!ZvVbMytP4becqrOo.lOzsCpXdTEuQqZRW"
+    },
+    {
+      "_id": "1SSdhHUroc1BPhdl",
+      "name": "Resistência Lendária",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ZvVbMytP4becqrOo.1SSdhHUroc1BPhdl"
     },
     {
       "_id": "0dJqQPFgTb7I5oeu",
@@ -177,7 +210,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The sphinx makes two Claw attacks and uses Roar.</p>",
+          "value": "<p>The sphinx makes two Garra attacks and uses Roar.</p>",
           "chat": ""
         },
         "activation": {
@@ -202,16 +235,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!1Dku5wwCeZefeMpN.0dJqQPFgTb7I5oeu"
+      "_key": "!actors.items!ZvVbMytP4becqrOo.0dJqQPFgTb7I5oeu"
     },
     {
-      "_id": "foHCjKfaYQkBgSBF",
-      "name": "Claw",
+      "_id": "ib3LEWqpCS4OoZSV",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 12, alcance 5 ft. Acerto: 20 (4d6 + 6) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +12, alcance 1,5 m. Acerto: 20 (4d6 + 6) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -228,18 +261,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "0uThrenuA69usTaW": {
+            "_id": "0uThrenuA69usTaW",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "12",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 6,
+                  "bonus": "6",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 12,
+            "attackType": "melee",
             "damageFormula": "4d6+6",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!1Dku5wwCeZefeMpN.foHCjKfaYQkBgSBF"
+      "_key": "!actors.items!ZvVbMytP4becqrOo.ib3LEWqpCS4OoZSV"
     },
     {
       "_id": "Ow2gQjBAsdb3eRuG",
@@ -248,7 +325,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The sphinx emits a magical roar. When- ever it roars, the roar has a different effect, as detailed below (the sequence resets when it takes a Long Rest):</p>",
+          "value": "<p>The sphinx emits a magical roar. Whenever it roars, the roar has a different effect, as detailed below (the sequence resets when it takes a Long Rest):\nTeste de Resistência de Sabedoria: CD 20, each enemy in a 150 m Emanation originating from the sphinx. O alvo fica com a condição Amedrontado for 1 minute.\nTeste de Resistência de Sabedoria: CD 20, each enemy in a 150 m Emanation originating from the sphinx. O alvo fica com a condição Paralisado, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.\nTeste de Resistência de Constituição: CD 20, each enemy in a 150 m Emanation originating from the sphinx. 44 (8d10) dano trovejante, and o alvo fica com a condição Caído. Metade do dano only.</p>",
           "chat": ""
         },
         "activation": {
@@ -270,43 +347,9 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!1Dku5wwCeZefeMpN.Ow2gQjBAsdb3eRuG"
-    },
-    {
-      "_id": "9UhTOJfAYOlU6XiT",
-      "name": "First Roar",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Sabedoria Teste de Resistência: DC 20, each enemy in a 500-foot Emanation originating from the sphinx. SPHINXES SP HI NX L A IRS Sphinxes typically dwell in places that hold great knowledge or prophetic magic. The region containing a sphinx of lore's or sphinx of valor's lair is altered by its presence, creating the following effects:</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
         "activities": {
-          "VoXP1DqLHgd9P96q": {
-            "_id": "VoXP1DqLHgd9P96q",
+          "fizWWxz6MwkrVXbj": {
+            "_id": "fizWWxz6MwkrVXbj",
             "type": "save",
             "activation": {
               "type": "action",
@@ -339,217 +382,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!1Dku5wwCeZefeMpN.9UhTOJfAYOlU6XiT"
-    },
-    {
-      "_id": "kokSGj2RBlv12KFy",
-      "name": "Distant Sight",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>While in its lair, the sphinx can cast Clairvoyance, requiring no spell components and using the same spellcasting ability as its Spellcast- ing action. When cast this way, the spell's range is 1 mile.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!1Dku5wwCeZefeMpN.kokSGj2RBlv12KFy"
-    },
-    {
-      "_id": "IcGkZfFbObUVKrPa",
-      "name": "Infusion of Knowledge",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Whenever the sphinx or one of its allies takes a Study action while within 1 mile of the lair, it adds 1d6 to any ability check it makes for that action. If the sphinx dies or moves its lair elsewhere, these effects end immediately. Falha: The target has the Amedrontado condition for 7 minute. •</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!1Dku5wwCeZefeMpN.IcGkZfFbObUVKrPa"
-    },
-    {
-      "_id": "xN3UzOGKLONsyAxM",
-      "name": "Second Roar",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Sabedoria Teste de Resistência: DC 20, each enemy in a 500-foot Emanation originating from the sphinx. Falha: The target has the Paralisado condition, and it repeats the save at the end of each of its turns, end- ing the effect on itself on a success. After 7 minute, it succeeds automatically.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {
-          "G2b2QwKgFjeanwis": {
-            "_id": "G2b2QwKgFjeanwis",
-            "type": "save",
-            "activation": {
-              "type": "action",
-              "value": null,
-              "override": true,
-              "condition": ""
-            },
-            "save": {
-              "ability": [
-                "wis"
-              ],
-              "dc": {
-                "calculation": "",
-                "formula": "20"
-              }
-            },
-            "damage": {
-              "onSave": "half",
-              "parts": []
-            }
-          }
-        }
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {
-            "saveDc": 20,
-            "saveAbility": "wis"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!1Dku5wwCeZefeMpN.xN3UzOGKLONsyAxM"
-    },
-    {
-      "_id": "8kA6G9UiNDo9iMRO",
-      "name": "Third Roar",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 20, each enemy in a 500-foot Emanation originating from the sphinx. Falha: 44 (8d70) Trovejante de dano, and o alvo has the Caído condition. Sucesso: Metade do dano only.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {
-          "hylUM1lkBnS0zAzE": {
-            "_id": "hylUM1lkBnS0zAzE",
-            "type": "save",
-            "activation": {
-              "type": "action",
-              "value": null,
-              "override": true,
-              "condition": ""
-            },
-            "save": {
-              "ability": [
-                "con"
-              ],
-              "dc": {
-                "calculation": "",
-                "formula": "20"
-              }
-            },
-            "damage": {
-              "onSave": "half",
-              "parts": [
-                {
-                  "number": 8,
-                  "denomination": 70,
-                  "bonus": "",
-                  "types": [
-                    "thunder"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
-            }
-          }
-        }
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {
-            "damageFormula": "8d70",
-            "damageType": "thunder",
-            "saveDc": 20,
-            "saveAbility": "con"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!1Dku5wwCeZefeMpN.8kA6G9UiNDo9iMRO"
+      "_key": "!actors.items!ZvVbMytP4becqrOo.Ow2gQjBAsdb3eRuG"
     },
     {
       "_id": "U7m2xw7iPT9ogdqR",
@@ -558,7 +391,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The sphinx can teleport up to 30 feet to an unoccupied space it can see, and it makes one Claw attack.</p>",
+          "value": "<p>The sphinx can teleport up to 9 m to an unoccupied space it can see, and it makes one Garra attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -583,7 +416,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!1Dku5wwCeZefeMpN.U7m2xw7iPT9ogdqR"
+      "_key": "!actors.items!ZvVbMytP4becqrOo.U7m2xw7iPT9ogdqR"
     },
     {
       "_id": "q2KEP7rJtbOXkcyl",
@@ -592,7 +425,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 16, uma criatura the sphinx can see within 720 feet. Falha: The target gains l Exaustão level. While o alvo has any - Exaustão levels, it appears 3d70 years older. Failure or w Sucesso: The sphinx can't take this action again until the . 2 start of its next turn. <C SPIES Infiltrators and Informants</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 16, uma criatura the sphinx can see within 36 m. O alvo gains 1 Exaustão level. While o alvo has any Exaustão levels, it appears 3d10 years older. The sphinx can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -644,7 +477,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!1Dku5wwCeZefeMpN.q2KEP7rJtbOXkcyl"
+      "_key": "!actors.items!ZvVbMytP4becqrOo.q2KEP7rJtbOXkcyl"
     },
     {
       "_id": "IuiXVleSqpgM09Jc",
@@ -653,7 +486,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The sphinx casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save DC 20): À Vontade: Detect Evil and Good, Thaumaturgy 1/Dia Each: Detect Magic, Dispel Magic, Greater Resto- ration, Heroes' Feast, Zone of Truth</p>",
+          "value": "<p>The sphinx casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save CD 20):</p>",
           "chat": ""
         },
         "activation": {
@@ -678,14 +511,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!1Dku5wwCeZefeMpN.IuiXVleSqpgM09Jc"
+      "_key": "!actors.items!ZvVbMytP4becqrOo.IuiXVleSqpgM09Jc"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Sphinx of Valor",
-      "page": 296,
-      "cr": "77",
+      "page": 294,
+      "cr": "17",
       "warnings": []
     }
   }

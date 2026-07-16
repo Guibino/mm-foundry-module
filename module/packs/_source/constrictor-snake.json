@@ -1,58 +1,59 @@
 {
-  "_id": "w5fa0N3w5CZF2FUn",
-  "_key": "!actors!w5fa0N3w5CZF2FUn",
-  "folder": "kCLi0hD5goTIU7AM",
+  "_id": "gJoQeKd2LYQYnmNR",
+  "_key": "!actors!gJoQeKd2LYQYnmNR",
+  "folder": "9eORFRgLi2o0urFB",
   "name": "Constrictor Snake",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/constrictor-snake.webp",
   "system": {
     "abilities": {
       "str": {
-        "value": 75,
+        "value": 15,
         "proficient": 0
       },
       "dex": {
-        "value": 8,
+        "value": 14,
         "proficient": 0
       },
       "con": {
-        "value": 77,
-        "proficient": 1
+        "value": 12,
+        "proficient": 0
       },
       "int": {
-        "value": 2,
+        "value": 1,
         "proficient": 0
       },
       "wis": {
-        "value": 77,
+        "value": 10,
         "proficient": 0
       },
       "cha": {
-        "value": 5,
+        "value": 3,
         "proficient": 0
       }
     },
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 13,
         "formula": ""
       },
       "hp": {
-        "value": 17,
-        "max": 17,
-        "formula": "2d10+6",
+        "value": 13,
+        "max": 13,
+        "formula": "2d10 + 2",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "swim": 30
       },
       "senses": {
         "units": "ft",
-        "darkvision": 60
+        "blindsight": 10
       },
       "init": {
         "ability": "dex",
@@ -61,15 +62,15 @@
     },
     "details": {
       "type": {
-        "value": "",
+        "value": "beast",
         "subtype": "",
         "swarm": "",
-        "custom": "Unknown"
+        "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 0.25,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -79,7 +80,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "lg",
       "di": {
         "value": [],
         "custom": ""
@@ -98,10 +99,19 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Constrictor Snake",
@@ -116,13 +126,13 @@
   },
   "items": [
     {
-      "_id": "RPQUIl2HP6r60zlb",
-      "name": "Bite",
+      "_id": "Qev6tw76wnKuSaZF",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 4 (1d4 + 2) Concussão de dano. CAT Tiny Beast, Unaligned AC 72 Iniciativa +2 (12) HP 2 (1d4) Spee d 40 ft., Climb 40 ft. MOD SAVE MOD SA VE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 6 (1d8 + 2) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -140,8 +150,8 @@
           "subtype": ""
         },
         "activities": {
-          "gzstCm0qLIKcGDm3": {
-            "_id": "gzstCm0qLIKcGDm3",
+          "Wy5Le77FDKlsdYDd": {
+            "_id": "Wy5Le77FDKlsdYDd",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -163,10 +173,10 @@
               "parts": [
                 {
                   "number": 1,
-                  "denomination": 4,
+                  "denomination": 8,
                   "bonus": "2",
                   "types": [
-                    "bludgeoning"
+                    "piercing"
                   ],
                   "custom": {
                     "enabled": false,
@@ -188,20 +198,81 @@
           "mechanics": {
             "toHit": 4,
             "attackType": "melee",
-            "damageFormula": "1d4+2",
-            "damageType": "bludgeoning"
+            "damageFormula": "1d8+2",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!w5fa0N3w5CZF2FUn.RPQUIl2HP6r60zlb"
+      "_key": "!actors.items!gJoQeKd2LYQYnmNR.Qev6tw76wnKuSaZF"
+    },
+    {
+      "_id": "nCB2TtiTkAaYa93p",
+      "name": "Constrição",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Força: CD 12, one Medium or smaller creature the snake can see within 1,5 m. 7 (3d4) dano de concussão, and o alvo fica com a condição Agarrado (CD para escapar 12).</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "PYqngBLvigdfUOlI": {
+            "_id": "PYqngBLvigdfUOlI",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "12"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 12,
+            "saveAbility": "str"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!gJoQeKd2LYQYnmNR.nCB2TtiTkAaYa93p"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Constrictor Snake",
-      "page": 353,
-      "cr": "0",
+      "page": 351,
+      "cr": "1/4",
       "warnings": []
     }
   }

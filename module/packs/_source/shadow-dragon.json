@@ -1,8 +1,8 @@
 {
-  "_id": "PULqwUXQzfrnZiaE",
-  "_key": "!actors!PULqwUXQzfrnZiaE",
+  "_id": "y6faumADjh6zChvT",
+  "_key": "!actors!y6faumADjh6zChvT",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Shadow Dragão",
+  "name": "Shadow Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/shadow-dragon.webp",
   "system": {
@@ -48,11 +48,14 @@
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 40,
         "climb": 40,
         "fly": 80
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 120,
+        "blindsight": 30
       },
       "init": {
         "ability": "dex",
@@ -69,7 +72,7 @@
       "alignment": "Caótico e Mau",
       "cr": 13,
       "xp": {
-        "value": 10000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -88,7 +91,7 @@
       },
       "dr": {
         "value": [],
-        "custom": ""
+        "custom": "See Living Shadow"
       },
       "dv": {
         "value": [],
@@ -100,13 +103,22 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum, Dracônico"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Shadow Dragão",
+    "name": "Shadow Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -119,12 +131,12 @@
   "items": [
     {
       "_id": "jgbzEDLPZb0Q0fWx",
-      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "name": "Resistência Lendária",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the dragon fails a saving throw , it can choose to suc- ceed instead .</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -133,13 +145,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "3",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -153,7 +160,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!PULqwUXQzfrnZiaE.jgbzEDLPZb0Q0fWx"
+      "_key": "!actors.items!y6faumADjh6zChvT.jgbzEDLPZb0Q0fWx"
     },
     {
       "_id": "ttPZD0lmZfP2cSRS",
@@ -162,7 +169,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in Dim Light or Darkness, the dragon has Resistance to de dano that isn 't Energia, Psy- chic, or Radiante.</p>",
+          "value": "<p>While in Dim Light or Darkness, the dragon has Resistance to de dano that isn't Energia, Psíquico, or Radiante.</p>",
           "chat": ""
         },
         "activation": {
@@ -186,16 +193,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!PULqwUXQzfrnZiaE.ttPZD0lmZfP2cSRS"
+      "_key": "!actors.items!y6faumADjh6zChvT.ttPZD0lmZfP2cSRS"
     },
     {
-      "_id": "eCaCLJaeFr7SiZPS",
-      "name": "Sunlight Sensitivity",
+      "_id": "Fe4nGnHoLy3OidO3",
+      "name": "Sensibilidade à Luz Solar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in sunlight, the dragon has Disadvantage on ability checks and attack rolls.</p>",
+          "value": "<p>Sob luz solar, a criatura tem Desvantagem em testes de habilidade e rolagens de ataque.</p>",
           "chat": ""
         },
         "activation": {
@@ -219,7 +226,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!PULqwUXQzfrnZiaE.eCaCLJaeFr7SiZPS"
+      "_key": "!actors.items!y6faumADjh6zChvT.Fe4nGnHoLy3OidO3"
     },
     {
       "_id": "8vjxiEWqBbjAACsV",
@@ -228,7 +235,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks.</p>",
+          "value": "<p>A criatura faz três ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -253,16 +260,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!PULqwUXQzfrnZiaE.8vjxiEWqBbjAACsV"
+      "_key": "!actors.items!y6faumADjh6zChvT.8vjxiEWqBbjAACsV"
     },
     {
-      "_id": "0CUAXGz6IKNkSb2P",
-      "name": "Rend",
+      "_id": "65T1JZhgmYbRzMCg",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 10 , alcance 10 ft . Acerto: 12 (2d6 + 5) Cortante de dano plus 3 (1d6) Necrótico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 3 m. Acerto: 12 (2d6 + 5) dano cortante mais 3 (1d6) dano necrótico.</p>",
           "chat": ""
         },
         "activation": {
@@ -279,27 +286,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "cfdn50DGbfneGy1f": {
+            "_id": "cfdn50DGbfneGy1f",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "5",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 10,
+            "attackType": "melee",
             "damageFormula": "2d6+5",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!PULqwUXQzfrnZiaE.0CUAXGz6IKNkSb2P"
+      "_key": "!actors.items!y6faumADjh6zChvT.65T1JZhgmYbRzMCg"
     },
     {
       "_id": "OcpluenB364gudCR",
-      "name": "Shadow Breath (Recharge 5-6)",
+      "name": "Shadow Breath (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 17, cada criatura in a 60-foot Cone. Falha: 35 (10d6) Necrótico de dano. Sucesso: Metade do dano. Falha ou Sucesso: A Humanoid reduced to 0 Pontos de Vida by this de dano dies, and a Shadow rises from _ the corpse. The shadow is under the dragon's control and shares the dragon's Iniciativa count but acts immediately after the dragon.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 17, cada criatura in a 18 m Cone. 35 (10d6) dano necrótico. Metade do dano. A Humanoid reduced to 0 Pontos de Vida by this de dano dies, and a Shadow rises from the corpse. The shadow is under the dragon's control and shares the dragon's Iniciativa count but acts immediately after the dragon.</p>",
           "chat": ""
         },
         "activation": {
@@ -343,25 +394,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 10,
-                  "denomination": 6,
-                  "bonus": "",
-                  "types": [
-                    "necrotic"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -369,24 +402,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "10d6",
-            "damageType": "necrotic",
             "saveDc": 17,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!PULqwUXQzfrnZiaE.OcpluenB364gudCR"
+      "_key": "!actors.items!y6faumADjh6zChvT.OcpluenB364gudCR"
     },
     {
-      "_id": "yAtSWekZea2ZzzR7",
-      "name": "Shadow Stealth",
+      "_id": "cV0dF3Zyuw0Y6nfI",
+      "name": "Furtividade nas Sombras",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in Dim Light or Darkness, the dragon takes the Hide action.</p>",
+          "value": "<p>Sob Luz Fraca ou Escuridão, a criatura realiza a ação Esconder-se.</p>",
           "chat": ""
         },
         "activation": {
@@ -411,16 +442,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!PULqwUXQzfrnZiaE.yAtSWekZea2ZzzR7"
+      "_key": "!actors.items!y6faumADjh6zChvT.cV0dF3Zyuw0Y6nfI"
     },
     {
-      "_id": "Ab9xGJiWCHalheO5",
-      "name": "Pounce",
+      "_id": "wlHu1IaY7KnLb9GO",
+      "name": "Bote",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon moves up to half its Speed, and it makes one Rend attack.</p>",
+          "value": "<p>A criatura se move até metade do seu Deslocamento e faz um ataque de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -445,7 +476,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!PULqwUXQzfrnZiaE.Ab9xGJiWCHalheO5"
+      "_key": "!actors.items!y6faumADjh6zChvT.wlHu1IaY7KnLb9GO"
     },
     {
       "_id": "noT95dcNTXniHGVK",
@@ -454,7 +485,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon uses Shadow Stealth, and uma criatura of its choice that it can see within 10 feet of it takes 10 (3d6) Necrótico de dano. The dragon can't take this action again until the start of if? next turn . SHADOW DRAGONS A ~7 5 SHAMBLING MOUND Manifestation of Primeval Power</p>",
+          "value": "<p>The dragon uses Furtividade nas Sombras, and uma criatura of its choice that it can see within 3 m of it takes 10 (3d6) dano necrótico. The dragon can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -479,13 +510,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!PULqwUXQzfrnZiaE.noT95dcNTXniHGVK"
+      "_key": "!actors.items!y6faumADjh6zChvT.noT95dcNTXniHGVK"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Shadow Dragon",
-      "page": 277,
+      "page": 275,
       "cr": "13",
       "warnings": []
     }

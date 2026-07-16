@@ -1,6 +1,6 @@
 {
-  "_id": "TdBEbX8PWancFwgI",
-  "_key": "!actors!TdBEbX8PWancFwgI",
+  "_id": "dAj9IqGUjsR9ALHc",
+  "_key": "!actors!dAj9IqGUjsR9ALHc",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Pteranodon",
   "type": "npc",
@@ -12,11 +12,11 @@
         "proficient": 0
       },
       "dex": {
-        "value": 75,
+        "value": 15,
         "proficient": 0
       },
       "con": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "int": {
@@ -48,7 +48,8 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 10,
+        "fly": 60
       },
       "senses": {
         "units": "ft"
@@ -61,12 +62,12 @@
     "details": {
       "type": {
         "value": "beast",
-        "subtype": "Dinosaur",
+        "subtype": "dinosaur",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 0.25,
       "xp": {
         "value": 0
       },
@@ -97,10 +98,15 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Pteranodon",
@@ -115,13 +121,13 @@
   },
   "items": [
     {
-      "_id": "ORXwmCzAcVvJ1LMy",
-      "name": "Flyby",
+      "_id": "K5Nh4NZd0VgCvhyF",
+      "name": "Voo Rasante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The pteranodon doesn't provoke an Opportunity Attack when it flies out of an enemy's alcance .</p>",
+          "value": "<p>A criatura não provoca Ataque de Oportunidade ao sair voando do alcance de um inimigo.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,16 +151,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TdBEbX8PWancFwgI.ORXwmCzAcVvJ1LMy"
+      "_key": "!actors.items!dAj9IqGUjsR9ALHc.K5Nh4NZd0VgCvhyF"
     },
     {
-      "_id": "wt8u5D9Gcl3TiYHR",
-      "name": "Bite",
+      "_id": "jznB1UiTupefKAJP",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 6 (1d8 + 2) Perfurante de dano. RAT Tiny Beast, Unalign ed AC 10 Iniciativa +0 (10) HP l (1d4 - l)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 6 (1d8 + 2) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -172,8 +178,8 @@
           "subtype": ""
         },
         "activities": {
-          "NNSJnqW4WfhmiMih": {
-            "_id": "NNSJnqW4WfhmiMih",
+          "rSZl5sQxpWtNN9p8": {
+            "_id": "rSZl5sQxpWtNN9p8",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -226,14 +232,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TdBEbX8PWancFwgI.wt8u5D9Gcl3TiYHR"
+      "_key": "!actors.items!dAj9IqGUjsR9ALHc.jznB1UiTupefKAJP"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Pteranodon",
-      "page": 369,
-      "cr": "0",
+      "page": 367,
+      "cr": "1/4",
       "warnings": []
     }
   }

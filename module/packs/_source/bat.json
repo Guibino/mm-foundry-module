@@ -1,6 +1,6 @@
 {
-  "_id": "JhvZhaE8VnpQO4lb",
-  "_key": "!actors!JhvZhaE8VnpQO4lb",
+  "_id": "siFqBzkPxAXQvstm",
+  "_key": "!actors!siFqBzkPxAXQvstm",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Bat",
   "type": "npc",
@@ -35,23 +35,25 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 12,
         "formula": ""
       },
       "hp": {
         "value": 1,
         "max": 1,
-        "formula": "",
+        "formula": "1d4 - 1",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 5,
+        "fly": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "blindsight": 60
       },
       "init": {
         "ability": "dex",
@@ -115,13 +117,13 @@
   },
   "items": [
     {
-      "_id": "qcmphU4hXnNaf2iV",
-      "name": "Bite",
+      "_id": "xI0wxabBLGJqlOPz",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: l Perfurante de dano. BLACK BEAR Medium Be ast Unaligned AC 11 Iniciativa + l ( 11) HP 19 (3d8 + 6) Sp ee d 30 ft., Climb 30 ft., Swim 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4 to hit, alcance 1,5 m. Acerto: 1 dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -139,8 +141,8 @@
           "subtype": ""
         },
         "activities": {
-          "L5paRcm1XBgQ5d76": {
-            "_id": "L5paRcm1XBgQ5d76",
+          "xF90YqJyFXHKHF0V": {
+            "_id": "xF90YqJyFXHKHF0V",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -173,17 +175,15 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!JhvZhaE8VnpQO4lb.qcmphU4hXnNaf2iV"
+      "_key": "!actors.items!siFqBzkPxAXQvstm.xI0wxabBLGJqlOPz"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Bat",
-      "page": 351,
+      "page": 349,
       "cr": "0",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "warnings": []
     }
   }
 }

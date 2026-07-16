@@ -1,8 +1,8 @@
 {
-  "_id": "z12pfQ0pOtSgoZl8",
-  "_key": "!actors!z12pfQ0pOtSgoZl8",
+  "_id": "KxUrTqDdPXSdatSE",
+  "_key": "!actors!KxUrTqDdPXSdatSE",
   "folder": "EgPgmtpb4EiltKUV",
-  "name": "Frost Gigante",
+  "name": "Frost Giant",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/frost-giant.webp",
   "system": {
@@ -21,15 +21,15 @@
       },
       "int": {
         "value": 9,
-        "proficient": 1
+        "proficient": 0
       },
       "wis": {
-        "value": 70,
+        "value": 10,
         "proficient": 1
       },
       "cha": {
-        "value": 72,
-        "proficient": 0
+        "value": 12,
+        "proficient": 1
       }
     },
     "attributes": {
@@ -41,7 +41,7 @@
       "hp": {
         "value": 149,
         "max": 149,
-        "formula": "l 3d1 2 + 65",
+        "formula": "13d12 + 65",
         "temp": null,
         "tempmax": null
       },
@@ -68,7 +68,7 @@
       "alignment": "Neutro e Mau",
       "cr": 8,
       "xp": {
-        "value": 3900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -80,7 +80,9 @@
     "traits": {
       "size": "huge",
       "di": {
-        "value": [],
+        "value": [
+          "cold"
+        ],
         "custom": ""
       },
       "dr": {
@@ -102,17 +104,17 @@
     },
     "skills": {
       "ath": {
-        "value": 1,
+        "value": 2,
         "ability": "str"
       },
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       }
     }
   },
   "prototypeToken": {
-    "name": "Frost Gigante",
+    "name": "Frost Giant",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -155,7 +157,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!z12pfQ0pOtSgoZl8.8gNgruAQ0R1WYQWz"
+      "_key": "!actors.items!KxUrTqDdPXSdatSE.8gNgruAQ0R1WYQWz"
     },
     {
       "_id": "gx9zBuXaQNGEilQ8",
@@ -164,7 +166,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 10 ft. Acerto: 79 (2d1 2 + 6) Cortante de dano plus 9 (2d8) Frio de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 3 m. Acerto: 19 (2d12 + 6) dano cortante mais 9 (2d8) dano de frio.</p>",
           "chat": ""
         },
         "activation": {
@@ -236,7 +238,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!z12pfQ0pOtSgoZl8.gx9zBuXaQNGEilQ8"
+      "_key": "!actors.items!KxUrTqDdPXSdatSE.gx9zBuXaQNGEilQ8"
     },
     {
       "_id": "4WGbQq7FYKRdFhgX",
@@ -245,7 +247,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +9, range 150/600 ft. Acerto: 77 (2d10 + 6) Perfurante de dano plus 7 (2d6) Frio de dano, and o alvo's Speed decreases by 7 0 feet until the end of its next turn.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +9, distância 45/180 m. Acerto: 17 (2d10 + 6) dano perfurante mais 7 (2d6) dano de frio, and o alvo's Speed decreases by 3 m until the end of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -317,16 +319,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!z12pfQ0pOtSgoZl8.4WGbQq7FYKRdFhgX"
+      "_key": "!actors.items!KxUrTqDdPXSdatSE.4WGbQq7FYKRdFhgX"
     },
     {
       "_id": "q0h64pqCW7kLRsVg",
-      "name": "War Cry (Recharge 5-6)",
+      "name": "War Cry (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The giant or uma criatura of its _J choice that can see or hear it gains 16 (2d10 + 5) Tem- u porary Pontos de Vida and has Advantage on attack rolls co until the start of the giant's next turn. 0 FUNGI Deadly Spores and Predatory Polyps</p>",
+          "value": "<p>The giant or uma criatura of its choice that can see or hear it gains 16 (2d10 + 5) Temporary Pontos de Vida and has Vantagem on attack rolls until the start of the giant's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -357,13 +359,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!z12pfQ0pOtSgoZl8.q0h64pqCW7kLRsVg"
+      "_key": "!actors.items!KxUrTqDdPXSdatSE.q0h64pqCW7kLRsVg"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Frost Giant",
-      "page": 126,
+      "page": 124,
       "cr": "8",
       "warnings": []
     }

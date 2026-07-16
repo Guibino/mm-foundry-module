@@ -1,6 +1,6 @@
 {
-  "_id": "bUvxI88o3LMgNrb8",
-  "_key": "!actors!bUvxI88o3LMgNrb8",
+  "_id": "33SZucxt4y7hU8WJ",
+  "_key": "!actors!33SZucxt4y7hU8WJ",
   "folder": "CVeezowVb7BNP8yc",
   "name": "Modron Quadrone",
   "type": "npc",
@@ -16,7 +16,7 @@
         "proficient": 0
       },
       "con": {
-        "value": 2,
+        "value": 12,
         "proficient": 0
       },
       "int": {
@@ -48,7 +48,8 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "fly": 30
       },
       "senses": {
         "units": "ft",
@@ -67,9 +68,9 @@
         "custom": ""
       },
       "alignment": "Leal e Neutro",
-      "cr": 0,
+      "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -82,7 +83,7 @@
       "size": "med",
       "di": {
         "value": [],
-        "custom": "Charmed"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -93,15 +94,22 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Modron"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Modron Quadrone",
@@ -116,13 +124,13 @@
   },
   "items": [
     {
-      "_id": "azDUrVMNRQkVWW71",
-      "name": "Disintegration",
+      "_id": "efQA3abytPaQaVaj",
+      "name": "Desintegração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the modron dies, it disintegrates into dust, leaving behind anything it was wearing or carrying.</p>",
+          "value": "<p>Se a criatura morrer, ela se desintegra em pó, deixando para trás tudo o que estava vestindo ou carregando.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,7 +154,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!bUvxI88o3LMgNrb8.azDUrVMNRQkVWW71"
+      "_key": "!actors.items!33SZucxt4y7hU8WJ.efQA3abytPaQaVaj"
     },
     {
       "_id": "O7WkTR5faoVkPEo9",
@@ -155,7 +163,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The modron makes four Slam attacks or four Gears Launcher attacks.</p>",
+          "value": "<p>The modron makes four Pancada attacks or four Gears Launcher attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -180,16 +188,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!bUvxI88o3LMgNrb8.O7WkTR5faoVkPEo9"
+      "_key": "!actors.items!33SZucxt4y7hU8WJ.O7WkTR5faoVkPEo9"
     },
     {
-      "_id": "41xfmRILHnoFL90Y",
-      "name": "Slam",
+      "_id": "GBUjAFOw1za3dWjL",
+      "name": "Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Hit : 4 (1d4 + 2) Energia de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 4 (1d4 + 2) dano de energia.</p>",
           "chat": ""
         },
         "activation": {
@@ -207,8 +215,8 @@
           "subtype": ""
         },
         "activities": {
-          "hvHXfTxNj7ooaxgP": {
-            "_id": "hvHXfTxNj7ooaxgP",
+          "fYeW9FpaHBsebokf": {
+            "_id": "fYeW9FpaHBsebokf",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -227,7 +235,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -236,12 +262,14 @@
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d4+2",
+            "damageType": "force"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!bUvxI88o3LMgNrb8.41xfmRILHnoFL90Y"
+      "_key": "!actors.items!33SZucxt4y7hU8WJ.GBUjAFOw1za3dWjL"
     },
     {
       "_id": "noOegpi0SADhv2ua",
@@ -250,7 +278,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +4, range 320 ft. Acerto: .4 (1d4 + 2) Energia de dano. 218 MODRONS MODRON PENTADRONE Large Co nstru ct, Lawful Neutral AC 16 Iniciativa +2 (12) HP 32 (SdlO + 5) Sp eed 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +4, distância 96 m. Acerto: 4 (1d4 + 2) dano de energia.</p>",
           "chat": ""
         },
         "activation": {
@@ -288,7 +316,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -297,19 +343,21 @@
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "ranged"
+            "attackType": "ranged",
+            "damageFormula": "1d4+2",
+            "damageType": "force"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!bUvxI88o3LMgNrb8.noOegpi0SADhv2ua"
+      "_key": "!actors.items!33SZucxt4y7hU8WJ.noOegpi0SADhv2ua"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Modron Quadrone",
-      "page": 220,
-      "cr": "0",
+      "page": 218,
+      "cr": "1",
       "warnings": []
     }
   }

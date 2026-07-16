@@ -1,0 +1,287 @@
+{
+  "_id": "l7pYzbhBIMJileMO",
+  "_key": "!actors!l7pYzbhBIMJileMO",
+  "folder": "mI6hZZeXOMovX9oy",
+  "name": "Gargoyle",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/gargoyle.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 15,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 16,
+        "proficient": 0
+      },
+      "int": {
+        "value": 6,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 11,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 7,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 15,
+        "formula": ""
+      },
+      "hp": {
+        "value": 67,
+        "max": 67,
+        "formula": "9d8 + 27",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30,
+        "fly": 60
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "elemental",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Mau",
+      "cr": 2,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "exhaustion",
+          "petrified",
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Primordial (Terran)"
+      }
+    },
+    "skills": {
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Gargoyle",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/gargoyle.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "E3cKeui9hernAXJb",
+      "name": "Voo Rasante",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura não provoca Ataque de Oportunidade ao sair voando do alcance de um inimigo.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!l7pYzbhBIMJileMO.E3cKeui9hernAXJb"
+    },
+    {
+      "_id": "N6ipoVR1e3gb5z2H",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura faz dois ataques de Garra.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!l7pYzbhBIMJileMO.N6ipoVR1e3gb5z2H"
+    },
+    {
+      "_id": "gjMNxaPbW3MDcaC8",
+      "name": "Garra",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 7 (2d4 + 2) dano cortante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "OHe6Ga9agOcOY2lI": {
+            "_id": "OHe6Ga9agOcOY2lI",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "2d4+2",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!l7pYzbhBIMJileMO.gjMNxaPbW3MDcaC8"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Gargoyle",
+      "page": 128,
+      "cr": "2",
+      "warnings": []
+    }
+  }
+}

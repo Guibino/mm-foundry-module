@@ -1,0 +1,388 @@
+{
+  "_id": "NDooms0XAQ7HXQVI",
+  "_key": "!actors!NDooms0XAQ7HXQVI",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Quasit",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/quasit.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 5,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 17,
+        "proficient": 0
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0
+      },
+      "int": {
+        "value": 7,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13,
+        "formula": ""
+      },
+      "hp": {
+        "value": 25,
+        "max": 25,
+        "formula": "10d4",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "demon",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Mau",
+      "cr": 1,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "tiny",
+      "di": {
+        "value": [
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "cold",
+          "fire",
+          "lightning"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Abissal, Comum"
+      }
+    },
+    "skills": {
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Quasit",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/quasit.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "50VBP2D1j77oSQIT",
+      "name": "Resistência a Magia",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!NDooms0XAQ7HXQVI.50VBP2D1j77oSQIT"
+    },
+    {
+      "_id": "crJvhnN6cyjP9YGh",
+      "name": "Dilacerar",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 5 (1d4 + 3) dano cortante, and o alvo fica com a condição Envenenado until the start of the quasit's next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "z9imBkQNy5qP9cya": {
+            "_id": "z9imBkQNy5qP9cya",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "3",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "1d4+3",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!NDooms0XAQ7HXQVI.crJvhnN6cyjP9YGh"
+    },
+    {
+      "_id": "Nv7p2yfcjQyuvt8c",
+      "name": "Scare (1/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Sabedoria: CD 10, uma criatura within 6 m. O alvo fica com a condição Amedrontado. At the end of each of its turns, o alvo repeats the save, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "f5pKREEXO3DQd8Xt": {
+            "_id": "f5pKREEXO3DQd8Xt",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "10"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 10,
+            "saveAbility": "wis"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!NDooms0XAQ7HXQVI.Nv7p2yfcjQyuvt8c"
+    },
+    {
+      "_id": "OI61RHvqb7UdkyK6",
+      "name": "Mudar de Forma",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The quasit shape-shifts to resemble a bat (Speed 3 m., Fly 12 m.), a centipede (12 m., Climb 12 m.), or a toad (12 m., Swim 12 m.), or it returns to its true form. Its game statistics are the same in each form, except for its Speed. Any equipment it is wearing or carrying isn't transformed.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!NDooms0XAQ7HXQVI.OI61RHvqb7UdkyK6"
+    },
+    {
+      "_id": "h2lgBmmxQjgm9Oco",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The quasit casts Invisibility on itself, requiring no spell components and using Carisma as the spellcasting ability.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!NDooms0XAQ7HXQVI.h2lgBmmxQjgm9Oco"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Quasit",
+      "page": 252,
+      "cr": "1",
+      "warnings": []
+    }
+  }
+}

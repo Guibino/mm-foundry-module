@@ -1,22 +1,22 @@
 {
-  "_id": "6iQBH9TK6D8TMJfx",
-  "_key": "!actors!6iQBH9TK6D8TMJfx",
-  "folder": "inkH4oLnh3yP5W9M",
+  "_id": "tg6yDhsCiv4aFPfG",
+  "_key": "!actors!tg6yDhsCiv4aFPfG",
+  "folder": "bKQUPthn1V2Yu6Bn",
   "name": "Poltergeist",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/poltergeist.webp",
   "system": {
     "abilities": {
       "str": {
-        "value": 2,
+        "value": 1,
         "proficient": 0
       },
       "dex": {
-        "value": 20,
+        "value": 14,
         "proficient": 0
       },
       "con": {
-        "value": 8,
+        "value": 11,
         "proficient": 0
       },
       "int": {
@@ -24,34 +24,36 @@
         "proficient": 0
       },
       "wis": {
-        "value": 14,
+        "value": 10,
         "proficient": 0
       },
       "cha": {
-        "value": 15,
+        "value": 14,
         "proficient": 0
       }
     },
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 15,
+        "flat": 12,
         "formula": ""
       },
       "hp": {
-        "value": 9,
-        "max": 9,
-        "formula": "6d4 - 6",
+        "value": 22,
+        "max": 22,
+        "formula": "5d8",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
-        "hover": false,
-        "fly": 30
+        "hover": true,
+        "walk": 5,
+        "fly": 50
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -60,15 +62,15 @@
     },
     "details": {
       "type": {
-        "value": "fey",
+        "value": "undead",
         "subtype": "",
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Neutro e Bom",
-      "cr": 0,
+      "alignment": "Caótico e Neutro",
+      "cr": 2,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,13 +80,25 @@
       }
     },
     "traits": {
-      "size": "tiny",
+      "size": "sm",
       "di": {
-        "value": [],
+        "value": [
+          "necrotic",
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "acid",
+          "bludgeoning",
+          "cold",
+          "fire",
+          "lightning",
+          "piercing",
+          "slashing",
+          "thunder"
+        ],
         "custom": ""
       },
       "dv": {
@@ -92,12 +106,22 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed",
+          "exhaustion",
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "prone",
+          "restrained",
+          "unconscious"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Silvestre"
+        "custom": "Common plus one other language"
       }
     },
     "skills": {}
@@ -115,13 +139,13 @@
   },
   "items": [
     {
-      "_id": "3TZFsfDXq1tZFZU8",
-      "name": "Magic Resistance",
+      "_id": "zYu5OfFgfFaTTjGD",
+      "name": "Movimento Incorpóreo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The pixie has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura pode se mover através de outras criaturas e objetos como se fossem Terreno Difícil. Ela sofre 5 (1d10) de dano de energia se terminar o turno dentro de um objeto.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,16 +169,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6iQBH9TK6D8TMJfx.3TZFsfDXq1tZFZU8"
+      "_key": "!actors.items!tg6yDhsCiv4aFPfG.zYu5OfFgfFaTTjGD"
     },
     {
-      "_id": "ajrh4dDQSdLZZq6d",
-      "name": "Faerie Dust",
+      "_id": "Q7oLvHG9aDhefPIQ",
+      "name": "Ataque Múltiplo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Melee or Distânciad Attack: +4, alcance 5 ft. or range 60 ft. Acerto: l Radiante de dano, and o alvo has the Enfeitiçado or Envenenado condition (pixie's choice) un- til the start of the pixie_'s next turn. • Conjuração. The pixie casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 12): À Vontade: Dancing Lights, Druidcraft, Invisibility (self only) • 1/Dia Each: Detect Thoughts, Fly, Sleep PIXIES Friends of the Forest</p>",
+          "value": "<p>The poltergeist makes one Object Pancada attack and uses Telekinetic Thrust.</p>",
           "chat": ""
         },
         "activation": {
@@ -179,14 +203,190 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!6iQBH9TK6D8TMJfx.ajrh4dDQSdLZZq6d"
+      "_key": "!actors.items!tg6yDhsCiv4aFPfG.Q7oLvHG9aDhefPIQ"
+    },
+    {
+      "_id": "hmJNG8IrwhK0EO5R",
+      "name": "Object Pancada",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +4, alcance 1,5 m. or distância 9 m. Acerto: 7 (2d4 + 2) dano de concussão.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "QbnTWfg5IqxTxzN8": {
+            "_id": "QbnTWfg5IqxTxzN8",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "ranged",
+            "damageFormula": "2d4+2",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!tg6yDhsCiv4aFPfG.hmJNG8IrwhK0EO5R"
+    },
+    {
+      "_id": "efMPIROSUP7C75kk",
+      "name": "Telekinetic Thrust",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Força: CD 12, uma criatura the poltergeist can see within 9 m. 9 (2d6 + 2) dano de energia, and o alvo is pushed up to 9 m straight away from the poltergeist.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "xOhDObTfJOahIYHv": {
+            "_id": "xOhDObTfJOahIYHv",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "12"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 12,
+            "saveAbility": "str"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!tg6yDhsCiv4aFPfG.efMPIROSUP7C75kk"
+    },
+    {
+      "_id": "LzlGq72J3WS3Dbnu",
+      "name": "Vanish",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The poltergeist gives itself a condição Invisível or ends that condição on itself.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!tg6yDhsCiv4aFPfG.LzlGq72J3WS3Dbnu"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Poltergeist",
       "page": 246,
-      "cr": "0",
+      "cr": "2",
       "warnings": []
     }
   }

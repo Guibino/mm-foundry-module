@@ -1,6 +1,6 @@
 {
-  "_id": "ONff7lkeeD9kHSXn",
-  "_key": "!actors!ONff7lkeeD9kHSXn",
+  "_id": "R3qly4aWy1wy8MCT",
+  "_key": "!actors!R3qly4aWy1wy8MCT",
   "folder": "EgPgmtpb4EiltKUV",
   "name": "Ogrillon Ogre",
   "type": "npc",
@@ -51,7 +51,8 @@
         "walk": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -66,9 +67,9 @@
         "custom": ""
       },
       "alignment": "Caótico e Mau",
-      "cr": 0,
+      "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -115,13 +116,13 @@
   },
   "items": [
     {
-      "_id": "jXWFaxJT2WCnwhn2",
-      "name": "Battleaxe",
+      "_id": "41qCxddEWLwzahFV",
+      "name": "Machado de Batalha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 7 (1d8 + 3) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 7 (1d8 + 3) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -139,8 +140,8 @@
           "subtype": ""
         },
         "activities": {
-          "hQQ7vhNv5B3ZckAw": {
-            "_id": "hQQ7vhNv5B3ZckAw",
+          "W8Os1MScbfKBGJXB": {
+            "_id": "W8Os1MScbfKBGJXB",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -193,16 +194,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ONff7lkeeD9kHSXn.jXWFaxJT2WCnwhn2"
+      "_key": "!actors.items!R3qly4aWy1wy8MCT.41qCxddEWLwzahFV"
     },
     {
-      "_id": "MSg8MNgTzWSUx9g0",
-      "name": "Javelin",
+      "_id": "QFMaM2oW8h6lkWZA",
+      "name": "Azagaia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +5, alcance 5 ft. or. range 30/120 ft. Acerto: 6 (1d6 + 3) Perfurante de dano. ONI Wickedness Drawn to the Wicked</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +5, alcance 1,5 m. or distância 9/36 m. Acerto: 6 (1d6 + 3) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -220,8 +221,8 @@
           "subtype": ""
         },
         "activities": {
-          "PCCY3sv4CJEmouT2": {
-            "_id": "PCCY3sv4CJEmouT2",
+          "SENOLv9LKVizpfRf": {
+            "_id": "SENOLv9LKVizpfRf",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -274,14 +275,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ONff7lkeeD9kHSXn.MSg8MNgTzWSUx9g0"
+      "_key": "!actors.items!R3qly4aWy1wy8MCT.QFMaM2oW8h6lkWZA"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Ogrillon Ogre",
-      "page": 233,
-      "cr": "0",
+      "page": 231,
+      "cr": "1",
       "warnings": []
     }
   }

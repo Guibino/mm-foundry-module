@@ -1,6 +1,6 @@
 {
-  "_id": "GUZS6GpncsEey73k",
-  "_key": "!actors!GUZS6GpncsEey73k",
+  "_id": "PjaTnPfCSJ7Rspc1",
+  "_key": "!actors!PjaTnPfCSJ7Rspc1",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Yuan-ti Abomination",
   "type": "npc",
@@ -48,10 +48,12 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40,
+        "climb": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -68,7 +70,7 @@
       "alignment": "Neutro e Mau",
       "cr": 7,
       "xp": {
-        "value": 2900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -106,11 +108,11 @@
     },
     "skills": {
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       },
       "ste": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       }
     }
@@ -128,13 +130,13 @@
   },
   "items": [
     {
-      "_id": "l0vO4KsZbtX8AJxX",
-      "name": "Magic Resistance",
+      "_id": "BwRyB16sqAiA9fT6",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yuan-ti has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -158,7 +160,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GUZS6GpncsEey73k.l0vO4KsZbtX8AJxX"
+      "_key": "!actors.items!PjaTnPfCSJ7Rspc1.BwRyB16sqAiA9fT6"
     },
     {
       "_id": "TWymjHDXVlebAKd2",
@@ -167,7 +169,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yuan-ti makes two Bite attacks, and it can use Conjuração to cast Suggestion if available.</p>",
+          "value": "<p>The yuan-ti makes two Mordida attacks, and it can use Conjuração to cast Suggestion if available.</p>",
           "chat": ""
         },
         "activation": {
@@ -192,16 +194,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GUZS6GpncsEey73k.TWymjHDXVlebAKd2"
+      "_key": "!actors.items!PjaTnPfCSJ7Rspc1.TWymjHDXVlebAKd2"
     },
     {
-      "_id": "czNg0jKceW1e2O46",
-      "name": "Bite",
+      "_id": "nhu6o3aZkuAAbFJF",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 11 (2d6 + 4) Perfurante de dano plus 10 (3d6) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 11 (2d6 + 4) dano perfurante mais 10 (3d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -219,8 +221,8 @@
           "subtype": ""
         },
         "activities": {
-          "UKO97Ai4pL9iQdZv": {
-            "_id": "UKO97Ai4pL9iQdZv",
+          "yXYRZupEXnvXaWeE": {
+            "_id": "yXYRZupEXnvXaWeE",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -273,16 +275,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GUZS6GpncsEey73k.czNg0jKceW1e2O46"
+      "_key": "!actors.items!PjaTnPfCSJ7Rspc1.nhu6o3aZkuAAbFJF"
     },
     {
-      "_id": "bX8DxCFx6k8Y9exX",
-      "name": "Constrict",
+      "_id": "Hwt9J7Q4E8J8fZgd",
+      "name": "Constrição",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Força Teste de Resistência: DC 15, one Large or smaller creature within 5 feet. Falha: 28 (7d6 + 4)</p>",
+          "value": "<p>Teste de Resistência de Força: CD 15, one Large or smaller creature within 1,5 m. 28 (7d6 + 4) dano de concussão. O alvo fica com a condição Agarrado (CD para escapar 14), and it fica com a condição Impedido until the grapple ends. Metade do dano only.</p>",
           "chat": ""
         },
         "activation": {
@@ -300,8 +302,8 @@
           "subtype": ""
         },
         "activities": {
-          "NK2cb81ZFrhyIm25": {
-            "_id": "NK2cb81ZFrhyIm25",
+          "oZlLzXaiuRVRAv5R": {
+            "_id": "oZlLzXaiuRVRAv5R",
             "type": "save",
             "activation": {
               "type": "action",
@@ -334,50 +336,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GUZS6GpncsEey73k.bX8DxCFx6k8Y9exX"
+      "_key": "!actors.items!PjaTnPfCSJ7Rspc1.Hwt9J7Q4E8J8fZgd"
     },
     {
-      "_id": "wcNq0NGYXUj6LG9x",
-      "name": "Concussão de dano",
+      "_id": "ZUdgY0tOINZ6HPS4",
+      "name": "Veneno Spray (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The target has the Agarrado con- dition (escape DC 14), and it has the Impedido condi- tion until the grapple ends. Sucesso: Metade do dano only.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!GUZS6GpncsEey73k.wcNq0NGYXUj6LG9x"
-    },
-    {
-      "_id": "63852QZOieFjqa5X",
-      "name": "Veneno Spray (Recharge 5-6)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 14, cada criatura in a 30-foot Cone. Falha: 21 (6d6) Veneno de dano, and o alvo has the Poi- soned condition until the end of the yuan-ti 's next turn. While Envenenado, o alvo has the Cego. condition. Sucesso: Metade do dano only.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 14, cada criatura in a 9 m Cone. 21 (6d6) dano de veneno, and o alvo fica com a condição Envenenado until the end of the yuan-ti's next turn. While Envenenado, o alvo fica com a condição Cego. Metade do dano only.</p>",
           "chat": ""
         },
         "activation": {
@@ -401,8 +369,8 @@
           "subtype": ""
         },
         "activities": {
-          "ZsRjdDefAFhaZ5IE": {
-            "_id": "ZsRjdDefAFhaZ5IE",
+          "Mqs5t3B95oNIVFrc": {
+            "_id": "Mqs5t3B95oNIVFrc",
             "type": "save",
             "activation": {
               "type": "action",
@@ -421,25 +389,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 6,
-                  "denomination": 6,
-                  "bonus": "",
-                  "types": [
-                    "poison"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -447,24 +397,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "6d6",
-            "damageType": "poison",
             "saveDc": 14,
             "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GUZS6GpncsEey73k.63852QZOieFjqa5X"
+      "_key": "!actors.items!PjaTnPfCSJ7Rspc1.ZUdgY0tOINZ6HPS4"
     },
     {
-      "_id": "aYscWy8hPT1gbkoO",
-      "name": "Shape-Shift",
+      "_id": "hxXSAPsxp8dtsQgV",
+      "name": "Mudar de Forma",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yuan-ti shape-shifts, into a Large snake lJ.J or returns to its true form . If it dies, it stays in its cur- z rent form. The yuan-ti's game statistics are the same lJ.J > in each form, except where .noted. Any equipment it is 0:: wearing or carrying isn't transformed. aJ .. YUAN -T I 345 -~----27 ZOMBIES Relentless Reanimated Corpses</p>",
+          "value": "<p>The yuan-ti shape-shifts into a Large snake or returns to its true form. If it dies, it stays in its current form. The yuan-ti's game statistics are the same in each form, except where noted. Any equipment it is wearing or carrying isn't transformed.</p>",
           "chat": ""
         },
         "activation": {
@@ -489,7 +437,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GUZS6GpncsEey73k.aYscWy8hPT1gbkoO"
+      "_key": "!actors.items!PjaTnPfCSJ7Rspc1.hxXSAPsxp8dtsQgV"
     },
     {
       "_id": "Ii0PaCv34GWTIVsG",
@@ -498,7 +446,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yuan-ti casts one of the following spells, requiring no Material com- ponents and using Sabedoria as the spellcasting ability (spell save DC 15): À Vontade: Animal Friendship (snakes only) 3/Dia: Suggestion</p>",
+          "value": "<p>The yuan-ti casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save CD 15):</p>",
           "chat": ""
         },
         "activation": {
@@ -523,13 +471,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GUZS6GpncsEey73k.Ii0PaCv34GWTIVsG"
+      "_key": "!actors.items!PjaTnPfCSJ7Rspc1.Ii0PaCv34GWTIVsG"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Yuan-ti Abomination",
-      "page": 347,
+      "page": 345,
       "cr": "7",
       "warnings": []
     }

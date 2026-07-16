@@ -1,6 +1,6 @@
 {
-  "_id": "xvaHz1NIj1qo8QaW",
-  "_key": "!actors!xvaHz1NIj1qo8QaW",
+  "_id": "bLkH94VbaWIHHAwY",
+  "_key": "!actors!bLkH94VbaWIHHAwY",
   "folder": "IQP9BfRMl9yEsYGp",
   "name": "Couatl",
   "type": "npc",
@@ -48,10 +48,12 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "fly": 90
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "truesight": 120
       },
       "init": {
         "ability": "dex",
@@ -68,7 +70,7 @@
       "alignment": "Leal e Bom",
       "cr": 4,
       "xp": {
-        "value": 1100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -87,7 +89,11 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
         "custom": ""
       },
       "dv": {
@@ -124,7 +130,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The couatl's thoughts can't be read by any means, and other creatures can communicate with it telepathically only if it allows them .</p>",
+          "value": "<p>The couatl's thoughts can't be read by any means, and other creatures can communicate with it telepathically only if it allows them.</p>",
           "chat": ""
         },
         "activation": {
@@ -148,16 +154,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xvaHz1NIj1qo8QaW.kyiRkZyg2cGklNd2"
+      "_key": "!actors.items!bLkH94VbaWIHHAwY.kyiRkZyg2cGklNd2"
     },
     {
-      "_id": "e3OfJjRrNGXDoSPx",
-      "name": "Bite",
+      "_id": "brhEmG8COYfK9yCy",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 11 (1d1 2 + 5) Perfurante de dano, and o alvo has the Envenenado con- dition until the end of the couatl's next turn.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 11 (1d12 + 5) dano perfurante, and o alvo fica com a condição Envenenado until the end of the couatl's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -175,8 +181,8 @@
           "subtype": ""
         },
         "activities": {
-          "b1AZebbJ7CUi1G9D": {
-            "_id": "b1AZebbJ7CUi1G9D",
+          "Uy59ch69eye2GRlu": {
+            "_id": "Uy59ch69eye2GRlu",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -229,16 +235,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xvaHz1NIj1qo8QaW.e3OfJjRrNGXDoSPx"
+      "_key": "!actors.items!bLkH94VbaWIHHAwY.brhEmG8COYfK9yCy"
     },
     {
-      "_id": "rvuilN1J9ckqpSzG",
-      "name": "Constrict",
+      "_id": "EOOQtXSclrMWcesC",
+      "name": "Constrição",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Força Salling Throw: DC 15, one Medium or smaller creature the couatl can see within 5 feet. Fail- ure: 8 (1d6 + 5) Concussão de dano. The target has the Agarrado condition (escape pc 13), and it has the Impedido condition until the grapple ends.</p>",
+          "value": "<p>Teste de Resistência de Força: CD 15, one Medium or smaller creature the couatl can see within 1,5 m. 8 (1d6 + 5) dano de concussão. O alvo fica com a condição Agarrado (CD para escapar 13), and it fica com a condição Impedido until the grapple ends.</p>",
           "chat": ""
         },
         "activation": {
@@ -255,54 +261,42 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!xvaHz1NIj1qo8QaW.rvuilN1J9ckqpSzG"
-    },
-    {
-      "_id": "qqpJbw6ifG9D80eo",
-      "name": "Divine Aid (2/Day)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The couatl casts Bless, Lesser Resto- 0 ration, or Sanctuary, requiring no spell components and a'.: using the same spellcasting ability as Conjuração. CRAWLING CLAWS Severed Appendages with Malicious Will</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "2",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
+        "activities": {
+          "akPbBvxUpkCW94hf": {
+            "_id": "akPbBvxUpkCW94hf",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "15"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
             }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 15,
+            "saveAbility": "str"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xvaHz1NIj1qo8QaW.qqpJbw6ifG9D80eo"
+      "_key": "!actors.items!bLkH94VbaWIHHAwY.EOOQtXSclrMWcesC"
     },
     {
       "_id": "y2oGlCFcL6wATuB5",
@@ -311,7 +305,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The couatl casts one of the following spells, requiring no spell components and using WIS- dom as the spellcasting ability (spell save DC 15): À Vontade: Detect Evil and Good, Detect Magic, Detect Thoughts, Shapechange (Beast or Humanoid form only, no Temporary Pontos de Vida gained from the spell, and no Concentration or Temporary Pontos de Vida re- quired to maintain the spell) 1/Dia Each: Create Food and Water, Dream, Greater Res- toration, Scrying, Sleep 8. 0NUS A CTIONS</p>",
+          "value": "<p>The couatl casts one of the following spells, requiring no spell components and using Sabedoria as the spellcasting ability (spell save CD 15):</p>",
           "chat": ""
         },
         "activation": {
@@ -336,13 +330,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xvaHz1NIj1qo8QaW.y2oGlCFcL6wATuB5"
+      "_key": "!actors.items!bLkH94VbaWIHHAwY.y2oGlCFcL6wATuB5"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Couatl",
-      "page": 84,
+      "page": 82,
       "cr": "4",
       "warnings": []
     }

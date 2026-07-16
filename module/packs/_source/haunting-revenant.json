@@ -1,6 +1,6 @@
 {
-  "_id": "hCYZg5yKoshfOdpV",
-  "_key": "!actors!hCYZg5yKoshfOdpV",
+  "_id": "V6SEIJSp8hKUi0WL",
+  "_key": "!actors!V6SEIJSp8hKUi0WL",
   "folder": "bKQUPthn1V2Yu6Bn",
   "name": "Haunting Revenant",
   "type": "npc",
@@ -20,11 +20,11 @@
         "proficient": 1
       },
       "int": {
-        "value": 76,
+        "value": 16,
         "proficient": 0
       },
       "wis": {
-        "value": 78,
+        "value": 18,
         "proficient": 1
       },
       "cha": {
@@ -69,7 +69,7 @@
       "alignment": "Neutro",
       "cr": 10,
       "xp": {
-        "value": 5900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -87,7 +87,10 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "necrotic",
+          "psychic"
+        ],
         "custom": ""
       },
       "dv": {
@@ -98,7 +101,14 @@
         "value": [
           "charmed",
           "exhaustion",
-          "frightened"
+          "frightened",
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "prone",
+          "restrained",
+          "unconscious"
         ],
         "custom": ""
       },
@@ -128,7 +138,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Sa1Jing Throw: DC 17, any creature that casts a spell while inside the revenant's space. Falha: The spell fails and is wasted.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 17, any creature that casts a spell while inside the revenant's space. The spell fails and is wasted.</p>",
           "chat": ""
         },
         "activation": {
@@ -148,20 +158,23 @@
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 17,
+            "saveAbility": "con"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hCYZg5yKoshfOdpV.h7pGzzup3t0ZCwVb"
+      "_key": "!actors.items!V6SEIJSp8hKUi0WL.h7pGzzup3t0ZCwVb"
     },
     {
-      "_id": "pdqbUYbv9p797jKF",
-      "name": "Undead Restoration",
+      "_id": "KNWYHT2zm3rBM1wr",
+      "name": "Restauração Morta-Viva",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the revenant dies, it revives 24 hours later unless Dispel Evil or Good is cast on its remains. If it revives, it animates another Gargantuan object or structure elsewhere on the same plane of existence; it now looks different but uses the same stat block and returns with all its Pontos de Vida.</p>",
+          "value": "<p>If the revenant dies, it revives 24 hours later unless Dispel Evil and Good is cast on its remains. If it revives, it animates another Gargantuan object or structure elsewhere on the same plane of existence; it now looks different but uses the same stat block and returns with all its Pontos de Vida.</p>",
           "chat": ""
         },
         "activation": {
@@ -185,7 +198,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hCYZg5yKoshfOdpV.pdqbUYbv9p797jKF"
+      "_key": "!actors.items!V6SEIJSp8hKUi0WL.KNWYHT2zm3rBM1wr"
     },
     {
       "_id": "qHL5oF8y6lNko5UI",
@@ -194,7 +207,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The revenant makes two Object Slam at- tacks and uses Invitation.</p>",
+          "value": "<p>The revenant makes two Object Pancada attacks and uses Invitation.</p>",
           "chat": ""
         },
         "activation": {
@@ -219,16 +232,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hCYZg5yKoshfOdpV.qHL5oF8y6lNko5UI"
+      "_key": "!actors.items!V6SEIJSp8hKUi0WL.qHL5oF8y6lNko5UI"
     },
     {
-      "_id": "xvD0IMlvph1N7Uje",
-      "name": "Object Slam",
+      "_id": "f5LEAgNgfWhEEMrF",
+      "name": "Object Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +9 (with Advantage if o alvo is inside the revenant's space), alcance 10 ft. or range 30/90 ft. Acerto: 27 (5d8 + 5) Blud- geoning de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +9 (with Vantagem if o alvo is inside the revenant's space), alcance 3 m. or distância 9/27 m. Acerto: 27 (5d8 + 5) dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
@@ -246,8 +259,8 @@
           "subtype": ""
         },
         "activities": {
-          "YrEoo0NlfBDdS8fE": {
-            "_id": "YrEoo0NlfBDdS8fE",
+          "CHzemR8aAtdo9yUj": {
+            "_id": "CHzemR8aAtdo9yUj",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -266,7 +279,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 5,
+                  "denomination": 8,
+                  "bonus": "5",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -275,12 +306,14 @@
         "mm2024": {
           "mechanics": {
             "toHit": 9,
-            "attackType": "ranged"
+            "attackType": "ranged",
+            "damageFormula": "5d8+5",
+            "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hCYZg5yKoshfOdpV.xvD0IMlvph1N7Uje"
+      "_key": "!actors.items!V6SEIJSp8hKUi0WL.f5LEAgNgfWhEEMrF"
     },
     {
       "_id": "NgesfocFV1M7SlCi",
@@ -289,7 +322,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Carisma Teste de Resistência: DC 17, cada criatura in a 60-foot Cone. Falha: The target is teleported in- side the revenant's space and swallowed. A swallowed creature has Total Cover against attacks and other ef- fects outside the revenant. u VJ While the revenant has Pontos de Vida, a swallowed crea- <( ture can leave the revenant's space only by using magic · aJ that enables planar travel, such as the Plar (e Shift spell. er:: Roe Avian of Unbelievable Size</p>",
+          "value": "<p>Teste de Resistência de Carisma: CD 17, cada criatura in a 18 m Cone. O alvo is teleported inside the revenant's space and swallowed. A swallowed creature has Total Cover against attacks and other effects outside the revenant.\nWhile the revenant has Pontos de Vida, a swallowed creature can leave the revenant's space only by using magic that enables planar travel, such as the Plane Shift spell.</p>",
           "chat": ""
         },
         "activation": {
@@ -341,13 +374,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hCYZg5yKoshfOdpV.NgesfocFV1M7SlCi"
+      "_key": "!actors.items!V6SEIJSp8hKUi0WL.NgesfocFV1M7SlCi"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Haunting Revenant",
-      "page": 262,
+      "page": 260,
       "cr": "10",
       "warnings": []
     }

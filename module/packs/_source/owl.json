@@ -1,6 +1,6 @@
 {
-  "_id": "CE9QixumZ0tI2xBE",
-  "_key": "!actors!CE9QixumZ0tI2xBE",
+  "_id": "T6DKhgaFVPBH8LH9",
+  "_key": "!actors!T6DKhgaFVPBH8LH9",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Owl",
   "type": "npc",
@@ -41,17 +41,19 @@
       "hp": {
         "value": 1,
         "max": 1,
-        "formula": "1d4 - l",
+        "formula": "1d4 - 1",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 5,
+        "fly": 60
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 120
       },
       "init": {
         "ability": "dex",
@@ -68,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 0,
       "xp": {
-        "value": 10
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,10 +99,14 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
       "ste": {
         "value": 2,
         "ability": "dex"
@@ -120,13 +126,13 @@
   },
   "items": [
     {
-      "_id": "8yBaliYQdegg97FX",
-      "name": "Flyby",
+      "_id": "UhmSG0DAdyjnpeed",
+      "name": "Voo Rasante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The owl doesn't provoke an Opportunity Attack when it flies out of an enemy's alcance.</p>",
+          "value": "<p>The owl doesn't provoke Opportunity Attacks when it flies out of an enemy's alcance.</p>",
           "chat": ""
         },
         "activation": {
@@ -150,16 +156,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CE9QixumZ0tI2xBE.8yBaliYQdegg97FX"
+      "_key": "!actors.items!T6DKhgaFVPBH8LH9.UhmSG0DAdyjnpeed"
     },
     {
-      "_id": "nHMMpgfZfbyGIEzn",
-      "name": "Talons",
+      "_id": "lda9n32ltLXP0ue7",
+      "name": "Garras",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Hit : l Slash- ing de dano. PANTHER Medium Beast, Unaligned AC 13 Iniciativa +3 (13) HP 13 (3d8) Speed 50 ft ., Climb 40 ft. MOD SAVE MOD SAV E MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 1 dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -177,8 +183,8 @@
           "subtype": ""
         },
         "activities": {
-          "8jwQ2BrSa7ZxaDO0": {
-            "_id": "8jwQ2BrSa7ZxaDO0",
+          "ClNNRHDvfUgYnqFs": {
+            "_id": "ClNNRHDvfUgYnqFs",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -211,13 +217,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CE9QixumZ0tI2xBE.nHMMpgfZfbyGIEzn"
+      "_key": "!actors.items!T6DKhgaFVPBH8LH9.lda9n32ltLXP0ue7"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Owl",
-      "page": 368,
+      "page": 366,
       "cr": "0",
       "warnings": []
     }

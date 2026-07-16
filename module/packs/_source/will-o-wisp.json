@@ -1,8 +1,8 @@
 {
-  "_id": "ASSBycVg3dSpBwN1",
-  "_key": "!actors!ASSBycVg3dSpBwN1",
+  "_id": "IZzwb2tixcPBLroc",
+  "_key": "!actors!IZzwb2tixcPBLroc",
   "folder": "bKQUPthn1V2Yu6Bn",
-  "name": "Will-o'-wisp",
+  "name": "Will-o'-Wisp",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/will-o-wisp.webp",
   "system": {
@@ -52,7 +52,8 @@
         "fly": 50
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 120
       },
       "init": {
         "ability": "dex",
@@ -69,7 +70,7 @@
       "alignment": "Caótico e Mau",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -93,7 +94,9 @@
           "bludgeoning",
           "cold",
           "fire",
-          "necrotic"
+          "necrotic",
+          "piercing",
+          "slashing"
         ],
         "custom": ""
       },
@@ -104,7 +107,13 @@
       "ci": {
         "value": [
           "exhaustion",
-          "grappled"
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "prone",
+          "restrained",
+          "unconscious"
         ],
         "custom": ""
       },
@@ -116,7 +125,7 @@
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Will-o'-wisp",
+    "name": "Will-o'-Wisp",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -128,13 +137,13 @@
   },
   "items": [
     {
-      "_id": "QEJ3GL2YRDZsbJ0s",
-      "name": "I- Ephemeral",
+      "_id": "ogEr2gCIZhj4ChNk",
+      "name": "Ephemeral",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The wisp can't wear or carry anything. lJ 0.. Illumination. The wisp sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. W1LL-o'-W1sP AMBUSHES 1d6 The Will-o'-Wisp Tempts Victims Into ... l An abandoned structure ready to collapse. 2 An ambush by hungry ghouls or vampires. 3 A dreaded ruin that curses those who enter. 4 The lair of a predator, like a bear or wyvern. 5 Patches of brown mold-', or green slime.-', 6 Quicksand,', or pools covered in th in ice.~- ;',See the Dungeon Master's Guide.</p>",
+          "value": "<p>The wisp can't wear or carry anything.</p>",
           "chat": ""
         },
         "activation": {
@@ -158,16 +167,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ASSBycVg3dSpBwN1.QEJ3GL2YRDZsbJ0s"
+      "_key": "!actors.items!IZzwb2tixcPBLroc.ogEr2gCIZhj4ChNk"
     },
     {
-      "_id": "8879yh46sITP8ABy",
-      "name": "Incorporeal Movement",
+      "_id": "dHWwqNxCTqj8tEeH",
+      "name": "Iluminação",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The wisp can move through other creatures and objects as if they were Difficult Ter- rain . It takes 5 (1d10) Energia de dano if it ends its turn inside an object.</p>",
+          "value": "<p>The wisp sheds Bright Light in a 6 m radius and Dim Light for an additional 6 m.</p>",
           "chat": ""
         },
         "activation": {
@@ -191,7 +200,40 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ASSBycVg3dSpBwN1.8879yh46sITP8ABy"
+      "_key": "!actors.items!IZzwb2tixcPBLroc.dHWwqNxCTqj8tEeH"
+    },
+    {
+      "_id": "aAZNl3ddhfArrVGc",
+      "name": "Movimento Incorpóreo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The wisp can move through other creatures and objects as if they were Difficult Terrain. It takes 5 (1d10) dano de energia if it ends its turn inside an object.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!IZzwb2tixcPBLroc.aAZNl3ddhfArrVGc"
     },
     {
       "_id": "lfE8qY5bU66OVhGz",
@@ -200,7 +242,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 11 (2d8 + 2) Elétrico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 11 (2d8 + 2) dano elétrico.</p>",
           "chat": ""
         },
         "activation": {
@@ -272,7 +314,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ASSBycVg3dSpBwN1.lfE8qY5bU66OVhGz"
+      "_key": "!actors.items!IZzwb2tixcPBLroc.lfE8qY5bU66OVhGz"
     },
     {
       "_id": "dBGQMP2pWqwHJkVK",
@@ -281,7 +323,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC l 0, one living creature the wisp can see within 5 feet that has 0</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 10, one living creature the wisp can see within 1,5 m that has 0 Pontos de Vida. O alvo dies, and the wisp regains 10 (3d6) Pontos de Vida.</p>",
           "chat": ""
         },
         "activation": {
@@ -298,58 +340,51 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "me8go3LdNmRwfay5": {
+            "_id": "me8go3LdNmRwfay5",
+            "type": "save",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "10"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 10,
+            "saveAbility": "con"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ASSBycVg3dSpBwN1.dBGQMP2pWqwHJkVK"
+      "_key": "!actors.items!IZzwb2tixcPBLroc.dBGQMP2pWqwHJkVK"
     },
     {
-      "_id": "9ZajAEGGdrEbmB4N",
-      "name": "Pontos de Vida",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Falha: The target dies, and the wisp regains 10 (3d6) Pontos de Vida.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!ASSBycVg3dSpBwN1.9ZajAEGGdrEbmB4N"
-    },
-    {
-      "_id": "VdUvbvis4tMa2jOX",
+      "_id": "x0zbQqFL21iuno78",
       "name": "Vanish",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The wisp and its light have the Invisível con di- , tion until the wisp's Concentration ends on this effect, which ends early immediately after the wisp makes an attack roll or uses Consume Life. WILL -0'- WI SP 333 WINT ER WOLF Friohearted Pack Hunter</p>",
+          "value": "<p>The wisp and its light have a condição Invisível until the wisp's Concentration ends on this effect, which ends early immediately after the wisp makes an attack roll or uses Consume Life.</p>",
           "chat": ""
         },
         "activation": {
@@ -374,13 +409,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ASSBycVg3dSpBwN1.VdUvbvis4tMa2jOX"
+      "_key": "!actors.items!IZzwb2tixcPBLroc.x0zbQqFL21iuno78"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Will-o'-Wisp",
-      "page": 335,
+      "page": 333,
       "cr": "2",
       "warnings": []
     }

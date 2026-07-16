@@ -1,6 +1,6 @@
 {
-  "_id": "RDCckijMJDRQ61I2",
-  "_key": "!actors!RDCckijMJDRQ61I2",
+  "_id": "ebaxiBkUH86L3XVw",
+  "_key": "!actors!ebaxiBkUH86L3XVw",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Magma Mephit",
   "type": "npc",
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 11,
         "formula": ""
       },
       "hp": {
@@ -48,10 +48,12 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "fly": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -65,8 +67,8 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Neutro",
-      "cr": 0,
+      "alignment": "Neutro e Mau",
+      "cr": 0.5,
       "xp": {
         "value": 0
       },
@@ -91,7 +93,9 @@
         "custom": ""
       },
       "dv": {
-        "value": [],
+        "value": [
+          "cold"
+        ],
         "custom": ""
       },
       "ci": {
@@ -103,7 +107,7 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Primordial (Ignan, Terran)"
       }
     },
     "skills": {
@@ -126,13 +130,13 @@
   },
   "items": [
     {
-      "_id": "FfLih1AjDRYsiRcR",
-      "name": "Death Burst",
+      "_id": "CTDCpelW4K1JYn8X",
+      "name": "Explosão Mortal",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mephit explodes when it dies. Dexter- ity Sa11ing Throw: DC 11, cada criatura in a 5-foot Ema- nation originating from the mephit. Falha: 7 (2d6) Fogo de dano. Sucesso: Metade do dano.</p>",
+          "value": "<p>The mephit explodes when it dies. Teste de Resistência de Destreza: CD 11, cada criatura in a 1,5 m Emanation originating from the mephit. 7 (2d6) dano de fogo. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -153,22 +157,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "2d6",
-            "damageType": "fire"
+            "saveDc": 11,
+            "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!RDCckijMJDRQ61I2.FfLih1AjDRYsiRcR"
+      "_key": "!actors.items!ebaxiBkUH86L3XVw.CTDCpelW4K1JYn8X"
     },
     {
-      "_id": "SDXh06D8pFgIZ1oF",
-      "name": "Claw",
+      "_id": "2Zv1WLdY8scEwWAP",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 3 (1d4 + l) Cortante de dano plus 3 (1d6) Fogo de dano. er: <( Fogo Breath (Recarga 6). Destreza Teste de Resistência: DC w 11, cada criatura in a 15-foot Cone. Falha: 7 (2d6) Fogo cr: z de dano. Sucesso: Half <( de dano. Muo MEPHIT Small Elemental, Neutral ElJil AC 11 Iniciativa +l ( 11) HP 13 (3d6 + 3) S peed 20 ft., Fly 20 ft., Swim 20 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 3 (1d4 + 1) dano cortante mais 3 (1d6) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -186,8 +190,8 @@
           "subtype": ""
         },
         "activities": {
-          "CmpvUNHbCPZahbNj": {
-            "_id": "CmpvUNHbCPZahbNj",
+          "BZBg8JOa4oYw3gk7": {
+            "_id": "BZBg8JOa4oYw3gk7",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -208,15 +212,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "1",
                   "types": [
                     "slashing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "1d4+l"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -234,20 +238,81 @@
           "mechanics": {
             "toHit": 3,
             "attackType": "melee",
-            "damageFormula": "1d4+l",
+            "damageFormula": "1d4+1",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!RDCckijMJDRQ61I2.SDXh06D8pFgIZ1oF"
+      "_key": "!actors.items!ebaxiBkUH86L3XVw.2Zv1WLdY8scEwWAP"
+    },
+    {
+      "_id": "y79bQyK0rxJldCeq",
+      "name": "Sopro de Fogo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Destreza: CD 11, cada criatura in a 4,5 m Cone. 7 (2d6) dano de fogo. Metade do dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "Zpbt7upqWSCVo7im": {
+            "_id": "Zpbt7upqWSCVo7im",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "11"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 11,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ebaxiBkUH86L3XVw.y79bQyK0rxJldCeq"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Magma Mephit",
-      "page": 209,
-      "cr": "0",
+      "page": 207,
+      "cr": "1/2",
       "warnings": []
     }
   }

@@ -1,30 +1,30 @@
 {
-  "_id": "Px6p0h69eKfVcjzV",
-  "_key": "!actors!Px6p0h69eKfVcjzV",
+  "_id": "lau4AEiEbG7pVo1A",
+  "_key": "!actors!lau4AEiEbG7pVo1A",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Gigante Squid",
+  "name": "Giant Squid",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/giant-squid.webp",
   "system": {
     "abilities": {
       "str": {
-        "value": 7,
-        "proficient": 0
+        "value": 23,
+        "proficient": 1
       },
       "dex": {
-        "value": 16,
+        "value": 14,
         "proficient": 1
       },
       "con": {
-        "value": 11,
+        "value": 12,
         "proficient": 0
       },
       "int": {
-        "value": 2,
+        "value": 5,
         "proficient": 0
       },
       "wis": {
-        "value": 10,
+        "value": 11,
         "proficient": 0
       },
       "cha": {
@@ -35,25 +35,25 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 13,
+        "flat": 12,
         "formula": ""
       },
       "hp": {
-        "value": 7,
-        "max": 7,
-        "formula": "2d6",
+        "value": 120,
+        "max": 120,
+        "formula": "16d12 + 16",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30,
-        "climb": 30
+        "walk": 5,
+        "swim": 80
       },
       "senses": {
         "units": "ft",
-        "darkvision": 60
+        "darkvision": 120
       },
       "init": {
         "ability": "dex",
@@ -68,9 +68,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0.125,
+      "cr": 6,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -80,7 +80,7 @@
       }
     },
     "traits": {
-      "size": "sm",
+      "size": "huge",
       "di": {
         "value": [],
         "custom": ""
@@ -99,18 +99,18 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       }
     }
   },
   "prototypeToken": {
-    "name": "Gigante Squid",
+    "name": "Giant Squid",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -122,13 +122,13 @@
   },
   "items": [
     {
-      "_id": "E5Wr2YvbjVy3a7q2",
-      "name": "Pack Tactics",
+      "_id": "OXWHbFjZM2cEXpqG",
+      "name": "Respiração Aquática",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The rat has Advantage on an attack roll against a creature if at least one of the rat's allies is within 5 feet of the creature and the ally doesn't have the Incapacitado condition. ACTIONS ::i</p>",
+          "value": "<p>A criatura só consegue respirar debaixo d'água.</p>",
           "chat": ""
         },
         "activation": {
@@ -152,21 +152,22 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Px6p0h69eKfVcjzV.E5Wr2YvbjVy3a7q2"
+      "_key": "!actors.items!lau4AEiEbG7pVo1A.OXWHbFjZM2cEXpqG"
     },
     {
-      "_id": "xfrFaI9pIfEq55NH",
-      "name": "Bite",
+      "_id": "1zMZ5yJPZBHjksxg",
+      "name": "Ataque Múltiplo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo : +5, alcance 5 feet. Acerto: 5 (1d4 + 3) I</p>",
+          "value": "<p>The squid makes one Mordida attack and one Tentáculo attack.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "",
-          "value": null
+          "type": "action",
+          "value": null,
+          "condition": ""
         },
         "uses": {
           "spent": 0,
@@ -185,26 +186,194 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Px6p0h69eKfVcjzV.xfrFaI9pIfEq55NH"
+      "_key": "!actors.items!lau4AEiEbG7pVo1A.1zMZ5yJPZBHjksxg"
     },
     {
-      "_id": "Ht3HfU5uuntdPk2i",
-      "name": "Perfurante de dano",
+      "_id": "6DSXEc9hmqKEwvzr",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>,. 0 -= -----~z,.....~-r- GIANT SCORPION Large Beast, Unaligned AC 15 Iniciativa +l (ll) HP 52 (7d10 + 14) Speed 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 1,5 m. Acerto: 28 (4d10 + 6) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "",
-          "value": null
+          "type": "action",
+          "value": null,
+          "condition": ""
         },
         "uses": {
           "spent": 0,
           "max": "",
           "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "G1OPB9x2ek9dnR0R": {
+            "_id": "G1OPB9x2ek9dnR0R",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "9",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 10,
+                  "bonus": "6",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9,
+            "attackType": "melee",
+            "damageFormula": "4d10+6",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!lau4AEiEbG7pVo1A.6DSXEc9hmqKEwvzr"
+    },
+    {
+      "_id": "YPmf2MkaestoBVj6",
+      "name": "Tentáculo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 4,5 m. Acerto: 19 (3d8 + 6) dano de concussão. If o alvo is a Huge or smaller creature, it fica com a condição Agarrado (CD para escapar 16) from one of two tentacles, and the squid can pull o alvo up to 3 m straight toward itself.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "Mjv3jQyAwMiId0Jq": {
+            "_id": "Mjv3jQyAwMiId0Jq",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "9",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 8,
+                  "bonus": "6",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9,
+            "attackType": "melee",
+            "damageFormula": "3d8+6",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!lau4AEiEbG7pVo1A.YPmf2MkaestoBVj6"
+    },
+    {
+      "_id": "OxSdT0gcVO0nN79t",
+      "name": "Ink Cloud (1/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The squid takes de dano while underwater. The squid releases ink that fills a 4,5 m Cube centered on itself, and the squid moves up to its Swim Speed. The Cube is Heavily Obscured for 1 minute or until a strong current or similar effect disperses the ink.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
         },
         "type": {
           "value": "monster",
@@ -218,14 +387,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Px6p0h69eKfVcjzV.Ht3HfU5uuntdPk2i"
+      "_key": "!actors.items!lau4AEiEbG7pVo1A.OxSdT0gcVO0nN79t"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Giant Squid",
       "page": 360,
-      "cr": "1/8",
+      "cr": "6",
       "warnings": []
     }
   }

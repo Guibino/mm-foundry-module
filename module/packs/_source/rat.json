@@ -1,6 +1,6 @@
 {
-  "_id": "R4O7WMjwCrLwJH8h",
-  "_key": "!actors!R4O7WMjwCrLwJH8h",
+  "_id": "IdjkZP1cHyF8Cxht",
+  "_key": "!actors!IdjkZP1cHyF8Cxht",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Rat",
   "type": "npc",
@@ -24,7 +24,7 @@
         "proficient": 0
       },
       "wis": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "cha": {
@@ -41,7 +41,7 @@
       "hp": {
         "value": 1,
         "max": 1,
-        "formula": "",
+        "formula": "1d4 - 1",
         "temp": null,
         "tempmax": null
       },
@@ -70,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 0,
       "xp": {
-        "value": 10
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,7 +102,12 @@
         "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Rat",
@@ -123,7 +128,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The rat doesn't provoke an Opportunity Attack when it moves out of an enemy's alcance.</p>",
+          "value": "<p>The rat doesn't provoke Opportunity Attacks when it moves out of an enemy's alcance.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,16 +152,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!R4O7WMjwCrLwJH8h.6nvFTyt32TBRwFfr"
+      "_key": "!actors.items!IdjkZP1cHyF8Cxht.6nvFTyt32TBRwFfr"
     },
     {
-      "_id": "1DtXLEoQ58haIgaW",
-      "name": "Bite",
+      "_id": "SaH918h9oz23gghl",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 5 ft. Acerto: l Perfurante . de dano. I 6 ,367 APPENDIX A ANIMALS OH , I G OT R 1d0 F THAT WA N D OF W O N DE R YE A RS A GO. Ivv 1 THE LAST TH I N G THE MANSION S HERB GAR D ENS NEED 15 A N OTHER RHIN OC EROS . -PENELOPE l7 ARPELL RAVEN T iny Beast, Unaligned AC 12 Iniciativa +2 (12) HP 2 (1d4) Speed l Oft., Fly 50 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 1,5 m. Acerto: 1 dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -174,8 +179,8 @@
           "subtype": ""
         },
         "activities": {
-          "UFSlF0gyJzw0WksV": {
-            "_id": "UFSlF0gyJzw0WksV",
+          "V7GVG1oVmijvuELg": {
+            "_id": "V7GVG1oVmijvuELg",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -208,17 +213,15 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!R4O7WMjwCrLwJH8h.1DtXLEoQ58haIgaW"
+      "_key": "!actors.items!IdjkZP1cHyF8Cxht.SaH918h9oz23gghl"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Rat",
-      "page": 369,
+      "page": 367,
       "cr": "0",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "warnings": []
     }
   }
 }

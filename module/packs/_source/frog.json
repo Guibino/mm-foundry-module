@@ -1,6 +1,6 @@
 {
-  "_id": "2xsaSSApeurdPEnK",
-  "_key": "!actors!2xsaSSApeurdPEnK",
+  "_id": "43epMxXdEQd4v8WP",
+  "_key": "!actors!43epMxXdEQd4v8WP",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Frog",
   "type": "npc",
@@ -35,13 +35,13 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 11,
         "formula": ""
       },
       "hp": {
         "value": 1,
         "max": 1,
-        "formula": "",
+        "formula": "1d4 - 1",
         "temp": null,
         "tempmax": null
       },
@@ -70,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 0,
       "xp": {
-        "value": 10
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -99,10 +99,14 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      },
       "ste": {
         "value": 1,
         "ability": "dex"
@@ -122,13 +126,13 @@
   },
   "items": [
     {
-      "_id": "p9JjhMAcHffhfV8t",
-      "name": "Amphibious",
+      "_id": "UaUhgYPtRN8cvjCO",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The frog can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -152,16 +156,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2xsaSSApeurdPEnK.p9JjhMAcHffhfV8t"
+      "_key": "!actors.items!43epMxXdEQd4v8WP.UaUhgYPtRN8cvjCO"
     },
     {
-      "_id": "B24K9aVXvALOZF9R",
-      "name": "Standing Leap",
+      "_id": "iAKYOE5RJerOjn3F",
+      "name": "Salto Parado",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The frog's Long Jump is upto lOfeet and its High Jump is up to 5 feet with or without a run- ning start.</p>",
+          "value": "<p>The frog's Long Jump is up to 3 m and its High Jump is up to 1,5 m with or without a running start.</p>",
           "chat": ""
         },
         "activation": {
@@ -185,16 +189,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2xsaSSApeurdPEnK.B24K9aVXvALOZF9R"
+      "_key": "!actors.items!43epMxXdEQd4v8WP.iAKYOE5RJerOjn3F"
     },
     {
-      "_id": "Hg2ZZSbijboIPGme",
-      "name": "Bite",
+      "_id": "7CmxUtFFTMeYsekF",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: l Perfurante de dano. APPENDIX A I ANIMALS 354 GIANT APE Huge Beast, Unal igned AC 12 Initiat iv e +5 (15) HP 168 (16d12 + 64) Speed 40 ft., Climb 40 ft. MO D SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 1 dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -212,8 +216,8 @@
           "subtype": ""
         },
         "activities": {
-          "1INYD1g5nIZGlUzc": {
-            "_id": "1INYD1g5nIZGlUzc",
+          "GIIK98C9g1tdbBvU": {
+            "_id": "GIIK98C9g1tdbBvU",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -246,17 +250,15 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2xsaSSApeurdPEnK.Hg2ZZSbijboIPGme"
+      "_key": "!actors.items!43epMxXdEQd4v8WP.7CmxUtFFTMeYsekF"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Frog",
-      "page": 356,
+      "page": 354,
       "cr": "0",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "warnings": []
     }
   }
 }

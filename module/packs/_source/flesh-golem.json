@@ -1,6 +1,6 @@
 {
-  "_id": "doRFmO2IHvLlbL3y",
-  "_key": "!actors!doRFmO2IHvLlbL3y",
+  "_id": "gehmLqQ5zkUTMh37",
+  "_key": "!actors!gehmLqQ5zkUTMh37",
   "folder": "CVeezowVb7BNP8yc",
   "name": "Flesh Golem",
   "type": "npc",
@@ -69,7 +69,7 @@
       "alignment": "Neutro",
       "cr": 5,
       "xp": {
-        "value": 1800
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -81,7 +81,10 @@
     "traits": {
       "size": "med",
       "di": {
-        "value": [],
+        "value": [
+          "lightning",
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
@@ -93,12 +96,19 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "petrified",
+          "poisoned"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Understands Common plus one other"
+        "custom": "understands Common plus one other language but can't speak"
       }
     },
     "skills": {}
@@ -122,7 +132,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the golem takes Fogo de dano, it has Disadvantage on attack rolls and ability checks until the end of its next turn.</p>",
+          "value": "<p>Se a criatura sofrer dano de fogo, ela tem Desvantagem em rolagens de ataque e testes de habilidade até o fim do próximo turno dela.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,7 +156,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!doRFmO2IHvLlbL3y.YarSKU93k5nRbtc8"
+      "_key": "!actors.items!gehmLqQ5zkUTMh37.YarSKU93k5nRbtc8"
     },
     {
       "_id": "HN5Zvvygp0dNVgpz",
@@ -155,7 +165,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Whenever the golem starts its turn Bloodied, roll 1d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest crea- ture it can see. If no creature is near enough to move to and attack, the golem attacks an object. Once the go- lem goes berserk, it remains so until it is destroyed or it is no longer Bloodied. The golem's creator, if within 60 feet of the berserk golem, can try to calm it by taking an action to make a DC 15 Carisma (Persuasion) check; the golem must be able to hear its creator. If this check succeeds, the golem ceases being berserk until the start of its next turn, at which point it resumes rolling for the Berserk trait again if it is still Bloodied.</p>",
+          "value": "<p>Whenever the golem starts its turn Bloodied, roll 1d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object. Once the golem goes berserk, it remains so until it is destroyed or it is no longer Bloodied.\nThe golem's creator, if within 18 m of the berserk golem, can try to calm it by taking an action to make a CD 15 Carisma (Persuasion) check; the golem must be able to hear its creator. If this check succeeds, the golem ceases being berserk until the start of its next turn, at which point it resumes rolling for the Berserk trait again if it is still Bloodied.</p>",
           "chat": ""
         },
         "activation": {
@@ -182,16 +192,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!doRFmO2IHvLlbL3y.HN5Zvvygp0dNVgpz"
+      "_key": "!actors.items!gehmLqQ5zkUTMh37.HN5Zvvygp0dNVgpz"
     },
     {
-      "_id": "TMd4wuPXJLkShQhQ",
-      "name": "Immutable Form",
+      "_id": "0bp0N1ZMXDvflqUS",
+      "name": "Forma Imutável",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The golem can't shape-shift.</p>",
+          "value": "<p>A criatura não pode mudar de forma.</p>",
           "chat": ""
         },
         "activation": {
@@ -215,7 +225,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!doRFmO2IHvLlbL3y.TMd4wuPXJLkShQhQ"
+      "_key": "!actors.items!gehmLqQ5zkUTMh37.0bp0N1ZMXDvflqUS"
     },
     {
       "_id": "Ja3WKiAXb48ddLR2",
@@ -224,7 +234,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Whenever the golem is subjected to Elétrico de dano, it regains a number of Pontos de Vida equal to the Elétrico de dano dealt.</p>",
+          "value": "<p>Whenever the golem is subjected to dano elétrico, it regains a number of Pontos de Vida equal to the dano elétrico dealt.</p>",
           "chat": ""
         },
         "activation": {
@@ -248,16 +258,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!doRFmO2IHvLlbL3y.Ja3WKiAXb48ddLR2"
+      "_key": "!actors.items!gehmLqQ5zkUTMh37.Ja3WKiAXb48ddLR2"
     },
     {
-      "_id": "V82Gxi2HHI21Th1a",
-      "name": "Magic Resistance",
+      "_id": "gaWbKM06t1gbztib",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The golem has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -281,7 +291,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!doRFmO2IHvLlbL3y.V82Gxi2HHI21Th1a"
+      "_key": "!actors.items!gehmLqQ5zkUTMh37.gaWbKM06t1gbztib"
     },
     {
       "_id": "oeso4pU3A0nCU8Yk",
@@ -290,7 +300,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The golem makes two Slam attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Pancada.</p>",
           "chat": ""
         },
         "activation": {
@@ -315,16 +325,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!doRFmO2IHvLlbL3y.oeso4pU3A0nCU8Yk"
+      "_key": "!actors.items!gehmLqQ5zkUTMh37.oeso4pU3A0nCU8Yk"
     },
     {
-      "_id": "SpJhxvbocM5amz7M",
-      "name": "Slam",
+      "_id": "qlxe3ZBZeoouX200",
+      "name": "Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 13 (2d8 + _4) Concussão de dano plus 4 (1d8) Elétrico de dano. FLESH GOLEM FLUMPH Strange Ally from a Strange Place</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 13 (2d8 + 4) dano de concussão mais 4 (1d8) dano elétrico.</p>",
           "chat": ""
         },
         "activation": {
@@ -342,8 +352,8 @@
           "subtype": ""
         },
         "activities": {
-          "7iQ9vzdecLBQ3Lr8": {
-            "_id": "7iQ9vzdecLBQ3Lr8",
+          "SCWvPtyzPQzb0nuo": {
+            "_id": "SCWvPtyzPQzb0nuo",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -364,15 +374,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "4",
                   "types": [
                     "bludgeoning"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "2d8+_4"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -390,19 +400,19 @@
           "mechanics": {
             "toHit": 7,
             "attackType": "melee",
-            "damageFormula": "2d8+_4",
+            "damageFormula": "2d8+4",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!doRFmO2IHvLlbL3y.SpJhxvbocM5amz7M"
+      "_key": "!actors.items!gehmLqQ5zkUTMh37.qlxe3ZBZeoouX200"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Flesh Golem",
-      "page": 123,
+      "page": 121,
       "cr": "5",
       "warnings": []
     }

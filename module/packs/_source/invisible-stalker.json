@@ -1,6 +1,6 @@
 {
-  "_id": "Ib6EuGhDxWbr5iee",
-  "_key": "!actors!Ib6EuGhDxWbr5iee",
+  "_id": "yZ5wxxlGgH2AavQI",
+  "_key": "!actors!yZ5wxxlGgH2AavQI",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Invisible Stalker",
   "type": "npc",
@@ -47,11 +47,13 @@
       },
       "movement": {
         "units": "ft",
-        "hover": false,
-        "walk": 30
+        "hover": true,
+        "walk": 50,
+        "fly": 50
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -68,7 +70,7 @@
       "alignment": "Neutro",
       "cr": 6,
       "xp": {
-        "value": 2300
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -86,7 +88,11 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
         "custom": ""
       },
       "dv": {
@@ -97,19 +103,28 @@
         "value": [
           "exhaustion",
           "grappled",
-          "paralyzed"
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "prone",
+          "restrained",
+          "unconscious"
         ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum, Primordial (Auran)"
       }
     },
     "skills": {
       "prc": {
         "value": 2,
         "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
       }
     }
   },
@@ -156,7 +171,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Ib6EuGhDxWbr5iee.Cm6bnShU4LJz5SZD"
+      "_key": "!actors.items!yZ5wxxlGgH2AavQI.Cm6bnShU4LJz5SZD"
     },
     {
       "_id": "oQ9FW7GlGUNClhTY",
@@ -165,7 +180,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The stalker has the Invisível condition.</p>",
+          "value": "<p>The stalker fica com a condição Invisível.</p>",
           "chat": ""
         },
         "activation": {
@@ -189,7 +204,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Ib6EuGhDxWbr5iee.oQ9FW7GlGUNClhTY"
+      "_key": "!actors.items!yZ5wxxlGgH2AavQI.oQ9FW7GlGUNClhTY"
     },
     {
       "_id": "gdDrQbd8DlXRPRLI",
@@ -198,7 +213,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The stalker makes three Wind Swipe at- tacks. It can replace one attack with a use of Vortex.</p>",
+          "value": "<p>The stalker makes three Wind Swipe attacks. It can replace one attack with a use of Vortex.</p>",
           "chat": ""
         },
         "activation": {
@@ -223,7 +238,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Ib6EuGhDxWbr5iee.gdDrQbd8DlXRPRLI"
+      "_key": "!actors.items!yZ5wxxlGgH2AavQI.gdDrQbd8DlXRPRLI"
     },
     {
       "_id": "mh9We0lHmTBjenwt",
@@ -232,7 +247,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Melee Atta_ ck Roll: +7, alcance 5 ft. Acerto: 11 (2d6 + 4) Energia de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 11 (2d6 + 4) dano de energia.</p>",
           "chat": ""
         },
         "activation": {
@@ -249,18 +264,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "zaU99egavfhoACuc": {
+            "_id": "zaU99egavfhoACuc",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 7,
+            "attackType": "melee",
             "damageFormula": "2d6+4",
             "damageType": "force"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Ib6EuGhDxWbr5iee.mh9We0lHmTBjenwt"
+      "_key": "!actors.items!yZ5wxxlGgH2AavQI.mh9We0lHmTBjenwt"
     },
     {
       "_id": "O8sG7KpPIslThQuk",
@@ -269,7 +328,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 14, one Large or smaller creature in the stalker's space. Falha: 7 (1d8 +. 3) Trovejante de dano, and o alvo has the Agarrado condition (escape DC 13). Until the grapple ends, o alvo can't cast spells with a Verbal component and l/l takes 7 (2d6) Trovejante de dano at the start of each of 0 the stalker's turns. LI.J IRON GOLEM Guardian of That Which Must Endure</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 14, one Large or smaller creature in the stalker's space. 7 (1d8 + 3) dano trovejante, and o alvo fica com a condição Agarrado (CD para escapar 13). Until the grapple ends, o alvo can't cast spells with a Verbal component and takes 7 (2d6) dano trovejante at the start of each of the stalker's turns.</p>",
           "chat": ""
         },
         "activation": {
@@ -307,25 +366,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
-                  "types": [
-                    "thunder"
-                  ],
-                  "custom": {
-                    "enabled": true,
-                    "formula": "1d8+.3"
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -333,21 +374,19 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "1d8+.3",
-            "damageType": "thunder",
             "saveDc": 14,
             "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Ib6EuGhDxWbr5iee.O8sG7KpPIslThQuk"
+      "_key": "!actors.items!yZ5wxxlGgH2AavQI.O8sG7KpPIslThQuk"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Invisible Stalker",
-      "page": 182,
+      "page": 180,
       "cr": "6",
       "warnings": []
     }

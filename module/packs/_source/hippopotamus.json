@@ -1,6 +1,6 @@
 {
-  "_id": "VUksry8xg7m7Eth8",
-  "_key": "!actors!VUksry8xg7m7Eth8",
+  "_id": "0p4IXL2F8a5EAxkn",
+  "_key": "!actors!0p4IXL2F8a5EAxkn",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Hippopotamus",
   "type": "npc",
@@ -98,10 +98,15 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Hippopotamus",
@@ -116,13 +121,13 @@
   },
   "items": [
     {
-      "_id": "jonUHIei1hfiZxn0",
-      "name": "Habilidade",
+      "_id": "FOvYa6WvfRDGolCF",
+      "name": "Prender a Respiração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>f-:iold Breath. The hip po pot am us can ho Id its breath for 2 10 minutes. I A CTI O NS ::i V1</p>",
+          "value": "<p>The hippopotamus can hold its breath for 10 minutes.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,21 +151,22 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VUksry8xg7m7Eth8.jonUHIei1hfiZxn0"
+      "_key": "!actors.items!0p4IXL2F8a5EAxkn.FOvYa6WvfRDGolCF"
     },
     {
-      "_id": "X3xRLjDzQMxIQLgT",
+      "_id": "YI8YlllIr3QvJGN0",
       "name": "Ataque Múltiplo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The hippopotamus makes two Bite attacks. a:</p>",
+          "value": "<p>A criatura faz dois ataques de Mordida.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "",
-          "value": null
+          "type": "action",
+          "value": null,
+          "condition": ""
         },
         "uses": {
           "spent": 0,
@@ -179,21 +185,22 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VUksry8xg7m7Eth8.X3xRLjDzQMxIQLgT"
+      "_key": "!actors.items!0p4IXL2F8a5EAxkn.YI8YlllIr3QvJGN0"
     },
     {
-      "_id": "8WDZBV6qo475j5G0",
-      "name": "Bite",
+      "_id": "yluEU3ynlfAnGJbu",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 16 (2d1 O + 5) w _J</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 16 (2d10 + 5) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "",
-          "value": null
+          "type": "action",
+          "value": null,
+          "condition": ""
         },
         "uses": {
           "spent": 0,
@@ -204,57 +211,68 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "Ia63mbfLFGQtuL5u": {
+            "_id": "Ia63mbfLFGQtuL5u",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "5",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
             "toHit": 7,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d10+5",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VUksry8xg7m7Eth8.8WDZBV6qo475j5G0"
-    },
-    {
-      "_id": "kygBaiXyI6K0vAl9",
-      "name": "Perfurante de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>2 HUNTER SHARK Large B east, U na ligned AC 12 Iniciativa +2 (12) , HP 45 (6d1 O + 12) Speed 5 ft., Swim 40 ft. MOD SAVE MOD SAVE MOO SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!VUksry8xg7m7Eth8.kygBaiXyI6K0vAl9"
+      "_key": "!actors.items!0p4IXL2F8a5EAxkn.yluEU3ynlfAnGJbu"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Hippopotamus",
-      "page": 364,
+      "page": 362,
       "cr": "4",
       "warnings": []
     }

@@ -1,0 +1,637 @@
+{
+  "_id": "GLITXZdYT3xdeHrh",
+  "_key": "!actors!GLITXZdYT3xdeHrh",
+  "folder": "3SEe9J5t05jhrkCa",
+  "name": "Kraken",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/kraken.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 30,
+        "proficient": 1
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 1
+      },
+      "con": {
+        "value": 26,
+        "proficient": 1
+      },
+      "int": {
+        "value": 22,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 18,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 20,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 18,
+        "formula": ""
+      },
+      "hp": {
+        "value": 481,
+        "max": 481,
+        "formula": "26d20 + 208",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30,
+        "swim": 120
+      },
+      "senses": {
+        "units": "ft",
+        "truesight": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "monstrosity",
+        "subtype": "titan",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Mau",
+      "cr": 23,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "grg",
+      "di": {
+        "value": [
+          "cold",
+          "lightning"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "frightened",
+          "grappled",
+          "paralyzed",
+          "restrained"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "understands Abyssal, Celestial, Infernal"
+      }
+    },
+    "skills": {
+      "his": {
+        "value": 2,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Kraken",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/kraken.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "blQkeqo07SAQZtVw",
+      "name": "Anfíbio",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura pode respirar ar e água.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!GLITXZdYT3xdeHrh.blQkeqo07SAQZtVw"
+    },
+    {
+      "_id": "c86xOoE4yeLTVMKn",
+      "name": "Resistência Lendária",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!GLITXZdYT3xdeHrh.c86xOoE4yeLTVMKn"
+    },
+    {
+      "_id": "sHkr34ldDpnuT1Qo",
+      "name": "Monstro de Cerco",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura causa o dobro de dano a objetos e estruturas.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!GLITXZdYT3xdeHrh.sHkr34ldDpnuT1Qo"
+    },
+    {
+      "_id": "3RFvqdIuD5qetCud",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The kraken makes two Tentáculo attacks and uses Fling, Elétrico Strike, or Engolir.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!GLITXZdYT3xdeHrh.3RFvqdIuD5qetCud"
+    },
+    {
+      "_id": "9kKfsVW0U8pZjToK",
+      "name": "Tentáculo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +17, alcance 9 m. Acerto: 24 (4d6 + 10) dano de concussão. O alvo fica com a condição Agarrado (CD para escapar 20) from one of ten tentacles, and it fica com a condição Impedido until the grapple ends.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "7H2JzsC25MMx2sQa": {
+            "_id": "7H2JzsC25MMx2sQa",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "17",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 6,
+                  "bonus": "10",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 17,
+            "attackType": "melee",
+            "damageFormula": "4d6+10",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!GLITXZdYT3xdeHrh.9kKfsVW0U8pZjToK"
+    },
+    {
+      "_id": "PV3SCb3jSqfDFwLA",
+      "name": "Fling",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The kraken throws a Large or smaller creature Agarrado by it to a space it can see within 18 m of itself that isn't in the air. Teste de Resistência de Destreza: CD 25, the creature thrown and cada criatura in the destination space. 18 (4d8) dano de concussão, and o alvo fica com a condição Caído. Metade do dano only.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "d9X2Nfaqev2edPda": {
+            "_id": "d9X2Nfaqev2edPda",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "25"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 25,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!GLITXZdYT3xdeHrh.PV3SCb3jSqfDFwLA"
+    },
+    {
+      "_id": "Ec1uPZmdpOXcvoY1",
+      "name": "Elétrico Strike",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Destreza: CD 23, uma criatura the kraken can see within 36 m. 33 (6d10) dano elétrico. Metade do dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "aLkJ4F4nqQ3SAr5T": {
+            "_id": "aLkJ4F4nqQ3SAr5T",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "23"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 23,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!GLITXZdYT3xdeHrh.Ec1uPZmdpOXcvoY1"
+    },
+    {
+      "_id": "ZIwfKBGKmADbDsgp",
+      "name": "Engolir",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Destreza: CD 25, uma criatura Agarrado by the kraken (it can have up to four creatures swallowed at a time). 23 (3d8 + 10) dano perfurante. If o alvo is Large or smaller, it is swallowed and no longer Agarrado. A swallowed creature fica com a condição Impedido, has Total Cover against attacks and other effects outside the kraken, and takes 24 (7d6) dano de ácido at the start of each of its turns.\nIf the kraken takes 50 de dano or more on a single turn from uma criatura inside it, the kraken must succeed on a CD 25 Constituição saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 3 m of the kraken with a condição Caído. If the kraken dies, any swallowed creature no longer fica com a condição Impedido and can escape from the corpse using 4,5 m of movement, exiting Caído.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "DZaRbxBYLh6NigUC": {
+            "_id": "DZaRbxBYLh6NigUC",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "25"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 25,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!GLITXZdYT3xdeHrh.ZIwfKBGKmADbDsgp"
+    },
+    {
+      "_id": "n9lIYn9uPnDFwxgf",
+      "name": "Storm Bolt",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The kraken uses Elétrico Strike.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!GLITXZdYT3xdeHrh.n9lIYn9uPnDFwxgf"
+    },
+    {
+      "_id": "85uSM1fjQT4JZlFE",
+      "name": "Toxic Ink",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Constituição: CD 23, cada criatura in a 4,5 m Emanation originating from the kraken while it is underwater. O alvo has the Cego and Envenenado conditions until the end of the kraken's next turn. The kraken then moves up to its Speed. The kraken can't take this action again until the start of its next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "1bz4AbdVDLWtZa66": {
+            "_id": "1bz4AbdVDLWtZa66",
+            "type": "save",
+            "activation": {
+              "type": "legendary",
+              "value": 1,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "23"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 23,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!GLITXZdYT3xdeHrh.85uSM1fjQT4JZlFE"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Kraken",
+      "page": 187,
+      "cr": "23",
+      "warnings": []
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "_id": "mQmdfAy52uQrwG3p",
-  "_key": "!actors!mQmdfAy52uQrwG3p",
+  "_id": "RXQTb781aPDdLZez",
+  "_key": "!actors!RXQTb781aPDdLZez",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Behir",
   "type": "npc",
@@ -41,13 +41,15 @@
       "hp": {
         "value": 168,
         "max": 168,
-        "formula": "l 6d12 + 64",
+        "formula": "16d12 + 64",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "walk": 50,
+        "climb": 50
       },
       "senses": {
         "units": "ft",
@@ -65,10 +67,10 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Neutro",
+      "alignment": "Neutro e Mau",
       "cr": 11,
       "xp": {
-        "value": 7
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,7 +104,16 @@
         "custom": "Dracônico"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Behir",
@@ -123,7 +134,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The behir makes one Bite attack and uses Constrict. • Bite. Rolagem de Ataque Corpo a Corpo:+ l 0 alcance l Oft . Acerto: 19 (2d1 2 + 6) Perfurante de dano plus 11 (2d10) Elétrico de dano.</p>",
+          "value": "<p>The behir makes one Mordida attack and uses Constrição.</p>",
           "chat": ""
         },
         "activation": {
@@ -144,23 +155,20 @@
       },
       "flags": {
         "mm2024": {
-          "mechanics": {
-            "damageFormula": "2d12+6",
-            "damageType": "piercing"
-          },
+          "mechanics": {},
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!mQmdfAy52uQrwG3p.9Gb6gcqhH3jz1byO"
+      "_key": "!actors.items!RXQTb781aPDdLZez.9Gb6gcqhH3jz1byO"
     },
     {
-      "_id": "Jt2bIGzrz5lc4Ykx",
-      "name": "Constrict",
+      "_id": "aGAkKD8xjYxlbt6C",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Força Teste de Resistência: DC 18, one Large or smaller creature the behir can see within 5 feet. Falha: 28 (Sd8 + 6) Concussão de dano. The target has the , Agarrado condition (escape DC 16), and it has the Re- strained condition until the grapple ends.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 3 m. Acerto: 19 (2d12 + 6) dano perfurante mais 11 (2d10) dano elétrico.</p>",
           "chat": ""
         },
         "activation": {
@@ -178,8 +186,89 @@
           "subtype": ""
         },
         "activities": {
-          "K1ir9kGFuMImrYVf": {
-            "_id": "K1ir9kGFuMImrYVf",
+          "hpgqWE6vHZydKQHh": {
+            "_id": "hpgqWE6vHZydKQHh",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 12,
+                  "bonus": "6",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 10,
+            "attackType": "melee",
+            "damageFormula": "2d12+6",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!RXQTb781aPDdLZez.aGAkKD8xjYxlbt6C"
+    },
+    {
+      "_id": "3gitBmW0w1zZdukf",
+      "name": "Constrição",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Força: CD 18, one Large or smaller creature the behir can see within 1,5 m. 28 (5d8 + 6) dano de concussão. O alvo fica com a condição Agarrado (CD para escapar 16), and it fica com a condição Impedido until the grapple ends.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "iCLjtGn0fqgDKeft": {
+            "_id": "iCLjtGn0fqgDKeft",
             "type": "save",
             "activation": {
               "type": "action",
@@ -198,25 +287,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
-                  "types": [
-                    "bludgeoning"
-                  ],
-                  "custom": {
-                    "enabled": true,
-                    "formula": "Sd8+6"
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -224,24 +295,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "Sd8+6",
-            "damageType": "bludgeoning",
             "saveDc": 18,
             "saveAbility": "str"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!mQmdfAy52uQrwG3p.Jt2bIGzrz5lc4Ykx"
+      "_key": "!actors.items!RXQTb781aPDdLZez.3gitBmW0w1zZdukf"
     },
     {
-      "_id": "5FzqMkeL1IFgtV1m",
-      "name": "Elétrico Breath (Recharge 5-6)",
+      "_id": "rJQvwXYjW8ikPNpa",
+      "name": "Sopro Elétrico (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 16, cada criatura in a 90-foot-long, 5-foot- wide Line. Falha: 66 (12d10) Elétrico de dano. Sue- ,- cess: Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 16, cada criatura in a 27 m-long, 1,5 m-wide Line. 66 (12d10) dano elétrico. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -265,8 +334,8 @@
           "subtype": ""
         },
         "activities": {
-          "h9tKphKTIn0LJ1wz": {
-            "_id": "h9tKphKTIn0LJ1wz",
+          "V8nvLRpXasRtAWZg": {
+            "_id": "V8nvLRpXasRtAWZg",
             "type": "save",
             "activation": {
               "type": "action",
@@ -285,25 +354,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 12,
-                  "denomination": 10,
-                  "bonus": "",
-                  "types": [
-                    "lightning"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -311,24 +362,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "12d10",
-            "damageType": "lightning",
             "saveDc": 16,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!mQmdfAy52uQrwG3p.5FzqMkeL1IFgtV1m"
+      "_key": "!actors.items!RXQTb781aPDdLZez.rJQvwXYjW8ikPNpa"
     },
     {
-      "_id": "Eh7IbnWiYV5crJ62",
-      "name": "Swallow",
+      "_id": "eyFRLLZyYcr6Cey7",
+      "name": "Engolir",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 18, one Large or smaller creature Agarrado by the behir (the behir can have only uma criatura swallowed at a time). Falha: The behir swallows o alvo, which is no longer Grap- pled. While swallowed, a creature has the Cego and Impedido conditions, has Total Cover against attacks and other effects outside the behir, and takes 21 (6d6) Ácido de dano at the start of each of the behir's turns. If the behir takes 30 de dano or more on a single turn from the swallowed creature, the behir must succeed on a DC 14 Constituição saving throw at the end of that turn or regurgitate the creature, which falls in a space within 10 feet of the behir and has the Caído condition. - If the behir dies, a swallowed creature is no longer Re- <( strained and can escape <( from the corpse by using 15 w feet of movement, exiting Caído. .. z BEHOLDER Infamous Many-Eyed Tyrant</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 18, one Large or smaller creature Agarrado by the behir (the behir can have only uma criatura swallowed at a time). The behir swallows o alvo, which is no longer Agarrado. While swallowed, uma criatura has the Cego and Impedido conditions, has Total Cover against attacks and other effects outside the behir, and takes 21 (6d6) dano de ácido at the start of each of the behir's turns.\nIf the behir takes 30 de dano or more on a single turn from the swallowed creature, the behir must succeed on a CD 14 Constituição saving throw at the end of that turn or regurgitate the creature, which falls in a space within 3 m of the behir and fica com a condição Caído. If the behir dies, a swallowed creature is no longer Impedido and can escape from the corpse by using 4,5 m of movement, exiting Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -346,8 +395,8 @@
           "subtype": ""
         },
         "activities": {
-          "cHXaE8uWbqd1GeIZ": {
-            "_id": "cHXaE8uWbqd1GeIZ",
+          "sKUDPcslA4xNzN88": {
+            "_id": "sKUDPcslA4xNzN88",
             "type": "save",
             "activation": {
               "type": "bonus",
@@ -380,13 +429,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!mQmdfAy52uQrwG3p.Eh7IbnWiYV5crJ62"
+      "_key": "!actors.items!RXQTb781aPDdLZez.eyFRLLZyYcr6Cey7"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Behir",
-      "page": 36,
+      "page": 34,
       "cr": "11",
       "warnings": []
     }

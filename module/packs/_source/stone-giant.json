@@ -1,35 +1,35 @@
 {
-  "_id": "8veg0N8fF2cxqXVe",
-  "_key": "!actors!8veg0N8fF2cxqXVe",
-  "folder": "Hp5o2ufz9hhrO2ew",
-  "name": "Stone Gigante",
+  "_id": "jveMgMx1LIWvKuIs",
+  "_key": "!actors!jveMgMx1LIWvKuIs",
+  "folder": "EgPgmtpb4EiltKUV",
+  "name": "Stone Giant",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/stone-giant.webp",
   "system": {
     "abilities": {
       "str": {
-        "value": 18,
+        "value": 23,
         "proficient": 0
       },
       "dex": {
-        "value": 17,
-        "proficient": 1
-      },
-      "con": {
-        "value": 14,
-        "proficient": 1
-      },
-      "int": {
-        "value": 16,
-        "proficient": 0
-      },
-      "wis": {
         "value": 15,
         "proficient": 1
       },
-      "cha": {
-        "value": 16,
+      "con": {
+        "value": 20,
         "proficient": 1
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 9,
+        "proficient": 0
       }
     },
     "attributes": {
@@ -39,16 +39,16 @@
         "formula": ""
       },
       "hp": {
-        "value": 1,
-        "max": 1,
-        "formula": "",
+        "value": 126,
+        "max": 126,
+        "formula": "11d12 + 55",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40
       },
       "senses": {
         "units": "ft",
@@ -61,15 +61,15 @@
     },
     "details": {
       "type": {
-        "value": "fiend",
+        "value": "giant",
         "subtype": "",
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Caótico e Mau",
-      "cr": 8,
+      "alignment": "Neutro",
+      "cr": 7,
       "xp": {
-        "value": 3900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -79,11 +79,9 @@
       }
     },
     "traits": {
-      "size": "lg",
+      "size": "huge",
       "di": {
-        "value": [
-          "poison"
-        ],
+        "value": [],
         "custom": ""
       },
       "dr": {
@@ -95,21 +93,31 @@
         "custom": ""
       },
       "ci": {
-        "value": [
-          "charmed",
-          "poisoned"
-        ],
+        "value": [],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Abissal, Comum"
+        "custom": "Gigante"
       }
     },
-    "skills": {}
+    "skills": {
+      "ath": {
+        "value": 2,
+        "ability": "str"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Stone Gigante",
+    "name": "Stone Giant",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -121,46 +129,13 @@
   },
   "items": [
     {
-      "_id": "8u8ym7RlCxVLly6m",
-      "name": "Fiendish Restoration",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If it dies, the naga returns to life in 1d6 days and regains all its Pontos de Vida. Only a Wish spell can prevent this trait from functioning.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!8veg0N8fF2cxqXVe.8u8ym7RlCxVLly6m"
-    },
-    {
       "_id": "dRhBzp1z3xXt1IwE",
       "name": "Ataque Múltiplo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The naga makes three attacks, using Bite or Necrótico Ray in any combination.</p>",
+          "value": "<p>The giant makes two attacks, using Stone Clava or Boulder in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -185,16 +160,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8veg0N8fF2cxqXVe.dRhBzp1z3xXt1IwE"
+      "_key": "!actors.items!jveMgMx1LIWvKuIs.dRhBzp1z3xXt1IwE"
     },
     {
-      "_id": "yHWd1HsE6bjIlgJD",
-      "name": "Bite",
+      "_id": "Y1CuezmvHog10XLa",
+      "name": "Stone Clava",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 10 ft. Acerto: 7 (1d6 + 4) Perfurante de dano plus 14 (4d6) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 4,5 m. Acerto: 22 (3d10 + 6) dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
@@ -212,8 +187,8 @@
           "subtype": ""
         },
         "activities": {
-          "mvmehptqPCrJP4aB": {
-            "_id": "mvmehptqPCrJP4aB",
+          "kksX2nYxut8QhGHJ": {
+            "_id": "kksX2nYxut8QhGHJ",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -223,7 +198,7 @@
             },
             "attack": {
               "ability": "",
-              "bonus": "7",
+              "bonus": "9",
               "flat": true,
               "type": {
                 "value": "melee",
@@ -234,11 +209,11 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": 1,
-                  "denomination": 6,
-                  "bonus": "4",
+                  "number": 3,
+                  "denomination": 10,
+                  "bonus": "6",
                   "types": [
-                    "piercing"
+                    "bludgeoning"
                   ],
                   "custom": {
                     "enabled": false,
@@ -258,24 +233,24 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "toHit": 7,
+            "toHit": 9,
             "attackType": "melee",
-            "damageFormula": "1d6+4",
-            "damageType": "piercing"
+            "damageFormula": "3d10+6",
+            "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8veg0N8fF2cxqXVe.yHWd1HsE6bjIlgJD"
+      "_key": "!actors.items!jveMgMx1LIWvKuIs.Y1CuezmvHog10XLa"
     },
     {
-      "_id": "UaAb4Tmj3gqFgOzi",
-      "name": "Necrótico Ray",
+      "_id": "kpodT83Tmoli1l0d",
+      "name": "Boulder",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +6, range 60 ft. Acerto: 21 (6d6) Necrótico de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +9, distância 18/72 m. Acerto: 15 (2d8 + 6) dano de concussão. If o alvo is a Large or smaller creature, it fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -293,8 +268,8 @@
           "subtype": ""
         },
         "activities": {
-          "YsRFf4xdG2jxJIYR": {
-            "_id": "YsRFf4xdG2jxJIYR",
+          "jTDwj2EYukNHEfPo": {
+            "_id": "jTDwj2EYukNHEfPo",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -304,7 +279,7 @@
             },
             "attack": {
               "ability": "",
-              "bonus": "6",
+              "bonus": "9",
               "flat": true,
               "type": {
                 "value": "ranged",
@@ -315,11 +290,11 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": 6,
-                  "denomination": 6,
-                  "bonus": "",
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "6",
                   "types": [
-                    "necrotic"
+                    "bludgeoning"
                   ],
                   "custom": {
                     "enabled": false,
@@ -339,59 +314,90 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "toHit": 6,
+            "toHit": 9,
             "attackType": "ranged",
-            "damageFormula": "6d6",
-            "damageType": "necrotic"
+            "damageFormula": "2d8+6",
+            "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8veg0N8fF2cxqXVe.UaAb4Tmj3gqFgOzi"
+      "_key": "!actors.items!jveMgMx1LIWvKuIs.kpodT83Tmoli1l0d"
     },
     {
-      "_id": "iqEE4QzLZuEiKYfh",
-      "name": "Conjuração",
+      "_id": "DpfA9ejD7lEOvp4x",
+      "name": "Deflect Missile (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The naga casts one of the following spells, requiring no Somatic or Material components and using Inteligência as the spellcasting ability (spell save DC 14): - À Vontade: Detect Magic, Mage Hand, Minor Illusion, Wa- ter Breathing 2/Dia Each: Detect Thoughts, Dimension Door, Hold Person (level 3), Elétrico Bolt (level 4) SPIRIT NAGA 297 THE TREE HAD A WEE V I LLAGE NESTLED IN ITS BOUGHS,</p>",
+          "value": "<p>The giant is hit by a ranged attack roll and takes Concussão, Perfurante, or dano cortante from it. The giant reduces the de dano it takes from the attack by 11 (1d10 + 6), and if that de dano is reduced to 0, the giant can redirect some of the attack's force. Teste de Resistência de Destreza: CD 17, uma criatura the giant can see within 18 m. 11 (1d10 + 6) dano de energia.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "action",
+          "type": "reaction",
           "value": null,
           "condition": ""
         },
         "uses": {
           "spent": 0,
-          "max": "",
-          "recovery": []
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
         },
         "type": {
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "HgRaOrFJe3IyV6lZ": {
+            "_id": "HgRaOrFJe3IyV6lZ",
+            "type": "save",
+            "activation": {
+              "type": "reaction",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "17"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 17,
+            "saveAbility": "dex"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8veg0N8fF2cxqXVe.iqEE4QzLZuEiKYfh"
+      "_key": "!actors.items!jveMgMx1LIWvKuIs.DpfA9ejD7lEOvp4x"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Stone Giant",
-      "page": 299,
-      "cr": "8",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "page": 300,
+      "cr": "7",
+      "warnings": []
     }
   }
 }

@@ -1,6 +1,6 @@
 {
-  "_id": "8VYSuLMrVJvmx2bd",
-  "_key": "!actors!8VYSuLMrVJvmx2bd",
+  "_id": "Ahqtpg2qCrNiuWUW",
+  "_key": "!actors!Ahqtpg2qCrNiuWUW",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Performer Legend",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 162,
         "max": 162,
-        "formula": "25d8+50",
+        "formula": "25d8 + 50",
         "temp": null,
         "tempmax": null
       },
@@ -68,7 +68,7 @@
       "alignment": "Neutro",
       "cr": 10,
       "xp": {
-        "value": 5900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -97,10 +97,31 @@
       },
       "languages": {
         "value": [],
-        "custom": "Common plus two other .languag es"
+        "custom": "Common plus two other languages"
       }
     },
-    "skills": {}
+    "skills": {
+      "acr": {
+        "value": 2,
+        "ability": "dex"
+      },
+      "ath": {
+        "value": 2,
+        "ability": "str"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "prf": {
+        "value": 2,
+        "ability": "cha"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Performer Legend",
@@ -121,7 +142,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The performer makes three Bejeweled Ba- ton attacks.</p>",
+          "value": "<p>The performer makes three Bejeweled Baton attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,7 +167,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8VYSuLMrVJvmx2bd.2ewoV7zeH7wAiVmM"
+      "_key": "!actors.items!Ahqtpg2qCrNiuWUW.2ewoV7zeH7wAiVmM"
     },
     {
       "_id": "pEscEwlmf9Mf9OQC",
@@ -155,7 +176,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 5 ft. Acerto: 10 (2d4 + 5) Concussão de dano plus 10 (3d6) Psy- chic de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 1,5 m. Acerto: 10 (2d4 + 5) dano de concussão mais 10 (3d6) dano psíquico.</p>",
           "chat": ""
         },
         "activation": {
@@ -227,7 +248,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8VYSuLMrVJvmx2bd.pEscEwlmf9Mf9OQC"
+      "_key": "!actors.items!Ahqtpg2qCrNiuWUW.pEscEwlmf9Mf9OQC"
     },
     {
       "_id": "e5kuWhknoSwxxzUd",
@@ -236,7 +257,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sabedoria Teste de Resistência: DC 17, cada criatura in a 20-foot-radius Sphere centered on a point within 120_feet. Falha: 22 (4d8 + 4) Psíquico de dano, and o alvo has the Enfeitiçado or Amedrontado condition (performer's choice) until the end of the performer's next turn. Sucesso: Metade do dano only.</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 17, cada criatura in a 6 m-radius Sphere centered on a point within 36 m. 22 (4d8 + 4) dano psíquico, and o alvo has the Enfeitiçado or Amedrontado condição (performer's choice) until the end of the performer's next turn. Metade do dano only.</p>",
           "chat": ""
         },
         "activation": {
@@ -274,25 +295,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 4,
-                  "denomination": 8,
-                  "bonus": "4",
-                  "types": [
-                    "psychic"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -300,15 +303,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "4d8+4",
-            "damageType": "psychic",
             "saveDc": 17,
             "saveAbility": "wis"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8VYSuLMrVJvmx2bd.e5kuWhknoSwxxzUd"
+      "_key": "!actors.items!Ahqtpg2qCrNiuWUW.e5kuWhknoSwxxzUd"
     },
     {
       "_id": "2adpbTPXxou0YfRe",
@@ -317,7 +318,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: A creature hits the performer with an attack roll. Response-Sabedoria Teste de Resistência: DC 17, the triggering creature. Falha: The attack roll misses the performer, and o alvo has the Enfeitiçado condi-. tion until the end of the performer's next turn. PERFORMERS P ERY TON Winged Heart Hunter</p>",
+          "value": "<p>A creature hits the performer with an attack roll. dWisdom Teste de Resistência: CD 17, the triggering creature. The attack roll misses the performer, and o alvo fica com a condição Enfeitiçado until the end of the performer's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -369,7 +370,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8VYSuLMrVJvmx2bd.2adpbTPXxou0YfRe"
+      "_key": "!actors.items!Ahqtpg2qCrNiuWUW.2adpbTPXxou0YfRe"
     },
     {
       "_id": "Ex1TNazUU5h5BQLg",
@@ -378,7 +379,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The performer casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 17): À Vontade: Mage Hand, - Minor Illusion, Prestidigitation 1/Dia Each: Major Image, Project Image</p>",
+          "value": "<p>The performer casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 17):</p>",
           "chat": ""
         },
         "activation": {
@@ -403,13 +404,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8VYSuLMrVJvmx2bd.Ex1TNazUU5h5BQLg"
+      "_key": "!actors.items!Ahqtpg2qCrNiuWUW.Ex1TNazUU5h5BQLg"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Performer Legend",
-      "page": 239,
+      "page": 237,
       "cr": "10",
       "warnings": []
     }

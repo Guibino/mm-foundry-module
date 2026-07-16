@@ -1,6 +1,6 @@
 {
-  "_id": "D9sDI5jSRYrCSueN",
-  "_key": "!actors!D9sDI5jSRYrCSueN",
+  "_id": "g7LOKRFcSlKXmX2C",
+  "_key": "!actors!g7LOKRFcSlKXmX2C",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Azer Sentinel",
   "type": "npc",
@@ -68,7 +68,7 @@
       "alignment": "Leal e Neutro",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,7 +102,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Primordial (lgnan)"
+        "custom": "Primordial (Ignan)"
       }
     },
     "skills": {}
@@ -120,13 +120,13 @@
   },
   "items": [
     {
-      "_id": "PndiVTMLokN40Tq0",
-      "name": "Fogo Aura",
+      "_id": "cDmQaagpVLR1Wjwx",
+      "name": "Aura de Fogo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>At the end of each of the azer's turns, cada criatura of the azer's choice in a 5-foot Emanation orig- inating from the azer takes 5 (1d10) Fogo de dano unless the azer has the Incapacitado condition. - Illumination. The azer sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet.-</p>",
+          "value": "<p>At the end of each of the azer's turns, cada criatura of the azer's choice in a 1,5 m Emanation originating from the azer takes 5 (1d10) dano de fogo unless the azer fica com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -150,7 +150,40 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!D9sDI5jSRYrCSueN.PndiVTMLokN40Tq0"
+      "_key": "!actors.items!g7LOKRFcSlKXmX2C.cDmQaagpVLR1Wjwx"
+    },
+    {
+      "_id": "X5h656Leh8AyvSkc",
+      "name": "Iluminação",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura emite Luz Plena em um raio de 3 m e Luz Fraca por mais 3 m.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!g7LOKRFcSlKXmX2C.X5h656Leh8AyvSkc"
     },
     {
       "_id": "fFBaM9fvjoGvH9Tb",
@@ -159,7 +192,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 8 (1d10 + 3) Concussão de dano plus 3 (1d6) Fogo de dano. AZERS 25 BALOR Hu ge Fie nd (D em on) , Chaotic Elli! AC 19 Initiati ve + 14 (24) HP 300 (24d12 + 144) Sp ee d 40 ft., Fly 80 ft. MOD SAVE MOD SA VE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 8 (1d10 + 3) dano de concussão mais 3 (1d6) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -231,13 +264,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!D9sDI5jSRYrCSueN.fFBaM9fvjoGvH9Tb"
+      "_key": "!actors.items!g7LOKRFcSlKXmX2C.fFBaM9fvjoGvH9Tb"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Azer Sentinel",
-      "page": 27,
+      "page": 25,
       "cr": "2",
       "warnings": []
     }

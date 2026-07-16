@@ -1,8 +1,8 @@
 {
-  "_id": "2kHQZf4QdDMMFGuJ",
-  "_key": "!actors!2kHQZf4QdDMMFGuJ",
+  "_id": "F0B5VW3DTrfy7Zlw",
+  "_key": "!actors!F0B5VW3DTrfy7Zlw",
   "folder": "1nioWC3kx0YxX8qj",
-  "name": "Verde Slaad",
+  "name": "Green Slaad",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/green-slaad.webp",
   "system": {
@@ -70,7 +70,7 @@
       "alignment": "Caótico e Neutro",
       "cr": 8,
       "xp": {
-        "value": 3
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -90,9 +90,10 @@
           "acid",
           "cold",
           "fire",
+          "lightning",
           "thunder"
         ],
-        "custom": "Li g htning"
+        "custom": ""
       },
       "dv": {
         "value": [],
@@ -104,13 +105,22 @@
       },
       "languages": {
         "value": [],
-        "custom": "Comum, Sl a ad"
+        "custom": "Comum"
       }
     },
-    "skills": {}
+    "skills": {
+      "arc": {
+        "value": 2,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Verde Slaad",
+    "name": "Green Slaad",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -122,13 +132,79 @@
   },
   "items": [
     {
+      "_id": "nxiY7CAo6hDplN67",
+      "name": "Resistência a Magia",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!F0B5VW3DTrfy7Zlw.nxiY7CAo6hDplN67"
+    },
+    {
+      "_id": "ezzgR4sR4zFz7fwZ",
+      "name": "Regeneração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura recupera 10 Pontos de Vida no início de cada turno dela se tiver ao menos 1 Ponto de Vida.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!F0B5VW3DTrfy7Zlw.ezzgR4sR4zFz7fwZ"
+    },
+    {
       "_id": "CgfvghWaG8X6s0SU",
       "name": "Ataque Múltiplo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The slaad makes three Chaos Staff attacks.</p>",
+          "value": "<p>The slaad makes three Chaos Bordão attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -153,16 +229,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2kHQZf4QdDMMFGuJ.CgfvghWaG8X6s0SU"
+      "_key": "!actors.items!F0B5VW3DTrfy7Zlw.CgfvghWaG8X6s0SU"
     },
     {
-      "_id": "vibNJ3CsAhh2gBQf",
-      "name": "Chaos Staff",
+      "_id": "Poc9kOPhHuBSob9z",
+      "name": "Chaos Bordão",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Me fee or Distânciad Attack Rolf: +7, alcance l 0 ft. or r~nge 60 ft. Acerto: 8 (1d8 + 4) Energia de dano. Until the start of the slaad's next turn, o alvo has a condition determined by rolling 1d4: on a 1, Enfeitiçado; qn a 2, Amedrontado; on a 3, Envenenado; or on a 4, Incapacitado.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 3 m. or distância 18 m. Acerto: 8 (1d8 + 4) dano de energia. Until the start of the slaad's next turn, o alvo has a condição determined by rolling 1d4: on a 1, Enfeitiçado; on a 2, Amedrontado; on a 3, Envenenado; or on a 4, Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -179,27 +255,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "nCEccQnGYLl73o2S": {
+            "_id": "nCEccQnGYLl73o2S",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "4",
+                  "types": [
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 7,
+            "attackType": "ranged",
             "damageFormula": "1d8+4",
             "damageType": "force"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2kHQZf4QdDMMFGuJ.vibNJ3CsAhh2gBQf"
+      "_key": "!actors.items!F0B5VW3DTrfy7Zlw.Poc9kOPhHuBSob9z"
     },
     {
-      "_id": "TLfEcSpukrahIYyO",
-      "name": "Shape-Shift",
+      "_id": "cPHOhkHCkWe0xrKc",
+      "name": "Mudar de Forma",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The slaad shape-shifts into a Small or Me- dium Humanoid, or it returns to its true form. Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. ~86 (-\\_ SLAADI GRAY SLA A D Gray slaadi arise from green slaadi transformed by the Spawning Stone or slaad lords. They explore the planes, seeking Humanoid communities to invade near planar pathways. DEA T H SLAAD Slaad lords create death slaadi by infusing gray slaadi with a portion of their chaotic energy. When groups of slaadi act deliberately, death slaadi are of- ten behind their designs. GRAY SLAAD Medium Aberration, C ha otic Neutral AC 18 Iniciativa +7 (17) HP 150 (20d8 + 60) Speed 40 ft. MOD SAV E MOD SAVE MOD SAVE</p>",
+          "value": "<p>A criatura se transforma em um Humanoide Pequeno ou Médio, ou retorna à sua forma verdadeira. Além do tamanho, seus atributos de jogo são os mesmos em cada forma. Qualquer equipamento que ela esteja vestindo ou carregando não é transformado.</p>",
           "chat": ""
         },
         "activation": {
@@ -224,7 +344,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2kHQZf4QdDMMFGuJ.TLfEcSpukrahIYyO"
+      "_key": "!actors.items!F0B5VW3DTrfy7Zlw.cPHOhkHCkWe0xrKc"
     },
     {
       "_id": "aUlky06tVbKKeJeS",
@@ -233,7 +353,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The slaad casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 14, +6 to hit with spell attacks): À Vontade: Detect Magic, Detect Thoughts, Mage Hand 1/Dia: Fogoball, Invisibility (self only)</p>",
+          "value": "<p>The slaad casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 14, +6 to hit with spell attacks):</p>",
           "chat": ""
         },
         "activation": {
@@ -284,13 +404,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2kHQZf4QdDMMFGuJ.aUlky06tVbKKeJeS"
+      "_key": "!actors.items!F0B5VW3DTrfy7Zlw.aUlky06tVbKKeJeS"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Green Slaad",
-      "page": 288,
+      "page": 286,
       "cr": "8",
       "warnings": []
     }

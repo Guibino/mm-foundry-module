@@ -1,6 +1,6 @@
 {
-  "_id": "hNjviVXUgbeSONVq",
-  "_key": "!actors!hNjviVXUgbeSONVq",
+  "_id": "RFBy4ltU4Qkc1DlO",
+  "_key": "!actors!RFBy4ltU4Qkc1DlO",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Aarakocra Skirmisher",
   "type": "npc",
@@ -8,7 +8,7 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "dex": {
@@ -48,6 +48,7 @@
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 20,
         "fly": 50
       },
       "senses": {
@@ -68,7 +69,7 @@
       "alignment": "Neutro",
       "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -100,7 +101,12 @@
         "custom": "Aarakocra, Primordial (Auran)"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Aarakocra Skirmisher",
@@ -115,13 +121,13 @@
   },
   "items": [
     {
-      "_id": "SaQGWNGB90xpbYi1",
-      "name": "Talons",
+      "_id": "ae1ybNVjcmjK0JGE",
+      "name": "Garras",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 4 (1d4 + 2) Cortante de dano, or 9 (3d4 + 2) Cortante de dano if the aarakocra moved 30+ feet straight toward o alvo immediately before the hit.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 4 (1d4 + 2) dano cortante, or 9 (3d4 + 2) dano cortante if the aarakocra moved 30+ feet straight toward o alvo immediately before the hit.</p>",
           "chat": ""
         },
         "activation": {
@@ -139,8 +145,8 @@
           "subtype": ""
         },
         "activities": {
-          "mZRz2NxvbjVfJoNY": {
-            "_id": "mZRz2NxvbjVfJoNY",
+          "mWX1q0aiXim6V9Ar": {
+            "_id": "mWX1q0aiXim6V9Ar",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -193,16 +199,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hNjviVXUgbeSONVq.SaQGWNGB90xpbYi1"
+      "_key": "!actors.items!RFBy4ltU4Qkc1DlO.ae1ybNVjcmjK0JGE"
     },
     {
-      "_id": "GvGIRIaPPV37wwuF",
-      "name": "Windjavelin",
+      "_id": "SCNv8pmSiOnOmfvW",
+      "name": "Wind Azagaia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +4, alcance 5 ft. or range 30/120 ft. Acerto: 5 (1d6 + 2) Perfurante dam- age plus 2 (1d4) Trovejante de dano. Hit or Erro: The _J javelin magically returns to the aarakocra's hand imme- z diately after a ranged attack. <{ ABOLETH Ageless Alien Mastermind</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +4, alcance 1,5 m. or distância 9/36 m. Acerto: 5 (1d6 + 2) dano perfurante mais 2 (1d4) dano trovejante. The javelin magically returns to the aarakocra's hand immediately after a ranged attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -220,8 +226,8 @@
           "subtype": ""
         },
         "activities": {
-          "zyucI76pj7GSnxCl": {
-            "_id": "zyucI76pj7GSnxCl",
+          "XaaThgRkmMtFEop7": {
+            "_id": "XaaThgRkmMtFEop7",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -240,7 +246,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -249,18 +273,20 @@
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "ranged"
+            "attackType": "ranged",
+            "damageFormula": "1d6+2",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hNjviVXUgbeSONVq.GvGIRIaPPV37wwuF"
+      "_key": "!actors.items!RFBy4ltU4Qkc1DlO.SCNv8pmSiOnOmfvW"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Aarakocra Skirmisher",
-      "page": 12,
+      "page": 10,
       "cr": "1/4",
       "warnings": []
     }

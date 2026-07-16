@@ -1,6 +1,6 @@
 {
-  "_id": "uXDy0upGb3G7fgp0",
-  "_key": "!actors!uXDy0upGb3G7fgp0",
+  "_id": "BXNDJqZTlNple9rq",
+  "_key": "!actors!BXNDJqZTlNple9rq",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Triceratops",
   "type": "npc",
@@ -8,15 +8,15 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 5,
+        "value": 22,
         "proficient": 0
       },
       "dex": {
-        "value": 15,
+        "value": 9,
         "proficient": 0
       },
       "con": {
-        "value": 10,
+        "value": 17,
         "proficient": 0
       },
       "int": {
@@ -24,36 +24,34 @@
         "proficient": 0
       },
       "wis": {
-        "value": 12,
+        "value": 11,
         "proficient": 0
       },
       "cha": {
-        "value": 4,
+        "value": 5,
         "proficient": 0
       }
     },
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 12,
+        "flat": 14,
         "formula": ""
       },
       "hp": {
-        "value": 11,
-        "max": 11,
-        "formula": "2d10",
+        "value": 114,
+        "max": 114,
+        "formula": "12d12 + 36",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 5,
-        "fly": 30
+        "walk": 50
       },
       "senses": {
-        "units": "ft",
-        "blindsight": 60
+        "units": "ft"
       },
       "init": {
         "ability": "dex",
@@ -63,14 +61,14 @@
     "details": {
       "type": {
         "value": "beast",
-        "subtype": "",
+        "subtype": "dinosaur",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 1,
+      "cr": 5,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -80,17 +78,13 @@
       }
     },
     "traits": {
-      "size": "lg",
+      "size": "huge",
       "di": {
         "value": [],
-        "custom": "Charmed; Frightened; Grappled; Paralyzed"
+        "custom": ""
       },
       "dr": {
-        "value": [
-          "bludgeoning",
-          "piercing",
-          "slashing"
-        ],
+        "value": [],
         "custom": ""
       },
       "dv": {
@@ -103,7 +97,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
@@ -121,18 +115,19 @@
   },
   "items": [
     {
-      "_id": "cILkJuSbcaxjJcKk",
-      "name": "Swarm",
+      "_id": "dFR3audsk7JjEn0p",
+      "name": "Ataque Múltiplo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny bat. The swarm can't regain Pontos de Vida or gain Temporary Pontos de Vida.</p>",
+          "value": "<p>A criatura faz dois ataques de Chifrada.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "",
-          "value": null
+          "type": "action",
+          "value": null,
+          "condition": ""
         },
         "uses": {
           "spent": 0,
@@ -151,16 +146,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!uXDy0upGb3G7fgp0.cILkJuSbcaxjJcKk"
+      "_key": "!actors.items!BXNDJqZTlNple9rq.dFR3audsk7JjEn0p"
     },
     {
-      "_id": "chQudJFyKa1nKWLf",
-      "name": "Bites",
+      "_id": "DoqJfeSsqxzg1X5h",
+      "name": "Chifrada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 5 (2d4) Perfurante de dano, or 2 (1d4) Perfurante de dano if the swarm is Bloodied. SWARM OF INSECTS Medium S warm ofTiny Beasts, U nalign ed AC 11 In itiative+ 1 (11) HP 19 (3d8 + 6) Speed 20 ft., Climb or Fly 20 ft. (DM's choice) MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 1,5 m. Acerto: 19 (2d12 + 6) dano perfurante. If o alvo is Huge or smaller and the triceratops moved 20+ feet straight toward it immediately before the hit, o alvo takes an extra 9 (2d8) dano perfurante and fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -178,8 +173,8 @@
           "subtype": ""
         },
         "activities": {
-          "f6WrdFfa8foOLt24": {
-            "_id": "f6WrdFfa8foOLt24",
+          "A5tSetynShcv2jgl": {
+            "_id": "A5tSetynShcv2jgl",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -189,7 +184,7 @@
             },
             "attack": {
               "ability": "",
-              "bonus": "4",
+              "bonus": "9",
               "flat": true,
               "type": {
                 "value": "melee",
@@ -201,8 +196,8 @@
               "parts": [
                 {
                   "number": 2,
-                  "denomination": 4,
-                  "bonus": "",
+                  "denomination": 12,
+                  "bonus": "6",
                   "types": [
                     "piercing"
                   ],
@@ -224,22 +219,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "toHit": 4,
+            "toHit": 9,
             "attackType": "melee",
-            "damageFormula": "2d4",
+            "damageFormula": "2d12+6",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!uXDy0upGb3G7fgp0.chQudJFyKa1nKWLf"
+      "_key": "!actors.items!BXNDJqZTlNple9rq.DoqJfeSsqxzg1X5h"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Triceratops",
       "page": 372,
-      "cr": "1",
+      "cr": "5",
       "warnings": []
     }
   }

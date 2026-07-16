@@ -1,6 +1,6 @@
 {
-  "_id": "MihnOW5SS659CQqG",
-  "_key": "!actors!MihnOW5SS659CQqG",
+  "_id": "MyPzn8uLq7ivmfHo",
+  "_key": "!actors!MyPzn8uLq7ivmfHo",
   "folder": "BaJiyGJk3g8zXFNV",
   "name": "Ochre Jelly",
   "type": "npc",
@@ -39,9 +39,9 @@
         "formula": ""
       },
       "hp": {
-        "value": 1,
-        "max": 1,
-        "formula": "",
+        "value": 52,
+        "max": 52,
+        "formula": "7d10 + 14",
         "temp": null,
         "tempmax": null
       },
@@ -52,7 +52,8 @@
         "climb": 20
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "blindsight": 60
       },
       "init": {
         "ability": "dex",
@@ -69,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -88,7 +89,9 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "acid"
+        ],
         "custom": ""
       },
       "dv": {
@@ -98,13 +101,18 @@
       "ci": {
         "value": [
           "charmed",
-          "deafened"
+          "deafened",
+          "exhaustion",
+          "frightened",
+          "grappled",
+          "prone",
+          "restrained"
         ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
@@ -122,13 +130,13 @@
   },
   "items": [
     {
-      "_id": "QwZnekdfFICUtzv4",
-      "name": "Amorphous",
+      "_id": "qjnaR58erUwYYZL7",
+      "name": "Amorfo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The jelly can move through a space as narrow as l inch without expending extra move- ment to do so.</p>",
+          "value": "<p>A criatura pode se mover por um espaço tão estreito quanto 2,5 cm sem gastar movimento extra para isso.</p>",
           "chat": ""
         },
         "activation": {
@@ -152,16 +160,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MihnOW5SS659CQqG.QwZnekdfFICUtzv4"
+      "_key": "!actors.items!MyPzn8uLq7ivmfHo.qjnaR58erUwYYZL7"
     },
     {
-      "_id": "AGTyaccGm6dIuRLC",
-      "name": "Spider Climb",
+      "_id": "GYhq3T8ErgwD7ral",
+      "name": "Escalada de Aranha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The jelly can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>",
+          "value": "<p>A criatura pode escalar superfícies difíceis, inclusive tetos, sem precisar fazer um teste de habilidade.</p>",
           "chat": ""
         },
         "activation": {
@@ -185,16 +193,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MihnOW5SS659CQqG.AGTyaccGm6dIuRLC"
+      "_key": "!actors.items!MyPzn8uLq7ivmfHo.GYhq3T8ErgwD7ral"
     },
     {
-      "_id": "4fKSqavxLzxeqmnq",
-      "name": "Pseudopod",
+      "_id": "eWfBLQtBYaomUE7N",
+      "name": "Pseudópode",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 12 (3d6 + 2) Ácido de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 12 (3d6 + 2) dano de ácido.</p>",
           "chat": ""
         },
         "activation": {
@@ -212,8 +220,8 @@
           "subtype": ""
         },
         "activities": {
-          "qvtxjkBzN6YofEJy": {
-            "_id": "qvtxjkBzN6YofEJy",
+          "fMEFu4A9ziLUaFRd": {
+            "_id": "fMEFu4A9ziLUaFRd",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -266,7 +274,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MihnOW5SS659CQqG.4fKSqavxLzxeqmnq"
+      "_key": "!actors.items!MyPzn8uLq7ivmfHo.eWfBLQtBYaomUE7N"
     },
     {
       "_id": "DHON5e3YeaTK6tgC",
@@ -275,7 +283,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: While the jelly is Large or Medium and has 10+ Pontos de Vida, it becomes Bloodied or is subjected to Elétrico or Cortante de dano. Response: The jelly splits into two new Ochre Jellies. Each new jelly is one size smaller than the original jelly and acts on its I ni- tiative. The original jelly's Pontos de Vida are divided evenly between the new jellies (round down). ~ ~----------LZ---J~ OGRES Raging Hulks and Hoarders</p>",
+          "value": "<p>While the jelly is Large or Medium and has 10+ Pontos de Vida, it becomes Bloodied or is subjected to Elétrico or dano cortante. The jelly splits into two new Ochre Jellies. Each new jelly is one size smaller than the original jelly and acts on its Iniciativa. The original jelly's Pontos de Vida are divided evenly between the new jellies (round down).</p>",
           "chat": ""
         },
         "activation": {
@@ -300,17 +308,15 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MihnOW5SS659CQqG.DHON5e3YeaTK6tgC"
+      "_key": "!actors.items!MyPzn8uLq7ivmfHo.DHON5e3YeaTK6tgC"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Ochre Jelly",
-      "page": 232,
+      "page": 230,
       "cr": "2",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "warnings": []
     }
   }
 }

@@ -1,6 +1,6 @@
 {
-  "_id": "FlH5hPUFaV82Klux",
-  "_key": "!actors!FlH5hPUFaV82Klux",
+  "_id": "MspRvwnGbSsoRxZJ",
+  "_key": "!actors!MspRvwnGbSsoRxZJ",
   "folder": "IQP9BfRMl9yEsYGp",
   "name": "Deva",
   "type": "npc",
@@ -63,14 +63,14 @@
     "details": {
       "type": {
         "value": "celestial",
-        "subtype": "Angel",
+        "subtype": "angel",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Bom",
       "cr": 10,
       "xp": {
-        "value": 5900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -83,10 +83,12 @@
       "size": "med",
       "di": {
         "value": [],
-        "custom": "Charmed; Exhaustion; Frightened"
+        "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "radiant"
+        ],
         "custom": ""
       },
       "dv": {
@@ -94,16 +96,24 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "All, te lepathy 120 ft."
+        "custom": ""
       }
     },
     "skills": {
       "ins": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "prc": {
         "value": 2,
         "ability": "wis"
       }
@@ -122,13 +132,13 @@
   },
   "items": [
     {
-      "_id": "iq29DPU2ioIVYo5d",
-      "name": "Exalted Restoration",
+      "_id": "xcd4jukkZvq6hkRV",
+      "name": "Restauração Exaltada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the deva dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its Pontos de Vida somewhere in :s Mount Celestia. UJ 0 Magic Resistance. The deva has Advantage on saving <( throws against spells and other magical effects. D E VA World-Changing Angelic Messenger</p>",
+          "value": "<p>If the deva dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its Pontos de Vida somewhere in Mount Celestia.</p>",
           "chat": ""
         },
         "activation": {
@@ -152,13 +162,195 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!FlH5hPUFaV82Klux.iq29DPU2ioIVYo5d"
+      "_key": "!actors.items!MspRvwnGbSsoRxZJ.xcd4jukkZvq6hkRV"
+    },
+    {
+      "_id": "MoJJkUhf3Ga5w8fS",
+      "name": "Resistência a Magia",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!MspRvwnGbSsoRxZJ.MoJJkUhf3Ga5w8fS"
+    },
+    {
+      "_id": "nbgeGl9cf3aceFEu",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The deva makes two Holy Maça attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!MspRvwnGbSsoRxZJ.nbgeGl9cf3aceFEu"
+    },
+    {
+      "_id": "1UXVJExt2EAqceKw",
+      "name": "Holy Maça",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 1,5 m. Acerto: 7 (1d6 + 4) dano de concussão mais 18 (4d8) dano radiante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "y5VTKoQRZZSDwYeJ": {
+            "_id": "y5VTKoQRZZSDwYeJ",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "8",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 8,
+            "attackType": "melee",
+            "damageFormula": "1d6+4",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!MspRvwnGbSsoRxZJ.1UXVJExt2EAqceKw"
+    },
+    {
+      "_id": "PjKLddSgnv4qg4j7",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The deva casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 17):</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!MspRvwnGbSsoRxZJ.PjKLddSgnv4qg4j7"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Deva",
-      "page": 99,
+      "page": 97,
       "cr": "10",
       "warnings": []
     }

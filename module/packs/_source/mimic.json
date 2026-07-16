@@ -1,6 +1,6 @@
 {
-  "_id": "rSrDd2YC7EqwyMk0",
-  "_key": "!actors!rSrDd2YC7EqwyMk0",
+  "_id": "r7aUMiDjKbYJzGNK",
+  "_key": "!actors!r7aUMiDjKbYJzGNK",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Mimic",
   "type": "npc",
@@ -69,7 +69,7 @@
       "alignment": "Neutro",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,10 +102,15 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Mimic",
@@ -121,12 +126,12 @@
   "items": [
     {
       "_id": "YElGms1xg5px0B4Q",
-      "name": "Adhesive (Object Form Only)",
+      "name": "Adhesive",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mimic adheres to anything that touches it. A Huge or smaller creature ad- hered to the mimic has the Agarrado condition (escape DC 13). Ability checks made to escape this grapple have Disadvantage.</p>",
+          "value": "<p>The mimic adheres to anything that touches it. A Huge or smaller creature adhered to the mimic fica com a condição Agarrado (CD para escapar 13). Ability checks made to escape this grapple have Desvantagem.</p>",
           "chat": ""
         },
         "activation": {
@@ -150,16 +155,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!rSrDd2YC7EqwyMk0.YElGms1xg5px0B4Q"
+      "_key": "!actors.items!r7aUMiDjKbYJzGNK.YElGms1xg5px0B4Q"
     },
     {
-      "_id": "gNxGMp6h4d9hkJ1L",
-      "name": "Bite",
+      "_id": "08NC4k8XMvyvVw1s",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5 (with Advantage if o alvo is Agarrado by the mimic), alcance 5 ft. Acerto: 7 (1d8 + 3) Perfurante de dano-or 12 (2d8 + 3) Perfurante de dano if o alvo is Grapp I e d by the mi mi c-p I us 4 ( 1d8) Ácido de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5 (with Vantagem if o alvo is Agarrado by the mimic), alcance 1,5 m. Acerto: 7 (1d8 + 3) dano perfurante—or 12 (2d8 + 3) dano perfurante if o alvo is Agarrado by the mimic—mais 4 (1d8) dano de ácido.</p>",
           "chat": ""
         },
         "activation": {
@@ -177,8 +182,8 @@
           "subtype": ""
         },
         "activities": {
-          "aq4iC2bJvAfO4kdQ": {
-            "_id": "aq4iC2bJvAfO4kdQ",
+          "fdeqwVn0nubt3Z96": {
+            "_id": "fdeqwVn0nubt3Z96",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -231,16 +236,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!rSrDd2YC7EqwyMk0.gNxGMp6h4d9hkJ1L"
+      "_key": "!actors.items!r7aUMiDjKbYJzGNK.08NC4k8XMvyvVw1s"
     },
     {
-      "_id": "gKFdSBm4teg9nuRW",
-      "name": "Pseudopod",
+      "_id": "m4otgrCJuww4gC2C",
+      "name": "Pseudópode",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 7 (1d8 + 3) Concussão de dano plus 4 (1d8) Ácido de dano. If o alvo is a Large or smaller creature, it has the Grap- pled condition (escape DC 13). Ability checks made to escape this grapple have Disadvantage.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 7 (1d8 + 3) dano de concussão mais 4 (1d8) dano de ácido. If o alvo is a Large or smaller creature, it fica com a condição Agarrado (CD para escapar 13). Ability checks made to escape this grapple have Desvantagem.</p>",
           "chat": ""
         },
         "activation": {
@@ -258,8 +263,8 @@
           "subtype": ""
         },
         "activities": {
-          "utmKCi8vaKOXJOcg": {
-            "_id": "utmKCi8vaKOXJOcg",
+          "rpJhdQM1gJlL6TrY": {
+            "_id": "rpJhdQM1gJlL6TrY",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -312,16 +317,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!rSrDd2YC7EqwyMk0.gKFdSBm4teg9nuRW"
+      "_key": "!actors.items!r7aUMiDjKbYJzGNK.m4otgrCJuww4gC2C"
     },
     {
-      "_id": "FVBJvVaknoeRNrlh",
-      "name": "Shape-Shift",
+      "_id": "jHmNMSlTAN27ufxK",
+      "name": "Mudar de Forma",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mimic shape-shifts to resemble a Me- dium or Small object while retaining its game statistics, or it returns to its true blob form. Any equipment it is N er: wearing or carrying isn't transformed. \\. <l'. MIND FLAYERS Brain-Eating Underdark Tyrants</p>",
+          "value": "<p>The mimic shape-shifts to resemble a Medium or Small object while retaining its game statistics, or it returns to its true blob form. Any equipment it is wearing or carrying isn't transformed.</p>",
           "chat": ""
         },
         "activation": {
@@ -346,13 +351,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!rSrDd2YC7EqwyMk0.FVBJvVaknoeRNrlh"
+      "_key": "!actors.items!r7aUMiDjKbYJzGNK.jHmNMSlTAN27ufxK"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Mimic",
-      "page": 214,
+      "page": 212,
       "cr": "2",
       "warnings": []
     }

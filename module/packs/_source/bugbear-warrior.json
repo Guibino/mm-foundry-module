@@ -1,8 +1,8 @@
 {
-  "_id": "fjGdalqRCwRzZeYJ",
-  "_key": "!actors!fjGdalqRCwRzZeYJ",
+  "_id": "kgCiehcXuAdmLD8M",
+  "_key": "!actors!kgCiehcXuAdmLD8M",
   "folder": "inkH4oLnh3yP5W9M",
-  "name": "Bugbear Guerreiro",
+  "name": "Bugbear Warrior",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/bugbear-warrior.webp",
   "system": {
@@ -62,14 +62,14 @@
     "details": {
       "type": {
         "value": "fey",
-        "subtype": "Goblinoid",
+        "subtype": "goblinoid",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Mau",
-      "cr": 0,
+      "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -113,7 +113,7 @@
     }
   },
   "prototypeToken": {
-    "name": "Bugbear Guerreiro",
+    "name": "Bugbear Warrior",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -131,7 +131,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The bugbear needn't spend extra movement to move a creature it is grappling.</p>",
+          "value": "<p>The bugbear needn't spend extra movement to move uma criatura it is grappling.</p>",
           "chat": ""
         },
         "activation": {
@@ -155,7 +155,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!fjGdalqRCwRzZeYJ.EX4t0zLvaJ4sD5IS"
+      "_key": "!actors.items!kgCiehcXuAdmLD8M.EX4t0zLvaJ4sD5IS"
     },
     {
       "_id": "cikWkHDJpUdFLC09",
@@ -164,7 +164,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 10 ft. Acerto: 9 (2d6 +: 2) Concussão de dano. If o alvo is a Medium or smaller creature, it has the Agarrado condition_ (es- cape DC 12).</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 3 m. Acerto: 9 (2d6 + 2) dano de concussão. If o alvo is a Medium or smaller creature, it fica com a condição Agarrado (CD para escapar 12).</p>",
           "chat": ""
         },
         "activation": {
@@ -204,15 +204,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "2",
                   "types": [
                     "bludgeoning"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "2d6+:2"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -230,13 +230,13 @@
           "mechanics": {
             "toHit": 4,
             "attackType": "melee",
-            "damageFormula": "2d6+:2",
+            "damageFormula": "2d6+2",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!fjGdalqRCwRzZeYJ.cikWkHDJpUdFLC09"
+      "_key": "!actors.items!kgCiehcXuAdmLD8M.cikWkHDJpUdFLC09"
     },
     {
       "_id": "7CCgtGS9YcfSv58a",
@@ -245,7 +245,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +4 (with Advantage if o alvo is Agarrado by the bugbear), ~ V1 alcance 10 ft. or range 20/60 ft. Acerto: 9 (3d4 + 2) Blud- V1 V1 geoning de dano. ~ BULETTES Ravenous, Sub surf ace Land Sharks</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +4 (with Vantagem if o alvo is Agarrado by the bugbear), alcance 3 m. or distância 6/18 m. Acerto: 9 (3d4 + 2) dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
@@ -283,7 +283,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -292,19 +310,21 @@
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "ranged"
+            "attackType": "ranged",
+            "damageFormula": "3d4+2",
+            "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!fjGdalqRCwRzZeYJ.7CCgtGS9YcfSv58a"
+      "_key": "!actors.items!kgCiehcXuAdmLD8M.7CCgtGS9YcfSv58a"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Bugbear Warrior",
-      "page": 64,
-      "cr": "0",
+      "page": 62,
+      "cr": "1",
       "warnings": []
     }
   }

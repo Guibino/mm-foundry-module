@@ -1,6 +1,6 @@
 {
-  "_id": "eizL2SOQKQaUyhc1",
-  "_key": "!actors!eizL2SOQKQaUyhc1",
+  "_id": "t1b2pMXUNcXDpar8",
+  "_key": "!actors!t1b2pMXUNcXDpar8",
   "folder": "BaJiyGJk3g8zXFNV",
   "name": "Psychic Gray Ooze",
   "type": "npc",
@@ -16,7 +16,7 @@
         "proficient": 0
       },
       "con": {
-        "value": 6,
+        "value": 16,
         "proficient": 0
       },
       "int": {
@@ -39,15 +39,17 @@
         "formula": ""
       },
       "hp": {
-        "value": 1,
-        "max": 1,
-        "formula": "",
+        "value": 37,
+        "max": 37,
+        "formula": "5d8 + 15",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "walk": 10,
+        "climb": 10
       },
       "senses": {
         "units": "ft",
@@ -66,9 +68,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -81,7 +83,7 @@
       "size": "med",
       "di": {
         "value": [],
-        "custom": "Blinded; Charmed; Deafened; Exhaustion"
+        "custom": ""
       },
       "dr": {
         "value": [
@@ -97,12 +99,21 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "blinded",
+          "charmed",
+          "deafened",
+          "exhaustion",
+          "frightened",
+          "grappled",
+          "prone",
+          "restrained"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {
@@ -125,13 +136,13 @@
   },
   "items": [
     {
-      "_id": "1XO0vy6o0krRboSi",
-      "name": "Amorphous",
+      "_id": "1hUGdWkK1r4kBGg9",
+      "name": "Amorfo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The ooze can move through a space as narrow as l inch without expending extra move- ment to do so.</p>",
+          "value": "<p>A criatura pode se mover por um espaço tão estreito quanto 2,5 cm sem gastar movimento extra para isso.</p>",
           "chat": ""
         },
         "activation": {
@@ -155,16 +166,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eizL2SOQKQaUyhc1.1XO0vy6o0krRboSi"
+      "_key": "!actors.items!t1b2pMXUNcXDpar8.1hUGdWkK1r4kBGg9"
     },
     {
-      "_id": "Q9UXZYpRHOyLjLVp",
-      "name": "Pseudopod",
+      "_id": "FKvBjNdZCO8c5eam",
+      "name": "Pseudópode",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 11 (3d6 + l) Ácido de dano, and o alvo has Disadvan- tage on Inteligência saving throws until the end of the ooze's next turn.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 11 (3d6 + 1) dano de ácido, and o alvo has Desvantagem on Inteligência saving throws until the end of the ooze's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -182,8 +193,8 @@
           "subtype": ""
         },
         "activities": {
-          "KXIdQRqnzaClZuEz": {
-            "_id": "KXIdQRqnzaClZuEz",
+          "9WNZRdC1kpNTgAoI": {
+            "_id": "9WNZRdC1kpNTgAoI",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -204,15 +215,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 3,
+                  "denomination": 6,
+                  "bonus": "1",
                   "types": [
                     "acid"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "3d6+l"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -230,13 +241,13 @@
           "mechanics": {
             "toHit": 3,
             "attackType": "melee",
-            "damageFormula": "3d6+l",
+            "damageFormula": "3d6+1",
             "damageType": "acid"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eizL2SOQKQaUyhc1.Q9UXZYpRHOyLjLVp"
+      "_key": "!actors.items!t1b2pMXUNcXDpar8.FKvBjNdZCO8c5eam"
     },
     {
       "_id": "2i4c7LdWDVKt6uAB",
@@ -245,7 +256,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Inteligência Teste de Resistência: DC 10, uma criatura the ooze can see within 60 feet. Falha: 13 (3d8) Psíquico de dano.</p>",
+          "value": "<p>Teste de Resistência de Inteligência: CD 10, uma criatura the ooze can see within 18 m. 13 (3d8) dano psíquico.</p>",
           "chat": ""
         },
         "activation": {
@@ -283,25 +294,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 3,
-                  "denomination": 8,
-                  "bonus": "",
-                  "types": [
-                    "psychic"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -309,15 +302,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "3d8",
-            "damageType": "psychic",
             "saveDc": 10,
             "saveAbility": "int"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eizL2SOQKQaUyhc1.2i4c7LdWDVKt6uAB"
+      "_key": "!actors.items!t1b2pMXUNcXDpar8.2i4c7LdWDVKt6uAB"
     },
     {
       "_id": "gVbYxAmoSCopG86c",
@@ -326,7 +317,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: The ooze fails a saving throw against a spell or another magical effect created by a creature. Response: The triggering creature takes 3 (1d6) Psíquico de dano. GRAY OOZES GREEN DRAGON WYRMLI N G GREEN DRAGONS Dragons of Deceit and Derision</p>",
+          "value": "<p>The ooze fails a saving throw against a spell or another magical effect created by uma criatura. The triggering creature takes 3 (1d6) dano psíquico.</p>",
           "chat": ""
         },
         "activation": {
@@ -351,17 +342,15 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eizL2SOQKQaUyhc1.gVbYxAmoSCopG86c"
+      "_key": "!actors.items!t1b2pMXUNcXDpar8.gVbYxAmoSCopG86c"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Psychic Gray Ooze",
-      "page": 153,
-      "cr": "0",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "page": 151,
+      "cr": "1",
+      "warnings": []
     }
   }
 }

@@ -1,8 +1,8 @@
 {
-  "_id": "kh38aJOxrkYBXlCv",
-  "_key": "!actors!kh38aJOxrkYBXlCv",
+  "_id": "1NUZT3QUAd017pEb",
+  "_key": "!actors!1NUZT3QUAd017pEb",
   "folder": "Hp5o2ufz9hhrO2ew",
-  "name": "Sahuagin Sacerdote",
+  "name": "Sahuagin Priest",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/sahuagin-priest.webp",
   "system": {
@@ -24,12 +24,12 @@
         "proficient": 0
       },
       "wis": {
-        "value": 74,
+        "value": 14,
         "proficient": 0
       },
       "cha": {
-        "value": 73,
-        "proficient": 1
+        "value": 13,
+        "proficient": 0
       }
     },
     "attributes": {
@@ -70,7 +70,7 @@
       "alignment": "Leal e Mau",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -105,10 +105,19 @@
         "custom": "Sahuagin"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "rel": {
+        "value": 1,
+        "ability": "int"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Sahuagin Sacerdote",
+    "name": "Sahuagin Priest",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -120,13 +129,13 @@
   },
   "items": [
     {
-      "_id": "UFftj9qhGl4bYAaj",
-      "name": "Blood Frenzy",
+      "_id": "huqf7AHIVFECZigC",
+      "name": "Frenesi Sanguíneo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The sahuagin has Advantage on attack rolls against any creature that doesn't have all its Pontos de Vida.</p>",
+          "value": "<p>The sahuagin has Vantagem on attack rolls against any creature that doesn't have all its Pontos de Vida.</p>",
           "chat": ""
         },
         "activation": {
@@ -150,16 +159,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!kh38aJOxrkYBXlCv.UFftj9qhGl4bYAaj"
+      "_key": "!actors.items!1NUZT3QUAd017pEb.huqf7AHIVFECZigC"
     },
     {
-      "_id": "dZkgW1LoMBdJ80kC",
-      "name": "Limited Amphibiousness",
+      "_id": "Q94pQXGvqP7Kuwm0",
+      "name": "Anfíbio Limitado",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The sahuagin can breathe air and water, but it must be submerged at least once ev- ery 4 hours to avoid suffocating outside water.</p>",
+          "value": "<p>The sahuagin can breathe air and water, but it must be submerged at least once every 4 hours to avoid suffocating outside water.</p>",
           "chat": ""
         },
         "activation": {
@@ -183,16 +192,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!kh38aJOxrkYBXlCv.dZkgW1LoMBdJ80kC"
+      "_key": "!actors.items!1NUZT3QUAd017pEb.Q94pQXGvqP7Kuwm0"
     },
     {
-      "_id": "Y2vx9EDduaN3LnaC",
-      "name": "Shark Telepathy",
+      "_id": "iO2R8dCXw95wF94m",
+      "name": "Telepatia de Tubarão",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The sahuagin can magically control sharks within 120 feet of itself, using a sp~cial telepatia.</p>",
+          "value": "<p>The sahuagin can magically control sharks within 36 m of itself, using a special telepatia.</p>",
           "chat": ""
         },
         "activation": {
@@ -216,7 +225,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!kh38aJOxrkYBXlCv.Y2vx9EDduaN3LnaC"
+      "_key": "!actors.items!1NUZT3QUAd017pEb.iO2R8dCXw95wF94m"
     },
     {
       "_id": "vhzq77B8MmVObF81",
@@ -225,7 +234,41 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The sah uagin makes two Spectral Jaws attacks. Spectra/Jaws. Rolagem de Ataque Corpo a Corpo ou à Distância: +4, alcance 5 ft. or range 120 ft. Hit : 11 (2d8 + 2) Energia de dano.</p>",
+          "value": "<p>The sahuagin makes two Spectral Jaws attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!1NUZT3QUAd017pEb.vhzq77B8MmVObF81"
+    },
+    {
+      "_id": "Af7DPjOyObhCcCNR",
+      "name": "Spectral Jaws",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +4, alcance 1,5 m. or distância 36 m. Acerto: 11 (2d8 + 2) dano de energia.</p>",
           "chat": ""
         },
         "activation": {
@@ -243,8 +286,8 @@
           "subtype": ""
         },
         "activities": {
-          "Hcfry0iEL00Dhh3o": {
-            "_id": "Hcfry0iEL00Dhh3o",
+          "hMjMskh6LGsquGpg": {
+            "_id": "hMjMskh6LGsquGpg",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -263,7 +306,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "2",
+                  "types": [
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -272,51 +333,14 @@
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "ranged"
+            "attackType": "ranged",
+            "damageFormula": "2d8+2",
+            "damageType": "force"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!kh38aJOxrkYBXlCv.vhzq77B8MmVObF81"
-    },
-    {
-      "_id": "WDgf69i1CTS4Pbbx",
-      "name": "Fiendish Aid (2/Day)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The sahuagin casts Bless or Healing Word, using the same spellcasting ability as Conjuração. SA H UAGI N BARON During times of great conflict, Sekolah blesses par- ticularly ruthless sahuagin warriors with increased size and an additional pair of arms, transforming them into sahuagin barons. These boons elevate the recipients' status among their kind, and they be- come champions or leaders. Sahuagin barons' blood is infused with profane magic capable of searing their enemies and making these foes irresistib-le tar- ' gets for other Fiends . SAHUAGIN BARON Large Fiend Law ful E i;i l AC 16 Iniciativa +5 (15) HP 76 (9d10 + 27) Speed 30 ft ., Swim 50 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "2",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!kh38aJOxrkYBXlCv.WDgf69i1CTS4Pbbx"
+      "_key": "!actors.items!1NUZT3QUAd017pEb.Af7DPjOyObhCcCNR"
     },
     {
       "_id": "LKaG3XUMYFrqEBCZ",
@@ -325,7 +349,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The sahuagin casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save DC 12): À Vontade: Thaumaturgy 2/Dia Each: Hold Person, Tongues</p>",
+          "value": "<p>The sahuagin casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save CD 12):</p>",
           "chat": ""
         },
         "activation": {
@@ -350,13 +374,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!kh38aJOxrkYBXlCv.LKaG3XUMYFrqEBCZ"
+      "_key": "!actors.items!1NUZT3QUAd017pEb.LKaG3XUMYFrqEBCZ"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Sahuagin Priest",
-      "page": 267,
+      "page": 265,
       "cr": "2",
       "warnings": []
     }

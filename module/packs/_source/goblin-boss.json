@@ -1,6 +1,6 @@
 {
-  "_id": "hjYsJG9jrQhJfXQu",
-  "_key": "!actors!hjYsJG9jrQhJfXQu",
+  "_id": "EtGsAgtbjuNgAKh2",
+  "_key": "!actors!EtGsAgtbjuNgAKh2",
   "folder": "inkH4oLnh3yP5W9M",
   "name": "Goblin Boss",
   "type": "npc",
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 17,
         "formula": ""
       },
       "hp": {
@@ -62,14 +62,14 @@
     "details": {
       "type": {
         "value": "fey",
-        "subtype": "Goblinoid",
+        "subtype": "goblinoid",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Neutro",
       "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -127,7 +127,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The goblin makes two attacks, using Scim- itar or Shortbow in any combination.</p>",
+          "value": "<p>The goblin makes two attacks, using Cimitarra or Arco Curto in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -152,53 +152,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hjYsJG9jrQhJfXQu.UocanR6XJQeWpfjo"
+      "_key": "!actors.items!EtGsAgtbjuNgAKh2.UocanR6XJQeWpfjo"
     },
     {
-      "_id": "dE68WkRgI2etVa5g",
-      "name": "Scimitar",
+      "_id": "l0im7AME0coZK3di",
+      "name": "Cimitarra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo : +4, alcance 5 ft. Acerto: 5 (1d6 + 2) Cortante de dano, plus 2 (1d4) Cortante de dano if the attack roll had Advantage.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {
-            "damageFormula": "1d6+2",
-            "damageType": "slashing"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!hjYsJG9jrQhJfXQu.dE68WkRgI2etVa5g"
-    },
-    {
-      "_id": "phbHvReWMOeLETRI",
-      "name": "Shortbow",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +4, range 80/230 ft. Acerto: 5 (1d6 + 2) Perfurante de dano, plus 2 (1d4) Perfurante dam- age if the attack roll had Advantage.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano cortante, mais 2 (1d4) dano cortante se a rolagem de ataque teve Vantagem.</p>",
           "chat": ""
         },
         "activation": {
@@ -216,8 +179,89 @@
           "subtype": ""
         },
         "activities": {
-          "xMgjA2Jq7TT8KHNe": {
-            "_id": "xMgjA2Jq7TT8KHNe",
+          "G6cbxqfK2ERPjjta": {
+            "_id": "G6cbxqfK2ERPjjta",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "1d6+2",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!EtGsAgtbjuNgAKh2.l0im7AME0coZK3di"
+    },
+    {
+      "_id": "RXD9duaQOhkP4Lca",
+      "name": "Arco Curto",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +4, distância 24/96 m. Acerto: 5 (1d6 + 2) dano perfurante, mais 2 (1d4) dano perfurante se a rolagem de ataque teve Vantagem.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "J32lsFHlN4MtL55O": {
+            "_id": "J32lsFHlN4MtL55O",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -270,16 +314,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hjYsJG9jrQhJfXQu.phbHvReWMOeLETRI"
+      "_key": "!actors.items!EtGsAgtbjuNgAKh2.RXD9duaQOhkP4Lca"
     },
     {
-      "_id": "PvUo46t4wMUFC1ae",
-      "name": "Nimble Escape",
+      "_id": "kFbOVJGrC7af9jHk",
+      "name": "Fuga Ágil",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The goblin takes the Disengage or Hide action.</p>",
+          "value": "<p>A criatura realiza a ação Desengajar ou Esconder-se.</p>",
           "chat": ""
         },
         "activation": {
@@ -304,7 +348,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hjYsJG9jrQhJfXQu.PvUo46t4wMUFC1ae"
+      "_key": "!actors.items!EtGsAgtbjuNgAKh2.kFbOVJGrC7af9jHk"
     },
     {
       "_id": "08aEL2cHSQBsH6Ta",
@@ -313,7 +357,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: A creature the goblin can see makes an attack roll against it. Response: The goblin <t chooses a Small or Medium ally within 5 feet of itself. Vl Ul The goblin and that ally swap places, and th _e ally be- Ul ex:: i::: comes o alvo of the attack instead. GOBLIN HEX ER Small Fey (Goblinoid), Chaotic Neutral AC 13 Iniciativa +3 (13) HP 45 (10d6 + 10) S peed 30 ft. MOD SAVE M OD SAVE MOD SAVE</p>",
+          "value": "<p>A creature the goblin can see makes an attack roll against it. The goblin chooses a Small or Medium ally within 1,5 m of itself. The goblin and that ally swap places, and the ally becomes o alvo of the attack instead.</p>",
           "chat": ""
         },
         "activation": {
@@ -338,13 +382,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hjYsJG9jrQhJfXQu.08aEL2cHSQBsH6Ta"
+      "_key": "!actors.items!EtGsAgtbjuNgAKh2.08aEL2cHSQBsH6Ta"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Goblin Boss",
-      "page": 145,
+      "page": 143,
       "cr": "1",
       "warnings": []
     }

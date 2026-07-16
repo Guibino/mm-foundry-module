@@ -1,8 +1,8 @@
 {
-  "_id": "IeKmg5c7srGa0OIN",
-  "_key": "!actors!IeKmg5c7srGa0OIN",
+  "_id": "DpgTg7BefvapaThO",
+  "_key": "!actors!DpgTg7BefvapaThO",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Ancião Prateado Dragão",
+  "name": "Ancient Silver Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/ancient-silver-dragon.webp",
   "system": {
@@ -64,14 +64,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Meta lli c",
+        "subtype": "metallic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Bom",
       "cr": 23,
       "xp": {
-        "value": 50000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -107,7 +107,7 @@
     },
     "skills": {
       "his": {
-        "value": 1,
+        "value": 2,
         "ability": "int"
       },
       "prc": {
@@ -115,13 +115,13 @@
         "ability": "wis"
       },
       "ste": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       }
     }
   },
   "prototypeToken": {
-    "name": "Ancião Prateado Dragão",
+    "name": "Ancient Silver Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -134,12 +134,12 @@
   "items": [
     {
       "_id": "6Ozs7v6IRiratfx7",
-      "name": "Resistência Lendária (4/Day, or 5/Day in Lair)",
+      "name": "Resistência Lendária",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the dragon fails a saving throw, it can choose to suc- ceed instead.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -148,13 +148,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "4",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -168,7 +163,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!IeKmg5c7srGa0OIN.6Ozs7v6IRiratfx7"
+      "_key": "!actors.items!DpgTg7BefvapaThO.6Ozs7v6IRiratfx7"
     },
     {
       "_id": "j4DXnGVS2aDyEUjE",
@@ -177,7 +172,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of (A) Paralyz- ing Breath or (B) Conjuração to cast Ice Knife (level 2 version).</p>",
+          "value": "<p>The dragon makes three Dilacerar attacks. It can replace one attack with a use of (A) Sopro Paralisante or (B) Conjuração to cast Ice Knife (level 2 version).</p>",
           "chat": ""
         },
         "activation": {
@@ -202,16 +197,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!IeKmg5c7srGa0OIN.j4DXnGVS2aDyEUjE"
+      "_key": "!actors.items!DpgTg7BefvapaThO.j4DXnGVS2aDyEUjE"
     },
     {
-      "_id": "RoAVq8Kdx9MkYsiQ",
-      "name": "Rend",
+      "_id": "OpdKzpOmRGO9oCxT",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 17, alcance 15 ft. Acerto: 19 (2d8 + 10) Cortante de dano plus 9 (2d8) Frio de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +17, alcance 4,5 m. Acerto: 19 (2d8 + 10) dano cortante mais 9 (2d8) dano de frio.</p>",
           "chat": ""
         },
         "activation": {
@@ -228,27 +223,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "SY4COZmCgq06Gu5c": {
+            "_id": "SY4COZmCgq06Gu5c",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "17",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "10",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 17,
+            "attackType": "melee",
             "damageFormula": "2d8+10",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!IeKmg5c7srGa0OIN.RoAVq8Kdx9MkYsiQ"
+      "_key": "!actors.items!DpgTg7BefvapaThO.OpdKzpOmRGO9oCxT"
     },
     {
-      "_id": "CpC73PIB4fVozz6N",
-      "name": "Frio Breath (Recharge 5-6)",
+      "_id": "xHdXk1qYUUsvVWGZ",
+      "name": "Sopro de Frio (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Sa1Jing Throw: DC 24, cada criatura in a 90-foot Cone. Falha: 67 (l Sd8) Frio de dano. Sucesso: Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 24, cada criatura in a 27 m Cone. 67 (15d8) dano de frio. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -271,46 +310,9 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {
-            "damageFormula": "lSd8",
-            "damageType": "cold"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!IeKmg5c7srGa0OIN.CpC73PIB4fVozz6N"
-    },
-    {
-      "_id": "TZyh08ciVAf42ocV",
-      "name": "Paralyzing Breath",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 24, cada criatura in a 90-foot Cone. First Falha: The target has. the Incapacitado condition until the end of its next ~80 SILVER DRAGONS SILVER DRAGON LAIRS • Silver dragons typically lair in picturesque moun- tain retreats or on sculpted cloud \"islands.\" The region containing an adult or ancient silver dragon's lair is changed by its magic, creating the following effects:</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
         "activities": {
-          "xMG80TdZ7I8RhU8A": {
-            "_id": "xMG80TdZ7I8RhU8A",
+          "sDgbapj0IZY7GpNa": {
+            "_id": "sDgbapj0IZY7GpNa",
             "type": "save",
             "activation": {
               "type": "action",
@@ -343,16 +345,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!IeKmg5c7srGa0OIN.TZyh08ciVAf42ocV"
+      "_key": "!actors.items!DpgTg7BefvapaThO.xHdXk1qYUUsvVWGZ"
     },
     {
-      "_id": "uxFQrK0355X3r2N6",
-      "name": "Gentle Gusts",
+      "_id": "TUIdrufZIwqzbO5t",
+      "name": "Sopro Paralisante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Winds buoy creatures that fall within 1 mile of the lair. Such creatures descend at a rate of 60 feet per round and take no de dano from falling.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 24, cada criatura in a 27 m Cone. Falha: O alvo fica com a condição Incapacitado until the end of its next turn, when it repeats the save. Falha: O alvo fica com a condição Paralisado, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.</p>",
           "chat": ""
         },
         "activation": {
@@ -369,49 +371,42 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "ZOAtquNa1HcrWUPr": {
+            "_id": "ZOAtquNa1HcrWUPr",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "24"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 24,
+            "saveAbility": "con"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!IeKmg5c7srGa0OIN.uxFQrK0355X3r2N6"
-    },
-    {
-      "_id": "YyhnIG2qQxUOpfl2",
-      "name": "Sun and Storms",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>While in its lair, the dragon can cast Control Weather, requiring no Material com- ponents and using the same spellcasting ability as its Conjuração action. If the dragon dies or moves its lair elsewhere, these effects end immediately. turn, when it repeats the save. Second Falha: The tar- get has the Paralisado condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After l minute, it succeeds automatically .</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!IeKmg5c7srGa0OIN.YyhnIG2qQxUOpfl2"
+      "_key": "!actors.items!DpgTg7BefvapaThO.TUIdrufZIwqzbO5t"
     },
     {
       "_id": "cyQA1iiIgbnVmcCD",
@@ -420,7 +415,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon uses Conjuração to cast Hold Mon- ster. The dragon can't take this action again until the start of its next turn.</p>",
+          "value": "<p>The dragon uses Conjuração to cast Hold Monster. The dragon can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -445,7 +440,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!IeKmg5c7srGa0OIN.cyQA1iiIgbnVmcCD"
+      "_key": "!actors.items!DpgTg7BefvapaThO.cyQA1iiIgbnVmcCD"
     },
     {
       "_id": "xB6luKsyQTXGgWkQ",
@@ -454,7 +449,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 23, cada criatura in a 60-foot-long, 10-foot-wide Line. Falha: 14 (4d6) Frio de dano, and o alvo is pushed up to 30 feet straight away from the dragon. Sucesso: Metade do dano o'nly. Falha ou Sucesso: The dragon can't take this ac- z tion again until the start of its next turn. 3</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 23, cada criatura in a 18 m-long, 3 m-wide Line. 14 (4d6) dano de frio, and o alvo is pushed up to 9 m straight away from the dragon. Metade do dano only. The dragon can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -492,25 +487,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 4,
-                  "denomination": 6,
-                  "bonus": "",
-                  "types": [
-                    "cold"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -518,24 +495,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "4d6",
-            "damageType": "cold",
             "saveDc": 23,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!IeKmg5c7srGa0OIN.xB6luKsyQTXGgWkQ"
+      "_key": "!actors.items!DpgTg7BefvapaThO.xB6luKsyQTXGgWkQ"
     },
     {
-      "_id": "OtZT0rHAJu5luUBm",
-      "name": "Pounce",
+      "_id": "6UtwVptWq5nMGBMW",
+      "name": "Bote",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon moves up to half its Speed, and it Q_ makes one Rend attack. z SKELETONS Ossified Evil '</p>",
+          "value": "<p>A criatura se move até metade do seu Deslocamento e faz um ataque de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -560,7 +535,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!IeKmg5c7srGa0OIN.OtZT0rHAJu5luUBm"
+      "_key": "!actors.items!DpgTg7BefvapaThO.6UtwVptWq5nMGBMW"
     },
     {
       "_id": "T5pT6xIFrws5nhwt",
@@ -569,7 +544,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 23, + 15 to hit with spell attacks): À Vontade: Detect Magic, Hold Monster, Ice l<nife (level 2 version), Shapechange (Beast or Humanoid form only, no Temporary Pontos de Vida gained from the spell, and no Concentration or Temporary Pontos de Vida required to maintain the spell) 1/Dia Each: Control Weather, Ice Storm (level 7 version), Teleport, Zone of Truth</p>",
+          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 23, +15 to hit with spell attacks):</p>",
           "chat": ""
         },
         "activation": {
@@ -586,21 +561,47 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "GirHOmJw0HFFQPET": {
+            "_id": "GirHOmJw0HFFQPET",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "15",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "toHit": 15
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!IeKmg5c7srGa0OIN.T5pT6xIFrws5nhwt"
+      "_key": "!actors.items!DpgTg7BefvapaThO.T5pT6xIFrws5nhwt"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Ancient Silver Dragon",
-      "page": 282,
+      "page": 280,
       "cr": "23",
       "warnings": []
     }

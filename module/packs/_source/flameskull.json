@@ -1,6 +1,6 @@
 {
-  "_id": "SJVQJy1D3haeIQa5",
-  "_key": "!actors!SJVQJy1D3haeIQa5",
+  "_id": "qavvx8TY88DYYVS5",
+  "_key": "!actors!qavvx8TY88DYYVS5",
   "folder": "bKQUPthn1V2Yu6Bn",
   "name": "Flameskull",
   "type": "npc",
@@ -20,7 +20,7 @@
         "proficient": 0
       },
       "int": {
-        "value": 76,
+        "value": 16,
         "proficient": 0
       },
       "wis": {
@@ -41,17 +41,19 @@
       "hp": {
         "value": 40,
         "max": 40,
-        "formula": "9d4 + 78",
+        "formula": "9d4 + 18",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
-        "hover": false,
-        "walk": 30
+        "hover": true,
+        "walk": 5,
+        "fly": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -68,7 +70,7 @@
       "alignment": "Neutro e Mau",
       "cr": 4,
       "xp": {
-        "value": 1100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -82,9 +84,10 @@
       "di": {
         "value": [
           "fire",
+          "necrotic",
           "poison"
         ],
-        "custom": "Necrot i c"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -96,7 +99,12 @@
       },
       "ci": {
         "value": [
-          "charmed"
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "poisoned",
+          "prone"
         ],
         "custom": ""
       },
@@ -129,13 +137,13 @@
   },
   "items": [
     {
-      "_id": "apMgU0fxatY6vyaa",
-      "name": "Illumination",
+      "_id": "Ztskx5aeqRKTlNMU",
+      "name": "Iluminação",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The flameskull sheds Bright Light in a 15- foot radius and Dim Light for an additional 15 feet.</p>",
+          "value": "<p>The flameskull sheds Bright Light in a 4,5 m radius and Dim Light for an additional 4,5 m.</p>",
           "chat": ""
         },
         "activation": {
@@ -159,16 +167,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SJVQJy1D3haeIQa5.apMgU0fxatY6vyaa"
+      "_key": "!actors.items!qavvx8TY88DYYVS5.Ztskx5aeqRKTlNMU"
     },
     {
-      "_id": "zfZT1P8sE8dp1Z6n",
-      "name": "Magic Resistance",
+      "_id": "3KftzqlyF7FlD44g",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The flameskull has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -192,16 +200,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SJVQJy1D3haeIQa5.zfZT1P8sE8dp1Z6n"
+      "_key": "!actors.items!qavvx8TY88DYYVS5.3KftzqlyF7FlD44g"
     },
     {
-      "_id": "x2df9ufCoZ5VXEiG",
-      "name": "Undead Restoration",
+      "_id": "yVKL8xJ7Fb31SQhg",
+      "name": "Restauração Morta-Viva",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the flameskull is destroyed, it regains all its Pontos de Vida in l hour unless Holy Water is sprinkled on its remains or the Dispel Evil and Good spell is cast on them.</p>",
+          "value": "<p>If the flameskull is destroyed, it regains all its Pontos de Vida in 1 hour unless Holy Water is sprinkled on its remains or the Dispel Evil and Good spell is cast on them.</p>",
           "chat": ""
         },
         "activation": {
@@ -225,7 +233,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SJVQJy1D3haeIQa5.x2df9ufCoZ5VXEiG"
+      "_key": "!actors.items!qavvx8TY88DYYVS5.yVKL8xJ7Fb31SQhg"
     },
     {
       "_id": "SonqM8uSoxHbycw5",
@@ -259,7 +267,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SJVQJy1D3haeIQa5.SonqM8uSoxHbycw5"
+      "_key": "!actors.items!qavvx8TY88DYYVS5.SonqM8uSoxHbycw5"
     },
     {
       "_id": "LY53eUygKJOfDzVs",
@@ -268,7 +276,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +5, alcance 5 ft. or range 60 ft . Hit : 13 (3d6 + 3) Fogo de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +5, alcance 1,5 m. or distância 18 m. Acerto: 13 (3d6 + 3) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -306,7 +314,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "fire"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -315,12 +341,14 @@
         "mm2024": {
           "mechanics": {
             "toHit": 5,
-            "attackType": "ranged"
+            "attackType": "ranged",
+            "damageFormula": "3d6+3",
+            "damageType": "fire"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SJVQJy1D3haeIQa5.LY53eUygKJOfDzVs"
+      "_key": "!actors.items!qavvx8TY88DYYVS5.LY53eUygKJOfDzVs"
     },
     {
       "_id": "QfqWdbvMhRH5ubeB",
@@ -329,7 +357,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The flameskull casts one of the following spells, requiring no Somatic or Material components and using Inteligência as the spellcasting ability (spell save DC 13): À Vontade: Mage Hand 2/Dia: Magic Missile (level 2 version) 1/Dia: Fogoball 120 FLAME SKULL Flameskulls take various forms, from skulls with humanlike features to ones with fearsome or bestial alterations. Their flames vary in color and grow more intense when they're angry. Roll on or choose a result from the Flameskull Details table to inspire what makes a flameskull distinctive. FLAMESKULL DETAILS 1d6 The Flameskull Features ... 1 Arcane diagrams etched into it. 2 Flames like dramatic features, horns, or hair. 3 Fractured pieces that fly in unison. 4 An iron plate bolted over its mouth. 5 Lethal head trau-ma. 6 Mismatched animal teeth. l NEYER CA RED FOR WAR M TH. l N EV ER N EE DED A BOD Y. _j M Y WI LL IS ENOUGH, AN O M Y WORK WILL BE TH E LEGACY N THAT M AKES MY EV ERY SACR I FICE WOR T HW HILE _/ <( _j -TR E N 1.IA, LJ N OE RMOU NTAIN FL AM ESK ULL • Cl::: CD FLESH GOLE M Dead Flesh Given New Life</p>",
+          "value": "<p>The flameskull casts one of the following spells, requiring no Somatic or Material components and using Inteligência as the spellcasting ability (spell save CD 13):</p>",
           "chat": ""
         },
         "activation": {
@@ -354,13 +382,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SJVQJy1D3haeIQa5.QfqWdbvMhRH5ubeB"
+      "_key": "!actors.items!qavvx8TY88DYYVS5.QfqWdbvMhRH5ubeB"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Flameskull",
-      "page": 122,
+      "page": 120,
       "cr": "4",
       "warnings": []
     }

@@ -1,8 +1,8 @@
 {
-  "_id": "uV6XsoRGeuzmbMjs",
-  "_key": "!actors!uV6XsoRGeuzmbMjs",
+  "_id": "vZrqBcdtifUetbR6",
+  "_key": "!actors!vZrqBcdtifUetbR6",
   "folder": "IQP9BfRMl9yEsYGp",
-  "name": "Gigante Owl",
+  "name": "Giant Owl",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/giant-owl.webp",
   "system": {
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 12,
         "formula": ""
       },
       "hp": {
@@ -68,9 +68,9 @@
         "custom": ""
       },
       "alignment": "Neutro",
-      "cr": 1,
+      "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,13 +102,22 @@
       },
       "languages": {
         "value": [],
-        "custom": "Celestial, understands Common, Élfico, and"
+        "custom": "Celestial; understands Common, Élfico, and Sylvan but can't speak them"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Gigante Owl",
+    "name": "Giant Owl",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -120,13 +129,13 @@
   },
   "items": [
     {
-      "_id": "4l8bqWVJkWSPV7L1",
-      "name": "Flyby",
+      "_id": "PTr5hJXhFhsV02zt",
+      "name": "Voo Rasante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The owl doesn't provoke an Opportunity Attack when it flies out of an enemy's alcance.</p>",
+          "value": "<p>A criatura não provoca Ataque de Oportunidade ao sair voando do alcance de um inimigo.</p>",
           "chat": ""
         },
         "activation": {
@@ -150,16 +159,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!uV6XsoRGeuzmbMjs.4l8bqWVJkWSPV7L1"
+      "_key": "!actors.items!vZrqBcdtifUetbR6.PTr5hJXhFhsV02zt"
     },
     {
-      "_id": "lNIpzv0ZrI1QktP9",
-      "name": "Talons",
+      "_id": "BzWXZ6pVig7WdvYz",
+      "name": "Garras",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 7 (1d1 0 + 2) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 7 (1d10 + 2) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -177,8 +186,8 @@
           "subtype": ""
         },
         "activities": {
-          "s5g9GgvPjefq7I8y": {
-            "_id": "s5g9GgvPjefq7I8y",
+          "x9KHGdSDmqc4llzh": {
+            "_id": "x9KHGdSDmqc4llzh",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -231,7 +240,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!uV6XsoRGeuzmbMjs.lNIpzv0ZrI1QktP9"
+      "_key": "!actors.items!vZrqBcdtifUetbR6.BzWXZ6pVig7WdvYz"
     },
     {
       "_id": "M4l9VRAbwBwsSboi",
@@ -240,7 +249,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The owl casts one of the following spells, requiring no spell components and using Sabedoria as the spellcasting modifier: À Vontade: Detect Evil and Good, Detect Magic 1/Dia: Clair1Joyance GIANT RAT Small Beast, Unaligned AC 13 Iniciativa +3 (13) HP 7 (2d6) Speed 30 ft., Climb 30 ft. M O D SAVE MO D SAVE MOD SAVE</p>",
+          "value": "<p>The owl casts one of the following spells, requiring no spell components and using Sabedoria as the spellcasting ability:</p>",
           "chat": ""
         },
         "activation": {
@@ -265,14 +274,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!uV6XsoRGeuzmbMjs.M4l9VRAbwBwsSboi"
+      "_key": "!actors.items!vZrqBcdtifUetbR6.M4l9VRAbwBwsSboi"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Giant Owl",
-      "page": 360,
-      "cr": "1",
+      "page": 358,
+      "cr": "1/4",
       "warnings": []
     }
   }

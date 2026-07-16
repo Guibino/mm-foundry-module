@@ -1,6 +1,6 @@
 {
-  "_id": "XbbM3oTrKUQQ0isV",
-  "_key": "!actors!XbbM3oTrKUQQ0isV",
+  "_id": "PerYv4eVy96TOq97",
+  "_key": "!actors!PerYv4eVy96TOq97",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Merfolk Wavebender",
   "type": "npc",
@@ -21,7 +21,7 @@
       },
       "int": {
         "value": 13,
-        "proficient": 1
+        "proficient": 0
       },
       "wis": {
         "value": 19,
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 74,
+        "flat": 14,
         "formula": ""
       },
       "hp": {
@@ -48,6 +48,7 @@
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 10,
         "swim": 40
       },
       "senses": {
@@ -68,7 +69,7 @@
       "alignment": "Neutro",
       "cr": 6,
       "xp": {
-        "value": 2
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -84,8 +85,10 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
-        "custom": "Co Id"
+        "value": [
+          "cold"
+        ],
+        "custom": ""
       },
       "dv": {
         "value": [],
@@ -97,10 +100,15 @@
       },
       "languages": {
         "value": [],
-        "custom": "Co mmon Primordial (Aqu an)"
+        "custom": "Comum, Primordial (Aquan)"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Merfolk Wavebender",
@@ -115,13 +123,13 @@
   },
   "items": [
     {
-      "_id": "F6APBYLbKOA0DbkO",
-      "name": "Amphibious",
+      "_id": "6MbyKtixVcNoO4Iq",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The merfolk can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,7 +153,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!XbbM3oTrKUQQ0isV.F6APBYLbKOA0DbkO"
+      "_key": "!actors.items!PerYv4eVy96TOq97.6MbyKtixVcNoO4Iq"
     },
     {
       "_id": "MEQ6ITHVNRXA9T2t",
@@ -179,7 +187,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!XbbM3oTrKUQQ0isV.MEQ6ITHVNRXA9T2t"
+      "_key": "!actors.items!PerYv4eVy96TOq97.MEQ6ITHVNRXA9T2t"
     },
     {
       "_id": "p2nMTPMBCfl5z035",
@@ -188,7 +196,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 5 ft. or range 60 ft. Acerto: 20 (3d10 + 4) Frio de dano. If o alvo is a Large or smaller creature, it has the Caído condition.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 1,5 m. or distância 18 m. Acerto: 20 (3d10 + 4) dano de frio. If o alvo is a Large or smaller creature, it fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -260,7 +268,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!XbbM3oTrKUQQ0isV.p2nMTPMBCfl5z035"
+      "_key": "!actors.items!PerYv4eVy96TOq97.p2nMTPMBCfl5z035"
     },
     {
       "_id": "heC8cRYyTlAn5wn0",
@@ -269,7 +277,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: An enemy the merfolk can see enters a space within 5 feet of the merfolk. Response- Força Teste de Resistência: DC 15, the triggering enemy. Falha: 14 (4d6) Frio de dano. If o alvo is Large or smaller, it is pushed up to 30 feet straight away from . the merfolk by conjured water. MERFOLK 209 MERROW Ogreish Undersea Abductor</p>",
+          "value": "<p>An enemy the merfolk can see enters a space within 1,5 m of the merfolk. dStrength Teste de Resistência: CD 15, the triggering enemy. 14 (4d6) dano de frio. If o alvo is Large or smaller, it is pushed up to 9 m straight away from the merfolk by conjured water.</p>",
           "chat": ""
         },
         "activation": {
@@ -307,25 +315,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 4,
-                  "denomination": 6,
-                  "bonus": "",
-                  "types": [
-                    "cold"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -333,15 +323,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "4d6",
-            "damageType": "cold",
             "saveDc": 15,
             "saveAbility": "str"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!XbbM3oTrKUQQ0isV.heC8cRYyTlAn5wn0"
+      "_key": "!actors.items!PerYv4eVy96TOq97.heC8cRYyTlAn5wn0"
     },
     {
       "_id": "doNEBTCGvW6yGs0H",
@@ -350,7 +338,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The merfolk casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save DC 15): À Vontade: Elementalism Light 1/Dia Each: Control Water Create or Destroy Water</p>",
+          "value": "<p>The merfolk casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save CD 15):</p>",
           "chat": ""
         },
         "activation": {
@@ -375,13 +363,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!XbbM3oTrKUQQ0isV.doNEBTCGvW6yGs0H"
+      "_key": "!actors.items!PerYv4eVy96TOq97.doNEBTCGvW6yGs0H"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Merfolk Wavebender",
-      "page": 211,
+      "page": 209,
       "cr": "6",
       "warnings": []
     }

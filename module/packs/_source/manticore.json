@@ -1,6 +1,6 @@
 {
-  "_id": "55P2h8MLQf6dV9NU",
-  "_key": "!actors!55P2h8MLQf6dV9NU",
+  "_id": "1tKoEtAXf8Vs7PZC",
+  "_key": "!actors!1tKoEtAXf8Vs7PZC",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Manticore",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 68,
         "max": 68,
-        "formula": "8d1 0 + 24",
+        "formula": "8d10 + 24",
         "temp": null,
         "tempmax": null
       },
@@ -52,7 +52,8 @@
         "fly": 50
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -66,10 +67,10 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Lawful",
+      "alignment": "Leal e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -98,7 +99,7 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum"
       }
     },
     "skills": {}
@@ -122,7 +123,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The manticore makes three attacks, using Rend or Tail Spike in any combination.</p>",
+          "value": "<p>The manticore makes three attacks, using Dilacerar or Cauda Spike in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,16 +148,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!55P2h8MLQf6dV9NU.kUGBzSQEdmgGOfL8"
+      "_key": "!actors.items!1tKoEtAXf8Vs7PZC.kUGBzSQEdmgGOfL8"
     },
     {
-      "_id": "X8U8Xc3Z3gI5SsV9",
-      "name": "Rend",
+      "_id": "2SULQbTvbsQqXKAm",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 7 (1d8 + 3) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 7 (1d8 + 3) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -174,8 +175,8 @@
           "subtype": ""
         },
         "activities": {
-          "tjD4WkOAKjh0EJEK": {
-            "_id": "tjD4WkOAKjh0EJEK",
+          "PCSMWJugrZ7E2M0q": {
+            "_id": "PCSMWJugrZ7E2M0q",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -228,16 +229,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!55P2h8MLQf6dV9NU.X8U8Xc3Z3gI5SsV9"
+      "_key": "!actors.items!1tKoEtAXf8Vs7PZC.2SULQbTvbsQqXKAm"
     },
     {
-      "_id": "p3hXEA3hbUhcIZ4w",
-      "name": "Tail Spike",
+      "_id": "5DdsQLThzIL9YJfW",
+      "name": "Cauda Spike",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Distânciad Attack Ro/1: , +5, range 100/200 ft. Acerto: 7 (1d8 + 3) Perfurante de dano. 20~ MANTI0ORE crave the taste of humans, but lacking their favored prey, they eagerly consume other peoples and livestock. Manticores have tails bristling with detachable spikes. These monsters launch their tail spikes at their prey, skewering those on the ground or knock- ing flying creatures from the air. Despite their ravenous tendencies, manticores enjoy speaking with those they're abou~ to devour. Sometimes they make agreements with their prey. Roll on or choose a result from the Manticore Ne- gotiations table to inspire what a manticore might offer in exchange for a more tempting meal. MANTICORE NEGOTIATIONS 1d8 The Manticore Agrees To ... 1 Attack a particular foe. 2 Create a distraction. 3 Give up a captive or corpse. 4 Let a group navigate its territory unharmed. 5 Let someone pretend to slay it in battle. _ · • 6 Scare or threaten someone. 7 Serve a creature as a steed until the sun sets. > 8 Try to locate something from its vantage point in the sky. 0 MARIO Large Elemental (Genie), Chaotic Neutral AC 17 Iniciativa +5 (15) HP 229 (17d10 + 136) Speed 30 ft., Fly 60 ft., Swim 90 ft. MOD SA VE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +5, distância 30/60 m. Acerto: 7 (1d8 + 3) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -254,24 +255,68 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "1tjeCck9u5E71EYQ": {
+            "_id": "1tjeCck9u5E71EYQ",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 5,
+            "attackType": "ranged",
             "damageFormula": "1d8+3",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!55P2h8MLQf6dV9NU.p3hXEA3hbUhcIZ4w"
+      "_key": "!actors.items!1tKoEtAXf8Vs7PZC.5DdsQLThzIL9YJfW"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Manticore",
-      "page": 204,
+      "page": 202,
       "cr": "3",
       "warnings": []
     }

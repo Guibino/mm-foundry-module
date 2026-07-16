@@ -1,6 +1,6 @@
 {
-  "_id": "zWBSAXIC3NRM6Xif",
-  "_key": "!actors!zWBSAXIC3NRM6Xif",
+  "_id": "6llmlxVTM2kuGezp",
+  "_key": "!actors!6llmlxVTM2kuGezp",
   "folder": "CVeezowVb7BNP8yc",
   "name": "Clay Golem",
   "type": "npc",
@@ -48,7 +48,7 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 20
       },
       "senses": {
         "units": "ft",
@@ -69,7 +69,7 @@
       "alignment": "Sem Tendência",
       "cr": 9,
       "xp": {
-        "value": 5000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,7 +102,12 @@
       },
       "ci": {
         "value": [
-          "charmed"
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "petrified",
+          "poisoned"
         ],
         "custom": ""
       },
@@ -132,7 +137,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Whenever the golem is subjected to Ácido de dano, it takes no de dano and instead regains a number of Pontos de Vida equal to the Ácido de dano dealt.</p>",
+          "value": "<p>Whenever the golem is subjected to dano de ácido, it takes no de dano and instead regains a number of Pontos de Vida equal to the dano de ácido dealt.</p>",
           "chat": ""
         },
         "activation": {
@@ -156,7 +161,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!zWBSAXIC3NRM6Xif.c5m0pVdgCSVHmJpK"
+      "_key": "!actors.items!6llmlxVTM2kuGezp.c5m0pVdgCSVHmJpK"
     },
     {
       "_id": "FxCMzNSgVzdMpU29",
@@ -165,7 +170,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Whenever the golem starts its turn Bloodied, roll 1d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest 72 ,,6_ CLAY GOLE M CLAY GOLEM Guardian of Home and Heart</p>",
+          "value": "<p>Whenever the golem starts its turn Bloodied, roll 1d6. On a 6, the golem goes berserk. On each of its turns while berserk, the golem attacks the nearest creature it can see. If no creature is near enough to move to and attack, the golem attacks an object. Once the golem goes berserk, it continues to be berserk until it is destroyed or it is no longer Bloodied.</p>",
           "chat": ""
         },
         "activation": {
@@ -189,13 +194,234 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!zWBSAXIC3NRM6Xif.FxCMzNSgVzdMpU29"
+      "_key": "!actors.items!6llmlxVTM2kuGezp.FxCMzNSgVzdMpU29"
+    },
+    {
+      "_id": "KrHgicfMxIdcWe2k",
+      "name": "Forma Imutável",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura não pode mudar de forma.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!6llmlxVTM2kuGezp.KrHgicfMxIdcWe2k"
+    },
+    {
+      "_id": "snJlrXFV9YeajZGa",
+      "name": "Resistência a Magia",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!6llmlxVTM2kuGezp.snJlrXFV9YeajZGa"
+    },
+    {
+      "_id": "OQtzjTkdcRL42iVq",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The golem makes two Pancada attacks, or it makes three Pancada attacks if it used Hasten this turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!6llmlxVTM2kuGezp.OQtzjTkdcRL42iVq"
+    },
+    {
+      "_id": "15D7asRwN5seO7s1",
+      "name": "Pancada",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 1,5 m. Acerto: 10 (1d10 + 5) dano de concussão mais 6 (1d12) dano de ácido, and o alvo's Hit Point maximum decreases by an amount equal to the dano de ácido taken.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "350KdkISZqAuwIUe": {
+            "_id": "350KdkISZqAuwIUe",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "9",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 10,
+                  "bonus": "5",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9,
+            "attackType": "melee",
+            "damageFormula": "1d10+5",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!6llmlxVTM2kuGezp.15D7asRwN5seO7s1"
+    },
+    {
+      "_id": "5LjEWp6S6qHFuMZn",
+      "name": "Hasten (Recharge 5)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The golem takes the Dash and Disengage actions.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!6llmlxVTM2kuGezp.5LjEWp6S6qHFuMZn"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Clay Golem",
-      "page": 74,
+      "page": 72,
       "cr": "9",
       "warnings": []
     }

@@ -1,6 +1,6 @@
 {
-  "_id": "ldmlfhW8eD7ePSPj",
-  "_key": "!actors!ldmlfhW8eD7ePSPj",
+  "_id": "bkjbZOJgaL2w4PFw",
+  "_key": "!actors!bkjbZOJgaL2w4PFw",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Spy Master",
   "type": "npc",
@@ -16,7 +16,7 @@
         "proficient": 1
       },
       "con": {
-        "value": 2,
+        "value": 12,
         "proficient": 1
       },
       "int": {
@@ -28,27 +28,28 @@
         "proficient": 1
       },
       "cha": {
-        "value": 6,
+        "value": 16,
         "proficient": 0
       }
     },
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 19,
         "formula": ""
       },
       "hp": {
         "value": 137,
         "max": 137,
-        "formula": "25d8+25",
+        "formula": "25d8 + 25",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "climb": 30
       },
       "senses": {
         "units": "ft"
@@ -66,9 +67,9 @@
         "custom": ""
       },
       "alignment": "Neutro",
-      "cr": 0,
+      "cr": 10,
       "xp": {
-        "value": 5900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +79,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -97,10 +98,35 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Common plus two other languages"
       }
     },
-    "skills": {}
+    "skills": {
+      "dec": {
+        "value": 2,
+        "ability": "cha"
+      },
+      "ins": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "inv": {
+        "value": 2,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "slt": {
+        "value": 2,
+        "ability": "dex"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Spy Master",
@@ -121,7 +147,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The spy makes three attacks, using Rapier or Hand Crossbow in any combination.</p>",
+          "value": "<p>The spy makes three attacks, using Rapieira or Besta de Mão in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +172,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ldmlfhW8eD7ePSPj.333ZDKwH3osQysbi"
+      "_key": "!actors.items!bkjbZOJgaL2w4PFw.333ZDKwH3osQysbi"
     },
     {
-      "_id": "Xgxl8A2bCR32MA99",
-      "name": "Rapier",
+      "_id": "T8dVepQijPEv1YZa",
+      "name": "Rapieira",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 5 ft. Acerto: 14 (2d8 + 5) Perfurante de dano plus 7 (2d6) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 1,5 m. Acerto: 14 (2d8 + 5) dano perfurante mais 7 (2d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -173,8 +199,8 @@
           "subtype": ""
         },
         "activities": {
-          "26dh23pephsROk0L": {
-            "_id": "26dh23pephsROk0L",
+          "GXTtLGJZGidhhCJ5": {
+            "_id": "GXTtLGJZGidhhCJ5",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -227,16 +253,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ldmlfhW8eD7ePSPj.Xgxl8A2bCR32MA99"
+      "_key": "!actors.items!bkjbZOJgaL2w4PFw.T8dVepQijPEv1YZa"
     },
     {
-      "_id": "h34nXEAFATEog60W",
-      "name": "Hand Crossbow",
+      "_id": "zhfC0019ZVAwSqT3",
+      "name": "Besta de Mão",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +9, range 30/120 ft. Acerto: 12 (2d6 + 5) Perfurante de dano plus 9 (2d8) Veneno de dano. -</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +9, distância 9/36 m. Acerto: 12 (2d6 + 5) dano perfurante mais 9 (2d8) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -254,8 +280,8 @@
           "subtype": ""
         },
         "activities": {
-          "oeHczyytdOK3h2BA": {
-            "_id": "oeHczyytdOK3h2BA",
+          "fm7MMG2mUjFRTx6O": {
+            "_id": "fm7MMG2mUjFRTx6O",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -308,7 +334,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ldmlfhW8eD7ePSPj.h34nXEAFATEog60W"
+      "_key": "!actors.items!bkjbZOJgaL2w4PFw.zhfC0019ZVAwSqT3"
     },
     {
       "_id": "JUbzbwzaAVDEZu22",
@@ -317,7 +343,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The spy throws a bomb to a point it can see within 30 feet of itself. Constituição Teste de Resistência: DC 16, cada criatura in a 20-foot-radius Sphere centered on that point. Falha: 28 (8d6) Veneno dam- age, and o alvo has the Cego condition until the end of the spy's next turn. Sucesso: Metade do dano only.</p>",
+          "value": "<p>The spy throws a bomb to a point it can see within 9 m of itself. Teste de Resistência de Constituição: CD 16, cada criatura in a 6 m-radius Sphere centered on that point. 28 (8d6) dano de veneno, and o alvo fica com a condição Cego until the end of the spy's next turn. Metade do dano only.</p>",
           "chat": ""
         },
         "activation": {
@@ -374,7 +400,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ldmlfhW8eD7ePSPj.JUbzbwzaAVDEZu22"
+      "_key": "!actors.items!bkjbZOJgaL2w4PFw.JUbzbwzaAVDEZu22"
     },
     {
       "_id": "5tg1aLLaQcFCs0kk",
@@ -383,7 +409,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The spy takes the Dash, Disengage, or Hide action . SPIES 295 296 SPINED , DE VIL SPINED D EVIL Devil of Intrusion and Suspicion</p>",
+          "value": "<p>A criatura realiza a ação Disparar, Desengajar ou Esconder-se.</p>",
           "chat": ""
         },
         "activation": {
@@ -408,14 +434,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ldmlfhW8eD7ePSPj.5tg1aLLaQcFCs0kk"
+      "_key": "!actors.items!bkjbZOJgaL2w4PFw.5tg1aLLaQcFCs0kk"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Spy Master",
-      "page": 297,
-      "cr": "0",
+      "page": 295,
+      "cr": "10",
       "warnings": []
     }
   }

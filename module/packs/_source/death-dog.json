@@ -1,6 +1,6 @@
 {
-  "_id": "LfKHGcObspkKFlGC",
-  "_key": "!actors!LfKHGcObspkKFlGC",
+  "_id": "kBTnIjcoz4NpegwA",
+  "_key": "!actors!kBTnIjcoz4NpegwA",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Death Dog",
   "type": "npc",
@@ -69,7 +69,7 @@
       "alignment": "Neutro e Mau",
       "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -82,7 +82,7 @@
       "size": "med",
       "di": {
         "value": [],
-        "custom": "Blinded; Cha rmed; Deafened; Frightened"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -93,12 +93,19 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "blinded",
+          "charmed",
+          "deafened",
+          "frightened",
+          "stunned",
+          "unconscious"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {
@@ -131,7 +138,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The death dog makes two Bite attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Mordida.</p>",
           "chat": ""
         },
         "activation": {
@@ -156,16 +163,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!LfKHGcObspkKFlGC.3FG4Tb75Bb6HfPeT"
+      "_key": "!actors.items!kBTnIjcoz4NpegwA.3FG4Tb75Bb6HfPeT"
     },
     {
-      "_id": "2SuPUy0BUyPSVp4u",
-      "name": "Bite",
+      "_id": "gh630GKvicZDx1RB",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 4 (1d4 + 2) Perfurante de dano. If o alvo is a creature, it is subjected to the following effect. Constituição Teste de Resistência: DC 12. First Falha: The target has the Envenenado condition. While Envenenado, o alvo's Hit Point max- . imum doesn't return to normal when finishing a Long Rest, and it repeats the save every 24 hours that elapse, ending the effect on itself on a success. Subsequent Failures: The Envenenado target7s Hit Point maximum de- creases by 5 (1d10). DEATH DOG 91 DEATH KNIGHTS Haunted Commanders of Unliving Legions</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 4 (1d4 + 2) dano perfurante. If o alvo is uma criatura, it is subjected to the following effect. Teste de Resistência de Constituição: CD 12. Falha: O alvo fica com a condição Envenenado. While Envenenado, o alvo's Hit Point maximum doesn't return to normal when finishing a Long Rest, and it repeats the save every 24 hours that elapse, ending the effect on itself on a success. Subsequent Failures: The Envenenado target's Hit Point maximum decreases by 5 (1d10).</p>",
           "chat": ""
         },
         "activation": {
@@ -183,8 +190,8 @@
           "subtype": ""
         },
         "activities": {
-          "JYzMfl8VlcWBodl7": {
-            "_id": "JYzMfl8VlcWBodl7",
+          "83hW04a9hrsDqfyO": {
+            "_id": "83hW04a9hrsDqfyO",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -239,13 +246,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!LfKHGcObspkKFlGC.2SuPUy0BUyPSVp4u"
+      "_key": "!actors.items!kBTnIjcoz4NpegwA.gh630GKvicZDx1RB"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Death Dog",
-      "page": 93,
+      "page": 91,
       "cr": "1",
       "warnings": []
     }

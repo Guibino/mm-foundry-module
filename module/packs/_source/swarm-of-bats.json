@@ -1,22 +1,22 @@
 {
-  "_id": "M8VCewZfHCJfGWuv",
-  "_key": "!actors!M8VCewZfHCJfGWuv",
+  "_id": "hDz7U9krHIRIbf6A",
+  "_key": "!actors!hDz7U9krHIRIbf6A",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Enxame Of Bats",
+  "name": "Swarm of Bats",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/swarm-of-bats.webp",
   "system": {
     "abilities": {
       "str": {
-        "value": 21,
+        "value": 5,
         "proficient": 0
       },
       "dex": {
-        "value": 8,
+        "value": 15,
         "proficient": 0
       },
       "con": {
-        "value": 15,
+        "value": 10,
         "proficient": 0
       },
       "int": {
@@ -28,30 +28,32 @@
         "proficient": 0
       },
       "cha": {
-        "value": 6,
+        "value": 4,
         "proficient": 0
       }
     },
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 13,
+        "flat": 12,
         "formula": ""
       },
       "hp": {
-        "value": 45,
-        "max": 45,
-        "formula": "6d10 + 12",
+        "value": 11,
+        "max": 11,
+        "formula": "2d10",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 40
+        "walk": 5,
+        "fly": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "blindsight": 60
       },
       "init": {
         "ability": "dex",
@@ -66,9 +68,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 2,
+      "cr": 0.25,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -84,7 +86,11 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
         "custom": ""
       },
       "dv": {
@@ -92,18 +98,27 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed",
+          "frightened",
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "prone",
+          "restrained",
+          "stunned"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Enxame Of Bats",
+    "name": "Swarm of Bats",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -115,80 +130,18 @@
   },
   "items": [
     {
-      "_id": "ahUmMUaBgZ9yNmsq",
-      "name": "Gore",
+      "_id": "PMIP82xOQsqCmhB7",
+      "name": "Enxame",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 14 (2d8 + 5)</p>",
+          "value": "<p>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny bat. The swarm can't regain Pontos de Vida or gain Temporary Pontos de Vida.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {
-          "XK4Y60fSxvmLjyko": {
-            "_id": "XK4Y60fSxvmLjyko",
-            "type": "attack",
-            "activation": {
-              "type": "action",
-              "value": null,
-              "override": true,
-              "condition": ""
-            },
-            "attack": {
-              "ability": "",
-              "bonus": "7",
-              "flat": true,
-              "type": {
-                "value": "melee",
-                "classification": "weapon"
-              }
-            },
-            "damage": {
-              "includeBase": false,
-              "parts": []
-            }
-          }
-        }
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {
-            "toHit": 7,
-            "attackType": "melee"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!M8VCewZfHCJfGWuv.ahUmMUaBgZ9yNmsq"
-    },
-    {
-      "_id": "2gapwqISE0CGTg0q",
-      "name": "Perfurante de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If target is a Large or smaller creature and the rhinoceros moved 20+ feet straight toward it immediately before the hit, o alvo takes an extra 9 (2d8) Perfurante de dano and has the Caído condition. RIDING HORSE Large Beast, Una li g ne d</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
+          "type": "",
+          "value": null
         },
         "uses": {
           "spent": 0,
@@ -207,14 +160,95 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!M8VCewZfHCJfGWuv.2gapwqISE0CGTg0q"
+      "_key": "!actors.items!hDz7U9krHIRIbf6A.PMIP82xOQsqCmhB7"
+    },
+    {
+      "_id": "pNuphexWcrYmxSlG",
+      "name": "Mordidas",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (2d4) dano perfurante, or 2 (1d4) dano perfurante if the swarm is Bloodied.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "xooEBM8Buq8FC4KL": {
+            "_id": "xooEBM8Buq8FC4KL",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "2d4",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hDz7U9krHIRIbf6A.pNuphexWcrYmxSlG"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Swarm of Bats",
       "page": 370,
-      "cr": "2",
+      "cr": "1/4",
       "warnings": []
     }
   }

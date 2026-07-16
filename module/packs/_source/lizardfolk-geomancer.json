@@ -1,6 +1,6 @@
 {
-  "_id": "DtnKuXKxHfDYHjIH",
-  "_key": "!actors!DtnKuXKxHfDYHjIH",
+  "_id": "fdGv0RACcldgosD5",
+  "_key": "!actors!fdGv0RACcldgosD5",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Lizardfolk Geomancer",
   "type": "npc",
@@ -48,7 +48,9 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "burrow": 20,
+        "swim": 30
       },
       "senses": {
         "units": "ft"
@@ -68,7 +70,7 @@
       "alignment": "Neutro",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,10 +99,23 @@
       },
       "languages": {
         "value": [],
-        "custom": "Dracon ic, Primordial (Terran)"
+        "custom": "Dracônico, Primordial (Terran)"
       }
     },
-    "skills": {}
+    "skills": {
+      "nat": {
+        "value": 1,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Lizardfolk Geomancer",
@@ -146,7 +161,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DtnKuXKxHfDYHjIH.GmjeAfteOiXBc4Nu"
+      "_key": "!actors.items!fdGv0RACcldgosD5.GmjeAfteOiXBc4Nu"
     },
     {
       "_id": "6C6bwwtdFlzoiNBb",
@@ -155,7 +170,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +4, alcance 5 ft. or range 60 ft. Acerto: 9 (2d6 + 2) Concussão de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +4, alcance 1,5 m. or distância 18 m. Acerto: 9 (2d6 + 2) dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
@@ -227,16 +242,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DtnKuXKxHfDYHjIH.6C6bwwtdFlzoiNBb"
+      "_key": "!actors.items!fdGv0RACcldgosD5.6C6bwwtdFlzoiNBb"
     },
     {
       "_id": "P6Z7Y2UB0NCjxrwZ",
-      "name": "Hail of Stone (Recharge 5-6)",
+      "name": "Hail of Stone (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 12, cada criatura in a 20-foot-radius, 40-foot-high Cylinder centered on a point the lizardfolk can see within 60 feet. Falha: 15 (6d4) Concussão de dano, and o alvo has the Caído condition . Suc - cess: Metade do dano only.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 12, cada criatura in a 6 m-radius, 12 m-high Cylinder centered on a point the lizardfolk can see within 18 m. 15 (6d4) dano de concussão, and o alvo fica com a condição Caído. Metade do dano only.</p>",
           "chat": ""
         },
         "activation": {
@@ -280,25 +295,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 6,
-                  "denomination": 4,
-                  "bonus": "",
-                  "types": [
-                    "bludgeoning"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -306,15 +303,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "6d4",
-            "damageType": "bludgeoning",
             "saveDc": 12,
             "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DtnKuXKxHfDYHjIH.P6Z7Y2UB0NCjxrwZ"
+      "_key": "!actors.items!fdGv0RACcldgosD5.P6Z7Y2UB0NCjxrwZ"
     },
     {
       "_id": "S3H2FXLOzfc9evZn",
@@ -323,7 +318,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The lizardfolk casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save DC 12): 3 À Vontade: Elementalism z 1/Dia Each: Meld into Stone, Speak with Plants, ::i • Spike Growth LIZARDFOLK SOVEREIGN Medium Elemental, Neutral AC 15 Iniciativa + 1 (l l) HP 78 (12d8 + 24) S peed 30 ft., Burrow 20 ft. , Sw im 30 ft . MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>The lizardfolk casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save CD 12):</p>",
           "chat": ""
         },
         "activation": {
@@ -348,13 +343,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DtnKuXKxHfDYHjIH.S3H2FXLOzfc9evZn"
+      "_key": "!actors.items!fdGv0RACcldgosD5.S3H2FXLOzfc9evZn"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Lizardfolk Geomancer",
-      "page": 199,
+      "page": 197,
       "cr": "2",
       "warnings": []
     }

@@ -1,6 +1,6 @@
 {
-  "_id": "FGhqKYWXg6IVL5Hi",
-  "_key": "!actors!FGhqKYWXg6IVL5Hi",
+  "_id": "aA6Y8Ru178wFY4tG",
+  "_key": "!actors!aA6Y8Ru178wFY4tG",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Riding Horse",
   "type": "npc",
@@ -35,13 +35,13 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 11,
         "formula": ""
       },
       "hp": {
         "value": 13,
         "max": 13,
-        "formula": "2d1 0+2",
+        "formula": "2d10 + 2",
         "temp": null,
         "tempmax": null
       },
@@ -66,9 +66,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,7 +97,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
@@ -113,12 +113,94 @@
     },
     "disposition": -1
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "Bb0vPmWOgisgASZW",
+      "name": "Cascos",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 7 (1d8 + 3) dano de concussão.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "Vip3HIUyPhR6wPue": {
+            "_id": "Vip3HIUyPhR6wPue",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "3",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "1d8+3",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!aA6Y8Ru178wFY4tG.Bb0vPmWOgisgASZW"
+    }
+  ],
   "flags": {
     "mm2024": {
       "nameEn": "Riding Horse",
-      "page": 370,
-      "cr": "0",
+      "page": 368,
+      "cr": "1/4",
       "warnings": []
     }
   }

@@ -1,6 +1,6 @@
 {
-  "_id": "KgfQbVjUHxKNlLIb",
-  "_key": "!actors!KgfQbVjUHxKNlLIb",
+  "_id": "vzOpnFiy4ngSof6p",
+  "_key": "!actors!vzOpnFiy4ngSof6p",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Scout",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 16,
         "max": 16,
-        "formula": "3d8+3",
+        "formula": "3d8 + 3",
         "temp": null,
         "tempmax": null
       },
@@ -68,7 +68,7 @@
       "alignment": "Neutro",
       "cr": 0.5,
       "xp": {
-        "value": 100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -97,7 +97,7 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Common plus one other language"
       }
     },
     "skills": {
@@ -138,7 +138,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The scout makes two attacks, using Shortsword and Longbow in any combination.</p>",
+          "value": "<p>The scout makes two attacks, using Espada Curta and Arco Longo in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -163,16 +163,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KgfQbVjUHxKNlLIb.GGdY5ZcacpuBkF9J"
+      "_key": "!actors.items!vzOpnFiy4ngSof6p.GGdY5ZcacpuBkF9J"
     },
     {
-      "_id": "sKx9sBco4y13bJQy",
-      "name": "Shortsword",
+      "_id": "VM7Xr0Jw5cxcqBpm",
+      "name": "Espada Curta",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 5 (1d6 + 2) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -190,8 +190,8 @@
           "subtype": ""
         },
         "activities": {
-          "53PzbGdUlRebsbMg": {
-            "_id": "53PzbGdUlRebsbMg",
+          "FkADe1ZyZxspWBgS": {
+            "_id": "FkADe1ZyZxspWBgS",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -244,16 +244,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KgfQbVjUHxKNlLIb.sKx9sBco4y13bJQy"
+      "_key": "!actors.items!vzOpnFiy4ngSof6p.VM7Xr0Jw5cxcqBpm"
     },
     {
-      "_id": "4YMWN2dXAJSX9oCM",
-      "name": "Longbow",
+      "_id": "TrcQghhLYtMC2GWq",
+      "name": "Arco Longo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +4, range 150/600 ft. Acerto: 6 (1d8 + 2) Perfurante de dano. 27 0 /\\ SCOUTS S COU T S Watchers and Wanderers</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +4, distância 45/180 m. Acerto: 6 (1d8 + 2) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -271,8 +271,8 @@
           "subtype": ""
         },
         "activities": {
-          "juvV56vIJPxkz0VH": {
-            "_id": "juvV56vIJPxkz0VH",
+          "Nc3Lf9cGAnRJWkRc": {
+            "_id": "Nc3Lf9cGAnRJWkRc",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -325,13 +325,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KgfQbVjUHxKNlLIb.4YMWN2dXAJSX9oCM"
+      "_key": "!actors.items!vzOpnFiy4ngSof6p.TrcQghhLYtMC2GWq"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Scout",
-      "page": 272,
+      "page": 270,
       "cr": "1/2",
       "warnings": []
     }

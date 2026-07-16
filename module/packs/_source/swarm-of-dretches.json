@@ -1,8 +1,8 @@
 {
-  "_id": "Gi7uLFm1GaLlEo4x",
-  "_key": "!actors!Gi7uLFm1GaLlEo4x",
+  "_id": "pWdDvBuq0lKLFwcL",
+  "_key": "!actors!pWdDvBuq0lKLFwcL",
   "folder": "Hp5o2ufz9hhrO2ew",
-  "name": "Enxame Of Dretches",
+  "name": "Swarm of Dretches",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/swarm-of-dretches.webp",
   "system": {
@@ -62,7 +62,7 @@
     "details": {
       "type": {
         "value": "fiend",
-        "subtype": "D emon",
+        "subtype": "demon",
         "swarm": "",
         "custom": ""
       },
@@ -81,15 +81,19 @@
     "traits": {
       "size": "lg",
       "di": {
-        "value": [],
-        "custom": "Po ison"
+        "value": [
+          "poison"
+        ],
+        "custom": ""
       },
       "dr": {
         "value": [
           "bludgeoning",
           "cold",
           "fire",
-          "lightning"
+          "lightning",
+          "piercing",
+          "slashing"
         ],
         "custom": ""
       },
@@ -101,19 +105,25 @@
         "value": [
           "charmed",
           "frightened",
-          "grappled"
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "prone",
+          "restrained",
+          "stunned"
         ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Abissal"
+        "custom": ""
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Enxame Of Dretches",
+    "name": "Swarm of Dretches",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -131,7 +141,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Sa11ing Throw: DC 12, any creature that starts its turn in a 10-foot Emanation originating from the swarm. Falha: The target has the Envenenado condition until the start of its next turn. While Envenenado, o alvo can take either an action or a Bonus Action on its turn, not both, and it can't take Reactions.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 12, any creature that starts its turn in a 3 m Emanation originating from the swarm. O alvo fica com a condição Envenenado until the start of its next turn. While Envenenado, o alvo can take either an action or a Bonus Action on its turn, not both, and it can't take Reactions.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,15 +161,18 @@
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 12,
+            "saveAbility": "con"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Gi7uLFm1GaLlEo4x.ifQVNzGW8gl4fBAL"
+      "_key": "!actors.items!pWdDvBuq0lKLFwcL.ifQVNzGW8gl4fBAL"
     },
     {
-      "_id": "R39aUQSVmN5u4dLu",
-      "name": "Swarm",
+      "_id": "OhJ8yfkjgBlFhNG6",
+      "name": "Enxame",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -188,7 +201,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Gi7uLFm1GaLlEo4x.R39aUQSVmN5u4dLu"
+      "_key": "!actors.items!pWdDvBuq0lKLFwcL.OhJ8yfkjgBlFhNG6"
     },
     {
       "_id": "3I2bhLQhizMYPCqe",
@@ -197,7 +210,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The swarm makes two Rend attacks. V1 Cl::</p>",
+          "value": "<p>A criatura faz dois ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -222,16 +235,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Gi7uLFm1GaLlEo4x.3I2bhLQhizMYPCqe"
+      "_key": "!actors.items!pWdDvBuq0lKLFwcL.3I2bhLQhizMYPCqe"
     },
     {
-      "_id": "xJxrsaXMZ4MFlC8e",
-      "name": "Rend",
+      "_id": "E6Cf1hG5fYtTOwc8",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 12 (3d6 + 2) 0 V1 Cortante de dano, or 9 (3d4 + 2) Cortante de dano if the <( swarm is Bloodied. DRIDER Spiderlike Underdark Hunter</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 12 (3d6 + 2) dano cortante, or 9 (3d4 + 2) dano cortante if the swarm is Bloodied.</p>",
           "chat": ""
         },
         "activation": {
@@ -249,8 +262,8 @@
           "subtype": ""
         },
         "activities": {
-          "SGIasqDAsJOTcfie": {
-            "_id": "SGIasqDAsJOTcfie",
+          "JYfW7b3GRMmPUjJC": {
+            "_id": "JYfW7b3GRMmPUjJC",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -269,7 +282,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -278,18 +309,20 @@
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "3d6+2",
+            "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Gi7uLFm1GaLlEo4x.xJxrsaXMZ4MFlC8e"
+      "_key": "!actors.items!pWdDvBuq0lKLFwcL.E6Cf1hG5fYtTOwc8"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Swarm of Dretches",
-      "page": 106,
+      "page": 104,
       "cr": "4",
       "warnings": []
     }

@@ -30,6 +30,7 @@ export const paths = {
   monstersPt: path.join(ROOT, "data", "intermediate", "monsters.pt.json"),
   actors: path.join(ROOT, "data", "intermediate", "actors"),
   glossary: path.join(ROOT, "data", "glossary", "pt-BR.json"),
+  overrides: path.join(ROOT, "data", "glossary", "overrides.pt.json"),
   module: path.join(ROOT, "module"),
   packSource: path.join(ROOT, "module", "packs", "_source"),
   portraits: path.join(ROOT, "module", "assets", "portraits"),

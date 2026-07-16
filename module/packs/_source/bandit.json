@@ -1,6 +1,6 @@
 {
-  "_id": "M2etdsVfuUmGaF4D",
-  "_key": "!actors!M2etdsVfuUmGaF4D",
+  "_id": "ieT5kOFQlgjaeV8W",
+  "_key": "!actors!ieT5kOFQlgjaeV8W",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Bandit",
   "type": "npc",
@@ -39,9 +39,9 @@
         "formula": ""
       },
       "hp": {
-        "value": 1,
-        "max": 1,
-        "formula": "",
+        "value": 11,
+        "max": 11,
+        "formula": "2d8 + 2",
         "temp": null,
         "tempmax": null
       },
@@ -66,9 +66,9 @@
         "custom": ""
       },
       "alignment": "Neutro",
-      "cr": 0,
+      "cr": 0.125,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -97,7 +97,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Comum, Thieves' Cant"
+        "custom": "Comum, Thieves' cant"
       }
     },
     "skills": {}
@@ -115,13 +115,13 @@
   },
   "items": [
     {
-      "_id": "2H9ClbhrrljNNfFQ",
-      "name": "Scimitar",
+      "_id": "pFFmv39bAG8Pnpcp",
+      "name": "Cimitarra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 4 (1d6 0 + l) Cortante de dano. - Light Crossbow. Rolagem de Ataque à Distância: +3, range 80/320 ft. <( Acerto: 5 (1d8 + l) Perfurante de dano. BANDIT CAPTAIN Medium or St'Ylall Humanoid, Neutral AC 15 Iniciativa +3 (13) HP 52 (8d8 + 16) Speed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 4 (1d6 + 1) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -139,8 +139,8 @@
           "subtype": ""
         },
         "activities": {
-          "34k2tPI3IqeHJyVm": {
-            "_id": "34k2tPI3IqeHJyVm",
+          "rjE4Vt6lQw5rJEZG": {
+            "_id": "rjE4Vt6lQw5rJEZG",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -161,15 +161,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "1",
                   "types": [
                     "slashing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "1d60+l"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -187,23 +187,102 @@
           "mechanics": {
             "toHit": 3,
             "attackType": "melee",
-            "damageFormula": "1d60+l",
+            "damageFormula": "1d6+1",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!M2etdsVfuUmGaF4D.2H9ClbhrrljNNfFQ"
+      "_key": "!actors.items!ieT5kOFQlgjaeV8W.pFFmv39bAG8Pnpcp"
+    },
+    {
+      "_id": "EEQmbbSd11vOQGtA",
+      "name": "Besta Leve",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +3, distância 24/96 m. Acerto: 5 (1d8 + 1) dano perfurante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "9YnLGvGjFT6gnhw7": {
+            "_id": "9YnLGvGjFT6gnhw7",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "3",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "1",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 3,
+            "attackType": "ranged",
+            "damageFormula": "1d8+1",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ieT5kOFQlgjaeV8W.EEQmbbSd11vOQGtA"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Bandit",
-      "page": 29,
-      "cr": "0",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "page": 27,
+      "cr": "1/8",
+      "warnings": []
     }
   }
 }

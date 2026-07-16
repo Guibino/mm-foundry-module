@@ -1,6 +1,6 @@
 {
-  "_id": "MPLyxNlybtEhmBgM",
-  "_key": "!actors!MPLyxNlybtEhmBgM",
+  "_id": "IYWELvSu0oK4Pgpd",
+  "_key": "!actors!IYWELvSu0oK4Pgpd",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Piranha",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 1,
         "max": 1,
-        "formula": "",
+        "formula": "1d4 - 1",
         "temp": null,
         "tempmax": null
       },
@@ -52,7 +52,8 @@
         "swim": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -69,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 0,
       "xp": {
-        "value": 10
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -98,7 +99,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
@@ -116,13 +117,13 @@
   },
   "items": [
     {
-      "_id": "mI7SS5VOzha04Jzl",
-      "name": "Water Breathing",
+      "_id": "rLthVYUtyG6kg6l4",
+      "name": "Respiração Aquática",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The piranha can breathe only underwater.</p>",
+          "value": "<p>A criatura só consegue respirar debaixo d'água.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +147,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MPLyxNlybtEhmBgM.mI7SS5VOzha04Jzl"
+      "_key": "!actors.items!IYWELvSu0oK4Pgpd.rLthVYUtyG6kg6l4"
     },
     {
-      "_id": "Jbkdx68ebU1ZMNCh",
-      "name": "Bite",
+      "_id": "kzyZ0IFaPZZUD9jB",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5 (with Advantage if o alvo doesn't have all its Hit Po ints), alcance 5 ft. Acerto: l Piere- • ing de dano. PLESIOSAURUS Large Beast ( Dinosaur), Unaligned AC 13 I ni tiative +2 (12 ) HP 68 (8d1 0 + 24) Sp eed 20 ft., S wi m 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5 (with Vantagem if o alvo doesn't have all its Pontos de Vida), alcance 1,5 m. Acerto: 1 dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -173,8 +174,8 @@
           "subtype": ""
         },
         "activities": {
-          "BGD8TRalbmXoeSIG": {
-            "_id": "BGD8TRalbmXoeSIG",
+          "QFy2dSb4JWIdxBmS": {
+            "_id": "QFy2dSb4JWIdxBmS",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -207,17 +208,15 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MPLyxNlybtEhmBgM.Jbkdx68ebU1ZMNCh"
+      "_key": "!actors.items!IYWELvSu0oK4Pgpd.kzyZ0IFaPZZUD9jB"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Piranha",
-      "page": 368,
+      "page": 366,
       "cr": "0",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "warnings": []
     }
   }
 }

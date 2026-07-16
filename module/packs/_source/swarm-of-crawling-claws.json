@@ -1,8 +1,8 @@
 {
-  "_id": "Pej3BXfhjrMmpBfU",
-  "_key": "!actors!Pej3BXfhjrMmpBfU",
+  "_id": "exQwxXYNH9fFIa8E",
+  "_key": "!actors!exQwxXYNH9fFIa8E",
   "folder": "bKQUPthn1V2Yu6Bn",
-  "name": "Enxame Of Crawling Claws",
+  "name": "Swarm of Crawling Claws",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/swarm-of-crawling-claws.webp",
   "system": {
@@ -52,7 +52,8 @@
         "climb": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "blindsight": 30
       },
       "init": {
         "ability": "dex",
@@ -69,7 +70,7 @@
       "alignment": "Neutro e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,19 +103,28 @@
       "ci": {
         "value": [
           "charmed",
-          "exhaustion"
+          "exhaustion",
+          "frightened",
+          "grappled",
+          "incapacitated",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "prone",
+          "restrained",
+          "stunned"
         ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "understands Common but can't speak"
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Enxame Of Crawling Claws",
+    "name": "Swarm of Crawling Claws",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -126,8 +136,8 @@
   },
   "items": [
     {
-      "_id": "geK8aKnibZhKQann",
-      "name": "Swarm",
+      "_id": "xzE00M9W1WneTL9J",
+      "name": "Enxame",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -156,16 +166,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Pej3BXfhjrMmpBfU.geK8aKnibZhKQann"
+      "_key": "!actors.items!exQwxXYNH9fFIa8E.xzE00M9W1WneTL9J"
     },
     {
-      "_id": "f1Bus4D1NzTGxpAa",
-      "name": "Swarm of Grasping Hands",
+      "_id": "Zh7FQply87SFdbL4",
+      "name": "Enxame of Grasping Hands",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Me lee Attack Roll: +4, alcance 5 ft. Acerto: 20 (4d8 + 2) Necrótico de dano, or 11 (2d8 + 2) Necrótico de dano if the swarm is Bloodied. If the tar- get is a Medium or smaller creature, it has the Caído · condition . L., 83 CRAWLING CLAWS CULTISTS Doomsayers and Fanatics</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 20 (4d8 + 2) dano necrótico, or 11 (2d8 + 2) dano necrótico if the swarm is Bloodied. If o alvo is a Medium or smaller creature, it fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -182,24 +192,68 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "YViDB4qCAot0fLFf": {
+            "_id": "YViDB4qCAot0fLFf",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 8,
+                  "bonus": "2",
+                  "types": [
+                    "necrotic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
             "damageFormula": "4d8+2",
             "damageType": "necrotic"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Pej3BXfhjrMmpBfU.f1Bus4D1NzTGxpAa"
+      "_key": "!actors.items!exQwxXYNH9fFIa8E.Zh7FQply87SFdbL4"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Swarm of Crawling Claws",
-      "page": 85,
+      "page": 83,
       "cr": "3",
       "warnings": []
     }

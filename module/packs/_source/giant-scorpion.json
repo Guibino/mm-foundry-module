@@ -1,8 +1,8 @@
 {
-  "_id": "nZvhETpxMZX3TG6G",
-  "_key": "!actors!nZvhETpxMZX3TG6G",
+  "_id": "dzYyMAjqQZqlqET6",
+  "_key": "!actors!dzYyMAjqQZqlqET6",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Gigante Scorpion",
+  "name": "Giant Scorpion",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/giant-scorpion.webp",
   "system": {
@@ -25,7 +25,7 @@
       },
       "wis": {
         "value": 9,
-        "proficient": 1
+        "proficient": 0
       },
       "cha": {
         "value": 3,
@@ -51,7 +51,8 @@
         "walk": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "blindsight": 60
       },
       "init": {
         "ability": "dex",
@@ -68,7 +69,7 @@
       "alignment": "Sem Tendência",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,13 +98,13 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Gigante Scorpion",
+    "name": "Giant Scorpion",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -121,7 +122,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The scorpion makes two Claw attacks and one Sting attack.</p>",
+          "value": "<p>The scorpion makes two Garra attacks and one Ferroada attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +147,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!nZvhETpxMZX3TG6G.ejIXV8QufarebUho"
+      "_key": "!actors.items!dzYyMAjqQZqlqET6.ejIXV8QufarebUho"
     },
     {
-      "_id": "AK9SSPKsDonZvPYN",
-      "name": "Claw",
+      "_id": "t38gOkkEpzwUtLyb",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 6 (1d6 + 3)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 6 (1d6 + 3) dano de concussão. If o alvo is a Large or smaller creature, it fica com a condição Agarrado (CD para escapar 13) from one of two claws.</p>",
           "chat": ""
         },
         "activation": {
@@ -173,8 +174,8 @@
           "subtype": ""
         },
         "activities": {
-          "7vcGUbfgorWP1w4E": {
-            "_id": "7vcGUbfgorWP1w4E",
+          "QIQHXPg22XVYdgY7": {
+            "_id": "QIQHXPg22XVYdgY7",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -193,7 +194,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -202,55 +221,23 @@
         "mm2024": {
           "mechanics": {
             "toHit": 5,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d6+3",
+            "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!nZvhETpxMZX3TG6G.AK9SSPKsDonZvPYN"
+      "_key": "!actors.items!dzYyMAjqQZqlqET6.t38gOkkEpzwUtLyb"
     },
     {
-      "_id": "Pa5Vg7OQbsuLKPKN",
-      "name": "Concussão de dano",
+      "_id": "ag4IZdVpf3geSUag",
+      "name": "Ferroada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If o alvo is a Large or smaller creature, it has the Agarrado condition (escape DC 13) from one of two claws.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!nZvhETpxMZX3TG6G.Pa5Vg7OQbsuLKPKN"
-    },
-    {
-      "_id": "73mxL6YzQrqVFhCg",
-      "name": "Sting",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 7 (1d8 + 3) Perfurante de dano plus 11 (2d10) Veneno de dano. GIANT SEAHORSE L arge Be as t, Unaligned AC 14 In itiative + l ( 11) HP 16 (3d1 0) S peed 5 ft., Swim 40 ft. MOD SAVE MOD SA VE MOD SA VE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 7 (1d8 + 3) dano perfurante mais 11 (2d10) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -268,8 +255,8 @@
           "subtype": ""
         },
         "activities": {
-          "2SbiB2YjrLl3WObM": {
-            "_id": "2SbiB2YjrLl3WObM",
+          "0QUzwTq1nTJf5znL": {
+            "_id": "0QUzwTq1nTJf5znL",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -322,13 +309,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!nZvhETpxMZX3TG6G.73mxL6YzQrqVFhCg"
+      "_key": "!actors.items!dzYyMAjqQZqlqET6.ag4IZdVpf3geSUag"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Giant Scorpion",
-      "page": 361,
+      "page": 359,
       "cr": "3",
       "warnings": []
     }

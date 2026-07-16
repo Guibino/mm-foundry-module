@@ -1,6 +1,6 @@
 {
-  "_id": "hITDJpBxkAWgU9XO",
-  "_key": "!actors!hITDJpBxkAWgU9XO",
+  "_id": "rUveds3OuVNtIK5S",
+  "_key": "!actors!rUveds3OuVNtIK5S",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Drider",
   "type": "npc",
@@ -48,10 +48,12 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "climb": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 120
       },
       "init": {
         "ability": "dex",
@@ -68,7 +70,7 @@
       "alignment": "Caótico e Mau",
       "cr": 6,
       "xp": {
-        "value": 2300
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,8 +104,12 @@
     },
     "skills": {
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
       }
     }
   },
@@ -120,13 +126,13 @@
   },
   "items": [
     {
-      "_id": "JB3yVc4VrpRLiCbb",
-      "name": "Spider Climb",
+      "_id": "xjfxY0h2nTjanKyN",
+      "name": "Escalada de Aranha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The drider can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>",
+          "value": "<p>A criatura pode escalar superfícies difíceis, inclusive tetos, sem precisar fazer um teste de habilidade.</p>",
           "chat": ""
         },
         "activation": {
@@ -150,16 +156,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hITDJpBxkAWgU9XO.JB3yVc4VrpRLiCbb"
+      "_key": "!actors.items!rUveds3OuVNtIK5S.xjfxY0h2nTjanKyN"
     },
     {
-      "_id": "oPlQ74NGGhMMD5cY",
-      "name": "Sunlight Sensitivity",
+      "_id": "ImTDWpzJE2omqpRG",
+      "name": "Sensibilidade à Luz Solar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in sunlight, the drider has Disadvantage on ability checks and attack rolls.</p>",
+          "value": "<p>Sob luz solar, a criatura tem Desvantagem em testes de habilidade e rolagens de ataque.</p>",
           "chat": ""
         },
         "activation": {
@@ -183,16 +189,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hITDJpBxkAWgU9XO.oPlQ74NGGhMMD5cY"
+      "_key": "!actors.items!rUveds3OuVNtIK5S.ImTDWpzJE2omqpRG"
     },
     {
-      "_id": "7j9bdE3q9xjgEg8Y",
-      "name": "Web Walker",
+      "_id": "Tw6XBqTsdfBdUiGR",
+      "name": "Andarilho de Teias",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The drider ignores movement restrictions caused by webs, and the drider knows the location of any other creature in contact with the sam~ web.</p>",
+          "value": "<p>A criatura ignora restrições de movimento causadas por teias e sabe a localização de qualquer outra criatura em contato com a mesma teia.</p>",
           "chat": ""
         },
         "activation": {
@@ -216,7 +222,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hITDJpBxkAWgU9XO.7j9bdE3q9xjgEg8Y"
+      "_key": "!actors.items!rUveds3OuVNtIK5S.Tw6XBqTsdfBdUiGR"
     },
     {
       "_id": "9iENIBZUGAbcRUu2",
@@ -250,7 +256,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hITDJpBxkAWgU9XO.9iENIBZUGAbcRUu2"
+      "_key": "!actors.items!rUveds3OuVNtIK5S.9iENIBZUGAbcRUu2"
     },
     {
       "_id": "BIFDvhOJzlQx3HSW",
@@ -259,7 +265,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Melee At!ack Roll: +7, alcance l 0 ft. Acerto: 13 (2d8 + 4) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 3 m. Acerto: 13 (2d8 + 4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -276,18 +282,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "ffqC3IrPUsooOMbL": {
+            "_id": "ffqC3IrPUsooOMbL",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "4",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 7,
+            "attackType": "melee",
             "damageFormula": "2d8+4",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hITDJpBxkAWgU9XO.BIFDvhOJzlQx3HSW"
+      "_key": "!actors.items!rUveds3OuVNtIK5S.BIFDvhOJzlQx3HSW"
     },
     {
       "_id": "BbBwGq4K75SIv0s0",
@@ -296,7 +346,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +6, range 120 ft. Acerto: 13 (3d6 + 3) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +6, distância 36 m. Acerto: 13 (3d6 + 3) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -368,20 +418,20 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hITDJpBxkAWgU9XO.BbBwGq4K75SIv0s0"
+      "_key": "!actors.items!rUveds3OuVNtIK5S.BbBwGq4K75SIv0s0"
     },
     {
-      "_id": "hKV6Z1zAvunKfdah",
-      "name": "Habilidade",
+      "_id": "WQflvwsCztq5uUSW",
+      "name": "Conjuração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>1/1 Magic of the Spider Queen (Recarga 5-6). The drider 1/1 0::: casts Darkness, Faerie Fogo, or Web, requiring no Mate- CD LU <t: rial components and using - Sabedoria as the spellcasting 2 ability (spell save DC 14). are uncommon but possible. Roll on or choose a result from the Drider Metamorphoses table to in- spire how supernatural driders come into being. DRIDER METAMORPHOSES 1d6 The Drider Gained Its Form As ... l A blessing from a deity of assassins, danger- ous wildernesses, or the Underdark. 2 A curse from a powerful hag, vengeful witch, or strange Artifact. 3 An experiment by an aboleth, a mind flayer, or another life-shaping magic-user. 4 A magical means of escaping disaster or some worse fate. 5 A mutation after exposure to chaotic planar energies or strange Underdark radiations. 6 A punishment from a spiteful god, like Lolth or the Queen of Air and Darkness. DRIDER 105 DRUID Medium or Small Humanoid (Druid), Neutral AC 13 Iniciativa + 1 (11) HP 44 (8d8 + 8) Speed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>The drider casts Darkness, Faerie Fogo, or Web, requiring no Material components and using Sabedoria as the spellcasting ability (spell save CD 14).</p>",
           "chat": ""
         },
         "activation": {
-          "type": "bonus",
+          "type": "action",
           "value": null,
           "condition": ""
         },
@@ -402,13 +452,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hITDJpBxkAWgU9XO.hKV6Z1zAvunKfdah"
+      "_key": "!actors.items!rUveds3OuVNtIK5S.WQflvwsCztq5uUSW"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Drider",
-      "page": 107,
+      "page": 105,
       "cr": "6",
       "warnings": []
     }

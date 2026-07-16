@@ -1,8 +1,8 @@
 {
-  "_id": "RIefSoXcz74WgFUj",
-  "_key": "!actors!RIefSoXcz74WgFUj",
+  "_id": "gDGRiu8O65POdUgu",
+  "_key": "!actors!gDGRiu8O65POdUgu",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Gigante Lizard",
+  "name": "Giant Lizard",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/giant-lizard.webp",
   "system": {
@@ -39,9 +39,9 @@
         "formula": ""
       },
       "hp": {
-        "value": 1,
-        "max": 1,
-        "formula": "",
+        "value": 19,
+        "max": 19,
+        "formula": "3d10 + 3",
         "temp": null,
         "tempmax": null
       },
@@ -70,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -99,13 +99,13 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Gigante Lizard",
+    "name": "Giant Lizard",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -117,13 +117,13 @@
   },
   "items": [
     {
-      "_id": "QoVbNOmPDxp0jMMe",
-      "name": "Spider Climb",
+      "_id": "WbN8gaPK43R08EtP",
+      "name": "Escalada de Aranha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The lizard can climb difficult surfaces, including along ceilings , without needing to make an ability check.</p>",
+          "value": "<p>A criatura pode escalar superfícies difíceis, inclusive tetos, sem precisar fazer um teste de habilidade.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,16 +147,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!RIefSoXcz74WgFUj.QoVbNOmPDxp0jMMe"
+      "_key": "!actors.items!gDGRiu8O65POdUgu.WbN8gaPK43R08EtP"
     },
     {
-      "_id": "lw019CVF1GoHUgyh",
-      "name": "Bite",
+      "_id": "1vfT5cNsBbySG0YT",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 6 (1d8 + 2) Perfurante de dano. GIANT OCTOPUS Large Beast, Unaligned AC 11 Iniciativa+ 1 (11) HP 45 (7d10 + 7) Speed 10 ft., Swim 60 ft. MOD SAVE M OD S AV E MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 6 (1d8 + 2) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -174,8 +174,8 @@
           "subtype": ""
         },
         "activities": {
-          "1JAuiHDdvNcM0K4N": {
-            "_id": "1JAuiHDdvNcM0K4N",
+          "W12crP2pAPdGD5ZU": {
+            "_id": "W12crP2pAPdGD5ZU",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -228,17 +228,15 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!RIefSoXcz74WgFUj.lw019CVF1GoHUgyh"
+      "_key": "!actors.items!gDGRiu8O65POdUgu.1vfT5cNsBbySG0YT"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Giant Lizard",
-      "page": 360,
+      "page": 358,
       "cr": "1/4",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "warnings": []
     }
   }
 }

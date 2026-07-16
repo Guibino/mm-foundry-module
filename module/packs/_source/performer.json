@@ -1,6 +1,6 @@
 {
-  "_id": "MMOyZdFugFKhnolS",
-  "_key": "!actors!MMOyZdFugFKhnolS",
+  "_id": "bnaUSqZXsmYVetD7",
+  "_key": "!actors!bnaUSqZXsmYVetD7",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Performer",
   "type": "npc",
@@ -12,7 +12,7 @@
         "proficient": 0
       },
       "dex": {
-        "value": 76,
+        "value": 16,
         "proficient": 1
       },
       "con": {
@@ -28,7 +28,7 @@
         "proficient": 0
       },
       "cha": {
-        "value": 76,
+        "value": 16,
         "proficient": 1
       }
     },
@@ -66,7 +66,7 @@
         "custom": ""
       },
       "alignment": "Neutro",
-      "cr": 0,
+      "cr": 0.5,
       "xp": {
         "value": 0
       },
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -97,7 +97,7 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Common plus one other language"
       }
     },
     "skills": {
@@ -128,13 +128,13 @@
   },
   "items": [
     {
-      "_id": "XbVCTzUtUyqb5fWT",
-      "name": "Shortsword",
+      "_id": "awAELsJmwQlKmPz6",
+      "name": "Espada Curta",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 6 (1d6 + 3) Perfurante de dano. R.E ACTIONS . Uncanny Dodge. Trigger: The performer is hit by an :s attack roll. Response: The performer halves the de dano z (round down) it takes from that attack. ~ PERFORMER Comum performers include traveling storytellers, tavern musicians, local entertainers, and chorus members performing with veteran artists. These performers might be self-taught or in the early years of formal training. Most have a modest level of celebrity and two or three instruments or talents at which they excel. PERF O RM E R MAESTRO Maestros are headlining performers who enjoy con- siderable renown. They might be theaters' marquee actors, astonishing daredevils, or jesters experi- enced at entertaining fickle royals. Some share their techniques with apprentices, while others jealously guard their secrets. W ELCO ME , ONE/ W E L COME, A LL .' WELC OME T O T H E SHORT, AN D W ELCOME TO THE TA LL .' WELCO M E AN G ELS, WELCOME FIEN DS, WE LCO ME TO A LL FRO M WALKS BETWEEN.' W ELCOME T O THE CARNIVA L .' -TI N DAL, CAR NIVAL B ARKER PERFORM ER MAESTRO Medium or Small Humanoid, Neutral AC 18 Iniciativa +8 (18) HP 1 10 (17d8 + 34) Speed 30 ft. MOD SAVE MOD SAVE M OD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 6 (1d6 + 3) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -152,8 +152,8 @@
           "subtype": ""
         },
         "activities": {
-          "vO57oKeG3Na6wfVt": {
-            "_id": "vO57oKeG3Na6wfVt",
+          "Ku1wWdmtI8H7iNbW": {
+            "_id": "Ku1wWdmtI8H7iNbW",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -206,14 +206,48 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MMOyZdFugFKhnolS.XbVCTzUtUyqb5fWT"
+      "_key": "!actors.items!bnaUSqZXsmYVetD7.awAELsJmwQlKmPz6"
+    },
+    {
+      "_id": "OrOPlAWublwIcNoi",
+      "name": "Uncanny Dodge",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The performer is hit by an attack roll. The performer halves the de dano (round down) it takes from that attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bnaUSqZXsmYVetD7.OrOPlAWublwIcNoi"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Performer",
-      "page": 238,
-      "cr": "0",
+      "page": 236,
+      "cr": "1/2",
       "warnings": []
     }
   }

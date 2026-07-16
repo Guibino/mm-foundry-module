@@ -1,6 +1,6 @@
 {
-  "_id": "CK7Wlmbkf1PXVfd2",
-  "_key": "!actors!CK7Wlmbkf1PXVfd2",
+  "_id": "TKMOvNPR6kWRkRrb",
+  "_key": "!actors!TKMOvNPR6kWRkRrb",
   "folder": "1nioWC3kx0YxX8qj",
   "name": "Grimlock",
   "type": "npc",
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 71,
+        "flat": 11,
         "formula": ""
       },
       "hp": {
@@ -48,10 +48,12 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "climb": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "blindsight": 30
       },
       "init": {
         "ability": "dex",
@@ -68,7 +70,7 @@
       "alignment": "Neutro e Mau",
       "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -134,7 +136,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: a: 6 (1d6 + 3) Concussão de dano plus 2 (1d4) Psy- 1- chic de dano. ~ 0 GUARDIAN NAGA Large Celestial, Lawful Good AC 18 lnitiative+4 (14) HP 136 (l 6d1 0 + 48) Speed 40 ft., Climb 40 ft., Swim 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 6 (1d6 + 3) dano de concussão mais 2 (1d4) dano psíquico.</p>",
           "chat": ""
         },
         "activation": {
@@ -172,7 +174,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -181,18 +201,20 @@
         "mm2024": {
           "mechanics": {
             "toHit": 5,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d6+3",
+            "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CK7Wlmbkf1PXVfd2.PtPCVGI4YdnuWiQP"
+      "_key": "!actors.items!TKMOvNPR6kWRkRrb.PtPCVGI4YdnuWiQP"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Grimlock",
-      "page": 162,
+      "page": 160,
       "cr": "1/4",
       "warnings": []
     }

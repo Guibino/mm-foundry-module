@@ -1,6 +1,6 @@
 {
-  "_id": "166AmtfrdFZYL8uz",
-  "_key": "!actors!166AmtfrdFZYL8uz",
+  "_id": "G6UBiDLb5z2lYZZ2",
+  "_key": "!actors!G6UBiDLb5z2lYZZ2",
   "folder": "bKQUPthn1V2Yu6Bn",
   "name": "Revenant",
   "type": "npc",
@@ -8,40 +8,40 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 78,
+        "value": 18,
         "proficient": 1
       },
       "dex": {
-        "value": 74,
+        "value": 14,
         "proficient": 0
       },
       "con": {
-        "value": 78,
+        "value": 18,
         "proficient": 1
       },
       "int": {
-        "value": 73,
+        "value": 13,
         "proficient": 0
       },
       "wis": {
-        "value": 76,
+        "value": 16,
         "proficient": 1
       },
       "cha": {
-        "value": 78,
+        "value": 18,
         "proficient": 1
       }
     },
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 73,
+        "flat": 13,
         "formula": ""
       },
       "hp": {
-        "value": 727,
-        "max": 727,
-        "formula": "75d8 + 60",
+        "value": 127,
+        "max": 127,
+        "formula": "15d8 + 60",
         "temp": null,
         "tempmax": null
       },
@@ -69,7 +69,7 @@
       "alignment": "Neutro",
       "cr": 5,
       "xp": {
-        "value": 1800
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -100,9 +100,13 @@
       "ci": {
         "value": [
           "charmed",
-          "frightened"
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "poisoned",
+          "stunned"
         ],
-        "custom": "Ex haustion"
+        "custom": ""
       },
       "languages": {
         "value": [],
@@ -124,13 +128,13 @@
   },
   "items": [
     {
-      "_id": "TYWme33Wwe174Y0W",
-      "name": "Regeneration",
+      "_id": "v0Flh2D9NccuHlTo",
+      "name": "Regeneração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The revenant regains 70 Pontos de Vida at the start of each of its turns. If the revenant takes Fogo or Radiante de dano, this trait doesn't function at the start of its next turn. Its body is destroyed only if it starts its turn with 0 Pontos de Vida and doesn't regenerate.</p>",
+          "value": "<p>The revenant regains 10 Pontos de Vida at the start of each of its turns. If the revenant takes Fogo or dano radiante, this trait doesn't function at the start of its next turn. Its body is destroyed only if it starts its turn with 0 Pontos de Vida and doesn't regenerate.</p>",
           "chat": ""
         },
         "activation": {
@@ -154,16 +158,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!166AmtfrdFZYL8uz.TYWme33Wwe174Y0W"
+      "_key": "!actors.items!G6UBiDLb5z2lYZZ2.v0Flh2D9NccuHlTo"
     },
     {
-      "_id": "oaEPqLo1nvEdVIMJ",
-      "name": "Undead Restoration",
+      "_id": "EKGRCcsjs7mrvyVb",
+      "name": "Restauração Morta-Viva",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the revenant dies, it revives 24 hours later in a different body unless Dispel Evil or Good is cast on its corpse. If it revives, it animates a Human- oid corpse elsewhere on the same plane of existence; it now looks different but uses the same stat block and returns with al I its Pontos de Vida.</p>",
+          "value": "<p>If the revenant dies, it revives 24 hours later in a different body unless Dispel Evil and Good is cast on its corpse. If it revives, it animates a Humanoid corpse elsewhere on the same plane of existence; it now looks different but uses the same stat block and returns with all its Pontos de Vida.</p>",
           "chat": ""
         },
         "activation": {
@@ -187,7 +191,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!166AmtfrdFZYL8uz.oaEPqLo1nvEdVIMJ"
+      "_key": "!actors.items!G6UBiDLb5z2lYZZ2.EKGRCcsjs7mrvyVb"
     },
     {
       "_id": "nIukED0cFZts3sWY",
@@ -196,7 +200,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The revenant uses Vengeful Glare and makes two Slam attacks.</p>",
+          "value": "<p>The revenant uses Vengeful Glare and makes two Pancada attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -221,16 +225,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!166AmtfrdFZYL8uz.nIukED0cFZts3sWY"
+      "_key": "!actors.items!G6UBiDLb5z2lYZZ2.nIukED0cFZts3sWY"
     },
     {
-      "_id": "rR0zjewX98vDhAGp",
-      "name": "Slam",
+      "_id": "3ZhQ6he7ewJTrlJd",
+      "name": "Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 77 (2d6 + 4) - Necrótico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 11 (2d6 + 4) dano necrótico.</p>",
           "chat": ""
         },
         "activation": {
@@ -248,8 +252,8 @@
           "subtype": ""
         },
         "activities": {
-          "NULV36hEl5iJJ3t6": {
-            "_id": "NULV36hEl5iJJ3t6",
+          "9orEk4s7PXVnXKqU": {
+            "_id": "9orEk4s7PXVnXKqU",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -268,7 +272,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "necrotic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -277,12 +299,14 @@
         "mm2024": {
           "mechanics": {
             "toHit": 7,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d6+4",
+            "damageType": "necrotic"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!166AmtfrdFZYL8uz.rR0zjewX98vDhAGp"
+      "_key": "!actors.items!G6UBiDLb5z2lYZZ2.3ZhQ6he7ewJTrlJd"
     },
     {
       "_id": "D0LsfjtP2724w1ue",
@@ -291,7 +315,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sabedoria Teste de Resistência: DC ~ 5, one crea- ture the revenant can see within 30 feet. Falha: The target has the Amedrontado condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 7 minute, it succeeds automat- ically. If the Amedrontado target is cursed by the revenant (see Vow of Revenge), o alvo also has the Paralisado condition for the duration.</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 15, uma criatura the revenant can see within 9 m. O alvo fica com a condição Amedrontado and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. If the Amedrontado target is cursed by the revenant (see Vow of Revenge), o alvo also fica com a condição Paralisado for the duration.</p>",
           "chat": ""
         },
         "activation": {
@@ -308,15 +332,42 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "45TYQsETetvJqOTc": {
+            "_id": "45TYQsETetvJqOTc",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "15"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 15,
+            "saveAbility": "wis"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!166AmtfrdFZYL8uz.D0LsfjtP2724w1ue"
+      "_key": "!actors.items!G6UBiDLb5z2lYZZ2.D0LsfjtP2724w1ue"
     },
     {
       "_id": "ZygHcdkpVGOMdJGJ",
@@ -325,7 +376,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The revenant curses uma criatura it can see within 30 feet of itself. The revenant u knows the distance to and direction of the cursed tar- V1 <[ get, even if it is on a different plane of existence. The Cll curse ends on o alvo if the revenant uses this Bonus Vl 0:: Action on a different creature. REVEN ANTS Vengeance from beyond the Grave</p>",
+          "value": "<p>The revenant curses uma criatura it can see within 9 m of itself. The revenant knows the distance to and direction of the cursed target, even if it is on a different plane of existence. The curse ends on o alvo if the revenant uses this Bonus Action on a different creature.</p>",
           "chat": ""
         },
         "activation": {
@@ -355,13 +406,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!166AmtfrdFZYL8uz.ZygHcdkpVGOMdJGJ"
+      "_key": "!actors.items!G6UBiDLb5z2lYZZ2.ZygHcdkpVGOMdJGJ"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Revenant",
-      "page": 261,
+      "page": 259,
       "cr": "5",
       "warnings": []
     }

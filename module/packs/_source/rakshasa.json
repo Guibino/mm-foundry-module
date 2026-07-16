@@ -1,6 +1,6 @@
 {
-  "_id": "a98TkUHiVYFqulMS",
-  "_key": "!actors!a98TkUHiVYFqulMS",
+  "_id": "vAtPduuRNsPwWZsR",
+  "_key": "!actors!vAtPduuRNsPwWZsR",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Rakshasa",
   "type": "npc",
@@ -66,7 +66,7 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Lawful",
+      "alignment": "Leal e Mau",
       "cr": 13,
       "xp": {
         "value": 0
@@ -82,26 +82,44 @@
       "size": "med",
       "di": {
         "value": [],
-        "custom": "Charmed; Frightened"
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "dv": {
-        "value": [],
-        "custom": "Piercing damage from weapons wielded"
+        "value": [
+          "piercing"
+        ],
+        "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed",
+          "frightened"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum, Infernal"
       }
     },
-    "skills": {}
+    "skills": {
+      "dec": {
+        "value": 2,
+        "ability": "cha"
+      },
+      "ins": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Rakshasa",
@@ -116,13 +134,13 @@
   },
   "items": [
     {
-      "_id": "2IDOMwo5hNR19yMU",
-      "name": "Greater Magic Resistance",
+      "_id": "4rWMxQMLlnRGcjaz",
+      "name": "Greater Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The rakshasa automatically succeeds on saving throws against spells ~nd other magical effects, and the attack rolls of spells automat- ically miss it. Without the rakshasa's permission, no spell can observe the rakshasa remotely or detect its thoughts, creature type, or alignment.</p>",
+          "value": "<p>The rakshasa automatically succeeds on saving throws against spells and other magical effects, and the attack rolls of spells automatically miss it. Without the rakshasa's permission, no spell can observe the rakshasa remotely or detect its thoughts, creature type, or alignment.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +164,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!a98TkUHiVYFqulMS.2IDOMwo5hNR19yMU"
+      "_key": "!actors.items!vAtPduuRNsPwWZsR.4rWMxQMLlnRGcjaz"
     },
     {
-      "_id": "Bgj6PRwejxCOUGMf",
-      "name": "Fiendish Restoration",
+      "_id": "2gCyPak0aguHkg8g",
+      "name": "Restauração Corruptora",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the rakshasa dies outside the Nine Hells, its body turns to ichor, and it gains a new body instantly, reviving with all its Pontos de Vida some- where in the Nine Hells.</p>",
+          "value": "<p>If the rakshasa dies outside the Nine Hells, its body turns to ichor, and it gains a new body instantly, reviving with all its Pontos de Vida somewhere in the Nine Hells.</p>",
           "chat": ""
         },
         "activation": {
@@ -179,7 +197,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!a98TkUHiVYFqulMS.Bgj6PRwejxCOUGMf"
+      "_key": "!actors.items!vAtPduuRNsPwWZsR.2gCyPak0aguHkg8g"
     },
     {
       "_id": "VaTRiwwUZiY5bWDl",
@@ -188,7 +206,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The rakshasa makes three Cursed D::'. Touch attacks. u.J Cursed Touch. Me lee Attack Roll:+ l 0, alcance 5 ft. Acerto: z 12 (2d6 + 5) Cortante de dano plus 19 (3d12) Necrótico R AKSHASA Deceiver Hungry for Power and Flesh</p>",
+          "value": "<p>The rakshasa makes three Cursed Touch attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -213,13 +231,195 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!a98TkUHiVYFqulMS.VaTRiwwUZiY5bWDl"
+      "_key": "!actors.items!vAtPduuRNsPwWZsR.VaTRiwwUZiY5bWDl"
+    },
+    {
+      "_id": "Cb7hHzBVL0rxrlzD",
+      "name": "Cursed Touch",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 1,5 m. Acerto: 12 (2d6 + 5) dano cortante mais 19 (3d12) dano necrótico. If o alvo is uma criatura, it is cursed. While cursed, o alvo gains no benefit from finishing a Short or Long Rest.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "mzp4T5bCyPSGhiob": {
+            "_id": "mzp4T5bCyPSGhiob",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "5",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 10,
+            "attackType": "melee",
+            "damageFormula": "2d6+5",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!vAtPduuRNsPwWZsR.Cb7hHzBVL0rxrlzD"
+    },
+    {
+      "_id": "xRckXACzFmb41RHq",
+      "name": "Baleful Command (Recharge 5)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Sabedoria: CD 18, each enemy in a 9 m Emanation originating from the rakshasa. 28 (8d6) dano psíquico, and o alvo has the Amedrontado and Incapacitado conditions until the start of the rakshasa's next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "NB9wyRwfRFg1QNg7": {
+            "_id": "NB9wyRwfRFg1QNg7",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "18"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 18,
+            "saveAbility": "wis"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!vAtPduuRNsPwWZsR.xRckXACzFmb41RHq"
+    },
+    {
+      "_id": "nn1P3grCoatTgZyg",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The rakshasa casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 18):</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!vAtPduuRNsPwWZsR.nn1P3grCoatTgZyg"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Rakshasa",
-      "page": 255,
+      "page": 253,
       "cr": "13",
       "warnings": []
     }

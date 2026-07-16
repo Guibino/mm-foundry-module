@@ -1,6 +1,6 @@
 {
-  "_id": "CM3e4glxv81o3avk",
-  "_key": "!actors!CM3e4glxv81o3avk",
+  "_id": "dqK7EimU1YDEFhGa",
+  "_key": "!actors!dqK7EimU1YDEFhGa",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Hell Hound",
   "type": "npc",
@@ -8,15 +8,15 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 77,
+        "value": 17,
         "proficient": 0
       },
       "dex": {
-        "value": 72,
+        "value": 12,
         "proficient": 0
       },
       "con": {
-        "value": 74,
+        "value": 14,
         "proficient": 0
       },
       "int": {
@@ -24,7 +24,7 @@
         "proficient": 0
       },
       "wis": {
-        "value": 73,
+        "value": 13,
         "proficient": 0
       },
       "cha": {
@@ -35,13 +35,13 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 75,
+        "flat": 15,
         "formula": ""
       },
       "hp": {
         "value": 58,
         "max": 58,
-        "formula": "9d8 + 78",
+        "formula": "9d8 + 18",
         "temp": null,
         "tempmax": null
       },
@@ -69,7 +69,7 @@
       "alignment": "Leal e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -81,7 +81,9 @@
     "traits": {
       "size": "med",
       "di": {
-        "value": [],
+        "value": [
+          "fire"
+        ],
         "custom": ""
       },
       "dr": {
@@ -98,7 +100,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Understands Infernal but can't speak"
+        "custom": "understands Infernal but can't speak"
       }
     },
     "skills": {
@@ -121,13 +123,13 @@
   },
   "items": [
     {
-      "_id": "c0yId9Jaf6X4TJpx",
-      "name": "Pack Tactics",
+      "_id": "QUfenbBABZVvhF7Q",
+      "name": "Táticas de Matilha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The hound has Advantage on an attack roll against a creature if at least one of the hound's al- lies is within 5 feet of the creature and the ally doesn't _have the Incapacitado condition.</p>",
+          "value": "<p>A criatura tem Vantagem em uma rolagem de ataque contra uma criatura se pelo menos um dos aliados dela estiver a até 1,5 m do alvo e esse aliado não estiver com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,7 +153,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CM3e4glxv81o3avk.c0yId9Jaf6X4TJpx"
+      "_key": "!actors.items!dqK7EimU1YDEFhGa.QUfenbBABZVvhF7Q"
     },
     {
       "_id": "XIaJ1sIuYPFppuTO",
@@ -160,7 +162,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The hound makes two Bite attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Mordida.</p>",
           "chat": ""
         },
         "activation": {
@@ -185,16 +187,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CM3e4glxv81o3avk.XIaJ1sIuYPFppuTO"
+      "_key": "!actors.items!dqK7EimU1YDEFhGa.XIaJ1sIuYPFppuTO"
     },
     {
-      "_id": "xhryOYaiIJYl7LMY",
-      "name": "Bite",
+      "_id": "aCVFOPcibWKcXkcu",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 7 (1d8 + 3) Perfurante de dano plus 3 (1d6) Fogo de dano. 0:: Fogo Breath (Recarga 5-6). Destreza Teste de Resistência: DC <( 72, cada criatura in a 75-foot Cone. Falha: 77 (Sd6) w Fogo de dano. Sucesso: Metade do dano. HELL HOUND Unrelenting Warden of the Lower Planes</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 7 (1d8 + 3) dano perfurante mais 3 (1d6) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -212,8 +214,8 @@
           "subtype": ""
         },
         "activities": {
-          "lEhIgZo1EASIQz1k": {
-            "_id": "lEhIgZo1EASIQz1k",
+          "M75woAouhFyRSwNs": {
+            "_id": "M75woAouhFyRSwNs",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -266,13 +268,80 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CM3e4glxv81o3avk.xhryOYaiIJYl7LMY"
+      "_key": "!actors.items!dqK7EimU1YDEFhGa.aCVFOPcibWKcXkcu"
+    },
+    {
+      "_id": "vXGzk6QgbbJXohz8",
+      "name": "Sopro de Fogo (Recharge 5)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Destreza: CD 12, cada criatura in a 4,5 m Cone. 17 (5d6) dano de fogo. Metade do dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "biZZOGJYIJkuL0Up": {
+            "_id": "biZZOGJYIJkuL0Up",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "12"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 12,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!dqK7EimU1YDEFhGa.vXGzk6QgbbJXohz8"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Hell Hound",
-      "page": 167,
+      "page": 165,
       "cr": "3",
       "warnings": []
     }

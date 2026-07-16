@@ -1,6 +1,6 @@
 {
-  "_id": "VS1xzPy8YpNRFGOf",
-  "_key": "!actors!VS1xzPy8YpNRFGOf",
+  "_id": "mihXWoQHtutSbI9q",
+  "_key": "!actors!mihXWoQHtutSbI9q",
   "folder": "UIhMG4gNrr0aGWHc",
   "name": "Myconid Spore Servant",
   "type": "npc",
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 13,
         "formula": ""
       },
       "hp": {
@@ -67,9 +67,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -79,10 +79,12 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
-        "value": [],
-        "custom": "Poisoned"
+        "value": [
+          "poison"
+        ],
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -96,7 +98,9 @@
         "value": [
           "blinded",
           "charmed",
-          "frightened"
+          "frightened",
+          "paralyzed",
+          "poisoned"
         ],
         "custom": ""
       },
@@ -120,13 +124,13 @@
   },
   "items": [
     {
-      "_id": "4n4YwiFG13zqukXX",
-      "name": "Slam",
+      "_id": "CSwxKEX0ggj4vKcL",
+      "name": "Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 6 (1d6 + 3) Concussão de dano plus 2 (1d4) Veneno de dano. MYCONID SPORE SERVANT Spore servants are corpses that have been over- grown and reanimated by a myconid sovereign's spores. These fungus-infested bodjes are extensions of a myconid sovereign and obey its will. MYCONID SOVEREIGN Myconid sovereigns resemble towering myconid adults with elaborate fungal growths. They direct their lesser kin and see to the health and growth of vast fungal blooms. MYCONID SOVEREIGN Large Plant, La wful Neutral AC 13 Iniciativa +0 (l 0) HP 45 (6d10 + 12) Speed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 6 (1d6 + 3) dano de concussão mais 2 (1d4) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -144,8 +148,8 @@
           "subtype": ""
         },
         "activities": {
-          "PGXftMVdd0C7qmSX": {
-            "_id": "PGXftMVdd0C7qmSX",
+          "Aey29kqCz1B7MHET": {
+            "_id": "Aey29kqCz1B7MHET",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -198,14 +202,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VS1xzPy8YpNRFGOf.4n4YwiFG13zqukXX"
+      "_key": "!actors.items!mihXWoQHtutSbI9q.CSwxKEX0ggj4vKcL"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Myconid Spore Servant",
-      "page": 225,
-      "cr": "0",
+      "page": 223,
+      "cr": "1",
       "warnings": []
     }
   }

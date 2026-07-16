@@ -1,6 +1,6 @@
 {
-  "_id": "QCtPr3dHRfJFVYBX",
-  "_key": "!actors!QCtPr3dHRfJFVYBX",
+  "_id": "SO0u87LLLlILWOFo",
+  "_key": "!actors!SO0u87LLLlILWOFo",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Griffon",
   "type": "npc",
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 12,
         "formula": ""
       },
       "hp": {
@@ -70,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,7 +102,12 @@
         "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Griffon",
@@ -123,7 +128,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The griffon makes two Rend attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -148,16 +153,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!QCtPr3dHRfJFVYBX.1f4kTjlPyfVgEDTg"
+      "_key": "!actors.items!SO0u87LLLlILWOFo.1f4kTjlPyfVgEDTg"
     },
     {
-      "_id": "BQL0mlnKAWPUxwbD",
-      "name": "Rend",
+      "_id": "f8RViRa0nG6mMzdH",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 8 (1d8 + 4)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 8 (1d8 + 4) dano perfurante. If o alvo is a Medium or smaller creature, it fica com a condição Agarrado (CD para escapar 14) from both of the griffon's front claws.</p>",
           "chat": ""
         },
         "activation": {
@@ -175,8 +180,8 @@
           "subtype": ""
         },
         "activities": {
-          "4ExYwYLFq0st5zSF": {
-            "_id": "4ExYwYLFq0st5zSF",
+          "UlyBuHoIX0dPeWxt": {
+            "_id": "UlyBuHoIX0dPeWxt",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -195,7 +200,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "4",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -204,52 +227,20 @@
         "mm2024": {
           "mechanics": {
             "toHit": 6,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d8+4",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!QCtPr3dHRfJFVYBX.BQL0mlnKAWPUxwbD"
-    },
-    {
-      "_id": "UgGp1NbcrsVtPDII",
-      "name": "Perfurante de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If o alvo is a Medium or smaller creature, it has the Agarrado condition (escape DC 14) from both of the griffon's front claws. GRIFFON Majestic Hunter of Land and Sky</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!QCtPr3dHRfJFVYBX.UgGp1NbcrsVtPDII"
+      "_key": "!actors.items!SO0u87LLLlILWOFo.f8RViRa0nG6mMzdH"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Griffon",
-      "page": 161,
+      "page": 159,
       "cr": "2",
       "warnings": []
     }

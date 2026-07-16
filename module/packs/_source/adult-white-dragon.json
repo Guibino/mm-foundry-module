@@ -1,8 +1,8 @@
 {
-  "_id": "f61shwV5MP5T1iZA",
-  "_key": "!actors!f61shwV5MP5T1iZA",
+  "_id": "Bu9rAQFh7PGzbujd",
+  "_key": "!actors!Bu9rAQFh7PGzbujd",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Adulto Branco Dragão",
+  "name": "Adult White Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/adult-white-dragon.webp",
   "system": {
@@ -41,7 +41,7 @@
       "hp": {
         "value": 200,
         "max": 200,
-        "formula": "1 6d12+96",
+        "formula": "16d12 + 96",
         "temp": null,
         "tempmax": null
       },
@@ -50,6 +50,7 @@
         "hover": false,
         "walk": 40,
         "burrow": 30,
+        "fly": 80,
         "swim": 40
       },
       "senses": {
@@ -65,14 +66,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Chromatic",
+        "subtype": "chromatic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Mau",
       "cr": 13,
       "xp": {
-        "value": 10000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -106,10 +107,19 @@
         "custom": "Comum, Dracônico"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Adulto Branco Dragão",
+    "name": "Adult White Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -121,13 +131,13 @@
   },
   "items": [
     {
-      "_id": "s4BGxOaXTdDv8nZC",
-      "name": "Ice Walk",
+      "_id": "8Jzn2E2lWubbUGxB",
+      "name": "Andar no Gelo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon can move across and climb icy surfaces without needing to make an ability check. Additionally, Difficult Terrain composed of ice or snow doesn't cost it extra movement.</p>",
+          "value": "<p>A criatura pode se mover sobre e escalar superfícies geladas sem precisar fazer um teste de habilidade. Além disso, Terreno Difícil de gelo ou neve não custa movimento extra a ela.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,54 +161,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!f61shwV5MP5T1iZA.s4BGxOaXTdDv8nZC"
+      "_key": "!actors.items!Bu9rAQFh7PGzbujd.8Jzn2E2lWubbUGxB"
     },
     {
       "_id": "ksJ9p3W3lY8PY2EE",
-      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "name": "Resistência Lendária",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the dragon fails a saving throw, it can choose to suc- ceed instead. :,c A CT ION S <( Ataque Múltiplo. The dragon makes three Rend attacks.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "3",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!f61shwV5MP5T1iZA.ksJ9p3W3lY8PY2EE"
-    },
-    {
-      "_id": "Z7VVZBldrlFke60Z",
-      "name": "Rend",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ l l, alcance l Oft. Acerto: 13 (2d6 + 6) Cortante de dano plus 4 (1d8) Frio de dano.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -215,31 +187,144 @@
           "subtype": ""
         },
         "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Bu9rAQFh7PGzbujd.ksJ9p3W3lY8PY2EE"
+    },
+    {
+      "_id": "1ubA0ii3qmfeBpUn",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura faz três ataques de Dilacerar.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Bu9rAQFh7PGzbujd.1ubA0ii3qmfeBpUn"
+    },
+    {
+      "_id": "jdMvHetFbOVTwzkM",
+      "name": "Dilacerar",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +11, alcance 3 m. Acerto: 13 (2d6 + 6) dano cortante mais 4 (1d8) dano de frio.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "gWEpcgXEqcrp80ef": {
+            "_id": "gWEpcgXEqcrp80ef",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "11",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "6",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 11,
+            "attackType": "melee",
             "damageFormula": "2d6+6",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!f61shwV5MP5T1iZA.Z7VVZBldrlFke60Z"
+      "_key": "!actors.items!Bu9rAQFh7PGzbujd.jdMvHetFbOVTwzkM"
     },
     {
-      "_id": "dG1koQhGLaz9AG3D",
-      "name": "Frio Breath (Recharge 5-6)",
+      "_id": "E7TrYj5GdtEhveyp",
+      "name": "Sopro de Frio (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Sa11ing Throw: DC 19, cada criatura in a 60-foot Cone. Falha: 54 (12d8) Frio de dano. Sucesso: Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 19, cada criatura in a 18 m Cone. 54 (12d8) dano de frio. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "",
-          "value": null
+          "type": "action",
+          "value": null,
+          "condition": ""
         },
         "uses": {
           "spent": 0,
@@ -256,18 +341,42 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "Qfbj1z8u7uotegSb": {
+            "_id": "Qfbj1z8u7uotegSb",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "19"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "12d8",
-            "damageType": "cold"
+            "saveDc": 19,
+            "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!f61shwV5MP5T1iZA.dG1koQhGLaz9AG3D"
+      "_key": "!actors.items!Bu9rAQFh7PGzbujd.E7TrYj5GdtEhveyp"
     },
     {
       "_id": "4q1biYEvZl30cb2X",
@@ -276,7 +385,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Sa11ing Throw: DC 14, cada criatura in a 30-foot-radius Sphere centered on a point the dragon can see within 120 feet. Falha: 7 (2d6) Frio de dano, and o alvo's Speed is O until the end of o alvo's next turn. Falha ou Sucesso: The dragon can't take this action again until the start of its next turn.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 14, cada criatura in a 9 m-radius Sphere centered on a point the dragon can see within 36 m. 7 (2d6) dano de frio, and o alvo's Speed is 0 until the end of o alvo's next turn. The dragon can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -293,27 +402,51 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "8NejldkCK5FsBcP1": {
+            "_id": "8NejldkCK5FsBcP1",
+            "type": "save",
+            "activation": {
+              "type": "legendary",
+              "value": 1,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "14"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "2d6",
-            "damageType": "cold"
+            "saveDc": 14,
+            "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!f61shwV5MP5T1iZA.4q1biYEvZl30cb2X"
+      "_key": "!actors.items!Bu9rAQFh7PGzbujd.4q1biYEvZl30cb2X"
     },
     {
-      "_id": "Nzlg8NWOhgREOyMw",
-      "name": "Frightful Presence",
+      "_id": "eBr8lNdtUHhSx5g6",
+      "name": "Bote",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon casts Fear, requiring no Material components and using Carisma as the spell- casting ability (spell save DC 14). The dragon can't take this action again until the start of its next turn.</p>",
+          "value": "<p>A criatura se move até metade do seu Deslocamento e faz um ataque de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -338,21 +471,21 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!f61shwV5MP5T1iZA.Nzlg8NWOhgREOyMw"
+      "_key": "!actors.items!Bu9rAQFh7PGzbujd.eBr8lNdtUHhSx5g6"
     },
     {
-      "_id": "gdm2zdDT5Sb38KUH",
-      "name": "Pounce",
+      "_id": "52MO2eawkP0SUhN8",
+      "name": "Conjuração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon moves up to half its Speed, and it makes one Rend attack. WHITE DRAGONS 329 YOUNG WHITE DRAGON Young white dragons defend their hunting grounds from rivals. In some cases, kobolds and groups of humanoids might offer food and treasure to young white dragons, attempting to keep the dragons sati- ated and less likely to prey on their communities. ADULT WHITE DRAGON Adult white dragons claim large territories and are often the mightiest predators in those lands. While some lurk in their lairs for months, others regularly soar over their domains. When they spot something moving on the ice, they might swoop down to feed or extort food and offerings from sapient creatures. ANCIENT WHITE DRAGON Like arctic storms, ancient white dragons threaten icy realms. They emerge from their frozen lairs to indulge their hungers for food or treasure, men- acing other creatures with lethal cold. While they might ignore animals or small groups of polar wan- derers, these dragons are quick to challenge other ANCIENT WHITE DRAGON Gargantuan D rag on (C hromatic), Chaotic E 1Jil AC 20 In it iativ e+ 12 (22) HP 333 (18d20 + 144) S peed 40 ft., Burrow 40 ft., Fly 80 ft., Swim 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>The dragon casts Fear, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 14). The dragon can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "legendary",
-          "value": 1,
+          "type": "action",
+          "value": null,
           "condition": ""
         },
         "uses": {
@@ -372,13 +505,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!f61shwV5MP5T1iZA.gdm2zdDT5Sb38KUH"
+      "_key": "!actors.items!Bu9rAQFh7PGzbujd.52MO2eawkP0SUhN8"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Adult White Dragon",
-      "page": 331,
+      "page": 329,
       "cr": "13",
       "warnings": []
     }

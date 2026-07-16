@@ -1,8 +1,8 @@
 {
-  "_id": "xEggkBNXp1JzKMKr",
-  "_key": "!actors!xEggkBNXp1JzKMKr",
+  "_id": "UojoKzbVjJd9EnTb",
+  "_key": "!actors!UojoKzbVjJd9EnTb",
   "folder": "1nioWC3kx0YxX8qj",
-  "name": "Vermelho Slaad",
+  "name": "Red Slaad",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/red-slaad.webp",
   "system": {
@@ -51,7 +51,8 @@
         "walk": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -68,7 +69,7 @@
       "alignment": "Caótico e Neutro",
       "cr": 5,
       "xp": {
-        "value": 1800
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -106,10 +107,15 @@
         "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Vermelho Slaad",
+    "name": "Red Slaad",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -121,13 +127,13 @@
   },
   "items": [
     {
-      "_id": "eEda2AjwOwegvLXO",
-      "name": "Magic Resistance",
+      "_id": "DsHGYKk5owDvsKSO",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The slaad has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,16 +157,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xEggkBNXp1JzKMKr.eEda2AjwOwegvLXO"
+      "_key": "!actors.items!UojoKzbVjJd9EnTb.DsHGYKk5owDvsKSO"
     },
     {
-      "_id": "7W96yIU0NgNNckb3",
-      "name": "Regeneration",
+      "_id": "vz8DQgfSHB14wxdt",
+      "name": "Regeneração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The slaad regains 10 Pontos de Vida at the start of each of its turns if it has at least 1 Hit Point.</p>",
+          "value": "<p>A criatura recupera 10 Pontos de Vida no início de cada turno dela se tiver ao menos 1 Ponto de Vida.</p>",
           "chat": ""
         },
         "activation": {
@@ -184,7 +190,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xEggkBNXp1JzKMKr.7W96yIU0NgNNckb3"
+      "_key": "!actors.items!UojoKzbVjJd9EnTb.vz8DQgfSHB14wxdt"
     },
     {
       "_id": "Nh0bU3aOAOceIntR",
@@ -193,7 +199,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The slaad makes three Injecting Claw attacks.</p>",
+          "value": "<p>The slaad makes three Injecting Garra attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -218,16 +224,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xEggkBNXp1JzKMKr.Nh0bU3aOAOceIntR"
+      "_key": "!actors.items!UojoKzbVjJd9EnTb.Nh0bU3aOAOceIntR"
     },
     {
-      "_id": "krsfRzDCuXueRy2v",
-      "name": "Injecting Claw",
+      "_id": "kdBH0dP8PkofFhpq",
+      "name": "Injecting Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance l Oft. Acerto: l 0 (2d6 + 3) Perfurante de dano. If o alvo is a Humanoid not cursed by a slaad, it is subjected to the following effect. Constituição Teste de Resistência: DC 14. Falha: The target is cursed unawares, and a minuscule slaad egg is implanted in it. Removing the curse destroys the egg. Over 2d4 x 10 days, the egg gestates. In the final 24 hours, the cursed target feels unwell; its Speed is halved, and it has Disadvantage on D20 Tests. At the end of this time, the egg turns into a Slaad Tadpole, which chews out of the host and kills it. SLAAD CONTROL GEMS A slaad bor _n from the Spawning Stone has a mag- ical control gem embedded in its head. If a crea- ture claims the gem, the slaad has the Enfeitiçado condition and obeys the gem's bearer. The slaad ceases to be Enfeitiçado if it is harmed by the gem's bearer or the bearer's allies or if the gem is re- · turned to the slaad. A Greater Restoration spell cast on a slaad destroys the gem, and the slaad ceases to be Enfeitiçado. One can obtain a slaad's control gem using a</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 3 m. Acerto: 10 (2d6 + 3) dano perfurante. If o alvo is a Humanoid not cursed by a slaad, it is subjected to the following effect. Teste de Resistência de Constituição: CD 14. O alvo is cursed unawares, and a minuscule slaad egg is implanted in it. Removing the curse destroys the egg.\nOver 2d4 × 10 days, the egg gestates. In the final 24 hours, the cursed target feels unwell; its Speed is halved, and it has Desvantagem on D20 Tests. At the end of this time, the egg turns into a Slaad Tadpole, which chews out of the host and kills it.</p>",
           "chat": ""
         },
         "activation": {
@@ -245,8 +251,8 @@
           "subtype": ""
         },
         "activities": {
-          "VsdUZ1IF8Z6twPUN": {
-            "_id": "VsdUZ1IF8Z6twPUN",
+          "FyRayivESQxAxrF5": {
+            "_id": "FyRayivESQxAxrF5",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -265,7 +271,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -275,80 +299,21 @@
           "mechanics": {
             "toHit": 6,
             "attackType": "melee",
+            "damageFormula": "2d6+3",
+            "damageType": "piercing",
             "saveDc": 14,
             "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xEggkBNXp1JzKMKr.krsfRzDCuXueRy2v"
-    },
-    {
-      "_id": "HmczM8VChknxpSUR",
-      "name": "Wish or Imprisonment spell",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If the slaad fails its saving throw against Imprisonment, the caster 1 gains the gem, and the slaad isn't imprisoned. An Incapacitado slaad's control gem can be removed by spending l minute and succeeding on a DC 20 Sabedoria (Medicine) check. Failing this check deals 22 (4d10) Perfurante de dano to the slaad. BLUE SLAAD Large A berrat io n C haotic Neutra l AC 15 Iniciativa +2 (12) HP 133 (14d10 + 56) S peed 30 ft. MO D SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {
-          "s4875fM9owSa9xHO": {
-            "_id": "s4875fM9owSa9xHO",
-            "type": "save",
-            "activation": {
-              "type": "action",
-              "value": null,
-              "override": true,
-              "condition": ""
-            },
-            "save": {
-              "ability": [
-                "wis"
-              ],
-              "dc": {
-                "calculation": "",
-                "formula": "20"
-              }
-            },
-            "damage": {
-              "onSave": "half",
-              "parts": []
-            }
-          }
-        }
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {
-            "saveDc": 20,
-            "saveAbility": "wis"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!xEggkBNXp1JzKMKr.HmczM8VChknxpSUR"
+      "_key": "!actors.items!UojoKzbVjJd9EnTb.kdBH0dP8PkofFhpq"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Red Slaad",
-      "page": 287,
+      "page": 285,
       "cr": "5",
       "warnings": []
     }

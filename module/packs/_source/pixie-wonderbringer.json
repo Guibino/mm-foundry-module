@@ -1,0 +1,322 @@
+{
+  "_id": "yknuz7VR0TynBdPG",
+  "_key": "!actors!yknuz7VR0TynBdPG",
+  "folder": "inkH4oLnh3yP5W9M",
+  "name": "Pixie Wonderbringer",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/tokens/pixie-wonderbringer.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 2,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 20,
+        "proficient": 0
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0
+      },
+      "int": {
+        "value": 11,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 18,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 15,
+        "formula": ""
+      },
+      "hp": {
+        "value": 60,
+        "max": 60,
+        "formula": "24d4",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 10,
+        "fly": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fey",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Bom",
+      "cr": 5,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "tiny",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comum, Élfico, Silvestre"
+      }
+    },
+    "skills": {
+      "arc": {
+        "value": 2,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Pixie Wonderbringer",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/pixie-wonderbringer.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "89FfO9rzfyqRdWFO",
+      "name": "Resistência a Magia",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!yknuz7VR0TynBdPG.89FfO9rzfyqRdWFO"
+    },
+    {
+      "_id": "xX1BeQP7fXuaaGTT",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The pixie makes two Faerie Dust attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!yknuz7VR0TynBdPG.xX1BeQP7fXuaaGTT"
+    },
+    {
+      "_id": "bYucwUphaSBUONcP",
+      "name": "Faerie Dust",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 1,5 m. or distância 18 m. Acerto: 15 (2d10 + 4) dano radiante, and o alvo has the Enfeitiçado or Envenenado condição (pixie's choice) until the start of the pixie's next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "02FpNYyRbng0gcjv": {
+            "_id": "02FpNYyRbng0gcjv",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "4",
+                  "types": [
+                    "radiant"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "ranged",
+            "damageFormula": "2d10+4",
+            "damageType": "radiant"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!yknuz7VR0TynBdPG.bYucwUphaSBUONcP"
+    },
+    {
+      "_id": "zNJLMmnXHRkoMsD0",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The pixie casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 15):</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!yknuz7VR0TynBdPG.zNJLMmnXHRkoMsD0"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Pixie Wonderbringer",
+      "page": 244,
+      "cr": "5",
+      "warnings": []
+    }
+  }
+}

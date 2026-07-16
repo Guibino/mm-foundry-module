@@ -1,6 +1,6 @@
 {
-  "_id": "TbkW77fNTldbfKyi",
-  "_key": "!actors!TbkW77fNTldbfKyi",
+  "_id": "LTF4n1tvPPlSMVPk",
+  "_key": "!actors!LTF4n1tvPPlSMVPk",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Aarakocra Aeromancer",
   "type": "npc",
@@ -8,7 +8,7 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "dex": {
@@ -20,7 +20,7 @@
         "proficient": 0
       },
       "int": {
-        "value": 73,
+        "value": 13,
         "proficient": 0
       },
       "wis": {
@@ -48,6 +48,7 @@
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 20,
         "fly": 50
       },
       "senses": {
@@ -68,7 +69,7 @@
       "alignment": "Neutro",
       "cr": 4,
       "xp": {
-        "value": 1700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,10 +98,23 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Aarakocra, Primordial (Auran)"
       }
     },
-    "skills": {}
+    "skills": {
+      "arc": {
+        "value": 1,
+        "ability": "int"
+      },
+      "nat": {
+        "value": 2,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Aarakocra Aeromancer",
@@ -121,7 +135,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The aarakocra makes two Wind Staff at- tacks, and it can use Conjuração to cast Gust of Wind.</p>",
+          "value": "<p>The aarakocra makes two Bordão do Vento attacks, and it can use Conjuração to cast Gust of Wind.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +160,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TbkW77fNTldbfKyi.oUVrbM0yWDwqd2Zi"
+      "_key": "!actors.items!LTF4n1tvPPlSMVPk.oUVrbM0yWDwqd2Zi"
     },
     {
-      "_id": "bRTqol2StACHAFKw",
-      "name": "Wind Staff",
+      "_id": "gmQGxrTCQbhIURzy",
+      "name": "Bordão do Vento",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +5, alcance 5 ft. or range 120 ft. Acerto: 7 (1d8 + 3) Concussão de dano plus ll (2d10) Elétrico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +5, alcance 1,5 m. or distância 36 m. Acerto: 7 (1d8 + 3) dano de concussão mais 11 (2d10) dano elétrico.</p>",
           "chat": ""
         },
         "activation": {
@@ -173,8 +187,8 @@
           "subtype": ""
         },
         "activities": {
-          "NMvpx34dsaVyIfky": {
-            "_id": "NMvpx34dsaVyIfky",
+          "A9wDE8Yc7Mz6XW0e": {
+            "_id": "A9wDE8Yc7Mz6XW0e",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -227,46 +241,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TbkW77fNTldbfKyi.bRTqol2StACHAFKw"
-    },
-    {
-      "_id": "dq8rDSVxrf9LGCUK",
-      "name": "Feather Fall (1/Day)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The aarakocra casts Feather Fall in response to that spell's trigger, using the same spell- casting ability as Conjuração. AARAKOCRA AARAKOCRA SKIRMISHER Medium Elemental, Neutral AC 12 Iniciativa +2 (12) HP 11 (2d8 + 2) S peed 20 ft., Fly 50 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "reaction",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!TbkW77fNTldbfKyi.dq8rDSVxrf9LGCUK"
+      "_key": "!actors.items!LTF4n1tvPPlSMVPk.gmQGxrTCQbhIURzy"
     },
     {
       "_id": "rL1nh4A7NOVR84Xy",
@@ -275,7 +250,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The aarakocra casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save DC 13): À Vontade: Elementalism, Gust of Wind, Mage Hand, Message 1/Dia: Elétrico Bolt</p>",
+          "value": "<p>The aarakocra casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save CD 13):</p>",
           "chat": ""
         },
         "activation": {
@@ -300,13 +275,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TbkW77fNTldbfKyi.rL1nh4A7NOVR84Xy"
+      "_key": "!actors.items!LTF4n1tvPPlSMVPk.rL1nh4A7NOVR84Xy"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Aarakocra Aeromancer",
-      "page": 12,
+      "page": 10,
       "cr": "4",
       "warnings": []
     }

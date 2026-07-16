@@ -1,6 +1,6 @@
 {
-  "_id": "31MqbPzCjahEbnA4",
-  "_key": "!actors!31MqbPzCjahEbnA4",
+  "_id": "2TjjJExxJYHse9eF",
+  "_key": "!actors!2TjjJExxJYHse9eF",
   "folder": "bKQUPthn1V2Yu6Bn",
   "name": "Wraith",
   "type": "npc",
@@ -12,23 +12,23 @@
         "proficient": 0
       },
       "dex": {
-        "value": 76,
+        "value": 16,
         "proficient": 0
       },
       "con": {
-        "value": 76,
+        "value": 16,
         "proficient": 0
       },
       "int": {
         "value": 12,
-        "proficient": 1
+        "proficient": 0
       },
       "wis": {
         "value": 14,
         "proficient": 0
       },
       "cha": {
-        "value": 75,
+        "value": 15,
         "proficient": 0
       }
     },
@@ -41,7 +41,7 @@
       "hp": {
         "value": 67,
         "max": 67,
-        "formula": "9d8 + 2 7",
+        "formula": "9d8 + 27",
         "temp": null,
         "tempmax": null
       },
@@ -70,7 +70,7 @@
       "alignment": "Neutro e Mau",
       "cr": 5,
       "xp": {
-        "value": 1800
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -80,13 +80,23 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
-        "value": [],
+        "value": [
+          "necrotic",
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "acid",
+          "bludgeoning",
+          "cold",
+          "fire",
+          "piercing",
+          "slashing"
+        ],
         "custom": ""
       },
       "dv": {
@@ -94,12 +104,22 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed",
+          "exhaustion",
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "prone",
+          "restrained",
+          "unconscious"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Common plus two other languages"
       }
     },
     "skills": {}
@@ -117,13 +137,13 @@
   },
   "items": [
     {
-      "_id": "Yi7fbjSL50rrLyPX",
-      "name": "Incorporeal Movement",
+      "_id": "SUthQ4NKBot3gzsC",
+      "name": "Movimento Incorpóreo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The wraith can m?ve through other creatures and objects as if they were Difficult Ter- rain. It takes 5 (7d70) Energia de dano if it ends its turn inside an object.</p>",
+          "value": "<p>A criatura pode se mover através de outras criaturas e objetos como se fossem Terreno Difícil. Ela sofre 5 (1d10) de dano de energia se terminar o turno dentro de um objeto.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,16 +167,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!31MqbPzCjahEbnA4.Yi7fbjSL50rrLyPX"
+      "_key": "!actors.items!2TjjJExxJYHse9eF.SUthQ4NKBot3gzsC"
     },
     {
-      "_id": "n4MD8ZqcCRt3W8vi",
-      "name": "Sunlight Sensitivity",
+      "_id": "b6ScZRotJNp1zRNg",
+      "name": "Sensibilidade à Luz Solar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in sunlight, the wraith has Disadvantage on ability checks and attack rolls.</p>",
+          "value": "<p>Sob luz solar, a criatura tem Desvantagem em testes de habilidade e rolagens de ataque.</p>",
           "chat": ""
         },
         "activation": {
@@ -180,7 +200,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!31MqbPzCjahEbnA4.n4MD8ZqcCRt3W8vi"
+      "_key": "!actors.items!2TjjJExxJYHse9eF.b6ScZRotJNp1zRNg"
     },
     {
       "_id": "bYtsaBgb1cKdwKMa",
@@ -189,7 +209,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft . Acerto: 21 (4d8 + 3) Necrótico de dano. If o alvo is a creature, its Hit Point maximum decrea~es by an amount equal to the de dano taken.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 21 (4d8 + 3) dano necrótico. If o alvo is uma criatura, its Hit Point maximum decreases by an amount equal to the de dano taken.</p>",
           "chat": ""
         },
         "activation": {
@@ -261,7 +281,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!31MqbPzCjahEbnA4.bYtsaBgb1cKdwKMa"
+      "_key": "!actors.items!2TjjJExxJYHse9eF.bYtsaBgb1cKdwKMa"
     },
     {
       "_id": "abbMXxo5hJrKpVRV",
@@ -270,7 +290,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The wraith targets a Humanoid corpse within 10 feet of itself that has been dead for no longer than l minute. The target's spirit rises as a Specter in the space of its corpse or in the nearest unoccupied . space. The specter is under the wraith's control. The :,,,:: wraith can have no more than seven specters under its . co 0:: uJ control at a time. ,, _J WYVERN Dracônico Hunter with a Venomous Sting</p>",
+          "value": "<p>The wraith targets a Humanoid corpse within 3 m of itself that has been dead for no longer than 1 minute. O alvo's spirit rises as a Specter in the space of its corpse or in the nearest unoccupied space. The specter is under the wraith's control. The wraith can have no more than seven specters under its control at a time.</p>",
           "chat": ""
         },
         "activation": {
@@ -295,13 +315,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!31MqbPzCjahEbnA4.abbMXxo5hJrKpVRV"
+      "_key": "!actors.items!2TjjJExxJYHse9eF.abbMXxo5hJrKpVRV"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Wraith",
-      "page": 338,
+      "page": 336,
       "cr": "5",
       "warnings": []
     }

@@ -1,57 +1,59 @@
 {
-  "_id": "1E985ZxNc6tGEyBA",
-  "_key": "!actors!1E985ZxNc6tGEyBA",
+  "_id": "DCc3QwxRnb33eT2a",
+  "_key": "!actors!DCc3QwxRnb33eT2a",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Gigante Crab",
+  "name": "Giant Crab",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/giant-crab.webp",
   "system": {
     "abilities": {
       "str": {
-        "value": 75,
+        "value": 13,
         "proficient": 0
       },
       "dex": {
-        "value": 76,
+        "value": 13,
         "proficient": 0
       },
       "con": {
-        "value": 77,
+        "value": 11,
         "proficient": 0
       },
       "int": {
-        "value": 2,
+        "value": 1,
         "proficient": 0
       },
       "wis": {
-        "value": 72,
+        "value": 9,
         "proficient": 0
       },
       "cha": {
-        "value": 6,
+        "value": 3,
         "proficient": 0
       }
     },
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 15,
         "formula": ""
       },
       "hp": {
-        "value": 22,
-        "max": 22,
-        "formula": "4d1 0",
+        "value": 13,
+        "max": 13,
+        "formula": "3d8",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "swim": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "blindsight": 30
       },
       "init": {
         "ability": "dex",
@@ -66,9 +68,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0.25,
+      "cr": 0.125,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +80,7 @@
       }
     },
     "traits": {
-      "size": "lg",
+      "size": "med",
       "di": {
         "value": [],
         "custom": ""
@@ -97,13 +99,18 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Gigante Crab",
+    "name": "Giant Crab",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -115,13 +122,46 @@
   },
   "items": [
     {
-      "_id": "F5B78wUpnf6JXdkW",
-      "name": "Bite",
+      "_id": "rz9RZEaWqy6DfSi9",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Me lee Attack Roll: +5, alcance 5 ft. Acerto: 6 (1d6 + 3) Perfurante de dano. ., GIANT BOAR Large Beast, Unali g ne d AC 13 Initiat ive +O (l 0) HP 42 (Sdl O + 15) Sp ee d 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!DCc3QwxRnb33eT2a.rz9RZEaWqy6DfSi9"
+    },
+    {
+      "_id": "3nkWaz64uc6aiyap",
+      "name": "Garra",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 4 (1d6 + 1) dano de concussão. If o alvo is a Medium or smaller creature, it fica com a condição Agarrado (CD para escapar 11) from one of two claws.</p>",
           "chat": ""
         },
         "activation": {
@@ -138,25 +178,69 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "ypACaf3yrUZ9zSI5": {
+            "_id": "ypACaf3yrUZ9zSI5",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "3",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "1",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "1d6+3",
-            "damageType": "piercing"
+            "toHit": 3,
+            "attackType": "melee",
+            "damageFormula": "1d6+1",
+            "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!1E985ZxNc6tGEyBA.F5B78wUpnf6JXdkW"
+      "_key": "!actors.items!DCc3QwxRnb33eT2a.3nkWaz64uc6aiyap"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Giant Crab",
-      "page": 357,
-      "cr": "1/4",
+      "page": 356,
+      "cr": "1/8",
       "warnings": []
     }
   }

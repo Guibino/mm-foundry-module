@@ -1,6 +1,6 @@
 {
-  "_id": "K6onb53MbnUdxro2",
-  "_key": "!actors!K6onb53MbnUdxro2",
+  "_id": "gpR0GUvFrjs4MEeH",
+  "_key": "!actors!gpR0GUvFrjs4MEeH",
   "folder": "UIhMG4gNrr0aGWHc",
   "name": "Twig Blight",
   "type": "npc",
@@ -69,7 +69,7 @@
       "alignment": "Neutro e Mau",
       "cr": 0.125,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -82,26 +82,35 @@
       "size": "sm",
       "di": {
         "value": [],
-        "custom": "Deafened"
+        "custom": ""
       },
       "dr": {
         "value": [],
         "custom": ""
       },
       "dv": {
-        "value": [],
-        "custom": "Fi re"
+        "value": [
+          "fire"
+        ],
+        "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "deafened"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Understands Common but can't speak"
+        "custom": "understands Common but can't speak"
       }
     },
-    "skills": {}
+    "skills": {
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Twig Blight",
@@ -116,13 +125,13 @@
   },
   "items": [
     {
-      "_id": "GzG3xRVZor1ac9Nj",
-      "name": "Pack Tactics",
+      "_id": "tAWibLMB9zCT4oEh",
+      "name": "Táticas de Matilha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The blight has Advantage on an attack roll against a creature if at least one of the blight's allies is within 5 feet of the creature and the ally doesn't have the Incapacitado condition. ;5 ACTIONS > Claw. Rolagem de Ataque Corpo a Corpo: +4,-·alcance 5 ft. Acerto: 4 (1d4 + 2) 0::: Cortante de dano. co NEEDLE BLIGHT Needle blights have vaguely bipedal forms, with gaunt, misshapen limbs. Whether standing unnat- urally still or lurching with their awkward gaits, these blights can't pass as either normal plants or woodland travelers. Once they spot foes, needle blights attack using their thorn-covered claws or by rapidly growing and flinging volleys of serrated, needlelike projectiles. NEEDLE BLIGHT Med ium P lan t, Neutr al fl)i/ AC 12 Iniciativa + l ( 11) H P16(3d8+3) Speed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>A criatura tem Vantagem em uma rolagem de ataque contra uma criatura se pelo menos um dos aliados dela estiver a até 1,5 m do alvo e esse aliado não estiver com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -142,20 +151,98 @@
       },
       "flags": {
         "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!gpR0GUvFrjs4MEeH.tAWibLMB9zCT4oEh"
+    },
+    {
+      "_id": "3i0xTzafANGj6kOb",
+      "name": "Garra",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 4 (1d4 + 2) dano cortante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "NSjzqfRMl3EWiC2W": {
+            "_id": "NSjzqfRMl3EWiC2W",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d4+2",
+            "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!K6onb53MbnUdxro2.GzG3xRVZor1ac9Nj"
+      "_key": "!actors.items!gpR0GUvFrjs4MEeH.3i0xTzafANGj6kOb"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Twig Blight",
-      "page": 45,
+      "page": 43,
       "cr": "1/8",
       "warnings": []
     }

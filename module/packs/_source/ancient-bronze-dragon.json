@@ -1,8 +1,8 @@
 {
-  "_id": "CZaVPfMI5BvF2G6m",
-  "_key": "!actors!CZaVPfMI5BvF2G6m",
+  "_id": "4cLcgi3Lqd8TJ1TR",
+  "_key": "!actors!4cLcgi3Lqd8TJ1TR",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Ancião Bronze Dragão",
+  "name": "Ancient Bronze Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/ancient-bronze-dragon.webp",
   "system": {
@@ -65,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Met allic",
+        "subtype": "metallic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Bom",
       "cr": 22,
       "xp": {
-        "value": 41000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -84,8 +84,10 @@
     "traits": {
       "size": "grg",
       "di": {
-        "value": [],
-        "custom": "Lightning •"
+        "value": [
+          "lightning"
+        ],
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -104,10 +106,23 @@
         "custom": "Comum, Dracônico"
       }
     },
-    "skills": {}
+    "skills": {
+      "ins": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Ancião Bronze Dragão",
+    "name": "Ancient Bronze Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -119,13 +134,13 @@
   },
   "items": [
     {
-      "_id": "UlcIH7qoRue3FHQp",
-      "name": "Amphibious",
+      "_id": "nJC6nruwi6IpFtie",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -149,16 +164,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CZaVPfMI5BvF2G6m.UlcIH7qoRue3FHQp"
+      "_key": "!actors.items!4cLcgi3Lqd8TJ1TR.nJC6nruwi6IpFtie"
     },
     {
       "_id": "6zTQYPDrqRAiNzFq",
-      "name": "Resistência Lendária (4/Day, or 5/Day in Lair)",
+      "name": "Resistência Lendária",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the dragon fails a saving throw, it can choose to suc- ceed instead.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -167,13 +182,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "4",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -187,7 +197,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CZaVPfMI5BvF2G6m.6zTQYPDrqRAiNzFq"
+      "_key": "!actors.items!4cLcgi3Lqd8TJ1TR.6zTQYPDrqRAiNzFq"
     },
     {
       "_id": "hEQpK1BeTboch8Ya",
@@ -196,7 +206,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of (A) Repulsion Breath or (B) Conjuração to cast Guiding Bolt (level 2 version).</p>",
+          "value": "<p>The dragon makes three Dilacerar attacks. It can replace one attack with a use of (A) Sopro de Repulsão or (B) Conjuração to cast Guiding Bolt (level 2 version).</p>",
           "chat": ""
         },
         "activation": {
@@ -221,16 +231,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CZaVPfMI5BvF2G6m.hEQpK1BeTboch8Ya"
+      "_key": "!actors.items!4cLcgi3Lqd8TJ1TR.hEQpK1BeTboch8Ya"
     },
     {
-      "_id": "F9Y8sSyu4ClGUBpm",
-      "name": "Rend",
+      "_id": "mlhd1sR1rkd67a1Y",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 16, alcance 15 ft. Acerto: 18 (2d8 + 9) Cortante de dano plus 9 (2d8) Elétrico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +16, alcance 4,5 m. Acerto: 18 (2d8 + 9) dano cortante mais 9 (2d8) dano elétrico.</p>",
           "chat": ""
         },
         "activation": {
@@ -247,27 +257,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "XF80ucdMmLCwMFtA": {
+            "_id": "XF80ucdMmLCwMFtA",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "16",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "9",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 16,
+            "attackType": "melee",
             "damageFormula": "2d8+9",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CZaVPfMI5BvF2G6m.F9Y8sSyu4ClGUBpm"
+      "_key": "!actors.items!4cLcgi3Lqd8TJ1TR.mlhd1sR1rkd67a1Y"
     },
     {
-      "_id": "6aCgahilZw6BapMH",
-      "name": "Elétrico Breath (Recharge 5-6)",
+      "_id": "BbhRSiPKFzz5Z3Wn",
+      "name": "Sopro Elétrico (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 23, cada criatura in a 120-foot-long, 10-foot- wide Line. Falha: 82 (lSdl0) Elétrico de dano. Suc- cess: Metade do dano. 60 BRONZE DRAGONS BRO N ZE DRAGON L 'A I RS Bronze dragons usually make their homes near or under the sea. The region containing an adult or ancient bronze dragon's lair is changed by its presence, creating the following effects:</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 23, cada criatura in a 36 m-long, 3 m-wide Line. 82 (15d10) dano elétrico. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -291,8 +345,8 @@
           "subtype": ""
         },
         "activities": {
-          "QzN9znRbcadjRdVD": {
-            "_id": "QzN9znRbcadjRdVD",
+          "cqlwzNMdQjfaIgZ2": {
+            "_id": "cqlwzNMdQjfaIgZ2",
             "type": "save",
             "activation": {
               "type": "action",
@@ -311,25 +365,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
-                  "types": [
-                    "lightning"
-                  ],
-                  "custom": {
-                    "enabled": true,
-                    "formula": "lSdl0"
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -337,92 +373,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "lSdl0",
-            "damageType": "lightning",
             "saveDc": 23,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CZaVPfMI5BvF2G6m.6aCgahilZw6BapMH"
+      "_key": "!actors.items!4cLcgi3Lqd8TJ1TR.BbhRSiPKFzz5Z3Wn"
     },
     {
-      "_id": "5Qyp2fbYwhPKb6CM",
-      "name": "Buoying Currents",
+      "_id": "kpmqxfPvQnWaJZJr",
+      "name": "Sopro de Repulsão",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Creatures within 1 mile of the lair that lack a Swim Speed ignore the ex tra cost of movement while swimming.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!CZaVPfMI5BvF2G6m.5Qyp2fbYwhPKb6CM"
-    },
-    {
-      "_id": "nlQk17kR5qaMN0Y4",
-      "name": "Sun and Storms",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>While in its lair, the dragon can cast Cont r ol Weather, requiring no Material com- ponents and using the same spellcasting ability as its Conjuração action . When casting the spell this way, the dragon can control the weather within 1 mile of its lair, regardless if the dragon is inside or outside. If the dragon dies or moves its lair elsewhere, these effects end immediately.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!CZaVPfMI5BvF2G6m.nlQk17kR5qaMN0Y4"
-    },
-    {
-      "_id": "3KsWRkqbCnDrAkV9",
-      "name": "Repulsion Breath",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Força Teste de Resistência: DC 23, cada criatura in a 30-foot Cone. Falha: The target is pushed up to 60 feet straight away from the dragon and has the Caído condition.</p>",
+          "value": "<p>Teste de Resistência de Força: CD 23, cada criatura in a 9 m Cone. O alvo is pushed up to 18 m straight away from the dragon and fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -440,8 +406,8 @@
           "subtype": ""
         },
         "activities": {
-          "1MSgrGlgflAD3SUP": {
-            "_id": "1MSgrGlgflAD3SUP",
+          "fQxlqCvovxDnnJLQ": {
+            "_id": "fQxlqCvovxDnnJLQ",
             "type": "save",
             "activation": {
               "type": "action",
@@ -474,7 +440,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CZaVPfMI5BvF2G6m.3KsWRkqbCnDrAkV9"
+      "_key": "!actors.items!4cLcgi3Lqd8TJ1TR.kpmqxfPvQnWaJZJr"
     },
     {
       "_id": "Q5qyndSIe3A5xe3a",
@@ -483,7 +449,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon uses Conjuração to cast Guiding Bolt (level 2 ver_sion) .</p>",
+          "value": "<p>The dragon uses Conjuração to cast Guiding Bolt (level 2 version).</p>",
           "chat": ""
         },
         "activation": {
@@ -508,16 +474,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CZaVPfMI5BvF2G6m.Q5qyndSIe3A5xe3a"
+      "_key": "!actors.items!4cLcgi3Lqd8TJ1TR.Q5qyndSIe3A5xe3a"
     },
     {
-      "_id": "553jkuYGtwza6heW",
-      "name": "Pounce",
+      "_id": "CNjzI3Ly6DPFz0mC",
+      "name": "Bote",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon moves up to half its Speed, and it makes one Rend attack.</p>",
+          "value": "<p>A criatura se move até metade do seu Deslocamento e faz um ataque de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -542,16 +508,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CZaVPfMI5BvF2G6m.553jkuYGtwza6heW"
+      "_key": "!actors.items!4cLcgi3Lqd8TJ1TR.CNjzI3Ly6DPFz0mC"
     },
     {
-      "_id": "6RRlmAU3DcqgH4aw",
-      "name": "Trovejanteclap",
+      "_id": "s9s88UReVZXJCs5T",
+      "name": "Thunderclap",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 22, cada criatura in a 20-foot-radius Sphere centered on a point the dragon can see within 120 feet. Falha: 13 (3d8) f---- Trovejante de dano, and o alvo has the Surdo con- w l/1 dition until the end of its next turn. ------- z~JF-.,....~ AN /\\NCIENT BRONI.E DRAGO N U SES ITS REPULSION BRE/\\TH TO PROTECT/\\ COMMU N I TY FROM RAMP/\\GING \\YATER ELEMENT/\\LS. BUGBEARS Lurking Goblinoid Brutes</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 22, cada criatura in a 6 m-radius Sphere centered on a point the dragon can see within 36 m. 13 (3d8) dano trovejante, and o alvo fica com a condição Surdo until the end of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -569,8 +535,8 @@
           "subtype": ""
         },
         "activities": {
-          "iH67o0bMTaylsK67": {
-            "_id": "iH67o0bMTaylsK67",
+          "ZGz4pfWQkp0gJUMC": {
+            "_id": "ZGz4pfWQkp0gJUMC",
             "type": "save",
             "activation": {
               "type": "legendary",
@@ -603,7 +569,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CZaVPfMI5BvF2G6m.6RRlmAU3DcqgH4aw"
+      "_key": "!actors.items!4cLcgi3Lqd8TJ1TR.s9s88UReVZXJCs5T"
     },
     {
       "_id": "OkWFHRSyTxSkrPfi",
@@ -612,7 +578,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 22, +14 to hit with spell attacks): À Vontade: Detect Magic, Guiding Bolt (level 2 version), Shapechange (Beast or Humanoid form only, no Temporary Pontos de Vida gained from the spell, and no Concentration or Temporary Pontos de Vida required to maintain the spell), Speak with Animals, Thaumaturgy 1/Dia Each: Detect Thoughts, Control Water, Scrying, Water Breathing</p>",
+          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 22, +14 to hit with spell attacks):</p>",
           "chat": ""
         },
         "activation": {
@@ -663,13 +629,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CZaVPfMI5BvF2G6m.OkWFHRSyTxSkrPfi"
+      "_key": "!actors.items!4cLcgi3Lqd8TJ1TR.OkWFHRSyTxSkrPfi"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Ancient Bronze Dragon",
-      "page": 62,
+      "page": 60,
       "cr": "22",
       "warnings": []
     }

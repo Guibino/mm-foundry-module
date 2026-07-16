@@ -1,6 +1,6 @@
 {
-  "_id": "dUxIMUZpPgIkfWeb",
-  "_key": "!actors!dUxIMUZpPgIkfWeb",
+  "_id": "TxlTYHN1vepNXJxv",
+  "_key": "!actors!TxlTYHN1vepNXJxv",
   "folder": "CVeezowVb7BNP8yc",
   "name": "Brazen Gorgon",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 161,
         "max": 161,
-        "formula": "17d10+68",
+        "formula": "17d10 + 68",
         "temp": null,
         "tempmax": null
       },
@@ -51,7 +51,8 @@
         "walk": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -68,7 +69,7 @@
       "alignment": "Sem Tendência",
       "cr": 9,
       "xp": {
-        "value": 5000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -80,7 +81,9 @@
     "traits": {
       "size": "lg",
       "di": {
-        "value": [],
+        "value": [
+          "fire"
+        ],
         "custom": ""
       },
       "dr": {
@@ -92,7 +95,10 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "exhaustion",
+          "petrified"
+        ],
         "custom": ""
       },
       "languages": {
@@ -100,7 +106,12 @@
         "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Brazen Gorgon",
@@ -121,7 +132,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>At the end of each of the gorgon's turns, cada criatura in a 5-foot Emanation originating from n:: the gorgon takes 13 (3d8) Fogo de dano. 0... The gorgon s~eds Bright Light in a 10- n:: Illumination. lJ foot radius and Dim Light for an additional 10 feet.</p>",
+          "value": "<p>At the end of each of the gorgon's turns, cada criatura in a 1,5 m Emanation originating from the gorgon takes 13 (3d8) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,7 +156,40 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!dUxIMUZpPgIkfWeb.hwNJQvp2GXEFog7z"
+      "_key": "!actors.items!TxlTYHN1vepNXJxv.hwNJQvp2GXEFog7z"
+    },
+    {
+      "_id": "lCcitRLJNOaYxnBz",
+      "name": "Iluminação",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura emite Luz Plena em um raio de 3 m e Luz Fraca por mais 3 m.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!TxlTYHN1vepNXJxv.lCcitRLJNOaYxnBz"
     },
     {
       "_id": "hyOHe5rdK1P5eXXV",
@@ -154,7 +198,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The gorgon makes two Gore attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Chifrada.</p>",
           "chat": ""
         },
         "activation": {
@@ -179,16 +223,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!dUxIMUZpPgIkfWeb.hyOHe5rdK1P5eXXV"
+      "_key": "!actors.items!TxlTYHN1vepNXJxv.hyOHe5rdK1P5eXXV"
     },
     {
-      "_id": "tA3N0vVsghxPhBhZ",
-      "name": "Gore",
+      "_id": "S5RGqT7vxnZyGvIy",
+      "name": "Chifrada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 5 ft. Acerto: 11 (2d6 + 4) Perfurante de dano plus 10 (3d6) Fogo de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 1,5 m. Acerto: 11 (2d6 + 4) dano perfurante mais 10 (3d6) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -206,8 +250,8 @@
           "subtype": ""
         },
         "activities": {
-          "uceITU0e0JEWo1l7": {
-            "_id": "uceITU0e0JEWo1l7",
+          "MVcZYkQCDg6vNlMz": {
+            "_id": "MVcZYkQCDg6vNlMz",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -260,16 +304,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!dUxIMUZpPgIkfWeb.tA3N0vVsghxPhBhZ"
+      "_key": "!actors.items!TxlTYHN1vepNXJxv.S5RGqT7vxnZyGvIy"
     },
     {
-      "_id": "BH2GkbVL9ptDSo9U",
-      "name": "Smelting Charge (Recharge 5-6)",
+      "_id": "nXVVvmPqa8WG2B9d",
+      "name": "Smelting Investida (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The gorgon moves up to its Speed without provoking Opportunity At- tacks and can move through the spaces of Medium or smaller creatures. Each time the gorgon enters a creature's space for the first time during this move, that target is subjected to the following effect. Destreza Sav- ing Throw: DC 16. Falha: 13 (2d8 + 4) Perfurante de dano plus 13 (3d8) Fogo de dano, and o alvo is pulled into the gorgon's space and has the Agarrado condition . (escape DC 14); if the gorgon already has a creature Agarrado, o alvo has the Caído condition instead. Until the grapple ends, o alvo has the Impedido condition. When the gorgon moves, the Agarrado tar -: get moves with it , costing no extra movement. GORGONS 1 49 GORISTRO Demon of Disaster</p>",
+          "value": "<p>The gorgon moves up to its Speed without provoking Opportunity Attacks and can move through the spaces of Medium or smaller creatures. Each time the gorgon enters uma criatura's space for the first time during this move, that target is subjected to the following effect. Teste de Resistência de Destreza: CD 16. 13 (2d8 + 4) dano perfurante mais 13 (3d8) dano de fogo, and o alvo is pulled into the gorgon's space and fica com a condição Agarrado (CD para escapar 14); if the gorgon already has uma criatura Agarrado, o alvo fica com a condição Caído instead. Until the grapple ends, o alvo fica com a condição Impedido. When the gorgon moves, the Agarrado target moves with it, costing no extra movement.</p>",
           "chat": ""
         },
         "activation": {
@@ -292,24 +336,48 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "Q7hpt9V0sLCq6IM0": {
+            "_id": "Q7hpt9V0sLCq6IM0",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "16"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "2d8+4",
-            "damageType": "piercing"
+            "saveDc": 16,
+            "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!dUxIMUZpPgIkfWeb.BH2GkbVL9ptDSo9U"
+      "_key": "!actors.items!TxlTYHN1vepNXJxv.nXVVvmPqa8WG2B9d"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Brazen Gorgon",
-      "page": 151,
+      "page": 149,
       "cr": "9",
       "warnings": []
     }

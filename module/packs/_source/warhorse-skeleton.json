@@ -1,8 +1,8 @@
 {
-  "_id": "Wj9aJQW1wa7L9sab",
-  "_key": "!actors!Wj9aJQW1wa7L9sab",
+  "_id": "Vp6yWb3Pkfn0UMrQ",
+  "_key": "!actors!Vp6yWb3Pkfn0UMrQ",
   "folder": "bKQUPthn1V2Yu6Bn",
-  "name": "Warhorse Esqueleto",
+  "name": "Warhorse Skeleton",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/warhorse-skeleton.webp",
   "system": {
@@ -69,7 +69,7 @@
       "alignment": "Leal e Mau",
       "cr": 0.5,
       "xp": {
-        "value": 100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -91,7 +91,9 @@
         "custom": ""
       },
       "dv": {
-        "value": [],
+        "value": [
+          "bludgeoning"
+        ],
         "custom": ""
       },
       "ci": {
@@ -103,13 +105,13 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Warhorse Esqueleto",
+    "name": "Warhorse Skeleton",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -119,11 +121,93 @@
     },
     "disposition": -1
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "5upDY4cyhqSD57fE",
+      "name": "Cascos",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 7 (1d6 + 4) dano de concussão. If o alvo is a Large or smaller creature and the skeleton moved 20+ feet straight toward it immediately before the hit, o alvo fica com a condição Caído.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "y8wK8uc2syYEX24Q": {
+            "_id": "y8wK8uc2syYEX24Q",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 6,
+            "attackType": "melee",
+            "damageFormula": "1d6+4",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Vp6yWb3Pkfn0UMrQ.5upDY4cyhqSD57fE"
+    }
+  ],
   "flags": {
     "mm2024": {
       "nameEn": "Warhorse Skeleton",
-      "page": 284,
+      "page": 282,
       "cr": "1/2",
       "warnings": []
     }

@@ -1,6 +1,6 @@
 {
-  "_id": "uDvHJeukbB0DTdGE",
-  "_key": "!actors!uDvHJeukbB0DTdGE",
+  "_id": "AuUig5DGjBTiN24T",
+  "_key": "!actors!AuUig5DGjBTiN24T",
   "folder": "bKQUPthn1V2Yu6Bn",
   "name": "Ghast",
   "type": "npc",
@@ -24,7 +24,7 @@
         "proficient": 0
       },
       "wis": {
-        "value": 0,
+        "value": 10,
         "proficient": 1
       },
       "cha": {
@@ -51,7 +51,8 @@
         "walk": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -68,7 +69,7 @@
       "alignment": "Caótico e Mau",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -86,7 +87,9 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "necrotic"
+        ],
         "custom": ""
       },
       "dv": {
@@ -121,13 +124,13 @@
   },
   "items": [
     {
-      "_id": "AdfdNIyO9zZ9oSJ5",
-      "name": "Stench",
+      "_id": "hTSH1klKg0cXQcEq",
+      "name": "Fedor",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Salling Throw: DC 10, any creature that starts its turn in a 5-foot Emanation originating from the ghast. Falha: The target has the Envenenado condition until the start of its next turn. Sucesso: The target is immune to this ghast's Stench for 24 hours.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 10, any creature that starts its turn in a 1,5 m Emanation originating from the ghast. O alvo fica com a condição Envenenado until the start of its next turn. O alvo is immune to this ghast's Fedor for 24 hours.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,20 +150,23 @@
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 10,
+            "saveAbility": "con"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!uDvHJeukbB0DTdGE.AdfdNIyO9zZ9oSJ5"
+      "_key": "!actors.items!AuUig5DGjBTiN24T.hTSH1klKg0cXQcEq"
     },
     {
-      "_id": "H8k2rGP71eR2BbqE",
-      "name": "Bite",
+      "_id": "ZHLiRMmplY6rJodH",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 7 (1d8 + 3) Perfurante de dano plus 9 (2d8) Necrótico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 7 (1d8 + 3) dano perfurante mais 9 (2d8) dano necrótico.</p>",
           "chat": ""
         },
         "activation": {
@@ -178,8 +184,8 @@
           "subtype": ""
         },
         "activities": {
-          "zHJYn53lxv6P4EBq": {
-            "_id": "zHJYn53lxv6P4EBq",
+          "GPzIIDC48FjVGeFe": {
+            "_id": "GPzIIDC48FjVGeFe",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -232,16 +238,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!uDvHJeukbB0DTdGE.H8k2rGP71eR2BbqE"
+      "_key": "!actors.items!AuUig5DGjBTiN24T.ZHLiRMmplY6rJodH"
     },
     {
-      "_id": "ljNuLodGLEpoR02J",
-      "name": "Claw",
+      "_id": "NNxjlEr7aSXNXHZL",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 10 (2d6 + 3)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 10 (2d6 + 3) dano cortante. If o alvo is a non-Undead creature, it is subjected to the following effect. Teste de Resistência de Constituição: CD 10. O alvo fica com a condição Paralisado until the end of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -259,8 +265,8 @@
           "subtype": ""
         },
         "activities": {
-          "cyJCldhRp8OR5fzI": {
-            "_id": "cyJCldhRp8OR5fzI",
+          "xetH2vuRdSG7dZhI": {
+            "_id": "xetH2vuRdSG7dZhI",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -279,7 +285,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -288,52 +312,22 @@
         "mm2024": {
           "mechanics": {
             "toHit": 5,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d6+3",
+            "damageType": "slashing",
+            "saveDc": 10,
+            "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!uDvHJeukbB0DTdGE.ljNuLodGLEpoR02J"
-    },
-    {
-      "_id": "OVrKZeWkB1WlpXel",
-      "name": "Cortante de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If o alvo is a non-Undead crea- ture, it is subjected to the following effect. Constituição Salling Throw: DC l 0. Falha: ~he target has the Para- lyzed condition until the end of its next turn. GHASTS 130 GHA ST S Tyrants among Corpses</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!uDvHJeukbB0DTdGE.OVrKZeWkB1WlpXel"
+      "_key": "!actors.items!AuUig5DGjBTiN24T.NNxjlEr7aSXNXHZL"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Ghast",
-      "page": 132,
+      "page": 130,
       "cr": "2",
       "warnings": []
     }

@@ -1,8 +1,8 @@
 {
-  "_id": "zxDda5aHHQdPeQZA",
-  "_key": "!actors!zxDda5aHHQdPeQZA",
+  "_id": "wAtcg0ahb2BxkaMl",
+  "_key": "!actors!wAtcg0ahb2BxkaMl",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Ancião Cobre Dragão",
+  "name": "Ancient Copper Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/ancient-copper-dragon.webp",
   "system": {
@@ -49,11 +49,12 @@
         "units": "ft",
         "hover": false,
         "walk": 40,
-        "climb": 40
+        "climb": 40,
+        "fly": 80
       },
       "senses": {
         "units": "ft",
-        "darkvision": 720,
+        "darkvision": 120,
         "blindsight": 60
       },
       "init": {
@@ -64,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Metallic",
+        "subtype": "metallic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Bom",
       "cr": 21,
       "xp": {
-        "value": 33
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -107,7 +108,7 @@
     },
     "skills": {
       "dec": {
-        "value": 1,
+        "value": 2,
         "ability": "cha"
       },
       "prc": {
@@ -115,13 +116,13 @@
         "ability": "wis"
       },
       "ste": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       }
     }
   },
   "prototypeToken": {
-    "name": "Ancião Cobre Dragão",
+    "name": "Ancient Copper Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -134,12 +135,12 @@
   "items": [
     {
       "_id": "OgqRVHOd693Kd3BA",
-      "name": "Resistência Lendária (4/Day, or 5/Day in Lair)",
+      "name": "Resistência Lendária",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the dragon fails a saving throw, it can choose to suc- ceed instead .</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -148,13 +149,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "4",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -168,7 +164,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!zxDda5aHHQdPeQZA.OgqRVHOd693Kd3BA"
+      "_key": "!actors.items!wAtcg0ahb2BxkaMl.OgqRVHOd693Kd3BA"
     },
     {
       "_id": "fseDIQMMhYLcCYRK",
@@ -177,7 +173,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of (A) Slowing Breath or (B) Conjuração to cast Mind Spike (level 5 version) .</p>",
+          "value": "<p>The dragon makes three Dilacerar attacks. It can replace one attack with a use of (A) Sopro Lentificante or (B) Conjuração to cast Mind Spike (level 5 version).</p>",
           "chat": ""
         },
         "activation": {
@@ -202,16 +198,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!zxDda5aHHQdPeQZA.fseDIQMMhYLcCYRK"
+      "_key": "!actors.items!wAtcg0ahb2BxkaMl.fseDIQMMhYLcCYRK"
     },
     {
-      "_id": "69aK6q0V5Ad7v7AU",
-      "name": "Rend",
+      "_id": "AyAqm7663nw3FnqQ",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo :+ 15, alcance 15 ft. Hit : 19 (2d1 0 + 8) Cortante de dano plus 9 (2d8) Ácido de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +15, alcance 4,5 m. Acerto: 19 (2d10 + 8) dano cortante mais 9 (2d8) dano de ácido.</p>",
           "chat": ""
         },
         "activation": {
@@ -228,24 +224,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "BkguqJYBQSVvVVhO": {
+            "_id": "BkguqJYBQSVvVVhO",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "15",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "8",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "toHit": 15,
+            "attackType": "melee",
+            "damageFormula": "2d10+8",
+            "damageType": "slashing"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!zxDda5aHHQdPeQZA.69aK6q0V5Ad7v7AU"
+      "_key": "!actors.items!wAtcg0ahb2BxkaMl.AyAqm7663nw3FnqQ"
     },
     {
-      "_id": "rg95H7fE5hXgmpbu",
-      "name": "Ácido Breath (Recharge 5-6)",
+      "_id": "2I7fpNnaPKpLkjD3",
+      "name": "Sopro de Ácido (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Sa1Jing Throw: DC 22, cada criatura in an 90-foot-long, 70-foot-wide Line. Failure : 63 (14d8) Ácido de dano. Sucesso: Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 22, cada criatura in an 27 m-long, 3 m-wide Line. 63 (14d8) dano de ácido. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -268,92 +311,51 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "Z17lgf8lZDc3LQw3": {
+            "_id": "Z17lgf8lZDc3LQw3",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "22"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 22,
+            "saveAbility": "dex"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!zxDda5aHHQdPeQZA.rg95H7fE5hXgmpbu"
+      "_key": "!actors.items!wAtcg0ahb2BxkaMl.2I7fpNnaPKpLkjD3"
     },
     {
-      "_id": "W8lcSmhenRw0fMXL",
-      "name": "Slowing Breath",
+      "_id": "ggeM47ugW1pAm5bL",
+      "name": "Sopro Lentificante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Sa1Jing Throw: DC 22, cada criatura in a 90-foot Cone. Falha: The target can't take Reactions; its Speed is halved; and it can take either 80 COPPER DRAGONS COPPER DRAGON LAIRS Copper dragons typically inhabit multichamber caves and renovated ruins. The region containing an adult or ancient copper dragon's lair is changed by its presence, creating the following effects:</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!zxDda5aHHQdPeQZA.W8lcSmhenRw0fMXL"
-    },
-    {
-      "_id": "i4yt4meqX7ymWKC2",
-      "name": "Chatty Critters",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Tiny Beasts magically gain the ability to speak and understand Dracônico while withln 6 miles of the lair.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!zxDda5aHHQdPeQZA.i4yt4meqX7ymWKC2"
-    },
-    {
-      "_id": "89qCdeWJimL2h0Oz",
-      "name": "Giggle Fits",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Whenever a creature other than the dragon and its allies is within 1 mile of the lair and rolls a 1 on a D20 Test, it must succeed on a DC 15 Sabedoria saving throw or have the Incapacitado condition until the end of its next turn, as it is wracked with laughter. If the dragon dies or moves its lair elsewhere, these effects end immediately. an action or a Bonus Action on its turn, not both. This effect lasts until the end of its next turn .</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 22, cada criatura in a 27 m Cone. O alvo can't take Reactions; its Speed is halved; and it can take either an action or a Bonus Action on its turn, not both. This effect lasts until the end of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -371,8 +373,8 @@
           "subtype": ""
         },
         "activities": {
-          "e6ZUxSSOnYns6zB1": {
-            "_id": "e6ZUxSSOnYns6zB1",
+          "CujUON9vT4tMhyTJ": {
+            "_id": "CujUON9vT4tMhyTJ",
             "type": "save",
             "activation": {
               "type": "action",
@@ -382,11 +384,11 @@
             },
             "save": {
               "ability": [
-                "wis"
+                "con"
               ],
               "dc": {
                 "calculation": "",
-                "formula": "15"
+                "formula": "22"
               }
             },
             "damage": {
@@ -399,13 +401,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "saveDc": 15,
-            "saveAbility": "wis"
+            "saveDc": 22,
+            "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!zxDda5aHHQdPeQZA.89qCdeWJimL2h0Oz"
+      "_key": "!actors.items!wAtcg0ahb2BxkaMl.ggeM47ugW1pAm5bL"
     },
     {
       "_id": "TkkVmiiate5jP94R",
@@ -414,7 +416,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Carisma Teste de Resistência: DC 21, uma criatura the dragon can see within 720 feet. Falha: 37 (9d6) Psíquico de dano. Until the end of its next turn, o alvo rolls 1d8 whenever it makes an ability check or attack roll and subtracts the number rolled from the</p>",
+          "value": "<p>Teste de Resistência de Carisma: CD 21, uma criatura the dragon can see within 36 m. 31 (9d6) dano psíquico. Until the end of its next turn, o alvo rolls 1d8 whenever it makes an ability check or attack roll and subtracts the number rolled from the D20 Test. The dragon can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -452,25 +454,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 9,
-                  "denomination": 6,
-                  "bonus": "",
-                  "types": [
-                    "psychic"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -478,24 +462,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "9d6",
-            "damageType": "psychic",
             "saveDc": 21,
             "saveAbility": "cha"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!zxDda5aHHQdPeQZA.TkkVmiiate5jP94R"
+      "_key": "!actors.items!wAtcg0ahb2BxkaMl.TkkVmiiate5jP94R"
     },
     {
-      "_id": "aEq4Vaw1ORzygjCV",
-      "name": "D20 Test",
+      "_id": "OgelIcx4YpP8FIun",
+      "name": "Mind Jolt",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Falha ou Sucesso: The dragon can't take this ~ction again until th~ start of its next turn.</p>",
+          "value": "<p>The dragon uses Conjuração to cast Mind Spike (level 5 version). The dragon can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -520,16 +502,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!zxDda5aHHQdPeQZA.aEq4Vaw1ORzygjCV"
+      "_key": "!actors.items!wAtcg0ahb2BxkaMl.OgelIcx4YpP8FIun"
     },
     {
-      "_id": "tYRlgtlUp3w8esoz",
-      "name": "Mind jolt",
+      "_id": "xJSk9h22meqxVR4h",
+      "name": "Bote",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon uses Conjuração to cast Mind Spike (level 5 version) . The dragon can 't take this action again until the start of its next turn.</p>",
+          "value": "<p>A criatura se move até metade do seu Deslocamento e faz um ataque de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -554,41 +536,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!zxDda5aHHQdPeQZA.tYRlgtlUp3w8esoz"
-    },
-    {
-      "_id": "k4rYEc6Ud6EdxcTj",
-      "name": "Pounce",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The dragon moves up to half its Speed, and it makes one Rend attack. CouATL Guardian Manifestation of the Divine</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "legendary",
-          "value": 1,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!zxDda5aHHQdPeQZA.k4rYEc6Ud6EdxcTj"
+      "_key": "!actors.items!wAtcg0ahb2BxkaMl.xJSk9h22meqxVR4h"
     },
     {
       "_id": "PRUvdvv7uqzvqopO",
@@ -597,7 +545,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 21) : À Vontade: Detect Magic , Mind Spike (level 5 version), Mi- nor Illusion, Shapechange (Beast or Humanoid form only, no Temporary Pontos de Vida gained from the spell, and no Concentration or Temporary Pontos de Vida re- quired to maintain the spell) 1/Dia Each: Greater Restoration, Major Image, Project Image</p>",
+          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 21):</p>",
           "chat": ""
         },
         "activation": {
@@ -622,13 +570,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!zxDda5aHHQdPeQZA.PRUvdvv7uqzvqopO"
+      "_key": "!actors.items!wAtcg0ahb2BxkaMl.PRUvdvv7uqzvqopO"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Ancient Copper Dragon",
-      "page": 82,
+      "page": 80,
       "cr": "21",
       "warnings": []
     }

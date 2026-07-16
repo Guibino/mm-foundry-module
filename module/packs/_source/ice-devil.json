@@ -1,8 +1,8 @@
 {
-  "_id": "RbVEN86umP3VQ70r",
-  "_key": "!actors!RbVEN86umP3VQ70r",
+  "_id": "N2CJ3bdzpbOkjCFr",
+  "_key": "!actors!N2CJ3bdzpbOkjCFr",
   "folder": "Hp5o2ufz9hhrO2ew",
-  "name": "Ice Diabo",
+  "name": "Ice Devil",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/ice-devil.webp",
   "system": {
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 18,
         "formula": ""
       },
       "hp": {
@@ -52,7 +52,7 @@
       },
       "senses": {
         "units": "ft",
-        "blindsight": 60
+        "blindsight": 120
       },
       "init": {
         "ability": "dex",
@@ -62,14 +62,14 @@
     "details": {
       "type": {
         "value": "fiend",
-        "subtype": "DetJil",
+        "subtype": "devil",
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Lawful",
+      "alignment": "Leal e Mau",
       "cr": 14,
       "xp": {
-        "value": 11500
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -104,26 +104,26 @@
       },
       "languages": {
         "value": [],
-        "custom": "Infernal"
+        "custom": ""
       }
     },
     "skills": {
       "ins": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       },
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       },
       "per": {
-        "value": 1,
+        "value": 2,
         "ability": "cha"
       }
     }
   },
   "prototypeToken": {
-    "name": "Ice Diabo",
+    "name": "Ice Devil",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -135,13 +135,13 @@
   },
   "items": [
     {
-      "_id": "GointAU76Or2ggZf",
-      "name": "Diabolical Restoration",
+      "_id": "oEgakEjj5Ld3SuYI",
+      "name": "Restauração Diabólica",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Pontos de Vida somewhere in the Nine Hells. 176 /\\ ICE DEVIL</p>",
+          "value": "<p>Se a criatura morrer fora dos Nove Infernos, o corpo dela desaparece em fumaça sulfurosa e ela ganha um novo corpo instantaneamente, revivendo com todos os seus Pontos de Vida em algum lugar dos Nove Infernos.</p>",
           "chat": ""
         },
         "activation": {
@@ -165,16 +165,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!RbVEN86umP3VQ70r.GointAU76Or2ggZf"
+      "_key": "!actors.items!N2CJ3bdzpbOkjCFr.oEgakEjj5Ld3SuYI"
     },
     {
-      "_id": "edfS8CDi0lwtSM7G",
-      "name": "Magic Resistance",
+      "_id": "dglrBb4m6XGcahRH",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The devil has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -198,7 +198,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!RbVEN86umP3VQ70r.edfS8CDi0lwtSM7G"
+      "_key": "!actors.items!N2CJ3bdzpbOkjCFr.dglrBb4m6XGcahRH"
     },
     {
       "_id": "XxosoJWYIa4bGfQG",
@@ -207,7 +207,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The devil makes three Ice Spear attacks. It can replace one attack with a Tail attack.</p>",
+          "value": "<p>The devil makes three Ice Lança attacks. It can replace one attack with a Cauda attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -232,16 +232,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!RbVEN86umP3VQ70r.XxosoJWYIa4bGfQG"
+      "_key": "!actors.items!N2CJ3bdzpbOkjCFr.XxosoJWYIa4bGfQG"
     },
     {
-      "_id": "koQMYXf8L4EsePWV",
-      "name": "Ice Spear",
+      "_id": "SsUPuPwcoRy1jauH",
+      "name": "Ice Lança",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância:+ l 0, alcance 5 ft. or range 30/120 ft. Acerto: 14 (2d8 + 5) Perfurante de dano plus 10 (3d6) Frio de dano._ Until the end of its next turn, o alvo can't take a Bonus Action or Reaction, its Speed decreases by l 0 feet and it can move or take one action on its turn, riot both. Hit or Erro: The spear magically returns to the devil's hand immediately after a ranged attack.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +10, alcance 1,5 m. or distância 9/36 m. Acerto: 14 (2d8 + 5) dano perfurante mais 10 (3d6) dano de frio. Until the end of its next turn, o alvo can't take a Bonus Action or Reaction, its Speed decreases by 3 m, and it can move or take one action on its turn, not both. The spear magically returns to the devil's hand immediately after a ranged attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -258,27 +258,152 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "KHvpkJb7nFNg1VFv": {
+            "_id": "KHvpkJb7nFNg1VFv",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "5",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 10,
+            "attackType": "ranged",
             "damageFormula": "2d8+5",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!RbVEN86umP3VQ70r.koQMYXf8L4EsePWV"
+      "_key": "!actors.items!N2CJ3bdzpbOkjCFr.SsUPuPwcoRy1jauH"
     },
     {
-      "_id": "vXu9LVGVL7d68Xxg",
-      "name": "Tail",
+      "_id": "xZDrTPj5IU9UPPvn",
+      "name": "Cauda",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>MeleeAttack Roll:+10, alcance 10ft. Acerto: 15 (3d6 + 5) Concussão de dano plus 18 (4d8) Frio de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 3 m. Acerto: 15 (3d6 + 5) dano de concussão mais 18 (4d8) dano de frio.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "4gDU6urzS7SLtsVV": {
+            "_id": "4gDU6urzS7SLtsVV",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 6,
+                  "bonus": "5",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 10,
+            "attackType": "melee",
+            "damageFormula": "3d6+5",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!N2CJ3bdzpbOkjCFr.xZDrTPj5IU9UPPvn"
+    },
+    {
+      "_id": "7o73FY7pjJ82YgjA",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The devil casts Wall of Ice (level 8 version), requiring no spell components and using Inteligência as the spellcasting ability (spell save CD 17).</p>",
           "chat": ""
         },
         "activation": {
@@ -299,60 +424,17 @@
       },
       "flags": {
         "mm2024": {
-          "mechanics": {
-            "damageFormula": "3d6+5",
-            "damageType": "bludgeoning"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!RbVEN86umP3VQ70r.vXu9LVGVL7d68Xxg"
-    },
-    {
-      "_id": "u1QZoBMxHjoHoiYd",
-      "name": "Ice Wall (Recharge 6)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The devil casts Wall of Ice (level 8 2 version), requiring no spell components and using In- I Vl telligence as the spellcasting a~ility (spell save DC 17) . z IMP Tiny Fiend (Devil), Lawful Evil ~ AC 13 In itiative +3 (13) HP 21 (6d4 + 6) Speed 20 ft., Fly 40 ft. MOD S AV E MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "recharge",
-              "type": "recoverAll",
-              "formula": "6"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
           "mechanics": {},
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!RbVEN86umP3VQ70r.u1QZoBMxHjoHoiYd"
+      "_key": "!actors.items!N2CJ3bdzpbOkjCFr.7o73FY7pjJ82YgjA"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Ice Devil",
-      "page": 178,
+      "page": 176,
       "cr": "14",
       "warnings": []
     }

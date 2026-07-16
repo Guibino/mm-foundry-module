@@ -1,6 +1,6 @@
 {
-  "_id": "eKKhcF4mycfVADBH",
-  "_key": "!actors!eKKhcF4mycfVADBH",
+  "_id": "cq89WZ57ONhlFKty",
+  "_key": "!actors!cq89WZ57ONhlFKty",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Archelon",
   "type": "npc",
@@ -8,7 +8,7 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 78,
+        "value": 18,
         "proficient": 0
       },
       "dex": {
@@ -16,8 +16,8 @@
         "proficient": 0
       },
       "con": {
-        "value": 73,
-        "proficient": 1
+        "value": 13,
+        "proficient": 0
       },
       "int": {
         "value": 4,
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 17,
         "formula": ""
       },
       "hp": {
@@ -48,6 +48,7 @@
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 20,
         "swim": 80
       },
       "senses": {
@@ -61,14 +62,14 @@
     "details": {
       "type": {
         "value": "beast",
-        "subtype": "Di n os aur",
+        "subtype": "dinosaur",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Sem Tendência",
       "cr": 4,
       "xp": {
-        "value": 7
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,10 +98,15 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Archelon",
@@ -115,13 +121,13 @@
   },
   "items": [
     {
-      "_id": "yHyx4WNIivi2ZlVE",
-      "name": "Amphibious",
+      "_id": "XWZtc5Zai3f5Zbkl",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The archelon can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,7 +151,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eKKhcF4mycfVADBH.yHyx4WNIivi2ZlVE"
+      "_key": "!actors.items!cq89WZ57ONhlFKty.XWZtc5Zai3f5Zbkl"
     },
     {
       "_id": "L1YpttV3Xd5IMoQi",
@@ -154,7 +160,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The archelon makes two Bite attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Mordida.</p>",
           "chat": ""
         },
         "activation": {
@@ -179,16 +185,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eKKhcF4mycfVADBH.L1YpttV3Xd5IMoQi"
+      "_key": "!actors.items!cq89WZ57ONhlFKty.L1YpttV3Xd5IMoQi"
     },
     {
-      "_id": "liCwyzYysHzQrK8T",
-      "name": "Bite",
+      "_id": "remIfC6hSNQ7XaGn",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>MeleeAttack Ro/1:+6, alcance 5ft. Acerto: 74 (3d6+4) Perfurante de dano. BABOON Small Beast, Unaligned AC 12 Initiat ive +2 (12) HP 3 (7d6) S peed 30 ft., Climb 30 ft. MOD SAVE MOD SAV E MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 14 (3d6 + 4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -205,24 +211,68 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "4BGRfHSVCOxzpZGe": {
+            "_id": "4BGRfHSVCOxzpZGe",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 6,
+            "attackType": "melee",
             "damageFormula": "3d6+4",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eKKhcF4mycfVADBH.liCwyzYysHzQrK8T"
+      "_key": "!actors.items!cq89WZ57ONhlFKty.remIfC6hSNQ7XaGn"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Archelon",
-      "page": 351,
+      "page": 349,
       "cr": "4",
       "warnings": []
     }

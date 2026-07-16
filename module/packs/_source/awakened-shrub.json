@@ -1,6 +1,6 @@
 {
-  "_id": "Ane1mlkKYCbfnhab",
-  "_key": "!actors!Ane1mlkKYCbfnhab",
+  "_id": "OXUo5RQn6aXkX9QL",
+  "_key": "!actors!OXUo5RQn6aXkX9QL",
   "folder": "UIhMG4gNrr0aGWHc",
   "name": "Awakened Shrub",
   "type": "npc",
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 9,
         "formula": ""
       },
       "hp": {
@@ -68,7 +68,7 @@
       "alignment": "Neutro",
       "cr": 0,
       "xp": {
-        "value": 10
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -90,8 +90,10 @@
         "custom": ""
       },
       "dv": {
-        "value": [],
-        "custom": "Fi re"
+        "value": [
+          "fire"
+        ],
+        "custom": ""
       },
       "ci": {
         "value": [],
@@ -117,13 +119,13 @@
   },
   "items": [
     {
-      "_id": "XNJAX705bJVZSlm4",
-      "name": "Habilidade",
+      "_id": "5exQac1gdngHiMoP",
+      "name": "Rake",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>lJ <( Attack Roll:+ Acerto: 1 Slash- 0... Rake. Melee 1,- alcance 5 ft. ing de dano. AWAKENED TREE Huge Plant Neutral AC 13 Iniciativa -2 (8) HP 59 (7d1 2 + 14)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +1, alcance 1,5 m. Acerto: 1 dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -140,21 +142,48 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "Itt3mmyfJOYSKdls": {
+            "_id": "Itt3mmyfJOYSKdls",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "1",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "toHit": 1,
+            "attackType": "melee"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Ane1mlkKYCbfnhab.XNJAX705bJVZSlm4"
+      "_key": "!actors.items!OXUo5RQn6aXkX9QL.5exQac1gdngHiMoP"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Awakened Shrub",
-      "page": 25,
+      "page": 23,
       "cr": "0",
       "warnings": []
     }

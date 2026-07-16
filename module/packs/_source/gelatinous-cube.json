@@ -1,6 +1,6 @@
 {
-  "_id": "guq7s0Dg0C3RijVx",
-  "_key": "!actors!guq7s0Dg0C3RijVx",
+  "_id": "5pQyfOUojs3OnZA0",
+  "_key": "!actors!5pQyfOUojs3OnZA0",
   "folder": "BaJiyGJk3g8zXFNV",
   "name": "Gelatinous Cube",
   "type": "npc",
@@ -69,7 +69,7 @@
       "alignment": "Sem Tendência",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -98,13 +98,16 @@
         "value": [
           "blinded",
           "charmed",
-          "deafened"
+          "deafened",
+          "exhaustion",
+          "frightened",
+          "prone"
         ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
@@ -128,7 +131,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cube fills its entire space and is trans- parent. Other creatures can enter that space, but a creature that does so is subjected to the cube's Engulf and has Disadvantage on the saving throw. Creatures inside the cube have Total Cover, and the cube can hold one Large creature or up to four Medium or Small creatures inside itself at a time. As an action, a creature within 5 feet of the cube can pull a creature or an object out of the cube by succeed- ing on a DC 12 Força (Athletics) check, and the Cl::'. z puller takes 10 (3d6) Ácido de dano. D.:'. Transparent. Even when the cube is in plain sight, a 0 creature must succeed on a DC 15 Sabedoria (Percep- GELATINOUS CUBE Dungeon-Scouring Block of Ooze</p>",
+          "value": "<p>The cube fills its entire space and is transparent. Other creatures can enter that space, but uma criatura that does so is subjected to the cube's Engulf and has Desvantagem on the saving throw.\nCreatures inside the cube have Total Cover, and the cube can hold one Large creature or up to four Medium or Small creatures inside itself at a time.\nAs an action, uma criatura within 1,5 m of the cube can pull uma criatura or an object out of the cube by succeeding on a CD 12 Força (Athletics) check, and the puller takes 10 (3d6) dano de ácido.</p>",
           "chat": ""
         },
         "activation": {
@@ -155,13 +158,191 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!guq7s0Dg0C3RijVx.a6EUNNnvai5bUBcK"
+      "_key": "!actors.items!5pQyfOUojs3OnZA0.a6EUNNnvai5bUBcK"
+    },
+    {
+      "_id": "pmgUNA3hYWWMOD8d",
+      "name": "Transparent",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Even when the cube is in plain sight, uma criatura must succeed on a CD 15 Sabedoria (Perception) check to notice the cube if the creature hasn't witnessed the cube move or otherwise act.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 15,
+            "saveAbility": "wis"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5pQyfOUojs3OnZA0.pmgUNA3hYWWMOD8d"
+    },
+    {
+      "_id": "i8P6luLwhZ5fS3ER",
+      "name": "Pseudópode",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 12 (3d6 + 2) dano de ácido.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "BwQyG43xojMLfJ7a": {
+            "_id": "BwQyG43xojMLfJ7a",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "acid"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "3d6+2",
+            "damageType": "acid"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5pQyfOUojs3OnZA0.i8P6luLwhZ5fS3ER"
+    },
+    {
+      "_id": "n7PA3IqGBt8rBX3w",
+      "name": "Engulf",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The cube moves up to its Speed without provoking Opportunity Attacks. The cube can move through the spaces of Large or smaller creatures if it has room inside itself to contain them (see the Ooze Cube trait). Teste de Resistência de Destreza: CD 12, cada criatura whose space the cube enters for the first time during this move. 10 (3d6) dano de ácido, and o alvo is engulfed. An engulfed target is suffocating, can't cast spells with a Verbal component, fica com a condição Impedido, and takes 10 (3d6) dano de ácido at the start of each of the cube's turns. When the cube moves, the engulfed target moves with it. An engulfed target can try to escape by taking an action to make a CD 12 Força (Athletics) check. On a successful check, o alvo escapes and enters the nearest unoccupied space. Metade do dano, and o alvo moves to an unoccupied space within 1,5 m of the cube. If there is no unoccupied space, o alvo fails the save instead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "WrseSraUvcw8xjQi": {
+            "_id": "WrseSraUvcw8xjQi",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "12"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 12,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5pQyfOUojs3OnZA0.n7PA3IqGBt8rBX3w"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Gelatinous Cube",
-      "page": 131,
+      "page": 129,
       "cr": "2",
       "warnings": []
     }

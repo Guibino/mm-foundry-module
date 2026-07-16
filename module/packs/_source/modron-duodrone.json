@@ -1,6 +1,6 @@
 {
-  "_id": "GfbOa4fYGgCArevy",
-  "_key": "!actors!GfbOa4fYGgCArevy",
+  "_id": "WHBoh5MXk90DAppa",
+  "_key": "!actors!WHBoh5MXk90DAppa",
   "folder": "CVeezowVb7BNP8yc",
   "name": "Modron Duodrone",
   "type": "npc",
@@ -69,7 +69,7 @@
       "alignment": "Leal e Neutro",
       "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -93,12 +93,14 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Mod ro n"
+        "custom": "Modron"
       }
     },
     "skills": {}
@@ -116,13 +118,13 @@
   },
   "items": [
     {
-      "_id": "rBrxkrP0b70w0DyL",
-      "name": "Disintegration",
+      "_id": "zVw41ZxZTkEE6O96",
+      "name": "Desintegração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the modron dies, it disintegrates into dust, leaving behind anything it was wearing or carrying.</p>",
+          "value": "<p>Se a criatura morrer, ela se desintegra em pó, deixando para trás tudo o que estava vestindo ou carregando.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,7 +148,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GfbOa4fYGgCArevy.rBrxkrP0b70w0DyL"
+      "_key": "!actors.items!WHBoh5MXk90DAppa.zVw41ZxZTkEE6O96"
     },
     {
       "_id": "LSZOj1rC5LxyT0Nm",
@@ -180,7 +182,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GfbOa4fYGgCArevy.LSZOj1rC5LxyT0Nm"
+      "_key": "!actors.items!WHBoh5MXk90DAppa.LSZOj1rC5LxyT0Nm"
     },
     {
       "_id": "mrnML9f8RllQoJJ0",
@@ -189,7 +191,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +3, alcance z 5 ft. or range 30 ft. Acerto: 4 (1d6 + l) Energia de dano. Hit 0 or Erro: The blade magically returns to the modron's ~ hand immediately after a ranged attack. • MOD RON TRIDRONE Tridrones oversee lesser modrons and lead them in battle. They're suspicious of any data provided by non-modrons. MODRON TRIDRONE Medium Co nstruct, Lawful Neutral AC 15 Iniciativa + l ( 11) HP 16(3d8+3) Speed 30 ft. MOD SAVE MOD SAV E MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +3, alcance 1,5 m. or distância 9 m. Acerto: 4 (1d6 + 1) dano de energia. The blade magically returns to the modron's hand immediately after a ranged attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -229,15 +231,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "1",
                   "types": [
                     "force"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "1d6+l"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -255,19 +257,19 @@
           "mechanics": {
             "toHit": 3,
             "attackType": "ranged",
-            "damageFormula": "1d6+l",
+            "damageFormula": "1d6+1",
             "damageType": "force"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GfbOa4fYGgCArevy.mrnML9f8RllQoJJ0"
+      "_key": "!actors.items!WHBoh5MXk90DAppa.mrnML9f8RllQoJJ0"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Modron Duodrone",
-      "page": 219,
+      "page": 217,
       "cr": "1/4",
       "warnings": []
     }

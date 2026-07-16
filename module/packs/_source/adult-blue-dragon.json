@@ -1,8 +1,8 @@
 {
-  "_id": "WWDvR5WQX6kxi6EH",
-  "_key": "!actors!WWDvR5WQX6kxi6EH",
+  "_id": "0xBOrdfHLd15ixmI",
+  "_key": "!actors!0xBOrdfHLd15ixmI",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Adulto Azul Dragão",
+  "name": "Adult Blue Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/adult-blue-dragon.webp",
   "system": {
@@ -65,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Chromatic",
+        "subtype": "chromatic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Mau",
       "cr": 16,
       "xp": {
-        "value": 15000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -112,13 +112,13 @@
         "ability": "wis"
       },
       "ste": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       }
     }
   },
   "prototypeToken": {
-    "name": "Adulto Azul Dragão",
+    "name": "Adult Blue Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -131,12 +131,12 @@
   "items": [
     {
       "_id": "qQlWnMkGHkQhgIDI",
-      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "name": "Resistência Lendária",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the dragon fails a saving throw, it can choose to suc- ceed instead.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,13 +145,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "3",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -165,16 +160,50 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!WWDvR5WQX6kxi6EH.qQlWnMkGHkQhgIDI"
+      "_key": "!actors.items!0xBOrdfHLd15ixmI.qQlWnMkGHkQhgIDI"
     },
     {
-      "_id": "7v7JNHiT6pa7EIJu",
-      "name": "Habilidade",
+      "_id": "cZuhY1u7rzEiqoFc",
+      "name": "Ataque Múltiplo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>z Ataque Múltiplo. The dragon makes three Rend attacks. z It can replace one attack with a use of Conjuração to l/) cast Shatter. z Rend. Rolagem de Ataque Corpo a Corpo: +12, alcance 10 ft. Acerto: 16 (2d8 z + 7) Cortante de dano plus 5 (1d10) Elétrico de dano.</p>",
+          "value": "<p>The dragon makes three Dilacerar attacks. It can replace one attack with a use of Conjuração to cast Shatter.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!0xBOrdfHLd15ixmI.cZuhY1u7rzEiqoFc"
+    },
+    {
+      "_id": "XdXCce87c5iVMz6D",
+      "name": "Dilacerar",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +12, alcance 3 m. Acerto: 16 (2d8 + 7) dano cortante mais 5 (1d10) dano elétrico.</p>",
           "chat": ""
         },
         "activation": {
@@ -192,8 +221,8 @@
           "subtype": ""
         },
         "activities": {
-          "nIl1sj3WA18urOND": {
-            "_id": "nIl1sj3WA18urOND",
+          "OGD2o5xp0dVD1LWh": {
+            "_id": "OGD2o5xp0dVD1LWh",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -214,15 +243,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "7",
                   "types": [
                     "slashing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "2d8z+7"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -240,22 +269,22 @@
           "mechanics": {
             "toHit": 12,
             "attackType": "melee",
-            "damageFormula": "2d8z+7",
+            "damageFormula": "2d8+7",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!WWDvR5WQX6kxi6EH.7v7JNHiT6pa7EIJu"
+      "_key": "!actors.items!0xBOrdfHLd15ixmI.XdXCce87c5iVMz6D"
     },
     {
-      "_id": "bx1w2uDtPDhmnlk2",
-      "name": "Elétrico Breath (Recharge 5-6)",
+      "_id": "7n1eq4qCjfQYW7F0",
+      "name": "Sopro Elétrico (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 19, cada criatura in a 90-foot-long, 5-foot- wide Line. Falha: 60 (11d10) Elétrico de dano. Suc- cess: Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 19, cada criatura in a 27 m-long, 1,5 m-wide Line. 60 (11d10) dano elétrico. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -279,8 +308,8 @@
           "subtype": ""
         },
         "activities": {
-          "k7ebPnOwKbmMpGfB": {
-            "_id": "k7ebPnOwKbmMpGfB",
+          "1bLGKjbOEYMuanTd": {
+            "_id": "1bLGKjbOEYMuanTd",
             "type": "save",
             "activation": {
               "type": "action",
@@ -299,25 +328,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 11,
-                  "denomination": 10,
-                  "bonus": "",
-                  "types": [
-                    "lightning"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -325,15 +336,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "11d10",
-            "damageType": "lightning",
             "saveDc": 19,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!WWDvR5WQX6kxi6EH.bx1w2uDtPDhmnlk2"
+      "_key": "!actors.items!0xBOrdfHLd15ixmI.7n1eq4qCjfQYW7F0"
     },
     {
       "_id": "HEdhWFWfb3ck0fxV",
@@ -342,7 +351,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon uses Conjuração to cast In- visibility on itself, and it can fly up to half its Fly Speed. The dragon can't take this action again until the start of its next turn. •</p>",
+          "value": "<p>The dragon uses Conjuração to cast Invisibility on itself, and it can fly up to half its Fly Speed. The dragon can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -367,7 +376,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!WWDvR5WQX6kxi6EH.HEdhWFWfb3ck0fxV"
+      "_key": "!actors.items!0xBOrdfHLd15ixmI.HEdhWFWfb3ck0fxV"
     },
     {
       "_id": "S0ed5Y2xOqJyovm9",
@@ -376,7 +385,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon uses Conjuração to cast Shat- ter. The dragon can 't take th is a ct ion again u n ti I the start of its next turn.</p>",
+          "value": "<p>The dragon uses Conjuração to cast Shatter. The dragon can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -401,16 +410,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!WWDvR5WQX6kxi6EH.S0ed5Y2xOqJyovm9"
+      "_key": "!actors.items!0xBOrdfHLd15ixmI.S0ed5Y2xOqJyovm9"
     },
     {
-      "_id": "MQDmPxVtJIoriCKu",
-      "name": "Tail Swipe",
+      "_id": "pd1nEhkilblvlhA5",
+      "name": "Cauda Swipe",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes one Rend attack. BLUE DRAGONS 49 YOUNG BLUE DRAGON Young blue dragons seek to establish themselves as forces to be feared. Many claim isolated communi -' ties to rule over or ancient ruins where they might find magical paths to power. These blue dragons might temporarily cooperate with other dragons or powerful villains to gain followers and influence. ADULT BLUE DRAGON ~ Adult blue dragons command small empires, which might be territories of subjugated followers, shad- owy criminal networks, or cultic enclaves. Endlessly suspicious and wary of rivals, these dragons enact elaborate schemes to ruin their foes, test the loyalty of their servants, and ensure their dominance for centuries. ANCIENT BLUE DRAGON • Ancient blue dragons think : beyond dominating groups of short-lived servants. Instead, they seek to claim their places above other dragons and their world's most powerful inhabitants. If world dom- ination seems too tedious or cliche, these dragons might seek to seize control of extraplanar realms, ANCIENT BLUE DRAGON Gargantuan D ragon (Chromatic) Lawfu l Evil AC 22 Iniciativa+ 14 (24) HP 481 (26d20 + 208) . Speed 40 ft., Burrow 40 ft., Fly 80 ft. MOD SAVE MOD SA VE MOD SAVE</p>",
+          "value": "<p>The dragon makes one Dilacerar attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -435,7 +444,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!WWDvR5WQX6kxi6EH.MQDmPxVtJIoriCKu"
+      "_key": "!actors.items!0xBOrdfHLd15ixmI.pd1nEhkilblvlhA5"
     },
     {
       "_id": "851YaBCqqidNkuh5",
@@ -444,7 +453,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 18): À Vontade: Detect Magic, Invisibility, Mage Hand, Shatter 1/Dia Each: Scrying, Sending</p>",
+          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 18):</p>",
           "chat": ""
         },
         "activation": {
@@ -469,13 +478,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!WWDvR5WQX6kxi6EH.851YaBCqqidNkuh5"
+      "_key": "!actors.items!0xBOrdfHLd15ixmI.851YaBCqqidNkuh5"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Adult Blue Dragon",
-      "page": 51,
+      "page": 49,
       "cr": "16",
       "warnings": []
     }

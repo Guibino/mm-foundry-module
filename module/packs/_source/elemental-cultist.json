@@ -1,6 +1,6 @@
 {
-  "_id": "cNEwNRf9ruOQyGsI",
-  "_key": "!actors!cNEwNRf9ruOQyGsI",
+  "_id": "GAMGSvvU1qf7fgyz",
+  "_key": "!actors!GAMGSvvU1qf7fgyz",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Elemental Cultist",
   "type": "npc",
@@ -68,7 +68,7 @@
       "alignment": "Caótico e Mau",
       "cr": 8,
       "xp": {
-        "value": 3900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -134,7 +134,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cultist makes three attacks, using Ele- mental Flail or Elemental Claw in any combination.</p>",
+          "value": "<p>The cultist makes three attacks, using Elemental Mangual or Elemental Garra in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -159,16 +159,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!cNEwNRf9ruOQyGsI.duCvnvdCqYahCfkG"
+      "_key": "!actors.items!GAMGSvvU1qf7fgyz.duCvnvdCqYahCfkG"
     },
     {
-      "_id": "vu2u29wGvRRLC06U",
-      "name": "Elemental Flail",
+      "_id": "SWbw6gnbck5232HO",
+      "name": "Elemental Mangual",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 25 (6d6 + 4) de dano of a type chosen by the cultist: Ácido, Frio, Fogo, Elétrico, or Trovejante.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 25 (6d6 + 4) de dano of a type chosen by the cultist: Ácido, Frio, Fogo, Elétrico, or Trovejante.</p>",
           "chat": ""
         },
         "activation": {
@@ -186,8 +186,8 @@
           "subtype": ""
         },
         "activities": {
-          "HLStlgD06GlyTfKo": {
-            "_id": "HLStlgD06GlyTfKo",
+          "IzNNdBFCQoiCZF7G": {
+            "_id": "IzNNdBFCQoiCZF7G",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -220,16 +220,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!cNEwNRf9ruOQyGsI.vu2u29wGvRRLC06U"
+      "_key": "!actors.items!GAMGSvvU1qf7fgyz.SWbw6gnbck5232HO"
     },
     {
-      "_id": "FWlrit6WTZAqAY5E",
-      "name": "Elemental Claw",
+      "_id": "eIfEvclRq0QT5G0g",
+      "name": "Elemental Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +7, ran. ge 120 ft . Acerto: 22 (4d10) de dano of a type chosen by the cultist:</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +7, distância 36 m. Acerto: 22 (4d10) de dano of a type chosen by the cultist: Ácido, Frio, Fogo, Elétrico, or Trovejante. If o alvo is a Medium or smaller creature, the cultist moves o alvo up to 3 m straight toward or away from itself.</p>",
           "chat": ""
         },
         "activation": {
@@ -247,8 +247,8 @@
           "subtype": ""
         },
         "activities": {
-          "rM1rJCTPX6j65tRR": {
-            "_id": "rM1rJCTPX6j65tRR",
+          "VOdFscypDsPGN5jh": {
+            "_id": "VOdFscypDsPGN5jh",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -281,41 +281,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!cNEwNRf9ruOQyGsI.FWlrit6WTZAqAY5E"
-    },
-    {
-      "_id": "STLHj5P4t25PSkU7",
-      "name": "Ácido, Frio, Fogo, Elétrico, or Trovejante",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If o alvo is a Medium or smaller creature, the cultist moves the tar- get up to 10 feet straight toward or away from itself.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!cNEwNRf9ruOQyGsI.STLHj5P4t25PSkU7"
+      "_key": "!actors.items!GAMGSvvU1qf7fgyz.eIfEvclRq0QT5G0g"
     },
     {
       "_id": "NGcqQpwzYzcDwaxw",
@@ -324,7 +290,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: The cultist _J takes Ácido, Frio, Fogo, Elétrico, or Trovejante de dano. LL 1.1.J Response: 0:: The cultist gives itself Resistance to that in- =i stance of de dano and gains 10 Temporary Pontos de Vida. FIEND CULTIST Medium or Small Humanoid, Neutral Ev il- AC 16 Iniciativa +5 (15) HP 127 (17d8 + 51) Speed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>The cultist takes Ácido, Frio, Fogo, Elétrico, or dano trovejante. The cultist gives itself Resistance to that instance of de dano and gains 10 Temporary Pontos de Vida.</p>",
           "chat": ""
         },
         "activation": {
@@ -354,7 +320,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!cNEwNRf9ruOQyGsI.NGcqQpwzYzcDwaxw"
+      "_key": "!actors.items!GAMGSvvU1qf7fgyz.NGcqQpwzYzcDwaxw"
     },
     {
       "_id": "lHnueUxOfz2rJabt",
@@ -363,7 +329,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cultist casts one of the following spells, using Sabedoria as the spellcasting ability (spell save DC 15): À Vontade: Elementalism, Mage Hand</p>",
+          "value": "<p>The cultist casts one of the following spells, using Sabedoria as the spellcasting ability (spell save CD 15):</p>",
           "chat": ""
         },
         "activation": {
@@ -388,13 +354,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!cNEwNRf9ruOQyGsI.lHnueUxOfz2rJabt"
+      "_key": "!actors.items!GAMGSvvU1qf7fgyz.lHnueUxOfz2rJabt"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Elemental Cultist",
-      "page": 89,
+      "page": 87,
       "cr": "8",
       "warnings": []
     }

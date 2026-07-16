@@ -1,6 +1,6 @@
 {
-  "_id": "eTS5xnqZQhHOt7SE",
-  "_key": "!actors!eTS5xnqZQhHOt7SE",
+  "_id": "vrVdyCF3Cact12gq",
+  "_key": "!actors!vrVdyCF3Cact12gq",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Merrow",
   "type": "npc",
@@ -8,7 +8,7 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 78,
+        "value": 18,
         "proficient": 0
       },
       "dex": {
@@ -29,7 +29,7 @@
       },
       "cha": {
         "value": 9,
-        "proficient": 1
+        "proficient": 0
       }
     },
     "attributes": {
@@ -41,7 +41,7 @@
       "hp": {
         "value": 45,
         "max": 45,
-        "formula": "6d10+ 12",
+        "formula": "6d10 + 12",
         "temp": null,
         "tempmax": null
       },
@@ -52,7 +52,8 @@
         "swim": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -67,7 +68,7 @@
         "custom": ""
       },
       "alignment": "Caótico e Mau",
-      "cr": 0,
+      "cr": 2,
       "xp": {
         "value": 0
       },
@@ -98,7 +99,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Abissal, Primordial (Aquan) '"
+        "custom": "Abissal, Primordial (Aquan)"
       }
     },
     "skills": {}
@@ -116,13 +117,13 @@
   },
   "items": [
     {
-      "_id": "MHnAppsKbqPD8Ffs",
-      "name": "Amphibious",
+      "_id": "XyfE6VoTg4S0zXba",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The merrow can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,7 +147,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eTS5xnqZQhHOt7SE.MHnAppsKbqPD8Ffs"
+      "_key": "!actors.items!vrVdyCF3Cact12gq.XyfE6VoTg4S0zXba"
     },
     {
       "_id": "VvN5NayduBkY0Yy0",
@@ -155,7 +156,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The merrow makes two attacks, using Bite, Claw, or Harpoon in any combination.</p>",
+          "value": "<p>The merrow makes two attacks, using Mordida, Garra, or Harpoon in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -180,16 +181,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eTS5xnqZQhHOt7SE.VvN5NayduBkY0Yy0"
+      "_key": "!actors.items!vrVdyCF3Cact12gq.VvN5NayduBkY0Yy0"
     },
     {
-      "_id": "SO4aKxR6Q98aC9Wo",
-      "name": "Bite",
+      "_id": "JozR0VODSA77WnCK",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 6 (1d4 + 4) Perfurante de dano, and o alvo has the Envenenado con- dition until the end of the merrow's next turn.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 6 (1d4 + 4) dano perfurante, and o alvo fica com a condição Envenenado until the end of the merrow's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -207,8 +208,8 @@
           "subtype": ""
         },
         "activities": {
-          "tbghUCWmj9694Q95": {
-            "_id": "tbghUCWmj9694Q95",
+          "stgd3xonq4guyqhq": {
+            "_id": "stgd3xonq4guyqhq",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -261,16 +262,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eTS5xnqZQhHOt7SE.SO4aKxR6Q98aC9Wo"
+      "_key": "!actors.items!vrVdyCF3Cact12gq.JozR0VODSA77WnCK"
     },
     {
-      "_id": "NqQhzYYP2D2oTAaX",
-      "name": "Claw",
+      "_id": "8A5fC8PcloGDZhke",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 9 (2d4 + 4)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 9 (2d4 + 4) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -288,8 +289,8 @@
           "subtype": ""
         },
         "activities": {
-          "2DGn5zAvuxKHL7ux": {
-            "_id": "2DGn5zAvuxKHL7ux",
+          "8id2TsnGXwSYVEKL": {
+            "_id": "8id2TsnGXwSYVEKL",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -308,7 +309,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "4",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -317,55 +336,23 @@
         "mm2024": {
           "mechanics": {
             "toHit": 6,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d4+4",
+            "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eTS5xnqZQhHOt7SE.NqQhzYYP2D2oTAaX"
+      "_key": "!actors.items!vrVdyCF3Cact12gq.8A5fC8PcloGDZhke"
     },
     {
-      "_id": "Sk6oq4bItnEJTGHl",
-      "name": "Cortante de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>..</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!eTS5xnqZQhHOt7SE.Sk6oq4bItnEJTGHl"
-    },
-    {
-      "_id": "scqi8We2VHZUlnT7",
+      "_id": "39D8rjdxx45NHC9B",
       "name": "Harpoon",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +6, alcance 5 ft. or <{ range 20/60 ft. Acerto: 11 (2d6 + 4) Perfurante de dano. If the w target is a Large or smaller creature, the merrow pulls <{ o alvo up to 15 feet straight toward itself. <{ MEZZO LOTH Yugoloth of Tenacity and Want</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +6, alcance 1,5 m. or distância 6/18 m. Acerto: 11 (2d6 + 4) dano perfurante. If o alvo is a Large or smaller creature, the merrow pulls o alvo up to 4,5 m straight toward itself.</p>",
           "chat": ""
         },
         "activation": {
@@ -383,8 +370,8 @@
           "subtype": ""
         },
         "activities": {
-          "lUPF5sgQT1E5nv19": {
-            "_id": "lUPF5sgQT1E5nv19",
+          "u54GhEKN3Fg9DAAO": {
+            "_id": "u54GhEKN3Fg9DAAO",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -437,14 +424,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eTS5xnqZQhHOt7SE.scqi8We2VHZUlnT7"
+      "_key": "!actors.items!vrVdyCF3Cact12gq.39D8rjdxx45NHC9B"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Merrow",
-      "page": 212,
-      "cr": "0",
+      "page": 210,
+      "cr": "2",
       "warnings": []
     }
   }

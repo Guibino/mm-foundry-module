@@ -1,8 +1,8 @@
 {
-  "_id": "mjdRjlecfThiT06V",
-  "_key": "!actors!mjdRjlecfThiT06V",
+  "_id": "f182g8KALbiLNtYX",
+  "_key": "!actors!f182g8KALbiLNtYX",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Enxame Of Venomous Snakes",
+  "name": "Swarm of Venomous Snakes",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/swarm-of-venomous-snakes.webp",
   "system": {
@@ -70,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -83,10 +83,14 @@
       "size": "med",
       "di": {
         "value": [],
-        "custom": "Charmed; Frightened; Grappled; Paralyzed"
+        "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
         "custom": ""
       },
       "dv": {
@@ -94,18 +98,27 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed",
+          "frightened",
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "prone",
+          "restrained",
+          "stunned"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Enxame Of Venomous Snakes",
+    "name": "Swarm of Venomous Snakes",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -117,13 +130,13 @@
   },
   "items": [
     {
-      "_id": "EBvD6a0BSM3GJmCN",
-      "name": "Swarm",
+      "_id": "pVm0Y6af0tRvswtn",
+      "name": "Enxame",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The swarm can occupy another creature's • space and vice versa, and the swarm can move through any opening large enough for a Tiny snake. The swarm can't regain Pontos de Vida or gain Temporary Pontos de Vida.</p>",
+          "value": "<p>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny snake. The swarm can't regain Pontos de Vida or gain Temporary Pontos de Vida.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,16 +160,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!mjdRjlecfThiT06V.EBvD6a0BSM3GJmCN"
+      "_key": "!actors.items!f182g8KALbiLNtYX.pVm0Y6af0tRvswtn"
     },
     {
-      "_id": "dILicGAij4OMi1P7",
-      "name": "Bites",
+      "_id": "GpBSXY9lgh8x41wh",
+      "name": "Mordidas",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 8 (1d8 + 4) Perfurante de dano-or 6 (1d4 + 4) Perfurante de dano if the swarm is Bloodied-plus 10 (3d6) Veneno de dano. TIGER Large Beast, Unaligned AC 13 Iniciativa +3 (J 3) HP 30 (4d10 + 8) Speed 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 8 (1d8 + 4) dano perfurante—or 6 (1d4 + 4) dano perfurante if the swarm is Bloodied—mais 10 (3d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -174,8 +187,8 @@
           "subtype": ""
         },
         "activities": {
-          "ag7KgnFnIU6OI7qq": {
-            "_id": "ag7KgnFnIU6OI7qq",
+          "QcyNaaqJgLzPSVYu": {
+            "_id": "QcyNaaqJgLzPSVYu",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -228,13 +241,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!mjdRjlecfThiT06V.dILicGAij4OMi1P7"
+      "_key": "!actors.items!f182g8KALbiLNtYX.GpBSXY9lgh8x41wh"
     }
   ],
   "flags": {
     "mm2024": {
-      "nameEn": "SWARM OF VENOMOUS SNAKES",
-      "page": 373,
+      "nameEn": "Swarm of Venomous Snakes",
+      "page": 371,
       "cr": "2",
       "warnings": []
     }

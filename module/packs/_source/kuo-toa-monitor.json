@@ -1,6 +1,6 @@
 {
-  "_id": "7dNdtrVaQ6fhQ0CN",
-  "_key": "!actors!7dNdtrVaQ6fhQ0CN",
+  "_id": "46rf91w5dwgJHkwu",
+  "_key": "!actors!46rf91w5dwgJHkwu",
   "folder": "1nioWC3kx0YxX8qj",
   "name": "Kuo-toa Monitor",
   "type": "npc",
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 13,
         "formula": ""
       },
       "hp": {
@@ -48,10 +48,13 @@
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 30,
         "swim": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 120,
+        "truesight": 30
       },
       "init": {
         "ability": "dex",
@@ -68,7 +71,7 @@
       "alignment": "Neutro e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -100,7 +103,16 @@
         "custom": "Comum Inferior"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "rel": {
+        "value": 1,
+        "ability": "int"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Kuo-toa Monitor",
@@ -115,13 +127,13 @@
   },
   "items": [
     {
-      "_id": "T4FGIKpYiuVex5RH",
-      "name": "Amphibious",
+      "_id": "AJn4w7DtkGShwJer",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The kuo-toa can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,16 +157,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!7dNdtrVaQ6fhQ0CN.T4FGIKpYiuVex5RH"
+      "_key": "!actors.items!46rf91w5dwgJHkwu.AJn4w7DtkGShwJer"
     },
     {
-      "_id": "H0cD2UfZ6ETO0g9l",
-      "name": "Sunlight Sensitivity",
+      "_id": "qEsNX760d1emSQ3c",
+      "name": "Sensibilidade à Luz Solar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Wh _i le in sunlight, the kuo-toa has Disadvantage on ability checks and attack rolls. • •111 I</p>",
+          "value": "<p>Sob luz solar, a criatura tem Desvantagem em testes de habilidade e rolagens de ataque.</p>",
           "chat": ""
         },
         "activation": {
@@ -178,7 +190,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!7dNdtrVaQ6fhQ0CN.H0cD2UfZ6ETO0g9l"
+      "_key": "!actors.items!46rf91w5dwgJHkwu.qEsNX760d1emSQ3c"
     },
     {
       "_id": "ZLeVCdvOc7wL8yJE",
@@ -187,7 +199,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The kuo-toa makes two Bone Whip attacks.</p>",
+          "value": "<p>The kuo-toa makes two Bone Chicote attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -212,16 +224,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!7dNdtrVaQ6fhQ0CN.ZLeVCdvOc7wL8yJE"
+      "_key": "!actors.items!46rf91w5dwgJHkwu.ZLeVCdvOc7wL8yJE"
     },
     {
-      "_id": "vVRfNcGVQYfX0J7P",
-      "name": "Bone Whip",
+      "_id": "T5izmhrmVnIetK5u",
+      "name": "Bone Chicote",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 10 ft. Acerto: 6 (1d6 + 3) Cortante de dano plus 7 (2d6) Elétrico dam- UJ Vl age, and o alvo can't make Opportunity Attacks UJ until the start of the kuo-toa's next turn. ' 0:: Kuo-TOA DEITIES l(uo-toa ever seek to placate their inscrutable deities. However, few kuo-toa can agree on the identities of their gods, and little consistency exists between kuo-toa communities. Only Blibdoolpoolp the Sea Mother, a figure with a human body but the head and claws of a crayfish, sees broad worship. Lacking information about what their other gods look like, kuo-toa priests invent new forms for them, creating divine idols with whatever objects are at hand. But whether these kuo-toa priests draw power from belief or delusion, aberrant talent, or a stranger supernatural source, some power answers their petitions. Roll twice on or choose results from the l(uo-toa Deity Features table to inspire how kuo-toa represent a deity. Kuo-TOA ARCH PRIEST Medium Aberratio n, Ne u tr al fl)i/ AC 13 Iniciativa +2 (12) HP 105 (14d8 + 42) Speed 30 ft., Swim 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 3 m. Acerto: 6 (1d6 + 3) dano cortante mais 7 (2d6) dano elétrico, and o alvo can't make Opportunity Attacks until the start of the kuo-toa's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -239,8 +251,8 @@
           "subtype": ""
         },
         "activities": {
-          "WIW1akEgpZswqh3E": {
-            "_id": "WIW1akEgpZswqh3E",
+          "rGwRWdUokAL1VgUF": {
+            "_id": "rGwRWdUokAL1VgUF",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -293,13 +305,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!7dNdtrVaQ6fhQ0CN.vVRfNcGVQYfX0J7P"
+      "_key": "!actors.items!46rf91w5dwgJHkwu.T5izmhrmVnIetK5u"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Kuo-toa Monitor",
-      "page": 192,
+      "page": 190,
       "cr": "3",
       "warnings": []
     }

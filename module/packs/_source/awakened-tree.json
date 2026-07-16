@@ -1,6 +1,6 @@
 {
-  "_id": "0aRXi2fgFT0HVqyh",
-  "_key": "!actors!0aRXi2fgFT0HVqyh",
+  "_id": "JPcwqshXX543Y59h",
+  "_key": "!actors!JPcwqshXX543Y59h",
   "folder": "UIhMG4gNrr0aGWHc",
   "name": "Awakened Tree",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 59,
         "max": 59,
-        "formula": "7d1 2 + 14",
+        "formula": "7d12 + 14",
         "temp": null,
         "tempmax": null
       },
@@ -68,7 +68,7 @@
       "alignment": "Neutro",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -91,8 +91,10 @@
         "custom": ""
       },
       "dv": {
-        "value": [],
-        "custom": "Fi re"
+        "value": [
+          "fire"
+        ],
+        "custom": ""
       },
       "ci": {
         "value": [],
@@ -118,13 +120,13 @@
   },
   "items": [
     {
-      "_id": "i6CUE5e0mEVPhPAb",
-      "name": "Slam",
+      "_id": "f7vvlYGj1XvlYjUN",
+      "name": "Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 10 ft. Acerto: 14 (3d6 . + 4) Concussão de dano. AW AK ENED PL A NTS AXE BEAKS Flightless Avian Predators</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 3 m. Acerto: 13 (2d8 + 4) dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
@@ -142,8 +144,8 @@
           "subtype": ""
         },
         "activities": {
-          "AmCb8E2Dig8GkbLd": {
-            "_id": "AmCb8E2Dig8GkbLd",
+          "sSDtdqNsW5KCNCqh": {
+            "_id": "sSDtdqNsW5KCNCqh",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -164,15 +166,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "4",
                   "types": [
                     "bludgeoning"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "3d6.+4"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -190,19 +192,19 @@
           "mechanics": {
             "toHit": 6,
             "attackType": "melee",
-            "damageFormula": "3d6.+4",
+            "damageFormula": "2d8+4",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!0aRXi2fgFT0HVqyh.i6CUE5e0mEVPhPAb"
+      "_key": "!actors.items!JPcwqshXX543Y59h.f7vvlYGj1XvlYjUN"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Awakened Tree",
-      "page": 25,
+      "page": 23,
       "cr": "2",
       "warnings": []
     }

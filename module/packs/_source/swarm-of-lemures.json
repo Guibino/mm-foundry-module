@@ -1,8 +1,8 @@
 {
-  "_id": "3bjpioGzdAxhPbhS",
-  "_key": "!actors!3bjpioGzdAxhPbhS",
+  "_id": "6VXjpk7NZfNhelZd",
+  "_key": "!actors!6VXjpk7NZfNhelZd",
   "folder": "Hp5o2ufz9hhrO2ew",
-  "name": "Enxame Of Lemures",
+  "name": "Swarm of Lemures",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/swarm-of-lemures.webp",
   "system": {
@@ -12,7 +12,7 @@
         "proficient": 0
       },
       "dex": {
-        "value": 8,
+        "value": 7,
         "proficient": 0
       },
       "con": {
@@ -48,7 +48,7 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40
       },
       "senses": {
         "units": "ft",
@@ -62,14 +62,14 @@
     "details": {
       "type": {
         "value": "fiend",
-        "subtype": "DetJif",
+        "subtype": "devil",
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Lawful",
+      "alignment": "Leal e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -88,7 +88,12 @@
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "bludgeoning",
+          "cold",
+          "piercing",
+          "slashing"
+        ],
         "custom": ""
       },
       "dv": {
@@ -98,19 +103,26 @@
       "ci": {
         "value": [
           "charmed",
-          "frightened"
+          "frightened",
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "prone",
+          "restrained",
+          "stunned"
         ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Understands Infernal but can't speak"
+        "custom": "understands Infernal but can't speak"
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Enxame Of Lemures",
+    "name": "Swarm of Lemures",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -128,7 +140,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the swarm dies in the Nine Hells, it revives with all its Pontos de Vida in 1d10 days unless it is killed by a creature under the effects of a Bless spell or its remains are sprinkled with Holy Water.</p>",
+          "value": "<p>If the swarm dies in the Nine Hells, it revives with all its Pontos de Vida in 1d10 days unless it is killed by uma criatura under the effects of a Bless spell or its remains are sprinkled with Holy Water.</p>",
           "chat": ""
         },
         "activation": {
@@ -152,16 +164,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3bjpioGzdAxhPbhS.Mb1t1QZOaltFUwZf"
+      "_key": "!actors.items!6VXjpk7NZfNhelZd.Mb1t1QZOaltFUwZf"
     },
     {
-      "_id": "667b7BmbaLzIoHoG",
-      "name": "Swarm",
+      "_id": "fh8q01HyYXri5QLh",
+      "name": "Enxame",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The swarm can occupy another creature's space and vice versa, and the swarm can move through an opening large enough for a Small creature. The swarm can't regain Pontos de Vida or gain Temporary Pontos de Vida.</p>",
+          "value": "<p>The swarm can occupy another creature's space and vice versa, and the swarm can move through an opening large enough for a Medium creature. The swarm can't regain Pontos de Vida or gain Temporary Pontos de Vida.</p>",
           "chat": ""
         },
         "activation": {
@@ -185,7 +197,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3bjpioGzdAxhPbhS.667b7BmbaLzIoHoG"
+      "_key": "!actors.items!6VXjpk7NZfNhelZd.fh8q01HyYXri5QLh"
     },
     {
       "_id": "EV0T9uKboymVpbNk",
@@ -194,7 +206,41 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The swarm makes two Vile Slime attacks. , Vile Slime. Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: l l (2d8 UJ + 2) Veneno de dano, or 9 (2d6 + 2) Veneno de dano if 1- the swarm is Bloodied. 0 LI CH Deathless Master of Magic</p>",
+          "value": "<p>The swarm makes two Vile Slime attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!6VXjpk7NZfNhelZd.EV0T9uKboymVpbNk"
+    },
+    {
+      "_id": "b7x1zc8ImGXJUWNL",
+      "name": "Vile Slime",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 11 (2d8 + 2) dano de veneno, or 9 (2d6 + 2) dano de veneno if the swarm is Bloodied.</p>",
           "chat": ""
         },
         "activation": {
@@ -212,8 +258,8 @@
           "subtype": ""
         },
         "activities": {
-          "cUMtDXvHFwRrzfVr": {
-            "_id": "cUMtDXvHFwRrzfVr",
+          "aXYA92HZ6vOij9SS": {
+            "_id": "aXYA92HZ6vOij9SS",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -232,7 +278,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "2",
+                  "types": [
+                    "poison"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -241,18 +305,20 @@
         "mm2024": {
           "mechanics": {
             "toHit": 4,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d8+2",
+            "damageType": "poison"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3bjpioGzdAxhPbhS.EV0T9uKboymVpbNk"
+      "_key": "!actors.items!6VXjpk7NZfNhelZd.b7x1zc8ImGXJUWNL"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Swarm of Lemures",
-      "page": 196,
+      "page": 194,
       "cr": "3",
       "warnings": []
     }

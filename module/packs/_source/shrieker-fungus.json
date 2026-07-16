@@ -1,6 +1,6 @@
 {
-  "_id": "XcWG0EDKZr6PzbBM",
-  "_key": "!actors!XcWG0EDKZr6PzbBM",
+  "_id": "zCl6sZsYPhfcNiZe",
+  "_key": "!actors!zCl6sZsYPhfcNiZe",
   "folder": "UIhMG4gNrr0aGWHc",
   "name": "Shrieker Fungus",
   "type": "npc",
@@ -82,7 +82,7 @@
       "size": "med",
       "di": {
         "value": [],
-        "custom": "Blinded; Charmed; Deafened; Frig ht ened"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -93,12 +93,17 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "blinded",
+          "charmed",
+          "deafened",
+          "frightened"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
@@ -116,128 +121,13 @@
   },
   "items": [
     {
-      "_id": "ZnvjLXli47dugTt9",
-      "name": "Ataque Múltiplo",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The fungus makes two Rotting Touch attacks.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!XcWG0EDKZr6PzbBM.ZnvjLXli47dugTt9"
-    },
-    {
-      "_id": "tHZEwZVp3OFHwlq1",
-      "name": "Rotting Touch",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 10 ft. Acerto: 4 (1d8) Necrótico de dano. 1~6 ~ FUNGI VIOLET FUNGUS NECROHULK A violet fungus necrohulk forms when a violet fungus colony infests and animates an ample heap of decay. This necrohulk attacks prey and spreads fungal spores for the colony. VIOLET FUNGUS NECROHULK L arge Pl ant, Neutral Evil AC 77 Iniciativa +4 (1 4) HP 723 (13d70 + 52) Speed 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {
-          "YJUwuKiNyJRbhSLS": {
-            "_id": "YJUwuKiNyJRbhSLS",
-            "type": "attack",
-            "activation": {
-              "type": "action",
-              "value": null,
-              "override": true,
-              "condition": ""
-            },
-            "attack": {
-              "ability": "",
-              "bonus": "2",
-              "flat": true,
-              "type": {
-                "value": "melee",
-                "classification": "weapon"
-              }
-            },
-            "damage": {
-              "includeBase": false,
-              "parts": [
-                {
-                  "number": 1,
-                  "denomination": 8,
-                  "bonus": "",
-                  "types": [
-                    "necrotic"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
-            }
-          }
-        }
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {
-            "toHit": 2,
-            "attackType": "melee",
-            "damageFormula": "1d8",
-            "damageType": "necrotic"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!XcWG0EDKZr6PzbBM.tHZEwZVp3OFHwlq1"
-    },
-    {
       "_id": "Eit4tW2TeMPB4o0a",
       "name": "Shriek",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: A creature or a source of Bright Light moves within 30 feet of the shrieker. Response: The shrieker emits a shriek audible within 300 feet of itself for 1 minute or until the shrieker dies. ~ FUNGI VIOLET FUNGUS Slow but mobile, violet fungi rot any flesh they touch with their lashing tendrils. VIOLET FUNGUS Medium Pl ant, U na ligned AC 5 Iniciativa -5 (10) HP 78 (4d8) Speed 5 ft. MOD SAVE MOD SAVE MOD SAVE STR 3 -4 - 4 DEX 1 -5 -5 C O N 70 +0 +0 IN T 1 -5 -5 WIS 3 - 4 -4 CHA 1 -5 -5 Imm un iti es Cego, Enfeitiçado, Surdo, Amedrontado Senses Visão às Cegas 30 ft.; Percepção Passiva 6 Languages None CR 7/4 (XP 50; PB +2)</p>",
+          "value": "<p>A creature or a source of Bright Light moves within 9 m of the shrieker. The shrieker emits a shriek audible within 90 m of itself for 1 minute or until the shrieker dies.</p>",
           "chat": ""
         },
         "activation": {
@@ -262,13 +152,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!XcWG0EDKZr6PzbBM.Eit4tW2TeMPB4o0a"
+      "_key": "!actors.items!zCl6sZsYPhfcNiZe.Eit4tW2TeMPB4o0a"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Shrieker Fungus",
-      "page": 127,
+      "page": 125,
       "cr": "0",
       "warnings": []
     }

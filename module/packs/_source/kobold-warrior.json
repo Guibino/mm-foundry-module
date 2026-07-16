@@ -1,8 +1,8 @@
 {
-  "_id": "Xv4gaGpZAOMNEEkh",
-  "_key": "!actors!Xv4gaGpZAOMNEEkh",
+  "_id": "I929Pf5AIDGQLIpI",
+  "_key": "!actors!I929Pf5AIDGQLIpI",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Kobold Guerreiro",
+  "name": "Kobold Warrior",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/kobold-warrior.webp",
   "system": {
@@ -69,7 +69,7 @@
       "alignment": "Neutro",
       "cr": 0.125,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -104,7 +104,7 @@
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Kobold Guerreiro",
+    "name": "Kobold Warrior",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -116,13 +116,13 @@
   },
   "items": [
     {
-      "_id": "jJIh7wU3Sis6WBAS",
-      "name": "Pack Tactics",
+      "_id": "Xc9EkvwKTAgI4cK1",
+      "name": "Táticas de Matilha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The kobold has Advantage on an attack roll against a creature if at least one of the kobold's al- lies is within 5 feet of the creature and the ally doesn't have the Incapacitado condition.</p>",
+          "value": "<p>A criatura tem Vantagem em uma rolagem de ataque contra uma criatura se pelo menos um dos aliados dela estiver a até 1,5 m do alvo e esse aliado não estiver com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +146,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Xv4gaGpZAOMNEEkh.jJIh7wU3Sis6WBAS"
+      "_key": "!actors.items!I929Pf5AIDGQLIpI.Xc9EkvwKTAgI4cK1"
     },
     {
-      "_id": "F6BHbCA5yv0gmqLn",
-      "name": "Sunlight Sensitivity",
+      "_id": "mgOFS0b8oN1zNIbc",
+      "name": "Sensibilidade à Luz Solar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in sunlight, the kobold has Disadvantage on ability checks and attack rolls. > ACTIO NS Ct::'. Dagger. Rolagem de Ataque Corpo a Corpo ou à Distância: +4, alcance 5 ft. or range 20/60 ft. Acerto: 4 (1d4 + 2) Perfurante de dano. WINGED KOBOLD Small Dragon, Neutral AC 15 Iniciativa +3 (13) HP 10 (4d6 - 4) Speed 30 ft., Fly 30 ft. MOD SAVE MOO SAVE MOD SAVE</p>",
+          "value": "<p>Sob luz solar, a criatura tem Desvantagem em testes de habilidade e rolagens de ataque.</p>",
           "chat": ""
         },
         "activation": {
@@ -175,6 +175,82 @@
       },
       "flags": {
         "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!I929Pf5AIDGQLIpI.mgOFS0b8oN1zNIbc"
+    },
+    {
+      "_id": "WfM3bRhZn1YQ6LF7",
+      "name": "Adaga",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +4, alcance 1,5 m. or distância 6/18 m. Acerto: 4 (1d4 + 2) dano perfurante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "fYeLXbrelTmu02eE": {
+            "_id": "fYeLXbrelTmu02eE",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
           "mechanics": {
             "toHit": 4,
             "attackType": "ranged",
@@ -184,13 +260,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Xv4gaGpZAOMNEEkh.F6BHbCA5yv0gmqLn"
+      "_key": "!actors.items!I929Pf5AIDGQLIpI.WfM3bRhZn1YQ6LF7"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Kobold Warrior",
-      "page": 187,
+      "page": 185,
       "cr": "1/8",
       "warnings": []
     }

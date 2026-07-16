@@ -1,8 +1,8 @@
 {
-  "_id": "PqFDbhdmr1uwhWfo",
-  "_key": "!actors!PqFDbhdmr1uwhWfo",
+  "_id": "v0N4DozeHyQvU10T",
+  "_key": "!actors!v0N4DozeHyQvU10T",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Bronze Dragão Filhote",
+  "name": "Bronze Dragon Wyrmling",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/bronze-dragon-wyrmling.webp",
   "system": {
@@ -48,10 +48,14 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "fly": 60,
+        "swim": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60,
+        "blindsight": 10
       },
       "init": {
         "ability": "dex",
@@ -61,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Metallic",
+        "subtype": "metallic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Bom",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -80,7 +84,9 @@
     "traits": {
       "size": "med",
       "di": {
-        "value": [],
+        "value": [
+          "lightning"
+        ],
         "custom": ""
       },
       "dr": {
@@ -97,7 +103,7 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Dracônico"
       }
     },
     "skills": {
@@ -112,7 +118,7 @@
     }
   },
   "prototypeToken": {
-    "name": "Bronze Dragão Filhote",
+    "name": "Bronze Dragon Wyrmling",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -124,13 +130,13 @@
   },
   "items": [
     {
-      "_id": "Lc4gKXw5sGZPFtZf",
-      "name": "Amphibious",
+      "_id": "xtVk5tUjYBU8eiR8",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon can breathe air and 'water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -154,7 +160,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!PqFDbhdmr1uwhWfo.Lc4gKXw5sGZPFtZf"
+      "_key": "!actors.items!v0N4DozeHyQvU10T.xtVk5tUjYBU8eiR8"
     },
     {
       "_id": "PiV07oWoT7Rv1Ly6",
@@ -163,7 +169,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes two Rend attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -188,16 +194,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!PqFDbhdmr1uwhWfo.PiV07oWoT7Rv1Ly6"
+      "_key": "!actors.items!v0N4DozeHyQvU10T.PiV07oWoT7Rv1Ly6"
     },
     {
-      "_id": "zNLNgvCQf09NGIF1",
-      "name": "Rend",
+      "_id": "sC5LhW35DkWYXbsb",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Me lee Attack Roll: +5, alcance 5 ft. Acerto: 8 (1d1 O + 3) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 8 (1d10 + 3) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -214,27 +220,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "ggd1Bty5A3aIWkKl": {
+            "_id": "ggd1Bty5A3aIWkKl",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 10,
+                  "bonus": "3",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "1d1O+3",
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "1d10+3",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!PqFDbhdmr1uwhWfo.zNLNgvCQf09NGIF1"
+      "_key": "!actors.items!v0N4DozeHyQvU10T.sC5LhW35DkWYXbsb"
     },
     {
-      "_id": "cbVzwVp6chy1QkJV",
-      "name": "Elétrico Breath (Recharge 5-6)",
+      "_id": "jMAEtyK9BM2Evmti",
+      "name": "Sopro Elétrico (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 12, cada criatura in a 40-foot-long, 5-foot- wide Line. Falha: 16 (3d10) Elétrico de dano. Sucesso: Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 12, cada criatura in a 12 m-long, 1,5 m-wide Line. 16 (3d10) dano elétrico. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -258,8 +308,8 @@
           "subtype": ""
         },
         "activities": {
-          "jpAGmisxVn44ryky": {
-            "_id": "jpAGmisxVn44ryky",
+          "Oaq2QcmV8S1a271e": {
+            "_id": "Oaq2QcmV8S1a271e",
             "type": "save",
             "activation": {
               "type": "action",
@@ -278,25 +328,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 3,
-                  "denomination": 10,
-                  "bonus": "",
-                  "types": [
-                    "lightning"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -304,24 +336,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "3d10",
-            "damageType": "lightning",
             "saveDc": 12,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!PqFDbhdmr1uwhWfo.cbVzwVp6chy1QkJV"
+      "_key": "!actors.items!v0N4DozeHyQvU10T.jMAEtyK9BM2Evmti"
     },
     {
-      "_id": "x38ByYyuc6EGj9rx",
-      "name": "Repulsion Breath",
+      "_id": "PE1woytoxWbTJFUV",
+      "name": "Sopro de Repulsão",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Força Sa1Jing Throw: DC 12, cada criatura in a 30-foot Cone. Falha: The target is pushed up to 30 feet straight away from the dragon and has the Caído condition. BRONZE DRAGONS they can. They strive to preserve innovations, from the works of past civilizations to new discoveries, and they share such works widely. When dealing with shorter-lived beings, bronze dragons prefer to win them over through conversation and cultiva- tion, but they don't shy from battle when villains keep others from achieving their potential. Bronze dragons enjoy the power and endless pos- sibilities of the sea, and they often make their lairs in places of natural beauty or communities they wish to preserve. Within their dwellings, bronze dragons hoard things they believe will be useful one day. They salvage treasure lost to the sea, reclaim- ing wealth or sunken ships. BRONZE DRAGON WYRMLING Bronze dragon wyrmlings believe they can solve any problems, and they seek to prove it. They often fixate on local challenges, such as drought or ram- pant banditry. While their zeal can be charming, these wyrmlings can get in over their heads and might then need help correcting mistakes. YOUNG BRONZE DRAGON Large Dragon (Metallic) , Lawful Good AC 17 Initiat ive +3 (13) HP 142 (15d1 O + 60) Speed 40 ft., Fly 80 ft., Swim 40 ft. MOD SAVE M OD SAVE MOD SAVE</p>",
+          "value": "<p>Teste de Resistência de Força: CD 12, cada criatura in a 9 m Cone. O alvo is pushed up to 9 m straight away from the dragon and fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -338,21 +368,48 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "3awj5Qm9KW21fLI3": {
+            "_id": "3awj5Qm9KW21fLI3",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "12"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 12,
+            "saveAbility": "str"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!PqFDbhdmr1uwhWfo.x38ByYyuc6EGj9rx"
+      "_key": "!actors.items!v0N4DozeHyQvU10T.PE1woytoxWbTJFUV"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Bronze Dragon Wyrmling",
-      "page": 60,
+      "page": 58,
       "cr": "2",
       "warnings": []
     }

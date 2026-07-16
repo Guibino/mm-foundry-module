@@ -1,8 +1,8 @@
 {
-  "_id": "39fvbIWixy2EL9A8",
-  "_key": "!actors!39fvbIWixy2EL9A8",
+  "_id": "FEah9vqXkVNg2ixK",
+  "_key": "!actors!FEah9vqXkVNg2ixK",
   "folder": "bKQUPthn1V2Yu6Bn",
-  "name": "Beholder Zumbi",
+  "name": "Beholder Zombie",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/beholder-zombie.webp",
   "system": {
@@ -13,7 +13,7 @@
       },
       "dex": {
         "value": 8,
-        "proficient": 1
+        "proficient": 0
       },
       "con": {
         "value": 16,
@@ -41,7 +41,7 @@
       "hp": {
         "value": 93,
         "max": 93,
-        "formula": "11d1 0 + 33",
+        "formula": "11d10 + 33",
         "temp": null,
         "tempmax": null
       },
@@ -67,10 +67,10 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Neutro",
+      "alignment": "Neutro e Mau",
       "cr": 5,
       "xp": {
-        "value": 1800
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -82,8 +82,10 @@
     "traits": {
       "size": "lg",
       "di": {
-        "value": [],
-        "custom": "Poiso n"
+        "value": [
+          "poison"
+        ],
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -96,19 +98,20 @@
       "ci": {
         "value": [
           "exhaustion",
+          "poisoned",
           "prone"
         ],
-        "custom": "Po is on ed"
+        "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "understands Deep Speech and Undercommon but can't speak"
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Beholder Zumbi",
+    "name": "Beholder Zombie",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -120,13 +123,13 @@
   },
   "items": [
     {
-      "_id": "lGYbnp81E9UC2LdZ",
-      "name": "Undead Fortitude",
+      "_id": "gxKevYN0spzOmyNM",
+      "name": "Fortitude Morta-Viva",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If de dano reduces the zombie to 0 Pontos de Vida, it makes a Constituição saving throw (DC 5 plus the de dano taken) unless the de dano is Radiante or from a Critical Hit. On a successful save, the zombie drops to l Hit Point instead.</p>",
+          "value": "<p>If de dano reduces the zombie to 0 Pontos de Vida, it makes a Constituição saving throw (CD 5 mais the de dano taken) unless the de dano is Radiante or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead.</p>",
           "chat": ""
         },
         "activation": {
@@ -150,158 +153,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!39fvbIWixy2EL9A8.lGYbnp81E9UC2LdZ"
+      "_key": "!actors.items!FEah9vqXkVNg2ixK.gxKevYN0spzOmyNM"
     },
     {
-      "_id": "5o6fjCaDWuwdCCG8",
-      "name": "Habilidade",
+      "_id": "43LWOYd1jOf3wcbn",
+      "name": "Ataque Múltiplo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>~ Ataque Múltiplo. The zombie uses Eye Rays twice. Vl ~ Bite. Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 16 (4d6 + 2) UJ Q'.'. ~iercing de dano.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {
-          "feGoF3E5G4tbhULp": {
-            "_id": "feGoF3E5G4tbhULp",
-            "type": "attack",
-            "activation": {
-              "type": "action",
-              "value": null,
-              "override": true,
-              "condition": ""
-            },
-            "attack": {
-              "ability": "",
-              "bonus": "5",
-              "flat": true,
-              "type": {
-                "value": "melee",
-                "classification": "weapon"
-              }
-            },
-            "damage": {
-              "includeBase": false,
-              "parts": []
-            }
-          }
-        }
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {
-            "toHit": 5,
-            "attackType": "melee"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!39fvbIWixy2EL9A8.5o6fjCaDWuwdCCG8"
-    },
-    {
-      "_id": "wUxshf13y3ePs56p",
-      "name": "Eye Rays",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The zombie randomly shoots one of the fol- lowing magical rays at a target it can see within 120 feet of itself (roll 1d4; reroll if the zombie has already used that ray during this turn): l: Paralyzing Ray. Constituição Teste de Resistência: DC 14. Falha: The target has the Paralisado · condition and repeats the save at the end of each of its turns, end- ing the effect on itself on a success. After l minute, it succeeds automatically. 2: Fear Ray. Sabedoria Teste de Resistência: DC 14. Falha: 13 (3d8) Psíquico de dano, and o alvo has the Fright- ened condition until the end of its next turn. 3: Enervation Ray. Constituição Teste de Resistência: DC 14. Falha: 70 (3d6) Necrótico de dano, and o alvo has the Envenenado condition until the end of its next turn. While Envenenado, o alvo can't regain Pontos de Vida. Sucesso: Metade do dano only. - 4: Disintegration Ray. Destreza Teste de Resistência: DC 14. Falha: 27 (Sdl 0) Energia de dano. If o alvo is a nonmagical object or a creation of magical force, a 10-foot Cube of it disintegrates into dust. Sucesso:</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {
-          "zbN40D3bDqyd2kRJ": {
-            "_id": "zbN40D3bDqyd2kRJ",
-            "type": "save",
-            "activation": {
-              "type": "action",
-              "value": null,
-              "override": true,
-              "condition": ""
-            },
-            "save": {
-              "ability": [
-                "con"
-              ],
-              "dc": {
-                "calculation": "",
-                "formula": "14"
-              }
-            },
-            "damage": {
-              "onSave": "half",
-              "parts": [
-                {
-                  "number": 3,
-                  "denomination": 8,
-                  "bonus": "",
-                  "types": [
-                    "psychic"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
-            }
-          }
-        }
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {
-            "damageFormula": "3d8",
-            "damageType": "psychic",
-            "saveDc": 14,
-            "saveAbility": "con"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!39fvbIWixy2EL9A8.wUxshf13y3ePs56p"
-    },
-    {
-      "_id": "iMOZKma3x22iGZ9z",
-      "name": "Metade do dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Falha ou Sucesso: If o alvo is a crea- ture and this de dano reduces it to O Pontos de Vida, it _ disintegrates into dust. 6 347 ZOMBIES / APPENDIX HIS APPENDIX PROVIDES STAT BLOCI<S FOR animals of the Beast type-along with many of their gigantic or mythologized kin-in alpha- betical order. Most represent versions of animals that exist (or existed) in the real world . You can find descriptions of these creatures in dictionaries or other educational sources, or you might create new roles for them in your D&D worlds. ALLOSAURUS Large Beast (Dinosaur) , Unalig ned AC 13 • Iniciativa + 1 ( 11) HP 51 (6d10+18) Sp eed 60 ft. MOD SAVE MOD SA VE MOD S AVE</p>",
+          "value": "<p>The zombie uses Eye Rays twice.</p>",
           "chat": ""
         },
         "activation": {
@@ -326,13 +187,155 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!39fvbIWixy2EL9A8.iMOZKma3x22iGZ9z"
+      "_key": "!actors.items!FEah9vqXkVNg2ixK.43LWOYd1jOf3wcbn"
+    },
+    {
+      "_id": "dpJrI74bW3v305vB",
+      "name": "Mordida",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 16 (4d6 + 2) dano perfurante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "LeFN8Uw2IXbJUsHp": {
+            "_id": "LeFN8Uw2IXbJUsHp",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "4d6+2",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!FEah9vqXkVNg2ixK.dpJrI74bW3v305vB"
+    },
+    {
+      "_id": "N29nHAReGwjg42D0",
+      "name": "Eye Rays",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The zombie randomly shoots one of the following magical rays at a target it can see within 36 m of itself (roll 1d4; reroll if the zombie has already used that ray during this turn):\nTeste de Resistência de Constituição: CD 14. O alvo fica com a condição Paralisado and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically.\nTeste de Resistência de Sabedoria: CD 14. 13 (3d8) dano psíquico, and o alvo fica com a condição Amedrontado until the end of its next turn.\nTeste de Resistência de Constituição: CD 14. 10 (3d6) dano necrótico, and o alvo fica com a condição Envenenado until the end of its next turn. While Envenenado, o alvo can't regain Pontos de Vida. Metade do dano only.\nTeste de Resistência de Destreza: CD 14. 27 (5d10) dano de energia. If o alvo is a nonmagical object or a creation of magical force, a 3 m Cube of it disintegrates into dust. Metade do dano. If o alvo is uma criatura and this de dano reduces it to 0 Pontos de Vida, it disintegrates into dust.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "JfjYeDOdpzuY6BEf": {
+            "_id": "JfjYeDOdpzuY6BEf",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "14"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 14,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!FEah9vqXkVNg2ixK.N29nHAReGwjg42D0"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Beholder Zombie",
-      "page": 349,
+      "page": 347,
       "cr": "5",
       "warnings": []
     }

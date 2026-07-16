@@ -1,6 +1,6 @@
 {
-  "_id": "3LeXc3kg3GQxOTBT",
-  "_key": "!actors!3LeXc3kg3GQxOTBT",
+  "_id": "ePoxn0wUc83mb8t1",
+  "_key": "!actors!ePoxn0wUc83mb8t1",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Bulette",
   "type": "npc",
@@ -41,13 +41,14 @@
       "hp": {
         "value": 94,
         "max": 94,
-        "formula": "9d10+45",
+        "formula": "9d10 + 45",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 40,
         "burrow": 40
       },
       "senses": {
@@ -70,7 +71,7 @@
       "alignment": "Sem Tendência",
       "cr": 5,
       "xp": {
-        "value": 1800
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -99,7 +100,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {
@@ -128,7 +129,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The bulette makes two Bite attacks.</p>",
+          "value": "<p>A criatura faz dois ataques de Mordida.</p>",
           "chat": ""
         },
         "activation": {
@@ -153,16 +154,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3LeXc3kg3GQxOTBT.LWF1rf5kkzfbN3KX"
+      "_key": "!actors.items!ePoxn0wUc83mb8t1.LWF1rf5kkzfbN3KX"
     },
     {
-      "_id": "EgfEW5VaovhhxEaV",
-      "name": "Bite",
+      "_id": "iYPoMsrDUGOggPds",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 17 (2d12 + 4) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 17 (2d12 + 4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -180,8 +181,8 @@
           "subtype": ""
         },
         "activities": {
-          "gzmV5oYDUFpSzJGk": {
-            "_id": "gzmV5oYDUFpSzJGk",
+          "afYjyoKb4f2Tqrkq": {
+            "_id": "afYjyoKb4f2Tqrkq",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -234,16 +235,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3LeXc3kg3GQxOTBT.EgfEW5VaovhhxEaV"
+      "_key": "!actors.items!ePoxn0wUc83mb8t1.iYPoMsrDUGOggPds"
     },
     {
-      "_id": "VbUJPyFM2A0ZEILm",
-      "name": "Deadly Leap",
+      "_id": "nAPuH3RTSPZI9ecw",
+      "name": "Deadly Salto",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The bulette spends 5 feet of movement to jump to a space within 15 feet that contains one or more Large or smaller creatures. Destreza Teste de Resistência: DC 15, cada criatura in the bulette's destination space. Falha: 19 (3d12) Concussão de dano, and o alvo has the Caído condition. Sucesso: Metade do dano, and o alvo is pushed 5 feet straight away from the bulette. <l'. BoN ~ us ACTIONS a: The bulette jumps up ·to 30 feet by spending 10 w Leap. _J feet of movement. BULETTE PUP Medium Monstrosity, Unaligned AC 76 Iniciativa -1 (9) HP 45 (6d8 + 18) Speed 30 ft., Burrow 20 ft. MOD SAVE MOD SAVE MOD SA VE</p>",
+          "value": "<p>The bulette spends 1,5 m of movement to jump to a space within 4,5 m that contains one or more Large or smaller creatures. Teste de Resistência de Destreza: CD 15, cada criatura in the bulette's destination space. 19 (3d12) dano de concussão, and o alvo fica com a condição Caído. Metade do dano, and o alvo is pushed 1,5 m straight away from the bulette.</p>",
           "chat": ""
         },
         "activation": {
@@ -261,8 +262,8 @@
           "subtype": ""
         },
         "activities": {
-          "mOOJxCnUzP8glQYy": {
-            "_id": "mOOJxCnUzP8glQYy",
+          "oT02AF2BTQl1gcDg": {
+            "_id": "oT02AF2BTQl1gcDg",
             "type": "save",
             "activation": {
               "type": "action",
@@ -281,25 +282,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 3,
-                  "denomination": 12,
-                  "bonus": "",
-                  "types": [
-                    "bludgeoning"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -307,21 +290,53 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "3d12",
-            "damageType": "bludgeoning",
             "saveDc": 15,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3LeXc3kg3GQxOTBT.VbUJPyFM2A0ZEILm"
+      "_key": "!actors.items!ePoxn0wUc83mb8t1.nAPuH3RTSPZI9ecw"
+    },
+    {
+      "_id": "xoYpjwvxlNBbZ17K",
+      "name": "Salto",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura salta até 9 m gastando 3 m de movimento.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ePoxn0wUc83mb8t1.xoYpjwvxlNBbZ17K"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Bulette",
-      "page": 65,
+      "page": 63,
       "cr": "5",
       "warnings": []
     }

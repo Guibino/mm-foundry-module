@@ -1,8 +1,8 @@
 {
-  "_id": "KgrFlQi3zgTD5OAV",
-  "_key": "!actors!KgrFlQi3zgTD5OAV",
+  "_id": "dPHSfTFn1lKIrF32",
+  "_key": "!actors!dPHSfTFn1lKIrF32",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Faerie Dragão Youth",
+  "name": "Faerie Dragon Youth",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/faerie-dragon-youth.webp",
   "system": {
@@ -70,7 +70,7 @@
       "alignment": "Caótico e Bom",
       "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -99,7 +99,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Dracônico, Silvestre"
+        "custom": "Dracônico"
       }
     },
     "skills": {
@@ -118,7 +118,7 @@
     }
   },
   "prototypeToken": {
-    "name": "Faerie Dragão Youth",
+    "name": "Faerie Dragon Youth",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -130,13 +130,13 @@
   },
   "items": [
     {
-      "_id": "UEu7vXN2uNGujOnr",
-      "name": "Magic Resistance",
+      "_id": "tnKqeFtlutK07wmw",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>The dragon has Vantagem on saving throws against spells and other magical effects.</p>",
           "chat": ""
         },
         "activation": {
@@ -160,16 +160,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KgrFlQi3zgTD5OAV.UEu7vXN2uNGujOnr"
+      "_key": "!actors.items!dPHSfTFn1lKIrF32.tnKqeFtlutK07wmw"
     },
     {
-      "_id": "W9ujHcsB1FtEyMIk",
-      "name": "Bite",
+      "_id": "Y1I4V4KeAVDG9W5N",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 5 (1d4 + 3) Perfurante de dano plus 2 (1d4) Psíquico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 5 (1d4 + 3) dano perfurante mais 2 (1d4) dano psíquico.</p>",
           "chat": ""
         },
         "activation": {
@@ -187,8 +187,8 @@
           "subtype": ""
         },
         "activities": {
-          "TKCnRbc0TMGFtKmn": {
-            "_id": "TKCnRbc0TMGFtKmn",
+          "CB54H5rcpNlzP2QD": {
+            "_id": "CB54H5rcpNlzP2QD",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -241,16 +241,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KgrFlQi3zgTD5OAV.W9ujHcsB1FtEyMIk"
+      "_key": "!actors.items!dPHSfTFn1lKIrF32.Y1I4V4KeAVDG9W5N"
     },
     {
       "_id": "JpibWiin01SakexU",
-      "name": "Euphoria Breath (Recharge 5-6)",
+      "name": "Euphoria Breath (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sabedoria Teste de Resistência: DC 12, cada criatura in a 15-foot Cone. Falha: The tar- get has the Incapacitado condition until the end of its next turn and uses all its movement on its turn to move in a random direction.</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 12, cada criatura in a 4,5 m Cone. O alvo fica com a condição Incapacitado until the end of its next turn and uses all its movement on its turn to move in a random direction.</p>",
           "chat": ""
         },
         "activation": {
@@ -308,41 +308,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KgrFlQi3zgTD5OAV.JpibWiin01SakexU"
-    },
-    {
-      "_id": "8VYp7GdZTrKUUyYi",
-      "name": "Superior Invisibility",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The dragon casts Greater ln11isibil- ity on itself, requiring no spell components and using the same spellcasting ability as Conjuração. FAERIE DRAGONS 117 FIRE ELEMENTAL Primal Spirit of Heat and Flame •</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!KgrFlQi3zgTD5OAV.8VYp7GdZTrKUUyYi"
+      "_key": "!actors.items!dPHSfTFn1lKIrF32.JpibWiin01SakexU"
     },
     {
       "_id": "cEhP8xozLrzthLpU",
@@ -351,7 +317,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 12): À Vontade: Dancing Lights, Mage Hand, Minor Illusion</p>",
+          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 12):</p>",
           "chat": ""
         },
         "activation": {
@@ -376,13 +342,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!KgrFlQi3zgTD5OAV.cEhP8xozLrzthLpU"
+      "_key": "!actors.items!dPHSfTFn1lKIrF32.cEhP8xozLrzthLpU"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Faerie Dragon Youth",
-      "page": 119,
+      "page": 117,
       "cr": "1",
       "warnings": []
     }

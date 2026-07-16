@@ -1,6 +1,6 @@
 {
-  "_id": "radTxLbbbBodcGo6",
-  "_key": "!actors!radTxLbbbBodcGo6",
+  "_id": "mW4wuteXrHHesbZB",
+  "_key": "!actors!mW4wuteXrHHesbZB",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Spy",
   "type": "npc",
@@ -48,7 +48,8 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "climb": 30
       },
       "senses": {
         "units": "ft"
@@ -66,9 +67,9 @@
         "custom": ""
       },
       "alignment": "Neutro",
-      "cr": 0,
+      "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +79,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -100,7 +101,32 @@
         "custom": "Common plus one other language"
       }
     },
-    "skills": {}
+    "skills": {
+      "dec": {
+        "value": 1,
+        "ability": "cha"
+      },
+      "ins": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "inv": {
+        "value": 2,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "slt": {
+        "value": 1,
+        "ability": "dex"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Spy",
@@ -115,13 +141,13 @@
   },
   "items": [
     {
-      "_id": "SdxnU7Eor6IKtyRV",
-      "name": "Shortsword",
+      "_id": "tmX7GHxKvmW6zlhR",
+      "name": "Espada Curta",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 5 (1d6 + 2) Perfurante de dano plus 7 (2d6) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano perfurante mais 7 (2d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -139,8 +165,8 @@
           "subtype": ""
         },
         "activities": {
-          "iF1ykhRrRvsjx1qT": {
-            "_id": "iF1ykhRrRvsjx1qT",
+          "j7jFcnfpG4Mladi7": {
+            "_id": "j7jFcnfpG4Mladi7",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -193,16 +219,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!radTxLbbbBodcGo6.SdxnU7Eor6IKtyRV"
+      "_key": "!actors.items!mW4wuteXrHHesbZB.tmX7GHxKvmW6zlhR"
     },
     {
-      "_id": "yeAtpyABJwLfvkSg",
-      "name": "Hand Crossbow",
+      "_id": "s7URy0zyjzvkQH3E",
+      "name": "Besta de Mão",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +4, range 30/120 ft. Acerto: 5 (1d6 + 2) Perfurante de dano plus 7 (2d6) Poi- son de dano. ::J B O N us A CTIO N S w Cunning Action. The spy takes the Dash, Disengage, or lJ Hide action. SPY MASTER Medium or Small Humanoid, Neutral ,AC 19 In i ti ative +9 (19) _ HP 1 37 (25d8 + 25) Spe ed 30 ft., Climb 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +4, distância 9/36 m. Acerto: 5 (1d6 + 2) dano perfurante mais 7 (2d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -220,8 +246,8 @@
           "subtype": ""
         },
         "activities": {
-          "HCoL9YmChGvjgm2y": {
-            "_id": "HCoL9YmChGvjgm2y",
+          "f2PM5xXfda55dSnx": {
+            "_id": "f2PM5xXfda55dSnx",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -274,14 +300,48 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!radTxLbbbBodcGo6.yeAtpyABJwLfvkSg"
+      "_key": "!actors.items!mW4wuteXrHHesbZB.s7URy0zyjzvkQH3E"
+    },
+    {
+      "_id": "mFgTolmrp7V25uDy",
+      "name": "Cunning Action",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura realiza a ação Disparar, Desengajar ou Esconder-se.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!mW4wuteXrHHesbZB.mFgTolmrp7V25uDy"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Spy",
-      "page": 297,
-      "cr": "0",
+      "page": 295,
+      "cr": "1",
       "warnings": []
     }
   }

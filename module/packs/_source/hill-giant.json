@@ -1,8 +1,8 @@
 {
-  "_id": "aCnPWuE4rWE8XE4b",
-  "_key": "!actors!aCnPWuE4rWE8XE4b",
+  "_id": "hQZJoIHRaS8Nc8SM",
+  "_key": "!actors!hQZJoIHRaS8Nc8SM",
   "folder": "EgPgmtpb4EiltKUV",
-  "name": "Hill Gigante",
+  "name": "Hill Giant",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/hill-giant.webp",
   "system": {
@@ -68,7 +68,7 @@
       "alignment": "Caótico e Mau",
       "cr": 5,
       "xp": {
-        "value": 1800
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,13 +102,13 @@
     },
     "skills": {
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       }
     }
   },
   "prototypeToken": {
-    "name": "Hill Gigante",
+    "name": "Hill Giant",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -126,7 +126,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The giant makes two attacks, using Tree Club or Trash Lob in any combination .</p>",
+          "value": "<p>The giant makes two attacks, using Tree Clava or Trash Lob in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,16 +151,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!aCnPWuE4rWE8XE4b.5ohcsG4luuDeHDC7"
+      "_key": "!actors.items!hQZJoIHRaS8Nc8SM.5ohcsG4luuDeHDC7"
     },
     {
-      "_id": "JH0Csacu7s9PufI6",
-      "name": "Tree Club",
+      "_id": "UNdxPwZY0f1udgIG",
+      "name": "Tree Clava",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Me lee Attack Roll: +8, alcance 10 ft. Acerto: 18 (3d8 + 5) Concussão de dano. If o alvo is a Large or smaller creature, it has the Caído condition.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 3 m. Acerto: 18 (3d8 + 5) dano de concussão. If o alvo is a Large or smaller creature, it fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -177,18 +177,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "Ka3dGWcli4VJZN0d": {
+            "_id": "Ka3dGWcli4VJZN0d",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "8",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 8,
+                  "bonus": "5",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 8,
+            "attackType": "melee",
             "damageFormula": "3d8+5",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!aCnPWuE4rWE8XE4b.JH0Csacu7s9PufI6"
+      "_key": "!actors.items!hQZJoIHRaS8Nc8SM.UNdxPwZY0f1udgIG"
     },
     {
       "_id": "Y42vwnBsL0kOCzjq",
@@ -197,7 +241,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +8, range 60/240 ft. Acerto: z ex LJ 16 (2d10 + 5) Concussão de dano, and o alvo has z the Envenenado condition until the end of its next turn. 0 HIPPOGRIFF Large Monstros ity, Un ali gned AC 11 Iniciativa +l (11) HP26 (4d10+4) Sp eed 40 ft., Fly 60 ft. MOD SAVE MOD SAVE MO D SAVE</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +8, distância 18/72 m. Acerto: 16 (2d10 + 5) dano de concussão, and o alvo fica com a condição Envenenado until the end of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -235,7 +279,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "5",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -244,18 +306,20 @@
         "mm2024": {
           "mechanics": {
             "toHit": 8,
-            "attackType": "ranged"
+            "attackType": "ranged",
+            "damageFormula": "2d10+5",
+            "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!aCnPWuE4rWE8XE4b.Y42vwnBsL0kOCzjq"
+      "_key": "!actors.items!hQZJoIHRaS8Nc8SM.Y42vwnBsL0kOCzjq"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Hill Giant",
-      "page": 170,
+      "page": 168,
       "cr": "5",
       "warnings": []
     }

@@ -1,6 +1,6 @@
 {
-  "_id": "HH2ZgbYeaTLEJiaP",
-  "_key": "!actors!HH2ZgbYeaTLEJiaP",
+  "_id": "CcCPFQo5gTcZ59Bg",
+  "_key": "!actors!CcCPFQo5gTcZ59Bg",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Berserker",
   "type": "npc",
@@ -16,7 +16,7 @@
         "proficient": 0
       },
       "con": {
-        "value": 7,
+        "value": 17,
         "proficient": 0
       },
       "int": {
@@ -68,7 +68,7 @@
       "alignment": "Neutro",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -121,7 +121,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While Bloodied, the berserker has Ad- vantage on attack rolls and saving throws.</p>",
+          "value": "<p>While Bloodied, the berserker has Vantagem on attack rolls and saving throws.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,16 +145,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!HH2ZgbYeaTLEJiaP.riXSIASMOL15hiAI"
+      "_key": "!actors.items!CcCPFQo5gTcZ59Bg.riXSIASMOL15hiAI"
     },
     {
-      "_id": "wLeEcgY2sQXIl7dB",
-      "name": "Greataxe",
+      "_id": "7QtmOVYFeQfd7OZV",
+      "name": "Machado Grande",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 9 (1d1 2 + 3) Cortante de dano. BERSERKERS 37 BLACK DRAGONS Dragons of Decay and Despair</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 9 (1d12 + 3) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -172,8 +172,8 @@
           "subtype": ""
         },
         "activities": {
-          "zI7iamw2QyQSckQQ": {
-            "_id": "zI7iamw2QyQSckQQ",
+          "TU5kib3tjwR6QtbW": {
+            "_id": "TU5kib3tjwR6QtbW",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -226,13 +226,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!HH2ZgbYeaTLEJiaP.wLeEcgY2sQXIl7dB"
+      "_key": "!actors.items!CcCPFQo5gTcZ59Bg.7QtmOVYFeQfd7OZV"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Berserker",
-      "page": 39,
+      "page": 37,
       "cr": "2",
       "warnings": []
     }

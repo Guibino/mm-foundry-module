@@ -1,0 +1,219 @@
+{
+  "_id": "ukpqpd9Y7zySyTiO",
+  "_key": "!actors!ukpqpd9Y7zySyTiO",
+  "folder": "CVeezowVb7BNP8yc",
+  "name": "Animated Rug of Smothering",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/tokens/animated-rug-of-smothering.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 17,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0
+      },
+      "int": {
+        "value": 1,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 3,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 1,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 12,
+        "formula": ""
+      },
+      "hp": {
+        "value": 27,
+        "max": 27,
+        "formula": "5d10",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 10
+      },
+      "senses": {
+        "units": "ft",
+        "blindsight": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "construct",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 2,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "poison",
+          "psychic"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "deafened",
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "petrified",
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Animated Rug of Smothering",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/animated-rug-of-smothering.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "4HEU9ds9gfWxqgeK",
+      "name": "Smother",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 10 (2d6 + 3) dano de concussão. If o alvo is a Medium or smaller creature, the rug can give it a condição Agarrado (CD para escapar 13) instead of dealing de dano. Until the grapple ends, o alvo has the Cego and Impedido conditions, is suffocating, and takes 10 (2d6 + 3) dano de concussão at the start of each of its turns. The rug can smother only uma criatura at a time.\nWhile grappling o alvo, the rug can't take this action, the rug halves the de dano it takes (round down), and o alvo takes the same amount of de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "NAnnUB4J2MgYzev9": {
+            "_id": "NAnnUB4J2MgYzev9",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "2d6+3",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ukpqpd9Y7zySyTiO.4HEU9ds9gfWxqgeK"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Animated Rug of Smothering",
+      "page": 17,
+      "cr": "2",
+      "warnings": []
+    }
+  }
+}

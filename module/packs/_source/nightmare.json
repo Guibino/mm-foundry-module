@@ -1,6 +1,6 @@
 {
-  "_id": "58fppTjv4wc2PKdr",
-  "_key": "!actors!58fppTjv4wc2PKdr",
+  "_id": "xzwbPga3GIh37yxj",
+  "_key": "!actors!xzwbPga3GIh37yxj",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Nightmare",
   "type": "npc",
@@ -69,7 +69,7 @@
       "alignment": "Neutro e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -100,7 +100,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Understands Abyssal, Comum, and"
+        "custom": "understands Abyssal, Comum, and Infernal but can't speak"
       }
     },
     "skills": {}
@@ -124,7 +124,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The ni ghtmare can grant Re- sistance to Fogo de dano to? rider while it is on the nightmare.</p>",
+          "value": "<p>The nightmare can grant Resistance to dano de fogo to a rider while it is on the nightmare.</p>",
           "chat": ""
         },
         "activation": {
@@ -148,16 +148,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!58fppTjv4wc2PKdr.5gSpF4nXOQuGTYTX"
+      "_key": "!actors.items!xzwbPga3GIh37yxj.5gSpF4nXOQuGTYTX"
     },
     {
-      "_id": "nUPTv7RKnBxxP01M",
-      "name": "Illumination",
+      "_id": "GoJToquC8d6cs8wJ",
+      "name": "Iluminação",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The nightmare sheds Bright Light in a 10- foot radius and Dim Light for an additional 10 feet.</p>",
+          "value": "<p>A criatura emite Luz Plena em um raio de 3 m e Luz Fraca por mais 3 m.</p>",
           "chat": ""
         },
         "activation": {
@@ -181,16 +181,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!58fppTjv4wc2PKdr.nUPTv7RKnBxxP01M"
+      "_key": "!actors.items!xzwbPga3GIh37yxj.GoJToquC8d6cs8wJ"
     },
     {
-      "_id": "ZiJJKgpduUgB1Cnu",
-      "name": "Hooves",
+      "_id": "jl2Cg7dZJgPHoHJ9",
+      "name": "Cascos",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 13 (2d8 ~ 4) Concussão de dano plus 10 (3d6) Fogo'de dano. u - Ethereal Stride. The nightmare and up to three willing 0.. creatures within 5 feet of it teleport to the Ethereal z Plane from the Material Plane or vice versa. __J - ---=----- ~- _- _- _- _-_ -_ -_ -_ -_-_-_- ....... 7~~-r- ~ NOBLE Medium or Small Humanoid, Neutral AC 15 Iniciativa +l (11) HP 9 (2d8) Speed 30 ft. MOO SAVE MOO SAVE MOO SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 13 (2d8 + 4) dano de concussão mais 10 (3d6) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -208,8 +208,8 @@
           "subtype": ""
         },
         "activities": {
-          "pwMD4h2bLgjspEGx": {
-            "_id": "pwMD4h2bLgjspEGx",
+          "RHI1m9rAGdcexrRy": {
+            "_id": "RHI1m9rAGdcexrRy",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -230,15 +230,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "4",
                   "types": [
                     "bludgeoning"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "2d8~4"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -256,19 +256,53 @@
           "mechanics": {
             "toHit": 6,
             "attackType": "melee",
-            "damageFormula": "2d8~4",
+            "damageFormula": "2d8+4",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!58fppTjv4wc2PKdr.ZiJJKgpduUgB1Cnu"
+      "_key": "!actors.items!xzwbPga3GIh37yxj.jl2Cg7dZJgPHoHJ9"
+    },
+    {
+      "_id": "xmIKFDyaYqMtfRIA",
+      "name": "Ethereal Stride",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The nightmare and up to three willing creatures within 1,5 m of it teleport to the Ethereal Plane from the Material Plane or vice versa.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xzwbPga3GIh37yxj.xmIKFDyaYqMtfRIA"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Nightmare",
-      "page": 228,
+      "page": 226,
       "cr": "3",
       "warnings": []
     }

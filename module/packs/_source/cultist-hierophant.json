@@ -1,6 +1,6 @@
 {
-  "_id": "qo9YiRREnNpQbndG",
-  "_key": "!actors!qo9YiRREnNpQbndG",
+  "_id": "Hpie4KC7enJraO4D",
+  "_key": "!actors!Hpie4KC7enJraO4D",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Cultist Hierophant",
   "type": "npc",
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 16,
         "formula": ""
       },
       "hp": {
@@ -68,7 +68,7 @@
       "alignment": "Neutro",
       "cr": 10,
       "xp": {
-        "value": 5900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -102,15 +102,15 @@
     },
     "skills": {
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       },
       "per": {
-        "value": 1,
+        "value": 2,
         "ability": "cha"
       },
       "rel": {
-        "value": 1,
+        "value": 2,
         "ability": "int"
       }
     }
@@ -134,7 +134,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cultist makes three attacks, using Pact Blade or Radiante Ray in any combination .</p>",
+          "value": "<p>The cultist makes three attacks, using Pact Blade or Radiante Ray in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -159,7 +159,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qo9YiRREnNpQbndG.M9cUPsQ9yJYgbDKV"
+      "_key": "!actors.items!Hpie4KC7enJraO4D.M9cUPsQ9yJYgbDKV"
     },
     {
       "_id": "aIvMlJRdoCirmTJq",
@@ -168,7 +168,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 5 ft. Acerto: 12 (2d6 + 5) Cortante de dano plus 18 (4d8) Radi- ant de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 1,5 m. Acerto: 12 (2d6 + 5) dano cortante mais 18 (4d8) dano radiante.</p>",
           "chat": ""
         },
         "activation": {
@@ -240,7 +240,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qo9YiRREnNpQbndG.aIvMlJRdoCirmTJq"
+      "_key": "!actors.items!Hpie4KC7enJraO4D.aIvMlJRdoCirmTJq"
     },
     {
       "_id": "dhnL0vBM3kGbhASb",
@@ -249,7 +249,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +9, range 120 ft. Acerto: 31 (4d12 + 5) Radiante de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +9, distância 36 m. Acerto: 31 (4d12 + 5) dano radiante.</p>",
           "chat": ""
         },
         "activation": {
@@ -321,7 +321,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qo9YiRREnNpQbndG.dhnL0vBM3kGbhASb"
+      "_key": "!actors.items!Hpie4KC7enJraO4D.dhnL0vBM3kGbhASb"
     },
     {
       "_id": "7nTxo4QtlVvyukFr",
@@ -330,7 +330,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cultist casts one of the following spells, using Carisma as the spellcasting ability (spell save DC 17): À Vontade: Mage Armor (included in AC), Thaumaturgy 1/Dia Each:Jallarzi's Storm of Radiance (level 7 ver- sion), Mass Suggestion CULTISTS 85 TYPES OF CULTISTS Cults can organize around any mystical tradition, but many serve supernatural beings. Cult members often have abilities tied to the forces they worship. ABERRANT CULTIST Aberrant cultists pursue mind-bending powers from alien forces. Aberrant cultists align with monsters such as aboleths and mind flayers or forces such as Cthulhu, Hadar, Ityak-Ortheel the Elf Eater, Nyarlathotep, malicious solar bodies, or entities from the Far Realm. DEATH CULTIST Death cultists revel in nihilistic forces, embracing them as paths to undeath, multiversal purity, or entropic inevitability. These cultists serve powerful ABERRAN T CULTIST Medium or Small Humanoid, Neutr al E tJ il AC14 - Iniciativa +7 (17) HP 137 (25d8 + 25) S peed 30 ft. MO D SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>The cultist casts one of the following spells, using Carisma as the spellcasting ability (spell save CD 17):</p>",
           "chat": ""
         },
         "activation": {
@@ -355,13 +355,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qo9YiRREnNpQbndG.7nTxo4QtlVvyukFr"
+      "_key": "!actors.items!Hpie4KC7enJraO4D.7nTxo4QtlVvyukFr"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Cultist Hierophant",
-      "page": 87,
+      "page": 85,
       "cr": "10",
       "warnings": []
     }

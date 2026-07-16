@@ -1,6 +1,6 @@
 {
-  "_id": "a4KHk8wheYQXXaMP",
-  "_key": "!actors!a4KHk8wheYQXXaMP",
+  "_id": "5r3vkw2FTjBI5xHW",
+  "_key": "!actors!5r3vkw2FTjBI5xHW",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Commoner",
   "type": "npc",
@@ -39,9 +39,9 @@
         "formula": ""
       },
       "hp": {
-        "value": 1,
-        "max": 1,
-        "formula": "",
+        "value": 4,
+        "max": 4,
+        "formula": "1d8",
         "temp": null,
         "tempmax": null
       },
@@ -68,7 +68,7 @@
       "alignment": "Neutro",
       "cr": 0,
       "xp": {
-        "value": 10
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -97,7 +97,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Common •"
+        "custom": "Comum"
       }
     },
     "skills": {}
@@ -121,7 +121,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The commoner has proficiency in one skill of the DM 's choice and has Advantage whenever it makes an ability check using that skill.</p>",
+          "value": "<p>The commoner has proficiency in one skill of the DM's choice and has Vantagem whenever it makes an ability check using that skill.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,16 +145,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!a4KHk8wheYQXXaMP.h6QwzMPuJY5a4pjW"
+      "_key": "!actors.items!5r3vkw2FTjBI5xHW.h6QwzMPuJY5a4pjW"
     },
     {
-      "_id": "3ZTW849bCk3cSPLG",
-      "name": "Club",
+      "_id": "nN33jZgjn2ujKGbC",
+      "name": "Clava",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 5 ft. Acerto: 2 (1d4) Blud- geoning de dano. COMMONER 77 COPPER WYR M LI COPPER DRAGONS Dragons of Curiosity and Community</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 1,5 m. Acerto: 2 (1d4) dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
@@ -172,8 +172,8 @@
           "subtype": ""
         },
         "activities": {
-          "NpcjsewAAfco2v9O": {
-            "_id": "NpcjsewAAfco2v9O",
+          "I8cFJMKv6v6zyrgV": {
+            "_id": "I8cFJMKv6v6zyrgV",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -192,7 +192,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -201,22 +219,22 @@
         "mm2024": {
           "mechanics": {
             "toHit": 2,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d4",
+            "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!a4KHk8wheYQXXaMP.3ZTW849bCk3cSPLG"
+      "_key": "!actors.items!5r3vkw2FTjBI5xHW.nN33jZgjn2ujKGbC"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Commoner",
-      "page": 79,
+      "page": 77,
       "cr": "0",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "warnings": []
     }
   }
 }

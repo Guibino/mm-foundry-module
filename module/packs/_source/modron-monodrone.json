@@ -1,6 +1,6 @@
 {
-  "_id": "PXX4fOaTVM56vDfz",
-  "_key": "!actors!PXX4fOaTVM56vDfz",
+  "_id": "jDwQdhCQRHYDtcda",
+  "_key": "!actors!jDwQdhCQRHYDtcda",
   "folder": "CVeezowVb7BNP8yc",
   "name": "Modron Monodrone",
   "type": "npc",
@@ -39,9 +39,9 @@
         "formula": ""
       },
       "hp": {
-        "value": 1,
-        "max": 1,
-        "formula": "",
+        "value": 5,
+        "max": 5,
+        "formula": "1d8 + 1",
         "temp": null,
         "tempmax": null
       },
@@ -52,7 +52,8 @@
         "fly": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "truesight": 120
       },
       "init": {
         "ability": "dex",
@@ -67,9 +68,9 @@
         "custom": ""
       },
       "alignment": "Leal e Neutro",
-      "cr": 0,
+      "cr": 0.125,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -82,7 +83,7 @@
       "size": "med",
       "di": {
         "value": [],
-        "custom": "Charmed"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -93,12 +94,14 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Modron"
       }
     },
     "skills": {}
@@ -116,13 +119,13 @@
   },
   "items": [
     {
-      "_id": "848qSfBMqMyHrGs4",
-      "name": "Disintegration",
+      "_id": "8IeeFCADY8Utbdev",
+      "name": "Desintegração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the mod ro n di es, it disintegrates into dust, leaving behind anything it was wearing or carry1 ng.</p>",
+          "value": "<p>Se a criatura morrer, ela se desintegra em pó, deixando para trás tudo o que estava vestindo ou carregando.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +149,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!PXX4fOaTVM56vDfz.848qSfBMqMyHrGs4"
+      "_key": "!actors.items!jDwQdhCQRHYDtcda.8IeeFCADY8Utbdev"
     },
     {
-      "_id": "VaabuFi0F1UnjeMT",
-      "name": "Energia de dano",
+      "_id": "K7WvEAJadQzCrYFb",
+      "name": "Gear",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>z</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 6 (1d8 + 2) dano de energia.</p>",
           "chat": ""
         },
         "activation": {
@@ -172,25 +175,151 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "nctaVeMQsSw8K4TP": {
+            "_id": "nctaVeMQsSw8K4TP",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "2",
+                  "types": [
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "1d8+2",
+            "damageType": "force"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!PXX4fOaTVM56vDfz.VaabuFi0F1UnjeMT"
+      "_key": "!actors.items!jDwQdhCQRHYDtcda.K7WvEAJadQzCrYFb"
+    },
+    {
+      "_id": "gHQuAsd0eMQBexKA",
+      "name": "Gear Flinger",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +4, distância 36 m. Acerto: 6 (1d8 + 2) dano de energia.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "ziNSGmA62cJXFmnD": {
+            "_id": "ziNSGmA62cJXFmnD",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "2",
+                  "types": [
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "ranged",
+            "damageFormula": "1d8+2",
+            "damageType": "force"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!jDwQdhCQRHYDtcda.gHQuAsd0eMQBexKA"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Modron Monodrone",
-      "page": 218,
-      "cr": "0",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "page": 216,
+      "cr": "1/8",
+      "warnings": []
     }
   }
 }

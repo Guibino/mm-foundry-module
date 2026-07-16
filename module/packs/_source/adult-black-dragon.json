@@ -1,8 +1,8 @@
 {
-  "_id": "94anxYRN1Rcq6uu0",
-  "_key": "!actors!94anxYRN1Rcq6uu0",
+  "_id": "7quH2mfAf0nSLttO",
+  "_key": "!actors!7quH2mfAf0nSLttO",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Adulto Negro Dragão",
+  "name": "Adult Black Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/adult-black-dragon.webp",
   "system": {
@@ -48,10 +48,14 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40,
+        "fly": 80,
+        "swim": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 120,
+        "blindsight": 60
       },
       "init": {
         "ability": "dex",
@@ -61,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Chromat ic",
+        "subtype": "chromatic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Mau",
       "cr": 14,
       "xp": {
-        "value": 11500
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -99,13 +103,22 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum, Dracônico"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Adulto Negro Dragão",
+    "name": "Adult Black Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -117,13 +130,13 @@
   },
   "items": [
     {
-      "_id": "TXYQw3WyGTqgxZMb",
-      "name": "Amphibious",
+      "_id": "40j9QOt6eECnZrb8",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,16 +160,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!94anxYRN1Rcq6uu0.TXYQw3WyGTqgxZMb"
+      "_key": "!actors.items!7quH2mfAf0nSLttO.40j9QOt6eECnZrb8"
     },
     {
       "_id": "izg0RyGpr0QrdKf7",
-      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "name": "Resistência Lendária",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the dragon fails a saving throw, it can choose to suc- ceed instead.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -165,13 +178,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "3",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -185,7 +193,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!94anxYRN1Rcq6uu0.izg0RyGpr0QrdKf7"
+      "_key": "!actors.items!7quH2mfAf0nSLttO.izg0RyGpr0QrdKf7"
     },
     {
       "_id": "YtRvk7ewGbQKPO2B",
@@ -194,7 +202,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of Conjuração to cast Me/f's Ácido Arrow (level 3 version).</p>",
+          "value": "<p>The dragon makes three Dilacerar attacks. It can replace one attack with a use of Conjuração to cast Melf's Ácido Arrow (level 3 version).</p>",
           "chat": ""
         },
         "activation": {
@@ -219,16 +227,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!94anxYRN1Rcq6uu0.YtRvk7ewGbQKPO2B"
+      "_key": "!actors.items!7quH2mfAf0nSLttO.YtRvk7ewGbQKPO2B"
     },
     {
-      "_id": "cQdkwZKAXh2NgKps",
-      "name": "Rend",
+      "_id": "aQigbxJkYCrrIKcO",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 11, alcance l Oft. Acerto: 13 (2d6 + 6) Cortante de dano plus 4 (1d8) Ácido de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +11, alcance 3 m. Acerto: 13 (2d6 + 6) dano cortante mais 4 (1d8) dano de ácido.</p>",
           "chat": ""
         },
         "activation": {
@@ -245,27 +253,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "2HhIN79Go1i16EXJ": {
+            "_id": "2HhIN79Go1i16EXJ",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "11",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "6",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 11,
+            "attackType": "melee",
             "damageFormula": "2d6+6",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!94anxYRN1Rcq6uu0.cQdkwZKAXh2NgKps"
+      "_key": "!actors.items!7quH2mfAf0nSLttO.aQigbxJkYCrrIKcO"
     },
     {
-      "_id": "CJG5SVmgDkk3OHKQ",
-      "name": "Ácido Breath (Recharge 5-6)",
+      "_id": "gUeJU7S61ePlid8r",
+      "name": "Sopro de Ácido (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 18, cada criatura in a 60-foot-long, 5-foot-wide Line. Falha: 54 (l 2d8) Ácido de dano. Sucesso: Metade do dano. Conjuração._ The dragon casts one of the following spells, requiring no Material components and using • Carisma as the spellcasting ability (spell save DC 17, +9 to hit with spell attacks): À Vontade: Detect Magic , Fear , Me/f's Ácido Arrow (level 3 version) 1/Dia Each: Speak with Dead, Vitriolic Sphere</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 18, cada criatura in a 18 m-long, 1,5 m-wide Line. 54 (12d8) dano de ácido. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -289,8 +341,198 @@
           "subtype": ""
         },
         "activities": {
-          "HXQTHADs2zjH5hhz": {
-            "_id": "HXQTHADs2zjH5hhz",
+          "zBh3ebLOnpegUIVD": {
+            "_id": "zBh3ebLOnpegUIVD",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "18"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 18,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!7quH2mfAf0nSLttO.gUeJU7S61ePlid8r"
+    },
+    {
+      "_id": "cTepQqsvbjWXoTYk",
+      "name": "Cloud of Insects",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Destreza: CD 17, uma criatura the dragon can see within 36 m. 22 (4d10) dano de veneno, and o alvo has Desvantagem on saving throws to maintain Concentration until the end of its next turn. The dragon can't take this action again until the start of its next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "nIpIQElnGhAREdv5": {
+            "_id": "nIpIQElnGhAREdv5",
+            "type": "save",
+            "activation": {
+              "type": "legendary",
+              "value": 1,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "17"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 17,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!7quH2mfAf0nSLttO.cTepQqsvbjWXoTYk"
+    },
+    {
+      "_id": "XRxiirxLjs36Ke1c",
+      "name": "Frightful Presence",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon uses Conjuração to cast Fear. The dragon can't take this action again until the start of its next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!7quH2mfAf0nSLttO.XRxiirxLjs36Ke1c"
+    },
+    {
+      "_id": "98lFLxIHUxxrbo0A",
+      "name": "Bote",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon can move up to half its Speed, and it makes one Dilacerar attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!7quH2mfAf0nSLttO.98lFLxIHUxxrbo0A"
+    },
+    {
+      "_id": "VQXeGrelifijiupy",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 17, +9 to hit with spell attacks):</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "4EsuvjnFGn7lVPtP": {
+            "_id": "4EsuvjnFGn7lVPtP",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -309,25 +551,7 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": [
-                {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
-                  "types": [
-                    "acid"
-                  ],
-                  "custom": {
-                    "enabled": true,
-                    "formula": "l2d8"
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -335,161 +559,18 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "toHit": 9,
-            "damageFormula": "l2d8",
-            "damageType": "acid",
-            "saveDc": 18,
-            "saveAbility": "dex"
+            "toHit": 9
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!94anxYRN1Rcq6uu0.CJG5SVmgDkk3OHKQ"
-    },
-    {
-      "_id": "cTepQqsvbjWXoTYk",
-      "name": "Cloud of Insects",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Destreza Teste de Resistência : DC 17, uma criatura the dragon can see within 120 feet. Falha: 22 (4d1 0) Veneno de dano, and o alvo has Disad- vantage on saving throws to maintain Concentration until the end of its next turn. Falha ou Sucesso: The dragon can't take this action again until the start of its - next turn.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "legendary",
-          "value": 1,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {
-            "damageFormula": "4d10",
-            "damageType": "poison"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!94anxYRN1Rcq6uu0.cTepQqsvbjWXoTYk"
-    },
-    {
-      "_id": "XRxiirxLjs36Ke1c",
-      "name": "Frightful Presence",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The dragon uses Conjuração to cast</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "legendary",
-          "value": 1,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!94anxYRN1Rcq6uu0.XRxiirxLjs36Ke1c"
-    },
-    {
-      "_id": "KpC781EXZhx3aKE5",
-      "name": "Fear",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The dragon can't take this a ct ion a g a i n u n ti I the start of its next turn.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "legendary",
-          "value": 1,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!94anxYRN1Rcq6uu0.KpC781EXZhx3aKE5"
-    },
-    {
-      "_id": "qTI2AS95mTRixfYR",
-      "name": "Pounce",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The dragon moves up to · half its Speed , and it makes one Rend attack. 6-_ 39 BLACK DRAGONS ADULT BLACK DRAGON By the time they're adults, black dragons are among the greatest terrors in the lands they claim. Wretched swamps and monster-haunted ruins grow more dismal and spread under an adult black dragon's influence. Morbid cultists and doomsayers frequently gather in the dragon's service, bringing with them undead terrors that answer to the black dragon and aid it in spreading ruin to nearby bas- tions of beauty and peace. ANCIENT BLACK DRAGON Ancient black dragons plot the ruin of whole realms. They seek magic to corrupt the land, raise undead hordes, bind fiends, and replicate magical di- sasters. Ancient black dragons strive to create vast, dead domains where they are the greatest things that remain. ANCIENT BLACK DRAGON Gargantuan Drag on (Chro m atic), Chaotic Evil AC 22 Iniciativa + 16 (26) HP 367 (21d20 + 147) Speed 40 ft., Fly 80 ft., Swim 40 ft. MOD SAV E MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "legendary",
-          "value": 1,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!94anxYRN1Rcq6uu0.qTI2AS95mTRixfYR"
+      "_key": "!actors.items!7quH2mfAf0nSLttO.VQXeGrelifijiupy"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Adult Black Dragon",
-      "page": 41,
+      "page": 39,
       "cr": "14",
       "warnings": []
     }

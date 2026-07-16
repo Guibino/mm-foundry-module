@@ -1,6 +1,6 @@
 {
-  "_id": "8o8lVK7nipW2ZCJl",
-  "_key": "!actors!8o8lVK7nipW2ZCJl",
+  "_id": "kuMmuek0MMEvycku",
+  "_key": "!actors!kuMmuek0MMEvycku",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Cockatrice",
   "type": "npc",
@@ -70,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 0.5,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -83,7 +83,7 @@
       "size": "sm",
       "di": {
         "value": [],
-        "custom": "Petrified"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -94,7 +94,9 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "petrified"
+        ],
         "custom": ""
       },
       "languages": {
@@ -117,13 +119,13 @@
   },
   "items": [
     {
-      "_id": "7gUO8sVCQ3f89zvy",
-      "name": "Petrifying Bite",
+      "_id": "xEUU5yAS7fp6rtcQ",
+      "name": "Petrifying Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 3 (1d4 + l) Perfurante de dano. If o alvo is a creature, - it is subjected to the following effect. Constituição Teste de Resistência: DC 11. First Falha: The target has the</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 3 (1d4 + 1) dano perfurante. If o alvo is uma criatura, it is subjected to the following effect. Teste de Resistência de Constituição: CD 11. Falha: O alvo fica com a condição Impedido. O alvo repeats the save at the end of its next turn if it is still Impedido, ending the effect on itself on a success. Falha: O alvo fica com a condição Petrificado, instead of a condição Impedido, for 24 hours.</p>",
           "chat": ""
         },
         "activation": {
@@ -141,8 +143,8 @@
           "subtype": ""
         },
         "activities": {
-          "PBlcVKs0haOOWgyA": {
-            "_id": "PBlcVKs0haOOWgyA",
+          "ztRiOtZiNIV265EI": {
+            "_id": "ztRiOtZiNIV265EI",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -163,15 +165,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "1",
                   "types": [
                     "piercing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "1d4+l"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -189,7 +191,7 @@
           "mechanics": {
             "toHit": 3,
             "attackType": "melee",
-            "damageFormula": "1d4+l",
+            "damageFormula": "1d4+1",
             "damageType": "piercing",
             "saveDc": 11,
             "saveAbility": "con"
@@ -197,47 +199,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8o8lVK7nipW2ZCJl.7gUO8sVCQ3f89zvy"
-    },
-    {
-      "_id": "5RfumonKtDFHxDNS",
-      "name": "Impedido condition",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The target repeats the save at the end of its next turn if it is still Impedido, ending the effect on itself on a success. Second Falha: The target has the Petrificado condition, instead of the Impedido - condition, for 24 hours. ~ ~~~ -------- o_o_c_K_A_T_R_r, 7 --- 5 ~- COLOSSUS Titanic Vessel of Divine Might</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!8o8lVK7nipW2ZCJl.5RfumonKtDFHxDNS"
+      "_key": "!actors.items!kuMmuek0MMEvycku.xEUU5yAS7fp6rtcQ"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Cockatrice",
-      "page": 77,
+      "page": 75,
       "cr": "1/2",
       "warnings": []
     }

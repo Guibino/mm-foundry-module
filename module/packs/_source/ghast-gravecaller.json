@@ -1,6 +1,6 @@
 {
-  "_id": "gdo1b2JUu2ZdE6fq",
-  "_key": "!actors!gdo1b2JUu2ZdE6fq",
+  "_id": "vEqDVjxonbe7IOwF",
+  "_key": "!actors!vEqDVjxonbe7IOwF",
   "folder": "bKQUPthn1V2Yu6Bn",
   "name": "Ghast Gravecaller",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 97,
         "max": 97,
-        "formula": "l Sd8 + 30",
+        "formula": "15d8 + 30",
         "temp": null,
         "tempmax": null
       },
@@ -51,7 +51,8 @@
         "walk": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 120
       },
       "init": {
         "ability": "dex",
@@ -68,7 +69,7 @@
       "alignment": "Caótico e Mau",
       "cr": 6,
       "xp": {
-        "value": 2300
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -80,7 +81,10 @@
     "traits": {
       "size": "med",
       "di": {
-        "value": [],
+        "value": [
+          "necrotic",
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
@@ -92,7 +96,11 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed",
+          "exhaustion",
+          "poisoned"
+        ],
         "custom": ""
       },
       "languages": {
@@ -115,13 +123,13 @@
   },
   "items": [
     {
-      "_id": "8rUsp8fxB1FaxRHA",
-      "name": "Stench",
+      "_id": "YEbOKYGrdEbSQgIK",
+      "name": "Fedor",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 13, any creature that starts its turn in a 5-foot Emanation originating from the ghast. Falha: The target has the Envenenado condition until the start of its next turn. Sucesso: The target is immune to this ghast's Stench for 24 hours.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 13, any creature that starts its turn in a 1,5 m Emanation originating from the ghast. O alvo fica com a condição Envenenado until the start of its next turn. O alvo is immune to this ghast's Fedor for 24 hours.</p>",
           "chat": ""
         },
         "activation": {
@@ -148,7 +156,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gdo1b2JUu2ZdE6fq.8rUsp8fxB1FaxRHA"
+      "_key": "!actors.items!vEqDVjxonbe7IOwF.YEbOKYGrdEbSQgIK"
     },
     {
       "_id": "dndoeXmns4QO2RSx",
@@ -157,7 +165,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The ghast makes two Horrific Necrosis at- tacks. It can -replace one attack with a Claw attack.</p>",
+          "value": "<p>The ghast makes two Horrific Necrosis attacks. It can replace one attack with a Garra attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -182,16 +190,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gdo1b2JUu2ZdE6fq.dndoeXmns4QO2RSx"
+      "_key": "!actors.items!vEqDVjxonbe7IOwF.dndoeXmns4QO2RSx"
     },
     {
-      "_id": "RWe4AZqdeBnGmMfE",
-      "name": "Claw",
+      "_id": "XGGf5xOvhbwUTQFR",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 13 (3d6 + 3)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 13 (3d6 + 3) dano cortante. If o alvo isn't an Undead, it fica com a condição Paralisado until the end of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -209,8 +217,8 @@
           "subtype": ""
         },
         "activities": {
-          "1bL1WdNyyXZFPbqK": {
-            "_id": "1bL1WdNyyXZFPbqK",
+          "nje9Tvl12D0r9Hhp": {
+            "_id": "nje9Tvl12D0r9Hhp",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -229,7 +237,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -238,55 +264,23 @@
         "mm2024": {
           "mechanics": {
             "toHit": 6,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "3d6+3",
+            "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gdo1b2JUu2ZdE6fq.RWe4AZqdeBnGmMfE"
+      "_key": "!actors.items!vEqDVjxonbe7IOwF.XGGf5xOvhbwUTQFR"
     },
     {
-      "_id": "3LQPxtAnvwRdERUW",
-      "name": "Cortante de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If o alvo isn't an Undead, it has the Paralisado condition until the end of its next turn.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!gdo1b2JUu2ZdE6fq.3LQPxtAnvwRdERUW"
-    },
-    {
-      "_id": "a8FaCGOTM7Dgqphn",
+      "_id": "csc9DpYvwVmVOTtX",
       "name": "Horrific Necrosis",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 5 ft. or range 120 ft. Acerto: 15 (2d1 O + 4) Necrótico dam- age, and o alvo has the Amedrontado condition until the end of its next turn.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 1,5 m. or distância 36 m. Acerto: 15 (2d10 + 4) dano necrótico, and o alvo fica com a condição Amedrontado until the end of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -304,8 +298,8 @@
           "subtype": ""
         },
         "activities": {
-          "zdlziBDkxWB5ceyw": {
-            "_id": "zdlziBDkxWB5ceyw",
+          "azlez3UrCUsq6bEV": {
+            "_id": "azlez3UrCUsq6bEV",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -324,7 +318,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "4",
+                  "types": [
+                    "necrotic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -333,12 +345,14 @@
         "mm2024": {
           "mechanics": {
             "toHit": 7,
-            "attackType": "ranged"
+            "attackType": "ranged",
+            "damageFormula": "2d10+4",
+            "damageType": "necrotic"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gdo1b2JUu2ZdE6fq.a8FaCGOTM7Dgqphn"
+      "_key": "!actors.items!vEqDVjxonbe7IOwF.csc9DpYvwVmVOTtX"
     },
     {
       "_id": "CklDw0AwgZ2lqp3x",
@@ -347,7 +361,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The ghast casts one of the following spells, requiring no Material components and using In- <i: telligence as the spellcasting ability: O'.J À Vontade: Speak with Dead, Thaumaturgy _J GHOST Lost Soul and Unquiet Spirit</p>",
+          "value": "<p>The ghast casts one of the following spells, requiring no Material components and using Inteligência as the spellcasting ability:</p>",
           "chat": ""
         },
         "activation": {
@@ -372,13 +386,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gdo1b2JUu2ZdE6fq.CklDw0AwgZ2lqp3x"
+      "_key": "!actors.items!vEqDVjxonbe7IOwF.CklDw0AwgZ2lqp3x"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Ghast Gravecaller",
-      "page": 132,
+      "page": 130,
       "cr": "6",
       "warnings": []
     }

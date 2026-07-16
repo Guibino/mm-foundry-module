@@ -1,8 +1,8 @@
 {
-  "_id": "eCBWoZwfMVIZbEQm",
-  "_key": "!actors!eCBWoZwfMVIZbEQm",
+  "_id": "4waNJdbd0b7r8feQ",
+  "_key": "!actors!4waNJdbd0b7r8feQ",
   "folder": "1QPcErIwVgACFlzi",
-  "name": "Bandit Capitão",
+  "name": "Bandit Captain",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/bandit-captain.webp",
   "system": {
@@ -68,7 +68,7 @@
       "alignment": "Neutro",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -97,7 +97,7 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum, Thieves' cant"
       }
     },
     "skills": {
@@ -112,7 +112,7 @@
     }
   },
   "prototypeToken": {
-    "name": "Bandit Capitão",
+    "name": "Bandit Captain",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -130,7 +130,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The bandit .makes two attacks, using Scimitar and Pistol in any combination.</p>",
+          "value": "<p>The bandit makes two attacks, using Cimitarra and Pistol in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -155,16 +155,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eCBWoZwfMVIZbEQm.nhfvabCDCETdI13a"
+      "_key": "!actors.items!4waNJdbd0b7r8feQ.nhfvabCDCETdI13a"
     },
     {
-      "_id": "59AKwWFQo0YhO1d1",
-      "name": "Scimitar",
+      "_id": "3VVENtbPU3PztA54",
+      "name": "Cimitarra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Melee Atta~k Roll: +5, alcance 5 ft. Acerto: 6 (1d6 + 3) Cortante de dano. - Pistol. Rolagem de Ataque à Distância: +5, range 30/90 ft. Acerto: 8 (1d10 + 3) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 6 (1d6 + 3) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -182,8 +182,8 @@
           "subtype": ""
         },
         "activities": {
-          "Z2sZcs3dAB5oLmEX": {
-            "_id": "Z2sZcs3dAB5oLmEX",
+          "d4UNyEXJJhIQ5K4O": {
+            "_id": "d4UNyEXJJhIQ5K4O",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -196,7 +196,7 @@
               "bonus": "5",
               "flat": true,
               "type": {
-                "value": "ranged",
+                "value": "melee",
                 "classification": "weapon"
               }
             },
@@ -229,23 +229,104 @@
         "mm2024": {
           "mechanics": {
             "toHit": 5,
-            "attackType": "ranged",
+            "attackType": "melee",
             "damageFormula": "1d6+3",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eCBWoZwfMVIZbEQm.59AKwWFQo0YhO1d1"
+      "_key": "!actors.items!4waNJdbd0b7r8feQ.3VVENtbPU3PztA54"
     },
     {
-      "_id": "AclNRF6xwomMzfA8",
-      "name": "Parry",
+      "_id": "EDJaSbAvUpFJ9Z4R",
+      "name": "Pistol",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: The bandit is hit by a melee attack roll while holding a weapon. Response: The bandit adds 2 to its AC against that attack, possibly causing it to miss. BAND I TS ~ 27 Roll on or choose a result from the Bandit Motiva- tions table to determine the circumstances behind a bandit's crimes. BANDIT MOTIVATIONS 1d6 The Bandit ... l Fights only oppressors. 2 Is an ex-soldier who was discarded by their na- tion and now takes what they were promised. 3 Is in a gang that views nonmembers as foes. 4 Hesitantly serves a villainous leader. 5 Secretly works for a government or a regional ruler to sow chaos. 6 Takes what they need to survive. 1 AM HE W HO RUL ES THE W O R LD , D O N ' T Y OU KN O W? O NE L ITTL E P IE CE AT A TI M E . - J A R L A XL E BANDIT DECEIVER Medium or Small Hu manoi d, Neutral AC 16 Iniciativa +6 (16) HP 130 (20d8 + 40) Sp ee d 30 ft. MOD SAVE MOD S AVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +5, distância 9/27 m. Acerto: 8 (1d10 + 3) dano perfurante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "bpglwO94BKj6YrK5": {
+            "_id": "bpglwO94BKj6YrK5",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 10,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "ranged",
+            "damageFormula": "1d10+3",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!4waNJdbd0b7r8feQ.EDJaSbAvUpFJ9Z4R"
+    },
+    {
+      "_id": "edqZJKRnSgFQu4GT",
+      "name": "Aparar",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura é atingida por uma rolagem de ataque corpo a corpo enquanto empunha uma arma. Ela adiciona 2 à sua CA contra esse ataque, podendo fazê-lo errar.</p>",
           "chat": ""
         },
         "activation": {
@@ -270,13 +351,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eCBWoZwfMVIZbEQm.AclNRF6xwomMzfA8"
+      "_key": "!actors.items!4waNJdbd0b7r8feQ.edqZJKRnSgFQu4GT"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Bandit Captain",
-      "page": 29,
+      "page": 27,
       "cr": "2",
       "warnings": []
     }

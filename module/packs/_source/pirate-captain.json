@@ -1,8 +1,8 @@
 {
-  "_id": "2AceMFAi6Mms3oof",
-  "_key": "!actors!2AceMFAi6Mms3oof",
+  "_id": "CxyZagsUDg8zZ3Tw",
+  "_key": "!actors!CxyZagsUDg8zZ3Tw",
   "folder": "1QPcErIwVgACFlzi",
-  "name": "Pirate Capitão",
+  "name": "Pirate Captain",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/pirate-captain.webp",
   "system": {
@@ -68,7 +68,7 @@
       "alignment": "Neutro",
       "cr": 6,
       "xp": {
-        "value": 2300
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -102,17 +102,17 @@
     },
     "skills": {
       "acr": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       },
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       }
     }
   },
   "prototypeToken": {
-    "name": "Pirate Capitão",
+    "name": "Pirate Captain",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -130,7 +130,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The pirate makes three attacks, using Rapier or Pistol in any combination.</p>",
+          "value": "<p>The pirate makes three attacks, using Rapieira or Pistol in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -155,16 +155,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2AceMFAi6Mms3oof.jj7PyyRvaNBEcHnC"
+      "_key": "!actors.items!CxyZagsUDg8zZ3Tw.jj7PyyRvaNBEcHnC"
     },
     {
-      "_id": "5UQbW7BBew1BdJPt",
-      "name": "Rapier",
+      "_id": "Hcn13pjCjyC0wRU3",
+      "name": "Rapieira",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 13 (2d8 + 4) Perfurante de dano, and the pirate has Advantage on the next attack roll it makes before the end of this turn.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 13 (2d8 + 4) dano perfurante, and the pirate has Vantagem on the next attack roll it makes before the end of this turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -182,8 +182,8 @@
           "subtype": ""
         },
         "activities": {
-          "ezISuoe1WPSajdNr": {
-            "_id": "ezISuoe1WPSajdNr",
+          "X4ibnbm3eWLfjdjY": {
+            "_id": "X4ibnbm3eWLfjdjY",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -236,7 +236,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2AceMFAi6Mms3oof.5UQbW7BBew1BdJPt"
+      "_key": "!actors.items!CxyZagsUDg8zZ3Tw.Hcn13pjCjyC0wRU3"
     },
     {
       "_id": "EPjqAOk59nb6qai8",
@@ -245,7 +245,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +7, range 30/90 ft. Acerto: 15 (2d10 + 4) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +7, distância 9/27 m. Acerto: 15 (2d10 + 4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -317,7 +317,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2AceMFAi6Mms3oof.EPjqAOk59nb6qai8"
+      "_key": "!actors.items!CxyZagsUDg8zZ3Tw.EPjqAOk59nb6qai8"
     },
     {
       "_id": "tUnh0Ov9RkwyEgbK",
@@ -326,7 +326,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sabedoria Teste de Resistência: DC 14, uma criatura the pirate can see within 30 feet. Falha: The target has the Enfeitiçado condition until the start of the pirate's next turn.</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 14, uma criatura the pirate can see within 9 m. O alvo fica com a condição Enfeitiçado until the start of the pirate's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -378,7 +378,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2AceMFAi6Mms3oof.tUnh0Ov9RkwyEgbK"
+      "_key": "!actors.items!CxyZagsUDg8zZ3Tw.tUnh0Ov9RkwyEgbK"
     },
     {
       "_id": "yZ7kYfnHsnQdXZN5",
@@ -387,7 +387,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: The pirate is hit by a melee attack roll while holding a weapon. Response: The pirate adds 3 to its AC against that attack, possibly causing it to miss. On a miss, the pirate makes one Rapier attack against the triggering creature if within range. PIRATES PIRATE FLAGS 1d8 The Flag Shows A ... 1d8 With ... 1 Buccaneer 1 A captain's hat 2 Dragon 2 Crossbones 3 Fiend 3 Crossed blades 4 Goat 4 An eye patch 5 Kraken 5 Elétrico bolts 6 Merfolk 6 A mug of ale 7 Skull 7 A tattoo 8 Whale 8 A treasure chest PIRATE ADMIRAL Medium or Small Humanoid, Neutral AC 20 I ni ti ative +10 (20) HP 182 (28d8 + 56) Spee d 30 ft. MOD SAVE M OD SAVE MO D SAV E</p>",
+          "value": "<p>The pirate is hit by a melee attack roll while holding a weapon. The pirate adds 3 to its AC against that attack, possibly causing it to miss. On a miss, the pirate makes one Rapieira attack against the triggering creature if within distância.</p>",
           "chat": ""
         },
         "activation": {
@@ -412,13 +412,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2AceMFAi6Mms3oof.yZ7kYfnHsnQdXZN5"
+      "_key": "!actors.items!CxyZagsUDg8zZ3Tw.yZ7kYfnHsnQdXZN5"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Pirate Captain",
-      "page": 244,
+      "page": 242,
       "cr": "6",
       "warnings": []
     }

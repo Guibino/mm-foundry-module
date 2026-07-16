@@ -1,6 +1,6 @@
 {
-  "_id": "jq70Ktb0dDao193U",
-  "_key": "!actors!jq70Ktb0dDao193U",
+  "_id": "6MvNTEimWzB61nKI",
+  "_key": "!actors!6MvNTEimWzB61nKI",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Dretch",
   "type": "npc",
@@ -62,14 +62,14 @@
     "details": {
       "type": {
         "value": "fiend",
-        "subtype": "Demon",
+        "subtype": "demon",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Mau",
       "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -81,11 +81,17 @@
     "traits": {
       "size": "sm",
       "di": {
-        "value": [],
+        "value": [
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "cold",
+          "fire",
+          "lightning"
+        ],
         "custom": ""
       },
       "dv": {
@@ -93,12 +99,14 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "poisoned"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Abissal"
+        "custom": ""
       }
     },
     "skills": {}
@@ -116,13 +124,13 @@
   },
   "items": [
     {
-      "_id": "E4NuUuCtnPJ5Bztp",
-      "name": "Rend",
+      "_id": "oUTyDkKud4F8GlVK",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 4 (1d6 + 1) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 4 (1d6 + 1) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -140,8 +148,8 @@
           "subtype": ""
         },
         "activities": {
-          "LzjWGiaeuaPMvO7V": {
-            "_id": "LzjWGiaeuaPMvO7V",
+          "AdP3wuVigCbr8V1M": {
+            "_id": "AdP3wuVigCbr8V1M",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -194,7 +202,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!jq70Ktb0dDao193U.E4NuUuCtnPJ5Bztp"
+      "_key": "!actors.items!6MvNTEimWzB61nKI.oUTyDkKud4F8GlVK"
     },
     {
       "_id": "qKU433c2O41k8jfU",
@@ -203,7 +211,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Sa11ing Throw: DC 11, cada criatura in a 10-foot Emanation originating from the dretch. Falha: The target has the Envenenado condi- tion until the end of its next turn. While Envenenado, the creature can take either an action or a Bonus Action on its turn, not both, and it can't take Reactions. DRETG HES 104 SWARM OF DR ETCH ES Large Swarm of Smafl Fiends (D emon), Ch aotic E 1Ji! AC 12 Iniciativa +0 (10) HP 45 (6d10 + 12) Speed 40 ft . M OD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 11, cada criatura in a 3 m Emanation originating from the dretch. O alvo fica com a condição Envenenado until the end of its next turn. While Envenenado, the creature can take either an action or a Bonus Action on its turn, not both, and it can't take Reactions.</p>",
           "chat": ""
         },
         "activation": {
@@ -225,21 +233,48 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "eKVwEXvADz0d7dcg": {
+            "_id": "eKVwEXvADz0d7dcg",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "11"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 11,
+            "saveAbility": "con"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!jq70Ktb0dDao193U.qKU433c2O41k8jfU"
+      "_key": "!actors.items!6MvNTEimWzB61nKI.qKU433c2O41k8jfU"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Dretch",
-      "page": 106,
+      "page": 103,
       "cr": "1/4",
       "warnings": []
     }

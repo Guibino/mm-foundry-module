@@ -1,6 +1,6 @@
 {
-  "_id": "hlNNNNXFqnkaOxP0",
-  "_key": "!actors!hlNNNNXFqnkaOxP0",
+  "_id": "h6Qjwiyfndyt2dPu",
+  "_key": "!actors!h6Qjwiyfndyt2dPu",
   "folder": "BaJiyGJk3g8zXFNV",
   "name": "Gray Ooze",
   "type": "npc",
@@ -68,7 +68,7 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 0.5,
       "xp": {
         "value": 0
       },
@@ -83,7 +83,7 @@
       "size": "med",
       "di": {
         "value": [],
-        "custom": "Blinded; Charmed; Deafened; Exhaustion"
+        "custom": ""
       },
       "dr": {
         "value": [
@@ -98,12 +98,21 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "blinded",
+          "charmed",
+          "deafened",
+          "exhaustion",
+          "frightened",
+          "grappled",
+          "prone",
+          "restrained"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {
@@ -126,13 +135,13 @@
   },
   "items": [
     {
-      "_id": "iVqKIngqRtiWMpCp",
-      "name": "Amorphous",
+      "_id": "CdipdXvJUvkPh3eG",
+      "name": "Amorfo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The ooze can move through a space as narrow as l inch without expending extra move- ment to do so.</p>",
+          "value": "<p>A criatura pode se mover por um espaço tão estreito quanto 2,5 cm sem gastar movimento extra para isso.</p>",
           "chat": ""
         },
         "activation": {
@@ -156,7 +165,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hlNNNNXFqnkaOxP0.iVqKIngqRtiWMpCp"
+      "_key": "!actors.items!h6Qjwiyfndyt2dPu.CdipdXvJUvkPh3eG"
     },
     {
       "_id": "a0DjHduHxzXoyulk",
@@ -165,7 +174,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Nonmagical ammunition is destroyed immediately after hitting the ooze and dealing any dam- age. Any nonmagical weapon takes a cumulative - l pen- alty to attack rolls immediately after dealing de dano to the ooze and coming into contact with it. The weapon is destroyed if the penalty alcancees -5. The penalty can be removed by casting the Mending spell on the weapon. The ooze can eat through 2-inch-thick, nonmagical metal or wood in l round.</p>",
+          "value": "<p>Nonmagical ammunition is destroyed immediately after hitting the ooze and dealing any de dano. Any nonmagical weapon takes a cumulative -1 penalty to attack rolls immediately after dealing de dano to the ooze and coming into contact with it. The weapon is destroyed if the penalty reaches -5. The penalty can be removed by casting the Mending spell on the weapon.\nThe ooze can eat through 2-inch-thick, nonmagical metal or wood in 1 round.</p>",
           "chat": ""
         },
         "activation": {
@@ -189,16 +198,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hlNNNNXFqnkaOxP0.a0DjHduHxzXoyulk"
+      "_key": "!actors.items!h6Qjwiyfndyt2dPu.a0DjHduHxzXoyulk"
     },
     {
-      "_id": "eyDFW2olnS0zo2x4",
-      "name": "Pseudopod",
+      "_id": "0jF5phndTLAFZJkN",
+      "name": "Pseudópode",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: + 3, alcance 5 ft. Acerto: l 0 (2d8 + l) Ácido de dano. Nonmagical armor worn by o alvo takes a - l penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10. The [lJ penalty can be removed by casting the Mending spell ~ on the armor. PSYCHIC GRAY OOZE Medium Ooze, Unaligned AC 9 I ni tiative - l (14) . HP 37 (5d8 + 15) Speed l Oft., Climb l Oft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 10 (2d8 + 1) dano de ácido. Nonmagical armor worn by o alvo takes a -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10. The penalty can be removed by casting the Mending spell on the armor.</p>",
           "chat": ""
         },
         "activation": {
@@ -215,22 +224,69 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "2Of6GvReUbISVMZA": {
+            "_id": "2Of6GvReUbISVMZA",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "3",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "1",
+                  "types": [
+                    "acid"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "toHit": 3,
+            "attackType": "melee",
+            "damageFormula": "2d8+1",
+            "damageType": "acid"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!hlNNNNXFqnkaOxP0.eyDFW2olnS0zo2x4"
+      "_key": "!actors.items!h6Qjwiyfndyt2dPu.0jF5phndTLAFZJkN"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Gray Ooze",
-      "page": 153,
-      "cr": "0",
+      "page": 151,
+      "cr": "1/2",
       "warnings": []
     }
   }

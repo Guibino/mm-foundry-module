@@ -1,6 +1,6 @@
 {
-  "_id": "tKWa4SIPZa2SJUZQ",
-  "_key": "!actors!tKWa4SIPZa2SJUZQ",
+  "_id": "0eDBtstI3UsYx7Oo",
+  "_key": "!actors!0eDBtstI3UsYx7Oo",
   "folder": "CVeezowVb7BNP8yc",
   "name": "Colossus",
   "type": "npc",
@@ -62,14 +62,14 @@
     "details": {
       "type": {
         "value": "construct",
-        "subtype": "Titan",
+        "subtype": "titan",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Sem Tendência",
       "cr": 25,
       "xp": {
-        "value": 75000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -101,13 +101,19 @@
       "ci": {
         "value": [
           "charmed",
-          "exhaustion"
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "stunned",
+          "unconscious"
         ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Understands Celestial and Common but"
+        "custom": "understands Celestial and Common but can't speak"
       }
     },
     "skills": {}
@@ -125,13 +131,13 @@
   },
   "items": [
     {
-      "_id": "9z0BjxSmwee5pSPa",
-      "name": "Immutable Form",
+      "_id": "FU20zMZFnRiJSTjf",
+      "name": "Forma Imutável",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The colossus can't shape-shift.</p>",
+          "value": "<p>A criatura não pode mudar de forma.</p>",
           "chat": ""
         },
         "activation": {
@@ -155,7 +161,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!tKWa4SIPZa2SJUZQ.9z0BjxSmwee5pSPa"
+      "_key": "!actors.items!0eDBtstI3UsYx7Oo.FU20zMZFnRiJSTjf"
     },
     {
       "_id": "B7ATusiXsZq6cX5g",
@@ -164,7 +170,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the colossus fails a saying throw, it can choose to succeed instead.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -193,16 +199,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!tKWa4SIPZa2SJUZQ.B7ATusiXsZq6cX5g"
+      "_key": "!actors.items!0eDBtstI3UsYx7Oo.B7ATusiXsZq6cX5g"
     },
     {
-      "_id": "DS6uhkhyoglJMSka",
-      "name": "Magic Resistance",
+      "_id": "6ZaJbcJmc63wvDd3",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The colossus has Advantage on sav- ing throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -226,16 +232,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!tKWa4SIPZa2SJUZQ.DS6uhkhyoglJMSka"
+      "_key": "!actors.items!0eDBtstI3UsYx7Oo.6ZaJbcJmc63wvDd3"
     },
     {
-      "_id": "CwNh4gYkx3whyhGD",
-      "name": "Siege Monster",
+      "_id": "a9xbX3uiDorEgvgl",
+      "name": "Monstro de Cerco",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The colossus deals double de dano to objects and structures.</p>",
+          "value": "<p>A criatura causa o dobro de dano a objetos e estruturas.</p>",
           "chat": ""
         },
         "activation": {
@@ -259,7 +265,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!tKWa4SIPZa2SJUZQ.CwNh4gYkx3whyhGD"
+      "_key": "!actors.items!0eDBtstI3UsYx7Oo.a9xbX3uiDorEgvgl"
     },
     {
       "_id": "U3q8oLGfS2qTgtbU",
@@ -268,7 +274,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The colossus makes three attacks, using Slam or Radiante Ray in any combination.</p>",
+          "value": "<p>The colossus makes three attacks, using Pancada or Radiante Ray in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -293,16 +299,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!tKWa4SIPZa2SJUZQ.U3q8oLGfS2qTgtbU"
+      "_key": "!actors.items!0eDBtstI3UsYx7Oo.U3q8oLGfS2qTgtbU"
     },
     {
-      "_id": "qAxXpax7NcsX7doP",
-      "name": "Slam",
+      "_id": "ttShjQthpOAY4Krn",
+      "name": "Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +78, alcance 20 ft. Acerto: 32 (4d10 + l 0) Concussão de dano, and the colossus pushes o alvo up to 20 feet straight away from itself.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +18, alcance 6 m. Acerto: 32 (4d10 + 10) dano de concussão, and the colossus pushes o alvo up to 6 m straight away from itself.</p>",
           "chat": ""
         },
         "activation": {
@@ -320,8 +326,8 @@
           "subtype": ""
         },
         "activities": {
-          "alnwYuOHPkyDA772": {
-            "_id": "alnwYuOHPkyDA772",
+          "4XQEtkTO3h67RXEr": {
+            "_id": "4XQEtkTO3h67RXEr",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -331,7 +337,7 @@
             },
             "attack": {
               "ability": "",
-              "bonus": "78",
+              "bonus": "18",
               "flat": true,
               "type": {
                 "value": "melee",
@@ -342,15 +348,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 4,
+                  "denomination": 10,
+                  "bonus": "10",
                   "types": [
                     "bludgeoning"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "4d10+l0"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -366,15 +372,15 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "toHit": 78,
+            "toHit": 18,
             "attackType": "melee",
-            "damageFormula": "4d10+l0",
+            "damageFormula": "4d10+10",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!tKWa4SIPZa2SJUZQ.qAxXpax7NcsX7doP"
+      "_key": "!actors.items!0eDBtstI3UsYx7Oo.ttShjQthpOAY4Krn"
     },
     {
       "_id": "VaslQDBlX0ckzvcL",
@@ -383,7 +389,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância:+ 18, range 300 ft. Acerto: 22 (4d1 0) Radiante de dano. If o alvo is a Large or smaller creature, it has the Caído condition.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +18, distância 90 m. Acerto: 22 (4d10) dano radiante. If o alvo is a Large or smaller creature, it fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -400,27 +406,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "JyJxt66jorvfIG0Z": {
+            "_id": "JyJxt66jorvfIG0Z",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "18",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 10,
+                  "bonus": "",
+                  "types": [
+                    "radiant"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 18,
+            "attackType": "ranged",
             "damageFormula": "4d10",
             "damageType": "radiant"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!tKWa4SIPZa2SJUZQ.VaslQDBlX0ckzvcL"
+      "_key": "!actors.items!0eDBtstI3UsYx7Oo.VaslQDBlX0ckzvcL"
     },
     {
       "_id": "ljSkZJk5UaGAhHUl",
-      "name": "Divine Beam (Recharge 5-6)",
+      "name": "Divine Beam (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 26, cada criatura in a 300-foot-long, 10-foot-wide</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 26, cada criatura in a 90 m-long, 3 m-wide Line. 65 (10d12) dano radiante. Metade do dano. A creature reduced to 0 Pontos de Vida by this beam disintegrates into dust, leaving behind any magic items it was wearing or carrying.</p>",
           "chat": ""
         },
         "activation": {
@@ -478,44 +528,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!tKWa4SIPZa2SJUZQ.ljSkZJk5UaGAhHUl"
-    },
-    {
-      "_id": "d39cMhlWWVma4SMi",
-      "name": "Line",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Falha: 65 (10d12) Radiante de dano. Sucesso: Metade do dano. Falha ou Sucesso: A creature reduced to 0 Pontos de Vida by this beam disintegrates into dust, leaving be- hind any magic items it was wearing or carrying.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {
-            "damageFormula": "10d12",
-            "damageType": "radiant"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!tKWa4SIPZa2SJUZQ.d39cMhlWWVma4SMi"
+      "_key": "!actors.items!0eDBtstI3UsYx7Oo.ljSkZJk5UaGAhHUl"
     },
     {
       "_id": "UJM924aXrSBqWynE",
@@ -549,7 +562,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!tKWa4SIPZa2SJUZQ.UJM924aXrSBqWynE"
+      "_key": "!actors.items!0eDBtstI3UsYx7Oo.UJM924aXrSBqWynE"
     },
     {
       "_id": "VvME017WZcik54Re",
@@ -558,7 +571,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The colossus moves up to half its Speed with- z out provoking Opportunity Attacks, and it can make one Slam attack at any point during that mpve. COMMONER Everyday Folk</p>",
+          "value": "<p>The colossus moves up to half its Speed without provoking Opportunity Attacks, and it can make one Pancada attack at any point during that move.</p>",
           "chat": ""
         },
         "activation": {
@@ -583,13 +596,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!tKWa4SIPZa2SJUZQ.VvME017WZcik54Re"
+      "_key": "!actors.items!0eDBtstI3UsYx7Oo.VvME017WZcik54Re"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Colossus",
-      "page": 78,
+      "page": 76,
       "cr": "25",
       "warnings": []
     }

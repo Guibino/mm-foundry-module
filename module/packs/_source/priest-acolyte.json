@@ -1,8 +1,8 @@
 {
-  "_id": "CVM4e5XUFXSCvofi",
-  "_key": "!actors!CVM4e5XUFXSCvofi",
+  "_id": "WHShODeLUoJmkxBp",
+  "_key": "!actors!WHShODeLUoJmkxBp",
   "folder": "1QPcErIwVgACFlzi",
-  "name": "Sacerdote Acolyte",
+  "name": "Priest Acolyte",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/priest-acolyte.webp",
   "system": {
@@ -16,11 +16,11 @@
         "proficient": 0
       },
       "con": {
-        "value": 72,
+        "value": 12,
         "proficient": 0
       },
       "int": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "wis": {
@@ -28,7 +28,7 @@
         "proficient": 0
       },
       "cha": {
-        "value": 77,
+        "value": 11,
         "proficient": 0
       }
     },
@@ -61,14 +61,14 @@
     "details": {
       "type": {
         "value": "humanoid",
-        "subtype": "Cl eric",
+        "subtype": "cleric",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Neutro",
-      "cr": 1.75,
+      "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -100,10 +100,19 @@
         "custom": "Comum"
       }
     },
-    "skills": {}
+    "skills": {
+      "med": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "rel": {
+        "value": 1,
+        "ability": "int"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Sacerdote Acolyte",
+    "name": "Priest Acolyte",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -115,13 +124,13 @@
   },
   "items": [
     {
-      "_id": "NgQA9xyh6LCrP7hz",
-      "name": "Mace",
+      "_id": "oSdc321FKiX5V3MW",
+      "name": "Maça",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 5 (1d6 + 2) Concussão de dano plus 2 (7d4) Radiante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano de concussão mais 2 (1d4) dano radiante.</p>",
           "chat": ""
         },
         "activation": {
@@ -139,8 +148,8 @@
           "subtype": ""
         },
         "activities": {
-          "SwFkd9Jaz6hKgudP": {
-            "_id": "SwFkd9Jaz6hKgudP",
+          "EKgoDpBi0usoOwTg": {
+            "_id": "EKgoDpBi0usoOwTg",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -193,7 +202,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CVM4e5XUFXSCvofi.NgQA9xyh6LCrP7hz"
+      "_key": "!actors.items!WHShODeLUoJmkxBp.oSdc321FKiX5V3MW"
     },
     {
       "_id": "vY0I1zA82xcPtIT4",
@@ -202,7 +211,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +4, range 60 ft. Acerto: 7 (2d6) Radiante de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +4, distância 18 m. Acerto: 7 (2d6) dano radiante.</p>",
           "chat": ""
         },
         "activation": {
@@ -274,46 +283,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CVM4e5XUFXSCvofi.vY0I1zA82xcPtIT4"
-    },
-    {
-      "_id": "DdV6NSJSjw863YUJ",
-      "name": "Divine Aid (1/Day)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The priest casts Bless, Healing Word, or Sanctuary, using the same spellcasting ability as Conjuração. , PRIESTS 247 PRIEST ACOLYTE Priest acolytes have great faith but modest magical skill. Some might be trainees in religious organiza- tions or soldiers in zealous armies, while others are faith leaders in small communities or wanderers on pilgrimages. PRIEST Priests draw on their beliefs to heal the needful and smite their foes. They can channel their faith as spells and empower their weapons with divine might. S HININ G O NE , LIG HT MY H O URS. ENKIN DL E MY SO UL, AN D I N SPIR E M Y D EE DS . C H A SE T HE SH AD O W S F RO M MY PATH, A N D L ET M E WALK I N Y O UR B RILL IANCE . - M ORN I NG P R AY E R TO P ELOR PRIEST Med ium or Small Humanoid (Cl er ic), Neutral AC 13 Iniciativa +O (l 0) HP 38 (7d8 + 7) Speed 30 ft. MO D SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!CVM4e5XUFXSCvofi.DdV6NSJSjw863YUJ"
+      "_key": "!actors.items!WHShODeLUoJmkxBp.vY0I1zA82xcPtIT4"
     },
     {
       "_id": "QhETxT7szAAVq0f8",
@@ -322,7 +292,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The priest casts one of the following spells, using Sabedoria as the spellcasting ability: À Vontade: Light, Thaumaturgy</p>",
+          "value": "<p>The priest casts one of the following spells, using Sabedoria as the spellcasting ability:</p>",
           "chat": ""
         },
         "activation": {
@@ -347,14 +317,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CVM4e5XUFXSCvofi.QhETxT7szAAVq0f8"
+      "_key": "!actors.items!WHShODeLUoJmkxBp.QhETxT7szAAVq0f8"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Priest Acolyte",
-      "page": 249,
-      "cr": "7/4",
+      "page": 247,
+      "cr": "1/4",
       "warnings": []
     }
   }

@@ -1,6 +1,6 @@
 {
-  "_id": "CjfkJoqAX7Qo7OZ9",
-  "_key": "!actors!CjfkJoqAX7Qo7OZ9",
+  "_id": "2Dcs5GgmZHptavSv",
+  "_key": "!actors!2Dcs5GgmZHptavSv",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Succubus",
   "type": "npc",
@@ -70,7 +70,7 @@
       "alignment": "Neutro e Mau",
       "cr": 4,
       "xp": {
-        "value": 1100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -88,10 +88,11 @@
       "dr": {
         "value": [
           "cold",
+          "fire",
           "poison",
           "psychic"
         ],
-        "custom": "Fir e"
+        "custom": ""
       },
       "dv": {
         "value": [],
@@ -103,13 +104,29 @@
       },
       "languages": {
         "value": [],
-        "custom": "Abissal, Comum, Infernal"
+        "custom": "Abissal, Comum"
       }
     },
     "skills": {
+      "dec": {
+        "value": 2,
+        "ability": "cha"
+      },
       "ins": {
         "value": 2,
         "ability": "wis"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "per": {
+        "value": 2,
+        "ability": "cha"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
       }
     }
   },
@@ -126,7 +143,7 @@
   },
   "items": [
     {
-      "_id": "Te2JMzzppg2YIfvd",
+      "_id": "50Mq7H4Lx4glvboO",
       "name": "Incubus Form",
       "type": "feat",
       "img": "icons/svg/aura.svg",
@@ -156,16 +173,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CjfkJoqAX7Qo7OZ9.Te2JMzzppg2YIfvd"
+      "_key": "!actors.items!2Dcs5GgmZHptavSv.50Mq7H4Lx4glvboO"
     },
     {
-      "_id": "Iaycih1KY1JeTlpu",
-      "name": "Habilidade",
+      "_id": "qapX0gx5r4piQThN",
+      "name": "Ataque Múltiplo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>~ Ataque Múltiplo. The succubus makes one Fiendish Touch 0 -attack and uses Charm or Draining l<iss.</p>",
+          "value": "<p>The succubus makes one Fiendish Touch attack and uses Charm or Draining Kiss.</p>",
           "chat": ""
         },
         "activation": {
@@ -190,16 +207,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CjfkJoqAX7Qo7OZ9.Iaycih1KY1JeTlpu"
+      "_key": "!actors.items!2Dcs5GgmZHptavSv.qapX0gx5r4piQThN"
     },
     {
-      "_id": "x3CdSxd6webYOXcF",
+      "_id": "jLt8bFchhAEYxhh2",
       "name": "Fiendish Touch",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 16 (2d10 + 5) Psíquico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 16 (2d10 + 5) dano psíquico.</p>",
           "chat": ""
         },
         "activation": {
@@ -217,8 +234,8 @@
           "subtype": ""
         },
         "activities": {
-          "B43yh7iUCUK5JdZ8": {
-            "_id": "B43yh7iUCUK5JdZ8",
+          "chmq5HLX3b2zKI4r": {
+            "_id": "chmq5HLX3b2zKI4r",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -271,16 +288,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CjfkJoqAX7Qo7OZ9.x3CdSxd6webYOXcF"
+      "_key": "!actors.items!2Dcs5GgmZHptavSv.jLt8bFchhAEYxhh2"
     },
     {
-      "_id": "jrNbzf6qC0fD82oW",
+      "_id": "FPUbd7e2PD9Ub38K",
       "name": "Charm",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The succubus casts Dominate Person (level 8 version), requiring no spell components and using Cha- risma as the spellcasting ability (spell save DC 15).</p>",
+          "value": "<p>The succubus casts Dominate Person (level 8 version), requiring no spell components and using Carisma as the spellcasting ability (spell save CD 15).</p>",
           "chat": ""
         },
         "activation": {
@@ -305,16 +322,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CjfkJoqAX7Qo7OZ9.jrNbzf6qC0fD82oW"
+      "_key": "!actors.items!2Dcs5GgmZHptavSv.FPUbd7e2PD9Ub38K"
     },
     {
-      "_id": "ecaCLicmBBiW43k2",
+      "_id": "M1KZNMHsLyrnbXTT",
       "name": "Draining Kiss",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 15, uma criatura Enfeitiçado by the succubus within 5 feet. Fail- ure: 13 (3d8) Psíquico de dano. Sucesso: Metade do dano. Falha ou Sucesso: The target's Hit Point maximum de- creases by an amount equal to the de dano taken.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 15, uma criatura Enfeitiçado by the succubus within 1,5 m. 13 (3d8) dano psíquico. Metade do dano. O alvo's Hit Point maximum decreases by an amount equal to the de dano taken.</p>",
           "chat": ""
         },
         "activation": {
@@ -332,8 +349,8 @@
           "subtype": ""
         },
         "activities": {
-          "bXKva3CQNT2t3ZMK": {
-            "_id": "bXKva3CQNT2t3ZMK",
+          "6EYalKkortAMjki6": {
+            "_id": "6EYalKkortAMjki6",
             "type": "save",
             "activation": {
               "type": "action",
@@ -366,16 +383,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CjfkJoqAX7Qo7OZ9.ecaCLicmBBiW43k2"
+      "_key": "!actors.items!2Dcs5GgmZHptavSv.M1KZNMHsLyrnbXTT"
     },
     {
-      "_id": "FDq6X1yAKIy0S8er",
-      "name": "Shape-Shift",
+      "_id": "cLgTN3SOcSc1LLRp",
+      "name": "Mudar de Forma",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The succubus shape-shifts into a Medium or Small Humanoid, or it returns to its true form. Its game statistics are the same in each form, except its Fly Speed is available only in its true form. Any equipment it is wearing or carrying isn't transformed. SUCCUBUS 6._ 30 3 TARRA S Q UE The Shape of Calamity</p>",
+          "value": "<p>The succubus shape-shifts to resemble a Medium or Small Humanoid or back into its true form. Its game statistics are the same in each form, except its Fly Speed is available only in its true form. Any equipment it's wearing or carrying isn't transformed.</p>",
           "chat": ""
         },
         "activation": {
@@ -400,13 +417,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CjfkJoqAX7Qo7OZ9.FDq6X1yAKIy0S8er"
+      "_key": "!actors.items!2Dcs5GgmZHptavSv.cLgTN3SOcSc1LLRp"
     }
   ],
   "flags": {
     "mm2024": {
-      "nameEn": "SUCCUBUS",
-      "page": 305,
+      "nameEn": "Succubus",
+      "page": 303,
       "cr": "4",
       "warnings": []
     }

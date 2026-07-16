@@ -1,8 +1,8 @@
 {
-  "_id": "f8m81cxEycfEX7xk",
-  "_key": "!actors!f8m81cxEycfEX7xk",
+  "_id": "SCnnvOvKM6Z4FEt9",
+  "_key": "!actors!SCnnvOvKM6Z4FEt9",
   "folder": "3SEe9J5t05jhrkCa",
-  "name": "Yuan-ti Malison (type 1)",
+  "name": "Yuan-ti Malison (Type 1)",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/yuan-ti-malison-type-1.webp",
   "system": {
@@ -41,7 +41,7 @@
       "hp": {
         "value": 66,
         "max": 66,
-        "formula": "12d8+ 12",
+        "formula": "12d8 + 12",
         "temp": null,
         "tempmax": null
       },
@@ -70,7 +70,7 @@
       "alignment": "Neutro e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -108,13 +108,13 @@
     },
     "skills": {
       "ste": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       }
     }
   },
   "prototypeToken": {
-    "name": "Yuan-ti Malison (type 1)",
+    "name": "Yuan-ti Malison (Type 1)",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -126,13 +126,13 @@
   },
   "items": [
     {
-      "_id": "MKcKSGLQFoBedUVQ",
-      "name": "Magic Resistance",
+      "_id": "0C6HlguGtrkiHy5Y",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yuan-ti has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -156,16 +156,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!f8m81cxEycfEX7xk.MKcKSGLQFoBedUVQ"
+      "_key": "!actors.items!SCnnvOvKM6Z4FEt9.0C6HlguGtrkiHy5Y"
     },
     {
-      "_id": "14CVmklokx4lvPbB",
-      "name": "Habilidade",
+      "_id": "DJmvp3qDvb7MlT1x",
+      "name": "Ataque Múltiplo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>• Ataque Múltiplo. The yuan-ti makes two attacks, using Bite or Veneno Ray in any combination, and it can use Spell- casting to cast Suggestion if available.</p>",
+          "value": "<p>The yuan-ti makes two attacks, using Mordida or Veneno Ray in any combination, and it can use Conjuração to cast Suggestion if available.</p>",
           "chat": ""
         },
         "activation": {
@@ -190,16 +190,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!f8m81cxEycfEX7xk.14CVmklokx4lvPbB"
+      "_key": "!actors.items!SCnnvOvKM6Z4FEt9.DJmvp3qDvb7MlT1x"
     },
     {
-      "_id": "2UdA7D6XwF5f6MPJ",
-      "name": "Bite",
+      "_id": "QeTcULKMlBqOaIuH",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 5 (1d4 + 3) Perfurante de dano plus 7 (2d6) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 5 (1d4 + 3) dano perfurante mais 7 (2d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -217,8 +217,8 @@
           "subtype": ""
         },
         "activities": {
-          "ev8APU28aqjC8Q48": {
-            "_id": "ev8APU28aqjC8Q48",
+          "kVRQzB4BMjI4Cc7u": {
+            "_id": "kVRQzB4BMjI4Cc7u",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -271,16 +271,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!f8m81cxEycfEX7xk.2UdA7D6XwF5f6MPJ"
+      "_key": "!actors.items!SCnnvOvKM6Z4FEt9.QeTcULKMlBqOaIuH"
     },
     {
       "_id": "bYOhm6fD7sYri1VW",
-      "name": "Veneno Ray (Yuan-ti Form Only)",
+      "name": "Veneno Ray",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Distânciad At_tack Roll: +5, range 120 ft. Acerto: 12 (2d8 + 3) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +5, distância 36 m. Acerto: 12 (2d8 + 3) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -297,27 +297,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "f1IfH7jgjJ2u30LV": {
+            "_id": "f1IfH7jgjJ2u30LV",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "3",
+                  "types": [
+                    "poison"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 5,
+            "attackType": "ranged",
             "damageFormula": "2d8+3",
             "damageType": "poison"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!f8m81cxEycfEX7xk.bYOhm6fD7sYri1VW"
+      "_key": "!actors.items!SCnnvOvKM6Z4FEt9.bYOhm6fD7sYri1VW"
     },
     {
-      "_id": "VvMTsK1IZAGWy6qb",
-      "name": "Shape-Shift",
+      "_id": "qdXTaHTSsIMzqpvE",
+      "name": "Mudar de Forma",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yuan-ti shape-shifts into a Medium w snake or returns to its true form. If it dies, it stays in its z current form. The yuan-ti's game statistics are the same > in each form, except where noted. Any equipment it is 0:: wearing or carrying isn't transformed. ro YUAN-Tl MALISON (TYPE 2) Medium Monstrosity, Neutral fl)i/ AC 12 Iniciativa +2 (12) HP 66 (12d8+ 12)</p>",
+          "value": "<p>The yuan-ti shape-shifts into a Medium snake or returns to its true form. If it dies, it stays in its current form. The yuan-ti's game statistics are the same in each form, except where noted. Any equipment it is wearing or carrying isn't transformed.</p>",
           "chat": ""
         },
         "activation": {
@@ -342,7 +386,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!f8m81cxEycfEX7xk.VvMTsK1IZAGWy6qb"
+      "_key": "!actors.items!SCnnvOvKM6Z4FEt9.qdXTaHTSsIMzqpvE"
     },
     {
       "_id": "ZXgvDdn00NqZ32Dc",
@@ -351,7 +395,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yuan-ti casts one of the following spells, requiring no Material com- ponents and using Sabedoria as the spellcasting ability (spell save DC 13): À Vontade: Animal Friendship (snakes only) 2/Dia: Suggestion</p>",
+          "value": "<p>The yuan-ti casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save CD 13):</p>",
           "chat": ""
         },
         "activation": {
@@ -376,13 +420,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!f8m81cxEycfEX7xk.ZXgvDdn00NqZ32Dc"
+      "_key": "!actors.items!SCnnvOvKM6Z4FEt9.ZXgvDdn00NqZ32Dc"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Yuan-ti Malison (Type 1)",
-      "page": 345,
+      "page": 343,
       "cr": "3",
       "warnings": []
     }

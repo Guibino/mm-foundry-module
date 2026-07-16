@@ -1,6 +1,6 @@
 {
-  "_id": "VxWIbdYIf80H88cJ",
-  "_key": "!actors!VxWIbdYIf80H88cJ",
+  "_id": "bqh19hLb715XwxBy",
+  "_key": "!actors!bqh19hLb715XwxBy",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Noble Prodigy",
   "type": "npc",
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 76,
+        "flat": 16,
         "formula": ""
       },
       "hp": {
@@ -66,9 +66,9 @@
         "custom": ""
       },
       "alignment": "Neutro",
-      "cr": 0,
+      "cr": 10,
       "xp": {
-        "value": 5900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -102,11 +102,11 @@
     },
     "skills": {
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       },
       "per": {
-        "value": 1,
+        "value": 2,
         "ability": "cha"
       }
     }
@@ -155,7 +155,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VxWIbdYIf80H88cJ.4sPU5SzIupFc9fNh"
+      "_key": "!actors.items!bqh19hLb715XwxBy.4sPU5SzIupFc9fNh"
     },
     {
       "_id": "Vrec98JmQRtE31ft",
@@ -164,7 +164,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +8, alcance 5 ft. or range 60 ft. Acerto: 18 (4d6 + 4) Psíquico de dano, and o alvo has the Enfeitiçado condition until the start of the no bl e's next turn.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +8, alcance 1,5 m. or distância 18 m. Acerto: 18 (4d6 + 4) dano psíquico, and o alvo fica com a condição Enfeitiçado until the start of the noble's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -236,46 +236,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VxWIbdYIf80H88cJ.Vrec98JmQRtE31ft"
-    },
-    {
-      "_id": "cxXIcKgJlm0AzncH",
-      "name": "Shield (2/Day)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The noble casts Shield in response to that spell's trigger , using the same spellcasting ability as Conjuração. '\" ~---------- N_O_B_~- E~ 227 NOTHIC Witness to the Weird</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "reaction",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "2",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!VxWIbdYIf80H88cJ.cxXIcKgJlm0AzncH"
+      "_key": "!actors.items!bqh19hLb715XwxBy.Vrec98JmQRtE31ft"
     },
     {
       "_id": "d2MSOOeeoVXRaSpr",
@@ -284,7 +245,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The noble casts one of the following spells , requiring no Material components and using Carisma as the spellcasting ability (spell save DC 16): À Vontade: Mage Armor (included in AC), Mage Hand, Mi - nor Illusion 1/Dia Each: Befuddlement, Detect Thoughts, Fly, Scry- ing, Shatter (level 7 version)</p>",
+          "value": "<p>The noble casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 16):</p>",
           "chat": ""
         },
         "activation": {
@@ -309,14 +270,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VxWIbdYIf80H88cJ.d2MSOOeeoVXRaSpr"
+      "_key": "!actors.items!bqh19hLb715XwxBy.d2MSOOeeoVXRaSpr"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Noble Prodigy",
-      "page": 229,
-      "cr": "0",
+      "page": 227,
+      "cr": "10",
       "warnings": []
     }
   }

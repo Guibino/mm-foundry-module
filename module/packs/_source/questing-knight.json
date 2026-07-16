@@ -1,8 +1,8 @@
 {
-  "_id": "Xmdh6bSIySFdpY4X",
-  "_key": "!actors!Xmdh6bSIySFdpY4X",
+  "_id": "Wx8PYlD3NHEbZ0Ql",
+  "_key": "!actors!Wx8PYlD3NHEbZ0Ql",
   "folder": "1QPcErIwVgACFlzi",
-  "name": "Questing Cavaleiro",
+  "name": "Questing Knight",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/questing-knight.webp",
   "system": {
@@ -16,7 +16,7 @@
         "proficient": 0
       },
       "con": {
-        "value": 6,
+        "value": 16,
         "proficient": 1
       },
       "int": {
@@ -68,7 +68,7 @@
       "alignment": "Neutro",
       "cr": 12,
       "xp": {
-        "value": 8400
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -92,7 +92,10 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed",
+          "frightened"
+        ],
         "custom": ""
       },
       "languages": {
@@ -100,10 +103,23 @@
         "custom": "Common plus one other language"
       }
     },
-    "skills": {}
+    "skills": {
+      "ath": {
+        "value": 2,
+        "ability": "str"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "per": {
+        "value": 2,
+        "ability": "cha"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Questing Cavaleiro",
+    "name": "Questing Knight",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -121,7 +137,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Creatures of the knight's choice in a 30-foot Emanation originating from it have Immunity to the Enfeitiçado and Amedrontado conditions while there.</p>",
+          "value": "<p>Creatures of the knight's choice in a 9 m Emanation originating from it have Immunity to the Enfeitiçado and Amedrontado conditions while there.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,7 +161,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Xmdh6bSIySFdpY4X.e962yEFibEyAkeSr"
+      "_key": "!actors.items!Wx8PYlD3NHEbZ0Ql.e962yEFibEyAkeSr"
     },
     {
       "_id": "r8cBG0fgnu3Ucmvt",
@@ -154,7 +170,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The knight makes three attacks, using Greatsword or Longbow in any combination.</p>",
+          "value": "<p>The knight makes three attacks, using Montante or Arco Longo in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -179,16 +195,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Xmdh6bSIySFdpY4X.r8cBG0fgnu3Ucmvt"
+      "_key": "!actors.items!Wx8PYlD3NHEbZ0Ql.r8cBG0fgnu3Ucmvt"
     },
     {
-      "_id": "XOEzB4SSVUe7Wggl",
-      "name": "Greatsword",
+      "_id": "pKRmD0xNmht90Yfz",
+      "name": "Montante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 5 ft. Acerto: 12 (2d6 + 5) Cortante de dano plus 22 (Sd8) Radi- ant de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 1,5 m. Acerto: 12 (2d6 + 5) dano cortante mais 22 (5d8) dano radiante.</p>",
           "chat": ""
         },
         "activation": {
@@ -206,8 +222,8 @@
           "subtype": ""
         },
         "activities": {
-          "ny9746dcHSlcxYeA": {
-            "_id": "ny9746dcHSlcxYeA",
+          "mRfkNXehvzxzCeth": {
+            "_id": "mRfkNXehvzxzCeth",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -260,16 +276,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Xmdh6bSIySFdpY4X.XOEzB4SSVUe7Wggl"
+      "_key": "!actors.items!Wx8PYlD3NHEbZ0Ql.pKRmD0xNmht90Yfz"
     },
     {
-      "_id": "q3yP1IJV2HcwL1Ci",
-      "name": "Longbow",
+      "_id": "MXOfglvg8Sb2Kacm",
+      "name": "Arco Longo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Distânciad Attack- Roll: +7, range 150/600 ft. Acerto: 12 (2d8 + 3) Perfurante de dano plus 22 (Sd8) Radi- ant de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +7, distância 45/180 m. Acerto: 12 (2d8 + 3) dano perfurante mais 22 (5d8) dano radiante.</p>",
           "chat": ""
         },
         "activation": {
@@ -286,18 +302,62 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "3fPHDdzLIT0i5j4R": {
+            "_id": "3fPHDdzLIT0i5j4R",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 7,
+            "attackType": "ranged",
             "damageFormula": "2d8+3",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Xmdh6bSIySFdpY4X.q3yP1IJV2HcwL1Ci"
+      "_key": "!actors.items!Wx8PYlD3NHEbZ0Ql.MXOfglvg8Sb2Kacm"
     },
     {
       "_id": "G8xypIrm9TyjurLL",
@@ -306,7 +366,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The knight casts one of the following spells, using Carisma as the spellcasting ability (spell <C LJJ save DC 16): N LJJ 1/Dia Each: Dialight, Dispel E1.1il and Good, Greater Res- > toration, Phantom Steed ~ Cl:'. co KOBOLDS Tricksters and Servants to Chromatic Dragons</p>",
+          "value": "<p>The knight casts one of the following spells, using Carisma as the spellcasting ability (spell save CD 16):</p>",
           "chat": ""
         },
         "activation": {
@@ -331,13 +391,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Xmdh6bSIySFdpY4X.G8xypIrm9TyjurLL"
+      "_key": "!actors.items!Wx8PYlD3NHEbZ0Ql.G8xypIrm9TyjurLL"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Questing Knight",
-      "page": 186,
+      "page": 184,
       "cr": "12",
       "warnings": []
     }

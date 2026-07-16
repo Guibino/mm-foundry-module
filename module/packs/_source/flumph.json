@@ -1,6 +1,6 @@
 {
-  "_id": "xStuqe4nDIyEDnJX",
-  "_key": "!actors!xStuqe4nDIyEDnJX",
+  "_id": "Xycr7SrNhGVqCy1m",
+  "_key": "!actors!Xycr7SrNhGVqCy1m",
   "folder": "1nioWC3kx0YxX8qj",
   "name": "Flumph",
   "type": "npc",
@@ -70,7 +70,7 @@
       "alignment": "Leal e Bom",
       "cr": 0.125,
       "xp": {
-        "value": 25
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -101,7 +101,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Understands Undercommon but can't"
+        "custom": ""
       }
     },
     "skills": {
@@ -138,7 +138,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The flumph perceives the content of any telepathic communication within 60 feet of it.</p>",
+          "value": "<p>The flumph perceives the content of any telepathic communication within 18 m of it.</p>",
           "chat": ""
         },
         "activation": {
@@ -162,7 +162,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xStuqe4nDIyEDnJX.M6SnvaNpew4rwO9l"
+      "_key": "!actors.items!Xycr7SrNhGVqCy1m.M6SnvaNpew4rwO9l"
     },
     {
       "_id": "dnrHbeK1nUifDviZ",
@@ -171,7 +171,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the flu mph receives the Caído condition, roll a die. On an odd number, it has the Inca- pacitated condition. At the end of each of its turns, the flu mph makes a DC 10 Destreza saving throw, ending the Incapacitado condition on a success.</p>",
+          "value": "<p>If the flumph receives a condição Caído, roll a die. On an odd number, it fica com a condição Incapacitado. At the end of each of its turns, the flumph makes a CD 10 Destreza saving throw, ending a condição Incapacitado on a success.</p>",
           "chat": ""
         },
         "activation": {
@@ -198,7 +198,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xStuqe4nDIyEDnJX.dnrHbeK1nUifDviZ"
+      "_key": "!actors.items!Xycr7SrNhGVqCy1m.dnrHbeK1nUifDviZ"
     },
     {
       "_id": "t6x5VedjPrT8zki2",
@@ -231,16 +231,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xStuqe4nDIyEDnJX.t6x5VedjPrT8zki2"
+      "_key": "!actors.items!Xycr7SrNhGVqCy1m.t6x5VedjPrT8zki2"
     },
     {
-      "_id": "N7dK392PLs70bAZz",
-      "name": "Tentacle",
+      "_id": "ytmrSaNMVKw5GAhy",
+      "name": "Tentáculo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 feet. Acerto: 4 (1d4 + 2) Ácido de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 4 (1d4 + 2) dano de ácido.</p>",
           "chat": ""
         },
         "activation": {
@@ -258,8 +258,8 @@
           "subtype": ""
         },
         "activities": {
-          "4UsSYhbp0JTMuvNP": {
-            "_id": "4UsSYhbp0JTMuvNP",
+          "mwbc3o6PC0K73ZFH": {
+            "_id": "mwbc3o6PC0K73ZFH",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -312,16 +312,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xStuqe4nDIyEDnJX.N7dK392PLs70bAZz"
+      "_key": "!actors.items!Xycr7SrNhGVqCy1m.ytmrSaNMVKw5GAhy"
     },
     {
-      "_id": "hWavnsh0s3k9Un5x",
-      "name": "Stench Spray (1/Day)",
+      "_id": "lujGGpxpRa0clInE",
+      "name": "Fedor Spray (1/Day)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 10, o.ne creature the flumph can see within 15 feet. Falha: The target is coated in a foul-smelling liquid, exudes a stench for 1d4 hours, and has the Envenenado condition while the stench lasts. Other creatures have the Poi- .soned condition while in a 5-foot Emanation originat- V) LL ing from the coated target. The target can remove the LI.J LI.J stench on itself if it bathes during a Short or Long Rest. X FOMORIAN Cursed Gigante of the Dark</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 10, uma criatura the flumph can see within 4,5 m. O alvo is coated in a foul-smelling liquid, exudes a stench for 1d4 hours, and fica com a condição Envenenado while the stench lasts. Other creatures have a condição Envenenado while in a 1,5 m Emanation originating from the coated target. O alvo can remove the stench on itself if it bathes during a Short or Long Rest.</p>",
           "chat": ""
         },
         "activation": {
@@ -344,8 +344,8 @@
           "subtype": ""
         },
         "activities": {
-          "eJgZwyZDElw9LQuP": {
-            "_id": "eJgZwyZDElw9LQuP",
+          "TFzIuv2tvUhMYgOr": {
+            "_id": "TFzIuv2tvUhMYgOr",
             "type": "save",
             "activation": {
               "type": "action",
@@ -378,13 +378,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xStuqe4nDIyEDnJX.hWavnsh0s3k9Un5x"
+      "_key": "!actors.items!Xycr7SrNhGVqCy1m.lujGGpxpRa0clInE"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Flumph",
-      "page": 124,
+      "page": 122,
       "cr": "1/8",
       "warnings": []
     }

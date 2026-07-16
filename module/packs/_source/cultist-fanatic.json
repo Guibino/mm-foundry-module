@@ -1,6 +1,6 @@
 {
-  "_id": "3ayNqUoaXs8ufXnA",
-  "_key": "!actors!3ayNqUoaXs8ufXnA",
+  "_id": "dRWmCLNYqZBvyBBp",
+  "_key": "!actors!dRWmCLNYqZBvyBBp",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Cultist Fanatic",
   "type": "npc",
@@ -47,7 +47,8 @@
       },
       "movement": {
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "walk": 30
       },
       "senses": {
         "units": "ft"
@@ -67,7 +68,7 @@
       "alignment": "Neutro",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -77,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -133,7 +134,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 6 (1d8 + 2) Cortante de dano plus 7 (2d6) Necrótico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 6 (1d8 + 2) dano cortante mais 7 (2d6) dano necrótico.</p>",
           "chat": ""
         },
         "activation": {
@@ -205,41 +206,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3ayNqUoaXs8ufXnA.7jcgfC1tWbWpQPdK"
-    },
-    {
-      "_id": "Rv4g0DGMFHJIhuWt",
-      "name": "Habilidade",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>_J Spiritual Weapon (2/Dia). The cultist casts the Spiritual Li... De: Weapon spell, using th~ same spellcasting ability as De: ::J Conjuração. CULTIST HIEROPHANT Medium or Small Humanoid, Neutral AC 16 lnitiative +8 (18) HP 144 (17d8 + 68) Speed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!3ayNqUoaXs8ufXnA.Rv4g0DGMFHJIhuWt"
+      "_key": "!actors.items!dRWmCLNYqZBvyBBp.7jcgfC1tWbWpQPdK"
     },
     {
       "_id": "FbIs04wPFPGc9v6J",
@@ -248,7 +215,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cultist casts one of the following spells, using Sabedoria as the spellcasting ability (spell save DC 12, +4 to hit with spell attacks): À Vontade: Light, Thaumaturgy 2/Dia: Command 1/Dia: Hold Person</p>",
+          "value": "<p>The cultist casts one of the following spells, using Sabedoria as the spellcasting ability (spell save CD 12, +4 to hit with spell attacks):</p>",
           "chat": ""
         },
         "activation": {
@@ -299,13 +266,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!3ayNqUoaXs8ufXnA.FbIs04wPFPGc9v6J"
+      "_key": "!actors.items!dRWmCLNYqZBvyBBp.FbIs04wPFPGc9v6J"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Cultist Fanatic",
-      "page": 87,
+      "page": 85,
       "cr": "2",
       "warnings": []
     }

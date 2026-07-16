@@ -1,6 +1,6 @@
 {
-  "_id": "Wldq6OGxVyLnnYZH",
-  "_key": "!actors!Wldq6OGxVyLnnYZH",
+  "_id": "pO0bkZtJcinrfRJD",
+  "_key": "!actors!pO0bkZtJcinrfRJD",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Larva",
   "type": "npc",
@@ -66,10 +66,10 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Neutro",
+      "alignment": "Neutro e Mau",
       "cr": 0,
       "xp": {
-        "value": 10
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -98,7 +98,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "Understands Common plus one other"
+        "custom": "understands Common plus one other language but can't speak"
       }
     },
     "skills": {}
@@ -114,11 +114,93 @@
     },
     "disposition": -1
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "e4ZUXDu1q2HH9Mfo",
+      "name": "Mordida",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +1, alcance 1,5 m. Acerto: 1 (1d4 - 1) dano necrótico.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "NMNMZVjHGKfwvdKz": {
+            "_id": "NMNMZVjHGKfwvdKz",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "1",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "-1",
+                  "types": [
+                    "necrotic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 1,
+            "attackType": "melee",
+            "damageFormula": "1d4-1",
+            "damageType": "necrotic"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!pO0bkZtJcinrfRJD.e4ZUXDu1q2HH9Mfo"
+    }
+  ],
   "flags": {
     "mm2024": {
       "nameEn": "Larva",
-      "page": 195,
+      "page": 193,
       "cr": "0",
       "warnings": []
     }

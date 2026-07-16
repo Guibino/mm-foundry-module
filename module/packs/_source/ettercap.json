@@ -1,6 +1,6 @@
 {
-  "_id": "QbpU3bmCE3ls4K8H",
-  "_key": "!actors!QbpU3bmCE3ls4K8H",
+  "_id": "Kj8vrGaqaR8gwjFs",
+  "_key": "!actors!Kj8vrGaqaR8gwjFs",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Ettercap",
   "type": "npc",
@@ -67,10 +67,10 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Neutro",
+      "alignment": "Neutro e Mau",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -99,7 +99,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {
@@ -130,13 +130,13 @@
   },
   "items": [
     {
-      "_id": "Sfb5DFoUN3ZAbnty",
-      "name": "Spider Climb",
+      "_id": "CcvlDt2XCkhFyoaF",
+      "name": "Escalada de Aranha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The ettercap can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>",
+          "value": "<p>A criatura pode escalar superfícies difíceis, inclusive tetos, sem precisar fazer um teste de habilidade.</p>",
           "chat": ""
         },
         "activation": {
@@ -160,16 +160,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!QbpU3bmCE3ls4K8H.Sfb5DFoUN3ZAbnty"
+      "_key": "!actors.items!Kj8vrGaqaR8gwjFs.CcvlDt2XCkhFyoaF"
     },
     {
-      "_id": "15tXt8Cu9ff5Lch1",
-      "name": "Web Walker",
+      "_id": "UnVh5kwhQeuRdkSe",
+      "name": "Andarilho de Teias",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The ettercap ignores movement restric- tions caused by webs, and the ettercap knows the loca- tion of any other creature in contact with the same web.</p>",
+          "value": "<p>A criatura ignora restrições de movimento causadas por teias e sabe a localização de qualquer outra criatura em contato com a mesma teia.</p>",
           "chat": ""
         },
         "activation": {
@@ -193,7 +193,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!QbpU3bmCE3ls4K8H.15tXt8Cu9ff5Lch1"
+      "_key": "!actors.items!Kj8vrGaqaR8gwjFs.UnVh5kwhQeuRdkSe"
     },
     {
       "_id": "GjWWH0gNhGJnRVB7",
@@ -202,7 +202,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The ettercap makes one Bite attack and one Claw attack.</p>",
+          "value": "<p>The ettercap makes one Mordida attack and one Garra attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -227,16 +227,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!QbpU3bmCE3ls4K8H.GjWWH0gNhGJnRVB7"
+      "_key": "!actors.items!Kj8vrGaqaR8gwjFs.GjWWH0gNhGJnRVB7"
     },
     {
-      "_id": "EC6tHSdFCaTzKUIh",
-      "name": "Bite",
+      "_id": "eiKXfKtXrH3kcjcW",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 5 (1d6 + 2) Perfurante de dano plus 2 (1d4) Veneno de dano, and o alvo has the Envenenado condition until the . start of the ettercap's next turn.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano perfurante mais 2 (1d4) dano de veneno, and o alvo fica com a condição Envenenado until the start of the ettercap's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -254,8 +254,8 @@
           "subtype": ""
         },
         "activities": {
-          "AcKdh4sQwqaShdB6": {
-            "_id": "AcKdh4sQwqaShdB6",
+          "ZKV3JcQKeCi36OwH": {
+            "_id": "ZKV3JcQKeCi36OwH",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -308,16 +308,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!QbpU3bmCE3ls4K8H.EC6tHSdFCaTzKUIh"
+      "_key": "!actors.items!Kj8vrGaqaR8gwjFs.eiKXfKtXrH3kcjcW"
     },
     {
-      "_id": "zkKyHLdmGRPur8MO",
-      "name": "Claw",
+      "_id": "PINLeahMpatlzOMO",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 7 (2d4 + 2) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 7 (2d4 + 2) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -335,8 +335,8 @@
           "subtype": ""
         },
         "activities": {
-          "hxPpx82XuasnKEZb": {
-            "_id": "hxPpx82XuasnKEZb",
+          "QehVMknFfBUUb50b": {
+            "_id": "QehVMknFfBUUb50b",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -389,16 +389,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!QbpU3bmCE3ls4K8H.zkKyHLdmGRPur8MO"
+      "_key": "!actors.items!Kj8vrGaqaR8gwjFs.PINLeahMpatlzOMO"
     },
     {
       "_id": "WwATiudJTqQPhW9v",
-      "name": "Web Strand (Recharge 5-6)",
+      "name": "Web Strand (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 12, one Large or smaller creature the ettercap can see within 30 feet. Falha: The target has the Impedido condition until the web is destroyed (AC 10; HP 5; Vul- nerability to Fogo de dano; Immunity to Concussão, Veneno, and Psíquico de dano).</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 12, one Large or smaller creature the ettercap can see within 9 m. O alvo fica com a condição Impedido until the web is destroyed (AC 10; HP 5; Vulnerability to dano de fogo; Immunity to Concussão, Veneno, and dano psíquico).</p>",
           "chat": ""
         },
         "activation": {
@@ -456,16 +456,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!QbpU3bmCE3ls4K8H.WwATiudJTqQPhW9v"
+      "_key": "!actors.items!Kj8vrGaqaR8gwjFs.WwATiudJTqQPhW9v"
     },
     {
-      "_id": "gDNFOAeVD55yhKlF",
-      "name": "Habilidade",
+      "_id": "o8ApAdQBJ46CGrJd",
+      "name": "Reel",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>a: Reel. The ettercap pulls uma criatura within 30 feet of 2 itself that is Impedido by its Web Strand up to 25 feet w straight toward itself. ETTER C AP Venomous Arachnid Abductor</p>",
+          "value": "<p>The ettercap pulls uma criatura within 9 m of itself that is Impedido by its Web Strand up to 7,5 m straight toward itself.</p>",
           "chat": ""
         },
         "activation": {
@@ -490,13 +490,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!QbpU3bmCE3ls4K8H.gDNFOAeVD55yhKlF"
+      "_key": "!actors.items!Kj8vrGaqaR8gwjFs.o8ApAdQBJ46CGrJd"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Ettercap",
-      "page": 117,
+      "page": 115,
       "cr": "2",
       "warnings": []
     }

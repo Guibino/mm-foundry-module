@@ -1,6 +1,6 @@
 {
-  "_id": "TNHpdfDjyC1HwqcW",
-  "_key": "!actors!TNHpdfDjyC1HwqcW",
+  "_id": "YS5ebitnrmldQrK4",
+  "_key": "!actors!YS5ebitnrmldQrK4",
   "folder": "1nioWC3kx0YxX8qj",
   "name": "Kuo-toa",
   "type": "npc",
@@ -35,23 +35,26 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 13,
         "formula": ""
       },
       "hp": {
-        "value": 1,
-        "max": 1,
-        "formula": "",
+        "value": 18,
+        "max": 18,
+        "formula": "4d8",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "swim": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 120,
+        "truesight": 30
       },
       "init": {
         "ability": "dex",
@@ -66,7 +69,7 @@
         "custom": ""
       },
       "alignment": "Neutro e Mau",
-      "cr": 0,
+      "cr": 0.25,
       "xp": {
         "value": 0
       },
@@ -97,7 +100,7 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum Inferior"
       }
     },
     "skills": {
@@ -120,13 +123,13 @@
   },
   "items": [
     {
-      "_id": "rBYIX5Rtxclp7QGP",
-      "name": "Amphibious",
+      "_id": "XqLgGUxcLwE3Nt58",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The kuo-toa can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -150,16 +153,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TNHpdfDjyC1HwqcW.rBYIX5Rtxclp7QGP"
+      "_key": "!actors.items!YS5ebitnrmldQrK4.XqLgGUxcLwE3Nt58"
     },
     {
-      "_id": "VFc6GYxlE0kKmVj4",
-      "name": "Sunlight Sensitivity",
+      "_id": "UCWVNYR390dfhy49",
+      "name": "Sensibilidade à Luz Solar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While in sunlight, the kuo-toa has Disadvantage on ability checks and attack rolls.</p>",
+          "value": "<p>Sob luz solar, a criatura tem Desvantagem em testes de habilidade e rolagens de ataque.</p>",
           "chat": ""
         },
         "activation": {
@@ -183,16 +186,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TNHpdfDjyC1HwqcW.VFc6GYxlE0kKmVj4"
+      "_key": "!actors.items!YS5ebitnrmldQrK4.UCWVNYR390dfhy49"
     },
     {
-      "_id": "QdmeNLYpAcSdBn72",
-      "name": "Spear",
+      "_id": "Vn1BzzdQtNMSBd0W",
+      "name": "Lança",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +3, alcance 5 ft. or range 20/60 ft. Acerto: 5 (1d8 + l) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +3, alcance 1,5 m. or distância 6/18 m. Acerto: 5 (1d8 + 1) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -210,8 +213,8 @@
           "subtype": ""
         },
         "activities": {
-          "tVvTdIwHJZ1Ly4Z4": {
-            "_id": "tVvTdIwHJZ1Ly4Z4",
+          "aS0ndTjLnsyvgEwg": {
+            "_id": "aS0ndTjLnsyvgEwg",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -232,15 +235,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "1",
                   "types": [
                     "piercing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "1d8+l"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -258,22 +261,22 @@
           "mechanics": {
             "toHit": 3,
             "attackType": "ranged",
-            "damageFormula": "1d8+l",
+            "damageFormula": "1d8+1",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TNHpdfDjyC1HwqcW.QdmeNLYpAcSdBn72"
+      "_key": "!actors.items!YS5ebitnrmldQrK4.Vn1BzzdQtNMSBd0W"
     },
     {
-      "_id": "S4tC4GOWNBJXDmbK",
-      "name": "Sticky Net (1/Day)",
+      "_id": "DJkkgAx7hjzjhgQx",
+      "name": "Sticky Rede (1/Day)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC l 0, one Large or smaller creature the kuo-toa can see within 15 feet. Falha: The target has the Impedido condition until the net is destroyed (AC 10; HP 5; Immunity to Concussão, Veneno, and Psíquico de dano). A creature can take an action to make a DC 10 Força (Athletics) check to free itself or another creature in a net within 5 feet, destroying the net on a success.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 10, one Large or smaller creature the kuo-toa can see within 4,5 m. O alvo fica com a condição Impedido until the net is destroyed (AC 10; HP 5; Immunity to Concussão, Veneno, and dano psíquico). A creature can take an action to make a CD 10 Força (Athletics) check to free itself or another creature in a net within 1,5 m, destroying the net on a success.</p>",
           "chat": ""
         },
         "activation": {
@@ -296,8 +299,8 @@
           "subtype": ""
         },
         "activities": {
-          "OkB86V6to9ge3MNp": {
-            "_id": "OkB86V6to9ge3MNp",
+          "PKTPtBJRg8dDtnLj": {
+            "_id": "PKTPtBJRg8dDtnLj",
             "type": "save",
             "activation": {
               "type": "action",
@@ -307,7 +310,7 @@
             },
             "save": {
               "ability": [
-                "str"
+                "dex"
               ],
               "dc": {
                 "calculation": "",
@@ -325,12 +328,12 @@
         "mm2024": {
           "mechanics": {
             "saveDc": 10,
-            "saveAbility": "str"
+            "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TNHpdfDjyC1HwqcW.S4tC4GOWNBJXDmbK"
+      "_key": "!actors.items!YS5ebitnrmldQrK4.DJkkgAx7hjzjhgQx"
     },
     {
       "_id": "EaFa7NAs4GhKfvPL",
@@ -339,7 +342,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: A creature misses the kuo-toa with a melee attack roll using a weapon. Response- Força Teste de Resistência: DC 11, the triggering creature. Falha: The attack's weapon sticks to the kuo-toa's shield. If o alvo doesn't let go of the weapon, o alvo has the Agarrado condition while the weapon is stuck (escape DC 11). While stuck, the weapon can't uJ be used. The target can take an action to make a DC V1 uJ l l Força (Athletics) check, freeing the weapon on co D:'. a success. uJ Kuo-TOA WHIP The servants of kuo-toa archpriests, kuo-toa whips-so named for their role in enforcing order among other kuo-toa-lead war bands in carrying out the commands of their superiors. In return for their zeal, these kuo-toa are granted minor magical abilities and pincerlike weapons for subduing foes. In battle, whips drive on other kuo-to a with threats of violence and burbling chants. Kuo-TOA MONITOR l(uo-toa monitors control the day-to-day life of weaker kuo-toa, directing their work and worship. They also train beasts or monsters in the kuo-toa's service-such as chuuls or giant crabs-and com- mand them in battle. Archpriests bless monitors with the power to control their underlings and to subdue foes with electricity channeled through their bizarre whips. Kuo-TOA ARCHPR I EST , l(uo-toa archpriests lead kuo-toa communities by interpreting omens and messages from their strange gods. They wear grotesque ceremonial regalia hon- oring their deities. Archpriests channel their faith into spells to support their followers. ~ K UO-TO A 189 Kuo-TOA WHIP Medium Ab er ra ti on, Neutral Evil AC 11 Iniciativa +0 ( 10) HP 45 (7d8 + 14) Sp eed 30 ft., Swim 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>A creature misses the kuo-toa with a melee attack roll using a weapon. dStrength Teste de Resistência: CD 11, the triggering creature. The attack's weapon sticks to the kuo-toa's shield. If o alvo doesn't let go of the weapon, o alvo fica com a condição Agarrado while the weapon is stuck (CD para escapar 11). While stuck, the weapon can't be used. O alvo can take an action to make a CD 11 Força (Athletics) check, freeing the weapon on a success.</p>",
           "chat": ""
         },
         "activation": {
@@ -391,17 +394,15 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TNHpdfDjyC1HwqcW.EaFa7NAs4GhKfvPL"
+      "_key": "!actors.items!YS5ebitnrmldQrK4.EaFa7NAs4GhKfvPL"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Kuo-toa",
-      "page": 191,
-      "cr": "0",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "page": 189,
+      "cr": "1/4",
+      "warnings": []
     }
   }
 }

@@ -1,6 +1,6 @@
 {
-  "_id": "EGf25r3EEbHWFTnl",
-  "_key": "!actors!EGf25r3EEbHWFTnl",
+  "_id": "jxkBFiNVvbNBSbR8",
+  "_key": "!actors!jxkBFiNVvbNBSbR8",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Brown Bear",
   "type": "npc",
@@ -13,7 +13,7 @@
       },
       "dex": {
         "value": 12,
-        "proficient": 1
+        "proficient": 0
       },
       "con": {
         "value": 15,
@@ -41,17 +41,19 @@
       "hp": {
         "value": 22,
         "max": 22,
-        "formula": "3d70 + 6",
+        "formula": "3d10 + 6",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
+        "walk": 40,
         "climb": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -66,9 +68,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -100,7 +102,12 @@
         "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Brown Bear",
@@ -121,7 +128,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The bear makes one Bite attack and one Claw attack.</p>",
+          "value": "<p>The bear makes one Mordida attack and one Garra attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,16 +153,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!EGf25r3EEbHWFTnl.G0ffV4aDyznTyYsq"
+      "_key": "!actors.items!jxkBFiNVvbNBSbR8.G0ffV4aDyznTyYsq"
     },
     {
-      "_id": "nT3LjbRiNXRD9tpW",
-      "name": "Bite",
+      "_id": "sVF9AaekTGiTNKYu",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 7 (1d8 + 3) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 7 (1d8 + 3) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -173,8 +180,8 @@
           "subtype": ""
         },
         "activities": {
-          "0aIXFZgc6cAcsc4u": {
-            "_id": "0aIXFZgc6cAcsc4u",
+          "8y19Fsmsev1OpE6I": {
+            "_id": "8y19Fsmsev1OpE6I",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -227,16 +234,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!EGf25r3EEbHWFTnl.nT3LjbRiNXRD9tpW"
+      "_key": "!actors.items!jxkBFiNVvbNBSbR8.sVF9AaekTGiTNKYu"
     },
     {
-      "_id": "oU2Bc9xafsuF1cgy",
-      "name": "Claw",
+      "_id": "qo1tK4untRMLcjs1",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 5 (1d4 + 3)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 5 (1d4 + 3) dano cortante. If o alvo is a Large or smaller creature, it fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -254,8 +261,8 @@
           "subtype": ""
         },
         "activities": {
-          "Y6znXrEuj4iXXMzl": {
-            "_id": "Y6znXrEuj4iXXMzl",
+          "akVIr6vWYcta59oR": {
+            "_id": "akVIr6vWYcta59oR",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -274,7 +281,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "3",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -283,53 +308,21 @@
         "mm2024": {
           "mechanics": {
             "toHit": 5,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "1d4+3",
+            "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!EGf25r3EEbHWFTnl.oU2Bc9xafsuF1cgy"
-    },
-    {
-      "_id": "k00eiruM9NklFOxw",
-      "name": "Cortante de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If o alvo is a Large or smaller creature, it has the Caído condition. CAMEL CAMEL r La rge B east, Un aligned AC 10 lnitiativ e-1 (9) HP 17(2d10+6) Spe ed 50 ft. MOD S AVE M OD S AVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!EGf25r3EEbHWFTnl.k00eiruM9NklFOxw"
+      "_key": "!actors.items!jxkBFiNVvbNBSbR8.qo1tK4untRMLcjs1"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Brown Bear",
-      "page": 352,
-      "cr": "0",
+      "page": 350,
+      "cr": "1",
       "warnings": []
     }
   }

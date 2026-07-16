@@ -1,8 +1,8 @@
 {
-  "_id": "gPg0Cakybg2RK07C",
-  "_key": "!actors!gPg0Cakybg2RK07C",
+  "_id": "xZYI1XVz1kBYTrJC",
+  "_key": "!actors!xZYI1XVz1kBYTrJC",
   "folder": "Hp5o2ufz9hhrO2ew",
-  "name": "Bearded Diabo",
+  "name": "Bearded Devil",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/bearded-devil.webp",
   "system": {
@@ -12,16 +12,16 @@
         "proficient": 1
       },
       "dex": {
-        "value": 75,
+        "value": 15,
         "proficient": 0
       },
       "con": {
-        "value": 75,
+        "value": 15,
         "proficient": 1
       },
       "int": {
         "value": 9,
-        "proficient": 1
+        "proficient": 0
       },
       "wis": {
         "value": 11,
@@ -41,7 +41,7 @@
       "hp": {
         "value": 58,
         "max": 58,
-        "formula": "9d8+18",
+        "formula": "9d8 + 18",
         "temp": null,
         "tempmax": null
       },
@@ -52,7 +52,7 @@
       },
       "senses": {
         "units": "ft",
-        "darkvision": 720
+        "darkvision": 120
       },
       "init": {
         "ability": "dex",
@@ -62,14 +62,14 @@
     "details": {
       "type": {
         "value": "fiend",
-        "subtype": "D e tJi!",
+        "subtype": "devil",
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Lawful",
+      "alignment": "Leal e Mau",
       "cr": 3,
       "xp": {
-        "value": 700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -81,11 +81,16 @@
     "traits": {
       "size": "med",
       "di": {
-        "value": [],
+        "value": [
+          "fire",
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
-        "value": [],
+        "value": [
+          "cold"
+        ],
         "custom": ""
       },
       "dv": {
@@ -93,18 +98,21 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "frightened",
+          "poisoned"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Infernal"
+        "custom": ""
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Bearded Diabo",
+    "name": "Bearded Devil",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -116,13 +124,13 @@
   },
   "items": [
     {
-      "_id": "MQM8h5mbiLfMM0Zs",
-      "name": "Magic Resistance",
+      "_id": "pGNbXes9ybPyiH9t",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The devil has Advantage on saving throws against spells and other magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -146,7 +154,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gPg0Cakybg2RK07C.MQM8h5mbiLfMM0Zs"
+      "_key": "!actors.items!xZYI1XVz1kBYTrJC.pGNbXes9ybPyiH9t"
     },
     {
       "_id": "CyQWWdXZZw8h1tTy",
@@ -155,7 +163,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The devil makes one Beard attack and one Infernal Glaive attack.</p>",
+          "value": "<p>The devil makes one Beard attack and one Infernal Naginata attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -180,7 +188,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gPg0Cakybg2RK07C.CyQWWdXZZw8h1tTy"
+      "_key": "!actors.items!xZYI1XVz1kBYTrJC.CyQWWdXZZw8h1tTy"
     },
     {
       "_id": "pPIXV6HMx4aHPlX9",
@@ -189,7 +197,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 7 (1d8 + 3) Perfurante de dano, and o alvo has the Envenenado con- dition until the start of the devil's next turn. Until this poison ends, o alvo can't regain Pontos de Vida.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 7 (1d8 + 3) dano perfurante, and o alvo fica com a condição Envenenado until the start of the devil's next turn. Until this poison ends, o alvo can't regain Pontos de Vida.</p>",
           "chat": ""
         },
         "activation": {
@@ -261,16 +269,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gPg0Cakybg2RK07C.pPIXV6HMx4aHPlX9"
+      "_key": "!actors.items!xZYI1XVz1kBYTrJC.pPIXV6HMx4aHPlX9"
     },
     {
-      "_id": "SgEUsWf5sQ4k2fmd",
-      "name": "Infernal Glaive",
+      "_id": "pQar3tqRaasNsert",
+      "name": "Infernal Naginata",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 70 ft. Acerto: 8 (1d1 0 + 3) Cortante de dano. If o alvo is a crea- ture and doesn't already have an infernal wound, it is subjected to the following effect. Constituição Teste de Resistência: DC 12. Falha: The target receives an infernal wound. While wounded, o alvo loses 5 (1d10) Pontos de Vida at the start of each of its turns. The wound closes after l minute, after a spell restores Pontos de Vida to I o alvo, or after o alvo or a creature within 5 feet u.J <( of it takes an action to stanch the wound, doing so by lJ 0 succeeding on a DC 12 Sabedoria (Medicine) check. BEARDED DEVIL Devil of Energia and Intimidation</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 3 m. Acerto: 8 (1d10 + 3) dano cortante. If o alvo is uma criatura and doesn't already have an infernal wound, it is subjected to the following effect. Teste de Resistência de Constituição: CD 12. O alvo receives an infernal wound. While wounded, o alvo loses 5 (1d10) Pontos de Vida at the start of each of its turns. The wound closes after 1 minute, after a spell restores Pontos de Vida to o alvo, or after o alvo or uma criatura within 1,5 m of it takes an action to stanch the wound, doing so by succeeding on a CD 12 Sabedoria (Medicine) check.</p>",
           "chat": ""
         },
         "activation": {
@@ -288,8 +296,8 @@
           "subtype": ""
         },
         "activities": {
-          "UvKhh7QyHtJEc1zM": {
-            "_id": "UvKhh7QyHtJEc1zM",
+          "M0EMiYzkN7jHe52q": {
+            "_id": "M0EMiYzkN7jHe52q",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -344,13 +352,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!gPg0Cakybg2RK07C.SgEUsWf5sQ4k2fmd"
+      "_key": "!actors.items!xZYI1XVz1kBYTrJC.pQar3tqRaasNsert"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Bearded Devil",
-      "page": 35,
+      "page": 33,
       "cr": "3",
       "warnings": []
     }

@@ -1,0 +1,302 @@
+{
+  "_id": "VbawuIgYcKPGQnVm",
+  "_key": "!actors!VbawuIgYcKPGQnVm",
+  "folder": "9eORFRgLi2o0urFB",
+  "name": "Mammoth",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/tokens/mammoth.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 24,
+        "proficient": 1
+      },
+      "dex": {
+        "value": 9,
+        "proficient": 0
+      },
+      "con": {
+        "value": 21,
+        "proficient": 1
+      },
+      "int": {
+        "value": 3,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 11,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 6,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13,
+        "formula": ""
+      },
+      "hp": {
+        "value": 126,
+        "max": 126,
+        "formula": "11d12 + 55",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 50
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 6,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Mammoth",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/mammoth.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "tv35rUAHW5yNiVEi",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura faz dois ataques de Chifrada.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!VbawuIgYcKPGQnVm.tv35rUAHW5yNiVEi"
+    },
+    {
+      "_id": "egZLytjOBOMw9Bf8",
+      "name": "Chifrada",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 3 m. Acerto: 18 (2d10 + 7) dano perfurante. If o alvo is a Huge or smaller creature and the mammoth moved 20+ feet straight toward it immediately before the hit, o alvo fica com a condição Caído.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "tAedWLB5kdFnK92B": {
+            "_id": "tAedWLB5kdFnK92B",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "7",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 10,
+            "attackType": "melee",
+            "damageFormula": "2d10+7",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!VbawuIgYcKPGQnVm.egZLytjOBOMw9Bf8"
+    },
+    {
+      "_id": "fj50E8KvmEj4bQra",
+      "name": "Trample",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Destreza: CD 18, uma criatura within 1,5 m that fica com a condição Caído. 29 (4d10 + 7) dano de concussão. Metade do dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "BjsS63pdHYIKhgzL": {
+            "_id": "BjsS63pdHYIKhgzL",
+            "type": "save",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "18"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 18,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!VbawuIgYcKPGQnVm.fj50E8KvmEj4bQra"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Mammoth",
+      "page": 365,
+      "cr": "6",
+      "warnings": []
+    }
+  }
+}

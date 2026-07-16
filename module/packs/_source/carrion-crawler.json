@@ -1,6 +1,6 @@
 {
-  "_id": "2lU8jBfZTakdgumV",
-  "_key": "!actors!2lU8jBfZTakdgumV",
+  "_id": "P98zs47Z4ocNFS1b",
+  "_key": "!actors!P98zs47Z4ocNFS1b",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Carrion Crawler",
   "type": "npc",
@@ -70,7 +70,7 @@
       "alignment": "Sem Tendência",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -99,7 +99,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {
@@ -122,13 +122,13 @@
   },
   "items": [
     {
-      "_id": "qskpayHZj2b59aA3",
-      "name": "Spider Climb",
+      "_id": "nqdxlQchN5nP3fBj",
+      "name": "Escalada de Aranha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The carrion crawler can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>",
+          "value": "<p>A criatura pode escalar superfícies difíceis, inclusive tetos, sem precisar fazer um teste de habilidade.</p>",
           "chat": ""
         },
         "activation": {
@@ -152,7 +152,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2lU8jBfZTakdgumV.qskpayHZj2b59aA3"
+      "_key": "!actors.items!P98zs47Z4ocNFS1b.nqdxlQchN5nP3fBj"
     },
     {
       "_id": "HBe9ue7QuTvRerhu",
@@ -161,7 +161,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The carrion cr_awler uses Paralyzing Tenta- cles and makes one Bite attack.</p>",
+          "value": "<p>The carrion crawler uses Paralyzing Tentáculos and makes one Mordida attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -186,53 +186,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2lU8jBfZTakdgumV.HBe9ue7QuTvRerhu"
+      "_key": "!actors.items!P98zs47Z4ocNFS1b.HBe9ue7QuTvRerhu"
     },
     {
-      "_id": "h5xFrWcKyAPSpzB9",
-      "name": "Bite",
+      "_id": "FMIayFyetxAkhkR0",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: _+4, alcance 5 ft. Acerto: 7 (2d4 + 2) Perfurante de dano plus 3 (1d6) Veneno de dano.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {
-            "damageFormula": "2d4+2",
-            "damageType": "piercing"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!2lU8jBfZTakdgumV.h5xFrWcKyAPSpzB9"
-    },
-    {
-      "_id": "5PbZNc25bjOscQBj",
-      "name": "Paralyzing Tentacles",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 12, uma criatura the carrion crawler can see within 10 feet. Falha: The target has the Envenenado condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After l minute, it suc- N ceeds automatically. While Envenenado, o alvo has the ></p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 7 (2d4 + 2) dano perfurante mais 3 (1d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -250,8 +213,89 @@
           "subtype": ""
         },
         "activities": {
-          "PB0LCmcEUen7LAok": {
-            "_id": "PB0LCmcEUen7LAok",
+          "Z97HWBj8eChdlLA8": {
+            "_id": "Z97HWBj8eChdlLA8",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "2d4+2",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!P98zs47Z4ocNFS1b.FMIayFyetxAkhkR0"
+    },
+    {
+      "_id": "FpPYG8ZeNWYQXbPK",
+      "name": "Paralyzing Tentáculos",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Teste de Resistência de Constituição: CD 12, uma criatura the carrion crawler can see within 3 m. O alvo fica com a condição Envenenado and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. While Envenenado, o alvo fica com a condição Paralisado.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "R6YPcCND2IXFTznV": {
+            "_id": "R6YPcCND2IXFTznV",
             "type": "save",
             "activation": {
               "type": "action",
@@ -261,7 +305,7 @@
             },
             "save": {
               "ability": [
-                "dex"
+                "con"
               ],
               "dc": {
                 "calculation": "",
@@ -279,52 +323,18 @@
         "mm2024": {
           "mechanics": {
             "saveDc": 12,
-            "saveAbility": "dex"
+            "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2lU8jBfZTakdgumV.5PbZNc25bjOscQBj"
-    },
-    {
-      "_id": "Xi8bDZ9j2YOpqBAB",
-      "name": "Paralisado condition",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>, Ci:'. CD CENTAU RS Defenders of the Feywild</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!2lU8jBfZTakdgumV.Xi8bDZ9j2YOpqBAB"
+      "_key": "!actors.items!P98zs47Z4ocNFS1b.FpPYG8ZeNWYQXbPK"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Carrion Crawler",
-      "page": 68,
+      "page": 66,
       "cr": "2",
       "warnings": []
     }

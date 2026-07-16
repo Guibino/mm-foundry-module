@@ -1,6 +1,6 @@
 {
-  "_id": "BsFvVIv2JN9k42QA",
-  "_key": "!actors!BsFvVIv2JN9k42QA",
+  "_id": "MG2L1zPJXUxVYFex",
+  "_key": "!actors!MG2L1zPJXUxVYFex",
   "folder": "EgPgmtpb4EiltKUV",
   "name": "Ettin",
   "type": "npc",
@@ -69,7 +69,7 @@
       "alignment": "Caótico e Mau",
       "cr": 4,
       "xp": {
-        "value": 1100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -82,7 +82,7 @@
       "size": "lg",
       "di": {
         "value": [],
-        "custom": "Blinded; Charmed; Deafened; Frightened"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -93,7 +93,14 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "blinded",
+          "charmed",
+          "deafened",
+          "frightened",
+          "stunned",
+          "unconscious"
+        ],
         "custom": ""
       },
       "languages": {
@@ -127,7 +134,41 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The ettin makes one Battleaxe attack and one Morningstar attack.- /3attleaxe. Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 14 (2d8 + 5) Cortante de dano. If o alvo is a Large or smaller creature, it has the Caído condition.</p>",
+          "value": "<p>The ettin makes one Machado de Batalha attack and one Estrela-da-Manhã attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!MG2L1zPJXUxVYFex.FCUGR8OWNjFu8hYu"
+    },
+    {
+      "_id": "aaxt0uW9g3HOFA4g",
+      "name": "Machado de Batalha",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 14 (2d8 + 5) dano cortante. If o alvo is a Large or smaller creature, it fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,8 +186,8 @@
           "subtype": ""
         },
         "activities": {
-          "FOau3L1NlUllDDVN": {
-            "_id": "FOau3L1NlUllDDVN",
+          "ymhSNORplF6h0a20": {
+            "_id": "ymhSNORplF6h0a20",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -199,16 +240,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!BsFvVIv2JN9k42QA.FCUGR8OWNjFu8hYu"
+      "_key": "!actors.items!MG2L1zPJXUxVYFex.aaxt0uW9g3HOFA4g"
     },
     {
-      "_id": "FJ0ru0emwxaCrTU9",
-      "name": "Morningstar",
+      "_id": "J3PMWIbnW8FEKv28",
+      "name": "Estrela-da-Manhã",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 14 _J (2d8 + 5) Perfurante de dano, and o alvo has Disad- vantage on the next attack roll it makes before the end 0 V1 co of its next turn. ..,, 0 FAERIE DRAGONS Whimsical Dracônico Tricksters</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 14 (2d8 + 5) dano perfurante, and o alvo has Desvantagem on the next attack roll it makes before the end of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -226,8 +267,8 @@
           "subtype": ""
         },
         "activities": {
-          "hiIpLSOaBHJ4Oeey": {
-            "_id": "hiIpLSOaBHJ4Oeey",
+          "wvskZ8QgPFIcSdwf": {
+            "_id": "wvskZ8QgPFIcSdwf",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -246,7 +287,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "5",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -255,18 +314,20 @@
         "mm2024": {
           "mechanics": {
             "toHit": 7,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d8+5",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!BsFvVIv2JN9k42QA.FJ0ru0emwxaCrTU9"
+      "_key": "!actors.items!MG2L1zPJXUxVYFex.J3PMWIbnW8FEKv28"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Ettin",
-      "page": 118,
+      "page": 116,
       "cr": "4",
       "warnings": []
     }

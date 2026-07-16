@@ -1,6 +1,6 @@
 {
-  "_id": "jWg33V7U45e7LIbb",
-  "_key": "!actors!jWg33V7U45e7LIbb",
+  "_id": "mhOqqtU1FjlgxfUJ",
+  "_key": "!actors!mhOqqtU1FjlgxfUJ",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Gladiator",
   "type": "npc",
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 16,
         "formula": ""
       },
       "hp": {
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -97,7 +97,7 @@
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum"
       }
     },
     "skills": {
@@ -106,7 +106,7 @@
         "ability": "str"
       },
       "prf": {
-        "value": 1,
+        "value": 2,
         "ability": "cha"
       }
     }
@@ -130,7 +130,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The gladiator makes three Spear attacks. It can replace one attack with a use of Shield Bash.</p>",
+          "value": "<p>The gladiator makes three Lança attacks. It can replace one attack with a use of Shield Bash.</p>",
           "chat": ""
         },
         "activation": {
@@ -155,16 +155,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!jWg33V7U45e7LIbb.CsReEbsYieJrTega"
+      "_key": "!actors.items!mhOqqtU1FjlgxfUJ.CsReEbsYieJrTega"
     },
     {
-      "_id": "OtU0m6yIihxciRjH",
-      "name": "Spear",
+      "_id": "oBKwoqRu9zNNulPS",
+      "name": "Lança",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 5 ft. or range 20/60 ft. Acerto: ll (2d6 + 4) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 1,5 m. or distância 6/18 m. Acerto: 11 (2d6 + 4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -182,8 +182,8 @@
           "subtype": ""
         },
         "activities": {
-          "xdXlznwxArRSRgWX": {
-            "_id": "xdXlznwxArRSRgWX",
+          "XDd14vamdZkDgwUt": {
+            "_id": "XDd14vamdZkDgwUt",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -202,7 +202,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -211,12 +229,14 @@
         "mm2024": {
           "mechanics": {
             "toHit": 7,
-            "attackType": "ranged"
+            "attackType": "ranged",
+            "damageFormula": "2d6+4",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!jWg33V7U45e7LIbb.OtU0m6yIihxciRjH"
+      "_key": "!actors.items!mhOqqtU1FjlgxfUJ.oBKwoqRu9zNNulPS"
     },
     {
       "_id": "W6rRriGSc2ZfoLW5",
@@ -225,7 +245,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Força Teste de Resistência: DC 15, one crea- ture within 5 feet that the gladiator can see . Falha: 9 (2d4 + 4) Concussão de dano. If o alvo is a Me- dium or smaller creature, it has the Caído condition. w R EACT I ONS</p>",
+          "value": "<p>Teste de Resistência de Força: CD 15, uma criatura within 1,5 m that the gladiator can see. 9 (2d4 + 4) dano de concussão. If o alvo is a Medium or smaller creature, it fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -263,25 +283,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 2,
-                  "denomination": 4,
-                  "bonus": "4",
-                  "types": [
-                    "bludgeoning"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -289,28 +291,26 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "2d4+4",
-            "damageType": "bludgeoning",
             "saveDc": 15,
             "saveAbility": "str"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!jWg33V7U45e7LIbb.W6rRriGSc2ZfoLW5"
+      "_key": "!actors.items!mhOqqtU1FjlgxfUJ.W6rRriGSc2ZfoLW5"
     },
     {
-      "_id": "3WjbmcghzSlYznSl",
-      "name": "Parry",
+      "_id": "dALZOemAU3g1qmZw",
+      "name": "Aparar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: The gladiator is hit by a melee attack roll z while holding a weapon. Response: The gladiator adds 3 __J to its AC against that attack, possibly causing it to miss. GLADIATOR 1 39 GNOLLS Fiends in Feral Flesh</p>",
+          "value": "<p>The gladiator is hit by a melee attack roll while holding a weapon. The gladiator adds 3 to its AC against that attack, possibly causing it to miss.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "action",
+          "type": "reaction",
           "value": null,
           "condition": ""
         },
@@ -331,13 +331,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!jWg33V7U45e7LIbb.3WjbmcghzSlYznSl"
+      "_key": "!actors.items!mhOqqtU1FjlgxfUJ.dALZOemAU3g1qmZw"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Gladiator",
-      "page": 141,
+      "page": 139,
       "cr": "5",
       "warnings": []
     }

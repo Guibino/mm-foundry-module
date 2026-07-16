@@ -1,26 +1,26 @@
 {
-  "_id": "j8fIH2jgTzOkP34l",
-  "_key": "!actors!j8fIH2jgTzOkP34l",
+  "_id": "KdZZZ0BqichLCDGV",
+  "_key": "!actors!KdZZZ0BqichLCDGV",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Cobre Dragão Filhote",
+  "name": "Copper Dragon Wyrmling",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/copper-dragon-wyrmling.webp",
   "system": {
     "abilities": {
       "str": {
-        "value": 75,
+        "value": 15,
         "proficient": 0
       },
       "dex": {
-        "value": 72,
-        "proficient": 0
+        "value": 12,
+        "proficient": 1
       },
       "con": {
-        "value": 73,
+        "value": 13,
         "proficient": 0
       },
       "int": {
-        "value": 74,
+        "value": 14,
         "proficient": 0
       },
       "wis": {
@@ -41,7 +41,7 @@
       "hp": {
         "value": 22,
         "max": 22,
-        "formula": "4d8+4",
+        "formula": "4d8 + 4",
         "temp": null,
         "tempmax": null
       },
@@ -53,7 +53,9 @@
         "fly": 60
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60,
+        "blindsight": 10
       },
       "init": {
         "ability": "dex",
@@ -63,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Metallic",
+        "subtype": "metallic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Bom",
-      "cr": 7,
+      "cr": 1,
       "xp": {
-        "value": 200
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -104,10 +106,19 @@
         "custom": "Dracônico"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Cobre Dragão Filhote",
+    "name": "Copper Dragon Wyrmling",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -119,13 +130,13 @@
   },
   "items": [
     {
-      "_id": "UCpyvYUPniivfapO",
-      "name": "Rend",
+      "_id": "VKim0lnI5Fo51VrQ",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 7 (1d1 0 + 2) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 7 (1d10 + 2) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -143,8 +154,8 @@
           "subtype": ""
         },
         "activities": {
-          "k9ASAe281eWTjkq7": {
-            "_id": "k9ASAe281eWTjkq7",
+          "djdapPVuvTBW166r": {
+            "_id": "djdapPVuvTBW166r",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -197,16 +208,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!j8fIH2jgTzOkP34l.UCpyvYUPniivfapO"
+      "_key": "!actors.items!KdZZZ0BqichLCDGV.VKim0lnI5Fo51VrQ"
     },
     {
-      "_id": "OOnqXUwgwYTEfT1a",
-      "name": "Ácido Breath (Recharge 5-6)",
+      "_id": "dodovcruci0hWeWF",
+      "name": "Sopro de Ácido (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 11, cada criatura in a 20-foot-long, 5-foot-wide Line. Falha: 18 (4d8) Ácido de dano. Sucesso: Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 11, cada criatura in a 6 m-long, 1,5 m-wide Line. 18 (4d8) dano de ácido. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -230,8 +241,8 @@
           "subtype": ""
         },
         "activities": {
-          "azk6ascucaUdwo6L": {
-            "_id": "azk6ascucaUdwo6L",
+          "SzRj388kzsjsSm7e": {
+            "_id": "SzRj388kzsjsSm7e",
             "type": "save",
             "activation": {
               "type": "action",
@@ -250,25 +261,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 4,
-                  "denomination": 8,
-                  "bonus": "",
-                  "types": [
-                    "acid"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -276,24 +269,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "4d8",
-            "damageType": "acid",
             "saveDc": 11,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!j8fIH2jgTzOkP34l.OOnqXUwgwYTEfT1a"
+      "_key": "!actors.items!KdZZZ0BqichLCDGV.dodovcruci0hWeWF"
     },
     {
-      "_id": "7w2NPSSLbIXc0xl5",
-      "name": "Slowing Breath",
+      "_id": "2GjLTZkhfjQtxzqz",
+      "name": "Sopro Lentificante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 11, cada criatura in a 15-foot Cone. Falha: The target can't take Reactions; its Speed is halved; and it can take either an action or a Bonus Action on-its turn, not both. This effect lasts until the end of its next turn. 78 ~ CO PPE -R DR AGONS DR/\\GON NG their slowing breath and physical attacks to subdue antagonists. Only in cases of extreme peril or emo- tion do they use their deadly acid breath. Copper dragons typically live in caverns amid picturesque hills and rock formations-particularly those that are prominent landmarks. These drag- ons collect gifts, though they have little interest in treasure without meaning, no matter how valuable it is. To them, thoughtfully given presents and the feelings or memories they symbolize are more im- pdrtant than masterpieces or magical relics. COPPER DRAGON WYRMLING Copper dragon wyrmlings venture into the world seeking to make friends and discover wonde1:'s. They sometimes get into trouble, but those who help them can become their friends for life. YOUNG COPPER DRAGON Young copper dragons forge strong connections with a community or group of friends while flitting from one artistic fixation to the next. YOUNG COPPER DRAGON Large Dragon (Metallic) , Chaotic Good AC 17 Iniciativa +4 (14) HP 119 (14d10 + 42) Sp eed 40 ft., Climb 40 ft., Fly 80 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 11, cada criatura in a 4,5 m Cone. O alvo can't take Reactions; its Speed is halved; and it can take either an action or a Bonus Action on its turn, not both. This effect lasts until the end of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -311,8 +302,8 @@
           "subtype": ""
         },
         "activities": {
-          "yOaneeYZHbWpe208": {
-            "_id": "yOaneeYZHbWpe208",
+          "MuQHTwPXmCjqCWXZ": {
+            "_id": "MuQHTwPXmCjqCWXZ",
             "type": "save",
             "activation": {
               "type": "action",
@@ -345,14 +336,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!j8fIH2jgTzOkP34l.7w2NPSSLbIXc0xl5"
+      "_key": "!actors.items!KdZZZ0BqichLCDGV.2GjLTZkhfjQtxzqz"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Copper Dragon Wyrmling",
-      "page": 80,
-      "cr": "7",
+      "page": 78,
+      "cr": "1",
       "warnings": []
     }
   }

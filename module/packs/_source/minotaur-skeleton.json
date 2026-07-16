@@ -1,8 +1,8 @@
 {
-  "_id": "DB23kwaQusycw0gQ",
-  "_key": "!actors!DB23kwaQusycw0gQ",
+  "_id": "CrTSxLmwj7eJZ31e",
+  "_key": "!actors!CrTSxLmwj7eJZ31e",
   "folder": "bKQUPthn1V2Yu6Bn",
-  "name": "Minotaur Esqueleto",
+  "name": "Minotaur Skeleton",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/minotaur-skeleton.webp",
   "system": {
@@ -51,7 +51,8 @@
         "walk": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -68,7 +69,7 @@
       "alignment": "Leal e Mau",
       "cr": 2,
       "xp": {
-        "value": 450
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,19 +98,20 @@
       },
       "ci": {
         "value": [
+          "exhaustion",
           "poisoned"
         ],
-        "custom": "Exh au stion"
+        "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "Understands Abyssal but can't speak"
+        "custom": "understands Abyssal but can't speak"
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Minotaur Esqueleto",
+    "name": "Minotaur Skeleton",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -121,13 +123,13 @@
   },
   "items": [
     {
-      "_id": "W8eILKhdNiGLeEaj",
-      "name": "Gore",
+      "_id": "aSCqW5Yc3PFazP8N",
+      "name": "Chifrada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 11 (2d6 + 4)</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 11 (2d6 + 4) dano perfurante. If o alvo is a Large or smaller creature and the skeleton moved 20+ feet straight toward it immediately before the hit, o alvo takes an extra 9 (2d8) dano perfurante and fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -145,8 +147,8 @@
           "subtype": ""
         },
         "activities": {
-          "rIOsAgVbxmy3Yl7O": {
-            "_id": "rIOsAgVbxmy3Yl7O",
+          "YozHuKD4xfKNYScZ": {
+            "_id": "YozHuKD4xfKNYScZ",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -165,7 +167,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -174,21 +194,23 @@
         "mm2024": {
           "mechanics": {
             "toHit": 6,
-            "attackType": "melee"
+            "attackType": "melee",
+            "damageFormula": "2d6+4",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DB23kwaQusycw0gQ.W8eILKhdNiGLeEaj"
+      "_key": "!actors.items!CrTSxLmwj7eJZ31e.aSCqW5Yc3PFazP8N"
     },
     {
-      "_id": "hIa84rX7oi7XtM2B",
-      "name": "Perfurante de dano",
+      "_id": "yhSlUpbX5AMB4Ab8",
+      "name": "Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If o alvo is a Large or smaller crea- ture and the skeleton moved 20+ feet straight toward it >- immediately before the hit, o alvo takes an extra 9 z (2d8) Perfurante de dano and has the Caído condition. >- Attack Roll: +6, alcance 5 ft. Acerto: 15 (2d1 0 w Slam. Melee z + 4) Concussão de dano. FLAMING SKELETON Medium Undead, L aw f ul Evil AC 15 Iniciativa +2 (12) HP 65 (10d8 + 20) Sp eed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 15 (2d10 + 4) dano de concussão.</p>",
           "chat": ""
         },
         "activation": {
@@ -205,24 +227,68 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "4HUMF0qe2Xc3TMcj": {
+            "_id": "4HUMF0qe2Xc3TMcj",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "4",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "2d10wSlam.Meleez+4",
+            "toHit": 6,
+            "attackType": "melee",
+            "damageFormula": "2d10+4",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DB23kwaQusycw0gQ.hIa84rX7oi7XtM2B"
+      "_key": "!actors.items!CrTSxLmwj7eJZ31e.yhSlUpbX5AMB4Ab8"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Minotaur Skeleton",
-      "page": 285,
+      "page": 283,
       "cr": "2",
       "warnings": []
     }

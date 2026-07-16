@@ -1,8 +1,8 @@
 {
-  "_id": "MVsWpq049cm0FZX6",
-  "_key": "!actors!MVsWpq049cm0FZX6",
+  "_id": "c2POiEypqLPcp9AG",
+  "_key": "!actors!c2POiEypqLPcp9AG",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Ancião Latão Dragão",
+  "name": "Ancient Brass Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/ancient-brass-dragon.webp",
   "system": {
@@ -41,7 +41,7 @@
       "hp": {
         "value": 332,
         "max": 332,
-        "formula": "l 9d20 + 133",
+        "formula": "19d20 + 133",
         "temp": null,
         "tempmax": null
       },
@@ -65,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Metallic",
+        "subtype": "metallic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Caótico e Bom",
       "cr": 20,
       "xp": {
-        "value": 25000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -108,7 +108,7 @@
     },
     "skills": {
       "his": {
-        "value": 1,
+        "value": 2,
         "ability": "int"
       },
       "prc": {
@@ -116,13 +116,17 @@
         "ability": "wis"
       },
       "per": {
-        "value": 1,
+        "value": 2,
         "ability": "cha"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
       }
     }
   },
   "prototypeToken": {
-    "name": "Ancião Latão Dragão",
+    "name": "Ancient Brass Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -135,12 +139,12 @@
   "items": [
     {
       "_id": "vnxfdsA6pviyfBou",
-      "name": "Resistência Lendária (4/Day, or 5/Day in Lair)",
+      "name": "Resistência Lendária",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the dragon fails a saving throw, it can choose to suc- ceed instead.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -149,13 +153,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "4",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -169,7 +168,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MVsWpq049cm0FZX6.vnxfdsA6pviyfBou"
+      "_key": "!actors.items!c2POiEypqLPcp9AG.vnxfdsA6pviyfBou"
     },
     {
       "_id": "IWxUBUvPa0ylaZ58",
@@ -178,7 +177,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of (A) Sleep Breath or (B) Conjuração to cast Scorching Ray (level 3 version).</p>",
+          "value": "<p>The dragon makes three Dilacerar attacks. It can replace one attack with a use of (A) Sopro Sonífero or (B) Conjuração to cast Scorching Ray (level 3 version).</p>",
           "chat": ""
         },
         "activation": {
@@ -203,16 +202,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MVsWpq049cm0FZX6.IWxUBUvPa0ylaZ58"
+      "_key": "!actors.items!c2POiEypqLPcp9AG.IWxUBUvPa0ylaZ58"
     },
     {
-      "_id": "vta1kq0br5zsbKeC",
-      "name": "Rend",
+      "_id": "bYTjv1wRda3zLbif",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>MeleeAttack Roll:+14, alcance 15 ft. Acerto: 19 (2d10 + 8) Cortante de dano plus 7 (2d6) Fogo de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 4,5 m. Acerto: 19 (2d10 + 8) dano cortante mais 7 (2d6) dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -229,27 +228,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "C831yqceG2Rgs4by": {
+            "_id": "C831yqceG2Rgs4by",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "14",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "8",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 14,
+            "attackType": "melee",
             "damageFormula": "2d10+8",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MVsWpq049cm0FZX6.vta1kq0br5zsbKeC"
+      "_key": "!actors.items!c2POiEypqLPcp9AG.bYTjv1wRda3zLbif"
     },
     {
-      "_id": "Ln1Nt0xCcBThk7Pr",
-      "name": "Fogo Breath (Recharge 5-6)",
+      "_id": "Z6g9ULfNMto9j3ie",
+      "name": "Sopro de Fogo (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 21, cada criatura in a 90-foot-long, 5-foot-wide Line. Falha: 58 (13d8) Fogo de dano. Sucesso: Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 21, cada criatura in a 27 m-long, 1,5 m-wide Line. 58 (13d8) dano de fogo. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -273,8 +316,8 @@
           "subtype": ""
         },
         "activities": {
-          "vJxRfWqaQHUf8D3X": {
-            "_id": "vJxRfWqaQHUf8D3X",
+          "VGGJFGB0cxFjeu1d": {
+            "_id": "VGGJFGB0cxFjeu1d",
             "type": "save",
             "activation": {
               "type": "action",
@@ -293,25 +336,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 13,
-                  "denomination": 8,
-                  "bonus": "",
-                  "types": [
-                    "fire"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -319,24 +344,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "13d8",
-            "damageType": "fire",
             "saveDc": 21,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MVsWpq049cm0FZX6.Ln1Nt0xCcBThk7Pr"
+      "_key": "!actors.items!c2POiEypqLPcp9AG.Z6g9ULfNMto9j3ie"
     },
     {
-      "_id": "DbfFAUavvm0gHjH8",
-      "name": "Sleep Breath",
+      "_id": "KjOtvxk15DmL9mVa",
+      "name": "Sopro Sonífero",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 21, cada criatura in a 90-foot Cone. Falha: The target has the BRASS - DRAGONS BRASS DRAGON LAIRS Brass dragons usually dwell in secret caves and can- yons near well-traveled routes. The area containing an adult or ancient brass dragon's lair is altered by its presence, creating the following effects:</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 21, cada criatura in a 27 m Cone. O alvo fica com a condição Incapacitado until the end of its next turn, at which point it repeats the save. Falha: O alvo fica com a condição Inconsciente for 10 minutes. This effect ends for o alvo if it takes de dano or uma criatura within 1,5 m of it takes an action to wake it.</p>",
           "chat": ""
         },
         "activation": {
@@ -354,8 +377,8 @@
           "subtype": ""
         },
         "activities": {
-          "c7TcvHk6DQCY3Grx": {
-            "_id": "c7TcvHk6DQCY3Grx",
+          "2XedO4PlbCeRHEh4": {
+            "_id": "2XedO4PlbCeRHEh4",
             "type": "save",
             "activation": {
               "type": "action",
@@ -388,75 +411,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MVsWpq049cm0FZX6.DbfFAUavvm0gHjH8"
-    },
-    {
-      "_id": "IbaNyFZZvomutduD",
-      "name": "Mirages",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>While in its lair, the dragon can cast Major Image, requiring no Material components and us- ing the same spellcasting ability as its Conjuração action. When casting the spell this way, the spell's range is 1 mile, and the dragon doesn't need to see the spot where the illusion appears.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!MVsWpq049cm0FZX6.IbaNyFZZvomutduD"
-    },
-    {
-      "_id": "Jm6etPTmSUeeiFaV",
-      "name": "Refreshing Water",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Water within 1 mile of the lair is magically refreshing. A creature that drinks such water gains 2d4 Temporary Pontos de Vida, and the dragon is immediately aware of the creature's presence. If the dragon dies or moves its lair elsewhere, these effects end immediately. Incapacitado condition until the end of its next turn, at which point it repeats the save. Second Falha: The target has the Inconsciente condition for 10 minutes. This effect ends for o alvo if it takes de dano or a creature within 5 feet of it takes an action to wake it.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!MVsWpq049cm0FZX6.Jm6etPTmSUeeiFaV"
+      "_key": "!actors.items!c2POiEypqLPcp9AG.KjOtvxk15DmL9mVa"
     },
     {
       "_id": "oCgfn22zNyFEYWRG",
@@ -490,16 +445,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MVsWpq049cm0FZX6.oCgfn22zNyFEYWRG"
+      "_key": "!actors.items!c2POiEypqLPcp9AG.oCgfn22zNyFEYWRG"
     },
     {
-      "_id": "s2SmQHZILyKc34go",
-      "name": "Pounce",
+      "_id": "73DeN5KtLnPEFfVK",
+      "name": "Bote",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon moves up to half its Speed, and it makes one Rend attack.</p>",
+          "value": "<p>A criatura se move até metade do seu Deslocamento e faz um ataque de Dilacerar.</p>",
           "chat": ""
         },
         "activation": {
@@ -524,7 +479,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MVsWpq049cm0FZX6.s2SmQHZILyKc34go"
+      "_key": "!actors.items!c2POiEypqLPcp9AG.73DeN5KtLnPEFfVK"
     },
     {
       "_id": "eOTyjERYA3O5iOFO",
@@ -533,7 +488,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 20, qne creature the dragon can see within 120 feet. Falha: 36 (8d8) Fogo de dano, and o alvo's Speed is halved until the end of its next turn. Falha ou Sucesso: The er: dragon can't take this action again z • until the start of its next turn. 0 BRON\"I.E DRAGO N WvRMLING BRONZE DRAGONS Dragon~ of Potential and Preservation</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 20, uma criatura the dragon can see within 36 m. 36 (8d8) dano de fogo, and o alvo's Speed is halved until the end of its next turn. The dragon can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -571,25 +526,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 8,
-                  "denomination": 8,
-                  "bonus": "",
-                  "types": [
-                    "fire"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -597,15 +534,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "8d8",
-            "damageType": "fire",
             "saveDc": 20,
             "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MVsWpq049cm0FZX6.eOTyjERYA3O5iOFO"
+      "_key": "!actors.items!c2POiEypqLPcp9AG.eOTyjERYA3O5iOFO"
     },
     {
       "_id": "9XXsGPJ9tx1a4bi8",
@@ -614,7 +549,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 20): À Vontade: Detect Magic, Minor Illusion, Scorching Ray (level 3 version), Shapechange (Beast or Humanoid form only, no Temporary Pontos de Vida gained from the spell, and no Concentration or Temporary Pontos de Vida required to maintain the spell), Speak with Animals 1/Dia Each: Control Weather, Detect Thoughts</p>",
+          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 20):</p>",
           "chat": ""
         },
         "activation": {
@@ -639,13 +574,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!MVsWpq049cm0FZX6.9XXsGPJ9tx1a4bi8"
+      "_key": "!actors.items!c2POiEypqLPcp9AG.9XXsGPJ9tx1a4bi8"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Ancient Brass Dragon",
-      "page": 58,
+      "page": 56,
       "cr": "20",
       "warnings": []
     }

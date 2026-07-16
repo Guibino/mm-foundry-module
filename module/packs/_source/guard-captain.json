@@ -1,8 +1,8 @@
 {
-  "_id": "eM7MabCZRH1jzSUj",
-  "_key": "!actors!eM7MabCZRH1jzSUj",
+  "_id": "OzbBu8Atca28I1zT",
+  "_key": "!actors!OzbBu8Atca28I1zT",
   "folder": "1QPcErIwVgACFlzi",
-  "name": "Guarda Capitão",
+  "name": "Guard Captain",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/guard-captain.webp",
   "system": {
@@ -20,7 +20,7 @@
         "proficient": 0
       },
       "int": {
-        "value": 72,
+        "value": 12,
         "proficient": 0
       },
       "wis": {
@@ -47,7 +47,8 @@
       },
       "movement": {
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "walk": 30
       },
       "senses": {
         "units": "ft"
@@ -67,7 +68,7 @@
       "alignment": "Neutro",
       "cr": 4,
       "xp": {
-        "value": 1100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -77,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -111,7 +112,7 @@
     }
   },
   "prototypeToken": {
-    "name": "Guarda Capitão",
+    "name": "Guard Captain",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -129,7 +130,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The guard makes two attacks, using Jave- lin or Longsword in any combination.</p>",
+          "value": "<p>The guard makes two attacks, using Azagaia or Espada Longa in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -154,16 +155,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eM7MabCZRH1jzSUj.d3rAN4yELJhFzYmD"
+      "_key": "!actors.items!OzbBu8Atca28I1zT.d3rAN4yELJhFzYmD"
     },
     {
-      "_id": "T7Pzc7mrHlertDMU",
-      "name": "Javelin",
+      "_id": "fVg25bVgG6CKEOnc",
+      "name": "Azagaia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +6, alcance 5 ft. or I- range 30/120 VJ ft. Acerto: 14 (3d6 + 4) Perfurante de dano. 0</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +6, alcance 1,5 m. or distância 9/36 m. Acerto: 14 (3d6 + 4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -181,8 +182,8 @@
           "subtype": ""
         },
         "activities": {
-          "zWbLQ4UT25LNH9Pz": {
-            "_id": "zWbLQ4UT25LNH9Pz",
+          "GAFgq0bxW9DOg2qT": {
+            "_id": "GAFgq0bxW9DOg2qT",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -235,16 +236,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eM7MabCZRH1jzSUj.T7Pzc7mrHlertDMU"
+      "_key": "!actors.items!OzbBu8Atca28I1zT.fVg25bVgG6CKEOnc"
     },
     {
-      "_id": "paD6DSX5VvBEKYo4",
-      "name": "Longsword",
+      "_id": "FnM6Qk0XtCZ8LxwU",
+      "name": "Espada Longa",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo : +6, alcance 5 ft. Acerto: 15 Cl'.'. u u (2d10 + 4) Cortante de dano. cc - -~---,-L-:r HALF-DRAGON Medium D ragon, Neutral AC 18 Iniciativa +5 (15) HP 105 (14d8 + 42) Speed 40 ft. MOO SAVE MOO SAVE MOO SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 15 (2d10 + 4) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -261,21 +262,68 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "yZKA3yZSXUk4vgGh": {
+            "_id": "yZKA3yZSXUk4vgGh",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "4",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "toHit": 6,
+            "attackType": "melee",
+            "damageFormula": "2d10+4",
+            "damageType": "slashing"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eM7MabCZRH1jzSUj.paD6DSX5VvBEKYo4"
+      "_key": "!actors.items!OzbBu8Atca28I1zT.FnM6Qk0XtCZ8LxwU"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Guard Captain",
-      "page": 164,
+      "page": 162,
       "cr": "4",
       "warnings": []
     }

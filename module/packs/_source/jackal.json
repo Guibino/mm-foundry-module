@@ -1,6 +1,6 @@
 {
-  "_id": "plOCPzTeWeyUl74Q",
-  "_key": "!actors!plOCPzTeWeyUl74Q",
+  "_id": "63Y3VALaalPwhSd3",
+  "_key": "!actors!63Y3VALaalPwhSd3",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Jackal",
   "type": "npc",
@@ -51,7 +51,8 @@
         "walk": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 90
       },
       "init": {
         "ability": "dex",
@@ -68,7 +69,7 @@
       "alignment": "Sem Tendência",
       "cr": 0,
       "xp": {
-        "value": 10
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -97,10 +98,19 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Jackal",
@@ -115,13 +125,13 @@
   },
   "items": [
     {
-      "_id": "eNuwkGx25bgXSPgY",
-      "name": "Bite",
+      "_id": "wPvI57eFN4Ey8Jqo",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +l, alcance 5 ft. Acerto: l (1d4- l) Perfurante de dano. KILLER WHALE Huge Beast, Unaligned AC 12 Iniciativa +2 (12) HP 90 (12d12 + 72) S peed 5 ft., Swim 60 ft.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +1, alcance 1,5 m. Acerto: 1 (1d4 - 1) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -138,21 +148,68 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "htInQA0oKjZSfzrE": {
+            "_id": "htInQA0oKjZSfzrE",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "1",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "-1",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "toHit": 1,
+            "attackType": "melee",
+            "damageFormula": "1d4-1",
+            "damageType": "piercing"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!plOCPzTeWeyUl74Q.eNuwkGx25bgXSPgY"
+      "_key": "!actors.items!63Y3VALaalPwhSd3.wPvI57eFN4Ey8Jqo"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Jackal",
-      "page": 366,
+      "page": 364,
       "cr": "0",
       "warnings": []
     }

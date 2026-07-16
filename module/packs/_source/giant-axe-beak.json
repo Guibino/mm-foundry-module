@@ -1,8 +1,8 @@
 {
-  "_id": "iKUICYagyuUyYSuk",
-  "_key": "!actors!iKUICYagyuUyYSuk",
+  "_id": "1RuU2UcNZRRNYDlc",
+  "_key": "!actors!1RuU2UcNZRRNYDlc",
   "folder": "3SEe9J5t05jhrkCa",
-  "name": "Gigante Axe Beak",
+  "name": "Giant Axe Beak",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/giant-axe-beak.webp",
   "system": {
@@ -41,7 +41,7 @@
       "hp": {
         "value": 84,
         "max": 84,
-        "formula": "8d1 2 + 32",
+        "formula": "8d12 + 32",
         "temp": null,
         "tempmax": null
       },
@@ -68,7 +68,7 @@
       "alignment": "Sem Tendência",
       "cr": 5,
       "xp": {
-        "value": 1
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,13 +102,13 @@
     },
     "skills": {
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       }
     }
   },
   "prototypeToken": {
-    "name": "Gigante Axe Beak",
+    "name": "Giant Axe Beak",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -126,7 +126,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The axe beak makes one Sharpened Beak attack and one Talons attack.</p>",
+          "value": "<p>The axe beak makes one Sharpened Bico attack and one Garras attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -151,16 +151,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!iKUICYagyuUyYSuk.Aw68QL490Q20Subd"
+      "_key": "!actors.items!1RuU2UcNZRRNYDlc.Aw68QL490Q20Subd"
     },
     {
-      "_id": "xzCWAJpTBamzTWsd",
-      "name": "Sharpened Beak",
+      "_id": "qx1w9kGfLMFqrVck",
+      "name": "Sharpened Bico",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 10 ft. Acerto: 18 (2d12 + 5) Cortante de dano, and a creature within 5 feet of o alvo (axe beak's choice) takes 6 (1d12) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 3 m. Acerto: 18 (2d12 + 5) dano cortante, and uma criatura within 1,5 m of o alvo (axe beak's choice) takes 6 (1d12) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -178,8 +178,8 @@
           "subtype": ""
         },
         "activities": {
-          "tTGwk6mlJk2I7qUO": {
-            "_id": "tTGwk6mlJk2I7qUO",
+          "VnaaW2vfv2xu9Dd3": {
+            "_id": "VnaaW2vfv2xu9Dd3",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -232,16 +232,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!iKUICYagyuUyYSuk.xzCWAJpTBamzTWsd"
+      "_key": "!actors.items!1RuU2UcNZRRNYDlc.qx1w9kGfLMFqrVck"
     },
     {
-      "_id": "vAlmON5l4zmV7SJc",
-      "name": "Talons",
+      "_id": "331aUepruCfG62vg",
+      "name": "Garras",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8 , alcance 5 ft. Acerto: 14 (2d8 UJ + 5) Perfurante de dano. If o alvo is a Large or smaller f- l/1 creature, it has the Caído condition. uJ AZERS Fiery Smiths of Living Metal</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 1,5 m. Acerto: 14 (2d8 + 5) dano perfurante. If o alvo is a Large or smaller creature, it fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -259,8 +259,8 @@
           "subtype": ""
         },
         "activities": {
-          "0wiVgddy31iLCQCu": {
-            "_id": "0wiVgddy31iLCQCu",
+          "UKKdiXhw924ue3ee": {
+            "_id": "UKKdiXhw924ue3ee",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -281,15 +281,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "5",
                   "types": [
                     "piercing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "2d8UJ+5"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -307,19 +307,19 @@
           "mechanics": {
             "toHit": 8,
             "attackType": "melee",
-            "damageFormula": "2d8UJ+5",
+            "damageFormula": "2d8+5",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!iKUICYagyuUyYSuk.vAlmON5l4zmV7SJc"
+      "_key": "!actors.items!1RuU2UcNZRRNYDlc.331aUepruCfG62vg"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Giant Axe Beak",
-      "page": 26,
+      "page": 24,
       "cr": "5",
       "warnings": []
     }

@@ -1,8 +1,8 @@
 {
-  "_id": "Jan3S43txFPR2TcO",
-  "_key": "!actors!Jan3S43txFPR2TcO",
+  "_id": "zeZmYxXUGX9IohaI",
+  "_key": "!actors!zeZmYxXUGX9IohaI",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Gigante Centipede",
+  "name": "Giant Centipede",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/giant-centipede.webp",
   "system": {
@@ -12,11 +12,11 @@
         "proficient": 0
       },
       "dex": {
-        "value": 74,
+        "value": 14,
         "proficient": 0
       },
       "con": {
-        "value": 72,
+        "value": 12,
         "proficient": 0
       },
       "int": {
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 74,
+        "flat": 14,
         "formula": ""
       },
       "hp": {
@@ -52,7 +52,8 @@
         "climb": 30
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "blindsight": 30
       },
       "init": {
         "ability": "dex",
@@ -67,7 +68,7 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 0,
+      "cr": 0.25,
       "xp": {
         "value": 0
       },
@@ -98,13 +99,13 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Gigante Centipede",
+    "name": "Giant Centipede",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -116,13 +117,13 @@
   },
   "items": [
     {
-      "_id": "w0acZbaPL1cL41kw",
-      "name": "Bite",
+      "_id": "gbFso0ay7TRz4qAh",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 4 (1d4 + 2) Perfurante de dano, and o alvo has the Envenenado con- dition until the start of the centipede's next turn. GIANT CONSTRICTOR SNAKE Huge Beast, Unaligned AC 12 Iniciativa +2 (12) HP 60 (8d12 + 8) Sp ee d 30 ft., Swim 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 4 (1d4 + 2) dano perfurante, and o alvo fica com a condição Envenenado until the start of the centipede's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -140,8 +141,8 @@
           "subtype": ""
         },
         "activities": {
-          "FoItimm0JVYxo8lP": {
-            "_id": "FoItimm0JVYxo8lP",
+          "K4gBOzH2vgtbpzOr": {
+            "_id": "K4gBOzH2vgtbpzOr",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -194,14 +195,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Jan3S43txFPR2TcO.w0acZbaPL1cL41kw"
+      "_key": "!actors.items!zeZmYxXUGX9IohaI.gbFso0ay7TRz4qAh"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Giant Centipede",
-      "page": 357,
-      "cr": "0",
+      "page": 355,
+      "cr": "1/4",
       "warnings": []
     }
   }

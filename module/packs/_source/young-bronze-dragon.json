@@ -1,8 +1,8 @@
 {
-  "_id": "CYCgGUxTPau3BWoQ",
-  "_key": "!actors!CYCgGUxTPau3BWoQ",
+  "_id": "5RghqqfGuEmPnfdT",
+  "_key": "!actors!5RghqqfGuEmPnfdT",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Jovem Bronze Dragão",
+  "name": "Young Bronze Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/young-bronze-dragon.webp",
   "system": {
@@ -41,7 +41,7 @@
       "hp": {
         "value": 142,
         "max": 142,
-        "formula": "15d1 O + 60",
+        "formula": "15d10 + 60",
         "temp": null,
         "tempmax": null
       },
@@ -65,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "Metallic",
+        "subtype": "metallic",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Bom",
       "cr": 8,
       "xp": {
-        "value": 3900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -84,7 +84,9 @@
     "traits": {
       "size": "lg",
       "di": {
-        "value": [],
+        "value": [
+          "lightning"
+        ],
         "custom": ""
       },
       "dr": {
@@ -106,7 +108,7 @@
     },
     "skills": {
       "ins": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       },
       "prc": {
@@ -114,13 +116,13 @@
         "ability": "wis"
       },
       "ste": {
-        "value": 1,
+        "value": 2,
         "ability": "dex"
       }
     }
   },
   "prototypeToken": {
-    "name": "Jovem Bronze Dragão",
+    "name": "Young Bronze Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -132,13 +134,13 @@
   },
   "items": [
     {
-      "_id": "GInLKb9mdUVImWLC",
-      "name": "Amphibious",
+      "_id": "IjRXTd8EKUsQEYhR",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -162,7 +164,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CYCgGUxTPau3BWoQ.GInLKb9mdUVImWLC"
+      "_key": "!actors.items!5RghqqfGuEmPnfdT.IjRXTd8EKUsQEYhR"
     },
     {
       "_id": "nNKTMhhSzgk0D6UI",
@@ -171,7 +173,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of Repulsion Breath.</p>",
+          "value": "<p>The dragon makes three Dilacerar attacks. It can replace one attack with a use of Sopro de Repulsão.</p>",
           "chat": ""
         },
         "activation": {
@@ -196,16 +198,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CYCgGUxTPau3BWoQ.nNKTMhhSzgk0D6UI"
+      "_key": "!actors.items!5RghqqfGuEmPnfdT.nNKTMhhSzgk0D6UI"
     },
     {
-      "_id": "ZuKydt6XwWbg91xu",
-      "name": "Rend",
+      "_id": "qY05XzmWmYMKVOXA",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance l Oft. Acerto: 16 (2d1 0 + 5) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 3 m. Acerto: 16 (2d10 + 5) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -223,8 +225,8 @@
           "subtype": ""
         },
         "activities": {
-          "d3MB77xncJppbwkG": {
-            "_id": "d3MB77xncJppbwkG",
+          "A59bXYs9UksLWelx": {
+            "_id": "A59bXYs9UksLWelx",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -277,16 +279,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CYCgGUxTPau3BWoQ.ZuKydt6XwWbg91xu"
+      "_key": "!actors.items!5RghqqfGuEmPnfdT.qY05XzmWmYMKVOXA"
     },
     {
-      "_id": "7xX40dx1SIXFxbK2",
-      "name": "Elétrico Breath (Recharge 5-6)",
+      "_id": "fnIlUKXoO4YJ35zz",
+      "name": "Sopro Elétrico (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Sa1Jing ~ Throw: DC 15, cada criatura in a 60-foot-long, 5-foot- wide Line. Falha: 49 (9d10) Elétrico de dano. ?Uccess: Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 15, cada criatura in a 18 m-long, 1,5 m-wide Line. 49 (9d10) dano elétrico. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -309,27 +311,51 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "VCNADoItT64csLYG": {
+            "_id": "VCNADoItT64csLYG",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "15"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "9d10",
-            "damageType": "lightning"
+            "saveDc": 15,
+            "saveAbility": "dex"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CYCgGUxTPau3BWoQ.7xX40dx1SIXFxbK2"
+      "_key": "!actors.items!5RghqqfGuEmPnfdT.fnIlUKXoO4YJ35zz"
     },
     {
-      "_id": "EcqlGV9h1TSQm2HB",
-      "name": "Repulsion Breath",
+      "_id": "Sw8YPgIdHG72bwTZ",
+      "name": "Sopro de Repulsão",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Força Sa1Jing Throw: DC 15, cada criatura in a 30-foot Cone. Falha: The target is pushed up to 40 feet straight away from the dragon and has the Caído condition. ADUL T BRONZE DRAGON Huge Dragon (Metallic), Lawful Good AC 18 In itiative + 10 (20) HP 212 (17d12 + 102)</p>",
+          "value": "<p>Teste de Resistência de Força: CD 15, cada criatura in a 9 m Cone. O alvo is pushed up to 12 m straight away from the dragon and fica com a condição Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -346,55 +372,48 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "NfoCAPoGE9FmSpqI": {
+            "_id": "NfoCAPoGE9FmSpqI",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "15"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 15,
+            "saveAbility": "str"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!CYCgGUxTPau3BWoQ.EcqlGV9h1TSQm2HB"
-    },
-    {
-      "_id": "aSlzWn2dP2Oerexd",
-      "name": "Sp eed 40 ft",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>, Fly 80 ft. , Swim 40 ft. MOD SAVE M OD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!CYCgGUxTPau3BWoQ.aSlzWn2dP2Oerexd"
+      "_key": "!actors.items!5RghqqfGuEmPnfdT.Sw8YPgIdHG72bwTZ"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Young Bronze Dragon",
-      "page": 60,
+      "page": 58,
       "cr": "8",
       "warnings": []
     }

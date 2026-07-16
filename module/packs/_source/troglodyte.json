@@ -1,6 +1,6 @@
 {
-  "_id": "dRrxndSANOYQ8M8c",
-  "_key": "!actors!dRrxndSANOYQ8M8c",
+  "_id": "I3Jmx42QUmhxygfI",
+  "_key": "!actors!I3Jmx42QUmhxygfI",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Troglodyte",
   "type": "npc",
@@ -48,7 +48,8 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "climb": 30
       },
       "senses": {
         "units": "ft",
@@ -67,9 +68,9 @@
         "custom": ""
       },
       "alignment": "Caótico e Mau",
-      "cr": 0,
+      "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -121,13 +122,82 @@
   },
   "items": [
     {
-      "_id": "5X062ROfRtkZdwYi",
-      "name": "Rend",
+      "_id": "tqdZIalNaC5oDnVE",
+      "name": "Fedor",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Me lee Attack Roll: +4, alcance 5 ft. Acerto: 5 (1d6 + 2) Cortante de dano. TROGLODYTE TROLL Loathsome, Regenerating Lurker</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 12, any creature (other than a troglodyte) that starts its turn in a 1,5 m Emanation originating from the troglodyte. O alvo fica com a condição Envenenado until the start of its next turn. O alvo is immune to the Fedor of all troglodytes for 1 hour.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 12,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!I3Jmx42QUmhxygfI.tqdZIalNaC5oDnVE"
+    },
+    {
+      "_id": "wM9IpLO3aelnPrUq",
+      "name": "Sensibilidade à Luz Solar",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Sob luz solar, a criatura tem Desvantagem em testes de habilidade e rolagens de ataque.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!I3Jmx42QUmhxygfI.wM9IpLO3aelnPrUq"
+    },
+    {
+      "_id": "sWQO1cU6mS9xBceY",
+      "name": "Dilacerar",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -144,25 +214,69 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "yfzFVYuqtecyLDLL": {
+            "_id": "yfzFVYuqtecyLDLL",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
             "damageFormula": "1d6+2",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!dRrxndSANOYQ8M8c.5X062ROfRtkZdwYi"
+      "_key": "!actors.items!I3Jmx42QUmhxygfI.sWQO1cU6mS9xBceY"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Troglodyte",
-      "page": 311,
-      "cr": "0",
+      "page": 309,
+      "cr": "1/4",
       "warnings": []
     }
   }

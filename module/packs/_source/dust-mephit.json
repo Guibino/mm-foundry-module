@@ -1,6 +1,6 @@
 {
-  "_id": "FRGKOfDTNQ0blf9i",
-  "_key": "!actors!FRGKOfDTNQ0blf9i",
+  "_id": "9re6GhbOjPPSddHz",
+  "_key": "!actors!9re6GhbOjPPSddHz",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Dust Mephit",
   "type": "npc",
@@ -48,7 +48,8 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 30,
+        "fly": 30
       },
       "senses": {
         "units": "ft",
@@ -66,10 +67,10 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Neutro",
+      "alignment": "Neutro e Mau",
       "cr": 0.5,
       "xp": {
-        "value": 100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -91,8 +92,10 @@
         "custom": ""
       },
       "dv": {
-        "value": [],
-        "custom": "Fi re"
+        "value": [
+          "fire"
+        ],
+        "custom": ""
       },
       "ci": {
         "value": [
@@ -106,7 +109,16 @@
         "custom": "Primordial (Auran, Terran)"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Dust Mephit",
@@ -121,13 +133,13 @@
   },
   "items": [
     {
-      "_id": "eMzwTqCmoaQsmcLS",
-      "name": "Death Burst",
+      "_id": "LEktMGmAaibfnEh4",
+      "name": "Explosão Mortal",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mephit explodes when it di~s. Dex- terity Teste de Resistência: DC l 0, cada criatura in a 5-foot</p>",
+          "value": "<p>The mephit explodes when it dies. Teste de Resistência de Destreza: CD 10, cada criatura in a 1,5 m Emanation originating from the mephit. 5 (2d4) dano de concussão. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,86 +159,23 @@
       },
       "flags": {
         "mm2024": {
-          "mechanics": {},
+          "mechanics": {
+            "saveDc": 10,
+            "saveAbility": "dex"
+          },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!FRGKOfDTNQ0blf9i.eMzwTqCmoaQsmcLS"
+      "_key": "!actors.items!9re6GhbOjPPSddHz.LEktMGmAaibfnEh4"
     },
     {
-      "_id": "8moXNrPxmS0nmawS",
-      "name": "Emanation originating from the mephit",
+      "_id": "Z1gvwIcP07t04jje",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Falha: 5 (2d4)</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!FRGKOfDTNQ0blf9i.8moXNrPxmS0nmawS"
-    },
-    {
-      "_id": "lCfo3TzH8qASMiAH",
-      "name": "Concussão de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Sucesso: Metade do dano.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!FRGKOfDTNQ0blf9i.lCfo3TzH8qASMiAH"
-    },
-    {
-      "_id": "Aq5bcdoYa6Y7brxF",
-      "name": "Claw",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 4 (1d4 + 2) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 4 (1d4 + 2) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -244,8 +193,8 @@
           "subtype": ""
         },
         "activities": {
-          "INWVxfhjtSiKwSP2": {
-            "_id": "INWVxfhjtSiKwSP2",
+          "O88fmQ84S0ptpIih": {
+            "_id": "O88fmQ84S0ptpIih",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -298,16 +247,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!FRGKOfDTNQ0blf9i.Aq5bcdoYa6Y7brxF"
+      "_key": "!actors.items!9re6GhbOjPPSddHz.Z1gvwIcP07t04jje"
     },
     {
       "_id": "2rRGIQhpbbOePXlG",
-      "name": "Blinding Breath (Recharge 6)",
+      "name": "Blinding Breath",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 10, cada criatura in a 15-foot Cone. Falha: The target has the Cego condition until the end of the mephit's next turn.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 10, cada criatura in a 4,5 m Cone. O alvo fica com a condição Cego until the end of the mephit's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -317,14 +266,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "recharge",
-              "type": "recoverAll",
-              "formula": "6"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -365,16 +308,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!FRGKOfDTNQ0blf9i.2rRGIQhpbbOePXlG"
+      "_key": "!actors.items!9re6GhbOjPPSddHz.2rRGIQhpbbOePXlG"
     },
     {
-      "_id": "39nSpOWjMxwpRvMR",
-      "name": "Sleep (1/Day)",
+      "_id": "LhR26wSHRJ0kdpQT",
+      "name": "Conjuração",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mephit casts the Sleep spell, requir- ing no spell components and using Carisma as the spellcasting ability (spell save DC 10). Q06 MEPHITS DUST MEPHIT Dust mephits are composed of air and fine earth. They are drawn to forsaken places, and they think everything associated with death is hilarious. ICE MEPHIT Ice mephits have bodies made of frigid air and frozen water. They delight in freezing things and dropping ice into peoples' clothes. MAGMA MEPHIT These mephits embody the merging of earth and fire as glowing magma. They love melting things, but they loathe magmins and attack them on sight. MUD MEPHIT A combination of earth and water, mud mephits are crude, disgusting creatures. They take every oppor- tunity to ruin objects and pollute food with muck. ICE MEPHIT Small Elemental, Neutral E1.Ji l AC 11 I nitiative+ 1 (11) HP 21 (6d6) Speed 30 ft., Fly 30 ft. MO D S AV E MOD SAVE MOD SAVE</p>",
+          "value": "<p>The mephit casts the Sleep spell, requiring no spell components and using Carisma as the spellcasting ability (spell save CD 10).</p>",
           "chat": ""
         },
         "activation": {
@@ -384,13 +327,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -404,13 +342,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!FRGKOfDTNQ0blf9i.39nSpOWjMxwpRvMR"
+      "_key": "!actors.items!9re6GhbOjPPSddHz.LhR26wSHRJ0kdpQT"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Dust Mephit",
-      "page": 208,
+      "page": 206,
       "cr": "1/2",
       "warnings": []
     }

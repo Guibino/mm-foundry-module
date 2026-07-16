@@ -1,6 +1,6 @@
 {
-  "_id": "wevRh9yyWH2YeY0c",
-  "_key": "!actors!wevRh9yyWH2YeY0c",
+  "_id": "2HfdRzlkBoFaf8e2",
+  "_key": "!actors!2HfdRzlkBoFaf8e2",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Chimera",
   "type": "npc",
@@ -70,7 +70,7 @@
       "alignment": "Caótico e Mau",
       "cr": 6,
       "xp": {
-        "value": 2300
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -99,10 +99,15 @@
       },
       "languages": {
         "value": [],
-        "custom": "Understands Draconic but can't speak"
+        "custom": "understands Draconic but can't speak"
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Chimera",
@@ -123,7 +128,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The chimera makes one Ram attack, one</p>",
+          "value": "<p>The chimera makes one Marrada attack, one Mordida attack, and one Garra attack. It can replace the Garra attack with a use of Sopro de Fogo if available.</p>",
           "chat": ""
         },
         "activation": {
@@ -148,50 +153,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!wevRh9yyWH2YeY0c.nCyfNxK7Xv6BsgeK"
+      "_key": "!actors.items!2HfdRzlkBoFaf8e2.nCyfNxK7Xv6BsgeK"
     },
     {
-      "_id": "IA88rxiQgyBMYoP6",
-      "name": "Bite attack, and one Claw attack",
+      "_id": "4hSDfOQLLQKhkXw0",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>It can replace the Claw attack with a use of Fogo Breath if available.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!wevRh9yyWH2YeY0c.IA88rxiQgyBMYoP6"
-    },
-    {
-      "_id": "9ceg9lhcbiL79rV8",
-      "name": "Bite",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 11 (2d6 + 4) Perfurante de dano, or 18 (4d6 + 4) Perfurante de dano if the chimera had Advantage on the attack roll.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 11 (2d6 + 4) dano perfurante, or 18 (4d6 + 4) dano perfurante if the chimera had Vantagem on a rolagem de ataque.</p>",
           "chat": ""
         },
         "activation": {
@@ -209,8 +180,8 @@
           "subtype": ""
         },
         "activities": {
-          "2r8iBZC2OPO35XlS": {
-            "_id": "2r8iBZC2OPO35XlS",
+          "4fjfkIkcHnbiYOwJ": {
+            "_id": "4fjfkIkcHnbiYOwJ",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -263,53 +234,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!wevRh9yyWH2YeY0c.9ceg9lhcbiL79rV8"
+      "_key": "!actors.items!2HfdRzlkBoFaf8e2.4hSDfOQLLQKhkXw0"
     },
     {
-      "_id": "hPqxYMveyORm1ICP",
-      "name": "Claw",
+      "_id": "eKqH0rIZOYMC5Z1K",
+      "name": "Garra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Melee Attack Ro/1: - +7, alcance 5 ft. Acerto: 7 (1d6 + 4) Cortante de dano.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {
-            "damageFormula": "1d6+4",
-            "damageType": "slashing"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!wevRh9yyWH2YeY0c.hPqxYMveyORm1ICP"
-    },
-    {
-      "_id": "SG5uMh7vzfiOc0Zi",
-      "name": "Ram",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 10 (ldJ2 + 4) Concussão de dano. If o alvo is a Medium or smaller creature, it has the Caído condition.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 7 (1d6 + 4) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -327,8 +261,8 @@
           "subtype": ""
         },
         "activities": {
-          "M8teo0uzjMLGhwZN": {
-            "_id": "M8teo0uzjMLGhwZN",
+          "wz5L57be5f5JipAQ": {
+            "_id": "wz5L57be5f5JipAQ",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -349,15 +283,15 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": null,
-                  "denomination": null,
-                  "bonus": "",
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "4",
                   "types": [
-                    "bludgeoning"
+                    "slashing"
                   ],
                   "custom": {
-                    "enabled": true,
-                    "formula": "ldJ2+4"
+                    "enabled": false,
+                    "formula": ""
                   },
                   "scaling": {
                     "mode": "",
@@ -375,22 +309,103 @@
           "mechanics": {
             "toHit": 7,
             "attackType": "melee",
-            "damageFormula": "ldJ2+4",
+            "damageFormula": "1d6+4",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!2HfdRzlkBoFaf8e2.eKqH0rIZOYMC5Z1K"
+    },
+    {
+      "_id": "jvWzZc0JFWFGcyYT",
+      "name": "Marrada",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 10 (1d12 + 4) dano de concussão. If o alvo is a Medium or smaller creature, it fica com a condição Caído.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "Rms7oQSpWDKBjlrk": {
+            "_id": "Rms7oQSpWDKBjlrk",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 12,
+                  "bonus": "4",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "melee",
+            "damageFormula": "1d12+4",
             "damageType": "bludgeoning"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!wevRh9yyWH2YeY0c.SG5uMh7vzfiOc0Zi"
+      "_key": "!actors.items!2HfdRzlkBoFaf8e2.jvWzZc0JFWFGcyYT"
     },
     {
-      "_id": "oYqGEPg8o3gVNe5S",
-      "name": "Fogo Breath (Recharge 5-6)",
+      "_id": "ZvggIhwhlkGFMHhv",
+      "name": "Sopro de Fogo (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Destreza Teste de Resistência: DC 15, cada criatura in a 15-foot Cone. Falha: 31 (7d8)</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 15, cada criatura in a 4,5 m Cone. 31 (7d8) dano de fogo. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -414,8 +429,8 @@
           "subtype": ""
         },
         "activities": {
-          "NLnvjWkSbWJhqa5d": {
-            "_id": "NLnvjWkSbWJhqa5d",
+          "9xGF7xCfogpckE2m": {
+            "_id": "9xGF7xCfogpckE2m",
             "type": "save",
             "activation": {
               "type": "action",
@@ -448,47 +463,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!wevRh9yyWH2YeY0c.oYqGEPg8o3gVNe5S"
-    },
-    {
-      "_id": "hQwwqZcAMbTCnYpn",
-      "name": "Fogo de dano",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Sucesso: Metade do dano. N Large Aberration, Chaotic E1Ji! AC 16 Initiat ive +0 (l 0) HP 76 (9d10 + 27) Sp eed 30 ft., Swim 30 ft . MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!wevRh9yyWH2YeY0c.hQwwqZcAMbTCnYpn"
+      "_key": "!actors.items!2HfdRzlkBoFaf8e2.ZvggIhwhlkGFMHhv"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Chimera",
-      "page": 72,
+      "page": 70,
       "cr": "6",
       "warnings": []
     }

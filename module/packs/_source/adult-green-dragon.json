@@ -1,8 +1,8 @@
 {
-  "_id": "Wz1OBEnKAT7ipaM5",
-  "_key": "!actors!Wz1OBEnKAT7ipaM5",
+  "_id": "OzpPOt6V3cu4ihRY",
+  "_key": "!actors!OzpPOt6V3cu4ihRY",
   "folder": "lhndsA6Aflaa0nF6",
-  "name": "Adulto Verde Dragão",
+  "name": "Adult Green Dragon",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/adult-green-dragon.webp",
   "system": {
@@ -12,36 +12,36 @@
         "proficient": 0
       },
       "dex": {
-        "value": 72,
-        "proficient": 0
+        "value": 12,
+        "proficient": 1
       },
       "con": {
-        "value": 27,
+        "value": 21,
         "proficient": 0
       },
       "int": {
-        "value": 78,
+        "value": 18,
         "proficient": 0
       },
       "wis": {
-        "value": 75,
+        "value": 15,
         "proficient": 1
       },
       "cha": {
-        "value": 78,
+        "value": 18,
         "proficient": 0
       }
     },
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 79,
+        "flat": 19,
         "formula": ""
       },
       "hp": {
         "value": 207,
         "max": 207,
-        "formula": "18d72 + 90",
+        "formula": "18d12 + 90",
         "temp": null,
         "tempmax": null
       },
@@ -65,14 +65,14 @@
     "details": {
       "type": {
         "value": "dragon",
-        "subtype": "C hromatic",
+        "subtype": "chromatic",
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Lawful",
-      "cr": 75,
+      "alignment": "Leal e Mau",
+      "cr": 15,
       "xp": {
-        "value": 73000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -84,7 +84,9 @@
     "traits": {
       "size": "huge",
       "di": {
-        "value": [],
+        "value": [
+          "poison"
+        ],
         "custom": ""
       },
       "dr": {
@@ -96,17 +98,19 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "poisoned"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum, Dracônico"
       }
     },
     "skills": {
       "dec": {
-        "value": 1,
+        "value": 2,
         "ability": "cha"
       },
       "prc": {
@@ -114,13 +118,17 @@
         "ability": "wis"
       },
       "per": {
-        "value": 1,
+        "value": 2,
         "ability": "cha"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
       }
     }
   },
   "prototypeToken": {
-    "name": "Adulto Verde Dragão",
+    "name": "Adult Green Dragon",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -132,13 +140,13 @@
   },
   "items": [
     {
-      "_id": "KP9KXFaWvVXb7585",
-      "name": "Amphibious",
+      "_id": "a8oTxxJHlpWIYc3g",
+      "name": "Anfíbio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon can breathe air and water.</p>",
+          "value": "<p>A criatura pode respirar ar e água.</p>",
           "chat": ""
         },
         "activation": {
@@ -162,16 +170,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Wz1OBEnKAT7ipaM5.KP9KXFaWvVXb7585"
+      "_key": "!actors.items!OzpPOt6V3cu4ihRY.a8oTxxJHlpWIYc3g"
     },
     {
       "_id": "HMQVEt2PJV68YRyi",
-      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "name": "Resistência Lendária",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the dragon fails a saving throw, it can choose to suc- ceed instead.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -180,13 +188,8 @@
         },
         "uses": {
           "spent": 0,
-          "max": "3",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
+          "max": "",
+          "recovery": []
         },
         "type": {
           "value": "monster",
@@ -200,7 +203,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Wz1OBEnKAT7ipaM5.HMQVEt2PJV68YRyi"
+      "_key": "!actors.items!OzpPOt6V3cu4ihRY.HMQVEt2PJV68YRyi"
     },
     {
       "_id": "Ckz7d6zJ6I6mcJpD",
@@ -209,7 +212,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of Conjuração to cast Mind Spike (level 3 version).</p>",
+          "value": "<p>The dragon makes three Dilacerar attacks. It can replace one attack with a use of Conjuração to cast Mind Spike (level 3 version).</p>",
           "chat": ""
         },
         "activation": {
@@ -234,16 +237,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Wz1OBEnKAT7ipaM5.Ckz7d6zJ6I6mcJpD"
+      "_key": "!actors.items!OzpPOt6V3cu4ihRY.Ckz7d6zJ6I6mcJpD"
     },
     {
-      "_id": "uzXDTMBhlx8Qf4jq",
-      "name": "Rend",
+      "_id": "j8aPWUttHFkWnTdk",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 71, alcance 7 0 ft. Acerto: 15 (2d8 + 6) Cortante de dano plus 7 (2d6) Veneno de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +11, alcance 3 m. Acerto: 15 (2d8 + 6) dano cortante mais 7 (2d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -260,27 +263,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "B64hGX1HSfFgo46o": {
+            "_id": "B64hGX1HSfFgo46o",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "11",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "6",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 11,
+            "attackType": "melee",
             "damageFormula": "2d8+6",
             "damageType": "slashing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Wz1OBEnKAT7ipaM5.uzXDTMBhlx8Qf4jq"
+      "_key": "!actors.items!OzpPOt6V3cu4ihRY.j8aPWUttHFkWnTdk"
     },
     {
-      "_id": "muEH1pElVIvpIrYP",
-      "name": "Veneno Breath (Recharge 5-6)",
+      "_id": "n7ncbBMo6gEVv9Hk",
+      "name": "Sopro de Veneno (Recharge 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 78, cada criatura in a 60-foot Cone. Falha: 56 (7 6d6) Veneno de dano. Sucesso: Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 18, cada criatura in a 18 m Cone. 56 (16d6) dano de veneno. Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -304,8 +351,8 @@
           "subtype": ""
         },
         "activities": {
-          "awWnqKpF6O0Y1KkH": {
-            "_id": "awWnqKpF6O0Y1KkH",
+          "hLeuIG5ei1lqWxbi": {
+            "_id": "hLeuIG5ei1lqWxbi",
             "type": "save",
             "activation": {
               "type": "action",
@@ -319,30 +366,12 @@
               ],
               "dc": {
                 "calculation": "",
-                "formula": "78"
+                "formula": "18"
               }
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 76,
-                  "denomination": 6,
-                  "bonus": "",
-                  "types": [
-                    "poison"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -350,15 +379,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "76d6",
-            "damageType": "poison",
-            "saveDc": 78,
+            "saveDc": 18,
             "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Wz1OBEnKAT7ipaM5.muEH1pElVIvpIrYP"
+      "_key": "!actors.items!OzpPOt6V3cu4ihRY.n7ncbBMo6gEVv9Hk"
     },
     {
       "_id": "hEpKWL9pmHZYVmSW",
@@ -367,7 +394,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon uses Conjuração to cast Mind Spike (level 3 version) .</p>",
+          "value": "<p>The dragon uses Conjuração to cast Mind Spike (level 3 version).</p>",
           "chat": ""
         },
         "activation": {
@@ -392,7 +419,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Wz1OBEnKAT7ipaM5.hEpKWL9pmHZYVmSW"
+      "_key": "!actors.items!OzpPOt6V3cu4ihRY.hEpKWL9pmHZYVmSW"
     },
     {
       "_id": "R3NlcpoHzvsOeEl0",
@@ -401,7 +428,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Constituição Teste de Resistência: DC 17, cada criatura in a 20- foot-radius Sphere centered on a point the dragon can see within 90 feet. Falha: 7 (2d6) Veneno de dano, and o alvo takes a -2 penalty to :,,: AC until the end of its next turn. Falha ou Sucesso: The l/1 0 dragon can't take this action again until the start of its l/1 0 next turn . z Pounce. The dragon moves -up to half its Speed, and it _J makes one Rend attack. ADULT GREEN DRAGON The words of adult green dragons are as deadly as their poisonous breath. They are brilliant schemers that pride themselves on influencing communities near their lairs. They obsess over information and create vast spy networks. Many of these dragons seek magical methods of surveillance or domina- tion, and they manipulate adventurers into hunting down lost magic to aid in such control. ANCIENT GREEN DRAGON Ancient green dragons are creatures of legend, rarely seen by their servants or foes. Via magic and well-hidden agents, these dragons stoke suspicion between allies and undermine noble works. As bonds fray, the dragons reap rewards of greater wealth and control. Eventually the ambitions of an- cient green dragons stretch beyond their territories as they seek control over empires, planar realms, or death itself. ANCIENT GREEN DRAGON Gargantuan Dragon (Chromatic), Lawful E1Ji! AC 21 Iniciativa+ 15 (25) HP 402 (23d20 + 161) . Speed 40 ft., Fly 80 ft., Swim 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 17, cada criatura in a 6 m-radius Sphere centered on a point the dragon can see within 27 m. 7 (2d6) dano de veneno, and o alvo takes a -2 penalty to AC until the end of its next turn. The dragon can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -439,25 +466,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 2,
-                  "denomination": 6,
-                  "bonus": "",
-                  "types": [
-                    "poison"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -465,15 +474,47 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "2d6",
-            "damageType": "poison",
             "saveDc": 17,
             "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Wz1OBEnKAT7ipaM5.R3NlcpoHzvsOeEl0"
+      "_key": "!actors.items!OzpPOt6V3cu4ihRY.R3NlcpoHzvsOeEl0"
+    },
+    {
+      "_id": "0wjI9ldbUtmU8dtx",
+      "name": "Bote",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A criatura se move até metade do seu Deslocamento e faz um ataque de Dilacerar.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!OzpPOt6V3cu4ihRY.0wjI9ldbUtmU8dtx"
     },
     {
       "_id": "YE4cUOPKNAYZ6UA8",
@@ -482,7 +523,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 77) : À Vontade: Detect Magic, Mind Spike (level 3 version) 1/Dia: Geas</p>",
+          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save CD 17):</p>",
           "chat": ""
         },
         "activation": {
@@ -507,14 +548,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Wz1OBEnKAT7ipaM5.YE4cUOPKNAYZ6UA8"
+      "_key": "!actors.items!OzpPOt6V3cu4ihRY.YE4cUOPKNAYZ6UA8"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Adult Green Dragon",
-      "page": 155,
-      "cr": "75",
+      "page": 153,
+      "cr": "15",
       "warnings": []
     }
   }

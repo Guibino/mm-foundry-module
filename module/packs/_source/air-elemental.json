@@ -1,6 +1,6 @@
 {
-  "_id": "GJPJtHXebW3i3iXn",
-  "_key": "!actors!GJPJtHXebW3i3iXn",
+  "_id": "ceRPhVmXjGwblr8Q",
+  "_key": "!actors!ceRPhVmXjGwblr8Q",
   "folder": "mI6hZZeXOMovX9oy",
   "name": "Air Elemental",
   "type": "npc",
@@ -47,11 +47,13 @@
       },
       "movement": {
         "units": "ft",
-        "hover": false,
-        "walk": 30
+        "hover": true,
+        "walk": 10,
+        "fly": 90
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -68,7 +70,7 @@
       "alignment": "Neutro",
       "cr": 5,
       "xp": {
-        "value": 1800
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -88,10 +90,12 @@
       },
       "dr": {
         "value": [
+          "bludgeoning",
           "lightning",
-          "piercing"
+          "piercing",
+          "slashing"
         ],
-        "custom": "B ludg e oning; Sl ashing"
+        "custom": ""
       },
       "dv": {
         "value": [],
@@ -100,13 +104,19 @@
       "ci": {
         "value": [
           "exhaustion",
-          "grappled"
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "prone",
+          "restrained",
+          "unconscious"
         ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": "P rimo rdial (Auran)"
+        "custom": "Primordial (Auran)"
       }
     },
     "skills": {}
@@ -130,7 +140,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The elemental can enter a creature's space and stop there. It can move through a space as narrow as l inch without expending extra movement to do so.</p>",
+          "value": "<p>The elemental can enter uma criatura's space and stop there. It can move through a space as narrow as 1 inch without expending extra movement to do so.</p>",
           "chat": ""
         },
         "activation": {
@@ -154,7 +164,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GJPJtHXebW3i3iXn.dDhZadV0300tXmT1"
+      "_key": "!actors.items!ceRPhVmXjGwblr8Q.dDhZadV0300tXmT1"
     },
     {
       "_id": "ume8ImeFbnURxxBp",
@@ -163,7 +173,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The elemental makes two Trovejanteous Slam attacks.</p>",
+          "value": "<p>The elemental makes two Thunderous Pancada attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -188,16 +198,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GJPJtHXebW3i3iXn.ume8ImeFbnURxxBp"
+      "_key": "!actors.items!ceRPhVmXjGwblr8Q.ume8ImeFbnURxxBp"
     },
     {
-      "_id": "Yl4elSdJNhhJvMcb",
-      "name": "Trovejanteous Slam",
+      "_id": "R5oROtcMn6LhfGqY",
+      "name": "Thunderous Pancada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance l O ft. Acerto: 14 (2d8 + 5) Trovejante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 3 m. Acerto: 14 (2d8 + 5) dano trovejante.</p>",
           "chat": ""
         },
         "activation": {
@@ -215,8 +225,8 @@
           "subtype": ""
         },
         "activities": {
-          "s6X4y0ctYSTFnv3t": {
-            "_id": "s6X4y0ctYSTFnv3t",
+          "LwktVHRy3qP5Kazc": {
+            "_id": "LwktVHRy3qP5Kazc",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -269,16 +279,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GJPJtHXebW3i3iXn.Yl4elSdJNhhJvMcb"
+      "_key": "!actors.items!ceRPhVmXjGwblr8Q.R5oROtcMn6LhfGqY"
     },
     {
       "_id": "J4UTb4Kb3bms2Q6x",
-      "name": "Whirlwind (Recharge 4-6)",
+      "name": "Whirlwind (Recharge 4)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Força Teste de Resistência: DC 13, one Medium or smaller creature in the elemental's space. Falha: 24 (4d10 + 2) Trovejante de dano, and o alvo is pushed up to 20 feet straight away from the elemental and has the Caído condition. Sucesso: Metade do dano only. AIR ELEMENTAL 13 1 T WHILE l DON DENY THE COMPLIMENT, l ASSUR E Y O U, I'M M ORE AK IN TO A GOO THAN A PRETTY KITTY . -BROTHER OF SHADOWS, CAT LORD ANIMAL LORD ANIMAL LORD Immortal Regent of the Wild</p>",
+          "value": "<p>Teste de Resistência de Força: CD 13, one Medium or smaller creature in the elemental's space. 24 (4d10 + 2) dano trovejante, and o alvo is pushed up to 6 m straight away from the elemental and fica com a condição Caído. Metade do dano only.</p>",
           "chat": ""
         },
         "activation": {
@@ -322,25 +332,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 4,
-                  "denomination": 10,
-                  "bonus": "2",
-                  "types": [
-                    "thunder"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -348,21 +340,19 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "4d10+2",
-            "damageType": "thunder",
             "saveDc": 13,
             "saveAbility": "str"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GJPJtHXebW3i3iXn.J4UTb4Kb3bms2Q6x"
+      "_key": "!actors.items!ceRPhVmXjGwblr8Q.J4UTb4Kb3bms2Q6x"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Air Elemental",
-      "page": 15,
+      "page": 13,
       "cr": "5",
       "warnings": []
     }

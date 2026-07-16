@@ -1,6 +1,6 @@
 {
-  "_id": "SRi1lZrKCMweq1L4",
-  "_key": "!actors!SRi1lZrKCMweq1L4",
+  "_id": "T4jMX1AMMxVgeTLB",
+  "_key": "!actors!T4jMX1AMMxVgeTLB",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Archmage",
   "type": "npc",
@@ -61,14 +61,14 @@
     "details": {
       "type": {
         "value": "humanoid",
-        "subtype": "Wizar d",
+        "subtype": "wizard",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Neutro",
       "cr": 12,
       "xp": {
-        "value": 8
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [
           "psychic"
@@ -94,8 +94,10 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
-        "custom": "Charmed (with Mind Blank)"
+        "value": [
+          "charmed"
+        ],
+        "custom": ""
       },
       "languages": {
         "value": [],
@@ -108,11 +110,11 @@
         "ability": "int"
       },
       "his": {
-        "value": 1,
+        "value": 2,
         "ability": "int"
       },
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       }
     }
@@ -130,13 +132,13 @@
   },
   "items": [
     {
-      "_id": "oMCAYIksbZSCq0QK",
-      "name": "Magic Resistance",
+      "_id": "RcRsHJJJ4lnjA0uY",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The archmage has Advantage on sav- ing throws against spells and ot her magical effects.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -160,7 +162,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SRi1lZrKCMweq1L4.oMCAYIksbZSCq0QK"
+      "_key": "!actors.items!T4jMX1AMMxVgeTLB.RcRsHJJJ4lnjA0uY"
     },
     {
       "_id": "xRwto0VR37WAnErR",
@@ -194,7 +196,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SRi1lZrKCMweq1L4.xRwto0VR37WAnErR"
+      "_key": "!actors.items!T4jMX1AMMxVgeTLB.xRwto0VR37WAnErR"
     },
     {
       "_id": "Qg0zZfGVJxVKKSal",
@@ -203,7 +205,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +9, alcance 5 ft . or range 150 ft. Acerto: 27 (4d1 0 + 5) Energia de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +9, alcance 1,5 m. or distância 45 m. Acerto: 27 (4d10 + 5) dano de energia.</p>",
           "chat": ""
         },
         "activation": {
@@ -275,85 +277,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SRi1lZrKCMweq1L4.Qg0zZfGVJxVKKSal"
-    },
-    {
-      "_id": "sebkU3wSUa4KA5m0",
-      "name": "Misty Step (3/Day)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The mage casts Misty Step, using the same spellcasting ability as Conjuração.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "3",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!SRi1lZrKCMweq1L4.sebkU3wSUa4KA5m0"
-    },
-    {
-      "_id": "fzwfoiZcoGIAJBzx",
-      "name": "Protective Magic (3/Day)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The archmage casts Counter- spell or Shield in response to the spell's trigger, using _ the same spellcasting ability as Conjuração. MAGES 1 99 MA G MIN Reckless Elemental Arsonist</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "reaction",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "3",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!SRi1lZrKCMweq1L4.fzwfoiZcoGIAJBzx"
+      "_key": "!actors.items!T4jMX1AMMxVgeTLB.Qg0zZfGVJxVKKSal"
     },
     {
       "_id": "t0ZWPFwJfBf20wlv",
@@ -362,7 +286,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The archmage casts one of the following spells, using Inteligência as the spellcasting ability (spell save DC 17): À Vontade: Detect Magic, Detect Thoughts, Disguise Self, Invisibility , Light , Mage Armor (included in AC), Mage Hand, Prestidigitation 2/Dia Each: Fly, Elétrico Bolt (level 7 version) 1/Dia Each : Cone of Frio (level 9 version), Mind Blank (cast before com bat), Scrying, Teleport</p>",
+          "value": "<p>The archmage casts one of the following spells, using Inteligência as the spellcasting ability (spell save CD 17):</p>",
           "chat": ""
         },
         "activation": {
@@ -387,13 +311,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SRi1lZrKCMweq1L4.t0ZWPFwJfBf20wlv"
+      "_key": "!actors.items!T4jMX1AMMxVgeTLB.t0ZWPFwJfBf20wlv"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Archmage",
-      "page": 201,
+      "page": 199,
       "cr": "12",
       "warnings": []
     }

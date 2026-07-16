@@ -1,6 +1,6 @@
 {
-  "_id": "TQemFUdazZECckf9",
-  "_key": "!actors!TQemFUdazZECckf9",
+  "_id": "L3LeUKCnftIb7cGH",
+  "_key": "!actors!L3LeUKCnftIb7cGH",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Berserker Commander",
   "type": "npc",
@@ -39,16 +39,16 @@
         "formula": ""
       },
       "hp": {
-        "value": 1,
-        "max": 1,
-        "formula": "",
+        "value": 136,
+        "max": 136,
+        "formula": "16d8 + 64",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 40
       },
       "senses": {
         "units": "ft"
@@ -68,7 +68,7 @@
       "alignment": "Neutro",
       "cr": 8,
       "xp": {
-        "value": 3900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,10 +78,10 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
-        "custom": "Charmed; Frightened"
+        "custom": ""
       },
       "dr": {
         "value": [],
@@ -92,21 +92,24 @@
         "custom": ""
       },
       "ci": {
-        "value": [],
+        "value": [
+          "charmed",
+          "frightened"
+        ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum"
       }
     },
     "skills": {
       "ath": {
-        "value": 1,
+        "value": 2,
         "ability": "str"
       },
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       }
     }
@@ -130,7 +133,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>While Bloodied, the berserker has Ad- vantage on attack rolls and saving throws.</p>",
+          "value": "<p>While Bloodied, the berserker has Vantagem on attack rolls and saving throws.</p>",
           "chat": ""
         },
         "activation": {
@@ -154,7 +157,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TQemFUdazZECckf9.CxT1bQn5VixCRiLe"
+      "_key": "!actors.items!L3LeUKCnftIb7cGH.CxT1bQn5VixCRiLe"
     },
     {
       "_id": "JP8QQmCnKeMaF7m2",
@@ -163,7 +166,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The berserker makes three attacks, using Greataxe or Javelin in any combination.</p>",
+          "value": "<p>The berserker makes three attacks, using Machado Grande or Azagaia in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -188,16 +191,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TQemFUdazZECckf9.JP8QQmCnKeMaF7m2"
+      "_key": "!actors.items!L3LeUKCnftIb7cGH.JP8QQmCnKeMaF7m2"
     },
     {
-      "_id": "pVPdsstKpHhRmjBX",
-      "name": "Greataxe",
+      "_id": "Ae8XJBgnk58uKIqc",
+      "name": "Machado Grande",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. · Acerto: 10 (1d12 + 4) Cortante de dano, plus 10 (3d6) Trovejante dam- age to o alvo or another creature within 5 feet of the· target.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 10 (1d12 + 4) dano cortante, mais 10 (3d6) dano trovejante to o alvo or another creature within 1,5 m of o alvo.</p>",
           "chat": ""
         },
         "activation": {
@@ -215,8 +218,8 @@
           "subtype": ""
         },
         "activities": {
-          "65H6KVoX2ehk2b2C": {
-            "_id": "65H6KVoX2ehk2b2C",
+          "tn20tLW6STFQ8RAx": {
+            "_id": "tn20tLW6STFQ8RAx",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -269,16 +272,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TQemFUdazZECckf9.pVPdsstKpHhRmjBX"
+      "_key": "!actors.items!L3LeUKCnftIb7cGH.Ae8XJBgnk58uKIqc"
     },
     {
-      "_id": "bTRnjzrHyT7khqiW",
-      "name": "Javelin",
+      "_id": "f8ohEbm0R635uzUK",
+      "name": "Azagaia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 5 ft. or range 30/120 ft. Acerto: 18 (4d6 + 4) Perfurante de dano, and o alvo's Speed decreases by 5 feet until the start of the berserker's next turn.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 1,5 m. or distância 9/36 m. Acerto: 18 (4d6 + 4) dano perfurante, and o alvo's Speed decreases by 1,5 m until the start of the berserker's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -296,8 +299,8 @@
           "subtype": ""
         },
         "activities": {
-          "wyH3KJFJnicflwdI": {
-            "_id": "wyH3KJFJnicflwdI",
+          "Lg4igghBXvq5fBwc": {
+            "_id": "Lg4igghBXvq5fBwc",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -350,7 +353,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TQemFUdazZECckf9.bTRnjzrHyT7khqiW"
+      "_key": "!actors.items!L3LeUKCnftIb7cGH.f8ohEbm0R635uzUK"
     },
     {
       "_id": "T2nXyONyEOELnVvl",
@@ -359,7 +362,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Each ally within 30 feet of the berserker can take a Reaction to move up to half the ally's Speed <( without provoking Opportunity Attacks. The berserker l/) can also move up to half its Speed without provoking 0::: Opportunity Attacks. co BERSERKER Medium or Small Humanoid, Neutral AC 13 Iniciativa + 1 (11) HP 67 (9d8 + 27) Sp eed 30 ft. MOD SAVE MOD SAVE MO D SAVE</p>",
+          "value": "<p>Each ally within 9 m of the berserker can take a Reaction to move up to half the ally's Speed without provoking Opportunity Attacks. The berserker can also move up to half its Speed without provoking Opportunity Attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -384,17 +387,15 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TQemFUdazZECckf9.T2nXyONyEOELnVvl"
+      "_key": "!actors.items!L3LeUKCnftIb7cGH.T2nXyONyEOELnVvl"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Berserker Commander",
-      "page": 39,
+      "page": 37,
       "cr": "8",
-      "warnings": [
-        "HP nao reconhecido"
-      ]
+      "warnings": []
     }
   }
 }

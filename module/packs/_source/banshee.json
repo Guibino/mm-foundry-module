@@ -1,6 +1,6 @@
 {
-  "_id": "fZCWoJeV8N6HSTmQ",
-  "_key": "!actors!fZCWoJeV8N6HSTmQ",
+  "_id": "SEUcO0ZnAA9AYv2B",
+  "_key": "!actors!SEUcO0ZnAA9AYv2B",
   "folder": "bKQUPthn1V2Yu6Bn",
   "name": "Banshee",
   "type": "npc",
@@ -52,7 +52,8 @@
         "fly": 40
       },
       "senses": {
-        "units": "ft"
+        "units": "ft",
+        "darkvision": 60
       },
       "init": {
         "ability": "dex",
@@ -69,7 +70,7 @@
       "alignment": "Caótico e Mau",
       "cr": 4,
       "xp": {
-        "value": 1100
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -93,7 +94,10 @@
           "acid",
           "bludgeoning",
           "fire",
-          "lightning"
+          "lightning",
+          "piercing",
+          "slashing",
+          "thunder"
         ],
         "custom": ""
       },
@@ -103,13 +107,21 @@
       },
       "ci": {
         "value": [
-          "charmed"
+          "charmed",
+          "exhaustion",
+          "frightened",
+          "grappled",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "prone",
+          "restrained"
         ],
         "custom": ""
       },
       "languages": {
         "value": [],
-        "custom": ""
+        "custom": "Comum, Élfico"
       }
     },
     "skills": {}
@@ -133,7 +145,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The banshee magically senses the direction of creatures up to 1 mile away that aren't Constructs <( or Undead. z Incorporeal Movement. The banshee can move th rough 0 other creatures and objects as if they were Difficult</p>",
+          "value": "<p>The banshee magically senses the direction of creatures up to 1 mile away that aren't Constructs or Undead.</p>",
           "chat": ""
         },
         "activation": {
@@ -157,16 +169,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!fZCWoJeV8N6HSTmQ.3tmhqWOhvBOHCOar"
+      "_key": "!actors.items!SEUcO0ZnAA9AYv2B.3tmhqWOhvBOHCOar"
     },
     {
-      "_id": "LQgA15qr9NSmSB8V",
-      "name": "Terrain",
+      "_id": "IzMa1sx3Vlx9E0Zr",
+      "name": "Movimento Incorpóreo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>It takes 5 (1d1 0) Energia de dano if it ends its turn inside an object.</p>",
+          "value": "<p>A criatura pode se mover através de outras criaturas e objetos como se fossem Terreno Difícil. Ela sofre 5 (1d10) de dano de energia se terminar o turno dentro de um objeto.</p>",
           "chat": ""
         },
         "activation": {
@@ -190,7 +202,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!fZCWoJeV8N6HSTmQ.LQgA15qr9NSmSB8V"
+      "_key": "!actors.items!SEUcO0ZnAA9AYv2B.IzMa1sx3Vlx9E0Zr"
     },
     {
       "_id": "hqkVvMPaaTa7xF3d",
@@ -224,7 +236,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!fZCWoJeV8N6HSTmQ.hqkVvMPaaTa7xF3d"
+      "_key": "!actors.items!SEUcO0ZnAA9AYv2B.hqkVvMPaaTa7xF3d"
     },
     {
       "_id": "i8j4F4eo3L7bDdU3",
@@ -233,7 +245,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 7 (1d8 + 3) Necrótico de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 7 (1d8 + 3) dano necrótico.</p>",
           "chat": ""
         },
         "activation": {
@@ -305,7 +317,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!fZCWoJeV8N6HSTmQ.i8j4F4eo3L7bDdU3"
+      "_key": "!actors.items!SEUcO0ZnAA9AYv2B.i8j4F4eo3L7bDdU3"
     },
     {
       "_id": "EuM279LoKrsbDZof",
@@ -314,7 +326,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sabedoria Teste de Resistência: DC 13, uma criatura the banshee can see within 60 feet that can see the ban- shee. Falha: The target has the Amedrontado condition until the start of the banshee's next turn. Sucesso: The target is immune to this banshee's Horrifying Visage for 24 hours. • Deathly Wail (1/Dia). The banshee releases a mournful wail if it isn't in sunlight. Constituição Teste de Resistência: DC • 13, cada criatura within 30 feet that can hear the wail and isn't a Construct or an Undead. Falha: If o alvo has 25 Pontos de Vida or fewer, it drops to 0 Pontos de Vida. Oth- erwise, o alvo takes 10 (3d6) Psíquico de dano. \\ BARBED DEVIL Devil of Greed and Obsession</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 13, uma criatura the banshee can see within 18 m that can see the banshee. O alvo fica com a condição Amedrontado until the start of the banshee's next turn. O alvo is immune to this banshee's Horrify for 24 hours.</p>",
           "chat": ""
         },
         "activation": {
@@ -366,13 +378,79 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!fZCWoJeV8N6HSTmQ.EuM279LoKrsbDZof"
+      "_key": "!actors.items!SEUcO0ZnAA9AYv2B.EuM279LoKrsbDZof"
+    },
+    {
+      "_id": "MnVBedCavKlWeKtK",
+      "name": "Deathly Wail (1/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The banshee releases a mournful wail if it isn't in sunlight. Teste de Resistência de Constituição: CD 13, cada criatura within 9 m that can hear the wail and isn't a Construct or an Undead. If o alvo has 25 Pontos de Vida or fewer, it drops to 0 Pontos de Vida. Otherwise, o alvo takes 10 (3d6) dano psíquico.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "v4gdWP5W63Sa67Pw": {
+            "_id": "v4gdWP5W63Sa67Pw",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "13"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 13,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!SEUcO0ZnAA9AYv2B.MnVBedCavKlWeKtK"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Banshee",
-      "page": 31,
+      "page": 29,
       "cr": "4",
       "warnings": []
     }

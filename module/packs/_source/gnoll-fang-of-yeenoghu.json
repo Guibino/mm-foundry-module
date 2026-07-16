@@ -1,8 +1,8 @@
 {
-  "_id": "4G0pOqbzdrCwYcJ7",
-  "_key": "!actors!4G0pOqbzdrCwYcJ7",
+  "_id": "1eKguVmUcFdYMilY",
+  "_key": "!actors!1eKguVmUcFdYMilY",
   "folder": "Hp5o2ufz9hhrO2ew",
-  "name": "Gnoll Fang Of Yeenoghu",
+  "name": "Gnoll Fang of Yeenoghu",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/tokens/gnoll-fang-of-yeenoghu.webp",
   "system": {
@@ -16,7 +16,7 @@
         "proficient": 0
       },
       "con": {
-        "value": 75,
+        "value": 15,
         "proficient": 1
       },
       "int": {
@@ -41,7 +41,7 @@
       "hp": {
         "value": 71,
         "max": 71,
-        "formula": "11d8+22",
+        "formula": "11d8 + 22",
         "temp": null,
         "tempmax": null
       },
@@ -69,7 +69,7 @@
       "alignment": "Caótico e Mau",
       "cr": 4,
       "xp": {
-        "value": 1700
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -104,7 +104,7 @@
     "skills": {}
   },
   "prototypeToken": {
-    "name": "Gnoll Fang Of Yeenoghu",
+    "name": "Gnoll Fang of Yeenoghu",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -122,7 +122,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The gnoll makes one Bite attack and two Bone Flail attacks.</p>",
+          "value": "<p>The gnoll makes one Mordida attack and two Bone Mangual attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,16 +147,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!4G0pOqbzdrCwYcJ7.UeUDOyYUAmg6Medb"
+      "_key": "!actors.items!1eKguVmUcFdYMilY.UeUDOyYUAmg6Medb"
     },
     {
-      "_id": "UwIeQOuxvaVDe2oQ",
-      "name": "Bite",
+      "_id": "63QhpB1heZMT5e5S",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 6 (1d6 + 3) Perfurante de dano plus 7 (2d6) Veneno de dano, and o alvo has the Envenenado condition until the start of the gnoll's next turn.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 6 (1d6 + 3) dano perfurante mais 7 (2d6) dano de veneno, and o alvo fica com a condição Envenenado until the start of the gnoll's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -174,8 +174,8 @@
           "subtype": ""
         },
         "activities": {
-          "IQHOfiXggdXXvnT6": {
-            "_id": "IQHOfiXggdXXvnT6",
+          "T6cEqQRW2Nh42Nh6": {
+            "_id": "T6cEqQRW2Nh42Nh6",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -228,16 +228,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!4G0pOqbzdrCwYcJ7.UwIeQOuxvaVDe2oQ"
+      "_key": "!actors.items!1eKguVmUcFdYMilY.63QhpB1heZMT5e5S"
     },
     {
-      "_id": "1dzwrg9hdR9ibHOb",
-      "name": "Bone Flail",
+      "_id": "ONbj6O8bQPZID92R",
+      "name": "Bone Mangual",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 7 0 ft. Acerto: 7 (1d8 + 3) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 3 m. Acerto: 7 (1d8 + 3) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -255,8 +255,8 @@
           "subtype": ""
         },
         "activities": {
-          "e3as5daBlxVFjrWK": {
-            "_id": "e3as5daBlxVFjrWK",
+          "ZueZfA4KPOkQCafd": {
+            "_id": "ZueZfA4KPOkQCafd",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -309,16 +309,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!4G0pOqbzdrCwYcJ7.1dzwrg9hdR9ibHOb"
+      "_key": "!actors.items!1eKguVmUcFdYMilY.ONbj6O8bQPZID92R"
     },
     {
-      "_id": "L5UNNkdnxwir6HTF",
-      "name": "N Rampage (2/Day)",
+      "_id": "Vad5VdJMEVtp5UIo",
+      "name": "Descontrole (2/Day)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Immediately after dealing de dano to 2 a creature that is already Bloodied, the gnoll moves up :0,:: it makes one Bite attack. to half its Speed, and GNOLL DEMONIAC .Medium Fiend, Chaotic f l)il AC76 Iniciativa +4 (14) HP 135 (18d8 + 54) S peed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "value": "<p>Immediately after dealing de dano to uma criatura that is already Bloodied, the gnoll moves up to half its Speed, and it makes one Mordida attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -348,13 +348,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!4G0pOqbzdrCwYcJ7.L5UNNkdnxwir6HTF"
+      "_key": "!actors.items!1eKguVmUcFdYMilY.Vad5VdJMEVtp5UIo"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Gnoll Fang of Yeenoghu",
-      "page": 143,
+      "page": 141,
       "cr": "4",
       "warnings": []
     }

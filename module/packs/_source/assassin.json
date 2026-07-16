@@ -1,6 +1,6 @@
 {
-  "_id": "iH7Q76stxCRHXm9m",
-  "_key": "!actors!iH7Q76stxCRHXm9m",
+  "_id": "4mM2fsAiYFBGMZDv",
+  "_key": "!actors!4mM2fsAiYFBGMZDv",
   "folder": "1QPcErIwVgACFlzi",
   "name": "Assassin",
   "type": "npc",
@@ -41,7 +41,7 @@
       "hp": {
         "value": 97,
         "max": 97,
-        "formula": "1 Sd8 + 30",
+        "formula": "15d8 + 30",
         "temp": null,
         "tempmax": null
       },
@@ -68,7 +68,7 @@
       "alignment": "Neutro",
       "cr": 8,
       "xp": {
-        "value": 3900
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -78,7 +78,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -99,10 +99,23 @@
       },
       "languages": {
         "value": [],
-        "custom": "Comum, Thieves' Cant"
+        "custom": "Comum, Thieves' cant"
       }
     },
-    "skills": {}
+    "skills": {
+      "acr": {
+        "value": 2,
+        "ability": "dex"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Assassin",
@@ -123,7 +136,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the assassin is subjected to an effect that allows it to make a Destreza saving throw to take only half de dano, the assassin instead takes no de dano if it succeeds on the save and only half de dano if it fails. It can't use this trait if it has the Incapacitado condition.</p>",
+          "value": "<p>If the assassin is subjected to an effect that allows it to make a Destreza saving throw to take only half de dano, the assassin instead takes no de dano if it succeeds on the save and only half de dano if it fails. It can't use this trait if it fica com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,7 +160,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!iH7Q76stxCRHXm9m.x9aFUHypxD2iR71x"
+      "_key": "!actors.items!4mM2fsAiYFBGMZDv.x9aFUHypxD2iR71x"
     },
     {
       "_id": "WYd6SNTTH3z6x3V0",
@@ -156,7 +169,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The assassin makes three attacks, using Shortsword or Light Crossbow in any combination.</p>",
+          "value": "<p>The assassin makes three attacks, using Espada Curta or Besta Leve in any combination.</p>",
           "chat": ""
         },
         "activation": {
@@ -181,16 +194,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!iH7Q76stxCRHXm9m.WYd6SNTTH3z6x3V0"
+      "_key": "!actors.items!4mM2fsAiYFBGMZDv.WYd6SNTTH3z6x3V0"
     },
     {
-      "_id": "Zdce8c5DoWrWJtaX",
-      "name": "Shortsword",
+      "_id": "xsFAqWblGrbHA5Mt",
+      "name": "Espada Curta",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 7 (1d6 + 4) Perfurante de dano plus 17 (Sd6) Veneno de dano, and o alvo has the Envenenado condition until the start of the assassin's next turn.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 7 (1d6 + 4) dano perfurante mais 17 (5d6) dano de veneno, and o alvo fica com a condição Envenenado until the start of the assassin's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -208,8 +221,8 @@
           "subtype": ""
         },
         "activities": {
-          "YTQ6xDIbkTiNypzI": {
-            "_id": "YTQ6xDIbkTiNypzI",
+          "ElQuTEimiZlCCKuP": {
+            "_id": "ElQuTEimiZlCCKuP",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -262,16 +275,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!iH7Q76stxCRHXm9m.Zdce8c5DoWrWJtaX"
+      "_key": "!actors.items!4mM2fsAiYFBGMZDv.xsFAqWblGrbHA5Mt"
     },
     {
-      "_id": "nHWRpLVnhA8keaRz",
-      "name": "Light Crossbow",
+      "_id": "vUYfsdtnmKVGNZU8",
+      "name": "Besta Leve",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +7, range 80/320 ft. Acerto: 8 (1d8 + 4) Perfurante de dano plus 21 (6d6) Poi- son de dano. l/1 BONUS A CTIONS UJ UJ</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +7, distância 24/96 m. Acerto: 8 (1d8 + 4) dano perfurante mais 21 (6d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -289,8 +302,8 @@
           "subtype": ""
         },
         "activities": {
-          "OYzZd31VWJMFCkdv": {
-            "_id": "OYzZd31VWJMFCkdv",
+          "ewz5IO1Y2Fb8OhQC": {
+            "_id": "ewz5IO1Y2Fb8OhQC",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -343,20 +356,20 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!iH7Q76stxCRHXm9m.nHWRpLVnhA8keaRz"
+      "_key": "!actors.items!4mM2fsAiYFBGMZDv.vUYfsdtnmKVGNZU8"
     },
     {
-      "_id": "yuq1er1PzojAA5yF",
+      "_id": "T8xI2vqY64euevMI",
       "name": "Cunning Action",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The assassin takes the Dash, Disen- 2 gage, or Hide action. AWAKENED PLANTS Vegetation Given Magical Life</p>",
+          "value": "<p>A criatura realiza a ação Disparar, Desengajar ou Esconder-se.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "action",
+          "type": "bonus",
           "value": null,
           "condition": ""
         },
@@ -377,13 +390,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!iH7Q76stxCRHXm9m.yuq1er1PzojAA5yF"
+      "_key": "!actors.items!4mM2fsAiYFBGMZDv.T8xI2vqY64euevMI"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Assassin",
-      "page": 24,
+      "page": 22,
       "cr": "8",
       "warnings": []
     }

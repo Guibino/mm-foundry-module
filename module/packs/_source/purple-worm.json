@@ -1,6 +1,6 @@
 {
-  "_id": "GYnPTbnJmMUXVhvA",
-  "_key": "!actors!GYnPTbnJmMUXVhvA",
+  "_id": "umSRSc6RBdM5net7",
+  "_key": "!actors!umSRSc6RBdM5net7",
   "folder": "3SEe9J5t05jhrkCa",
   "name": "Purple Worm",
   "type": "npc",
@@ -17,7 +17,7 @@
       },
       "con": {
         "value": 22,
-        "proficient": 0
+        "proficient": 1
       },
       "int": {
         "value": 1,
@@ -48,7 +48,8 @@
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 30
+        "walk": 50,
+        "burrow": 50
       },
       "senses": {
         "units": "ft",
@@ -70,7 +71,7 @@
       "alignment": "Sem Tendência",
       "cr": 15,
       "xp": {
-        "value": 13000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -117,13 +118,13 @@
   },
   "items": [
     {
-      "_id": "XB2Nz6T69n3S5t31",
-      "name": "Tunneler",
+      "_id": "xqlFbtpYNn9AINs3",
+      "name": "Escavador",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The worm can burrow th rough solid rock at half its Burrow Speed and leaves a 10-foot-diameter tur.inel in its wake.</p>",
+          "value": "<p>A criatura pode escavar rocha sólida na metade do seu Deslocamento de Escavação e deixa um túnel de 3 m de diâmetro em seu rastro.</p>",
           "chat": ""
         },
         "activation": {
@@ -147,7 +148,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GYnPTbnJmMUXVhvA.XB2Nz6T69n3S5t31"
+      "_key": "!actors.items!umSRSc6RBdM5net7.xqlFbtpYNn9AINs3"
     },
     {
       "_id": "Oe1o7EKfVGGnpE7j",
@@ -156,7 +157,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The worm makes one Bite attack and one Tail Stinger attack.</p>",
+          "value": "<p>The worm makes one Mordida attack and one Cauda Ferrão attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -181,16 +182,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GYnPTbnJmMUXVhvA.Oe1o7EKfVGGnpE7j"
+      "_key": "!actors.items!umSRSc6RBdM5net7.Oe1o7EKfVGGnpE7j"
     },
     {
-      "_id": "hHvWQjxOZN8qkYFL",
-      "name": "Bite",
+      "_id": "U6UbxuoETc7jdH4U",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14 alcance 10 ft. Acerto: 22 (3d8 + 9) Perfurante de dano. If o alvo is a Large or smaller creature, it has the Agarrado condition (escape DC 19), and it has the Impedido condition until the grapple ends .</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 3 m. Acerto: 22 (3d8 + 9) dano perfurante. If o alvo is a Large or smaller creature, it fica com a condição Agarrado (CD para escapar 19), and it fica com a condição Impedido until the grapple ends.</p>",
           "chat": ""
         },
         "activation": {
@@ -208,8 +209,8 @@
           "subtype": ""
         },
         "activities": {
-          "MuhieCppy1a4j2p7": {
-            "_id": "MuhieCppy1a4j2p7",
+          "0QL1rafRl2Jn78ZH": {
+            "_id": "0QL1rafRl2Jn78ZH",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -262,16 +263,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GYnPTbnJmMUXVhvA.hHvWQjxOZN8qkYFL"
+      "_key": "!actors.items!umSRSc6RBdM5net7.U6UbxuoETc7jdH4U"
     },
     {
-      "_id": "sFa7lwwDSVgcM98W",
-      "name": "Tail Stinger",
+      "_id": "kG8cY6hdn1BcNOLM",
+      "name": "Cauda Ferrão",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 14 alcance l Oft. Acerto: 16 (2d6 + 9) Perfurante de dano plus 35 (10d6) Poi- son de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 3 m. Acerto: 16 (2d6 + 9) dano perfurante mais 35 (10d6) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -288,27 +289,71 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "gVkhchYCyY8eMQbF": {
+            "_id": "gVkhchYCyY8eMQbF",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "14",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "9",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
+            "toHit": 14,
+            "attackType": "melee",
             "damageFormula": "2d6+9",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GYnPTbnJmMUXVhvA.sFa7lwwDSVgcM98W"
+      "_key": "!actors.items!umSRSc6RBdM5net7.kG8cY6hdn1BcNOLM"
     },
     {
-      "_id": "ypmg8gKaIp7FCiPU",
-      "name": "Swallow",
+      "_id": "uWfmODzfm8O0nA7M",
+      "name": "Engolir",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Força Sai,iing Throw: DC 19 one Large or smaller creature Agarrado by the worm (it can have up to three creatures swallowed at a time). Falha: The target is swallowed by the worm and the Agarrado con- dition ends. A swallowed creature has the Cego and Impedido conditions has Total Cover against attacks and other effects outside the worm and takes 17 (5d6) Ácido de dano at the start of each of the worm's turns. If the worm takes 30 de dano or more on a single turn from a creature inside it, the worm must succeed on a DC 21 Constituição saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a· space within 5 feet of the worm and has the Vi</p>",
+          "value": "<p>Teste de Resistência de Força: CD 19, one Large or smaller creature Agarrado by the worm (it can have up to three creatures swallowed at a time). O alvo is swallowed by the worm, and a condição Agarrado ends. A swallowed creature has the Cego and Impedido conditions, has Total Cover against attacks and other effects outside the worm, and takes 17 (5d6) dano de ácido at the start of each of the worm's turns.\nIf the worm takes 30 de dano or more on a single turn from uma criatura inside it, the worm must succeed on a CD 21 Constituição saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 1,5 m of the worm and fica com a condição Caído. If the worm dies, any swallowed creature no longer fica com a condição Impedido and can escape from the corpse using 6 m of movement, exiting Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -326,8 +371,8 @@
           "subtype": ""
         },
         "activities": {
-          "yMn9vblh9Uydc7bR": {
-            "_id": "yMn9vblh9Uydc7bR",
+          "NgAho0ojHazomH0s": {
+            "_id": "NgAho0ojHazomH0s",
             "type": "save",
             "activation": {
               "type": "bonus",
@@ -337,11 +382,11 @@
             },
             "save": {
               "ability": [
-                "con"
+                "str"
               ],
               "dc": {
                 "calculation": "",
-                "formula": "21"
+                "formula": "19"
               }
             },
             "damage": {
@@ -354,53 +399,19 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "saveDc": 21,
-            "saveAbility": "con"
+            "saveDc": 19,
+            "saveAbility": "str"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GYnPTbnJmMUXVhvA.ypmg8gKaIp7FCiPU"
-    },
-    {
-      "_id": "oRo5FYqiuUT2M6hg",
-      "name": "Caído condition",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>If the worm dies, any swallowed crea- <( ture no longer has the Impedido condition and can w escape from the corpse using 20 feet of movement 1 0 exiting Caído. ~ 0 QUAGGOTHS Unpredictable Subterranean Stalkers</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!GYnPTbnJmMUXVhvA.oRo5FYqiuUT2M6hg"
+      "_key": "!actors.items!umSRSc6RBdM5net7.uWfmODzfm8O0nA7M"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Purple Worm",
-      "page": 252,
+      "page": 250,
       "cr": "15",
       "warnings": []
     }

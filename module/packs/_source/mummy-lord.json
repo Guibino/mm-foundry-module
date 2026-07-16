@@ -1,6 +1,6 @@
 {
-  "_id": "ow8YekngHluhf70x",
-  "_key": "!actors!ow8YekngHluhf70x",
+  "_id": "v2Yj21WXVBrcyL81",
+  "_key": "!actors!v2Yj21WXVBrcyL81",
   "folder": "bKQUPthn1V2Yu6Bn",
   "name": "Mummy Lord",
   "type": "npc",
@@ -12,7 +12,7 @@
         "proficient": 0
       },
       "dex": {
-        "value": 70,
+        "value": 10,
         "proficient": 0
       },
       "con": {
@@ -62,14 +62,14 @@
     "details": {
       "type": {
         "value": "undead",
-        "subtype": "",
+        "subtype": "cleric",
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Lawful",
+      "alignment": "Leal e Mau",
       "cr": 15,
       "xp": {
-        "value": 13000
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -79,7 +79,7 @@
       }
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [
           "necrotic",
@@ -92,13 +92,18 @@
         "custom": ""
       },
       "dv": {
-        "value": [],
-        "custom": "Fi re"
+        "value": [
+          "fire"
+        ],
+        "custom": ""
       },
       "ci": {
         "value": [
           "charmed",
-          "exhaustion"
+          "exhaustion",
+          "frightened",
+          "paralyzed",
+          "poisoned"
         ],
         "custom": ""
       },
@@ -107,7 +112,20 @@
         "custom": "Common plus three other languages"
       }
     },
-    "skills": {}
+    "skills": {
+      "his": {
+        "value": 2,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "rel": {
+        "value": 2,
+        "ability": "int"
+      }
+    }
   },
   "prototypeToken": {
     "name": "Mummy Lord",
@@ -123,50 +141,12 @@
   "items": [
     {
       "_id": "Jauge2GHT0NZ1jRO",
-      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "name": "Resistência Lendária",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If the mummy fails a saving throw, it can choose to suc- ceed instead. '-</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "",
-          "value": null
-        },
-        "uses": {
-          "spent": 0,
-          "max": "3",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!ow8YekngHluhf70x.Jauge2GHT0NZ1jRO"
-    },
-    {
-      "_id": "FcJtWOcCmNhjlqI1",
-      "name": "Magic Resistance",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The mummy has Advantage on sav- ing throws against spells and other magical effects.</p>",
+          "value": "<p>Se a criatura falhar em um teste de resistência, ela pode escolher ter sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -190,16 +170,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ow8YekngHluhf70x.FcJtWOcCmNhjlqI1"
+      "_key": "!actors.items!v2Yj21WXVBrcyL81.Jauge2GHT0NZ1jRO"
     },
     {
-      "_id": "QwcvM71a2g9Qg5cr",
-      "name": "Undead Restoration",
+      "_id": "cd0MvwWsQkzu9lEm",
+      "name": "Resistência a Magia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>If destroy~d, the mummy gains a new body in 24 hours if its heart is intact, reviving with all its Pontos de Vida. The new body appears in an unoccu- pied space within the mummy's lair. The heart is a Tiny object that has AC 17, HP 10, and Immunity to all dam- age except Fogo.</p>",
+          "value": "<p>A criatura tem Vantagem em testes de resistência contra magias e outros efeitos mágicos.</p>",
           "chat": ""
         },
         "activation": {
@@ -223,7 +203,40 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ow8YekngHluhf70x.QwcvM71a2g9Qg5cr"
+      "_key": "!actors.items!v2Yj21WXVBrcyL81.cd0MvwWsQkzu9lEm"
+    },
+    {
+      "_id": "vn62WsWbZYXgyIg3",
+      "name": "Restauração Morta-Viva",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If destroyed, the mummy gains a new body in 24 hours if its heart is intact, reviving with all its Pontos de Vida. The new body appears in an unoccupied space within the mummy's lair. The heart is a Tiny object that has AC 17, HP 10, and Immunity to all de dano except Fogo.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!v2Yj21WXVBrcyL81.vn62WsWbZYXgyIg3"
     },
     {
       "_id": "o7skN0bg35xeKeQP",
@@ -232,7 +245,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mummy makes one Rotting Fist or Channel Negative Energy attack, and it uses Dreadful Glare.</p>",
+          "value": "<p>The mummy makes one Rotting Punho or Channel Negative Energy attack, and it uses Dreadful Glare.</p>",
           "chat": ""
         },
         "activation": {
@@ -257,16 +270,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ow8YekngHluhf70x.o7skN0bg35xeKeQP"
+      "_key": "!actors.items!v2Yj21WXVBrcyL81.o7skN0bg35xeKeQP"
     },
     {
-      "_id": "aDBJy3VEUX1gtug1",
-      "name": "Rotting Fist",
+      "_id": "ZVMcjrrrccTPGlxf",
+      "name": "Rotting Punho",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 5 ft. Acerto: 15 (2d10 + 4) Concussão de dano plus 10 (3d6) Necrótico de dano. If o alvo is a creature, it is cursed. While cursed, o alvo can't regain Pontos de Vida, it gains no benefit from finishing a Long Rest, and its Hit Point maximum decreases by 10 (3d6) every 24 hours that elapse. A creature dies and turns to dust if reduced to 0 Pontos de Vida by this attack. save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast the spell is wasted, but any resources used to cast it aren't expended.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 1,5 m. Acerto: 15 (2d10 + 4) dano de concussão mais 10 (3d6) dano necrótico. If o alvo is uma criatura, it is cursed. While cursed, o alvo can't regain Pontos de Vida, it gains no benefit from finishing a Long Rest, and its Hit Point maximum decreases by 10 (3d6) every 24 hours that elapse. A creature dies and turns to dust if reduced to 0 Pontos de Vida by this attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -284,8 +297,8 @@
           "subtype": ""
         },
         "activities": {
-          "RFE3aCN6fMJlusAY": {
-            "_id": "RFE3aCN6fMJlusAY",
+          "X7HucMPAjY7DRnbB": {
+            "_id": "X7HucMPAjY7DRnbB",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -338,50 +351,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ow8YekngHluhf70x.aDBJy3VEUX1gtug1"
+      "_key": "!actors.items!v2Yj21WXVBrcyL81.ZVMcjrrrccTPGlxf"
     },
     {
-      "_id": "CJnhnvDgmZ3MC0oi",
-      "name": "Soul Drain",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Creatures within 1 mile of the lair have Disadvantage on Death Teste de Resistências. If the mummy lord is destroyed or moves its lair elsewhere, these effects end immediately. The ef- fects resume if the mummy lord gains a new body (see its Undead Restoration trait).</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!ow8YekngHluhf70x.CJnhnvDgmZ3MC0oi"
-    },
-    {
-      "_id": "byNFXz2ORqMTzpQq",
+      "_id": "ptqD8vBGaUXbGtZA",
       "name": "Channel Negative Energy",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque à Distância: +9, range 60 ft. Acerto: 25 (6d6 + 4) Necrótico de dano.</p>",
+          "value": "<p>Rolagem de Ataque à Distância: +9, distância 18 m. Acerto: 25 (6d6 + 4) dano necrótico.</p>",
           "chat": ""
         },
         "activation": {
@@ -399,8 +378,8 @@
           "subtype": ""
         },
         "activities": {
-          "dE8oQuqVmdxSqTLK": {
-            "_id": "dE8oQuqVmdxSqTLK",
+          "smBEjImFJZnAj7Oe": {
+            "_id": "smBEjImFJZnAj7Oe",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -453,16 +432,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ow8YekngHluhf70x.byNFXz2ORqMTzpQq"
+      "_key": "!actors.items!v2Yj21WXVBrcyL81.ptqD8vBGaUXbGtZA"
     },
     {
-      "_id": "vkiSkvk5uY8fjVQf",
+      "_id": "M2vJgja5uTX12ewG",
       "name": "Dreadful Glare",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Sabedoria Teste de Resistência: DC 17, one crea- ture the mummy can see within 60 feet. Falha: 25 (6d6 + 4) Psíquico de dano, and o alvo has the Paralisado condition until the end of the mummy's next turn.</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 17, uma criatura the mummy can see within 18 m. 25 (6d6 + 4) dano psíquico, and o alvo fica com a condição Paralisado until the end of the mummy's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -480,8 +459,8 @@
           "subtype": ""
         },
         "activities": {
-          "H6vFIy5Paoh5cVEh": {
-            "_id": "H6vFIy5Paoh5cVEh",
+          "MKTbqGMNpOjyM2T5": {
+            "_id": "MKTbqGMNpOjyM2T5",
             "type": "save",
             "activation": {
               "type": "action",
@@ -500,25 +479,7 @@
             },
             "damage": {
               "onSave": "half",
-              "parts": [
-                {
-                  "number": 6,
-                  "denomination": 6,
-                  "bonus": "4",
-                  "types": [
-                    "psychic"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
+              "parts": []
             }
           }
         }
@@ -526,15 +487,13 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "6d6+4",
-            "damageType": "psychic",
             "saveDc": 17,
             "saveAbility": "wis"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ow8YekngHluhf70x.vkiSkvk5uY8fjVQf"
+      "_key": "!actors.items!v2Yj21WXVBrcyL81.M2vJgja5uTX12ewG"
     },
     {
       "_id": "CDBJ107HcaewIQo5",
@@ -543,7 +502,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: The mummy is hit by an attack roll. Response: The mummy adds 2 to its AC against the attack, possibly causing the attack to miss, and the mummy teleports up to 60 feet to an unoccu - pied space it can see. Each creature of its choice that it can see within 5 feet of its destination _ space has the Cego condition until the end of the mummy's next turn.</p>",
+          "value": "<p>The mummy is hit by an attack roll. The mummy adds 2 to its AC against the attack, possibly causing the attack to miss, and the mummy teleports up to 18 m to an unoccupied space it can see. Each creature of its choice that it can see within 1,5 m of its destination space fica com a condição Cego until the end of the mummy's next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -568,16 +527,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ow8YekngHluhf70x.CDBJ107HcaewIQo5"
+      "_key": "!actors.items!v2Yj21WXVBrcyL81.CDBJ107HcaewIQo5"
     },
     {
-      "_id": "9c14nWJQ2xLGSqON",
-      "name": "Dread Command",
+      "_id": "dkrJpRbFi1WtRkeS",
+      "name": "Glare",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mummy casts Command (level 2 version), using the same spellcasting ability as Spell- casting. The mummy . can't take this action again until the start of its next turn. - Glare. The mummy uses Dreadful Glare. The mummy can't take this action again until the start of its • next turn.</p>",
+          "value": "<p>The mummy uses Dreadful Glare. The mummy can't take this action again until the start of its next turn.</p>",
           "chat": ""
         },
         "activation": {
@@ -602,7 +561,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ow8YekngHluhf70x.9c14nWJQ2xLGSqON"
+      "_key": "!actors.items!v2Yj21WXVBrcyL81.dkrJpRbFi1WtRkeS"
     },
     {
       "_id": "jJo1xz7LDLir3V2C",
@@ -611,7 +570,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mummy makes one Rotting Fist or Channel Negative Energy attack. MUMMIES ~~I MYCONIDS l(eepers of the Spore</p>",
+          "value": "<p>The mummy makes one Rotting Punho or Channel Negative Energy attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -636,7 +595,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ow8YekngHluhf70x.jJo1xz7LDLir3V2C"
+      "_key": "!actors.items!v2Yj21WXVBrcyL81.jJo1xz7LDLir3V2C"
     },
     {
       "_id": "FEbDIvsEDMUPblSd",
@@ -645,7 +604,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mummy casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save DC 17, +9 to hit with spell attacks): À Vontade: Dispel Magic, Thaumaturgy 1/Dia Each: Animate Dead, Harm, Insect Plague (level 7 version)</p>",
+          "value": "<p>The mummy casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save CD 17, +9 to hit with spell attacks):</p>",
           "chat": ""
         },
         "activation": {
@@ -696,13 +655,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ow8YekngHluhf70x.FEbDIvsEDMUPblSd"
+      "_key": "!actors.items!v2Yj21WXVBrcyL81.FEbDIvsEDMUPblSd"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Mummy Lord",
-      "page": 223,
+      "page": 221,
       "cr": "15",
       "warnings": []
     }

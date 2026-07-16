@@ -1,6 +1,6 @@
 {
-  "_id": "J3WZwbp26cCr1Zzu",
-  "_key": "!actors!J3WZwbp26cCr1Zzu",
+  "_id": "WCCLsmqESdueA4ue",
+  "_key": "!actors!WCCLsmqESdueA4ue",
   "folder": "Hp5o2ufz9hhrO2ew",
   "name": "Sahuagin Baron",
   "type": "npc",
@@ -12,7 +12,7 @@
         "proficient": 0
       },
       "dex": {
-        "value": 75,
+        "value": 15,
         "proficient": 1
       },
       "con": {
@@ -24,8 +24,8 @@
         "proficient": 0
       },
       "wis": {
-        "value": 73,
-        "proficient": 0
+        "value": 13,
+        "proficient": 1
       },
       "cha": {
         "value": 17,
@@ -67,10 +67,10 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "Lawful",
+      "alignment": "Leal e Mau",
       "cr": 5,
       "xp": {
-        "value": 1800
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -107,7 +107,7 @@
     },
     "skills": {
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       }
     }
@@ -125,13 +125,13 @@
   },
   "items": [
     {
-      "_id": "jmlUpLflAIjnhaQD",
-      "name": "Blood Frenzy",
+      "_id": "BXJq0QmWdK8zcNK7",
+      "name": "Frenesi Sanguíneo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The sahuagin has Advantage on attack rolls against any creature that doesn't have all its Pontos de Vida.</p>",
+          "value": "<p>The sahuagin has Vantagem on attack rolls against any creature that doesn't have all its Pontos de Vida.</p>",
           "chat": ""
         },
         "activation": {
@@ -155,16 +155,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!J3WZwbp26cCr1Zzu.jmlUpLflAIjnhaQD"
+      "_key": "!actors.items!WCCLsmqESdueA4ue.BXJq0QmWdK8zcNK7"
     },
     {
-      "_id": "SIgUCaMet2Fdj7na",
-      "name": "Limited Amphibiousness",
+      "_id": "JI84mGmNLdfdyUeV",
+      "name": "Anfíbio Limitado",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The sahuagin can breathe air and water, but it must be submerged at least once ev- ery 4 hours to avoid suffocating outside water.</p>",
+          "value": "<p>The sahuagin can breathe air and water, but it must be submerged at least once every 4 hours to avoid suffocating outside water.</p>",
           "chat": ""
         },
         "activation": {
@@ -188,16 +188,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!J3WZwbp26cCr1Zzu.SIgUCaMet2Fdj7na"
+      "_key": "!actors.items!WCCLsmqESdueA4ue.JI84mGmNLdfdyUeV"
     },
     {
-      "_id": "T6DhcCNR9JKllYo3",
-      "name": "Shark Telepathy",
+      "_id": "ZAKmqSaaoUt3Y6ZY",
+      "name": "Telepatia de Tubarão",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The sahuagin can magically control sharks within 120 feet of itself, using a special telepatia.</p>",
+          "value": "<p>The sahuagin can magically control sharks within 36 m of itself, using a special telepatia.</p>",
           "chat": ""
         },
         "activation": {
@@ -221,7 +221,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!J3WZwbp26cCr1Zzu.T6DhcCNR9JKllYo3"
+      "_key": "!actors.items!WCCLsmqESdueA4ue.ZAKmqSaaoUt3Y6ZY"
     },
     {
       "_id": "AQX3k6XhQ1TeLIpp",
@@ -230,7 +230,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The sahuagin makes three Trident attacks.</p>",
+          "value": "<p>The sahuagin makes three Tridente attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -255,16 +255,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!J3WZwbp26cCr1Zzu.AQX3k6XhQ1TeLIpp"
+      "_key": "!actors.items!WCCLsmqESdueA4ue.AQX3k6XhQ1TeLIpp"
     },
     {
-      "_id": "Sp1ov14c1rX2FNXc",
-      "name": "Trident",
+      "_id": "Okg00xD9GnKdnmGQ",
+      "name": "Tridente",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 5 ft. or range 20/60 ft. Acerto: 7 3 (2d8 + 4) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 1,5 m. or distância 6/18 m. Acerto: 13 (2d8 + 4) dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -282,8 +282,8 @@
           "subtype": ""
         },
         "activities": {
-          "39FNiUiqjVUzEpVZ": {
-            "_id": "39FNiUiqjVUzEpVZ",
+          "XC3UItbqtJIaNOwM": {
+            "_id": "XC3UItbqtJIaNOwM",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -302,7 +302,25 @@
             },
             "damage": {
               "includeBase": false,
-              "parts": []
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "4",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
             }
           }
         }
@@ -311,12 +329,14 @@
         "mm2024": {
           "mechanics": {
             "toHit": 7,
-            "attackType": "ranged"
+            "attackType": "ranged",
+            "damageFormula": "2d8+4",
+            "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!J3WZwbp26cCr1Zzu.Sp1ov14c1rX2FNXc"
+      "_key": "!actors.items!WCCLsmqESdueA4ue.Okg00xD9GnKdnmGQ"
     },
     {
       "_id": "tNtjbr8ZBDes49gv",
@@ -325,7 +345,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Trigger: The sahuagin takes Perfurante or Cortante de dano. Response-Constituição Sa1Jing Throw: DC 14, cada criatura of the sahuagin 's choice in a 5-foot Emanation originating from the sahuagin. Falha: 10 (3d6) Ácido de dano, and o alvo is cursed • until it finishes a Short or Long Rest. While cursed, o alvo can't benefit from the Invisível condition, its Speed decreases by 10 feet and all Fiends within 120 feet of o alvo can sense its location regardless of interposing obstacles. ~ SAHUAGIN 265 SALAMANDERS Serpentine Artists of the Inferno</p>",
+          "value": "<p>The sahuagin takes Perfurante or dano cortante. dConstitution Teste de Resistência: CD 14, cada criatura of the sahuagin's choice in a 1,5 m Emanation originating from the sahuagin. 10 (3d6) dano de ácido, and o alvo is cursed until it finishes a Short or Long Rest. While cursed, o alvo can't benefit from a condição Invisível, its Speed decreases by 3 m, and all Fiends within 36 m of o alvo can sense its location regardless of interposing obstacles.</p>",
           "chat": ""
         },
         "activation": {
@@ -342,24 +362,48 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {}
+        "activities": {
+          "QMCihwdTSkdiUfug": {
+            "_id": "QMCihwdTSkdiUfug",
+            "type": "save",
+            "activation": {
+              "type": "reaction",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "14"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
       },
       "flags": {
         "mm2024": {
           "mechanics": {
-            "damageFormula": "3d6",
-            "damageType": "acid"
+            "saveDc": 14,
+            "saveAbility": "con"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!J3WZwbp26cCr1Zzu.tNtjbr8ZBDes49gv"
+      "_key": "!actors.items!WCCLsmqESdueA4ue.tNtjbr8ZBDes49gv"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Sahuagin Baron",
-      "page": 267,
+      "page": 265,
       "cr": "5",
       "warnings": []
     }

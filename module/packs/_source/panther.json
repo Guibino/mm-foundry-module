@@ -1,6 +1,6 @@
 {
-  "_id": "DlvuGRcoxHsUiApW",
-  "_key": "!actors!DlvuGRcoxHsUiApW",
+  "_id": "J1c9XccXKSVAn1tz",
+  "_key": "!actors!J1c9XccXKSVAn1tz",
   "folder": "9eORFRgLi2o0urFB",
   "name": "Panther",
   "type": "npc",
@@ -68,9 +68,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 1,
+      "cr": 0.25,
       "xp": {
-        "value": 50
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -99,7 +99,7 @@
       },
       "languages": {
         "value": [],
-        "custom": "None"
+        "custom": ""
       }
     },
     "skills": {
@@ -126,13 +126,13 @@
   },
   "items": [
     {
-      "_id": "ih3MoJdByxyBCETC",
-      "name": "Rend",
+      "_id": "SM33GLdMHS37nDY0",
+      "name": "Dilacerar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 6 (1d6 + 3) Cortante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 6 (1d6 + 3) dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -150,8 +150,8 @@
           "subtype": ""
         },
         "activities": {
-          "7ay1CtB7M23ecDpT": {
-            "_id": "7ay1CtB7M23ecDpT",
+          "7MxKcCjvM8QdMJTC": {
+            "_id": "7MxKcCjvM8QdMJTC",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -204,16 +204,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DlvuGRcoxHsUiApW.ih3MoJdByxyBCETC"
+      "_key": "!actors.items!J1c9XccXKSVAn1tz.SM33GLdMHS37nDY0"
     },
     {
-      "_id": "EGrxEJohDTs8BYSD",
-      "name": "Nimble Escape",
+      "_id": "FXJjJMx8ddUNdJVz",
+      "name": "Fuga Ágil",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The panther takes the Disengage or Hide action. 366 APPENDIX A I ANIMALS 1 USE D T O .JUS T SWIM AR OU N D THE L AKE A N D EA T FISH , BUT TH E H U MAN WH O GAVE ME T H IS GI F T SA 1d1 M UST DO MY P A RT T O HE L P T H E F R O STM A IDEN . No w 1 FR IG HTEN 1 1 OFF F I S HERF OL K AND W H AT N OT SO DO N T HAVE T O BE A S TUPID BEAS T AGA I N . -THE M O N ST E R OF M AE R OUALDO N , AW AKEN ED PL E SIOS A UR US PIRANHA Tiny Beast, Unaligned AC 13 I ni tiative +3 (13) HP l (1d4 - l)</p>",
+          "value": "<p>A criatura realiza a ação Desengajar ou Esconder-se.</p>",
           "chat": ""
         },
         "activation": {
@@ -238,14 +238,14 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!DlvuGRcoxHsUiApW.EGrxEJohDTs8BYSD"
+      "_key": "!actors.items!J1c9XccXKSVAn1tz.FXJjJMx8ddUNdJVz"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Panther",
-      "page": 368,
-      "cr": "1",
+      "page": 366,
+      "cr": "1/4",
       "warnings": []
     }
   }

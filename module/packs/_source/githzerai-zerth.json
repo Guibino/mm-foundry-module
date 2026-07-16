@@ -1,6 +1,6 @@
 {
-  "_id": "a3m6H74oAiPkkhGi",
-  "_key": "!actors!a3m6H74oAiPkkhGi",
+  "_id": "XqoTbbf8UbGNDPdF",
+  "_key": "!actors!XqoTbbf8UbGNDPdF",
   "folder": "1nioWC3kx0YxX8qj",
   "name": "Githzerai Zerth",
   "type": "npc",
@@ -35,7 +35,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 10,
+        "flat": 17,
         "formula": ""
       },
       "hp": {
@@ -61,14 +61,14 @@
     "details": {
       "type": {
         "value": "aberration",
-        "subtype": "",
+        "subtype": "gith",
         "swarm": "",
         "custom": ""
       },
       "alignment": "Leal e Neutro",
       "cr": 6,
       "xp": {
-        "value": 2300
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -102,15 +102,15 @@
     },
     "skills": {
       "arc": {
-        "value": 1,
+        "value": 2,
         "ability": "int"
       },
       "ins": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       },
       "prc": {
-        "value": 1,
+        "value": 2,
         "ability": "wis"
       }
     }
@@ -159,7 +159,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!a3m6H74oAiPkkhGi.5dTJD3cFEidQhPOu"
+      "_key": "!actors.items!XqoTbbf8UbGNDPdF.5dTJD3cFEidQhPOu"
     },
     {
       "_id": "0s0g8fWRan5Yjmh2",
@@ -168,7 +168,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 11 (2d6 + 4) Concussão de dano plus 13 (3d8) Psy- chic de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 11 (2d6 + 4) dano de concussão mais 13 (3d8) dano psíquico.</p>",
           "chat": ""
         },
         "activation": {
@@ -240,80 +240,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!a3m6H74oAiPkkhGi.0s0g8fWRan5Yjmh2"
-    },
-    {
-      "_id": "1MrUH14cFJiQzBqf",
-      "name": "Psi-Powered Leap (2/Day)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>The githyanki castsjump, requiring no spell components and using the same spellcasting ability as Conjuração.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "bonus",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "2",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!a3m6H74oAiPkkhGi.1MrUH14cFJiQzBqf"
-    },
-    {
-      "_id": "kbd7srN36uERLBfg",
-      "name": "Habilidade",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>w Psionic Defense (2/Dia). The githyanki casts Feather l _J > Fall or Shield in response to the spell's trigger, requiring no spell components and using the same spellcasting Vl <( ability as Conjuração. :JjJ .. GITHZERAI PSION Medium Aberra ti on (G ith), Law f ul Neutral AC 18 Iniciativa +8 (18) HP 169 (26d8 + 52) Speed 40 ft., Fly 40 ft. (hover) MOD SAVE MOD SAVE MOD SAVE</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "reaction",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!a3m6H74oAiPkkhGi.kbd7srN36uERLBfg"
+      "_key": "!actors.items!XqoTbbf8UbGNDPdF.0s0g8fWRan5Yjmh2"
     },
     {
       "_id": "VF9AcLtcjrrnpleE",
@@ -322,7 +249,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The githzerai casts one of the following spells, requiring no spell components and using WIS- dom as the spellcasting ability (spell save DC 14): À Vontade: Mage Hand (the hand is Invisível) 1/Dia Each: Phantasmal !(ii/er (level 6 version), Plane Shift, See Invisibility</p>",
+          "value": "<p>The githzerai casts one of the following spells, requiring no spell components and using Sabedoria as the spellcasting ability (spell save CD 14):</p>",
           "chat": ""
         },
         "activation": {
@@ -347,13 +274,13 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!a3m6H74oAiPkkhGi.VF9AcLtcjrrnpleE"
+      "_key": "!actors.items!XqoTbbf8UbGNDPdF.VF9AcLtcjrrnpleE"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Githzerai Zerth",
-      "page": 139,
+      "page": 137,
       "cr": "6",
       "warnings": []
     }

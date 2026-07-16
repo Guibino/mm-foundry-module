@@ -1,30 +1,30 @@
 {
-  "_id": "atRrQdBVShFNEe0F",
-  "_key": "!actors!atRrQdBVShFNEe0F",
+  "_id": "heB0oQGwn7RtspTg",
+  "_key": "!actors!heB0oQGwn7RtspTg",
   "folder": "9eORFRgLi2o0urFB",
-  "name": "Gigante Wolf Spider",
+  "name": "Giant Wolf Spider",
   "type": "npc",
   "img": "modules/mm2024-pt-br/assets/portraits/giant-wolf-spider.webp",
   "system": {
     "abilities": {
       "str": {
-        "value": 23,
-        "proficient": 1
-      },
-      "dex": {
-        "value": 14,
-        "proficient": 1
-      },
-      "con": {
         "value": 12,
         "proficient": 0
       },
+      "dex": {
+        "value": 16,
+        "proficient": 0
+      },
+      "con": {
+        "value": 13,
+        "proficient": 0
+      },
       "int": {
-        "value": 5,
+        "value": 3,
         "proficient": 0
       },
       "wis": {
-        "value": 11,
+        "value": 12,
         "proficient": 0
       },
       "cha": {
@@ -35,25 +35,26 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 12,
+        "flat": 13,
         "formula": ""
       },
       "hp": {
-        "value": 120,
-        "max": 120,
-        "formula": "16d12 + 1 6",
+        "value": 11,
+        "max": 11,
+        "formula": "2d8 + 2",
         "temp": null,
         "tempmax": null
       },
       "movement": {
         "units": "ft",
         "hover": false,
-        "walk": 5,
-        "swim": 80
+        "walk": 40,
+        "climb": 40
       },
       "senses": {
         "units": "ft",
-        "darkvision": 120
+        "darkvision": 60,
+        "blindsight": 10
       },
       "init": {
         "ability": "dex",
@@ -68,9 +69,9 @@
         "custom": ""
       },
       "alignment": "Sem Tendência",
-      "cr": 6,
+      "cr": 0.25,
       "xp": {
-        "value": 2300
+        "value": 0
       },
       "source": {
         "custom": "Monster Manual 2024"
@@ -80,7 +81,7 @@
       }
     },
     "traits": {
-      "size": "huge",
+      "size": "med",
       "di": {
         "value": [],
         "custom": ""
@@ -102,10 +103,19 @@
         "custom": ""
       }
     },
-    "skills": {}
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
   },
   "prototypeToken": {
-    "name": "Gigante Wolf Spider",
+    "name": "Giant Wolf Spider",
     "actorLink": false,
     "sight": {
       "enabled": true
@@ -117,19 +127,18 @@
   },
   "items": [
     {
-      "_id": "a6qCuvMvveGbkHuB",
-      "name": "Ataque Múltiplo",
+      "_id": "Y3G8Fzz8cvkYxkBM",
+      "name": "Escalada de Aranha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The squid makes one Bite attack and one Tentacle attack.</p>",
+          "value": "<p>A criatura pode escalar superfícies difíceis, inclusive tetos, sem precisar fazer um teste de habilidade.</p>",
           "chat": ""
         },
         "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
+          "type": "",
+          "value": null
         },
         "uses": {
           "spent": 0,
@@ -148,16 +157,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!atRrQdBVShFNEe0F.a6qCuvMvveGbkHuB"
+      "_key": "!actors.items!heB0oQGwn7RtspTg.Y3G8Fzz8cvkYxkBM"
     },
     {
-      "_id": "HakKRVrp8KKkZEv8",
-      "name": "Bite",
+      "_id": "Dg7eMEW8QaYgGVA1",
+      "name": "Mordida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 5 ft. Acerto: 28 (4d1 0 + 6) Perfurante de dano.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 5 (1d4 + 3) dano perfurante mais 5 (2d4) dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -175,8 +184,8 @@
           "subtype": ""
         },
         "activities": {
-          "MrwD9p5gekVZNgw4": {
-            "_id": "MrwD9p5gekVZNgw4",
+          "PnrZ9D5qLza3bP4u": {
+            "_id": "PnrZ9D5qLza3bP4u",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -186,7 +195,7 @@
             },
             "attack": {
               "ability": "",
-              "bonus": "9",
+              "bonus": "5",
               "flat": true,
               "type": {
                 "value": "melee",
@@ -197,9 +206,9 @@
               "includeBase": false,
               "parts": [
                 {
-                  "number": 4,
-                  "denomination": 10,
-                  "bonus": "6",
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "3",
                   "types": [
                     "piercing"
                   ],
@@ -221,142 +230,22 @@
       "flags": {
         "mm2024": {
           "mechanics": {
-            "toHit": 9,
+            "toHit": 5,
             "attackType": "melee",
-            "damageFormula": "4d10+6",
+            "damageFormula": "1d4+3",
             "damageType": "piercing"
           },
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!atRrQdBVShFNEe0F.HakKRVrp8KKkZEv8"
-    },
-    {
-      "_id": "HXWelbWLbH0pV42h",
-      "name": "Tentacle",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 15 ft. Acerto: 19 (3d8 + 6) Concussão de dano. If o alvo is a Huge or smaller creature, it has the Agarrado condition (escape DC 16) from one of two tentacles, and the squid can pull o alvo up to 10 feet straight toward itself.</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "",
-          "recovery": []
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {
-          "CeWF8TCBtdu7WKRS": {
-            "_id": "CeWF8TCBtdu7WKRS",
-            "type": "attack",
-            "activation": {
-              "type": "action",
-              "value": null,
-              "override": true,
-              "condition": ""
-            },
-            "attack": {
-              "ability": "",
-              "bonus": "9",
-              "flat": true,
-              "type": {
-                "value": "melee",
-                "classification": "weapon"
-              }
-            },
-            "damage": {
-              "includeBase": false,
-              "parts": [
-                {
-                  "number": 3,
-                  "denomination": 8,
-                  "bonus": "6",
-                  "types": [
-                    "bludgeoning"
-                  ],
-                  "custom": {
-                    "enabled": false,
-                    "formula": ""
-                  },
-                  "scaling": {
-                    "mode": "",
-                    "number": 1,
-                    "formula": ""
-                  }
-                }
-              ]
-            }
-          }
-        }
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {
-            "toHit": 9,
-            "attackType": "melee",
-            "damageFormula": "3d8+6",
-            "damageType": "bludgeoning"
-          },
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!atRrQdBVShFNEe0F.HXWelbWLbH0pV42h"
-    },
-    {
-      "_id": "F1aeHNIq7mNt6tu1",
-      "name": "Ink Cloud (1/Day)",
-      "type": "feat",
-      "img": "icons/svg/aura.svg",
-      "system": {
-        "description": {
-          "value": "<p>Trigger: The squid takes de dano while underwater. Response: The squid releases ink that fills a 15-foot Cube centered on itself, and the squid moves up to its Swim Speed. The Cube is Heavily Ob- scured for l minute or until a strong current or similar effect disperses the ink. .APPENDIX A I ANIMALS GIANT WEASEL I I / BEWARE T H E FU RRE D G I AN T SNA KES O F THE YATI L</p>",
-          "chat": ""
-        },
-        "activation": {
-          "type": "reaction",
-          "value": null,
-          "condition": ""
-        },
-        "uses": {
-          "spent": 0,
-          "max": "1",
-          "recovery": [
-            {
-              "period": "day",
-              "type": "recoverAll"
-            }
-          ]
-        },
-        "type": {
-          "value": "monster",
-          "subtype": ""
-        },
-        "activities": {}
-      },
-      "flags": {
-        "mm2024": {
-          "mechanics": {},
-          "source": "MM2024"
-        }
-      },
-      "_key": "!actors.items!atRrQdBVShFNEe0F.F1aeHNIq7mNt6tu1"
+      "_key": "!actors.items!heB0oQGwn7RtspTg.Dg7eMEW8QaYgGVA1"
     }
   ],
   "flags": {
     "mm2024": {
       "nameEn": "Giant Wolf Spider",
       "page": 362,
-      "cr": "6",
+      "cr": "1/4",
       "warnings": []
     }
   }
