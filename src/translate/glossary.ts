@@ -94,11 +94,31 @@ export function normalizeSubject(text: string, name: string): string {
   return s;
 }
 
+/** Candidatos de auto-referencia da criatura: nome completo e ultima palavra. */
+function creatureCands(name: string): string[] {
+  const words = name.toLowerCase().replace(/[^a-z0-9 -]/g, "").split(/\s+/).filter(Boolean);
+  return [...new Set([name.toLowerCase(), words[words.length - 1]!])]
+    .filter((w) => w && w.length > 2).sort((a, b) => b.length - a.length);
+}
+
+/** Troca "the dragon"/"The dragon's"... por "a criatura"/"da criatura" (feminino). */
+export function replaceSelfReference(text: string, name: string): string {
+  let s = text;
+  for (const c of creatureCands(name)) {
+    const esc = c.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    s = s.replace(new RegExp(`\\bThe ${esc}'s\\b`, "g"), "Da criatura")
+         .replace(new RegExp(`\\bthe ${esc}'s\\b`, "g"), "da criatura")
+         .replace(new RegExp(`\\bThe ${esc}\\b`, "g"), "A criatura")
+         .replace(new RegExp(`\\bthe ${esc}\\b`, "g"), "a criatura");
+  }
+  return s;
+}
+
 /** Traduz o texto de um traco/acao: usa override humano se houver, senao glossario. */
 export function translateEntryText(text: string, name: string): string {
   const key = normalizeSubject(text.trim(), name);
   if (overrides[key]) return overrides[key]!;
-  return translateText(text);
+  return translateText(replaceSelfReference(text, name));
 }
 
 /** Traduz o nome do monstro por tokens comuns (aproximacao; nao substitui nomes oficiais). */
