@@ -3,9 +3,11 @@
   "title": "Manual dos Monstros 2024 (PT-BR)",
   "description": "Compêndio de monstros do Monster Manual 2024 traduzidos para português brasileiro, com atores dnd5e totalmente estruturados e organizados por tipo de criatura. Gerado localmente a partir do PDF do usuário; não redistribui conteúdo protegido.",
   "authors": [
-    { "name": "Guibino" }
+    {
+      "name": "Guibino"
+    }
   ],
-  "version": "0.2.3",
+  "version": "0.2.4",
   "compatibility": {
     "minimum": "12",
     "verified": "13"
@@ -29,7 +31,9 @@
       {
         "id": "dnd5e",
         "type": "system",
-        "compatibility": { "minimum": "4.0.0" }
+        "compatibility": {
+          "minimum": "4.0.0"
+        }
       }
     ]
   },
@@ -40,7 +44,10 @@
       "path": "packs/monsters",
       "type": "Actor",
       "system": "dnd5e",
-      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" },
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
       "flags": {}
     }
   ],
@@ -49,7 +56,9 @@
       "name": "Manual dos Monstros 2024",
       "color": "#7d1f1f",
       "sorting": "m",
-      "packs": ["monsters"],
+      "packs": [
+        "monsters"
+      ],
       "folders": []
     }
   ],
