@@ -129,7 +129,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Se de dano reduces a criatura to 0 Pontos de Vida, ela faz a Constituição saving throw (CD 5 mais the de dano taken) unless the de dano is Radiante ou de a Critical Hit. On a successful save, a criatura drops to 1 Ponto de Vida instead.</p>",
+          "value": "<p>Se o dano reduzir a criatura a 0 Pontos de Vida, ela faz um teste de resistência de Constituição (CD 5 mais o dano sofrido), a menos que o dano seja Radiante ou de um Acerto Crítico. Se passar, a criatura cai para 1 Ponto de Vida em vez disso.</p>",
           "chat": ""
         },
         "activation": {
@@ -277,7 +277,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura randomly shoots one de the following magical rays at a target it pode ver a até 36 m de itself (roll 1d4; reroll se a criatura has already used that ray during this turn):\nTeste de Resistência de Constituição: CD 14. O alvo fica com a condição Paralisado e repeats the save no fim de cada turno dele, ending the effect on itself on a success. After 1 minute, it succeeds automatically.\nTeste de Resistência de Sabedoria: CD 14. 13 (3d8) dano psíquico, e o alvo fica com a condição Amedrontado até o fim do próximo turno dele.\nTeste de Resistência de Constituição: CD 14. 10 (3d6) dano necrótico, e o alvo fica com a condição Envenenado até o fim do próximo turno dele. Enquanto Envenenado, o alvo can't regain Pontos de Vida. Apenas metade do dano.\nTeste de Resistência de Destreza: CD 14. 27 (5d10) dano de energia. Se o alvo is a nonmagical object ou a creation de magical force, a 3 m Cubo de it disintegrates em dust. Metade do dano. Se o alvo is uma criatura e this de dano reduces it to 0 Pontos de Vida, it disintegrates em dust.</p>",
+          "value": "<p>A criatura randomly shoots one de the following magical rays at a target it pode ver a até 36 m de itself (roll 1d4; reroll se a criatura has already used that ray during this turn):\nTeste de Resistência de Constituição: CD 14. O alvo fica com a condição Paralisado e repeats the save no fim de cada turno dele, ending the effect on itself se passar. After 1 minute, it succeeds automatically.\nTeste de Resistência de Sabedoria: CD 14. 13 (3d8) dano psíquico, e o alvo fica com a condição Amedrontado até o fim do próximo turno dele.\nTeste de Resistência de Constituição: CD 14. 10 (3d6) dano necrótico, e o alvo fica com a condição Envenenado até o fim do próximo turno dele. Enquanto Envenenado, o alvo can't regain Pontos de Vida. Apenas metade do dano.\nTeste de Resistência de Destreza: CD 14. 27 (5d10) dano de energia. Se o alvo is a nonmagical object ou a creation de magical force, a 3 m Cubo de it disintegrates em dust. Metade do dano. Se o alvo is uma criatura e this de dano reduces it to 0 Pontos de Vida, it disintegrates em dust.</p>",
           "chat": ""
         },
         "activation": {
