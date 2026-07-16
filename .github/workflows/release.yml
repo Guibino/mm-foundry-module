@@ -1,0 +1,30 @@
+name: Release Foundry Module
+
+# Publica um release sempre que você criar uma tag no formato v* (ex.: v0.2.0).
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Gera module.zip (module.json na raiz do zip)
+        run: |
+          cd module
+          zip -r ../module.zip . -x '*.DS_Store'
+          cd ..
+
+      - name: Publica o release com module.json e module.zip
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            module/module.json
+            module.zip
