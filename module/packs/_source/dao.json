@@ -258,7 +258,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura makes three Earthen Marreta attacks ou two Earth Burst attacks.</p>",
+          "value": "<p>A criatura makes three Earthen Marreta attacks ou two Explosão de Terra attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -367,8 +367,8 @@
       "_key": "!actors.items!TKic7DQjombC06IG.3cbTuU0u7bcqoGdO"
     },
     {
-      "_id": "GI9r4vNK62IesG9q",
-      "name": "Earth Burst",
+      "_id": "Sc7p6jLrdVwBuJEE",
+      "name": "Explosão de Terra",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -391,8 +391,8 @@
           "subtype": ""
         },
         "activities": {
-          "1duUwa0wXuovy8Bq": {
-            "_id": "1duUwa0wXuovy8Bq",
+          "iO32tKF1gNKO38yd": {
+            "_id": "iO32tKF1gNKO38yd",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -447,7 +447,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!TKic7DQjombC06IG.GI9r4vNK62IesG9q"
+      "_key": "!actors.items!TKic7DQjombC06IG.Sc7p6jLrdVwBuJEE"
     },
     {
       "_id": "5p6X8ItsbnTgS3cU",
@@ -456,7 +456,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dao casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (spell save CD 16):</p>",
+          "value": "<p>The dao casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (magia save CD 16):</p>",
           "chat": ""
         },
         "activation": {

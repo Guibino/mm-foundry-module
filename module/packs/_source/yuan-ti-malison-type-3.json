@@ -165,7 +165,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yuan-ti makes two Veneno Burst attacks, e pode usar Conjuração para lançar Suggestion se disponível.</p>",
+          "value": "<p>The yuan-ti makes two Explosão de Veneno attacks, e pode usar Conjuração para lançar Suggestion se disponível.</p>",
           "chat": ""
         },
         "activation": {
@@ -193,8 +193,8 @@
       "_key": "!actors.items!52N64UNYdPbWqrAz.3whJczYRMOZviyyl"
     },
     {
-      "_id": "DWGYdNeqhLM8IH9E",
-      "name": "Veneno Burst",
+      "_id": "Cd8sNMlJXSRBDQjI",
+      "name": "Explosão de Veneno",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -217,8 +217,8 @@
           "subtype": ""
         },
         "activities": {
-          "nmKThq3rOw8ebdXn": {
-            "_id": "nmKThq3rOw8ebdXn",
+          "bOa3z8kjs9MZInud": {
+            "_id": "bOa3z8kjs9MZInud",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -271,7 +271,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!52N64UNYdPbWqrAz.DWGYdNeqhLM8IH9E"
+      "_key": "!actors.items!52N64UNYdPbWqrAz.Cd8sNMlJXSRBDQjI"
     },
     {
       "_id": "9ezp1n7KYSIwYcE4",
@@ -375,7 +375,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yuan-ti casts one de the following spells, requiring no Material components e using Sabedoria as the spellcasting ability (spell save CD 13):</p>",
+          "value": "<p>The yuan-ti casts one de the following spells, requiring no Material components e using Sabedoria as the spellcasting ability (magia save CD 13):</p>",
           "chat": ""
         },
         "activation": {

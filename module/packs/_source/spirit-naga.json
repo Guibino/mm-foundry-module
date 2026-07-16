@@ -127,7 +127,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Se ela morre, a criatura retorna to life em 1d6 dias e recupera all seu Pontos de Vida. Only a Wish spell can prevent este traço de functioning.</p>",
+          "value": "<p>Se ela morre, a criatura retorna to life em 1d6 dias e recupera all seu Pontos de Vida. Only a Wish magia can prevent este traço de functioning.</p>",
           "chat": ""
         },
         "activation": {
@@ -160,7 +160,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura faz três ataques, usando Mordida ou Necrótico Ray em qualquer combinação.</p>",
+          "value": "<p>A criatura faz três ataques, usando Mordida ou Raio Necrótico em qualquer combinação.</p>",
           "chat": ""
         },
         "activation": {
@@ -269,8 +269,8 @@
       "_key": "!actors.items!xmPo9J2EMoWD4NEi.t9hrQVEraPDOp74i"
     },
     {
-      "_id": "utqDdDijxHGz38rQ",
-      "name": "Necrótico Ray",
+      "_id": "JqK1fvgrthIRBXph",
+      "name": "Raio Necrótico",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -293,8 +293,8 @@
           "subtype": ""
         },
         "activities": {
-          "4h4ckh5M7uaczgwK": {
-            "_id": "4h4ckh5M7uaczgwK",
+          "eup6UgVfa4K7WqiC": {
+            "_id": "eup6UgVfa4K7WqiC",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -347,7 +347,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!xmPo9J2EMoWD4NEi.utqDdDijxHGz38rQ"
+      "_key": "!actors.items!xmPo9J2EMoWD4NEi.JqK1fvgrthIRBXph"
     },
     {
       "_id": "pilXuIxnflQvj6Ca",
@@ -356,7 +356,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The naga casts one de the following spells, requiring no Somatic ou Material components e using Inteligência as the spellcasting ability (spell save CD 14):</p>",
+          "value": "<p>The naga casts one de the following spells, requiring no Somatic ou Material components e using Inteligência as the spellcasting ability (magia save CD 14):</p>",
           "chat": ""
         },
         "activation": {

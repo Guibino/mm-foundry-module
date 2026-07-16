@@ -143,13 +143,13 @@
   },
   "items": [
     {
-      "_id": "50Mq7H4Lx4glvboO",
-      "name": "Incubus Form",
+      "_id": "fNQGHGIJ6CRQQTzD",
+      "name": "Forma de Íncubo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>When a criatura finishes a Long Rest, ela pode shape-shift em an Incubus, using that stat block instead de this one.</p>",
+          "value": "<p>When a criatura finishes a Long Rest, ela pode shape-shift em um Incubus, using that stat block instead de this one.</p>",
           "chat": ""
         },
         "activation": {
@@ -173,7 +173,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2Dcs5GgmZHptavSv.50Mq7H4Lx4glvboO"
+      "_key": "!actors.items!2Dcs5GgmZHptavSv.fNQGHGIJ6CRQQTzD"
     },
     {
       "_id": "qapX0gx5r4piQThN",
@@ -182,7 +182,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura makes one Fiendish Touch attack e uses Charm ou Draining Kiss.</p>",
+          "value": "<p>A criatura makes one Toque Corruptor attack e uses Charm ou Draining Kiss.</p>",
           "chat": ""
         },
         "activation": {
@@ -210,8 +210,8 @@
       "_key": "!actors.items!2Dcs5GgmZHptavSv.qapX0gx5r4piQThN"
     },
     {
-      "_id": "jLt8bFchhAEYxhh2",
-      "name": "Fiendish Touch",
+      "_id": "u5EbJMUfK0DZzQIR",
+      "name": "Toque Corruptor",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -234,8 +234,8 @@
           "subtype": ""
         },
         "activities": {
-          "chmq5HLX3b2zKI4r": {
-            "_id": "chmq5HLX3b2zKI4r",
+          "wygmGhxSfbLmcaRW": {
+            "_id": "wygmGhxSfbLmcaRW",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -288,7 +288,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!2Dcs5GgmZHptavSv.jLt8bFchhAEYxhh2"
+      "_key": "!actors.items!2Dcs5GgmZHptavSv.u5EbJMUfK0DZzQIR"
     },
     {
       "_id": "FPUbd7e2PD9Ub38K",
@@ -297,7 +297,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura casts Dominate Person (nível 8 versão), requiring no spell components e using Carisma as the spellcasting ability (spell save CD 15).</p>",
+          "value": "<p>A criatura casts Dominate Person (nível 8 versão), requiring no magia components e using Carisma as the spellcasting ability (magia save CD 15).</p>",
           "chat": ""
         },
         "activation": {
@@ -331,7 +331,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 15, uma criatura Enfeitiçado by a criatura a até 1,5 m. 13 (3d8) dano psíquico. Metade do dano. O alvo's Ponto de Vida maximum decreases by an amount equal to the de dano taken.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 15, uma criatura Enfeitiçado by a criatura a até 1,5 m. 13 (3d8) dano psíquico. Metade do dano. O alvo's Ponto de Vida maximum decreases by um amount equal to the de dano taken.</p>",
           "chat": ""
         },
         "activation": {
@@ -392,7 +392,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura shape-shifts to resemble a Medium ou Small Humanoide ou back em seu forma verdadeira. Its atributos de jogo are the same em each form, except seu Deslocamento de Voo is available only em seu forma verdadeira. Any equipment it's vestindo ou carregando não é transformado.</p>",
+          "value": "<p>A criatura shape-shifts to resemble a Medium ou Small Humanoide ou back em seu forma verdadeira. Its atributos de jogo are the same em each form, except seu Deslocamento de Voo is available only em seu forma verdadeira. Qualquer equipment it's vestindo ou carregando não é transformado.</p>",
           "chat": ""
         },
         "activation": {

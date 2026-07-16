@@ -235,7 +235,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura makes six Pact Blade attacks e uses Constrição.</p>",
+          "value": "<p>A criatura makes six Lâmina do Pacto attacks e uses Constrição.</p>",
           "chat": ""
         },
         "activation": {
@@ -263,8 +263,8 @@
       "_key": "!actors.items!zYD1nahsdyVCaJlE.kDhLowhDF2xzvqB3"
     },
     {
-      "_id": "AiJLIe4ZexHezAUp",
-      "name": "Pact Blade",
+      "_id": "NlTAy535ShzZbODP",
+      "name": "Lâmina do Pacto",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -287,8 +287,8 @@
           "subtype": ""
         },
         "activities": {
-          "gl0piKf6rPCc7dWG": {
-            "_id": "gl0piKf6rPCc7dWG",
+          "VEI2DwjXGLfOUzhd": {
+            "_id": "VEI2DwjXGLfOUzhd",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -341,7 +341,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!zYD1nahsdyVCaJlE.AiJLIe4ZexHezAUp"
+      "_key": "!actors.items!zYD1nahsdyVCaJlE.NlTAy535ShzZbODP"
     },
     {
       "_id": "YN3eudFspvTqhyQa",
@@ -451,7 +451,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura is hit by a melee rolagem de ataque enquanto empunhando uma arma. A criatura adds 5 to seu AC contra that attack, possibly causing it to miss.</p>",
+          "value": "<p>A criatura is hit by uma rolagem de ataque corpo a corpo enquanto empunhando uma arma. A criatura adds 5 to seu AC contra that attack, possibly causing it to miss.</p>",
           "chat": ""
         },
         "activation": {

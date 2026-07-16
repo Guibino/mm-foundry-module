@@ -171,7 +171,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura faz dois ataques, usando Necrótico Sword ou Necrótico Bow em qualquer combinação. Ela pode substituir um ataque por um uso de Life Drain.</p>",
+          "value": "<p>A criatura faz dois ataques, usando Necrótico Sword ou Necrótico Bow em qualquer combinação. Ela pode substituir um ataque por um uso de Dreno de Vida.</p>",
           "chat": ""
         },
         "activation": {
@@ -361,13 +361,13 @@
       "_key": "!actors.items!eMuHehdXjoyzoYgV.0E8tWLim2B44QP9g"
     },
     {
-      "_id": "gebbF6xrkk25wZNT",
-      "name": "Life Drain",
+      "_id": "hocQyeu2JSc765lb",
+      "name": "Dreno de Vida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 13, uma criatura a até 1,5 m. 6 (1d8 + 2) dano necrótico, e do alvo Ponto de Vida maximum decreases by an amount equal to the de dano taken.\nA Humanoide slain by this attack rises 24 horas later as a Zombie under da criatura control, unless the Humanoide is restored to life ou seu corpo is destruída. A criatura can have no more than twelve zombies under seu control at a time.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 13, uma criatura a até 1,5 m. 6 (1d8 + 2) dano necrótico, e do alvo Ponto de Vida maximum decreases by um amount equal to the de dano taken.\nA Humanoide slain by this attack rises 24 horas later as a Zombie under da criatura control, unless the Humanoide is restored to life ou seu corpo is destruída. A criatura can have no more than twelve zombies under seu control at a time.</p>",
           "chat": ""
         },
         "activation": {
@@ -385,8 +385,8 @@
           "subtype": ""
         },
         "activities": {
-          "IZ2eO6TBmS1mfl7A": {
-            "_id": "IZ2eO6TBmS1mfl7A",
+          "pK63i9Myse2KHakd": {
+            "_id": "pK63i9Myse2KHakd",
             "type": "save",
             "activation": {
               "type": "action",
@@ -419,7 +419,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!eMuHehdXjoyzoYgV.gebbF6xrkk25wZNT"
+      "_key": "!actors.items!eMuHehdXjoyzoYgV.hocQyeu2JSc765lb"
     }
   ],
   "flags": {

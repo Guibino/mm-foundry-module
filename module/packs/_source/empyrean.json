@@ -211,7 +211,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura faz dois ataques, usando Sacred Weapon ou Divine Ray em qualquer combinação.</p>",
+          "value": "<p>A criatura faz dois ataques, usando Sacred Weapon ou Raio Divino em qualquer combinação.</p>",
           "chat": ""
         },
         "activation": {
@@ -245,7 +245,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +17, alcance 3 m. Acerto: 31 (6d6 + 10) dano de energia, e o alvo fica com a condição Atordoado until the start de da criatura next turn. O alvo can choose not to be Atordoado, em which case ela sofre an extra 21 dano de energia that bypasses Resistência ou Imunidade.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +17, alcance 3 m. Acerto: 31 (6d6 + 10) dano de energia, e o alvo fica com a condição Atordoado until the start de da criatura next turn. O alvo can choose not to ser Atordoado, em which case ela sofre um extra 21 dano de energia that bypasses Resistência ou Imunidade.</p>",
           "chat": ""
         },
         "activation": {
@@ -320,8 +320,8 @@
       "_key": "!actors.items!Of9apWu3yad3BebO.fSCTZTohaZMA2tN2"
     },
     {
-      "_id": "Z7O5b958yucyVnq7",
-      "name": "Divine Ray",
+      "_id": "46J180UNYpFgw2lL",
+      "name": "Raio Divino",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -344,8 +344,8 @@
           "subtype": ""
         },
         "activities": {
-          "sPK6zdaUYfrjWv6d": {
-            "_id": "sPK6zdaUYfrjWv6d",
+          "0y97HSmhplyIQsfQ": {
+            "_id": "0y97HSmhplyIQsfQ",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -378,7 +378,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Of9apWu3yad3BebO.Z7O5b958yucyVnq7"
+      "_key": "!actors.items!Of9apWu3yad3BebO.46J180UNYpFgw2lL"
     },
     {
       "_id": "2I9hqtyGqrQeCfR0",
@@ -482,7 +482,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura makes one Divine Ray attack.</p>",
+          "value": "<p>A criatura makes one Raio Divino attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -516,7 +516,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The empyrean casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (spell save CD 23):</p>",
+          "value": "<p>The empyrean casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (magia save CD 23):</p>",
           "chat": ""
         },
         "activation": {

@@ -172,7 +172,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The vampire faz um ataque de Mordida e one Shadow Strike attack.</p>",
+          "value": "<p>The vampire faz um ataque de Mordida e one Golpe Sombrio attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -206,7 +206,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 7 (1d6 + 4) dano perfurante mais 10 (3d6) dano necrótico. O alvo's Ponto de Vida maximum decreases by an amount equal to the dano necrótico taken, e the vampire recupera Pontos de Vida equal to that amount.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 1,5 m. Acerto: 7 (1d6 + 4) dano perfurante mais 10 (3d6) dano necrótico. O alvo's Ponto de Vida maximum decreases by um amount equal to the dano necrótico taken, e the vampire recupera Pontos de Vida equal to that amount.</p>",
           "chat": ""
         },
         "activation": {
@@ -281,8 +281,8 @@
       "_key": "!actors.items!jiKmMY1hq2vbdhwq.8rzbIKK3ELLnwJ22"
     },
     {
-      "_id": "bj0fijX01i4PW2OJ",
-      "name": "Shadow Strike",
+      "_id": "3qJ4vVbvmAv5zaFe",
+      "name": "Golpe Sombrio",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -305,8 +305,8 @@
           "subtype": ""
         },
         "activities": {
-          "0QZvZFiPUUfCe6gN": {
-            "_id": "0QZvZFiPUUfCe6gN",
+          "23P9wgeyxc3q4l0z": {
+            "_id": "23P9wgeyxc3q4l0z",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -359,7 +359,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!jiKmMY1hq2vbdhwq.bj0fijX01i4PW2OJ"
+      "_key": "!actors.items!jiKmMY1hq2vbdhwq.3qJ4vVbvmAv5zaFe"
     },
     {
       "_id": "q71lol3gsEAHWtxn",

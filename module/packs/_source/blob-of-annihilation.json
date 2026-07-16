@@ -142,7 +142,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Se the blob é reduzido a 0 Pontos de Vida, it implodes e ejects any criaturas e objects engulfed by it em the Astral Sea. The blob itself vanishes, leaving behind a layer de slime on everything that was a até 180 m de it. In 1d20 years, the blob reconstitutes on a random world em the Material Plane.</p>",
+          "value": "<p>Se the blob é reduzido a 0 Pontos de Vida, it implodes e ejects qualquer criaturas e objects engulfed by it em the Astral Sea. The blob itself vanishes, leaving behind a layer de slime on everything that was a até 180 m de it. In 1d20 years, the blob reconstitutes on a random world em the Material Plane.</p>",
           "chat": ""
         },
         "activation": {
@@ -246,7 +246,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The blob makes two Pseudópode attacks e uses Engulf. Ela pode substituir um ataque por um uso de Restraining Glob.</p>",
+          "value": "<p>The blob makes two Pseudópode attacks e uses Engolfar. Ela pode substituir um ataque por um uso de Restraining Glob.</p>",
           "chat": ""
         },
         "activation": {
@@ -355,13 +355,13 @@
       "_key": "!actors.items!k8uNPxa9TaB1rQfH.08x1y7rKTrKEvePU"
     },
     {
-      "_id": "33LmOhVsKbDKihFP",
-      "name": "Engulf",
+      "_id": "T4vhU0ICKO5hq0PQ",
+      "name": "Engolfar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The blob se move até seu Deslocamento e can atravessar the spaces de Huge ou menor criaturas e objects. Teste de Resistência de Força: CD 23, cada criatura ou object whose space the blob enters for the first time during this move. O alvo está engulfed. Enquanto engulfed, a target has Total Cover contra attacks e other effects fora de the blob, e when the blob se move, the engulfed target se move com it. A nonmagical object is destruída after spending 1 minute engulfed.\nEnquanto engulfed, uma criatura takes 21 (6d6) dano de energia no emício de cada turno dele, is suffocating, fica com a condição Impedido, e repete o teste no fim de cada turno dele. An engulfed creature that é reduzido a 0 Pontos de Vida dissolves em ash, which is ejected em the Astral Sea. O alvo escapes e enters the nearest espaço desocupado.</p>",
+          "value": "<p>The blob se move até seu Deslocamento e can atravessar the spaces de Huge ou menor criaturas e objects. Teste de Resistência de Força: CD 23, cada criatura ou object whose space the blob enters for the first time during this move. O alvo está engulfed. Enquanto engulfed, a target has Total Cover contra attacks e other effects fora de the blob, e when the blob se move, the engulfed target se move com it. A não mágica object is destruída após spending 1 minute engulfed.\nEnquanto engulfed, uma criatura takes 21 (6d6) dano de energia no emício de cada turno dele, is suffocating, fica com a condição Impedido, e repete o teste no fim de cada turno dele. An engulfed creature that é reduzido a 0 Pontos de Vida dissolves em ash, which is ejected em the Astral Sea. O alvo escapes e enters the nearest espaço desocupado.</p>",
           "chat": ""
         },
         "activation": {
@@ -379,8 +379,8 @@
           "subtype": ""
         },
         "activities": {
-          "7l7LUGG7wPPWpJht": {
-            "_id": "7l7LUGG7wPPWpJht",
+          "stxJeyvvKsParotc": {
+            "_id": "stxJeyvvKsParotc",
             "type": "save",
             "activation": {
               "type": "action",
@@ -413,7 +413,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!k8uNPxa9TaB1rQfH.33LmOhVsKbDKihFP"
+      "_key": "!actors.items!k8uNPxa9TaB1rQfH.T4vhU0ICKO5hq0PQ"
     },
     {
       "_id": "asKTzJdLne51lzdG",

@@ -134,7 +134,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cultist faz três ataques, usando Pact Blade ou Radiante Ray em qualquer combinação.</p>",
+          "value": "<p>The cultist faz três ataques, usando Lâmina do Pacto ou Raio Radiante em qualquer combinação.</p>",
           "chat": ""
         },
         "activation": {
@@ -162,8 +162,8 @@
       "_key": "!actors.items!Hpie4KC7enJraO4D.M9cUPsQ9yJYgbDKV"
     },
     {
-      "_id": "aIvMlJRdoCirmTJq",
-      "name": "Pact Blade",
+      "_id": "Dhzda4K3sGMJz28A",
+      "name": "Lâmina do Pacto",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -186,8 +186,8 @@
           "subtype": ""
         },
         "activities": {
-          "ItdkJXpZiYQYhG9I": {
-            "_id": "ItdkJXpZiYQYhG9I",
+          "lGGSCs67fvVkolqq": {
+            "_id": "lGGSCs67fvVkolqq",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -240,11 +240,11 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Hpie4KC7enJraO4D.aIvMlJRdoCirmTJq"
+      "_key": "!actors.items!Hpie4KC7enJraO4D.Dhzda4K3sGMJz28A"
     },
     {
-      "_id": "dhnL0vBM3kGbhASb",
-      "name": "Radiante Ray",
+      "_id": "xzjq09364d49ce6C",
+      "name": "Raio Radiante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -267,8 +267,8 @@
           "subtype": ""
         },
         "activities": {
-          "TgpVAH24PeOD3Fdq": {
-            "_id": "TgpVAH24PeOD3Fdq",
+          "979tXGiApv6WfO2Y": {
+            "_id": "979tXGiApv6WfO2Y",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -321,7 +321,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!Hpie4KC7enJraO4D.dhnL0vBM3kGbhASb"
+      "_key": "!actors.items!Hpie4KC7enJraO4D.xzjq09364d49ce6C"
     },
     {
       "_id": "7nTxo4QtlVvyukFr",
@@ -330,7 +330,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cultist casts one de the following spells, using Carisma as the spellcasting ability (spell save CD 17):</p>",
+          "value": "<p>The cultist casts one de the following spells, using Carisma as the spellcasting ability (magia save CD 17):</p>",
           "chat": ""
         },
         "activation": {

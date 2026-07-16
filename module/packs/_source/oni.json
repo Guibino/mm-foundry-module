@@ -171,7 +171,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura makes two Garra ou Nightmare Ray attacks. Ela pode substituir um ataque por um uso de Conjuração.</p>",
+          "value": "<p>A criatura makes two Garra ou Raio de Pesadelo attacks. Ela pode substituir um ataque por um uso de Conjuração.</p>",
           "chat": ""
         },
         "activation": {
@@ -280,8 +280,8 @@
       "_key": "!actors.items!02KmlVS8IyNksixD.0UAWrskJgRd1Iq7k"
     },
     {
-      "_id": "QSNdiIbDBcdxFrEs",
-      "name": "Nightmare Ray",
+      "_id": "i0GLPTzxydfDxM7d",
+      "name": "Raio de Pesadelo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -304,8 +304,8 @@
           "subtype": ""
         },
         "activities": {
-          "XZlMk3nd899SwLMV": {
-            "_id": "XZlMk3nd899SwLMV",
+          "Zcc5icbB3cqNIZmz": {
+            "_id": "Zcc5icbB3cqNIZmz",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -358,7 +358,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!02KmlVS8IyNksixD.QSNdiIbDBcdxFrEs"
+      "_key": "!actors.items!02KmlVS8IyNksixD.i0GLPTzxydfDxM7d"
     },
     {
       "_id": "ijKwUfwK1XpTy4S8",
@@ -367,7 +367,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura shape-shifts em a Small ou Medium Humanoide ou a Large Gigante, ou ela retorna to seu forma verdadeira. Other than seu size, seu atributos de jogo are the same em each form. Any equipment it is vestindo ou carregando não é transformado.</p>",
+          "value": "<p>A criatura shape-shifts em a Small ou Medium Humanoide ou a Large Gigante, ou ela retorna to seu forma verdadeira. Other than seu size, seu atributos de jogo are the same em each form. Qualquer equipment it is vestindo ou carregando não é transformado.</p>",
           "chat": ""
         },
         "activation": {
@@ -401,7 +401,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The oni casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (spell save CD 13):</p>",
+          "value": "<p>The oni casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (magia save CD 13):</p>",
           "chat": ""
         },
         "activation": {

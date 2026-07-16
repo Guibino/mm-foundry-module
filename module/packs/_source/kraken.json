@@ -239,7 +239,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura faz dois ataques de Tentáculo e uses Fling, Elétrico Strike, ou Engolir.</p>",
+          "value": "<p>A criatura faz dois ataques de Tentáculo e uses Fling, Golpe Elétrico, ou Engolir.</p>",
           "chat": ""
         },
         "activation": {
@@ -409,8 +409,8 @@
       "_key": "!actors.items!GLITXZdYT3xdeHrh.PV3SCb3jSqfDFwLA"
     },
     {
-      "_id": "Ec1uPZmdpOXcvoY1",
-      "name": "Elétrico Strike",
+      "_id": "WLs6GqNDRgkuaR7a",
+      "name": "Golpe Elétrico",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -433,8 +433,8 @@
           "subtype": ""
         },
         "activities": {
-          "aLkJ4F4nqQ3SAr5T": {
-            "_id": "aLkJ4F4nqQ3SAr5T",
+          "SltnRb5Pnmca6fuD": {
+            "_id": "SltnRb5Pnmca6fuD",
             "type": "save",
             "activation": {
               "type": "action",
@@ -467,7 +467,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GLITXZdYT3xdeHrh.Ec1uPZmdpOXcvoY1"
+      "_key": "!actors.items!GLITXZdYT3xdeHrh.WLs6GqNDRgkuaR7a"
     },
     {
       "_id": "ZIwfKBGKmADbDsgp",
@@ -476,7 +476,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Destreza: CD 25, uma criatura Agarrado by a criatura (ela pode have up to four criaturas swallowed at a time). 23 (3d8 + 10) dano perfurante. Se o alvo is Large ou menor, it is swallowed e no longer Agarrado. A swallowed creature fica com a condição Impedido, has Total Cover contra attacks e other effects fora de a criatura, e takes 24 (7d6) dano de ácido no emício de cada turno dele.\nSe a criatura takes 50 de dano ou more on a single turn de uma criatura inside it, a criatura deve succeed on a CD 25 Constituição saving throw no fim de that turn ou regurgitate all swallowed criaturas, each de which falls em a space a até 3 m de a criatura com a condição Caído. Se a criatura morre, any swallowed creature no longer fica com a condição Impedido e can escape de the corpse using 4,5 m de movimento, exiting Caído.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 25, uma criatura Agarrado by a criatura (ela pode have up to four criaturas swallowed at a time). 23 (3d8 + 10) dano perfurante. Se o alvo is Large ou menor, it is swallowed e no longer Agarrado. A swallowed creature fica com a condição Impedido, has Total Cover contra attacks e other effects fora de a criatura, e takes 24 (7d6) dano de ácido no emício de cada turno dele.\nSe a criatura takes 50 de dano ou more on a single turn de uma criatura inside it, a criatura deve succeed on a CD 25 Constituição saving throw no fim de that turn ou regurgitate all swallowed criaturas, each de which falls em a space a até 3 m de a criatura com a condição Caído. Se a criatura morre, qualquer swallowed creature no longer fica com a condição Impedido e can escape de the corpse using 4,5 m de movimento, exiting Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -531,13 +531,13 @@
       "_key": "!actors.items!GLITXZdYT3xdeHrh.ZIwfKBGKmADbDsgp"
     },
     {
-      "_id": "n9lIYn9uPnDFwxgf",
-      "name": "Storm Bolt",
+      "_id": "PaXRGScAXcvnqZTc",
+      "name": "Raio de Tempestade",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura uses Elétrico Strike.</p>",
+          "value": "<p>A criatura uses Golpe Elétrico.</p>",
           "chat": ""
         },
         "activation": {
@@ -562,11 +562,11 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GLITXZdYT3xdeHrh.n9lIYn9uPnDFwxgf"
+      "_key": "!actors.items!GLITXZdYT3xdeHrh.PaXRGScAXcvnqZTc"
     },
     {
-      "_id": "85uSM1fjQT4JZlFE",
-      "name": "Toxic Ink",
+      "_id": "VOanN6TLclJ37l0F",
+      "name": "Tinta Tóxica",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -589,8 +589,8 @@
           "subtype": ""
         },
         "activities": {
-          "1bz4AbdVDLWtZa66": {
-            "_id": "1bz4AbdVDLWtZa66",
+          "7lLcutruUkWP0LI4": {
+            "_id": "7lLcutruUkWP0LI4",
             "type": "save",
             "activation": {
               "type": "legendary",
@@ -623,7 +623,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!GLITXZdYT3xdeHrh.85uSM1fjQT4JZlFE"
+      "_key": "!actors.items!GLITXZdYT3xdeHrh.VOanN6TLclJ37l0F"
     }
   ],
   "flags": {

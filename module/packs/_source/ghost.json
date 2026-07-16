@@ -139,8 +139,8 @@
   },
   "items": [
     {
-      "_id": "e01xR7dbXJLF6rvV",
-      "name": "Ethereal Sight",
+      "_id": "3tKo8UfaW9NGb9eU",
+      "name": "Visão Etérea",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -169,7 +169,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!FXfezhPcztd7L8Hd.e01xR7dbXJLF6rvV"
+      "_key": "!actors.items!FXfezhPcztd7L8Hd.3tKo8UfaW9NGb9eU"
     },
     {
       "_id": "b5sijEmG1dzJAu4i",
@@ -211,7 +211,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura makes two Withering Touch attacks.</p>",
+          "value": "<p>A criatura makes two Toque Definhante attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -239,8 +239,8 @@
       "_key": "!actors.items!FXfezhPcztd7L8Hd.PvOsgVJpfm4iIsve"
     },
     {
-      "_id": "o9Fsf2HrG1SyVCWE",
-      "name": "Withering Touch",
+      "_id": "dfQDWVqny2p3ngFt",
+      "name": "Toque Definhante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -263,8 +263,8 @@
           "subtype": ""
         },
         "activities": {
-          "K2AWnT6NovPyGz0s": {
-            "_id": "K2AWnT6NovPyGz0s",
+          "Ves094QSICngU50y": {
+            "_id": "Ves094QSICngU50y",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -317,7 +317,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!FXfezhPcztd7L8Hd.o9Fsf2HrG1SyVCWE"
+      "_key": "!actors.items!FXfezhPcztd7L8Hd.dfQDWVqny2p3ngFt"
     },
     {
       "_id": "MZfc8yaBf3wAIEnI",
@@ -326,7 +326,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Sabedoria: CD 13, cada criatura em uma 18 m Cone that pode ver a criatura e isn't an Morto-Vivo. 10 (2d6 + 3) dano psíquico, e o alvo fica com a condição Amedrontado until the start de da criatura next turn. O alvo é imune a este ghost's Horrific Visage por 24 horas.</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 13, cada criatura em uma 18 m Cone that pode ver a criatura e isn't um Morto-Vivo. 10 (2d6 + 3) dano psíquico, e o alvo fica com a condição Amedrontado until the start de da criatura next turn. O alvo é imune a este ghost's Horrific Visage por 24 horas.</p>",
           "chat": ""
         },
         "activation": {
@@ -387,7 +387,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Carisma: CD 13, one Humanoide a criatura pode ver a até 1,5 m. O alvo está possessed by a criatura; a criatura disappears, e o alvo fica com a condição Incapacitado e loses control de seu corpo. A criatura now controls the corpo, but o alvo retains awareness. A criatura can't be targeted by any attack, spell, ou other effect, except ones that specifically target Morto-Vivo. Da criatura atributos de jogo are the same, except it uses the possessed target's Speed, as well as do alvo Força, Destreza, e Constituição modifiers.\nThe possession lasts until the corpo cai para 0 Pontos de Vida ou a criatura leaves as a Ação Bônus. When the possession ends, a criatura appears em an espaço desocupado a até 1,5 m de o alvo, e o alvo é imune a este ghost's Possession por 24 horas. O alvo é imune a este ghost's Possession por 24 horas.</p>",
+          "value": "<p>Teste de Resistência de Carisma: CD 13, one Humanoide a criatura pode ver a até 1,5 m. O alvo está possessed by a criatura; a criatura disappears, e o alvo fica com a condição Incapacitado e loses control de seu corpo. A criatura now controls the corpo, but o alvo retains awareness. A criatura can't ser targeted by qualquer attack, magia, ou other effect, except ones that specifically target Morto-Vivo. Da criatura atributos de jogo are the same, except it uses the possessed target's Speed, as well as do alvo Força, Destreza, e Constituição modifiers.\nThe possession lasts until the corpo cai para 0 Pontos de Vida ou a criatura leaves as a Ação Bônus. When the possession ends, a criatura appears em um espaço desocupado a até 1,5 m de o alvo, e o alvo é imune a este ghost's Possession por 24 horas. O alvo é imune a este ghost's Possession por 24 horas.</p>",
           "chat": ""
         },
         "activation": {
@@ -448,7 +448,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The ghost casts the Etherealness spell, requiring no spell components e using Carisma as the spellcasting ability. The ghost is visible on the Material Plane enquanto on the Border Ethereal e vice-versa, but ela pode't affect ou be affected by anything on the other plane.</p>",
+          "value": "<p>The ghost casts the Etherealness magia, requiring no magia components e using Carisma as the spellcasting ability. The ghost is visible on the Material Plane enquanto on the Border Ethereal e vice-versa, but ela pode't affect ou ser affected by anything on the other plane.</p>",
           "chat": ""
         },
         "activation": {

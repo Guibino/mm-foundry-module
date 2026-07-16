@@ -143,7 +143,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura faz dois ataques, usando Garra ou Fogo Ray em qualquer combinação.</p>",
+          "value": "<p>A criatura faz dois ataques, usando Garra ou Raio de Fogo em qualquer combinação.</p>",
           "chat": ""
         },
         "activation": {
@@ -252,8 +252,8 @@
       "_key": "!actors.items!SJvkmSg7Ij0OTRuH.FN9oLYaoCkaXAZaT"
     },
     {
-      "_id": "i6an0NNcgPPaoxTD",
-      "name": "Fogo Ray",
+      "_id": "EbwDgG3ubaEtdCGm",
+      "name": "Raio de Fogo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -276,8 +276,8 @@
           "subtype": ""
         },
         "activities": {
-          "YgDiQbqjmvqd3cj0": {
-            "_id": "YgDiQbqjmvqd3cj0",
+          "KMbDEd0eTy0nQYEY": {
+            "_id": "KMbDEd0eTy0nQYEY",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -330,7 +330,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SJvkmSg7Ij0OTRuH.i6an0NNcgPPaoxTD"
+      "_key": "!actors.items!SJvkmSg7Ij0OTRuH.EbwDgG3ubaEtdCGm"
     },
     {
       "_id": "UC3aYG77TiW319pr",
@@ -339,7 +339,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cambion casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (spell save CD 14):</p>",
+          "value": "<p>The cambion casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (magia save CD 14):</p>",
           "chat": ""
         },
         "activation": {

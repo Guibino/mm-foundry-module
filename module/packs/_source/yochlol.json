@@ -272,7 +272,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura makes two Caustic Lash attacks, e pode usar Conjuração para lançar Web ou Dominate Person se disponível.</p>",
+          "value": "<p>A criatura makes two Chicotada Cáustica attacks, e pode usar Conjuração para lançar Teia ou Dominate Person se disponível.</p>",
           "chat": ""
         },
         "activation": {
@@ -300,8 +300,8 @@
       "_key": "!actors.items!pclZJVaw1w4eeWy3.W0fShUij00zY70GT"
     },
     {
-      "_id": "Vjg9l8VqZ856YxoC",
-      "name": "Caustic Lash",
+      "_id": "WWWQgzBSnD8t7DBk",
+      "name": "Chicotada Cáustica",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -324,8 +324,8 @@
           "subtype": ""
         },
         "activities": {
-          "IImxbIwVeZBMhilz": {
-            "_id": "IImxbIwVeZBMhilz",
+          "obbjU89pzfePGmnh": {
+            "_id": "obbjU89pzfePGmnh",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -378,7 +378,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!pclZJVaw1w4eeWy3.Vjg9l8VqZ856YxoC"
+      "_key": "!actors.items!pclZJVaw1w4eeWy3.WWWQgzBSnD8t7DBk"
     },
     {
       "_id": "wtRVezhnAbzywSWN",
@@ -387,7 +387,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura shape-shifts em a Medium Humanoide ou a Medium spider ou back em seu forma verdadeira. Its atributos de jogo are the same em each form. Any equipment it is vestindo ou carregando não é transformado.</p>",
+          "value": "<p>A criatura shape-shifts em a Medium Humanoide ou a Medium spider ou back em seu forma verdadeira. Its atributos de jogo are the same em each form. Qualquer equipment it is vestindo ou carregando não é transformado.</p>",
           "chat": ""
         },
         "activation": {
@@ -415,13 +415,13 @@
       "_key": "!actors.items!pclZJVaw1w4eeWy3.wtRVezhnAbzywSWN"
     },
     {
-      "_id": "kXRXlLJXr83ckjdG",
-      "name": "Toxic Escape",
+      "_id": "SiB75nJXdgxqn1Vm",
+      "name": "Fuga Tóxica",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura is hit by an rolagem de ataque. A criatura halves the attack's de dano to itself (round down), e it teleports para um espaço desocupado que possa ver a até 9 m de itself. Teste de Resistência de Constituição: CD 15, cada criatura a até 1,5 m de da criatura destination space. O alvo fica com a condição Envenenado até o fim do próximo turno dele. Enquanto Envenenado, it fica com a condição Incapacitado.</p>",
+          "value": "<p>A criatura is hit by um rolagem de ataque. A criatura halves the attack's de dano to itself (arredondando para baixo), e it teleports para um espaço desocupado que possa ver a até 9 m de itself. Teste de Resistência de Constituição: CD 15, cada criatura a até 1,5 m de da criatura destination space. O alvo fica com a condição Envenenado até o fim do próximo turno dele. Enquanto Envenenado, it fica com a condição Incapacitado.</p>",
           "chat": ""
         },
         "activation": {
@@ -439,8 +439,8 @@
           "subtype": ""
         },
         "activities": {
-          "Ox4WAw1sfmB7ZunL": {
-            "_id": "Ox4WAw1sfmB7ZunL",
+          "AHwbXX80Y1SmyP8F": {
+            "_id": "AHwbXX80Y1SmyP8F",
             "type": "save",
             "activation": {
               "type": "reaction",
@@ -473,7 +473,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!pclZJVaw1w4eeWy3.kXRXlLJXr83ckjdG"
+      "_key": "!actors.items!pclZJVaw1w4eeWy3.SiB75nJXdgxqn1Vm"
     },
     {
       "_id": "Higb20HXG12pBeen",
@@ -482,7 +482,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The yochlol casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (spell save CD 15):</p>",
+          "value": "<p>The yochlol casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (magia save CD 15):</p>",
           "chat": ""
         },
         "activation": {

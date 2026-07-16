@@ -154,13 +154,13 @@
       "_key": "!actors.items!brO2kv9AcDLA5CGe.LbEx8c30jGEYcmsd"
     },
     {
-      "_id": "D33BM08zAfhD28fY",
-      "name": "Touch",
+      "_id": "eUYgZtCGC4DnumbP",
+      "name": "Toque",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 7 (2d4 + 2) dano de fogo. Se o alvo is uma criatura ou a flammable object that isn't being worn ou carried, it starts burning.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 1,5 m. Acerto: 7 (2d4 + 2) dano de fogo. Se o alvo is uma criatura ou a flammable object that isn't being usada ou carried, it starts burning.</p>",
           "chat": ""
         },
         "activation": {
@@ -178,8 +178,8 @@
           "subtype": ""
         },
         "activities": {
-          "JAnfOfguQluACKF0": {
-            "_id": "JAnfOfguQluACKF0",
+          "OkM7QUu8S1CC33Ej": {
+            "_id": "OkM7QUu8S1CC33Ej",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -232,7 +232,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!brO2kv9AcDLA5CGe.D33BM08zAfhD28fY"
+      "_key": "!actors.items!brO2kv9AcDLA5CGe.eUYgZtCGC4DnumbP"
     },
     {
       "_id": "AGLiSqPGWfnMqv15",
@@ -241,7 +241,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura sets itself ablaze ou extinguishes seu flames. Enquanto ablaze, a criatura sheds Bright Light em a 3 m raio e Dim Light for an additional 3 m.</p>",
+          "value": "<p>A criatura sets itself ablaze ou extinguishes seu flames. Enquanto ablaze, a criatura sheds Bright Light em a 3 m raio e Dim Light for um additional 3 m.</p>",
           "chat": ""
         },
         "activation": {

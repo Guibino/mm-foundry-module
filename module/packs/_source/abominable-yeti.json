@@ -167,7 +167,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura can use seu Chilling Gaze e faz dois ataques, usando Garra ou Ice Throw em qualquer combinação.</p>",
+          "value": "<p>A criatura can use seu Olhar Congelante e faz dois ataques, usando Garra ou Arremesso de Gelo em qualquer combinação.</p>",
           "chat": ""
         },
         "activation": {
@@ -276,8 +276,8 @@
       "_key": "!actors.items!aLjLnRcvVLyc1DkT.naVpe3V33IppKlcz"
     },
     {
-      "_id": "hB8ghWObbjkfuXHE",
-      "name": "Ice Throw",
+      "_id": "OAYhML1pG2dtdbfb",
+      "name": "Arremesso de Gelo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -300,8 +300,8 @@
           "subtype": ""
         },
         "activities": {
-          "J42GtmCd71IlTuzr": {
-            "_id": "J42GtmCd71IlTuzr",
+          "hBhe2sRf4uYC6wbd": {
+            "_id": "hBhe2sRf4uYC6wbd",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -354,16 +354,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!aLjLnRcvVLyc1DkT.hB8ghWObbjkfuXHE"
+      "_key": "!actors.items!aLjLnRcvVLyc1DkT.OAYhML1pG2dtdbfb"
     },
     {
-      "_id": "dow90Y5O3ZeyIDrj",
-      "name": "Chilling Gaze",
+      "_id": "j02QnEv4nfm9q8C7",
+      "name": "Olhar Congelante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 18, uma criatura a criatura pode ver a até 9 m. 21 (6d6) dano de frio, e o alvo fica com a condição Paralisado until the start de da criatura next turn unless o alvo fica com Imunidade a dano de frio. O alvo é imune a este yeti's Chilling Gaze por 1 hora.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 18, uma criatura a criatura pode ver a até 9 m. 21 (6d6) dano de frio, e o alvo fica com a condição Paralisado until the start de da criatura next turn unless o alvo fica com Imunidade a dano de frio. O alvo é imune a este yeti's Olhar Congelante por 1 hora.</p>",
           "chat": ""
         },
         "activation": {
@@ -381,8 +381,8 @@
           "subtype": ""
         },
         "activities": {
-          "p0FNwr2V8TD0N6OH": {
-            "_id": "p0FNwr2V8TD0N6OH",
+          "Bi3qQjlHhEWEfErI": {
+            "_id": "Bi3qQjlHhEWEfErI",
             "type": "save",
             "activation": {
               "type": "action",
@@ -415,7 +415,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!aLjLnRcvVLyc1DkT.dow90Y5O3ZeyIDrj"
+      "_key": "!actors.items!aLjLnRcvVLyc1DkT.j02QnEv4nfm9q8C7"
     },
     {
       "_id": "mVJQrg3mvkkcma8I",

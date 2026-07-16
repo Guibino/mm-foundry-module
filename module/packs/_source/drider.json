@@ -231,7 +231,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura faz três ataques, usando Foreleg ou Veneno Burst em qualquer combinação.</p>",
+          "value": "<p>A criatura faz três ataques, usando Foreleg ou Explosão de Veneno em qualquer combinação.</p>",
           "chat": ""
         },
         "activation": {
@@ -340,8 +340,8 @@
       "_key": "!actors.items!rUveds3OuVNtIK5S.BIFDvhOJzlQx3HSW"
     },
     {
-      "_id": "BbBwGq4K75SIv0s0",
-      "name": "Veneno Burst",
+      "_id": "chVtsGN8cpdLzkVv",
+      "name": "Explosão de Veneno",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -364,8 +364,8 @@
           "subtype": ""
         },
         "activities": {
-          "xdpSKNigsMzHm5QG": {
-            "_id": "xdpSKNigsMzHm5QG",
+          "cagERF4XadnOrfyG": {
+            "_id": "cagERF4XadnOrfyG",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -418,7 +418,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!rUveds3OuVNtIK5S.BbBwGq4K75SIv0s0"
+      "_key": "!actors.items!rUveds3OuVNtIK5S.chVtsGN8cpdLzkVv"
     },
     {
       "_id": "WQflvwsCztq5uUSW",
@@ -427,7 +427,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The drider casts Darkness, Faerie Fogo, ou Web, requiring no Material components e using Sabedoria as the spellcasting ability (spell save CD 14).</p>",
+          "value": "<p>The drider casts Darkness, Faerie Fogo, ou Teia, requiring no Material components e using Sabedoria as the spellcasting ability (magia save CD 14).</p>",
           "chat": ""
         },
         "activation": {

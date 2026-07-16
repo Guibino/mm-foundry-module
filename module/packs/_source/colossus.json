@@ -274,7 +274,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura faz três ataques, usando Pancada ou Radiante Ray em qualquer combinação.</p>",
+          "value": "<p>A criatura faz três ataques, usando Pancada ou Raio Radiante em qualquer combinação.</p>",
           "chat": ""
         },
         "activation": {
@@ -383,8 +383,8 @@
       "_key": "!actors.items!0eDBtstI3UsYx7Oo.ttShjQthpOAY4Krn"
     },
     {
-      "_id": "VaslQDBlX0ckzvcL",
-      "name": "Radiante Ray",
+      "_id": "waow3UtLeeL5FjOe",
+      "name": "Raio Radiante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -407,8 +407,8 @@
           "subtype": ""
         },
         "activities": {
-          "JyJxt66jorvfIG0Z": {
-            "_id": "JyJxt66jorvfIG0Z",
+          "pQpvC4rZf40iY9hw": {
+            "_id": "pQpvC4rZf40iY9hw",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -461,7 +461,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!0eDBtstI3UsYx7Oo.VaslQDBlX0ckzvcL"
+      "_key": "!actors.items!0eDBtstI3UsYx7Oo.waow3UtLeeL5FjOe"
     },
     {
       "_id": "ljSkZJk5UaGAhHUl",
@@ -470,7 +470,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Destreza: CD 26, cada criatura em uma 90 m-long, 3 m-wide Linha. 65 (10d12) dano radiante. Metade do dano. A creature reduced to 0 Pontos de Vida by this beam disintegrates em dust, leaving behind any magic items it was vestindo ou carregando.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 26, cada criatura em uma 90 m-long, 3 m-wide Linha. 65 (10d12) dano radiante. Metade do dano. A creature reduced to 0 Pontos de Vida by this beam disintegrates em dust, leaving behind qualquer magic items it was vestindo ou carregando.</p>",
           "chat": ""
         },
         "activation": {
@@ -537,7 +537,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura makes one Radiante Ray attack.</p>",
+          "value": "<p>A criatura makes one Raio Radiante attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -565,13 +565,13 @@
       "_key": "!actors.items!0eDBtstI3UsYx7Oo.UJM924aXrSBqWynE"
     },
     {
-      "_id": "VvME017WZcik54Re",
-      "name": "Stomp",
+      "_id": "mt81ptSh9djSi0ea",
+      "name": "Pisão",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura se move até metade do seu Deslocamento without provoking Ataques de Oportunidade, e ela pode make one Pancada attack at any point during that move.</p>",
+          "value": "<p>A criatura se move até metade do seu Deslocamento without provoking Ataques de Oportunidade, e ela pode make one Pancada attack at qualquer point during that move.</p>",
           "chat": ""
         },
         "activation": {
@@ -596,7 +596,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!0eDBtstI3UsYx7Oo.VvME017WZcik54Re"
+      "_key": "!actors.items!0eDBtstI3UsYx7Oo.mt81ptSh9djSi0ea"
     }
   ],
   "flags": {

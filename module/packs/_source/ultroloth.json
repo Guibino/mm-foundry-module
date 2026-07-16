@@ -213,7 +213,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura uses Hypnotic Gaze e makes two Mercurial Chicote attacks.</p>",
+          "value": "<p>A criatura uses Olhar Hipnótico e makes two Mercurial Chicote attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -247,7 +247,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 4,5 m. Acerto: 25 (6d6 + 4) dano de energia, e a criatura can teleport o alvo up to 3 m to an espaço desocupado a criatura pode ver that isn't em the air.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 4,5 m. Acerto: 25 (6d6 + 4) dano de energia, e a criatura can teleport o alvo up to 3 m to um espaço desocupado a criatura pode ver that isn't em the air.</p>",
           "chat": ""
         },
         "activation": {
@@ -322,13 +322,13 @@
       "_key": "!actors.items!iTzSD34TNipvEhFR.afQ6uctCSIlIeWMr"
     },
     {
-      "_id": "oVps8scZDdaA2HO8",
-      "name": "Hypnotic Gaze",
+      "_id": "SmP3WJOcdDO6Kw48",
+      "name": "Olhar Hipnótico",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Sabedoria: CD 17, cada criatura em uma 9 m Cone. 10 (3d6) dano psíquico, e o alvo fica com a condição Atordoado until the start de da criatura next turn. O alvo é imune a este ultroloth's Hypnotic Gaze por 24 horas.</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 17, cada criatura em uma 9 m Cone. 10 (3d6) dano psíquico, e o alvo fica com a condição Atordoado until the start de da criatura next turn. O alvo é imune a este ultroloth's Olhar Hipnótico por 24 horas.</p>",
           "chat": ""
         },
         "activation": {
@@ -346,8 +346,8 @@
           "subtype": ""
         },
         "activities": {
-          "yoilDNsl5RYhXmOt": {
-            "_id": "yoilDNsl5RYhXmOt",
+          "51TaeTmi0YLtoCXB": {
+            "_id": "51TaeTmi0YLtoCXB",
             "type": "save",
             "activation": {
               "type": "action",
@@ -380,7 +380,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!iTzSD34TNipvEhFR.oVps8scZDdaA2HO8"
+      "_key": "!actors.items!iTzSD34TNipvEhFR.SmP3WJOcdDO6Kw48"
     },
     {
       "_id": "9MLG1pRYBWXym3RE",
@@ -389,7 +389,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The ultroloth casts one de the following spells, requiring no Material components e using Inteligência as the spellcasting ability (spell save CD 17):</p>",
+          "value": "<p>The ultroloth casts one de the following spells, requiring no Material components e using Inteligência as the spellcasting ability (magia save CD 17):</p>",
           "chat": ""
         },
         "activation": {

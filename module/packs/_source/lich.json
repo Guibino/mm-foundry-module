@@ -184,7 +184,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Se destruída, a criatura reforms em 1d10 dias se ela tem a spirit jar, revivendo com todos os seus Pontos de Vida. The new corpo appears em an espaço desocupado a até da criatura lair.</p>",
+          "value": "<p>Se destruída, a criatura reforms em 1d10 dias se ela tem a spirit jar, revivendo com todos os seus Pontos de Vida. The new corpo appears em um espaço desocupado a até da criatura lair.</p>",
           "chat": ""
         },
         "activation": {
@@ -217,7 +217,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura faz três ataques, usando Eldritch Burst ou Paralyzing Touch em qualquer combinação.</p>",
+          "value": "<p>A criatura faz três ataques, usando Explosão Sobrenatural ou Toque Paralisante em qualquer combinação.</p>",
           "chat": ""
         },
         "activation": {
@@ -245,8 +245,8 @@
       "_key": "!actors.items!SPC36miMYyMdMlTl.cfRo6JVrmNl8Dzwh"
     },
     {
-      "_id": "Vfy5OCDL5z9oPfgc",
-      "name": "Eldritch Burst",
+      "_id": "zJEfW706evQRhUhC",
+      "name": "Explosão Sobrenatural",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -269,8 +269,8 @@
           "subtype": ""
         },
         "activities": {
-          "UCFolCcSmjvphOR1": {
-            "_id": "UCFolCcSmjvphOR1",
+          "nSATZHydHglNgaiO": {
+            "_id": "nSATZHydHglNgaiO",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -323,11 +323,11 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SPC36miMYyMdMlTl.Vfy5OCDL5z9oPfgc"
+      "_key": "!actors.items!SPC36miMYyMdMlTl.zJEfW706evQRhUhC"
     },
     {
-      "_id": "6PfiySyxDv1Dla1d",
-      "name": "Paralyzing Touch",
+      "_id": "XhL0F5P2d95LLLSq",
+      "name": "Toque Paralisante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -350,8 +350,8 @@
           "subtype": ""
         },
         "activities": {
-          "LxHiGw289p1RAfTf": {
-            "_id": "LxHiGw289p1RAfTf",
+          "orSe5jp5xh98RMnU": {
+            "_id": "orSe5jp5xh98RMnU",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -404,7 +404,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!SPC36miMYyMdMlTl.6PfiySyxDv1Dla1d"
+      "_key": "!actors.items!SPC36miMYyMdMlTl.XhL0F5P2d95LLLSq"
     },
     {
       "_id": "4dmqHbTrJmB6yXCa",
@@ -447,7 +447,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 20, cada criatura that isn't an Morto-Vivo em a 6 m Emanação com origem em a criatura. 31 (9d6) dano necrótico. Metade do dano. A criatura não pode realizar esta ação novamente até o emício do próximo turno dele.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 20, cada criatura that isn't um Morto-Vivo em a 6 m Emanação com origem em a criatura. 31 (9d6) dano necrótico. Metade do dano. A criatura não pode realizar esta ação novamente até o emício do próximo turno dele.</p>",
           "chat": ""
         },
         "activation": {
@@ -508,7 +508,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The lich casts one de the following spells, using Inteligência as the spellcasting ability (spell save CD 20):</p>",
+          "value": "<p>The lich casts one de the following spells, using Inteligência as the spellcasting ability (magia save CD 20):</p>",
           "chat": ""
         },
         "activation": {

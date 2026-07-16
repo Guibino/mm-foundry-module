@@ -140,7 +140,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura automatically succeeds on testes de resistência contra magias e outros efeitos mágicos, e the rolagens de ataque de spells automatically miss it. Without da criatura permission, no spell can observe a criatura remotely ou detect seu thoughts, creature type, ou alignment.</p>",
+          "value": "<p>A criatura automatically succeeds on testes de resistência contra magias e outros efeitos mágicos, e the rolagens de ataque de spells automatically miss it. Without da criatura permission, no magia can observe a criatura remotely ou detect seu thoughts, creature type, ou alignment.</p>",
           "chat": ""
         },
         "activation": {
@@ -206,7 +206,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura makes three Cursed Touch attacks.</p>",
+          "value": "<p>A criatura makes three Toque Amaldiçoado attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -234,8 +234,8 @@
       "_key": "!actors.items!vAtPduuRNsPwWZsR.VaTRiwwUZiY5bWDl"
     },
     {
-      "_id": "Cb7hHzBVL0rxrlzD",
-      "name": "Cursed Touch",
+      "_id": "WhAqeH8X0WcfYwvW",
+      "name": "Toque Amaldiçoado",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -258,8 +258,8 @@
           "subtype": ""
         },
         "activities": {
-          "mzp4T5bCyPSGhiob": {
-            "_id": "mzp4T5bCyPSGhiob",
+          "lQ90sVoYpKNRY76M": {
+            "_id": "lQ90sVoYpKNRY76M",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -312,7 +312,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!vAtPduuRNsPwWZsR.Cb7hHzBVL0rxrlzD"
+      "_key": "!actors.items!vAtPduuRNsPwWZsR.WhAqeH8X0WcfYwvW"
     },
     {
       "_id": "xRckXACzFmb41RHq",
@@ -388,7 +388,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The rakshasa casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (spell save CD 18):</p>",
+          "value": "<p>The rakshasa casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (magia save CD 18):</p>",
           "chat": ""
         },
         "activation": {

@@ -197,7 +197,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura makes one Vine Lash ou Thorn Burst attack, e pode usar Conjuração para lançar Charm Monster.</p>",
+          "value": "<p>A criatura makes one Chicotada de Vinha ou Explosão de Espinhos attack, e pode usar Conjuração para lançar Charm Monster.</p>",
           "chat": ""
         },
         "activation": {
@@ -225,8 +225,8 @@
       "_key": "!actors.items!VBjtU9aZKFlqqC5w.WYndKQDV0mfKFiTF"
     },
     {
-      "_id": "PXN0PSRsCqYqnXQL",
-      "name": "Vine Lash",
+      "_id": "fCzX8VWlw3ZAJSOn",
+      "name": "Chicotada de Vinha",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -249,8 +249,8 @@
           "subtype": ""
         },
         "activities": {
-          "bi57I8ryhKaofJGr": {
-            "_id": "bi57I8ryhKaofJGr",
+          "9k1P5yUhfFRUJGIG": {
+            "_id": "9k1P5yUhfFRUJGIG",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -303,11 +303,11 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VBjtU9aZKFlqqC5w.PXN0PSRsCqYqnXQL"
+      "_key": "!actors.items!VBjtU9aZKFlqqC5w.fCzX8VWlw3ZAJSOn"
     },
     {
-      "_id": "dsnHTLQZHj5c4RIL",
-      "name": "Thorn Burst",
+      "_id": "bsGBFigkGMwQk6rI",
+      "name": "Explosão de Espinhos",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -330,8 +330,8 @@
           "subtype": ""
         },
         "activities": {
-          "3CVhpZ9PHj8mcfeN": {
-            "_id": "3CVhpZ9PHj8mcfeN",
+          "hOszQwKItG3GyAQG": {
+            "_id": "hOszQwKItG3GyAQG",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -384,7 +384,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VBjtU9aZKFlqqC5w.dsnHTLQZHj5c4RIL"
+      "_key": "!actors.items!VBjtU9aZKFlqqC5w.bsGBFigkGMwQk6rI"
     },
     {
       "_id": "c0yuzheG3mOffjhS",
@@ -393,7 +393,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Se a até 1,5 m de a Large ou bigger tree, a criatura teleports to an espaço desocupado a até 1,5 m de a second Large ou bigger tree that is a até 18 m de the previous tree.</p>",
+          "value": "<p>Se a até 1,5 m de a Large ou bigger tree, a criatura teleports to um espaço desocupado a até 1,5 m de a second Large ou bigger tree that is a até 18 m de the previous tree.</p>",
           "chat": ""
         },
         "activation": {
@@ -427,7 +427,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The dryad casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (spell save CD 14):</p>",
+          "value": "<p>The dryad casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (magia save CD 14):</p>",
           "chat": ""
         },
         "activation": {

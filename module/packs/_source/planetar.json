@@ -233,7 +233,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura makes three Radiante Sword attacks ou uses Holy Burst twice.</p>",
+          "value": "<p>A criatura makes three Radiante Sword attacks ou uses Explosão Sagrada twice.</p>",
           "chat": ""
         },
         "activation": {
@@ -342,8 +342,8 @@
       "_key": "!actors.items!ItDbRl4tnAbv0DGY.sXlaGGP8dSaRDwyk"
     },
     {
-      "_id": "jZtOpBLcEStLlidz",
-      "name": "Holy Burst",
+      "_id": "5fJlcvnPX5wcQ8JJ",
+      "name": "Explosão Sagrada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -366,8 +366,8 @@
           "subtype": ""
         },
         "activities": {
-          "9JbAbbuCmjGCjfpF": {
-            "_id": "9JbAbbuCmjGCjfpF",
+          "PEZhzKMa87fPr0fb": {
+            "_id": "PEZhzKMa87fPr0fb",
             "type": "save",
             "activation": {
               "type": "action",
@@ -400,7 +400,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ItDbRl4tnAbv0DGY.jZtOpBLcEStLlidz"
+      "_key": "!actors.items!ItDbRl4tnAbv0DGY.5fJlcvnPX5wcQ8JJ"
     },
     {
       "_id": "qyJq4NWZQMQpo9hr",
@@ -409,7 +409,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The planetar casts one de the following spells, requiring no Material components e using Carisma as spellcasting ability (spell save CD 20):</p>",
+          "value": "<p>The planetar casts one de the following spells, requiring no Material components e using Carisma as spellcasting ability (magia save CD 20):</p>",
           "chat": ""
         },
         "activation": {

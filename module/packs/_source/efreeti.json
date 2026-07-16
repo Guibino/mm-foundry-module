@@ -224,7 +224,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura faz três ataques, usando Heated Blade ou Hurl Flame em qualquer combinação.</p>",
+          "value": "<p>A criatura faz três ataques, usando Lâmina Aquecida ou Hurl Flame em qualquer combinação.</p>",
           "chat": ""
         },
         "activation": {
@@ -252,8 +252,8 @@
       "_key": "!actors.items!VzKbQHmLhHC54yRj.RNWeRf9dGeeByMVH"
     },
     {
-      "_id": "Zv5ncAEjfmyrXGSI",
-      "name": "Heated Blade",
+      "_id": "zRexxdupJyX2IJ8d",
+      "name": "Lâmina Aquecida",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -276,8 +276,8 @@
           "subtype": ""
         },
         "activities": {
-          "fM4Z8fzY5lIecYlW": {
-            "_id": "fM4Z8fzY5lIecYlW",
+          "8gAacb6mHXjkPb3c": {
+            "_id": "8gAacb6mHXjkPb3c",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -330,7 +330,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VzKbQHmLhHC54yRj.Zv5ncAEjfmyrXGSI"
+      "_key": "!actors.items!VzKbQHmLhHC54yRj.zRexxdupJyX2IJ8d"
     },
     {
       "_id": "7a9epSqjZHBwsOQm",
@@ -420,7 +420,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The efreeti casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (spell save CD 16):</p>",
+          "value": "<p>The efreeti casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (magia save CD 16):</p>",
           "chat": ""
         },
         "activation": {

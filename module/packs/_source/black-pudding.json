@@ -163,13 +163,13 @@
       "_key": "!actors.items!G1vQ0C1f61Nevtrf.FsZRCN7bPDG5hXJE"
     },
     {
-      "_id": "M1UWNuDQKusdYnT4",
-      "name": "Corrosive Form",
+      "_id": "QlPC4gYz5EkhgWtd",
+      "name": "Forma Corrosiva",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A creature that hits a criatura com a melee rolagem de ataque takes 4 (1d8) dano de ácido. Nonmagical ammunition is destruída immediately after hitting a criatura e dealing any de dano. Any nonmagical weapon takes a cumulative -1 penalty to rolagens de ataque immediately after dealing de dano to a criatura e coming em contact com it. The weapon is destruída se the penalty reaches -5. The penalty can be removed by casting the Mending spell on the weapon.\nIn 1 minute, a criatura can eat através de 0,6 m de nonmagical wood ou metal.</p>",
+          "value": "<p>Uma criatura que atinge a criatura com uma rolagem de ataque corpo a corpo sofre 4 (1d8) de dano de ácido. Munição não mágica é destruída imediatamente após atingir a criatura e causar qualquer dano. Qualquer arma não mágica sofre uma penalidade cumulativa de -1 nas rolagens de ataque imediatamente após causar dano à criatura e entrar em contato com ela. A arma é destruída se a penalidade chegar a -5. A penalidade pode ser removida lançando a magia Mending na arma.\nEm 1 minuto, a criatura pode corroer 0,6 m de madeira ou metal não mágico.</p>",
           "chat": ""
         },
         "activation": {
@@ -193,7 +193,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!G1vQ0C1f61Nevtrf.M1UWNuDQKusdYnT4"
+      "_key": "!actors.items!G1vQ0C1f61Nevtrf.QlPC4gYz5EkhgWtd"
     },
     {
       "_id": "zPqCr0yrX0yKGZLC",
@@ -229,13 +229,13 @@
       "_key": "!actors.items!G1vQ0C1f61Nevtrf.zPqCr0yrX0yKGZLC"
     },
     {
-      "_id": "HyJqA2wU9uSF357k",
-      "name": "Dissolving Pseudópode",
+      "_id": "UdB8yby6AXQKvJ2q",
+      "name": "Pseudópode Dissolvente",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 3 m. Acerto: 17 (4d6 + 3) dano de ácido. Nonmagical armor worn by o alvo sofre a -1 penalty to the AC it offers. The armor is destruída se the penalty reduces seu AC to 10. The penalty can be removed by casting the Mending spell on the armor.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 3 m. Acerto: 17 (4d6 + 3) de dano de ácido. A armadura não mágica usada pelo alvo sofre uma penalidade de -1 na CA que ela oferece. A armadura é destruída se a penalidade reduzir a CA dela para 10. A penalidade pode ser removida lançando a magia Mending na armadura.</p>",
           "chat": ""
         },
         "activation": {
@@ -253,8 +253,8 @@
           "subtype": ""
         },
         "activities": {
-          "K80cec8eGwoqnUEI": {
-            "_id": "K80cec8eGwoqnUEI",
+          "H1s7ns4VheVTM0V5": {
+            "_id": "H1s7ns4VheVTM0V5",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -307,16 +307,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!G1vQ0C1f61Nevtrf.HyJqA2wU9uSF357k"
+      "_key": "!actors.items!G1vQ0C1f61Nevtrf.UdB8yby6AXQKvJ2q"
     },
     {
-      "_id": "QAtm8DKTfEseUjQb",
-      "name": "Split",
+      "_id": "aZaMEmrFPxuUZhQF",
+      "name": "Divisão",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Enquanto a criatura is Large ou Medium e has 10+ Pontos de Vida, it torna-se Bloodied ou is subjected to Elétrico ou dano cortante. A criatura splits em two new Black Puddings. Each new pudding is one size smaller than the original pudding e acts on seu Iniciativa. The original pudding's Pontos de Vida are divided evenly between the new puddings (round down).</p>",
+          "value": "<p>Quando a criatura, sendo Grande ou Média e com 10+ Pontos de Vida, fica Ferida ou sofre dano elétrico ou cortante, ela se divide em dois novos Black Puddings. Cada novo pudding tem um tamanho menor que o original e age na própria Iniciativa. Os Pontos de Vida do pudding original são divididos igualmente entre os novos (arredondando para baixo).</p>",
           "chat": ""
         },
         "activation": {
@@ -341,7 +341,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!G1vQ0C1f61Nevtrf.QAtm8DKTfEseUjQb"
+      "_key": "!actors.items!G1vQ0C1f61Nevtrf.aZaMEmrFPxuUZhQF"
     }
   ],
   "flags": {

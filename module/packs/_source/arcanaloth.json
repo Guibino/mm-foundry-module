@@ -249,7 +249,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura makes three Fiendish Burst attacks. Ela pode substituir um ataque por um Banishing Garra attack.</p>",
+          "value": "<p>A criatura makes three Explosão Corruptora attacks. Ela pode substituir um ataque por um Banishing Garra attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -277,8 +277,8 @@
       "_key": "!actors.items!8NjTUrCceQYpztGn.KoA84LZAfJryluIK"
     },
     {
-      "_id": "nim9J21Jcn9lQab4",
-      "name": "Fiendish Burst",
+      "_id": "8YDG63dbCo4N1Ydl",
+      "name": "Explosão Corruptora",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -301,8 +301,8 @@
           "subtype": ""
         },
         "activities": {
-          "troAH27AU1ey7P7q": {
-            "_id": "troAH27AU1ey7P7q",
+          "dVVczJ7AL4gTqBB0": {
+            "_id": "dVVczJ7AL4gTqBB0",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -355,7 +355,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!8NjTUrCceQYpztGn.nim9J21Jcn9lQab4"
+      "_key": "!actors.items!8NjTUrCceQYpztGn.8YDG63dbCo4N1Ydl"
     },
     {
       "_id": "v413jE0HI0H2BXg1",
@@ -481,7 +481,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The arcanaloth casts one de the following spells, requiring no Material components e using Inteligência as the spellcasting ability (spell save CD 17):</p>",
+          "value": "<p>The arcanaloth casts one de the following spells, requiring no Material components e using Inteligência as the spellcasting ability (magia save CD 17):</p>",
           "chat": ""
         },
         "activation": {

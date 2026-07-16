@@ -225,7 +225,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura faz três ataques, usando Storm Blade ou Storm Bolt em qualquer combinação.</p>",
+          "value": "<p>A criatura faz três ataques, usando Lâmina de Tempestade ou Raio de Tempestade em qualquer combinação.</p>",
           "chat": ""
         },
         "activation": {
@@ -253,8 +253,8 @@
       "_key": "!actors.items!pEgNVPmtK2wH91uu.rDjHUWJpvT55sxVM"
     },
     {
-      "_id": "tBgCvvs48W3OuU7k",
-      "name": "Storm Blade",
+      "_id": "fYpOJpwV1rZSeAct",
+      "name": "Lâmina de Tempestade",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -277,8 +277,8 @@
           "subtype": ""
         },
         "activities": {
-          "loTZULg6e2dTzbOA": {
-            "_id": "loTZULg6e2dTzbOA",
+          "oSCfFkeLTAg79faz": {
+            "_id": "oSCfFkeLTAg79faz",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -331,11 +331,11 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!pEgNVPmtK2wH91uu.tBgCvvs48W3OuU7k"
+      "_key": "!actors.items!pEgNVPmtK2wH91uu.fYpOJpwV1rZSeAct"
     },
     {
-      "_id": "bC8pW0I6H7S82dwd",
-      "name": "Storm Bolt",
+      "_id": "AwCCoYoOdeAIjHwq",
+      "name": "Raio de Tempestade",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -358,8 +358,8 @@
           "subtype": ""
         },
         "activities": {
-          "lELX9UAXeihOg0b9": {
-            "_id": "lELX9UAXeihOg0b9",
+          "HlvfEQme1fJGqrsq": {
+            "_id": "HlvfEQme1fJGqrsq",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -412,7 +412,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!pEgNVPmtK2wH91uu.bC8pW0I6H7S82dwd"
+      "_key": "!actors.items!pEgNVPmtK2wH91uu.AwCCoYoOdeAIjHwq"
     },
     {
       "_id": "c73w2FugGkbE0lSu",
@@ -482,7 +482,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The djinni casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (spell save CD 17):</p>",
+          "value": "<p>The djinni casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (magia save CD 17):</p>",
           "chat": ""
         },
         "activation": {

@@ -134,7 +134,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura makes three Arcane Burst attacks.</p>",
+          "value": "<p>A criatura makes three Explosão Arcana attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -162,8 +162,8 @@
       "_key": "!actors.items!10jmoBVgRIomshN5.sjB2uv9Udj9wn19a"
     },
     {
-      "_id": "DVbv5fF1U7tGjlYJ",
-      "name": "Arcane Burst",
+      "_id": "BEMl8s0Hb7KPn79C",
+      "name": "Explosão Arcana",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -186,8 +186,8 @@
           "subtype": ""
         },
         "activities": {
-          "VgM9r2T1uX2qvaw0": {
-            "_id": "VgM9r2T1uX2qvaw0",
+          "jckCd3Xyn7CkX8DN": {
+            "_id": "jckCd3Xyn7CkX8DN",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -240,7 +240,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!10jmoBVgRIomshN5.DVbv5fF1U7tGjlYJ"
+      "_key": "!actors.items!10jmoBVgRIomshN5.BEMl8s0Hb7KPn79C"
     },
     {
       "_id": "NNYA1UMWmsQfuIo9",
@@ -249,7 +249,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mage casts one de the following spells, using Inteligência as the spellcasting ability (spell save CD 14):</p>",
+          "value": "<p>The mage casts one de the following spells, using Inteligência as the spellcasting ability (magia save CD 14):</p>",
           "chat": ""
         },
         "activation": {

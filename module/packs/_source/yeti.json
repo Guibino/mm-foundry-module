@@ -167,7 +167,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura can use seu Chilling Gaze e faz dois ataques, usando Garra ou Ice Throw em qualquer combinação.</p>",
+          "value": "<p>A criatura can use seu Olhar Congelante e faz dois ataques, usando Garra ou Arremesso de Gelo em qualquer combinação.</p>",
           "chat": ""
         },
         "activation": {
@@ -276,8 +276,8 @@
       "_key": "!actors.items!ts1SDSnPeFwrfbBW.DBvsF8jd7NsLbL0U"
     },
     {
-      "_id": "sSbnaSX6lUbJunTY",
-      "name": "Ice Throw",
+      "_id": "Lzoy7kGerIb6RsC8",
+      "name": "Arremesso de Gelo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -300,8 +300,8 @@
           "subtype": ""
         },
         "activities": {
-          "HZgrEfewhlwVFwOd": {
-            "_id": "HZgrEfewhlwVFwOd",
+          "QLQk7jHdXuqydfY0": {
+            "_id": "QLQk7jHdXuqydfY0",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -354,16 +354,16 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ts1SDSnPeFwrfbBW.sSbnaSX6lUbJunTY"
+      "_key": "!actors.items!ts1SDSnPeFwrfbBW.Lzoy7kGerIb6RsC8"
     },
     {
-      "_id": "erKlE1N4lHKRqnPV",
-      "name": "Chilling Gaze",
+      "_id": "yEFf6TwWd1XwMZ0S",
+      "name": "Olhar Congelante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 13, uma criatura a criatura pode ver a até 9 m. 5 (2d4) dano de frio, e o alvo fica com a condição Paralisado until the start de da criatura next turn unless o alvo fica com Imunidade a dano de frio. O alvo está immune to the Chilling Gaze de all yetis (but not abominable yetis) por 1 hora.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 13, uma criatura a criatura pode ver a até 9 m. 5 (2d4) dano de frio, e o alvo fica com a condição Paralisado until the start de da criatura next turn unless o alvo fica com Imunidade a dano de frio. O alvo está immune to the Olhar Congelante de all yetis (but not abominable yetis) por 1 hora.</p>",
           "chat": ""
         },
         "activation": {
@@ -381,8 +381,8 @@
           "subtype": ""
         },
         "activities": {
-          "mTCdvbuNB4jr9feF": {
-            "_id": "mTCdvbuNB4jr9feF",
+          "alLmbV5BELQzCeSv": {
+            "_id": "alLmbV5BELQzCeSv",
             "type": "save",
             "activation": {
               "type": "action",
@@ -415,7 +415,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ts1SDSnPeFwrfbBW.erKlE1N4lHKRqnPV"
+      "_key": "!actors.items!ts1SDSnPeFwrfbBW.yEFf6TwWd1XwMZ0S"
     }
   ],
   "flags": {

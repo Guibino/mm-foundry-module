@@ -138,7 +138,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura makes three Radiante Burst attacks.</p>",
+          "value": "<p>A criatura makes three Explosão Radiante attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -166,8 +166,8 @@
       "_key": "!actors.items!qMURuYn2mJbQkZrD.dpPeDEZqfyaDjkBC"
     },
     {
-      "_id": "UjgDMY8YdtHpW3yo",
-      "name": "Radiante Burst",
+      "_id": "7IcbzSewfcGBKdb9",
+      "name": "Explosão Radiante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -190,8 +190,8 @@
           "subtype": ""
         },
         "activities": {
-          "vMPr1RHZwIwjNPVK": {
-            "_id": "vMPr1RHZwIwjNPVK",
+          "GNPQGVKAav1HSePn": {
+            "_id": "GNPQGVKAav1HSePn",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -244,7 +244,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!qMURuYn2mJbQkZrD.UjgDMY8YdtHpW3yo"
+      "_key": "!actors.items!qMURuYn2mJbQkZrD.7IcbzSewfcGBKdb9"
     },
     {
       "_id": "QsBmiN7m09mKN9LO",
@@ -320,7 +320,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The archpriest casts one de the following spells, requiring no Material components e using Sabedoria as the spellcasting ability (spell save CD 17):</p>",
+          "value": "<p>The archpriest casts one de the following spells, requiring no Material components e using Sabedoria as the spellcasting ability (magia save CD 17):</p>",
           "chat": ""
         },
         "activation": {

@@ -134,7 +134,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura faz três ataques, usando Dread Scythe ou Deathly Ray em qualquer combinação.</p>",
+          "value": "<p>A criatura faz três ataques, usando Dread Scythe ou Raio Mortal em qualquer combinação.</p>",
           "chat": ""
         },
         "activation": {
@@ -243,8 +243,8 @@
       "_key": "!actors.items!ZvDuxoVQbaTnaY1O.EycGbbdLm11zITry"
     },
     {
-      "_id": "iald8PTPt1qu1dEU",
-      "name": "Deathly Ray",
+      "_id": "lQXBSp2gWcKgwXfg",
+      "name": "Raio Mortal",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -267,8 +267,8 @@
           "subtype": ""
         },
         "activities": {
-          "bLLUzuai7J24WxFI": {
-            "_id": "bLLUzuai7J24WxFI",
+          "WbpqTfSNRyDr0lsr": {
+            "_id": "WbpqTfSNRyDr0lsr",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -321,11 +321,11 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ZvDuxoVQbaTnaY1O.iald8PTPt1qu1dEU"
+      "_key": "!actors.items!ZvDuxoVQbaTnaY1O.lQXBSp2gWcKgwXfg"
     },
     {
-      "_id": "N3ogI4kWRprhDJof",
-      "name": "Spirit Wail (Recarga 5)",
+      "_id": "lXYi00MC4z8w1sNj",
+      "name": "Lamento Espiritual (Recarga 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -354,8 +354,8 @@
           "subtype": ""
         },
         "activities": {
-          "nhBsY0qVp6K3amRO": {
-            "_id": "nhBsY0qVp6K3amRO",
+          "d4OKjkIoy0amfBwz": {
+            "_id": "d4OKjkIoy0amfBwz",
             "type": "save",
             "activation": {
               "type": "bonus",
@@ -388,7 +388,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!ZvDuxoVQbaTnaY1O.N3ogI4kWRprhDJof"
+      "_key": "!actors.items!ZvDuxoVQbaTnaY1O.lXYi00MC4z8w1sNj"
     },
     {
       "_id": "N9195UgGqZYqiFlk",
@@ -397,7 +397,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cultist casts one de the following spells, using Sabedoria as the spellcasting ability (spell save CD 14):</p>",
+          "value": "<p>The cultist casts one de the following spells, using Sabedoria as the spellcasting ability (magia save CD 14):</p>",
           "chat": ""
         },
         "activation": {

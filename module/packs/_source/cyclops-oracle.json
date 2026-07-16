@@ -131,7 +131,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cyclops faz três ataques, usando Radiante Strike ou Flash de Light em qualquer combinação.</p>",
+          "value": "<p>The cyclops faz três ataques, usando Golpe Radiante ou Flash de Light em qualquer combinação.</p>",
           "chat": ""
         },
         "activation": {
@@ -159,8 +159,8 @@
       "_key": "!actors.items!OHZKzHZbTaCP7khT.UT1RIBVixSftrUJN"
     },
     {
-      "_id": "5l2b2mlcyLflqK7Z",
-      "name": "Radiante Strike",
+      "_id": "AV32xEx4cRuv6WkZ",
+      "name": "Golpe Radiante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -183,8 +183,8 @@
           "subtype": ""
         },
         "activities": {
-          "bBi2mzYW3kE5HXde": {
-            "_id": "bBi2mzYW3kE5HXde",
+          "fLmnPkgCasSY0N6i": {
+            "_id": "fLmnPkgCasSY0N6i",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -237,7 +237,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!OHZKzHZbTaCP7khT.5l2b2mlcyLflqK7Z"
+      "_key": "!actors.items!OHZKzHZbTaCP7khT.AV32xEx4cRuv6WkZ"
     },
     {
       "_id": "j8xrHuspq3G0LM1r",
@@ -327,7 +327,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cyclops ou an ally it pode ver makes a Teste de d20. The cyclops rolls 1d20 e chooses whether to use that roll em place de the d20 rolled for the Teste de d20.</p>",
+          "value": "<p>The cyclops ou um ally it pode ver makes a Teste de d20. The cyclops rolls 1d20 e chooses whether to use that roll em place de the d20 rolled for the Teste de d20.</p>",
           "chat": ""
         },
         "activation": {
@@ -367,7 +367,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The cyclops casts one de the following spells, requiring no Material components e using Sabedoria as the spellcasting ability (spell save CD 16):</p>",
+          "value": "<p>The cyclops casts one de the following spells, requiring no Material components e using Sabedoria as the spellcasting ability (magia save CD 16):</p>",
           "chat": ""
         },
         "activation": {

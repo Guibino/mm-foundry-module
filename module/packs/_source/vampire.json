@@ -161,13 +161,13 @@
       "_key": "!actors.items!kcgWR5bVxAQvd0Mc.eoN5IhyaSsw9MV0H"
     },
     {
-      "_id": "eDiw6Tn6JTNMwqMh",
-      "name": "Misty Escape",
+      "_id": "bMqZjbLN1n5dXJi2",
+      "name": "Fuga Enevoada",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Se a criatura cai para 0 Pontos de Vida fora de seu resting place, a criatura uses Mudar de Forma to become mist (no action required). Se ela pode't use Mudar de Forma, it is destruída.\nEnquanto ela tem 0 Pontos de Vida em mist form, ela pode't return to seu vampire form, e it deve alcance seu resting place a até 2 horas ou be destruída. Once em seu resting place, ela retorna to seu vampire form e fica com a condição Paralisado until ela recupera any Pontos de Vida, e ela recupera 1 Ponto de Vida after spending 1 hora there.</p>",
+          "value": "<p>Se a criatura cai para 0 Pontos de Vida fora de seu resting place, a criatura uses Mudar de Forma to become mist (no action required). Se ela pode't use Mudar de Forma, it is destruída.\nEnquanto ela tem 0 Pontos de Vida em mist form, ela pode't return to seu vampire form, e it deve alcance seu resting place a até 2 horas ou ser destruída. Once em seu resting place, ela retorna to seu vampire form e fica com a condição Paralisado until ela recupera qualquer Pontos de Vida, e ela recupera 1 Ponto de Vida após spending 1 hora there.</p>",
           "chat": ""
         },
         "activation": {
@@ -191,7 +191,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!kcgWR5bVxAQvd0Mc.eDiw6Tn6JTNMwqMh"
+      "_key": "!actors.items!kcgWR5bVxAQvd0Mc.bMqZjbLN1n5dXJi2"
     },
     {
       "_id": "JzvuptSg8EGLEzgg",
@@ -233,7 +233,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura has these weaknesses:\nA criatura can't enter a residence without an invitation de an occupant.\nA criatura takes 20 dano de ácido se it termina seu turno em running water.\nSe uma arma that deals dano perfurante is driven em da criatura heart enquanto a criatura fica com a condição Incapacitado em seu resting place, a criatura fica com a condição Paralisado until the weapon is removed.\nA criatura takes 20 dano radiante se it começa seu turno em sunlight. Enquanto em sunlight, it tem Desvantagem em rolagens de ataque e testes de habilidade.</p>",
+          "value": "<p>A criatura has these weaknesses:\nA criatura can't enter a residence without um invitation de um occupant.\nA criatura takes 20 dano de ácido se it termina seu turno em running water.\nSe uma arma that deals dano perfurante is driven em da criatura heart enquanto a criatura fica com a condição Incapacitado em seu resting place, a criatura fica com a condição Paralisado until a arma is removed.\nA criatura takes 20 dano radiante se it começa seu turno em sunlight. Enquanto em sunlight, it tem Desvantagem em rolagens de ataque e testes de habilidade.</p>",
           "chat": ""
         },
         "activation": {
@@ -266,7 +266,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura makes two Grave Strike attacks e uses Mordida.</p>",
+          "value": "<p>A criatura makes two Golpe Sepulcral attacks e uses Mordida.</p>",
           "chat": ""
         },
         "activation": {
@@ -294,8 +294,8 @@
       "_key": "!actors.items!kcgWR5bVxAQvd0Mc.1qWYDzzNz1J8d4Jq"
     },
     {
-      "_id": "OxIIw0DERDoUOpQu",
-      "name": "Grave Strike",
+      "_id": "d3rHfCw1f7crQlgZ",
+      "name": "Golpe Sepulcral",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -318,8 +318,8 @@
           "subtype": ""
         },
         "activities": {
-          "shAEuQtFBqPYTlfx": {
-            "_id": "shAEuQtFBqPYTlfx",
+          "TUhCRGe9PPVy3vdH": {
+            "_id": "TUhCRGe9PPVy3vdH",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -372,7 +372,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!kcgWR5bVxAQvd0Mc.OxIIw0DERDoUOpQu"
+      "_key": "!actors.items!kcgWR5bVxAQvd0Mc.d3rHfCw1f7crQlgZ"
     },
     {
       "_id": "prR291j0Nf16KYZN",
@@ -381,7 +381,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 17, uma criatura a até 1,5 m that is willing ou that has the Agarrado, Incapacitado, ou Impedido condição. 6 (1d4 + 4) dano perfurante mais 13 (3d8) dano necrótico. O alvo's Ponto de Vida maximum decreases by an amount equal to the dano necrótico taken, e a criatura recupera Pontos de Vida equal to that amount. A Humanoide reduced to 0 Pontos de Vida by this de dano e then buried rises the following sunset as a Vampire Spawn under da criatura control.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 17, uma criatura a até 1,5 m that is willing ou that has the Agarrado, Incapacitado, ou Impedido condição. 6 (1d4 + 4) dano perfurante mais 13 (3d8) dano necrótico. O alvo's Ponto de Vida maximum decreases by um amount equal to the dano necrótico taken, e a criatura recupera Pontos de Vida equal to that amount. A Humanoide reduced to 0 Pontos de Vida by this de dano e then buried rises the following sunset as a Vampire Spawn under da criatura control.</p>",
           "chat": ""
         },
         "activation": {
@@ -442,7 +442,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Se a criatura isn't em sunlight ou running water, it shape-shifts em a Tiny bat (Speed 1,5 m., Deslocamento de Voo 9 m.) ou a Medium cloud de mist (Speed 1,5 m., Deslocamento de Voo 6 m. [hover]), ou ela retorna to seu vampire form. Anything it is wearing transforms com it.\nEnquanto em bat form, a criatura can't speak. Its atributos de jogo, other than seu size e Speed, are unchanged.\nEnquanto em mist form, a criatura can't take any actions, speak, ou manipulate objects. It is weightless e can enter an enemy's space e stop there. Se air can pass através de a space, the mist can do so, but ela pode't pass através de liquid. Ela tem Resistência a all de dano, except the de dano ela sofre de sunlight.</p>",
+          "value": "<p>Se a criatura isn't em sunlight ou running water, it shape-shifts em a Tiny bat (Speed 1,5 m., Deslocamento de Voo 9 m.) ou a Medium cloud de mist (Speed 1,5 m., Deslocamento de Voo 6 m. [hover]), ou ela retorna to seu vampire form. Anything it is wearing transforms com it.\nEnquanto em bat form, a criatura can't speak. Its atributos de jogo, other than seu size e Speed, are unchanged.\nEnquanto em mist form, a criatura can't take qualquer actions, speak, ou manipulate objects. It is weightless e can enter um enemy's space e stop there. Se air can pass através de a space, the mist can do so, but ela pode't pass através de liquid. Ela tem Resistência a all de dano, except the de dano ela sofre de sunlight.</p>",
           "chat": ""
         },
         "activation": {
@@ -470,13 +470,13 @@
       "_key": "!actors.items!kcgWR5bVxAQvd0Mc.EKvEYQhsj1bc5lzZ"
     },
     {
-      "_id": "L5RiN3fZLiyh3g5p",
-      "name": "Deathless Strike",
+      "_id": "GbHuDHhKHEZJhRgv",
+      "name": "Golpe Imortal",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura se move até metade do seu Deslocamento, e ela faz one Grave Strike attack.</p>",
+          "value": "<p>A criatura se move até metade do seu Deslocamento, e ela faz one Golpe Sepulcral attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -501,7 +501,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!kcgWR5bVxAQvd0Mc.L5RiN3fZLiyh3g5p"
+      "_key": "!actors.items!kcgWR5bVxAQvd0Mc.GbHuDHhKHEZJhRgv"
     },
     {
       "_id": "Vc5GbaTHepRvTArO",
@@ -510,7 +510,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The vampire casts Charm Person, requiring no spell components e using Carisma as the spellcasting ability (spell save CD 17), e the duration is 24 horas. The Enfeitiçado target is a willing recipient de the vampire's Mordida, the de dano de which doesn't end the spell. When the spell ends, o alvo is unaware it was Enfeitiçado by the vampire.</p>",
+          "value": "<p>The vampire casts Charm Person, requiring no magia components e using Carisma as the spellcasting ability (magia save CD 17), e the duration is 24 horas. The Enfeitiçado target is a willing recipient de the vampire's Mordida, the de dano de which doesn't end the magia. When the magia ends, o alvo is unaware it was Enfeitiçado by the vampire.</p>",
           "chat": ""
         },
         "activation": {

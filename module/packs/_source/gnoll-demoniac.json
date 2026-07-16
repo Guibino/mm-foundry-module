@@ -127,7 +127,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The gnoll makes two Abissal Strike attacks.</p>",
+          "value": "<p>The gnoll makes two Golpe Abissal attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -155,8 +155,8 @@
       "_key": "!actors.items!h3atAdmQPjpJhGT6.nPxH63xcFVz6fIf1"
     },
     {
-      "_id": "l8d73uFFIj8RhEmd",
-      "name": "Abissal Strike",
+      "_id": "9NizE4nVSREMLoZn",
+      "name": "Golpe Abissal",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -179,8 +179,8 @@
           "subtype": ""
         },
         "activities": {
-          "BrfBKBto0kOGgTOG": {
-            "_id": "BrfBKBto0kOGgTOG",
+          "UKrf0MVVhuOQXzfX": {
+            "_id": "UKrf0MVVhuOQXzfX",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -233,7 +233,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!h3atAdmQPjpJhGT6.l8d73uFFIj8RhEmd"
+      "_key": "!actors.items!h3atAdmQPjpJhGT6.9NizE4nVSREMLoZn"
     },
     {
       "_id": "B4FCmXqaIuNeklqW",
@@ -309,7 +309,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Immediately after dealing de dano to uma criatura that is already Bloodied, the gnoll se move até metade do seu Deslocamento, e ela faz one Abissal Strike attack.</p>",
+          "value": "<p>Immediately após causar dano to uma criatura that is already Bloodied, the gnoll se move até metade do seu Deslocamento, e ela faz one Golpe Abissal attack.</p>",
           "chat": ""
         },
         "activation": {

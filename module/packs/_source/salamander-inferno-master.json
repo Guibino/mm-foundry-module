@@ -227,7 +227,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +12, alcance 1,5 m. ou distância 9/27 m. Acerto: 16 (2d8 + 7) dano perfurante mais 14 (4d6) dano de fogo. The trident magically retorna to the salamander's hand immediately after a ranged attack.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +12, alcance 1,5 m. ou distância 9/27 m. Acerto: 16 (2d8 + 7) dano perfurante mais 14 (4d6) dano de fogo. The trident magically retorna to the salamander's hand immediately após a ranged attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -302,8 +302,8 @@
       "_key": "!actors.items!VPbUJmUZgeTuWXlr.HtdIsE625VoThO1d"
     },
     {
-      "_id": "PbQbpHgegEI8fZeJ",
-      "name": "Inferno Blast (Recarga 5)",
+      "_id": "gfyQhnzrEY0NzAtW",
+      "name": "Rajada Infernal (Recarga 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -332,8 +332,8 @@
           "subtype": ""
         },
         "activities": {
-          "SEAOIDgFnaciq2mW": {
-            "_id": "SEAOIDgFnaciq2mW",
+          "vmrYPpdTSCQfLe93": {
+            "_id": "vmrYPpdTSCQfLe93",
             "type": "save",
             "activation": {
               "type": "action",
@@ -366,11 +366,11 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VPbUJmUZgeTuWXlr.PbQbpHgegEI8fZeJ"
+      "_key": "!actors.items!VPbUJmUZgeTuWXlr.gfyQhnzrEY0NzAtW"
     },
     {
-      "_id": "Hc7zf1mz7BlKvwT5",
-      "name": "Blazing Movement",
+      "_id": "AYqpooXcAKY8Q0g5",
+      "name": "Movimento Flamejante",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -400,7 +400,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!VPbUJmUZgeTuWXlr.Hc7zf1mz7BlKvwT5"
+      "_key": "!actors.items!VPbUJmUZgeTuWXlr.AYqpooXcAKY8Q0g5"
     }
   ],
   "flags": {

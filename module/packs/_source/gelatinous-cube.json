@@ -131,7 +131,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura fills seu entire space e is transparent. Other criaturas can enter that space, but uma criatura that does so is subjected to da criatura Engulf e tem Desvantagem em the saving throw.\nCriaturas inside a criatura have Total Cover, e a criatura can hold one Large creature ou up to four Medium ou Small criaturas inside itself at a time.\nAs an action, uma criatura a até 1,5 m de a criatura can pull uma criatura ou an object out de a criatura by succeeding on a CD 12 Força (Athletics) check, e the puller takes 10 (3d6) dano de ácido.</p>",
+          "value": "<p>A criatura fills seu entire space e is transparent. Other criaturas can enter that space, but uma criatura that does so is subjected to da criatura Engolfar e tem Desvantagem em the saving throw.\nCriaturas inside a criatura have Total Cover, e a criatura can hold one Large creature ou up to four Medium ou Small criaturas inside itself at a time.\nAs um action, uma criatura a até 1,5 m de a criatura can pull uma criatura ou um object out de a criatura by succeeding on a CD 12 Força (Athletics) check, e the puller takes 10 (3d6) dano de ácido.</p>",
           "chat": ""
         },
         "activation": {
@@ -278,13 +278,13 @@
       "_key": "!actors.items!5pQyfOUojs3OnZA0.i8P6luLwhZ5fS3ER"
     },
     {
-      "_id": "n7PA3IqGBt8rBX3w",
-      "name": "Engulf",
+      "_id": "nD3eN50BLhbUoP0Z",
+      "name": "Engolfar",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura se move até seu Deslocamento without provoking Ataques de Oportunidade. A criatura can atravessar the spaces de Large ou menor criaturas se ela tem room inside itself to contain them (see the Ooze Cubo trait). Teste de Resistência de Destreza: CD 12, cada criatura whose space a criatura enters for the first time during this move. 10 (3d6) dano de ácido, e o alvo is engulfed. An engulfed target is suffocating, can't cast spells com a Verbal component, fica com a condição Impedido, e takes 10 (3d6) dano de ácido no emício de each de da criatura turns. When a criatura se move, the engulfed target se move com it. An engulfed target can try to escape by taking an action to make a CD 12 Força (Athletics) check. On a successful check, o alvo escapes e enters the nearest espaço desocupado. Metade do dano, e o alvo se move to an espaço desocupado a até 1,5 m de a criatura. Se there is no espaço desocupado, o alvo fails the save instead.</p>",
+          "value": "<p>A criatura se move até seu Deslocamento without provoking Ataques de Oportunidade. A criatura can atravessar the spaces de Large ou menor criaturas se ela tem room inside itself to contain them (see the Ooze Cubo trait). Teste de Resistência de Destreza: CD 12, cada criatura whose space a criatura enters for the first time during this move. 10 (3d6) dano de ácido, e o alvo is engulfed. An engulfed target is suffocating, can't cast spells com a Verbal component, fica com a condição Impedido, e takes 10 (3d6) dano de ácido no emício de each de da criatura turns. When a criatura se move, the engulfed target se move com it. An engulfed target can try to escape by taking um action to make a CD 12 Força (Athletics) check. On a successful check, o alvo escapes e enters the nearest espaço desocupado. Metade do dano, e o alvo se move to um espaço desocupado a até 1,5 m de a criatura. Se there is no espaço desocupado, o alvo fails the save instead.</p>",
           "chat": ""
         },
         "activation": {
@@ -302,8 +302,8 @@
           "subtype": ""
         },
         "activities": {
-          "WrseSraUvcw8xjQi": {
-            "_id": "WrseSraUvcw8xjQi",
+          "JbymaKZgkPcgLaLN": {
+            "_id": "JbymaKZgkPcgLaLN",
             "type": "save",
             "activation": {
               "type": "action",
@@ -336,7 +336,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!5pQyfOUojs3OnZA0.n7PA3IqGBt8rBX3w"
+      "_key": "!actors.items!5pQyfOUojs3OnZA0.nD3eN50BLhbUoP0Z"
     }
   ],
   "flags": {

@@ -135,7 +135,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura faz dois ataques de Garra. Ela pode substituir um ataque por um uso de Corrupting Touch.</p>",
+          "value": "<p>A criatura faz dois ataques de Garra. Ela pode substituir um ataque por um uso de Toque Corruptor.</p>",
           "chat": ""
         },
         "activation": {
@@ -244,8 +244,8 @@
       "_key": "!actors.items!WD3Z72HDREwCMYfv.XQI7R0RXEdQiQt11"
     },
     {
-      "_id": "XzVPw6nkGP5wk8eI",
-      "name": "Corrupting Touch",
+      "_id": "M9aBjByWje9Xcuqh",
+      "name": "Toque Corruptor",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -268,8 +268,8 @@
           "subtype": ""
         },
         "activities": {
-          "IrPhXSpk58MWLx2f": {
-            "_id": "IrPhXSpk58MWLx2f",
+          "zfizEJebOjp25zQr": {
+            "_id": "zfizEJebOjp25zQr",
             "type": "save",
             "activation": {
               "type": "action",
@@ -302,7 +302,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!WD3Z72HDREwCMYfv.XzVPw6nkGP5wk8eI"
+      "_key": "!actors.items!WD3Z72HDREwCMYfv.M9aBjByWje9Xcuqh"
     },
     {
       "_id": "IKsbhfe8fvplyU6E",
@@ -345,7 +345,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The lamia casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (spell save CD 13):</p>",
+          "value": "<p>The lamia casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (magia save CD 13):</p>",
           "chat": ""
         },
         "activation": {

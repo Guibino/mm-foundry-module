@@ -157,7 +157,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The modron makes two Clockwork Blade attacks.</p>",
+          "value": "<p>The modron makes two Lâmina Mecânica attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -185,13 +185,13 @@
       "_key": "!actors.items!WHBoh5MXk90DAppa.LSZOj1rC5LxyT0Nm"
     },
     {
-      "_id": "mrnML9f8RllQoJJ0",
-      "name": "Clockwork Blade",
+      "_id": "zrbfYcrbWIKWOPBT",
+      "name": "Lâmina Mecânica",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +3, alcance 1,5 m. ou distância 9 m. Acerto: 4 (1d6 + 1) dano de energia. The blade magically retorna to the modron's hand immediately after a ranged attack.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +3, alcance 1,5 m. ou distância 9 m. Acerto: 4 (1d6 + 1) dano de energia. The blade magically retorna to the modron's hand immediately após a ranged attack.</p>",
           "chat": ""
         },
         "activation": {
@@ -209,8 +209,8 @@
           "subtype": ""
         },
         "activities": {
-          "phsx6QB1P9wD4bW4": {
-            "_id": "phsx6QB1P9wD4bW4",
+          "jGcfX7AHnm5qnF9U": {
+            "_id": "jGcfX7AHnm5qnF9U",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -263,7 +263,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!WHBoh5MXk90DAppa.mrnML9f8RllQoJJ0"
+      "_key": "!actors.items!WHBoh5MXk90DAppa.zrbfYcrbWIKWOPBT"
     }
   ],
   "flags": {

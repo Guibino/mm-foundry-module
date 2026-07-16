@@ -132,7 +132,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura faz dois ataques, usando Flame Sword ou Hammer Throw em qualquer combinação.</p>",
+          "value": "<p>A criatura faz dois ataques, usando Flame Sword ou Arremesso de Martelo em qualquer combinação.</p>",
           "chat": ""
         },
         "activation": {
@@ -241,8 +241,8 @@
       "_key": "!actors.items!kPixAgshtifJgB4G.jTiu3loVbkcdxSb1"
     },
     {
-      "_id": "hnf8zdgLvwdT4xan",
-      "name": "Hammer Throw",
+      "_id": "bCz9hKFEVXar8KpU",
+      "name": "Arremesso de Martelo",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -265,8 +265,8 @@
           "subtype": ""
         },
         "activities": {
-          "PkCxVS8tv6RrlrwC": {
-            "_id": "PkCxVS8tv6RrlrwC",
+          "uA9cmCAjbAfOelF9": {
+            "_id": "uA9cmCAjbAfOelF9",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -319,7 +319,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!kPixAgshtifJgB4G.hnf8zdgLvwdT4xan"
+      "_key": "!actors.items!kPixAgshtifJgB4G.bCz9hKFEVXar8KpU"
     }
   ],
   "flags": {

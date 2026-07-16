@@ -174,7 +174,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Se a criatura is destruída, it reforms e recupera all seu Pontos de Vida em 1d10 dias unless a Wish spell is cast on seu remains.</p>",
+          "value": "<p>Se a criatura is destruída, it reforms e recupera all seu Pontos de Vida em 1d10 dias unless a Wish magia is cast on seu remains.</p>",
           "chat": ""
         },
         "activation": {
@@ -207,7 +207,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura makes three Necrótico Burst attacks.</p>",
+          "value": "<p>A criatura makes three Explosão Necrótica attacks.</p>",
           "chat": ""
         },
         "activation": {
@@ -235,8 +235,8 @@
       "_key": "!actors.items!9lhnbO822mWeDW2l.uBCx9mnFhpMEyyBU"
     },
     {
-      "_id": "h5VS76hT8zTc98oF",
-      "name": "Necrótico Burst",
+      "_id": "w8dEc0qGzRIRRq1H",
+      "name": "Explosão Necrótica",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -259,8 +259,8 @@
           "subtype": ""
         },
         "activities": {
-          "BHUXm8qRmPUr6tdV": {
-            "_id": "BHUXm8qRmPUr6tdV",
+          "5uLEbp5HjHcIvJGk": {
+            "_id": "5uLEbp5HjHcIvJGk",
             "type": "attack",
             "activation": {
               "type": "action",
@@ -313,11 +313,11 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9lhnbO822mWeDW2l.h5VS76hT8zTc98oF"
+      "_key": "!actors.items!9lhnbO822mWeDW2l.w8dEc0qGzRIRRq1H"
     },
     {
-      "_id": "3e1vqO4Bpo2Yy28g",
-      "name": "Howl (Recarga 5)",
+      "_id": "6QVjtXSnPLYq4ooN",
+      "name": "Uivo (Recarga 5)",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -346,8 +346,8 @@
           "subtype": ""
         },
         "activities": {
-          "scyJC1fNIQ60a5Nk": {
-            "_id": "scyJC1fNIQ60a5Nk",
+          "tni4yHruVYpPQWgt": {
+            "_id": "tni4yHruVYpPQWgt",
             "type": "save",
             "activation": {
               "type": "action",
@@ -380,11 +380,11 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9lhnbO822mWeDW2l.3e1vqO4Bpo2Yy28g"
+      "_key": "!actors.items!9lhnbO822mWeDW2l.6QVjtXSnPLYq4ooN"
     },
     {
-      "_id": "s5KlQNgkyGLdNOEF",
-      "name": "Energy Drain",
+      "_id": "ch3azA0S2RDh5Aii",
+      "name": "Dreno de Energia",
       "type": "feat",
       "img": "icons/svg/aura.svg",
       "system": {
@@ -407,8 +407,8 @@
           "subtype": ""
         },
         "activities": {
-          "hOgfJoipzE50WxjA": {
-            "_id": "hOgfJoipzE50WxjA",
+          "rpw0qLwjXW0b8Oia": {
+            "_id": "rpw0qLwjXW0b8Oia",
             "type": "save",
             "activation": {
               "type": "legendary",
@@ -441,7 +441,7 @@
           "source": "MM2024"
         }
       },
-      "_key": "!actors.items!9lhnbO822mWeDW2l.s5KlQNgkyGLdNOEF"
+      "_key": "!actors.items!9lhnbO822mWeDW2l.ch3azA0S2RDh5Aii"
     },
     {
       "_id": "Q1tIGu4S53pacoby",
@@ -511,7 +511,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura makes one Necrótico Burst attack.</p>",
+          "value": "<p>A criatura makes one Explosão Necrótica attack.</p>",
           "chat": ""
         },
         "activation": {
