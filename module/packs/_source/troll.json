@@ -165,7 +165,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura recupera 15 Pontos de Vida no emício de cada turno dele. Se a criatura takes Ácido ou dano de fogo, este traço doesn't function on da criatura next turn. A criatura morre only se it começa seu turno com 0 Pontos de Vida e doesn't regenerate.</p>",
+          "value": "<p>A criatura recupera 15 Pontos de Vida no início de cada turno dele. Se a criatura takes Ácido ou dano de fogo, este traço doesn't function on da criatura next turn. A criatura morre only se it começa seu turno com 0 Pontos de Vida e doesn't regenerate.</p>",
           "chat": ""
         },
         "activation": {
@@ -232,7 +232,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 3 m. Acerto: 11 (2d6 + 4) dano cortante.</p>",
+          "value": "<p>Ataque Corpo a Corpo: +7, alcance 3 m. 11 (2d6 + 4) de dano cortante.</p>",
           "chat": ""
         },
         "activation": {

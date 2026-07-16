@@ -207,7 +207,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +15, alcance 4,5 m. Acerto: 19 (2d10 + 8) dano cortante mais 9 (2d8) dano de ácido.</p>",
+          "value": "<p>Ataque Corpo a Corpo: +15, alcance 4,5 m. 19 (2d10 + 8) de dano cortante mais 9 (2d8) de dano ácido.</p>",
           "chat": ""
         },
         "activation": {
@@ -288,7 +288,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Destreza: CD 22, cada criatura em um 27 m-long, 3 m-wide Linha. 63 (14d8) dano de ácido. Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 22, cada criatura em uma Linha de 27 m de comprimento e 3 m de largura. Falha: 63 (14d8) de dano ácido. Sucesso: Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -355,7 +355,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 22, cada criatura em uma 27 m Cone. O alvo não pode usar Reações; seu Deslocamento é reduzido à metade; e ela pode take uma ação ou uma Ação Bônus no seu turno, não ambos. Este efeito dura até o fim do próximo turno dele.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 22, cada criatura em um Cone de 27 m. Falha: O alvo não pode realizar Reações; seu Deslocamento é reduzido à metade; e ele pode realizar apenas uma ação ou uma Ação Bônus em seu turno, não ambas. Esse efeito dura até o fim de seu próximo turno.</p>",
           "chat": ""
         },
         "activation": {
@@ -416,7 +416,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Carisma: CD 21, uma criatura a criatura pode ver a até 36 m. 31 (9d6) dano psíquico. Until o fim do próximo turno dele, o alvo rola 1d8 sempre que fizer um teste de habilidade ou rolagem de ataque e subtrai o número rolado do Teste de d20. A criatura não pode realizar esta ação novamente até o emício do próximo turno dele.</p>",
+          "value": "<p>Teste de Resistência de Carisma: CD 21, uma criatura que o dragão possa ver a até 36 m. Falha: 31 (9d6) de dano psíquico. Até o fim de seu próximo turno, o alvo rola 1d8 sempre que fizer um teste de habilidade ou uma rolagem de ataque e subtrai o número rolado do Teste de D20. Falha ou Sucesso: O dragão não pode realizar esta ação novamente até o início de seu próximo turno.</p>",
           "chat": ""
         },
         "activation": {
@@ -477,7 +477,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura usa Conjuração para lançar Mind Spike (nível 5 versão). A criatura não pode realizar esta ação novamente até o emício do próximo turno dele.</p>",
+          "value": "<p>A criatura usa Conjuração para lançar Mind Spike (nível 5 versão). A criatura não pode realizar esta ação novamente até o início do próximo turno dele.</p>",
           "chat": ""
         },
         "activation": {

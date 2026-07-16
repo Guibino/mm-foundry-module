@@ -198,7 +198,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 5 (1d6 + 2) dano perfurante. Se o alvo for uma criatura Média ou menor, ele fica com a condição Agarrado (CD para escapar 11).</p>",
+          "value": "<p>Ataque Corpo a Corpo com Arma: +3 para acertar, alcance 1,5 m., um alvo. Acerto: 4 (1d6 + 1) de dano perfurante, e o alvo fica agarrado (DC 11 para escapar). Até que esse agarrão termine, o alvo está impedido, e o sapo não pode morder outro alvo.</p>",
           "chat": ""
         },
         "activation": {
@@ -279,7 +279,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura swallows a Small ou menor target it is grappling. Enquanto swallowed, o alvo isn't Agarrado but has the Cego e Impedido conditions, e ela tem Total Cover contra attacks e other effects fora de a criatura. Enquanto swallowing o alvo, a criatura can't use Mordida, e se a criatura morre, the swallowed target is no longer Impedido e can escape de the corpse using 1,5 m de movimento, exiting com a condição Caído.\nAt the end de da criatura next turn, the swallowed target takes 5 (2d4) dano de ácido. Se that de dano doesn't kill it, a criatura disgorges it, causing it to exit Caído.</p>",
+          "value": "<p>O sapo faz um ataque de mordida contra um alvo Pequeno ou menor que esteja agarrando. Se o ataque acertar, o alvo é engolido e o agarrão termina. O alvo engolido está cego e impedido, tem cobertura total contra ataques e outros efeitos de fora do sapo, e sofre 5 (2d4) de dano ácido no início de cada turno do sapo. O sapo pode ter apenas um alvo engolido por vez. Se o sapo morrer, uma criatura engolida não está mais impedida por ele e pode escapar do corpo usando 1,5 m. de movimento, saindo derrubada.</p>",
           "chat": ""
         },
         "activation": {

@@ -211,7 +211,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 4,5 m. Acerto: 19 (2d10 + 8) dano cortante mais 7 (2d6) dano de fogo.</p>",
+          "value": "<p>Ataque Corpo a Corpo: +14, alcance 4,5 m. 19 (2d10 + 8) de dano cortante mais 7 (2d6) de dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -292,7 +292,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Destreza: CD 21, cada criatura em uma 27 m-long, 1,5 m-wide Linha. 58 (13d8) dano de fogo. Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 21, cada criatura em uma Linha de 27 m de comprimento e 1,5 m de largura. Falha: 58 (13d8) de dano de fogo. Sucesso: Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -359,7 +359,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 21, cada criatura em uma 27 m Cone. O alvo fica com a condição Incapacitado até o fim do próximo turno dele, quando então repete o teste. Falha: O alvo fica com a condição Inconsciente por 10 minutos. Este efeito termina para o alvo se ele sofrer dano ou uma criatura a até 1,5 m de ela sofre uma ação para acordá-la.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 21, cada criatura em um Cone de 27 m. Falha: O alvo fica com a condição Incapacitado até o fim de seu próximo turno, quando repete o teste. Segunda Falha: O alvo fica com a condição Inconsciente por 10 minutos. Esse efeito termina para o alvo se ele sofrer dano ou se uma criatura a até 1,5 m dele realizar uma ação para acordá-lo.</p>",
           "chat": ""
         },
         "activation": {
@@ -488,7 +488,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Destreza: CD 20, uma criatura a criatura pode ver a até 36 m. 36 (8d8) dano de fogo, e o Deslocamento do alvo é reduzido à metade até o fim do próximo turno dele. A criatura não pode realizar esta ação novamente até o emício do próximo turno dele.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 20, uma criatura que o dragão possa ver a até 36 m. Falha: 36 (8d8) de dano de fogo, e o Deslocamento do alvo é reduzido à metade até o fim de seu próximo turno. Falha ou Sucesso: O dragão não pode realizar esta ação novamente até o início de seu próximo turno.</p>",
           "chat": ""
         },
         "activation": {

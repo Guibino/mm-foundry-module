@@ -172,7 +172,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura emanates um aura em a 6 m Emanação enquanto it doesn't have a condição Incapacitado. Teste de Resistência de Sabedoria: CD 21, qualquer enemy that começa seu turno em the aura. O alvo fica com a condição Amedrontado até o emício do próximo turno dele. O alvo é imune a este pit fiend's aura por 24 horas.</p>",
+          "value": "<p>Qualquer criatura hostil ao diabo do fosso que iniciar seu turno a até 6 m dele deve fazer um teste de resistência de Sabedoria DC 21, a menos que o diabo do fosso esteja incapacitado. Em uma falha, a criatura fica amedrontada até o início de seu próximo turno. Se o teste de resistência da criatura for bem-sucedido, ela fica imune à Aura de Medo do diabo do fosso pelas próximas 24 horas.</p>",
           "chat": ""
         },
         "activation": {
@@ -313,7 +313,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 3 m. Acerto: 18 (3d6 + 8) dano perfurante. Se o alvo is uma criatura, it deve make the following saving throw. Teste de Resistência de Constituição: CD 21. O alvo fica com a condição Envenenado. Enquanto Envenenado, o alvo não pode recuperar Pontos de Vida e takes 21 (6d6) dano de veneno no emício de cada turno dele, e repete o teste no fim de cada turno dele, encerrando o efeito em si mesma se passar. Após 1 minuto, passa automaticamente.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 3 m. Acerto: 18 (3d6 + 8) dano perfurante. Se o alvo is uma criatura, it deve make the following saving throw. Teste de Resistência de Constituição: CD 21. O alvo fica com a condição Envenenado. Enquanto Envenenado, o alvo não pode recuperar Pontos de Vida e takes 21 (6d6) dano de veneno no início de cada turno dele, e repete o teste no fim de cada turno dele, encerrando o efeito em si mesma se passar. Após 1 minuto, passa automaticamente.</p>",
           "chat": ""
         },
         "activation": {
@@ -396,7 +396,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 3 m. Acerto: 26 (4d8 + 8) dano necrótico.</p>",
+          "value": "<p>Ataque Corpo a Corpo: +14, alcance 3 m. 26 (4d8 + 8) de dano necrótico.</p>",
           "chat": ""
         },
         "activation": {
@@ -477,7 +477,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 3 m. Acerto: 22 (4d6 + 8) dano de energia mais 21 (6d6) dano de fogo.</p>",
+          "value": "<p>Ataque Corpo a Corpo: +14, alcance 3 m. 22 (4d6 + 8) de dano de força mais 21 (6d6) de dano de fogo.</p>",
           "chat": ""
         },
         "activation": {

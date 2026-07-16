@@ -246,7 +246,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +11, alcance 3 m. Acerto: 15 (2d8 + 6) dano cortante mais 7 (2d6) dano de veneno.</p>",
+          "value": "<p>Ataque Corpo a Corpo: +11, alcance 3 m. 15 (2d8 + 6) de dano cortante mais 7 (2d6) de dano de veneno.</p>",
           "chat": ""
         },
         "activation": {
@@ -327,7 +327,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 18, cada criatura em uma 18 m Cone. 56 (16d6) dano de veneno. Metade do dano.</p>",
+          "value": "<p>O dragão expele gás venenoso em um cone de 18 m. Cada criatura na área deve realizar um teste de resistência de Constituição CD 18, sofrendo 56 (16d6) de dano de veneno em caso de falha, ou metade desse dano em caso de sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -428,7 +428,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 17, cada criatura em uma 6 m-raio Esfera centrada em um ponto a criatura pode ver a até 27 m. 7 (2d6) dano de veneno, e o alvo sofre uma penalidade de -2 na CA até o fim do próximo turno dele. A criatura não pode realizar esta ação novamente até o emício do próximo turno dele.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 17, cada criatura em uma Esfera de raio de 6 m centrada em um ponto que o dragão possa ver a até 27 m. Falha: 7 (2d6) de dano de veneno, e o alvo recebe uma penalidade de -2 na CA até o fim de seu próximo turno. Falha ou Sucesso: O dragão não pode realizar esta ação novamente até o início de seu próximo turno.</p>",
           "chat": ""
         },
         "activation": {

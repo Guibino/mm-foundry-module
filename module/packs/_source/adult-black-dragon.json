@@ -236,7 +236,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +11, alcance 3 m. Acerto: 13 (2d6 + 6) dano cortante mais 4 (1d8) dano de ácido.</p>",
+          "value": "<p>Ataque Corpo a Corpo: +11, alcance 3 m. 13 (2d6 + 6) de dano cortante mais 4 (1d8) de dano de ácido.</p>",
           "chat": ""
         },
         "activation": {
@@ -317,7 +317,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Destreza: CD 18, cada criatura em uma 18 m-long, 1,5 m-wide Linha. 54 (12d8) dano de ácido. Metade do dano.</p>",
+          "value": "<p>O dragão expele ácido em uma linha de 18 m. com 1,5 m. de largura. Cada criatura nessa linha deve realizar um teste de resistência de Destreza DC 18, sofrendo 54 (12d8) de dano ácido em uma falha, ou metade desse dano em um sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -384,7 +384,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Destreza: CD 17, uma criatura a criatura pode ver a até 36 m. 22 (4d10) dano de veneno, e o alvo tem Desvantagem em testes de resistência para manter a Concentração até o fim do próximo turno dele. A criatura não pode realizar esta ação novamente até o emício do próximo turno dele.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 17, uma criatura que o dragão possa ver a até 36 m. Falha: 22 (4d10) de dano de veneno, e o alvo fica com Desvantagem em testes de resistência para manter Concentração até o final do seu próximo turno. Falha ou Sucesso: O dragão não pode usar esta ação novamente até o início do seu próximo turno.</p>",
           "chat": ""
         },
         "activation": {
@@ -445,7 +445,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura usa Conjuração para lançar Fear. A criatura não pode realizar esta ação novamente até o emício do próximo turno dele.</p>",
+          "value": "<p>A criatura usa Conjuração para lançar Fear. A criatura não pode realizar esta ação novamente até o início do próximo turno dele.</p>",
           "chat": ""
         },
         "activation": {

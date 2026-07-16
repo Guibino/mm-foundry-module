@@ -130,7 +130,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 10, qualquer criatura that começa seu turno em a 1,5 m Emanação com origem em a criatura. O alvo fica com a condição Envenenado até o emício do próximo turno dele. O alvo é imune a este ghast's Fedor por 24 horas.</p>",
+          "value": "<p>Qualquer criatura que começar seu turno a até 1,5 m. do ghast deve ser bem-sucedida em uma salvaguarda de Constituição DC 10 ou ficará envenenada até o início de seu próximo turno. Em uma salvaguarda bem-sucedida, a criatura é imune ao Fedor do ghast por 24 horas.</p>",
           "chat": ""
         },
         "activation": {
@@ -247,7 +247,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 1,5 m. Acerto: 10 (2d6 + 3) dano cortante. Se o alvo is a non-Morto-Vivo creature, ele fica sujeito ao seguinte efeito. Teste de Resistência de Constituição: CD 10. O alvo fica com a condição Paralisado até o fim do próximo turno dele.</p>",
+          "value": "<p>Ataque Corpo a Corpo: +5, alcance 1,5 m. 10 (2d6 + 3) de dano cortante. Se o alvo for uma criatura que não seja um Morto-Vivo, ele fica sujeito ao seguinte efeito. Teste de Resistência de Constituição: CD 10. Falha: O alvo fica com a condição Paralisado até o final do seu próximo turno.</p>",
           "chat": ""
         },
         "activation": {

@@ -30,9 +30,6 @@ export interface Glossary {
 
 export const glossary: Glossary = JSON.parse(readFileSync(paths.glossary, "utf8"));
 
-/** Frases que NAO devem exigir limite de palavra ao final (terminam em `:`). */
-const NO_END_BOUNDARY = /[^\w]$/;
-
 /** Substituicoes de frase/termo, aplicadas da mais longa para a mais curta. */
 function buildReplacements(): [RegExp, string][] {
   const pairs: [string, string][] = [];
@@ -47,10 +44,12 @@ function buildReplacements(): [RegExp, string][] {
   pairs.sort((a, b) => b[0].length - a[0].length);
   return pairs.map(([en, pt]) => {
     const esc = en.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    // limite de palavra no fim so quando o termo termina em caractere de palavra
-    // (evita "Ram" casar dentro de "Rampage"); frases como "Hit:" ficam livres.
-    const end = NO_END_BOUNDARY.test(en) ? "" : "\\b";
-    return [new RegExp(`\\b${esc}${end}`, "g"), pt] as [RegExp, string];
+    // Limites de palavra Unicode-aware: tratam letras acentuadas como parte da
+    // palavra. Sem isso, "in"->"em" casaria dentro de "início" (o \b padrao ve
+    // o "í" como nao-palavra). So exige limite quando a borda e uma letra.
+    const startB = /^\p{L}/u.test(en) ? "(?<![\\p{L}])" : "";
+    const endB = /\p{L}$/u.test(en) ? "(?![\\p{L}])" : "";
+    return [new RegExp(`${startB}${esc}${endB}`, "gu"), pt] as [RegExp, string];
   });
 }
 const REPLACEMENTS = buildReplacements();
@@ -61,15 +60,44 @@ function convertUnits(text: string): string {
     const v = ft * 0.3; // 5 ft -> 1,5 m
     return (Number.isInteger(v) ? String(v) : v.toFixed(1)).replace(".", ",");
   };
-  return text.replace(/(\d+)(?:\/(\d+))?[- ](?:ft\.?|feet|foot)\b/gi, (_all, a, b) =>
+  return text.replace(/(\d+)(?:\/(\d+))?[- ](?:ft\.?|feet|foot|pés|pé|pes)\b/giu, (_all, a, b) =>
     b ? `${m(Number(a))}/${m(Number(b))} m` : `${m(Number(a))} m`);
+}
+
+/**
+ * Reordena formas de area para PT natural depois do glossario:
+ * "em uma 9 m Cone" -> "em um Cone de 9 m"; trata Linha/Esfera/Cubo/Emanacao e
+ * os sufixos -long/-wide/-radius/-diameter que sobram da conversao de unidades.
+ */
+function fixAreas(s: string): string {
+  const N = "(\\d[\\d.,]*)";
+  return s
+    .replace(new RegExp(`em uma ${N} m-long, ${N} m-wide Linha`, "g"), "em uma Linha de $1 m de comprimento e $2 m de largura")
+    .replace(new RegExp(`${N} m-long, ${N} m-wide Linha`, "g"), "Linha de $1 m de comprimento e $2 m de largura")
+    .replace(new RegExp(`em uma ${N} m-radius Esfera`, "g"), "em uma Esfera de $1 m de raio")
+    .replace(new RegExp(`${N} m-radius Esfera`, "g"), "Esfera de $1 m de raio")
+    .replace(new RegExp(`em uma ${N} m Cone`, "g"), "em um Cone de $1 m")
+    .replace(new RegExp(`${N} m Cone`, "g"), "Cone de $1 m")
+    .replace(new RegExp(`em uma ${N} m Cubo`, "g"), "em um Cubo de $1 m")
+    .replace(new RegExp(`${N} m Cubo`, "g"), "Cubo de $1 m")
+    .replace(new RegExp(`em uma ${N} m Emanação`, "g"), "em uma Emanação de $1 m")
+    .replace(new RegExp(`${N} m Emanação`, "g"), "Emanação de $1 m")
+    .replace(/ m-long\b/g, " m de comprimento")
+    .replace(/ m-wide\b/g, " m de largura")
+    .replace(/ m-radius\b/g, " m de raio")
+    .replace(/ m-diameter\b/g, " m de diâmetro");
 }
 
 /** Traduz terminologia mecanica de um texto (substituicao de termos oficiais). */
 export function translateText(text: string): string {
   let s = convertUnits(text);
   for (const [re, pt] of REPLACEMENTS) s = s.replace(re, pt);
-  return s;
+  return fixAreas(s);
+}
+
+/** So converte unidades para metrico (para texto ja em PT, ex.: Pocket DM). */
+export function metricize(text: string): string {
+  return fixAreas(convertUnits(text));
 }
 
 /**
@@ -94,11 +122,19 @@ export function normalizeSubject(text: string, name: string): string {
   return s;
 }
 
-/** Candidatos de auto-referencia da criatura: nome completo e ultima palavra. */
+/** Palavras genericas de nome que NAO servem como auto-referencia isolada. */
+const NAME_STOPWORDS = new Set(["the", "of", "and", "lord", "lady", "master", "type"]);
+
+/**
+ * Candidatos de auto-referencia da criatura: nome completo e cada palavra
+ * (separando tambem por hifen), p.ex. "Arch-hag" -> "arch","hag" e
+ * "Vampire Umbral Lord" -> "vampire","umbral". So afeta a exibicao (fallback),
+ * nao as chaves de override.
+ */
 function creatureCands(name: string): string[] {
-  const words = name.toLowerCase().replace(/[^a-z0-9 -]/g, "").split(/\s+/).filter(Boolean);
-  return [...new Set([name.toLowerCase(), words[words.length - 1]!])]
-    .filter((w) => w && w.length > 2).sort((a, b) => b.length - a.length);
+  const clean = name.toLowerCase().replace(/[^a-z0-9 -]/g, "");
+  const words = clean.split(/[\s-]+/).filter((w) => w.length > 2 && !NAME_STOPWORDS.has(w));
+  return [...new Set([clean, ...words])].filter(Boolean).sort((a, b) => b.length - a.length);
 }
 
 /** Troca "the dragon"/"The dragon's"... por "a criatura"/"da criatura" (feminino). */

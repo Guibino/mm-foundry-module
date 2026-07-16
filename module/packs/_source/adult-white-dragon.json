@@ -237,7 +237,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +11, alcance 3 m. Acerto: 13 (2d6 + 6) dano cortante mais 4 (1d8) dano de frio.</p>",
+          "value": "<p>Ataque Corpo a Corpo: +11, alcance 3 m. 13 (2d6 + 6) de dano cortante mais 4 (1d8) de dano de frio.</p>",
           "chat": ""
         },
         "activation": {
@@ -318,7 +318,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 19, cada criatura em uma 18 m Cone. 54 (12d8) dano de frio. Metade do dano.</p>",
+          "value": "<p>O dragão exala uma rajada gelada em um cone de 18 m. Cada criatura nessa área deve fazer um teste de resistência de Constituição CD 19, sofrendo 54 (12d8) de dano de frio em caso de falha, ou metade desse dano em caso de sucesso.</p>",
           "chat": ""
         },
         "activation": {
@@ -385,7 +385,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 14, cada criatura em uma 9 m-raio Esfera centrada em um ponto a criatura pode ver a até 36 m. 7 (2d6) dano de frio, e o Deslocamento do alvo é 0 until the end de do alvo next turn. A criatura não pode realizar esta ação novamente até o emício do próximo turno dele.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 14, cada criatura em uma Esfera de 9 m de raio centrada em um ponto que o dragão possa ver a até 36 m. Falha: 7 (2d6) de dano de frio, e o Deslocamento do alvo fica 0 até o final do próximo turno do alvo. Falha ou Sucesso: O dragão não pode realizar esta ação novamente até o início de seu próximo turno.</p>",
           "chat": ""
         },
         "activation": {
@@ -480,7 +480,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura casts Fear, requiring no Material components e using Carisma as the spellcasting ability (magia save CD 14). A criatura não pode realizar esta ação novamente até o emício do próximo turno dele.</p>",
+          "value": "<p>A criatura casts Fear, requiring no Material components e using Carisma as the spellcasting ability (magia save CD 14). A criatura não pode realizar esta ação novamente até o início do próximo turno dele.</p>",
           "chat": ""
         },
         "activation": {

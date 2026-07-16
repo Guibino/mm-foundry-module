@@ -206,7 +206,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +13, alcance 3 m. Acerto: 17 (2d8 + 8) dano cortante mais 4 (1d8) dano de frio.</p>",
+          "value": "<p>Ataque Corpo a Corpo: +13, alcance 3 m. 17 (2d8 + 8) de dano cortante mais 4 (1d8) de dano de frio.</p>",
           "chat": ""
         },
         "activation": {
@@ -287,7 +287,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 20, cada criatura em uma 18 m Cone. 54 (12d8) dano de frio. Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 20, cada criatura em um Cone de 18 m. Falha: 54 (12d8) de dano de frio. Sucesso: Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -354,7 +354,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 20, cada criatura em uma 18 m Cone. Falha: O alvo fica com a condição Incapacitado até o fim do próximo turno dele, when it repete o teste. Falha: O alvo fica com a condição Paralisado, e repete o teste no fim de cada turno dele, encerrando o efeito em si mesma se passar. Após 1 minuto, passa automaticamente.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 20, cada criatura em um Cone de 18 m. Primeira Falha: O alvo fica com a condição Incapacitado até o final de seu próximo turno, quando repete o teste. Segunda Falha: O alvo fica com a condição Paralisado e repete o teste no final de cada um de seus turnos, encerrando o efeito sobre si mesmo com um sucesso. Após 1 minuto, ele tem sucesso automaticamente.</p>",
           "chat": ""
         },
         "activation": {
@@ -415,7 +415,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura usa Conjuração para lançar Hold Monster. A criatura não pode realizar esta ação novamente até o emício do próximo turno dele.</p>",
+          "value": "<p>A criatura usa Conjuração para lançar Hold Monster. A criatura não pode realizar esta ação novamente até o início do próximo turno dele.</p>",
           "chat": ""
         },
         "activation": {
@@ -449,7 +449,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Destreza: CD 19, cada criatura em uma 18 m-long, 3 m-wide Linha. 14 (4d6) dano de frio, e o alvo é empurrado até 9 m para longe, em linha reta, de a criatura. Apenas metade do dano. A criatura não pode realizar esta ação novamente até o emício do próximo turno dele.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 19, cada criatura em uma Linha de 18 m de comprimento e 3 m de largura. Falha: 14 (4d6) de dano de frio, e o alvo é empurrado até 9 m em linha reta para longe do dragão. Sucesso: Apenas metade do dano. Falha ou Sucesso: O dragão não pode realizar esta ação novamente até o início de seu próximo turno.</p>",
           "chat": ""
         },
         "activation": {

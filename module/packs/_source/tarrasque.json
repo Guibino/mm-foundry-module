@@ -394,7 +394,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +19, alcance 4,5 m. Acerto: 28 (4d8 + 10) dano cortante.</p>",
+          "value": "<p>Ataque Corpo a Corpo com Arma: +19 para acertar, alcance 4,5 m., um alvo. Acerto: 28 (4d8 + 10) de dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -556,7 +556,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 27, cada criatura e each object that isn't being usada ou carried em a 45 m Cone. 78 (12d12) dano trovejante, e o alvo fica com the Surdo e Amedrontado conditions até o fim do próximo turno dele. Apenas metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 27, cada criatura e cada objeto que não esteja sendo vestido ou carregado em um Cone de 45 m. Falha: 78 (12d12) de dano trovejante, e o alvo fica com as condições Surdo e Amedrontado até o fim de seu próximo turno. Sucesso: Apenas metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -623,7 +623,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Força: CD 27, one criatura Grande ou menor Agarrado by a criatura (ela pode have up to six criaturas swallowed at a time). O alvo está swallowed, e a condição Agarrado ends. A swallowed creature has the Cego e Impedido conditions e can't teleport, ela tem Total Cover contra attacks e other effects fora de a criatura, e ela sofre 56 (16d6) dano de ácido no emício de each de da criatura turns.\nSe a criatura takes 60 de dano ou more on a single turn de uma criatura inside it, a criatura deve succeed on a CD 20 Constituição saving throw no fim de that turn ou regurgitate all swallowed criaturas, each de which falls em a space a até 3 m de a criatura e fica com a condição Caído. Se a criatura morre, qualquer swallowed creature no longer fica com a condição Impedido e can escape de the corpse using 6 m de movimento, exiting Caído.</p>",
+          "value": "<p>Teste de Resistência de Força: CD 27, one criatura Grande ou menor Agarrado by a criatura (ela pode have up to six criaturas swallowed at a time). O alvo está swallowed, e a condição Agarrado ends. A swallowed creature has the Cego e Impedido conditions e can't teleport, ela tem Total Cover contra attacks e other effects fora de a criatura, e ela sofre 56 (16d6) dano de ácido no início de each de da criatura turns.\nSe a criatura takes 60 de dano ou more on a single turn de uma criatura inside it, a criatura deve succeed on a CD 20 Constituição saving throw no fim de that turn ou regurgitate all swallowed criaturas, each de which falls em a space a até 3 m de a criatura e fica com a condição Caído. Se a criatura morre, qualquer swallowed creature no longer fica com a condição Impedido e can escape de the corpse using 6 m de movimento, exiting Caído.</p>",
           "chat": ""
         },
         "activation": {
@@ -718,7 +718,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura se move até seu Deslocamento. At the end de this movimento, a criatura creates um instantaneous shock wave em a 18 m Emanação com origem em si mesma. Criaturas em that area lose Concentração e, se Medium ou menor, have a condição Caído. A criatura não pode realizar esta ação novamente até o emício do próximo turno dele.</p>",
+          "value": "<p>A criatura se move até seu Deslocamento. At the end de this movimento, a criatura creates um instantaneous shock wave em a Emanação de 18 m com origem em si mesma. Criaturas em that area lose Concentração e, se Medium ou menor, have a condição Caído. A criatura não pode realizar esta ação novamente até o início do próximo turno dele.</p>",
           "chat": ""
         },
         "activation": {

@@ -211,7 +211,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 3 m. Acerto: 17 (2d10 + 6) dano cortante.</p>",
+          "value": "<p>Ataque Corpo a Corpo: +10, alcance 3 m. 17 (2d10 + 6) de dano cortante.</p>",
           "chat": ""
         },
         "activation": {
@@ -292,7 +292,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Destreza: CD 17, cada criatura em uma 9 m Cone. 55 (10d10) dano de fogo. Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 17, cada criatura em um Cone de 9 m. Falha: 55 (10d10) de dano de fogo. Sucesso: Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -359,7 +359,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Força: CD 17, cada criatura ainda não afetada por este sopro em uma 9 m Cone. O alvo tem Desvantagem em Força-based Testes de d20 e subtrai 3 (1d6) de seu de dano rolls. Repete o teste no fim de cada turno dele, encerrando o efeito em si mesma se passar. Após 1 minuto, passa automaticamente.</p>",
+          "value": "<p>Teste de Resistência de Força: CD 17, cada criatura que ainda não esteja sob o efeito deste sopro em um Cone de 9 m. Falha: O alvo tem Desvantagem em Testes de d20 baseados em Força e subtrai 3 (1d6) de suas rolagens de dano. Ele repete o teste ao fim de cada um de seus turnos, encerrando o efeito sobre si mesmo com um sucesso. Após 1 minuto, ele é bem-sucedido automaticamente.</p>",
           "chat": ""
         },
         "activation": {

@@ -192,6 +192,14 @@ Rode `npm run report` para ver `data/intermediate/quality-report.json`.
   `flags.mm2024.mechanics` para futura conversão em `activities` completas
   (rolagem automática). Nesta versão, as ações são features com ativação/usos.
 
+## Créditos e atribuição
+
+- **Traduções de descrições (PT-BR):** parte das descrições de ações/traços usa
+  as traduções do **[Pocket DM](https://pocketdm.com.br/monstros)**, disponíveis
+  sob **CC-BY-4.0**. Usadas apenas quando a assinatura mecânica (dados, CD, bônus
+  de acerto e alcances) confere com o stat block 2024 deste módulo.
+- **Dados estruturados e imagens de referência:** [5e.tools](https://5e.tools).
+
 ## Licença
 
 Código sob MIT (ver `LICENSE` se adicionado). O conteúdo do Monster Manual e as

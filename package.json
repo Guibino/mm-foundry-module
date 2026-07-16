@@ -22,6 +22,7 @@
     "regen": "npm run parse && npm run reconcile && npm run translate && npm run normalize && npm run build:pack && npm run report",
     "test": "tsx tests/run.ts && tsx tests/test-5etools.ts",
     "fetch:5e": "tsx src/source-5etools/fetch.ts",
+    "fetch:pocket": "tsx src/source-pocketdm/fetch.ts",
     "convert:5e": "tsx src/source-5etools/index.ts",
     "build:5e": "npm run convert:5e && npm run translate && npm run normalize && npm run build:pack && npm run report",
     "all:5e": "npm run fetch:5e && npm run build:5e",

@@ -125,7 +125,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 1,5 m. Acerto: 3 (1d4 + 1) dano perfurante. Se o alvo is uma criatura, ele fica sujeito ao seguinte efeito. Teste de Resistência de Constituição: CD 11. Falha: O alvo fica com a condição Impedido. O alvo repete o teste no fim do próximo turno dele se it is still Impedido, encerrando o efeito em si mesma se passar. Falha: O alvo fica com a condição Petrificado, instead de a condição Impedido, por 24 horas.</p>",
+          "value": "<p>Ataque Corpo a Corpo: +3, alcance 1,5 m. 3 (1d4 + 1) de dano perfurante. Se o alvo for uma criatura, ele fica sujeito ao seguinte efeito. Teste de Resistência de Constituição: CD 11. Primeira Falha: O alvo fica com a condição Impedido. O alvo repete o teste no fim de seu próximo turno se ainda estiver Impedido, encerrando o efeito sobre si mesmo em um sucesso. Segunda Falha: O alvo fica com a condição Petrificado, em vez da condição Impedido, por 24 horas.</p>",
           "chat": ""
         },
         "activation": {

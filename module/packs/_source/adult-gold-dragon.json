@@ -244,7 +244,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 3 m. Acerto: 17 (2d8 + 8) dano cortante mais 4 (1d8) dano de fogo.</p>",
+          "value": "<p>Ataque Corpo a Corpo: +14, alcance 3 m. 17 (2d8 + 8) de dano cortante mais 4 (1d8) de dano de fogo.</p>",
           "chat": ""
         },
         "activation": {
@@ -325,7 +325,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Destreza: CD 21, cada criatura em uma 18 m Cone. 66 (12d10) dano de fogo. Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 21, cada criatura em um Cone de 18 m. Falha: 66 (12d10) de dano de fogo. Sucesso: Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -392,7 +392,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Força: CD 21, cada criatura ainda não afetada por este sopro em uma 18 m Cone. O alvo tem Desvantagem em Força-based Testes de d20 e subtrai 3 (1d6) de seu de dano rolls. Repete o teste no fim de cada turno dele, encerrando o efeito em si mesma se passar. Após 1 minuto, passa automaticamente.</p>",
+          "value": "<p>Teste de Resistência de Força: CD 21, cada criatura que não esteja atualmente afetada por este sopro em um Cone de 18 m. Falha: O alvo tem Desvantagem em Testes de D20 baseados em Força e subtrai 3 (1d6) de suas rolagens de dano. Ele repete o teste de resistência ao fim de cada um de seus turnos, encerrando o efeito sobre si mesmo em caso de sucesso. Após 1 minuto, ele obtém sucesso automaticamente.</p>",
           "chat": ""
         },
         "activation": {
@@ -453,7 +453,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Carisma: CD 21, uma criatura a criatura pode ver a até 36 m. 10 (3d6) dano de energia, e o alvo fica com a condição Incapacitado e is transported to a harmless demiplane until the start de da criatura next turn, at which point it reappears em um espaço desocupado de da criatura choice a até 36 m de a criatura. A criatura não pode realizar esta ação novamente até o emício do próximo turno dele.</p>",
+          "value": "<p>Teste de Resistência de Carisma: CD 21, uma criatura que o dragão possa ver a até 36 m. Falha: 10 (3d6) de dano de força, e o alvo fica com a condição Incapacitado e é transportado para um semiplano inofensivo até o início do próximo turno do dragão, momento em que reaparece em um espaço desocupado à escolha do dragão a até 36 m do dragão. Falha ou Sucesso: O dragão não pode realizar esta ação novamente até o início de seu próximo turno.</p>",
           "chat": ""
         },
         "activation": {

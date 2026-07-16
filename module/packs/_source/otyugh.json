@@ -156,7 +156,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 12 (2d8 + 3) dano perfurante, e o alvo fica com a condição Envenenado. Sempre que the Envenenado target finishes a Long Rest, ele fica sujeito ao seguinte efeito. Teste de Resistência de Constituição: CD 15. O alvo's Ponto de Vida maximum decreases by 5 (1d10) e doesn't return to normal until a condição Envenenado ends on o alvo. The Envenenado condição ends.</p>",
+          "value": "<p>Ataque Corpo a Corpo com Arma: +6 para acertar, alcance 1,5 m., um alvo. Acerto: 12 (2d8 + 3) de dano perfurante. Se o alvo for uma criatura, ele deve ser bem-sucedido em um teste de resistência de Constituição CD 15 contra doença ou ficará envenenado até que a doença seja curada. A cada 24 horas que passam, o alvo deve repetir o teste de resistência, reduzindo seu máximo de pontos de vida em 5 (1d10) em caso de falha. A doença é curada em caso de sucesso. O alvo morre se a doença reduzir seu máximo de pontos de vida a 0. Essa redução ao máximo de pontos de vida do alvo dura até que a doença seja curada.</p>",
           "chat": ""
         },
         "activation": {

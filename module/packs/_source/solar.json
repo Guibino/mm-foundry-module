@@ -388,7 +388,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Destreza: CD 21, uma criatura a criatura pode ver a até 180 m. Se a criatura has 100 Pontos de Vida ou fewer, ela morre. It otherwise takes 24 (4d8 + 6) dano perfurante mais 36 (8d8) dano radiante.</p>",
+          "value": "<p>Teste de Resistência de Destreza: CD 21, uma criatura que o solar possa ver a até 180 m. Falha: Se a criatura tiver 100 Pontos de Vida ou menos, ela morre. Caso contrário, ela sofre 24 (4d8 + 6) de dano perfurante mais 36 (8d8) de dano radiante.</p>",
           "chat": ""
         },
         "activation": {
@@ -449,7 +449,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 25, uma criatura a criatura pode ver a até 36 m. O alvo fica com a condição Cego por 1 minuto. A criatura não pode realizar esta ação novamente até o emício do próximo turno dele.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 25, uma criatura a criatura pode ver a até 36 m. O alvo fica com a condição Cego por 1 minuto. A criatura não pode realizar esta ação novamente até o início do próximo turno dele.</p>",
           "chat": ""
         },
         "activation": {
@@ -510,7 +510,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura se teletransporta até 18 m para um espaço desocupado que possa ver. Teste de Resistência de Destreza: CD 25, cada criatura em uma 3 m Emanação com origem em a criatura at seu destination space. 11 (2d10) dano radiante. Metade do dano.</p>",
+          "value": "<p>O solar se teleporta até 18 m para um espaço desocupado que ele possa ver. Teste de Resistência de Destreza: CD 25, cada criatura em uma Emanação de 3 m originada do solar em seu espaço de destino. Falha: 11 (2d10) de dano radiante. Sucesso: Metade do dano.</p>",
           "chat": ""
         },
         "activation": {

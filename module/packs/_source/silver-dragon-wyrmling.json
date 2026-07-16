@@ -169,7 +169,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 1,5 m. Acerto: 9 (1d10 + 4) dano perfurante.</p>",
+          "value": "<p>Ataque Corpo a Corpo: +6, alcance 1,5 m. 9 (1d10 + 4) de dano perfurante.</p>",
           "chat": ""
         },
         "activation": {
@@ -250,7 +250,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 13, cada criatura em uma 4,5 m Cone. 18 (4d8) dano de frio. Metade do dano.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 13, cada criatura em um Cone de 4,5 m. Falha: 18 (4d8) de dano de frio. Sucesso: Metade do dano.</p>",
           "chat": ""
         },
         "activation": {
@@ -317,7 +317,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Constituição: CD 13, cada criatura em uma 4,5 m Cone. Falha: O alvo fica com a condição Incapacitado até o fim do próximo turno dele, when it repete o teste. Falha: O alvo fica com a condição Paralisado, e repete o teste no fim de cada turno dele, encerrando o efeito em si mesma se passar. Após 1 minuto, passa automaticamente.</p>",
+          "value": "<p>Teste de Resistência de Constituição: CD 13, cada criatura em um Cone de 4,5 m. Primeira Falha: O alvo fica com a condição Incapacitado até o final do próximo turno dele, quando repete o teste. Segunda Falha: O alvo fica com a condição Paralisado e repete o teste ao final de cada turno dele, terminando o efeito em si mesmo com um sucesso. Após 1 minuto, ele tem sucesso automaticamente.</p>",
           "chat": ""
         },
         "activation": {
