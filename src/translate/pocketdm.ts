@@ -30,9 +30,9 @@ const normName = (s: string) => s.replace(/\([^)]*\)/g, "").replace(/[^a-z0-9 ]/
 /** assinatura mecanica: dados, CD, bonus de acerto e distancias (em pes/ft) */
 function signature(text: string) {
   const dice = [...text.matchAll(/\d+d\d+/g)].map((x) => x[0]).sort();
-  const dc = [...text.matchAll(/(?:DC|CD)\s*(\d+)/gi)].map((x) => x[1]).sort();
-  const hit = [...text.matchAll(/(?:^|[\s(])\+(\d+)\b/g)].map((x) => x[1]).sort();
-  const dist = [...text.matchAll(/(\d+)[- ]?(?:ft|feet|foot|pés|pé|pes)\b/giu)].map((x) => x[1]).sort();
+  const dc = [...text.matchAll(/(?:DC|CD)\s*(\d+)/gi)].map((x) => x[1]!).sort();
+  const hit = [...text.matchAll(/(?:^|[\s(])\+(\d+)\b/g)].map((x) => x[1]!).sort();
+  const dist = [...text.matchAll(/(\d+)[- ]?(?:ft|feet|foot|pés|pé|pes)\b/giu)].map((x) => x[1]!).sort();
   return { dice, dc, hit, dist };
 }
 const eq = (a: string[], b: string[]) => a.length === b.length && a.every((v, i) => v === b[i]);
