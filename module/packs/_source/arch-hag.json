@@ -1,0 +1,705 @@
+{
+  "_id": "QmcLiCs2M5HbaNti",
+  "_key": "!actors!QmcLiCs2M5HbaNti",
+  "folder": "inkH4oLnh3yP5W9M",
+  "name": "Arch-hag",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/arch-hag.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 24,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 1
+      },
+      "con": {
+        "value": 23,
+        "proficient": 0
+      },
+      "int": {
+        "value": 19,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 19,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 25,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 20,
+        "formula": ""
+      },
+      "hp": {
+        "value": 333,
+        "max": 333,
+        "formula": "29d10 + 174",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40
+      },
+      "senses": {
+        "units": "ft",
+        "truesight": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fey",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 0,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": "Charmed; Exhaustion; Frightened"
+      },
+      "dr": {
+        "value": [
+          "cold",
+          "fire",
+          "psychic"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "All"
+      }
+    },
+    "skills": {
+      "dec": {
+        "value": 2,
+        "ability": "cha"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "per": {
+        "value": 2,
+        "ability": "cha"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Arch-hag",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/arch-hag.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "sSuxLRNycCgFSlJG",
+      "name": "Coven Magic",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>While within 30 feet of at least two hag allies, the hag can cast one of the following spells, requiring no Material components , using the spell's . normal casting time, and using Inteligência as the spell- casting ability (spell. save DC 19): Augury, Find Familiar, Identify, Locate Object, Scrying, or Unseen Servant. The hag must finish a Long Rest before using this trait to cast that spell again.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!QmcLiCs2M5HbaNti.sSuxLRNycCgFSlJG"
+    },
+    {
+      "_id": "XlZyftHJrtIOjmNU",
+      "name": "Resistência Lendária (4/Day, or 5/Day in Lair)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the hag fails a saving throw, it can choose to suc- ceed in stead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "4",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!QmcLiCs2M5HbaNti.XlZyftHJrtIOjmNU"
+    },
+    {
+      "_id": "MU4lPapjRzO6J0Io",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The hag has Advantage on saving throws against spells and other magical effects.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!QmcLiCs2M5HbaNti.MU4lPapjRzO6J0Io"
+    },
+    {
+      "_id": "Skjj0jhnl6nQyaiK",
+      "name": "Spiteful Escape",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>When the hag drops to O Pontos de Vida, it dies only if it is within 30 feet of its anathema (a thing the DM chooses as the hag's most hated thing). Oth- erwise, the hag drops to l Hit Point and teleports to a harmless demiplane, and it can't return to the plane it left for 2d6 days. When the hag teleports away, cada criatura within 60 feet of the space it left is cursed. Until the curse ends, a creature has Disadvantage on ability checks and saving throws, and the hag knows its location anywhere in the multiverse.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!QmcLiCs2M5HbaNti.Skjj0jhnl6nQyaiK"
+    },
+    {
+      "_id": "EGpk1k8rULKEXGOW",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The hag makes two Spectral Claw attacks and uses Crackling Wave. from any ability checks they make when they take the Influence action.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!QmcLiCs2M5HbaNti.EGpk1k8rULKEXGOW"
+    },
+    {
+      "_id": "t4d6HCLgD9O4xx3C",
+      "name": "Meddlesome Magic",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Whenever a creature other than the hag or its allies finishes a Long Rest while within 1 mile of the lair, the next time that creature casts a spell using a spell slot, it also casts</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!QmcLiCs2M5HbaNti.t4d6HCLgD9O4xx3C"
+    },
+    {
+      "_id": "LxBEG1lE9vBIIIfr",
+      "name": "Confusion centered on itself",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The spell uses the creature's spellcasting ability and doesn't require Concentration. If the arch-hag is destroyed or moves its lair else- where, these effects end immediately.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!QmcLiCs2M5HbaNti.LxBEG1lE9vBIIIfr"
+    },
+    {
+      "_id": "tLMrIi5PQDBncYWv",
+      "name": "Spectral Claw",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Me lee or Rolagem de Ataque à Distância:+ 14, alcance 10 ft. or range 60 ft. Acerto: 17 (3d6 + 7) Energia de dano. If o alvo is a Large or smaller creature, it has the Caído condition .</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "3d6+7",
+            "damageType": "force"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!QmcLiCs2M5HbaNti.tLMrIi5PQDBncYWv"
+    },
+    {
+      "_id": "Ri2yrxXCJpeEzp6l",
+      "name": "Crackling Wave",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Destreza Teste de Resistência: DC 22, cada criatura in a 60-foot Cone. Falha: 32 (Sd12) Elétrico de dano. Sucesso: Metade do dano. Falha ou Sucesso: The target is cursed until the end of the hag's next turn. The target can't take Reactions until the curse ends.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "yrXIPpY1LWqqbs3Z": {
+            "_id": "yrXIPpY1LWqqbs3Z",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "22"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": null,
+                  "denomination": null,
+                  "bonus": "",
+                  "types": [
+                    "lightning"
+                  ],
+                  "custom": {
+                    "enabled": true,
+                    "formula": "Sd12"
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "Sd12",
+            "damageType": "lightning",
+            "saveDc": 22,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!QmcLiCs2M5HbaNti.Ri2yrxXCJpeEzp6l"
+    },
+    {
+      "_id": "oLxwNiaCZtLSgCMh",
+      "name": "Witch Strike",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Each creature cursed by the hag and within 60 feet of it takes 14 (4d6) Elétrico de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!QmcLiCs2M5HbaNti.oLxwNiaCZtLSgCMh"
+    },
+    {
+      "_id": "V3Wj46zGzBMbrW3g",
+      "name": "Tongue Twister",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The hag casts Counterspell in response to that spell1s trigger, using the same spellcasting abil- ity as Conjuração. If o alvo fails its saving throw, it is cursed until the end of its next turn. Until the curse ends, o alvo can't cast spells with a Verbal com- ponent, and when it speaks, it says the opposite of what it means.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!QmcLiCs2M5HbaNti.V3Wj46zGzBMbrW3g"
+    },
+    {
+      "_id": "qoT5JjHijaIAeQOe",
+      "name": "Habilidade",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Legendary Act io n Use s: 3 (4 no Covil). Immediately after 1 a to take anoth er creat ur e s turn, the h ag can expend use o ne of the follo wi ng C}cti o ns. The hag regains all expended uses at the start oj eac h of i ts turns.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!QmcLiCs2M5HbaNti.qoT5JjHijaIAeQOe"
+    },
+    {
+      "_id": "fogoWXKEQIHInRfg",
+      "name": "Hag's Swipe",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The hag makes one Spectral Claw attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!QmcLiCs2M5HbaNti.fogoWXKEQIHInRfg"
+    },
+    {
+      "_id": "5aOpx8qyi2wQXp2f",
+      "name": "Malicious Magic",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The hag uses Conjuração to cast • Dimension Door or Hypnotic Pattern. The hag can't take this action again until the start of its next turn . AROH -H AG ~ I ASSASSIN Contract I(iller</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!QmcLiCs2M5HbaNti.5aOpx8qyi2wQXp2f"
+    },
+    {
+      "_id": "e4PfEF2vdbIyndkf",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The hag casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 22): À Vontade: Detect Thoughts, Dimension Door, Dispel Magic, Hypnotic Pattern 2/Dia Each: Mass Suggestion, Modify Memory, Plane Shift</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!QmcLiCs2M5HbaNti.e4PfEF2vdbIyndkf"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Arch-hag",
+      "page": 23,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

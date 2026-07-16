@@ -1,0 +1,341 @@
+{
+  "_id": "6gu6SgEHFThP9y94",
+  "_key": "!actors!6gu6SgEHFThP9y94",
+  "folder": "lhndsA6Aflaa0nF6",
+  "name": "Azul Dragão Filhote",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/blue-dragon-wyrmling.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 17,
+        "formula": ""
+      },
+      "hp": {
+        "value": 65,
+        "max": 65,
+        "formula": "l 0d8 + 20",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "dragon",
+        "subtype": "C hromatic",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Mau",
+      "cr": 3,
+      "xp": {
+        "value": 700
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "lightning"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Dracônico"
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Azul Dragão Filhote",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/blue-dragon-wyrmling.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "UE16fgdPycqSzfBc",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon makes two Rend attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!6gu6SgEHFThP9y94.UE16fgdPycqSzfBc"
+    },
+    {
+      "_id": "lVl1YirELeyjzVjW",
+      "name": "Rend",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 8 (1d1 0 + 3) Cortante de dano plus 3 (1d6) Elétrico de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "VWU9NID9F5WKXUx8": {
+            "_id": "VWU9NID9F5WKXUx8",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 10,
+                  "bonus": "3",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "1d10+3",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!6gu6SgEHFThP9y94.lVl1YirELeyjzVjW"
+    },
+    {
+      "_id": "N0e3zFEDQjZPifxb",
+      "name": "Elétrico Breath (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Destreza Teste de Resistência: DC 12, cada criatura in a 30-foot-long, 5-foot- , wide Line. Falha: 21 (6d6) Elétrico de dano. Sucesso: Metade do dano. YOUNG BLUE DRAGON Large Dragon (Chromatic), Lawful Evil AC 18 Iniciativa +4 (14) HP 152 (16d10 + 64) Sp eed 40 ft., Burrow 20 ft., Fly 80 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "nbhuYSECm2rBzAVi": {
+            "_id": "nbhuYSECm2rBzAVi",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "12"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 6,
+                  "denomination": 6,
+                  "bonus": "",
+                  "types": [
+                    "lightning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "6d6",
+            "damageType": "lightning",
+            "saveDc": 12,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!6gu6SgEHFThP9y94.N0e3zFEDQjZPifxb"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Blue Dragon Wyrmling",
+      "page": 50,
+      "cr": "3",
+      "warnings": [
+        "Atributos nao reconhecidos"
+      ]
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "_id": "Xv4gaGpZAOMNEEkh",
+  "_key": "!actors!Xv4gaGpZAOMNEEkh",
+  "folder": "lhndsA6Aflaa0nF6",
+  "name": "Kobold Guerreiro",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 7,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 0
+      },
+      "con": {
+        "value": 9,
+        "proficient": 0
+      },
+      "int": {
+        "value": 8,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 7,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 8,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 14,
+        "formula": ""
+      },
+      "hp": {
+        "value": 7,
+        "max": 7,
+        "formula": "3d6 - 3",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "dragon",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 0.125,
+      "xp": {
+        "value": 25
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "sm",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comum, Dracônico"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Kobold Guerreiro",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/kobold-warrior.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "jJIh7wU3Sis6WBAS",
+      "name": "Pack Tactics",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The kobold has Advantage on an attack roll against a creature if at least one of the kobold's al- lies is within 5 feet of the creature and the ally doesn't have the Incapacitado condition.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Xv4gaGpZAOMNEEkh.jJIh7wU3Sis6WBAS"
+    },
+    {
+      "_id": "F6BHbCA5yv0gmqLn",
+      "name": "Sunlight Sensitivity",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>While in sunlight, the kobold has Disadvantage on ability checks and attack rolls. > ACTIO NS Ct::'. Dagger. Rolagem de Ataque Corpo a Corpo ou à Distância: +4, alcance 5 ft. or range 20/60 ft. Acerto: 4 (1d4 + 2) Perfurante de dano. WINGED KOBOLD Small Dragon, Neutral AC 15 Iniciativa +3 (13) HP 10 (4d6 - 4) Speed 30 ft., Fly 30 ft. MOD SAVE MOO SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "ranged",
+            "damageFormula": "1d4+2",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Xv4gaGpZAOMNEEkh.F6BHbCA5yv0gmqLn"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Kobold Warrior",
+      "page": 187,
+      "cr": "1/8",
+      "warnings": []
+    }
+  }
+}

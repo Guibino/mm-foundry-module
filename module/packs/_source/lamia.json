@@ -1,0 +1,327 @@
+{
+  "_id": "L2l52EdLi8pZs4jY",
+  "_key": "!actors!L2l52EdLi8pZs4jY",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Lamia",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/lamia.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 13,
+        "proficient": 0
+      },
+      "con": {
+        "value": 15,
+        "proficient": 0
+      },
+      "int": {
+        "value": 14,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 15,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 16,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13,
+        "formula": ""
+      },
+      "hp": {
+        "value": 97,
+        "max": 97,
+        "formula": "13d10 + 26",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Chaotic",
+      "cr": 4,
+      "xp": {
+        "value": 1
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Abissal, Com mon"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Lamia",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/lamia.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "DFKkh08TavdaapV2",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The lamia makes two Claw attacks. It can replace one attack with a use of Corrupting Touch .</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!L2l52EdLi8pZs4jY.DFKkh08TavdaapV2"
+    },
+    {
+      "_id": "1MinwRXLz8nf67DN",
+      "name": "Claw",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo : +5 , alcance 5 ft. Acerto: 7 (1d8 + 3) Cortante de dano plus 7 (2d6) Psíquico de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "1d8+3",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!L2l52EdLi8pZs4jY.1MinwRXLz8nf67DN"
+    },
+    {
+      "_id": "XzVPw6nkGP5wk8eI",
+      "name": "Corrupting Touch",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Sabedoria Teste de Resistência: DC 13, uma criatura the lamia can see within 5 feet. Failure : 13 (3d8) Psíquico de dano, and o alvo is cursed for l hour. Until the curse ends, o alvo has the Enfeitiçado and Envenenado conditions.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "IrPhXSpk58MWLx2f": {
+            "_id": "IrPhXSpk58MWLx2f",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "13"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 13,
+            "saveAbility": "wis"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!L2l52EdLi8pZs4jY.XzVPw6nkGP5wk8eI"
+    },
+    {
+      "_id": "xOhF5fZ0LWQwcIJU",
+      "name": "Leap",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The lamia jumps up to 30 feet by spending 10 2 feet of movement. LARVAE Fitting Fates for Depraved Souls</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!L2l52EdLi8pZs4jY.xOhF5fZ0LWQwcIJU"
+    },
+    {
+      "_id": "qnRMcrIu8ZYTNNDa",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The lamia casts one of the following spells, requiring no Ma~erial components and using Carisma as the spellcasting ability (spell save DC 13): À Vontade: Disguise Self (can appear as a Large or Medium biped), Minor Illusion 1/Dia Each: Geas, Major Image, Scrying V1 BO NU S A C TI O N S w t3</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!L2l52EdLi8pZs4jY.qnRMcrIu8ZYTNNDa"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Lamia",
+      "page": 194,
+      "cr": "4",
+      "warnings": []
+    }
+  }
+}

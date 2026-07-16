@@ -1,0 +1,322 @@
+{
+  "_id": "8pfJRj8omn0cfSxw",
+  "_key": "!actors!8pfJRj8omn0cfSxw",
+  "folder": "1QPcErIwVgACFlzi",
+  "name": "Mage",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 9,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0
+      },
+      "con": {
+        "value": 11,
+        "proficient": 0
+      },
+      "int": {
+        "value": 17,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 11,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 15,
+        "formula": ""
+      },
+      "hp": {
+        "value": 81,
+        "max": 81,
+        "formula": "18d8",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "humanoid",
+        "subtype": "Wi zard",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 6,
+      "xp": {
+        "value": 2300
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Common plus three other languages"
+      }
+    },
+    "skills": {
+      "arc": {
+        "value": 1,
+        "ability": "int"
+      },
+      "his": {
+        "value": 1,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Mage",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/mage.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "sjB2uv9Udj9wn19a",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The mage makes three Arcane Burst attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8pfJRj8omn0cfSxw.sjB2uv9Udj9wn19a"
+    },
+    {
+      "_id": "DVbv5fF1U7tGjlYJ",
+      "name": "Arcane Burst",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: + 6, alcance 5 ft. or range 120 ft . Acerto: 16 (3d8 + 3) Energia de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "3d8+3",
+            "damageType": "force"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8pfJRj8omn0cfSxw.DVbv5fF1U7tGjlYJ"
+    },
+    {
+      "_id": "upZdECFd9up9pSnC",
+      "name": "Misty Step (3/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The mage casts Misty Step, using the same spellcasting ability as Conjuração.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "3",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8pfJRj8omn0cfSxw.upZdECFd9up9pSnC"
+    },
+    {
+      "_id": "J9OSwp5khVYuSc2l",
+      "name": "Protective Magic (3/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The mage casts Counterspe/1 or Shield in response to the spell's trigger, using the same spellcasting ability as Conjuração. l\"i AVE YO U G A 1. ED O N THE RU N E S O F CH AO S, HELD THE DE A TH M ooN O R B I N YO UR T RE M BLING HANDS , ENTERED THE DEVOURING PORTAL A N D WALKED T H E P AT HS OF THE DOOMED , O R S AT AT THE LEFT HAND OF 5-z. A ss T A M DU R I N G THE R I T UAL O F Tw1 N BuR N INGs? No ? THEN SPEAK N O T TO</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "3",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8pfJRj8omn0cfSxw.J9OSwp5khVYuSc2l"
+    },
+    {
+      "_id": "NNYA1UMWmsQfuIo9",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The mage casts one of the following spells, using Inteligência as the spellcasting ability (spell save DC 14): À Vontade: Detect Magic, Light, Mage Armor (included in AC), Mage Hand, Prestidigitation 2/Dia Each: Fogoball (level 4 version), Invisibility 1/Dia Each: Cone of Frio , Fly</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8pfJRj8omn0cfSxw.NNYA1UMWmsQfuIo9"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Mage",
+      "page": 201,
+      "cr": "6",
+      "warnings": []
+    }
+  }
+}

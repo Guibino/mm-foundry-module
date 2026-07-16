@@ -1,0 +1,327 @@
+{
+  "_id": "Vae318Yf6X8y6PEH",
+  "_key": "!actors!Vae318Yf6X8y6PEH",
+  "folder": "lhndsA6Aflaa0nF6",
+  "name": "Jovem Branco Dragão",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 17,
+        "formula": ""
+      },
+      "hp": {
+        "value": 123,
+        "max": 123,
+        "formula": "13d10 + 52",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "dragon",
+        "subtype": "Chromati c",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Chaotic",
+      "cr": 6,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "cold"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Jovem Branco Dragão",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/young-white-dragon.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "T3lbTjwyyDTFvmoW",
+      "name": "Ice Walk",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon can move across and climb icy surfaces without needing t~ make an ability check. Additionally, Difficult Terrain composed of ice or snow doesn't cost it extra movement.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Vae318Yf6X8y6PEH.T3lbTjwyyDTFvmoW"
+    },
+    {
+      "_id": "SI2ybDzN9oVbQoNb",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon makes three Rend attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Vae318Yf6X8y6PEH.SI2ybDzN9oVbQoNb"
+    },
+    {
+      "_id": "5hiNGC3m40HynYf0",
+      "name": "Rend",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 10 ft. Acerto: 9 (2d4 + 4) Cortante de dano plus 2 (1d4) Frio de dano. Vl</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "nR8UmDWG24p0a0ig": {
+            "_id": "nR8UmDWG24p0a0ig",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "4",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "melee",
+            "damageFormula": "2d4+4",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Vae318Yf6X8y6PEH.5hiNGC3m40HynYf0"
+    },
+    {
+      "_id": "whfsUxRLNJ4yuf3b",
+      "name": "Frio Breath (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Salling Throw: <( DC 15, cada criatura in a 30-foot Cone. Falha: 40 u.J (9d8) Frio de dano. Sucesso: Metade do dano. ~ <( ADULT WHITE DRAGON Huge Dragon (Chromatic), Chaot ic Ev il AC 18 Iniciativa + l O (20) HP 200( 1 6d12+96) . Speed 40 ft., Burrow 30 ft., F ly 80 ft., Swim 40 ft. MOD SAVE MO D SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Vae318Yf6X8y6PEH.whfsUxRLNJ4yuf3b"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Young White Dragon",
+      "page": 330,
+      "cr": "6",
+      "warnings": [
+        "Atributos nao reconhecidos"
+      ]
+    }
+  }
+}

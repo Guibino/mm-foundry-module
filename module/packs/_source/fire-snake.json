@@ -1,0 +1,199 @@
+{
+  "_id": "n6BrsGvlo7XrYAEh",
+  "_key": "!actors!n6BrsGvlo7XrYAEh",
+  "folder": "mI6hZZeXOMovX9oy",
+  "name": "Fire Snake",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/fire-snake.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 12,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0
+      },
+      "con": {
+        "value": 11,
+        "proficient": 0
+      },
+      "int": {
+        "value": 7,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 70,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 8,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 74,
+        "formula": ""
+      },
+      "hp": {
+        "value": 27,
+        "max": 27,
+        "formula": "6d8",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30,
+        "climb": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "elemental",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Mau",
+      "cr": 0,
+      "xp": {
+        "value": 200
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "fire"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Understands P~imordial but can't speak"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Fire Snake",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/fire-snake.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "etruRCoYg2HIi9a5",
+      "name": "Fogo Aura",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>At the end of each of the salamander's turns, ·cada criatura of the salamander's choice in a 5-foot Emanation originating from the salamander takes 3 (1d6) Fogo de dano. ACTIONS z</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!n6BrsGvlo7XrYAEh.etruRCoYg2HIi9a5"
+    },
+    {
+      "_id": "NemZXpdkPq64cpyu",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 6 (1d8 + 2) > Perfurante de dano plus 3 (1d6) Fogo damag~. 0::: aJ SALAMANDER Most salamanders are arrogant yet curious, seek- ing to create artful blazes or burn that which has never been burned. They eagerly explain their work to strangers before trying to determine how the strangers burn. Salamanders radiate intense heat, which is conducted by their blazing weapons. SALAMANDER INFERNO MASTER Salamander inferno masters are ancient connois- seurs of flames and often inhabit places with unique scorching properties. They gather communes of apprentices who learn fiery techniques while help- ing their mentors accomplish great works. Inferno masters have ambitious goals, such as causing massive volcanic eruptions, opening portals to burning planes, destroying Artifacts, or burning all instances of something from the multiverse. SALAMANDER Large Elemental, Neutral El)il AC 15 In itiative +2 (12) HP 90 (12d10 + 24) Speed 30 ft., Climb 30 ft. MOD SA VE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!n6BrsGvlo7XrYAEh.NemZXpdkPq64cpyu"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Fire Snake",
+      "page": 268,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

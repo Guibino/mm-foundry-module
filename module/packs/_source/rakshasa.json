@@ -1,0 +1,227 @@
+{
+  "_id": "a98TkUHiVYFqulMS",
+  "_key": "!actors!a98TkUHiVYFqulMS",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Rakshasa",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/rakshasa.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 14,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 17,
+        "proficient": 0
+      },
+      "con": {
+        "value": 18,
+        "proficient": 0
+      },
+      "int": {
+        "value": 13,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 16,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 20,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 17,
+        "formula": ""
+      },
+      "hp": {
+        "value": 221,
+        "max": 221,
+        "formula": "26d8 + 104",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40
+      },
+      "senses": {
+        "units": "ft",
+        "truesight": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Lawful",
+      "cr": 13,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": "Charmed; Frightened"
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": "Piercing damage from weapons wielded"
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Rakshasa",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/rakshasa.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "2IDOMwo5hNR19yMU",
+      "name": "Greater Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The rakshasa automatically succeeds on saving throws against spells ~nd other magical effects, and the attack rolls of spells automat- ically miss it. Without the rakshasa's permission, no spell can observe the rakshasa remotely or detect its thoughts, creature type, or alignment.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!a98TkUHiVYFqulMS.2IDOMwo5hNR19yMU"
+    },
+    {
+      "_id": "Bgj6PRwejxCOUGMf",
+      "name": "Fiendish Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the rakshasa dies outside the Nine Hells, its body turns to ichor, and it gains a new body instantly, reviving with all its Pontos de Vida some- where in the Nine Hells.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!a98TkUHiVYFqulMS.Bgj6PRwejxCOUGMf"
+    },
+    {
+      "_id": "VaTRiwwUZiY5bWDl",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The rakshasa makes three Cursed D::'. Touch attacks. u.J Cursed Touch. Me lee Attack Roll:+ l 0, alcance 5 ft. Acerto: z 12 (2d6 + 5) Cortante de dano plus 19 (3d12) Necrótico R AKSHASA Deceiver Hungry for Power and Flesh</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!a98TkUHiVYFqulMS.VaTRiwwUZiY5bWDl"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Rakshasa",
+      "page": 255,
+      "cr": "13",
+      "warnings": []
+    }
+  }
+}

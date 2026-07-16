@@ -1,0 +1,508 @@
+{
+  "_id": "HJYTBsaMcQpUm0Bb",
+  "_key": "!actors!HJYTBsaMcQpUm0Bb",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Oni",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/oni.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 19,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 1
+      },
+      "con": {
+        "value": 16,
+        "proficient": 1
+      },
+      "int": {
+        "value": 14,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 15,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 17,
+        "formula": ""
+      },
+      "hp": {
+        "value": 119,
+        "max": 119,
+        "formula": "74d10 + 42",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 30,
+        "fly": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Mau",
+      "cr": 7,
+      "xp": {
+        "value": 2900
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "cold"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {
+      "arc": {
+        "value": 1,
+        "ability": "int"
+      },
+      "dec": {
+        "value": 2,
+        "ability": "cha"
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Oni",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/oni.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "SAxPD0tJXxcRmxPh",
+      "name": "Regeneration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The oni regains 10 Pontos de Vida at the start of each of its turns if it has at least l Hit Point.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HJYTBsaMcQpUm0Bb.SAxPD0tJXxcRmxPh"
+    },
+    {
+      "_id": "h7fkmj2JVR00hEeO",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The oni makes two Claw or Nightmare</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HJYTBsaMcQpUm0Bb.h7fkmj2JVR00hEeO"
+    },
+    {
+      "_id": "Mwf889UzCU8Lab9o",
+      "name": "Ray attacks",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>It can replace one attack with a use of Conjuração. ONI</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HJYTBsaMcQpUm0Bb.Mwf889UzCU8Lab9o"
+    },
+    {
+      "_id": "etOVs20e70ocxH7E",
+      "name": "Claw",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 10 ft. Acerto: 10 (1d12 + 4) Cortante de dano plus 9 (2d8) Necrótico de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "heeyrrd2abtpseU2": {
+            "_id": "heeyrrd2abtpseU2",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 12,
+                  "bonus": "4",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "melee",
+            "damageFormula": "1d12+4",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HJYTBsaMcQpUm0Bb.etOVs20e70ocxH7E"
+    },
+    {
+      "_id": "x3rRi4bbyV5ScgI0",
+      "name": "Nightmare Ray",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +5, range 60 ft. Acerto: 9 (2d6 + 2) Psíquico de dano, and o alvo has the Amedrontado condition until the start of the on i's next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "iF3Xi8X74vIqBixR": {
+            "_id": "iF3Xi8X74vIqBixR",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "psychic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "ranged",
+            "damageFormula": "2d6+2",
+            "damageType": "psychic"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HJYTBsaMcQpUm0Bb.x3rRi4bbyV5ScgI0"
+    },
+    {
+      "_id": "HnPc2o6wJDIwSvH9",
+      "name": "Shape-Shift",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The oni shape-shifts into a Small or Me- dium Humanoid or a Large Gigante, or it returns to its true form. Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HJYTBsaMcQpUm0Bb.HnPc2o6wJDIwSvH9"
+    },
+    {
+      "_id": "PWSPmw7o9Z43GzwK",
+      "name": "Invisibility",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The oni casts Invisibility on itself, requiring _J 0 no spell components and using the same spellcasting CJ ability as Conjuração. 0 OTYUGH Large Aberration, Neutral AC 74 Iniciativa +0 (10) HP 704 (11d10 + 44) Speed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HJYTBsaMcQpUm0Bb.PWSPmw7o9Z43GzwK"
+    },
+    {
+      "_id": "CxbBPhUcGE18syiw",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The oni casts one of the following spells, requiring no Material co. mponents and using Carisma as the spel I casting ability (spel I save DC 13): 1/Dia Each: Charm Person (level 2 version), Darkness, Gaseous Form, Sleep</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HJYTBsaMcQpUm0Bb.CxbBPhUcGE18syiw"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Oni",
+      "page": 234,
+      "cr": "7",
+      "warnings": []
+    }
+  }
+}

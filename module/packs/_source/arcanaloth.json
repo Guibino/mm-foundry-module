@@ -1,0 +1,450 @@
+{
+  "_id": "bRXJnQTF8VkOWLuw",
+  "_key": "!actors!bRXJnQTF8VkOWLuw",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Arcanaloth",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/arcanaloth.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 17,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 12,
+        "proficient": 1
+      },
+      "con": {
+        "value": 14,
+        "proficient": 1
+      },
+      "int": {
+        "value": 20,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 16,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 17,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 17,
+        "formula": ""
+      },
+      "hp": {
+        "value": 175,
+        "max": 175,
+        "formula": "27d8 + 54",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 30,
+        "fly": 30
+      },
+      "senses": {
+        "units": "ft",
+        "truesight": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "Yugo/0th",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Mau",
+      "cr": 12,
+      "xp": {
+        "value": 8400
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "acid",
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "cold",
+          "fire",
+          "lightning"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "All"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Arcanaloth",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/arcanaloth.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "23oIlW4ndKqvjA2c",
+      "name": "Fiendish Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the arcanaloth dies outside Gehenna, its body dissolves into ichor, and it gains a new body instantly and revives with all its Pontos de Vida in Gehenna.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bRXJnQTF8VkOWLuw.23oIlW4ndKqvjA2c"
+    },
+    {
+      "_id": "d97q50hhDzfieFTg",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The arcanaloth has Advantage on saving throws against spells and other magical effects.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bRXJnQTF8VkOWLuw.d97q50hhDzfieFTg"
+    },
+    {
+      "_id": "0bHZzhxKa4pi7Cgm",
+      "name": "Soul Tome",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The arcanaloth has a magic tome. While holding or carrying the tome, the arcanaloth can use its Banishing Claw action. The tome has AC 17; HP 35; and Immunity to Ne- crotic, Veneno, and Psíquico de dano. The tome regains all its Pontos de Vida at the end of every turn, but it turns to dust if reduced to 0 Pontos de Vida or when the arcanaloth dies. If the tome is destroyed, the arcanaloth can create a new one when it finishes a Short or Long Rest. Vl ,z ACTIONS lJ u Ataque Múltiplo. The arcanaloth makes three Fiendish</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bRXJnQTF8VkOWLuw.0bHZzhxKa4pi7Cgm"
+    },
+    {
+      "_id": "Uf4gXfmXfGjXoIua",
+      "name": "CL Burst attacks",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>It can replace one attack with a Banishing 0 Claw attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bRXJnQTF8VkOWLuw.Uf4gXfmXfGjXoIua"
+    },
+    {
+      "_id": "G0yH5zGaYta60ZMR",
+      "name": "Fiendish Burst",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +9, alcance 5 ft. or range 120 ft. Acerto: 31 (4d12 + 5) Necrótico de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9,
+            "attackType": "ranged",
+            "damageFormula": "4d12+5",
+            "damageType": "necrotic"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bRXJnQTF8VkOWLuw.G0yH5zGaYta60ZMR"
+    },
+    {
+      "_id": "BsSR8LKWc8jPFDaw",
+      "name": "Banishing Claw (Requires Soul Tome)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 5 ft. Acerto: 70 (2d4 + 5) Cortante de dano plus 19 (3d12) Psíquico de dano. If o alvo is a creature, it is subjected to the following effect. Carisma Teste de Resistência: DC 17. Falha: The target is trapped in a demi- plane inside the Soul Tome. While trapped there, o alvo has the Incapacitado condition. At the end of each of its turns, o alvo repeats the save, escaping the tome on a success. When o alvo escapes, it appears in the space it left or, if that space is occupied, the nearest unoccupied space. If o alvo fails three of these saves while in the demiplane, it becomes bound to the tome and can es- cape only if the tome is reduced to 0 Pontos de Vida.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9,
+            "attackType": "melee",
+            "damageFormula": "2d4+5",
+            "damageType": "slashing",
+            "saveDc": 17,
+            "saveAbility": "cha"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bRXJnQTF8VkOWLuw.BsSR8LKWc8jPFDaw"
+    },
+    {
+      "_id": "0JZCrnNFnFwXv8Uy",
+      "name": "Teleport",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The arcanaloth teleports up to 30 feet to an unoccupied space it can see.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bRXJnQTF8VkOWLuw.0JZCrnNFnFwXv8Uy"
+    },
+    {
+      "_id": "cIHLKOMynG6SaNyD",
+      "name": "Habilidade",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Counterspe/1. The arcanaloth casts Counterspe/1 in re- sponse to that spell's trigger, using the same spellcast- ing ability as Conjuração. ~ ~ ------~- A_R_c_.A_ N_A_L_OTH t\\_ 19 ARCH - HAG Hag of Forbidden Secrets and Magical Malice</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bRXJnQTF8VkOWLuw.cIHLKOMynG6SaNyD"
+    },
+    {
+      "_id": "LSC9qaOjn6tMwKlZ",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The arcanaloth casts one of the following spells, requiring no Material components and using In- telligence as the spellcasting ability (spell save DC 17): À Vontade: Alter Self, Detect Magic, Identify, Mage Hand, Prestidigitation 1/Dia Each: Contact Other Plane, Detect Thoughts, Di- mension Door, Mind Blank</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bRXJnQTF8VkOWLuw.LSC9qaOjn6tMwKlZ"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Arcanaloth",
+      "page": 21,
+      "cr": "12",
+      "warnings": []
+    }
+  }
+}

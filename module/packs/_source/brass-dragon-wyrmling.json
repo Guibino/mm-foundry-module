@@ -1,0 +1,399 @@
+{
+  "_id": "ZCYGvNfwRQtNuwYh",
+  "_key": "!actors!ZCYGvNfwRQtNuwYh",
+  "folder": "lhndsA6Aflaa0nF6",
+  "name": "Latão Dragão Filhote",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/brass-dragon-wyrmling.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 15,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 1
+      },
+      "con": {
+        "value": 13,
+        "proficient": 0
+      },
+      "int": {
+        "value": 70,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 77,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 73,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 15,
+        "formula": ""
+      },
+      "hp": {
+        "value": 22,
+        "max": 22,
+        "formula": "4d8 + 4",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30,
+        "burrow": 15
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "dragon",
+        "subtype": "Metallic",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Bom",
+      "cr": 0,
+      "xp": {
+        "value": 200
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": "Fi re"
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Dracon ic"
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Latão Dragão Filhote",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/brass-dragon-wyrmling.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "1Zum9PWFc514QCri",
+      "name": "Rend",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 7 (1d1 O + 2) Cortante de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "b6y2GSg467UIrfaE": {
+            "_id": "b6y2GSg467UIrfaE",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": null,
+                  "denomination": null,
+                  "bonus": "",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": true,
+                    "formula": "1d1O+2"
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "1d1O+2",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ZCYGvNfwRQtNuwYh.1Zum9PWFc514QCri"
+    },
+    {
+      "_id": "NCzbfAFLjVqqQQ2I",
+      "name": "Fogo Breath (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Destreza Teste de Resistência: DC 11, cada criatura in a 20-foot-long, 5-foot-wide Line. Falha: 14 (4d6) Fogo de dano. Sucesso: Metade do dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "o6eZ2adhTrbx8D3P": {
+            "_id": "o6eZ2adhTrbx8D3P",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "11"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 6,
+                  "bonus": "",
+                  "types": [
+                    "fire"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "4d6",
+            "damageType": "fire",
+            "saveDc": 11,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ZCYGvNfwRQtNuwYh.NCzbfAFLjVqqQQ2I"
+    },
+    {
+      "_id": "hybIiOVFSdIqdfEq",
+      "name": "Sleep Breath",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Teste de Resistência: DC 11, cada criatura in a 15 -foot Cone. Falha: The target has the Incapacitado condition until the end of its next turn, at which point it repeats the save. Second Falha: The target has the Inconsciente condition for l minute. This effect ends for o alvo if it takes de dano or a crea- ture .with in 5 feet of it takes an action to wake it. 54 B RAS& DRAGO NS from combat when necessary, thwarting foes with magical sleep and searing them with flame. Brass dragons favor warm climes, particularly steppes and rocky or sandy deserts, and they usu- ally dwell near prominent crossroads or oases that regularly draw visitors. They enjoy adopting Hu- manoid forms, disguising themselves as traveling merchants, scholars, storytellers, or anyone else invested in others' stories.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "rsYliv7c9JFWqei9": {
+            "_id": "rsYliv7c9JFWqei9",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "11"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 11,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ZCYGvNfwRQtNuwYh.hybIiOVFSdIqdfEq"
+    },
+    {
+      "_id": "qw2H8VnjldQYDbSm",
+      "name": "Brass dragons collect eclectic objects",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>While such items might seem like knickl<nacks, each is part of a story-perhaps a nostalgic memento or evidence of a tale passed into myth. An old friend's hat and the crown of the last ruler of a forgotten dynasty could occupy the same shelf in a brass dragon's hoard . BRASS DRAGON WYRM L ING Brass dragon wyrmlings are relentlessly curious. These dragons eagerly engage approachable crea- tures and are quick to explore any place that has an interesting story. Once they hear tales of adventure, many are keen to start their own quests. YOUNG BRASS DRAGON Large Dragon (Metallic), Chaotic Good AC 17 Iniciativa +3 (13) HP 1 10 (13d1 0 + 39) Speed 40 ft., Burrow 20 ft. , Fly 80 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ZCYGvNfwRQtNuwYh.qw2H8VnjldQYDbSm"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Brass Dragon Wyrmling",
+      "page": 56,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

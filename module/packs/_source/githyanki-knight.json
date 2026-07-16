@@ -1,0 +1,314 @@
+{
+  "_id": "5Rle7Zf8bamhjhEq",
+  "_key": "!actors!5Rle7Zf8bamhjhEq",
+  "folder": "1nioWC3kx0YxX8qj",
+  "name": "Githyanki Cavaleiro",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0
+      },
+      "con": {
+        "value": 15,
+        "proficient": 1
+      },
+      "int": {
+        "value": 14,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 15,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 18,
+        "formula": ""
+      },
+      "hp": {
+        "value": 117,
+        "max": 117,
+        "formula": "18d8 + 36",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "aberration",
+        "subtype": "Gith",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Lawful",
+      "cr": 8,
+      "xp": {
+        "value": 3900
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comum, Gith"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Githyanki Cavaleiro",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/githyanki-knight.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "KheZ3lkqWW0hKMio",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The githyanki makes three Silver Sword at- tacks. It can replace one attack with a use of Spellcast- ing to cast Telekinesis if available.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5Rle7Zf8bamhjhEq.KheZ3lkqWW0hKMio"
+    },
+    {
+      "_id": "YTZBp9fChGc7ceOh",
+      "name": "Silver Sword",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft . Acerto: 10 (2d6 + 3) Cortante de dano plus 14 (4d6) Psíquico dam- age. Critical Acerto: If o alvo is in an astral _ body (as with the Astral Projection spell)i the githyanki can cut the silvery cord that tethers o alvo to its material body instead of dealing de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "kzxHN8pYB9kLJqCL": {
+            "_id": "kzxHN8pYB9kLJqCL",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 6,
+            "attackType": "melee",
+            "damageFormula": "2d6+3",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5Rle7Zf8bamhjhEq.YTZBp9fChGc7ceOh"
+    },
+    {
+      "_id": "ER7iLgAlcBm9B6pd",
+      "name": "Misty Step (2/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The githyan ki casts Misty Step, re- quiring no spell components and using the same spell- casting ability as Conjuração. G I THYAN K I K NIGHT Githyanki knights wield silver blades to slay magic-users who use the Astral Projection spell to intrude on githyanki territories on the Astral Plane. These silver blades are sacred to the githyanki. Non-githyanki who claim these weapons often find themselves hunted by wrathful githyanki knights. GITHYA N KI D RACO M ANCE R One of Gith's last deeds was to forge an alliance between the githyanki and the dragon god Tiamat. Ever since, the Dragon Queen's red dragon consort, Ephelomon, and his kind have been allies of the githyan1<i. Githyanki dracomancers uphold this pact and cultivate magic talents that complement the might of red dragons. GITHYANKI DRACOMANCER Medium Aberration (Gith), Lawful Evil AC 18 Iniciativa +8 (18) HP 255 (30d8 + 120) Speed 30 ft., Fly 30 ft. (hover) MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "2",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5Rle7Zf8bamhjhEq.ER7iLgAlcBm9B6pd"
+    },
+    {
+      "_id": "MrrRc9mEDKDEbsiL",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The githyanki casts one of the following spells, requiring no spell components and using Intelli- gence as the spellcasting ability (spell save DC 13): À Vontade: Mage Hand (the hand is Invisível) 2/Dia Each: Nondetection (self only), Tongues 1/Dia Each: Plane Shift, Telekinesis</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5Rle7Zf8bamhjhEq.MrrRc9mEDKDEbsiL"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Githyanki Knight",
+      "page": 137,
+      "cr": "8",
+      "warnings": []
+    }
+  }
+}

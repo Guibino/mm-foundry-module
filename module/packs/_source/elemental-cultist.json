@@ -1,0 +1,402 @@
+{
+  "_id": "cNEwNRf9ruOQyGsI",
+  "_key": "!actors!cNEwNRf9ruOQyGsI",
+  "folder": "1QPcErIwVgACFlzi",
+  "name": "Elemental Cultist",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 12,
+        "proficient": 0
+      },
+      "con": {
+        "value": 16,
+        "proficient": 1
+      },
+      "int": {
+        "value": 14,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 18,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 12,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 16,
+        "formula": ""
+      },
+      "hp": {
+        "value": 135,
+        "max": 135,
+        "formula": "18d8 + 54",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Mau",
+      "cr": 8,
+      "xp": {
+        "value": 3900
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comum, Primordial"
+      }
+    },
+    "skills": {
+      "arc": {
+        "value": 2,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "rel": {
+        "value": 2,
+        "ability": "int"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Elemental Cultist",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/elemental-cultist.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "duCvnvdCqYahCfkG",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The cultist makes three attacks, using Ele- mental Flail or Elemental Claw in any combination.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!cNEwNRf9ruOQyGsI.duCvnvdCqYahCfkG"
+    },
+    {
+      "_id": "vu2u29wGvRRLC06U",
+      "name": "Elemental Flail",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 25 (6d6 + 4) de dano of a type chosen by the cultist: Ácido, Frio, Fogo, Elétrico, or Trovejante.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "HLStlgD06GlyTfKo": {
+            "_id": "HLStlgD06GlyTfKo",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "melee"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!cNEwNRf9ruOQyGsI.vu2u29wGvRRLC06U"
+    },
+    {
+      "_id": "FWlrit6WTZAqAY5E",
+      "name": "Elemental Claw",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +7, ran. ge 120 ft . Acerto: 22 (4d10) de dano of a type chosen by the cultist:</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "rM1rJCTPX6j65tRR": {
+            "_id": "rM1rJCTPX6j65tRR",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "ranged"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!cNEwNRf9ruOQyGsI.FWlrit6WTZAqAY5E"
+    },
+    {
+      "_id": "STLHj5P4t25PSkU7",
+      "name": "Ácido, Frio, Fogo, Elétrico, or Trovejante",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If o alvo is a Medium or smaller creature, the cultist moves the tar- get up to 10 feet straight toward or away from itself.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!cNEwNRf9ruOQyGsI.STLHj5P4t25PSkU7"
+    },
+    {
+      "_id": "NGcqQpwzYzcDwaxw",
+      "name": "Elemental Absorption (1/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Trigger: The cultist _J takes Ácido, Frio, Fogo, Elétrico, or Trovejante de dano. LL 1.1.J Response: 0:: The cultist gives itself Resistance to that in- =i stance of de dano and gains 10 Temporary Pontos de Vida. FIEND CULTIST Medium or Small Humanoid, Neutral Ev il- AC 16 Iniciativa +5 (15) HP 127 (17d8 + 51) Speed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!cNEwNRf9ruOQyGsI.NGcqQpwzYzcDwaxw"
+    },
+    {
+      "_id": "lHnueUxOfz2rJabt",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The cultist casts one of the following spells, using Sabedoria as the spellcasting ability (spell save DC 15): À Vontade: Elementalism, Mage Hand</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!cNEwNRf9ruOQyGsI.lHnueUxOfz2rJabt"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Elemental Cultist",
+      "page": 89,
+      "cr": "8",
+      "warnings": []
+    }
+  }
+}

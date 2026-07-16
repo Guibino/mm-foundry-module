@@ -1,0 +1,278 @@
+{
+  "_id": "FmdMrfIqWrJdh0Mw",
+  "_key": "!actors!FmdMrfIqWrJdh0Mw",
+  "folder": "9eORFRgLi2o0urFB",
+  "name": "Rhinoceros",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/rhinoceros.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 24,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 9,
+        "proficient": 0
+      },
+      "con": {
+        "value": 21,
+        "proficient": 1
+      },
+      "int": {
+        "value": 3,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 11,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 6,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 10,
+        "formula": ""
+      },
+      "hp": {
+        "value": 126,
+        "max": 126,
+        "formula": "11d12 + 55",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 50
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 6,
+      "xp": {
+        "value": 2300
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Rhinoceros",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/rhinoceros.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "lysYczWVoULCTUfs",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The mammoth makes two Gore attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!FmdMrfIqWrJdh0Mw.lysYczWVoULCTUfs"
+    },
+    {
+      "_id": "KkscheCnJ48kYIL6",
+      "name": "Gore",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>MeleeAttack Roll:+10, alcance 10ft. Acerto: 18 (2d10 + 7) Perfurante de dano. If o alvo is a Huge or smaller creature and the mammoth moved 2_ 0+ feet straight toward it immediately before the hit, o alvo has the Caído condition.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d10+7",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!FmdMrfIqWrJdh0Mw.KkscheCnJ48kYIL6"
+    },
+    {
+      "_id": "fqFi0wg0zOHrKgz6",
+      "name": "Trample",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Destreza Teste de Resistência: DC 18, uma criatura within 5 feet that has the Caído condition. Falha: 29 (4d10 + 7) Concussão de dano. Sucesso: Metade do dano. MASTIFF Medium Beast, Unaligned AC 12 Iniciativa +2 (12) . HP 5(1d8+1) Speed 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "0g6ghN4GQ9qb9OpW": {
+            "_id": "0g6ghN4GQ9qb9OpW",
+            "type": "save",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "18"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 10,
+                  "bonus": "7",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "4d10+7",
+            "damageType": "bludgeoning",
+            "saveDc": 18,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!FmdMrfIqWrJdh0Mw.fqFi0wg0zOHrKgz6"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Rhinoceros",
+      "page": 367,
+      "cr": "6",
+      "warnings": []
+    }
+  }
+}

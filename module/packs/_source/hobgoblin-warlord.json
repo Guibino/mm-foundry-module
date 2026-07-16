@@ -1,0 +1,389 @@
+{
+  "_id": "e61iVNOIhns56QEx",
+  "_key": "!actors!e61iVNOIhns56QEx",
+  "folder": "inkH4oLnh3yP5W9M",
+  "name": "Hobgoblin Warlord",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/hobgoblin-warlord.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 77,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 74,
+        "proficient": 1
+      },
+      "con": {
+        "value": 76,
+        "proficient": 0
+      },
+      "int": {
+        "value": 74,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 77,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 75,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 20,
+        "formula": ""
+      },
+      "hp": {
+        "value": 772,
+        "max": 772,
+        "formula": "75d8 + 45",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fey",
+        "subtype": "Gohl i noid",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Mau",
+      "cr": 6,
+      "xp": {
+        "value": 2300
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comum, Goblin"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Hobgoblin Warlord",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/hobgoblin-warlord.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "RHJC3AwCC5YwREO7",
+      "name": "Aura of Authority",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>While in a 30-foot Emanation origi- nating from the hobgoblin, the hobgoblin and its allies have Advantage on attack rolls and saving throws, provided the hobgoblin doesn't have the Incapacitado condition.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!e61iVNOIhns56QEx.RHJC3AwCC5YwREO7"
+    },
+    {
+      "_id": "3AM9qcdPVMfwTg31",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The hobgoblin makes three attacks, using Javelin or Longsword in any combination.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!e61iVNOIhns56QEx.3AM9qcdPVMfwTg31"
+    },
+    {
+      "_id": "3in2N3tcDjhjjBmO",
+      "name": "Javelin",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +6, alcance 5 ft. or range 30/720 ft. Acerto: 77 (-2d6 + 4) Perfurante de dano, and o alvo's Speed decreases by 70 feet until the start of · the hobgoblin's next.turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "GOpwjQ55DQhhDmIx": {
+            "_id": "GOpwjQ55DQhhDmIx",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": null,
+                  "denomination": null,
+                  "bonus": "",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": true,
+                    "formula": "-2d6+4"
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 6,
+            "attackType": "ranged",
+            "damageFormula": "-2d6+4",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!e61iVNOIhns56QEx.3in2N3tcDjhjjBmO"
+    },
+    {
+      "_id": "NvwIXqNNx7qJ0z73",
+      "name": "Longsword",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 72 (2d8 + 3) Cortante de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "GbX3pFNhU6uf8pbU": {
+            "_id": "GbX3pFNhU6uf8pbU",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "3",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 6,
+            "attackType": "melee",
+            "damageFormula": "2d8+3",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!e61iVNOIhns56QEx.NvwIXqNNx7qJ0z73"
+    },
+    {
+      "_id": "WQKJTofZ2v0GM0Nh",
+      "name": "Parry",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Trigger: The hobgoblin is hit by a melee attack roll while holding a weapon: Response: The hobgoblin adds 3 t~ its AC against that attack, possib~y causing - it to miss. HOBGOBLINS HOM U N C ULUS Winged Servant Given Magical Life</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!e61iVNOIhns56QEx.WQKJTofZ2v0GM0Nh"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Hobgoblin Warlord",
+      "page": 173,
+      "cr": "6",
+      "warnings": []
+    }
+  }
+}

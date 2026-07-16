@@ -1,0 +1,213 @@
+{
+  "_id": "PrRww5xUilrSKTBV",
+  "_key": "!actors!PrRww5xUilrSKTBV",
+  "folder": "inkH4oLnh3yP5W9M",
+  "name": "Worg",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/worg.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 76,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 73,
+        "proficient": 0
+      },
+      "con": {
+        "value": 73,
+        "proficient": 0
+      },
+      "int": {
+        "value": 7,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 11,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 8,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 73,
+        "formula": ""
+      },
+      "hp": {
+        "value": 26,
+        "max": 26,
+        "formula": "4d10 + 4",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 50
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fey",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Mau",
+      "cr": 0.5,
+      "xp": {
+        "value": 100
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Goblin, Worg"
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Worg",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/worg.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "0wSGRUJifBz36U1a",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 7 (1d8 + 3) Perfurante de dano, and the next attack roll made against o alvo before the start of the worg's next turn has Advantage. DIRE WORG Huge Fey Neutral EtJil AC 16 Iniciativa +2 (12) · HP 147 (14d12 + 56) Sp eed 50 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "x3c0veeoMXJZ1foB": {
+            "_id": "x3c0veeoMXJZ1foB",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "1d8+3",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!PrRww5xUilrSKTBV.0wSGRUJifBz36U1a"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Worg",
+      "page": 337,
+      "cr": "1/2",
+      "warnings": []
+    }
+  }
+}

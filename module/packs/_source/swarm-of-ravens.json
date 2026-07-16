@@ -1,0 +1,280 @@
+{
+  "_id": "R5RipQDEmNIi8KS3",
+  "_key": "!actors!R5RipQDEmNIi8KS3",
+  "folder": "9eORFRgLi2o0urFB",
+  "name": "Enxame Of Ravens",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/swarm-of-ravens.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 6,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0
+      },
+      "con": {
+        "value": 12,
+        "proficient": 0
+      },
+      "int": {
+        "value": 5,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 6,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 12,
+        "formula": ""
+      },
+      "hp": {
+        "value": 1,
+        "max": 1,
+        "formula": "",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "fly": 50
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 0,
+      "xp": {
+        "value": 50
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": "Charmed; Frightened; Grappled; Paralyzed"
+      },
+      "dr": {
+        "value": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "None"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Enxame Of Ravens",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/swarm-of-ravens.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "5VjnZlpBuUMOFbAp",
+      "name": "Beaks",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 5 (1d6 + 2) Perfurante de dano, or 2 (1d4) Perfurante de dano if the swarm is Bloodied.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "FduS1t1NVCIFE6WK": {
+            "_id": "FduS1t1NVCIFE6WK",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "1d6+2",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!R5RipQDEmNIi8KS3.5VjnZlpBuUMOFbAp"
+    },
+    {
+      "_id": "4yH3IFxL8k15nmLr",
+      "name": "Cacophony (Recharge 6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Sabedoria Teste de Resistência: DC 3 10, uma criatura in the swarm's space. Falha: The target has the Surdo condition until the start of the z swarm's next turn. While Surdo, o alvo also has 0 Disadvantage on ability checks and attack rolls. Ct'. l 7E R E YES ARE E V ERYW HER E- FL E C KS O F C A R B O NA D O , PO O L S OF MID NI GHT . T H E R AV EN Q U EE N W A TCHES . -EvE RN IG HT G RAF FI T I SWARM OF VENOMOUS SNAKES Medium Swarm ofTiny Beasts, Unaligned AC 14 Iniciativa +4 (14) HP 36 (8d8) Speed 30 ft., Swim 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "6"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "kVpI6s44l2iBbzZp": {
+            "_id": "kVpI6s44l2iBbzZp",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "3"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 3,
+            "saveAbility": "wis"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!R5RipQDEmNIi8KS3.4yH3IFxL8k15nmLr"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Swarm of Ravens",
+      "page": 373,
+      "cr": "0",
+      "warnings": [
+        "HP nao reconhecido"
+      ]
+    }
+  }
+}

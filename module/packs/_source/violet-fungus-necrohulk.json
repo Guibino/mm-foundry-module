@@ -1,0 +1,424 @@
+{
+  "_id": "3aZtIGQxHVlT9MeV",
+  "_key": "!actors!3aZtIGQxHVlT9MeV",
+  "folder": "UIhMG4gNrr0aGWHc",
+  "name": "Violet Fungus Necrohulk",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/violet-fungus-necrohulk.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 79,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 72,
+        "proficient": 1
+      },
+      "con": {
+        "value": 78,
+        "proficient": 0
+      },
+      "int": {
+        "value": 7,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 74,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 77,
+        "formula": ""
+      },
+      "hp": {
+        "value": 723,
+        "max": 723,
+        "formula": "13d70 + 52",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40
+      },
+      "senses": {
+        "units": "ft",
+        "blindsight": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "plant",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Mau",
+      "cr": 0,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "None"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Violet Fungus Necrohulk",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/violet-fungus-necrohulk.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "kVmhvdgCaBlby0bR",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The necrohulk makes two Rotting Slam attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!3aZtIGQxHVlT9MeV.kVmhvdgCaBlby0bR"
+    },
+    {
+      "_id": "lB46wEFM1sx7fXjm",
+      "name": "Rotting Slam",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 7 0 ft. Acerto: 9 (7d70 + 4) Concussão de dano plus 7 (2d6) Ne- crotic de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "0AbLdTiJwvEsHOmO": {
+            "_id": "0AbLdTiJwvEsHOmO",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 7,
+                  "denomination": 70,
+                  "bonus": "4",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "melee",
+            "damageFormula": "7d70+4",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!3aZtIGQxHVlT9MeV.lB46wEFM1sx7fXjm"
+    },
+    {
+      "_id": "Q5LJThL9eVM8H48K",
+      "name": "Spore Bomb (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Teste de Resistência: DC 15, cada criatura in a 20-foot-radius Sphere cen- tered on a point the necrohulk can see within 60 feet. Falha: 28 (8d6) Necrótico de dano, and o alvo has the Envenenado condition until the start of the necrohulk's next turn. While Envenenado, o alvo can't regain Hit</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "IvXYoTbs3kaeNP4f": {
+            "_id": "IvXYoTbs3kaeNP4f",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "15"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 8,
+                  "denomination": 6,
+                  "bonus": "",
+                  "types": [
+                    "necrotic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "8d6",
+            "damageType": "necrotic",
+            "saveDc": 15,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!3aZtIGQxHVlT9MeV.Q5LJThL9eVM8H48K"
+    },
+    {
+      "_id": "o4OaH8hXBjbqWqa8",
+      "name": "Points",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Sucesso: Metade do dano only.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!3aZtIGQxHVlT9MeV.o4OaH8hXBjbqWqa8"
+    },
+    {
+      "_id": "fOL2CFnrbrBCyu7e",
+      "name": "Absorb Body",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Força Teste de Resistência: DC 15, one Me- dium or Small creature the necrohulk can see within 5 feet. Falha: The target is pulled into the necrohulk's space and becomes grafted to its body. The necrohulk can have only one target grafted at a time. While grafted, o alvo has the Impedido condition and Disadvantage on Constituição saving throws. When the necrohulk moves, the grafted target moves with it. If o alvo dies while grafted, its body is destroyed, and the necrohulk regains 70 Pontos de Vida. The graft~d target or a creature within 5 feet of the necrohulk can take an action to make a DC 15 Força (Athletics) check. On a successful check, o alvo is 0 no longer grafted and moves to an unoccupied space Q:'. within 5 feet of the necrohulk . .. GALEB DUHR Medium Elemental, Neutral AC 16 lnitiative+2 (17) HP123 (13d8+65)</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "JBCMwgNuF4cfCbh4": {
+            "_id": "JBCMwgNuF4cfCbh4",
+            "type": "save",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "15"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 15,
+            "saveAbility": "str"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!3aZtIGQxHVlT9MeV.fOL2CFnrbrBCyu7e"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Violet Fungus Necrohulk",
+      "page": 128,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

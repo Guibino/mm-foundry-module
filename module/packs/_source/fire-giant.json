@@ -1,0 +1,236 @@
+{
+  "_id": "qzFsf68HBQPRchAc",
+  "_key": "!actors!qzFsf68HBQPRchAc",
+  "folder": "EgPgmtpb4EiltKUV",
+  "name": "Fire Gigante",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/fire-giant.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 25,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 9,
+        "proficient": 1
+      },
+      "con": {
+        "value": 23,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 13,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 18,
+        "formula": ""
+      },
+      "hp": {
+        "value": 162,
+        "max": 162,
+        "formula": "13d12 + 78",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "giant",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Mau",
+      "cr": 9,
+      "xp": {
+        "value": 5000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [
+          "fire"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Gigante"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Fire Gigante",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/fire-giant.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "Ix1gLFKk7VD5nUv4",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The giant makes two attacks, using Flame Sword or Hammer Throw in any combination .</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qzFsf68HBQPRchAc.Ix1gLFKk7VD5nUv4"
+    },
+    {
+      "_id": "jTiu3loVbkcdxSb1",
+      "name": "Flame Sword",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 11, alcance l 0 ft. Acerto: 21 (4d6 + 7) Cortante de dano plus 10 (3d6) Fogo de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "4d6+7",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qzFsf68HBQPRchAc.jTiu3loVbkcdxSb1"
+    },
+    {
+      "_id": "hnf8zdgLvwdT4xan",
+      "name": "Hammer Throw",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância:+ 11, range 60/240 ft. Acerto: 23 (3d10 + 7) Concussão de dano plus 4 (1d8) Fogo de dano, and o alvo is pushed up to 15 feet straight away from the giant and has Disadvantage on the next attack roll it makes before the end of its next turn. FLAMES KULL Skull Smoldering with Magical Obsession</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "3d10+7",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qzFsf68HBQPRchAc.hnf8zdgLvwdT4xan"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Fire Giant",
+      "page": 121,
+      "cr": "9",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "_id": "nJDORbfRSHRNFfjV",
+  "_key": "!actors!nJDORbfRSHRNFfjV",
+  "folder": "bKQUPthn1V2Yu6Bn",
+  "name": "Crawling Claw",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 13,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0
+      },
+      "con": {
+        "value": 11,
+        "proficient": 0
+      },
+      "int": {
+        "value": 5,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 4,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 12,
+        "formula": ""
+      },
+      "hp": {
+        "value": 2,
+        "max": 2,
+        "formula": "1d4",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 20,
+        "climb": 20
+      },
+      "senses": {
+        "units": "ft",
+        "blindsight": 30
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Mau",
+      "cr": 0,
+      "xp": {
+        "value": 10
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "tiny",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Understands Common but can't speak"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Crawling Claw",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/crawling-claw.webp"
+    },
+    "disposition": -1
+  },
+  "items": [],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Crawling Claw",
+      "page": 85,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

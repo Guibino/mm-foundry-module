@@ -1,0 +1,415 @@
+{
+  "_id": "gBKXPj9jVIQWDB0V",
+  "_key": "!actors!gBKXPj9jVIQWDB0V",
+  "folder": "lhndsA6Aflaa0nF6",
+  "name": "Prateado Dragão Filhote",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/silver-dragon-wyrmling.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 19,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 1
+      },
+      "con": {
+        "value": 17,
+        "proficient": 0
+      },
+      "int": {
+        "value": 12,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 11,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 15,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 17,
+        "formula": ""
+      },
+      "hp": {
+        "value": 45,
+        "max": 45,
+        "formula": "6d8 + 18",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30,
+        "fly": 60
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60,
+        "blindsight": 10
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "dragon",
+        "subtype": "Metallic",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Bom",
+      "cr": 2,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Dracônico"
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Prateado Dragão Filhote",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/silver-dragon-wyrmling.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "i3kABbIUvgeBiYSb",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon makes two Rend attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!gBKXPj9jVIQWDB0V.i3kABbIUvgeBiYSb"
+    },
+    {
+      "_id": "IEqQYFbvclhQxDY0",
+      "name": "Rend",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 9 (1d1 0 + 4) Perfurante de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "6FDvElxGQs0Z8Pdp": {
+            "_id": "6FDvElxGQs0Z8Pdp",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 10,
+                  "bonus": "4",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 6,
+            "attackType": "melee",
+            "damageFormula": "1d10+4",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!gBKXPj9jVIQWDB0V.IEqQYFbvclhQxDY0"
+    },
+    {
+      "_id": "XUne5CcVHdtyCJML",
+      "name": "Frio Breath (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Teste de Resistência: DC 13, cada criatura in a 15-foot Cone. Falha: 18 (4d8)</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "omFbH6QNu6J3J6p5": {
+            "_id": "omFbH6QNu6J3J6p5",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "13"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 13,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!gBKXPj9jVIQWDB0V.XUne5CcVHdtyCJML"
+    },
+    {
+      "_id": "KynYS6lh1wKlKGPH",
+      "name": "Frio de dano",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Sucesso: Metade do dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!gBKXPj9jVIQWDB0V.KynYS6lh1wKlKGPH"
+    },
+    {
+      "_id": "hJ5ulG7m6V0xyz8g",
+      "name": "Paralyzing Breath",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Teste de Resistência: DC 13 , cada criatura in a 15-foot Cone. First Falha: The target has the Incapacitado condition until the end of its next turn, when it repeats the save. Second Falha: The tar- get has the Paralisado condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 minute, it succeeds automatically. SILVER DRAGONS Silver dragons typically dwell amid snow-capped mountains, though aspirations and congeniality drive some to instead live among cosmopolitan soci- eties. Disguised as humanoids, they ally with artists, historians, knights, and humble leaders who learn from the past to create better futures. Silve n_ dragons take inspiration from legendary heroes and have grand ambitions. Many collect treasures that reflect these interests, such as histo- ries, ancient art, and the gear of famous champions. SILVER DRAGON WYRMLING Silver dragon wyrmlings typically live with one or more parents or mentors, learning much about the world and its past before living on their own. YOUNG SILVER DRAGO N Young silver dragons usually have close ties with elder metallic dragons or heroic role models, helping those with great goals achieve their ambitions. They might serve as messengers for or representatives of ✓ such do-gooders. YOUNG SILVER DRAGON Large D ragon (Metal lic), Lawful Good AC 18 Iniciativa +4 (1 4) HP 168 (16d10 + 80)</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "8CARmUQZTaIJG2GY": {
+            "_id": "8CARmUQZTaIJG2GY",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "13"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 13,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!gBKXPj9jVIQWDB0V.hJ5ulG7m6V0xyz8g"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Silver Dragon Wyrmling",
+      "page": 280,
+      "cr": "2",
+      "warnings": []
+    }
+  }
+}

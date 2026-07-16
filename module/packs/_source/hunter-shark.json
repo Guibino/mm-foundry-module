@@ -1,0 +1,199 @@
+{
+  "_id": "CHsWB2uulNdy2xdD",
+  "_key": "!actors!CHsWB2uulNdy2xdD",
+  "folder": "9eORFRgLi2o0urFB",
+  "name": "Hunter Shark",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/hunter-shark.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 12,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 16,
+        "proficient": 0
+      },
+      "con": {
+        "value": 13,
+        "proficient": 0
+      },
+      "int": {
+        "value": 3,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 4,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13,
+        "formula": ""
+      },
+      "hp": {
+        "value": 1,
+        "max": 1,
+        "formula": "",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 0,
+      "xp": {
+        "value": 50
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Hunter Shark",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/hunter-shark.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "u7Y6eXq0lXLKhacU",
+      "name": "Spider Climb",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The spider can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!CHsWB2uulNdy2xdD.u7Y6eXq0lXLKhacU"
+    },
+    {
+      "_id": "wtdi8f4UEPnUtjtD",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Me lee Attack Roll: +5, alcance 5 ft. Acerto: 5 (1d4 + 3) Perfurante de dano plus 5 (2d4) Veneno de dano. GOAT Medi um Beast , Unaligned AC l 0 Iniciativa +O (l 0) HP 4 (1d8) Speed 40 ft., Climb 30 ft. MO D SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "1d4+3",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!CHsWB2uulNdy2xdD.wtdi8f4UEPnUtjtD"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Hunter Shark",
+      "page": 364,
+      "cr": "0",
+      "warnings": [
+        "HP nao reconhecido"
+      ]
+    }
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "_id": "31MqbPzCjahEbnA4",
+  "_key": "!actors!31MqbPzCjahEbnA4",
+  "folder": "bKQUPthn1V2Yu6Bn",
+  "name": "Wraith",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/wraith.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 6,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 76,
+        "proficient": 0
+      },
+      "con": {
+        "value": 76,
+        "proficient": 0
+      },
+      "int": {
+        "value": 12,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 75,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13,
+        "formula": ""
+      },
+      "hp": {
+        "value": 67,
+        "max": 67,
+        "formula": "9d8 + 2 7",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 5,
+        "fly": 60
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Mau",
+      "cr": 5,
+      "xp": {
+        "value": 1800
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Wraith",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/wraith.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "Yi7fbjSL50rrLyPX",
+      "name": "Incorporeal Movement",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The wraith can m?ve through other creatures and objects as if they were Difficult Ter- rain. It takes 5 (7d70) Energia de dano if it ends its turn inside an object.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!31MqbPzCjahEbnA4.Yi7fbjSL50rrLyPX"
+    },
+    {
+      "_id": "n4MD8ZqcCRt3W8vi",
+      "name": "Sunlight Sensitivity",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>While in sunlight, the wraith has Disadvantage on ability checks and attack rolls.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!31MqbPzCjahEbnA4.n4MD8ZqcCRt3W8vi"
+    },
+    {
+      "_id": "bYtsaBgb1cKdwKMa",
+      "name": "Life Drain",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft . Acerto: 21 (4d8 + 3) Necrótico de dano. If o alvo is a creature, its Hit Point maximum decrea~es by an amount equal to the de dano taken.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "ldyQ0wEnd75XBj95": {
+            "_id": "ldyQ0wEnd75XBj95",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 8,
+                  "bonus": "3",
+                  "types": [
+                    "necrotic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 6,
+            "attackType": "melee",
+            "damageFormula": "4d8+3",
+            "damageType": "necrotic"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!31MqbPzCjahEbnA4.bYtsaBgb1cKdwKMa"
+    },
+    {
+      "_id": "abbMXxo5hJrKpVRV",
+      "name": "Create Specter",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The wraith targets a Humanoid corpse within 10 feet of itself that has been dead for no longer than l minute. The target's spirit rises as a Specter in the space of its corpse or in the nearest unoccupied . space. The specter is under the wraith's control. The :,,,:: wraith can have no more than seven specters under its . co 0:: uJ control at a time. ,, _J WYVERN Dracônico Hunter with a Venomous Sting</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!31MqbPzCjahEbnA4.abbMXxo5hJrKpVRV"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Wraith",
+      "page": 338,
+      "cr": "5",
+      "warnings": []
+    }
+  }
+}

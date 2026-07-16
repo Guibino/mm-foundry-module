@@ -1,0 +1,581 @@
+{
+  "_id": "qPigFrYDmniOCa7J",
+  "_key": "!actors!qPigFrYDmniOCa7J",
+  "folder": "lhndsA6Aflaa0nF6",
+  "name": "Ancião Vermelho Dragão",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/ancient-red-dragon.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 30,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 1
+      },
+      "con": {
+        "value": 29,
+        "proficient": 0
+      },
+      "int": {
+        "value": 18,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 15,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 27,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 22,
+        "formula": ""
+      },
+      "hp": {
+        "value": 507,
+        "max": 507,
+        "formula": "26d20 + 234",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40,
+        "climb": 40,
+        "fly": 80
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120,
+        "blindsight": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "dragon",
+        "subtype": "Chromatic",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Chaotic",
+      "cr": 24,
+      "xp": {
+        "value": 62000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "grg",
+      "di": {
+        "value": [
+          "fire"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Ancião Vermelho Dragão",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/ancient-red-dragon.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "IgHBgtVLbSosUCvj",
+      "name": "Resistência Lendária (4/Day, or 5/Day in Lair)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the dragon fails a saving throw, it can choose to suc- ceed in stead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "4",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qPigFrYDmniOCa7J.IgHBgtVLbSosUCvj"
+    },
+    {
+      "_id": "xZg0MEyFHnFRlz0n",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of Conjuração to cast Scorching Ray (level 3 version).</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qPigFrYDmniOCa7J.xZg0MEyFHnFRlz0n"
+    },
+    {
+      "_id": "WZh4YThivXVrsFjV",
+      "name": "Rend",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 17 , r~ach 15 ft. Acerto: 19 (2d8 + 10) Cortante de dano plus 10 (3d6) Fogo de dano. RED DRAGONS RED DRAGON LAIRS Red dragons make their lairs in smoldering, , un- approachable places such as volcanic mountains, burning - wastelands, and ruins they've stolen from other creatures. The region containing an adult or ancient red dragon's lair is warped by its presence, creating the following effects:</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d8+10",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qPigFrYDmniOCa7J.WZh4YThivXVrsFjV"
+    },
+    {
+      "_id": "WJx43phmB2dwfejQ",
+      "name": "Burning Heat",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The area within 1 mile of the lair is an area of extreme heat. A burning creature or object takes an additional 1d4 Fogo de dano at the start of each of its turns.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qPigFrYDmniOCa7J.WJx43phmB2dwfejQ"
+    },
+    {
+      "_id": "IpU10gyfWVkoA1WG",
+      "name": "Smoldering Haze",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The area within 1 mile of the lair is Lightly Obscured with clouds of ash . Whenever a creature other than the dragon or one of its allies finishes a Long Rest in that area, that crea- ture must succeed on a DC 15 Constituição saving throw or have the Envenenado condition for 1 hour. , If the dragon dies or moves its lair elsewhere, these effects end immediately.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "NJf7ynvS5VVkFcqd": {
+            "_id": "NJf7ynvS5VVkFcqd",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "15"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 15,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qPigFrYDmniOCa7J.IpU10gyfWVkoA1WG"
+    },
+    {
+      "_id": "DfL2i8gSKSVFlhrl",
+      "name": "Fogo Breath (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Destreza Saving T~ row: DC 24, cada criatura in a 90-foot Cone. Falha: 91 (26d6)</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qPigFrYDmniOCa7J.DfL2i8gSKSVFlhrl"
+    },
+    {
+      "_id": "eN8AOUkeVfC59M2h",
+      "name": "Fogo de dano",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Sucesso: Metade do dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qPigFrYDmniOCa7J.eN8AOUkeVfC59M2h"
+    },
+    {
+      "_id": "Nb2kezCnvbAdXVvY",
+      "name": "Commanding Presence",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>·The dragon uses Conjuração to cast Command (level 2 version). The dragon can 't take this action again until the start of its next turn .</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qPigFrYDmniOCa7J.Nb2kezCnvbAdXVvY"
+    },
+    {
+      "_id": "SiDXkbREftVY63St",
+      "name": "Fiery Rays",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon uses Conjuração to cast Scorch- in 'g Ray (level 3 version). The dragon can't take this ac- tion again until the start of its next turn. I</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qPigFrYDmniOCa7J.SiDXkbREftVY63St"
+    },
+    {
+      "_id": "UYysJcHp2MLCVb2o",
+      "name": "Pounce",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon moves up to half its Speed, and it <( Vl makes one Rend attack. 0 REMORHAZES Super-Heated Arctic Arthropods</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qPigFrYDmniOCa7J.UYysJcHp2MLCVb2o"
+    },
+    {
+      "_id": "JDhAac21hdjPAAre",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon casts one of the following spells, r equiring no Material components and using Carisma as the spellcasting ability (spell ~ave DC 23, +15 to hit with spell attacks): À Vontade: Command (level 2 version) , Detect Magic, Scorching Ray (level 3 version) 1/Dia: Fogoball (level 6 version), Scrying</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "c5g3Wfhf4nIw8ILf": {
+            "_id": "c5g3Wfhf4nIw8ILf",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "15",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 15
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qPigFrYDmniOCa7J.JDhAac21hdjPAAre"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Ancient Red Dragon",
+      "page": 258,
+      "cr": "24",
+      "warnings": []
+    }
+  }
+}

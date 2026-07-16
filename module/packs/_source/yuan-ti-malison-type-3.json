@@ -1,0 +1,441 @@
+{
+  "_id": "g65grdP3HEnadtSk",
+  "_key": "!actors!g65grdP3HEnadtSk",
+  "folder": "3SEe9J5t05jhrkCa",
+  "name": "Yuan-ti Malison (type 3)",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/yuan-ti-malison-type-3.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0
+      },
+      "con": {
+        "value": 13,
+        "proficient": 0
+      },
+      "int": {
+        "value": 14,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 16,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 12,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 12,
+        "formula": ""
+      },
+      "hp": {
+        "value": 66,
+        "max": 66,
+        "formula": "12d8 + 12",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30,
+        "climb": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "monstrosity",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Mau",
+      "cr": 3,
+      "xp": {
+        "value": 700
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": "Po is oned"
+      },
+      "languages": {
+        "value": [],
+        "custom": "Abissal, Comum, Dracônico"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Yuan-ti Malison (type 3)",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/yuan-ti-malison-type-3.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "eU2dCspiDFyCLAjf",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The yuan-ti has Advantage on saving throws against spells and other magical effects.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!g65grdP3HEnadtSk.eU2dCspiDFyCLAjf"
+    },
+    {
+      "_id": "3whJczYRMOZviyyl",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The yuan-ti makes two Veneno Burst at- tacks, and it can use Conjuração to cast Suggestion if available.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!g65grdP3HEnadtSk.3whJczYRMOZviyyl"
+    },
+    {
+      "_id": "DWGYdNeqhLM8IH9E",
+      "name": "Veneno Burst (Yuan-ti Form Only)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +5, alcance 5 ft. or range 120 ft. Acerto: 12 (2d8 + 3) Veneno de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "nmKThq3rOw8ebdXn": {
+            "_id": "nmKThq3rOw8ebdXn",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "3",
+                  "types": [
+                    "poison"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "ranged",
+            "damageFormula": "2d8+3",
+            "damageType": "poison"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!g65grdP3HEnadtSk.DWGYdNeqhLM8IH9E"
+    },
+    {
+      "_id": "KlxC37PAKDdu3yW4",
+      "name": "Constrict",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Força Teste de Resistência: DC 13, one Medium or smaller creature within 5 feet. Falha: 21 (4d8 + 3)</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "jngpKC7f9ioO2lFK": {
+            "_id": "jngpKC7f9ioO2lFK",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "13"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 13,
+            "saveAbility": "str"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!g65grdP3HEnadtSk.KlxC37PAKDdu3yW4"
+    },
+    {
+      "_id": "unZ72Afbnnpc1jcD",
+      "name": "Concussão de dano",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The target has the Agarrado con- dition (escape DC 13), and it has the Impedido condi- tion until the grapple ends.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!g65grdP3HEnadtSk.unZ72Afbnnpc1jcD"
+    },
+    {
+      "_id": "b1wxa31ysn8Dlfik",
+      "name": "Shape-Shift",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The yuan-ti shape-shifts into a Medium snake or returns to its true form. If it dies, it stays in its w current form. The yuan-ti's game statistics are the same z in each form, except where noted. Any equipment it is > wearing or carrying isn't transformed. '- er: Cl] YUAN-Tl ABOMINATION Large Monstrosity, Neutral Evil AC 15 Iniciativa +6 (16) HP 127 (15d10 + 45) Sp eed 40 ft ., Climb 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!g65grdP3HEnadtSk.b1wxa31ysn8Dlfik"
+    },
+    {
+      "_id": "DLgmx7iQtfmciOUH",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The yuan-ti casts one of the following spells, requiring no Material com- ponents and using Sabedoria as the spellcasting ability (spell save DC 13): À Vontade: Animal Friendship (snakes only) 2/Dia: Suggestion</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!g65grdP3HEnadtSk.DLgmx7iQtfmciOUH"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Yuan-ti Malison (Type 3)",
+      "page": 346,
+      "cr": "3",
+      "warnings": []
+    }
+  }
+}

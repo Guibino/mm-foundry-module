@@ -1,0 +1,279 @@
+{
+  "_id": "55P2h8MLQf6dV9NU",
+  "_key": "!actors!55P2h8MLQf6dV9NU",
+  "folder": "3SEe9J5t05jhrkCa",
+  "name": "Manticore",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/manticore.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 17,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 16,
+        "proficient": 0
+      },
+      "con": {
+        "value": 17,
+        "proficient": 0
+      },
+      "int": {
+        "value": 7,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 8,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 14,
+        "formula": ""
+      },
+      "hp": {
+        "value": 68,
+        "max": 68,
+        "formula": "8d1 0 + 24",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30,
+        "fly": 50
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "monstrosity",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Lawful",
+      "cr": 3,
+      "xp": {
+        "value": 700
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Manticore",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/manticore.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "kUGBzSQEdmgGOfL8",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The manticore makes three attacks, using Rend or Tail Spike in any combination.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!55P2h8MLQf6dV9NU.kUGBzSQEdmgGOfL8"
+    },
+    {
+      "_id": "X8U8Xc3Z3gI5SsV9",
+      "name": "Rend",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 7 (1d8 + 3) Cortante de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "tjD4WkOAKjh0EJEK": {
+            "_id": "tjD4WkOAKjh0EJEK",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "3",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "1d8+3",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!55P2h8MLQf6dV9NU.X8U8Xc3Z3gI5SsV9"
+    },
+    {
+      "_id": "p3hXEA3hbUhcIZ4w",
+      "name": "Tail Spike",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Distânciad Attack Ro/1: , +5, range 100/200 ft. Acerto: 7 (1d8 + 3) Perfurante de dano. 20~ MANTI0ORE crave the taste of humans, but lacking their favored prey, they eagerly consume other peoples and livestock. Manticores have tails bristling with detachable spikes. These monsters launch their tail spikes at their prey, skewering those on the ground or knock- ing flying creatures from the air. Despite their ravenous tendencies, manticores enjoy speaking with those they're abou~ to devour. Sometimes they make agreements with their prey. Roll on or choose a result from the Manticore Ne- gotiations table to inspire what a manticore might offer in exchange for a more tempting meal. MANTICORE NEGOTIATIONS 1d8 The Manticore Agrees To ... 1 Attack a particular foe. 2 Create a distraction. 3 Give up a captive or corpse. 4 Let a group navigate its territory unharmed. 5 Let someone pretend to slay it in battle. _ · • 6 Scare or threaten someone. 7 Serve a creature as a steed until the sun sets. > 8 Try to locate something from its vantage point in the sky. 0 MARIO Large Elemental (Genie), Chaotic Neutral AC 17 Iniciativa +5 (15) HP 229 (17d10 + 136) Speed 30 ft., Fly 60 ft., Swim 90 ft. MOD SA VE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "1d8+3",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!55P2h8MLQf6dV9NU.p3hXEA3hbUhcIZ4w"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Manticore",
+      "page": 204,
+      "cr": "3",
+      "warnings": []
+    }
+  }
+}

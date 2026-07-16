@@ -1,0 +1,347 @@
+{
+  "_id": "vhDQE9QjxShwRPxt",
+  "_key": "!actors!vhDQE9QjxShwRPxt",
+  "folder": "lhndsA6Aflaa0nF6",
+  "name": "Jovem Cobre Dragão",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 19,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 12,
+        "proficient": 1
+      },
+      "con": {
+        "value": 17,
+        "proficient": 0
+      },
+      "int": {
+        "value": 16,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 13,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 15,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 17,
+        "formula": ""
+      },
+      "hp": {
+        "value": 119,
+        "max": 119,
+        "formula": "14d10 + 42",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "dragon",
+        "subtype": "Metallic",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Bom",
+      "cr": 7,
+      "xp": {
+        "value": 2900
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "acid"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comum, Dracônico"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Jovem Cobre Dragão",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/young-copper-dragon.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "1MDVOFh6HHc348M0",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of Slowing Breath.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!vhDQE9QjxShwRPxt.1MDVOFh6HHc348M0"
+    },
+    {
+      "_id": "3cIUCpebfRfpOxE4",
+      "name": "Rend",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>MeleeAttack Ro/1:+7, alcance 10ft. Acerto: 15 (2d10 + 4) Cortante de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d10+4",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!vhDQE9QjxShwRPxt.3cIUCpebfRfpOxE4"
+    },
+    {
+      "_id": "8T9lKmAyE3Md0X6V",
+      "name": "Ácido Breath (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Destreza Teste de Resistência: DC 1~, cada criatura in a .40-foot-long, 5-foot-wide Line. Falha: 40 (9d8) Ácido de dano. Sucesso: Metade do dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "TeYCKxdgejMMumXx": {
+            "_id": "TeYCKxdgejMMumXx",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "1"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 9,
+                  "denomination": 8,
+                  "bonus": "",
+                  "types": [
+                    "acid"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "9d8",
+            "damageType": "acid",
+            "saveDc": 1,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!vhDQE9QjxShwRPxt.8T9lKmAyE3Md0X6V"
+    },
+    {
+      "_id": "ceFDWFqSQVgibbPb",
+      "name": "Slowing Breath",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Teste de Resistência: DC 14, cada criatura in a 30-foot Cone. Falha: The target can't take > Reactions; its Speed is halved; and it can take either _J an action or a Bonus Action on its turn, not both. This z effect lasts until the end of its next turn. > ADULT COPPER DRAGON Huge Dragon (Metallic), Chaotic Good AC 18 In it ia ti ve +11 (21) HP 184 (16d12 + 80)</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "M4lIcFQgB5lEduIL": {
+            "_id": "M4lIcFQgB5lEduIL",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "14"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 14,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!vhDQE9QjxShwRPxt.ceFDWFqSQVgibbPb"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Young Copper Dragon",
+      "page": 80,
+      "cr": "7",
+      "warnings": []
+    }
+  }
+}

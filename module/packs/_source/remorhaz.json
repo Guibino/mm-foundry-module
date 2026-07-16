@@ -1,0 +1,263 @@
+{
+  "_id": "b0r0MsDshdybii08",
+  "_key": "!actors!b0r0MsDshdybii08",
+  "folder": "3SEe9J5t05jhrkCa",
+  "name": "Remorhaz",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 24,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 73,
+        "proficient": 0
+      },
+      "con": {
+        "value": 27,
+        "proficient": 0
+      },
+      "int": {
+        "value": 4,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 70,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 5,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 17,
+        "formula": ""
+      },
+      "hp": {
+        "value": 795,
+        "max": 795,
+        "formula": "17d12 + 85",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40,
+        "burrow": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60,
+        "tremorsense": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "monstrosity",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 71,
+      "xp": {
+        "value": 7200
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [
+          "cold",
+          "fire"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "None"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Remorhaz",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/remorhaz.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "g5Rv3cJk5LiewreI",
+      "name": "Heat Aura",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>At the end of each of the remorhaz's turns, cada criatura in a 5-foot Emanation originating from the remorhaz takes 76 (3d70) Fogo de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!b0r0MsDshdybii08.g5Rv3cJk5LiewreI"
+    },
+    {
+      "_id": "NymDqna5P1Es5ugk",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 17, alcance l Oft. Acerto: 18 (2d1 0 + 7) Perfurante de dano plus 74 (4d6) Fogo de dano. If o alvo is a Large or smaller creature, it has the Agarrado condition (escape DC 17), and it has the Impedido condition until the grapple ends.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d10+7",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!b0r0MsDshdybii08.NymDqna5P1Es5ugk"
+    },
+    {
+      "_id": "Cr0EhY9ThZCicFQT",
+      "name": "Swallow",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Força Teste de Resistência: DC 19, one Large or smaller creature Agarrado by the remorhaz (it can have up to two creatures swallowed at a time). Falha: The target is swallowed by the remorhaz, and the Agarrado condition ends. A swallowed creature has the Cego and Impedido conditions, it has Total Cover against attacks and other effects outside the remorhaz, and it takes 70 (3d6) Ácido de dano plus 70 (3d6) Fogo de dano at the start of each of the remorhaz's turns. If the remorhaz takes 30 de dano or more on a single turn from a creature inside it, the remorhaz must suc- ceed on a DC 15 Constituição saving th row at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 5 feet of the remorhaz and has the Caído condition. If the remorhaz dies, any 0 swallowed creature no longer has the Impedido condi- _j tion and can escape from the corpse by using 15 feet of movement, exiting Caído. <( REVENANT Medium Undead, Neutral AC 73 Iniciativa +2 (72) HP 727 (75d8 + 60) Spe ed 30 ft. MOD SAVE MOD SAVE MOD SAV E</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "RAQ2MP1w9KCAzse0": {
+            "_id": "RAQ2MP1w9KCAzse0",
+            "type": "save",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "19"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 19,
+            "saveAbility": "str"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!b0r0MsDshdybii08.Cr0EhY9ThZCicFQT"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Remorhaz",
+      "page": 260,
+      "cr": "71",
+      "warnings": []
+    }
+  }
+}

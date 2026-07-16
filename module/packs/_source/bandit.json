@@ -1,0 +1,209 @@
+{
+  "_id": "M2etdsVfuUmGaF4D",
+  "_key": "!actors!M2etdsVfuUmGaF4D",
+  "folder": "1QPcErIwVgACFlzi",
+  "name": "Bandit",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 11,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 12,
+        "proficient": 0
+      },
+      "con": {
+        "value": 12,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 12,
+        "formula": ""
+      },
+      "hp": {
+        "value": 1,
+        "max": 1,
+        "formula": "",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 0,
+      "xp": {
+        "value": 25
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comum, Thieves' Cant"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Bandit",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/bandit.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "2H9ClbhrrljNNfFQ",
+      "name": "Scimitar",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 4 (1d6 0 + l) Cortante de dano. - Light Crossbow. Rolagem de Ataque à Distância: +3, range 80/320 ft. <( Acerto: 5 (1d8 + l) Perfurante de dano. BANDIT CAPTAIN Medium or St'Ylall Humanoid, Neutral AC 15 Iniciativa +3 (13) HP 52 (8d8 + 16) Speed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "34k2tPI3IqeHJyVm": {
+            "_id": "34k2tPI3IqeHJyVm",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "3",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": null,
+                  "denomination": null,
+                  "bonus": "",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": true,
+                    "formula": "1d60+l"
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 3,
+            "attackType": "melee",
+            "damageFormula": "1d60+l",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!M2etdsVfuUmGaF4D.2H9ClbhrrljNNfFQ"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Bandit",
+      "page": 29,
+      "cr": "0",
+      "warnings": [
+        "HP nao reconhecido"
+      ]
+    }
+  }
+}

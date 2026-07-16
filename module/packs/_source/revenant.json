@@ -1,0 +1,369 @@
+{
+  "_id": "166AmtfrdFZYL8uz",
+  "_key": "!actors!166AmtfrdFZYL8uz",
+  "folder": "bKQUPthn1V2Yu6Bn",
+  "name": "Revenant",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 78,
+        "proficient": 1
+      },
+      "dex": {
+        "value": 74,
+        "proficient": 0
+      },
+      "con": {
+        "value": 78,
+        "proficient": 1
+      },
+      "int": {
+        "value": 73,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 76,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 78,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 73,
+        "formula": ""
+      },
+      "hp": {
+        "value": 727,
+        "max": 727,
+        "formula": "75d8 + 60",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 5,
+      "xp": {
+        "value": 1800
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "necrotic",
+          "psychic"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "frightened"
+        ],
+        "custom": "Ex haustion"
+      },
+      "languages": {
+        "value": [],
+        "custom": "Common plus one other language"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Revenant",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/revenant.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "TYWme33Wwe174Y0W",
+      "name": "Regeneration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The revenant regains 70 Pontos de Vida at the start of each of its turns. If the revenant takes Fogo or Radiante de dano, this trait doesn't function at the start of its next turn. Its body is destroyed only if it starts its turn with 0 Pontos de Vida and doesn't regenerate.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!166AmtfrdFZYL8uz.TYWme33Wwe174Y0W"
+    },
+    {
+      "_id": "oaEPqLo1nvEdVIMJ",
+      "name": "Undead Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the revenant dies, it revives 24 hours later in a different body unless Dispel Evil or Good is cast on its corpse. If it revives, it animates a Human- oid corpse elsewhere on the same plane of existence; it now looks different but uses the same stat block and returns with al I its Pontos de Vida.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!166AmtfrdFZYL8uz.oaEPqLo1nvEdVIMJ"
+    },
+    {
+      "_id": "nIukED0cFZts3sWY",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The revenant uses Vengeful Glare and makes two Slam attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!166AmtfrdFZYL8uz.nIukED0cFZts3sWY"
+    },
+    {
+      "_id": "rR0zjewX98vDhAGp",
+      "name": "Slam",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 77 (2d6 + 4) - Necrótico de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "NULV36hEl5iJJ3t6": {
+            "_id": "NULV36hEl5iJJ3t6",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "melee"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!166AmtfrdFZYL8uz.rR0zjewX98vDhAGp"
+    },
+    {
+      "_id": "D0LsfjtP2724w1ue",
+      "name": "Vengeful Glare",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Sabedoria Teste de Resistência: DC ~ 5, one crea- ture the revenant can see within 30 feet. Falha: The target has the Amedrontado condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 7 minute, it succeeds automat- ically. If the Amedrontado target is cursed by the revenant (see Vow of Revenge), o alvo also has the Paralisado condition for the duration.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!166AmtfrdFZYL8uz.D0LsfjtP2724w1ue"
+    },
+    {
+      "_id": "ZygHcdkpVGOMdJGJ",
+      "name": "Vow of Revenge (1/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The revenant curses uma criatura it can see within 30 feet of itself. The revenant u knows the distance to and direction of the cursed tar- V1 <[ get, even if it is on a different plane of existence. The Cll curse ends on o alvo if the revenant uses this Bonus Vl 0:: Action on a different creature. REVEN ANTS Vengeance from beyond the Grave</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!166AmtfrdFZYL8uz.ZygHcdkpVGOMdJGJ"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Revenant",
+      "page": 261,
+      "cr": "5",
+      "warnings": []
+    }
+  }
+}

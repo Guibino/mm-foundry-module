@@ -1,0 +1,319 @@
+{
+  "_id": "k4GgE9LbUbDwKo7H",
+  "_key": "!actors!k4GgE9LbUbDwKo7H",
+  "folder": "kCLi0hD5goTIU7AM",
+  "name": "Bone Diabo",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/bone-devil.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18,
+        "proficient": 1
+      },
+      "dex": {
+        "value": 16,
+        "proficient": 0
+      },
+      "con": {
+        "value": 18,
+        "proficient": 0
+      },
+      "int": {
+        "value": 13,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 16,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 16,
+        "formula": ""
+      },
+      "hp": {
+        "value": 1,
+        "max": 1,
+        "formula": "",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "",
+        "subtype": "",
+        "swarm": "",
+        "custom": "Unknown"
+      },
+      "alignment": "Sem Tendência",
+      "cr": 9,
+      "xp": {
+        "value": 5000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "poison"
+        ],
+        "custom": "Fi re"
+      },
+      "dr": {
+        "value": [
+          "cold"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Infernal"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Bone Diabo",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/bone-devil.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "getRAqoVYRFFDPPZ",
+      "name": "Diabolical Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the devil dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Pontos de Vida somewhere in the Nine Hells.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!k4GgE9LbUbDwKo7H.getRAqoVYRFFDPPZ"
+    },
+    {
+      "_id": "LwM2VV4098Zo7FrI",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The devil has Advantage on saving throws against spells and other magical effects.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!k4GgE9LbUbDwKo7H.LwM2VV4098Zo7FrI"
+    },
+    {
+      "_id": "ypgTuWzNb3uWHd33",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The devil makes two Claw attacks and one Infernal Sting attack. ,1aw. Melee Attack ~ o/1: +8, alcance l O ft. Acerto: 13 (2d8 + 4) Cortante de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d8+4",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!k4GgE9LbUbDwKo7H.ypgTuWzNb3uWHd33"
+    },
+    {
+      "_id": "EpzbUkPyY11enMJz",
+      "name": "Infernal Sting",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance l Oft. Acerto: 15 (2d10 + 4) Perfurante de dano plus 78 (4d8) Veneno dam- age, and o alvo has the Envenenado condition until the start of the devil's next turn. While Envenenado, o alvo <( Lil can't regain Pontos de Vida. .. z BONE NAGA Deathless Serpentine Mind Bender</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "yrCf4coJyEovwsNn": {
+            "_id": "yrCf4coJyEovwsNn",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "8",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "4",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 8,
+            "attackType": "melee",
+            "damageFormula": "2d10+4",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!k4GgE9LbUbDwKo7H.EpzbUkPyY11enMJz"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Bone Devil",
+      "page": 54,
+      "cr": "9",
+      "warnings": [
+        "HP nao reconhecido"
+      ]
+    }
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "_id": "TkS1qGZt2P6cEXIW",
+  "_key": "!actors!TkS1qGZt2P6cEXIW",
+  "folder": "9eORFRgLi2o0urFB",
+  "name": "Gigante Boar",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 17,
+        "proficient": 1
+      },
+      "dex": {
+        "value": 70,
+        "proficient": 0
+      },
+      "con": {
+        "value": 16,
+        "proficient": 0
+      },
+      "int": {
+        "value": 2,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 7,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 5,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13,
+        "formula": ""
+      },
+      "hp": {
+        "value": 42,
+        "max": 42,
+        "formula": "Sdl O + 15",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 2,
+      "xp": {
+        "value": 450
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "None"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Gigante Boar",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/giant-boar.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "EEqjbQNrWO29IHnh",
+      "name": "Bloodied Fury",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The boar has Advantage on melee attack rolls while it is Bloodied.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!TkS1qGZt2P6cEXIW.EEqjbQNrWO29IHnh"
+    },
+    {
+      "_id": "dfWFMjYT8ecTb2nL",
+      "name": "Gore",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: l O (2d6 + 3) Perfurante de dano. If o alvo is a Large or smaller UJ creature and the boar moved 20+ feet straight toward UJ it immediately before the hit, o alvo takes an extra 7 Ci'.'. 0 (2d6) Perfurante de dano and has the Caído condition. WE SK IRT ED T HE COAS T LI NE S O F SE V E RA L ISL A N DS, SAILI N G SO U TH BY W EST UN TIL W E RE A CHED A SMALL PE N I N SU L /\\ C UT O FF FR O M THE MA I N I SL AN D BY A MASS I VE STO NE WAL L. WE WERE W ELL RE C E I VED BY TH E PE O PLE OF T A NAR OA, THE SMA L L V IL LAGE THA T GU A R D S TH I S W A LL . T H E V I LLAGERS HAYE N O NAM E F O R THE L A RGE I SLAN D OTHE R T HA N THE lsLE OF DREAD . - RORY BARBAR OSA , LOG O F T H E GAL LIVANT GIANT CENTIPEDE Sm all B ea st, Un a ligned AC 74 Iniciativa +2 (12) HP 9 (2d6 + 2) Speed 30 ft., Climb 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "UNxi1lTJbjVEhCdx": {
+            "_id": "UNxi1lTJbjVEhCdx",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!TkS1qGZt2P6cEXIW.dfWFMjYT8ecTb2nL"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Giant Boar",
+      "page": 357,
+      "cr": "2",
+      "warnings": []
+    }
+  }
+}

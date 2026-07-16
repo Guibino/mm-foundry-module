@@ -1,0 +1,464 @@
+{
+  "_id": "RICV0GY7ewL211ZD",
+  "_key": "!actors!RICV0GY7ewL211ZD",
+  "folder": "1nioWC3kx0YxX8qj",
+  "name": "Beholder",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/beholder.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0
+      },
+      "con": {
+        "value": 18,
+        "proficient": 1
+      },
+      "int": {
+        "value": 17,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 15,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 17,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 18,
+        "formula": ""
+      },
+      "hp": {
+        "value": 190,
+        "max": 190,
+        "formula": "20d10 + 80",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 5,
+        "fly": 40
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "aberration",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Mau",
+      "cr": 13,
+      "xp": {
+        "value": 10000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": "Prone"
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Fala Profunda, Comum Inferior"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Beholder",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/beholder.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "qMcptoDOSPKVqvgA",
+      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the beholder fails a saving throw, it can choose to suc- ceed in stead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "3",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!RICV0GY7ewL211ZD.qMcptoDOSPKVqvgA"
+    },
+    {
+      "_id": "zioJHAC3m4WVQcB3",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The beholder uses Eye Rays three times.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!RICV0GY7ewL211ZD.zioJHAC3m4WVQcB3"
+    },
+    {
+      "_id": "6AzREzdBJoBXxgJa",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 5 ft. Acerto: 13 (3d6 + 3) Perfurante de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "xEFnfIswCU5a7hz4": {
+            "_id": "xEFnfIswCU5a7hz4",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "8",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 8,
+            "attackType": "melee",
+            "damageFormula": "3d6+3",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!RICV0GY7ewL211ZD.6AzREzdBJoBXxgJa"
+    },
+    {
+      "_id": "mTbBZbf7pgallaCp",
+      "name": "Eye Rays",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The beholder randomly shoots one of the following magical rays at a target it can see within 120 feet of itself (roll 1d1 O; ~eroll if the beholder has already used that ray during this turn): 1: Charm Ray. Sabedoria Teste de Resistência: DC 16. Falha: 13 (3d8) Psíquico de dano, and o alvo has the Enfeitiçado condition for 1 hour or until it takes dam- age. Sucesso: Metade do dano only. 2: Paralyzing Ray. Constituição Teste de Resistência: DC 16. Falha: The target has the Paralisado condition and repeats the save at the end of each of its turns, end- ing the effect on itself on a success. After 1 • minute, it succeeds automatically. 3: Fear Ray. Sabedoria Teste de Resistência: DC 16. Falha: 14 (4d6) Psíquico de dano, and o alvo has the Fright- ened condition until the end of its next turn. Sucesso: Metade do dano only. 4: Slowing Ray. Constituição Teste de Resistência: DC 16. Fail - ure: 18 (4d8) Necrótico de dano. Until the end of o alvo's next turn, o alvo's Speed is halved; o alvo can't take Reactions; and it can take either an action or a Bonus Action on its turn, not both. Suc- cess: Metade do dano only. '' 5: Enervation Ray. Constituição Teste de Resistência: DC 16. Falha: 13 (3d8) Veneno de dano, and o alvo has the Envenenado condition until the end of its next turn. BEHOLDER While Envenenado, o alvo can't regain Pontos de Vida. Sucesso: Metade do dano only. 6: Telekinetic Ray. Força Teste de Resistência: DC 16 (o alvo succeeds automatically if it is Gargantuan). Falha: The beholder moves o alvo up to 30 feet in any direction. The target has the Impedido con- dition until the start of the beholder's next turn or until the beholder has the Incapacitado condition. The beholder can also exert fine control on objects with this ray, such as manipulating a tool or opening a door or container . 7: Sleep Ray. Sabedoria Teste de Resistência: DC 16 (o alvo succeeds automatically if it is a Construct or an Un- dead). Falha: The target has the Inconsciente con- dition for l minute. The condition ends if o alvo takes de dano or a creature within 5 feet of it takes an action to wake it. 8: Petrification Ray. Constituição Teste de Resistência: DC 16. First Falha: The target has the Impedido condition and repeats the save at the end of its next turn if it is still Impedido, ending the effect on itself on a success. Second Falha: The target has the Petrificado condition instead of the Impedido condition. 9: Disintegration Ray. Destreza Teste de Resistência: DC 16. Falha: 36 (8d8) Energia de dano. If o alvo is a non- magical object or a creation of magical force, a 10- foot Cube of it disintegrates into dust. Sucesso: Metade do dano. Falha ou Sucesso: If o alvo is a creature and this de dano reduces it to 0 Pontos de Vida, it disinte- grates into du st. 10: Death Ray. Destreza Teste de Resistência: DC 16. Falha: 55 (10d10) Necrótico de dano. Sucesso: Metade do dano. Falha ou Sucesso: The target dies if the ray reduces it to O Pontos de Vida.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "4UjZxBMvvoXTfODO": {
+            "_id": "4UjZxBMvvoXTfODO",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "16"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 8,
+                  "bonus": "",
+                  "types": [
+                    "psychic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "3d8",
+            "damageType": "psychic",
+            "saveDc": 16,
+            "saveAbility": "wis"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!RICV0GY7ewL211ZD.mTbBZbf7pgallaCp"
+    },
+    {
+      "_id": "KB1T5VhVYG67a3qL",
+      "name": "Antimagic Cone",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The beholder's central eye emits an antimagic wave in a 150-foot Cone. Until the start of the beholder's next turn, that area acts as an Antimagic Field spell, and that area works against the beholder's own Eye Rays.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!RICV0GY7ewL211ZD.KB1T5VhVYG67a3qL"
+    },
+    {
+      "_id": "HDpYABc6egOvpwBm",
+      "name": "Chomp",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The beholder makes two Bite attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!RICV0GY7ewL211ZD.HDpYABc6egOvpwBm"
+    },
+    {
+      "_id": "fuyTd7dTJLUg23dw",
+      "name": "Glare",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The beholder uses Eye Rays. BERSERKERS Raging Invaders and Impassioned Warriors</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!RICV0GY7ewL211ZD.fuyTd7dTJLUg23dw"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Beholder",
+      "page": 38,
+      "cr": "13",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "_id": "yNcdXFxBohqD13gt",
+  "_key": "!actors!yNcdXFxBohqD13gt",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Enxame De Larvas",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 5,
+        "proficient": 0
+      },
+      "con": {
+        "value": 11,
+        "proficient": 0
+      },
+      "int": {
+        "value": 1,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 1,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 3,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 9,
+        "formula": ""
+      },
+      "hp": {
+        "value": 9,
+        "max": 9,
+        "formula": "2d8",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "Devil",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Mau",
+      "cr": 0,
+      "xp": {
+        "value": 10
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "fire",
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "cold"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed"
+        ],
+        "custom": "Frightene?"
+      },
+      "languages": {
+        "value": [],
+        "custom": "Understands Infernal but can't speak"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Enxame De Larvas",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/enxame-de-larvas.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "kc5o5EwFDiC7FLf5",
+      "name": "Hellish Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the lemure dies in the Nine Hells, it revives with all its Pontos de Vida in 1d10 days un- less it is killed by a creature under the effects of a Bless spell or its remains are sprinkled with Holy Water.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!yNcdXFxBohqD13gt.kc5o5EwFDiC7FLf5"
+    },
+    {
+      "_id": "WMh6PFgXhLyEzzqI",
+      "name": "Vile Slime",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 5 ft. Acerto: 2 (1d4) Veneno de dano. 1 L EMURES 94 LEMURES Devils of Agony and Despair</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "9f2T6xOvHzQw65Oh": {
+            "_id": "9f2T6xOvHzQw65Oh",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "2",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "",
+                  "types": [
+                    "poison"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 2,
+            "attackType": "melee",
+            "damageFormula": "1d4",
+            "damageType": "poison"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!yNcdXFxBohqD13gt.WMh6PFgXhLyEzzqI"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Enxame de Larvas",
+      "page": 196,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

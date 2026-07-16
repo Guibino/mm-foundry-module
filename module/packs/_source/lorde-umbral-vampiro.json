@@ -1,0 +1,647 @@
+{
+  "_id": "0QxdHSh8QpBhHdbF",
+  "_key": "!actors!0QxdHSh8QpBhHdbF",
+  "folder": "bKQUPthn1V2Yu6Bn",
+  "name": "Lorde Umbral Vampiro",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/lorde-umbral-vampiro.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 20,
+        "proficient": 1
+      },
+      "dex": {
+        "value": 18,
+        "proficient": 1
+      },
+      "con": {
+        "value": 18,
+        "proficient": 0
+      },
+      "int": {
+        "value": 19,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 16,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 21,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 16,
+        "formula": ""
+      },
+      "hp": {
+        "value": 187,
+        "max": 187,
+        "formula": "22d8 + 88",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 40,
+        "climb": 40,
+        "fly": 40
+      },
+      "senses": {
+        "units": "ft",
+        "blindsight": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Mau",
+      "cr": 15,
+      "xp": {
+        "value": 13000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "cold",
+          "necrotic"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Common plus three other languages"
+      }
+    },
+    "skills": {
+      "arc": {
+        "value": 1,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Lorde Umbral Vampiro",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/lorde-umbral-vampiro.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "brZb0qnchpdygU7y",
+      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the vampire fails a saving throw, it can choose to suc- ceed in stead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "3",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!0QxdHSh8QpBhHdbF.brZb0qnchpdygU7y"
+    },
+    {
+      "_id": "mkm94b2veMdn4prK",
+      "name": "Shadow Escape",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the vampire drops to O Pontos de Vida outside its resting place, it teleports into its resting place unless it is in running water or sunlight. If it can't teleport, it is destroyed. Once inside its resting place, it has the Paralisado condition for 1 hour, after which it regains 1 Hit Point.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!0QxdHSh8QpBhHdbF.mkm94b2veMdn4prK"
+    },
+    {
+      "_id": "K2xkyhCXYmEfRHLD",
+      "name": "Vampire Weakness",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The vampire has these weaknesses:</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!0QxdHSh8QpBhHdbF.K2xkyhCXYmEfRHLD"
+    },
+    {
+      "_id": "2KwnUtfsMWQ6Q5t0",
+      "name": "Forbiddance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The vampire can't enter a residence with- out an invitation from an occupant.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!0QxdHSh8QpBhHdbF.2KwnUtfsMWQ6Q5t0"
+    },
+    {
+      "_id": "M6bx7KDr5Ni2JFOU",
+      "name": "Running Water",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The vampire takes -20 Ácido de dano if it ends its turn in running water.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!0QxdHSh8QpBhHdbF.M6bx7KDr5Ni2JFOU"
+    },
+    {
+      "_id": "UsPVwncA27T8UiqY",
+      "name": "Stake to the Heart",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If a weapon that deals Perfurante de dano is driven into the vampire's heart while the vampire has the Incapacitado condition in its resting place, the vampire has the Paralisado condition until the weapon is removed.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!0QxdHSh8QpBhHdbF.UsPVwncA27T8UiqY"
+    },
+    {
+      "_id": "GR1dBq5IPtSQP3oy",
+      "name": "Sunlight",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The vampire takes 20 Radiante de dano if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!0QxdHSh8QpBhHdbF.GR1dBq5IPtSQP3oy"
+    },
+    {
+      "_id": "CIeTCDhEuK8AcWoH",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The vampire makes two attacks, using Grave Strike or Sickening Ray in any combination.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!0QxdHSh8QpBhHdbF.CIeTCDhEuK8AcWoH"
+    },
+    {
+      "_id": "gu2DecDw3ASqIT7D",
+      "name": "Grave Strike",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ l 0, alcance 5 ft. Acerto: 9 (1d8 + 5) Cortante de dano plus 13 (3d8) Ne- crotic de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "1d8+5",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!0QxdHSh8QpBhHdbF.gu2DecDw3ASqIT7D"
+    },
+    {
+      "_id": "htpxAcz3fYwIUKoD",
+      "name": "Sickening Ray",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância:+ 10, range 120 ft. Acerto: 16 (2d10 + 5) Necrótico de dano, and o alvo has the Envenenado condition until the start of the vampire's next turn. 3 18 /\\ V AMPIRES</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d10+5",
+            "damageType": "necrotic"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!0QxdHSh8QpBhHdbF.htpxAcz3fYwIUKoD"
+    },
+    {
+      "_id": "vFPep2GuyFYvNy9Y",
+      "name": "Hunger of Hadar (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The vampire casts Hunger of Hadar (level 5 version), requiring no spell components and using Carisma as the spellcasting ability (spell save DC 18).</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!0QxdHSh8QpBhHdbF.vFPep2GuyFYvNy9Y"
+    },
+    {
+      "_id": "DpSK8ZYvyBUdvfLl",
+      "name": "Sanguine Drain",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Teste de Resistência: DC 18, uma criatura the vampire can see within 30 feet that isn't a Construct or an Undead. Falha: 14 (4d6) Necrótico de dano. The target's Hit Point maximum decreases by an amount equal to the de dano taken, and the vampire regains Pontos de Vida equal to that amount. LEGENDAR Y A CTIO N S • Usos de Ação Lendária: 3 (4 no Covil). Immediately after another creature's turn, the l)ampire can expend a use to take one of the following actions. The !Jampire regains all expended uses at the start of each of its turns.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "gSgfbhAZjIpzdxoM": {
+            "_id": "gSgfbhAZjIpzdxoM",
+            "type": "save",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "18"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 6,
+                  "bonus": "",
+                  "types": [
+                    "necrotic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "4d6",
+            "damageType": "necrotic",
+            "saveDc": 18,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!0QxdHSh8QpBhHdbF.DpSK8ZYvyBUdvfLl"
+    },
+    {
+      "_id": "SXwZqdSb8QcMvHPE",
+      "name": "Beguile",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The vampire casts Command, requiring no spell components and using Carisma as the spellcast- ing ability (spell save DC 18). The vampire can't take this action again until the start of its next turn. l/) Umbra/ Strike. The vampire moves up to half its Speed, - 2 and it makes one Grave Strike or Sickening- Ray attack. VRO CK Demon of Carnage and Ruin</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!0QxdHSh8QpBhHdbF.SXwZqdSb8QcMvHPE"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Lorde Umbral Vampiro",
+      "page": 320,
+      "cr": "15",
+      "warnings": []
+    }
+  }
+}

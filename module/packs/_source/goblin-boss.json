@@ -1,0 +1,352 @@
+{
+  "_id": "hjYsJG9jrQhJfXQu",
+  "_key": "!actors!hjYsJG9jrQhJfXQu",
+  "folder": "inkH4oLnh3yP5W9M",
+  "name": "Goblin Boss",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 0
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 8,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 10,
+        "formula": ""
+      },
+      "hp": {
+        "value": 21,
+        "max": 21,
+        "formula": "6d6",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fey",
+        "subtype": "Goblinoid",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Neutro",
+      "cr": 1,
+      "xp": {
+        "value": 200
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "sm",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comum, Goblin"
+      }
+    },
+    "skills": {
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Goblin Boss",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/goblin-boss.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "UocanR6XJQeWpfjo",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The goblin makes two attacks, using Scim- itar or Shortbow in any combination.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hjYsJG9jrQhJfXQu.UocanR6XJQeWpfjo"
+    },
+    {
+      "_id": "dE68WkRgI2etVa5g",
+      "name": "Scimitar",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo : +4, alcance 5 ft. Acerto: 5 (1d6 + 2) Cortante de dano, plus 2 (1d4) Cortante de dano if the attack roll had Advantage.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "1d6+2",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hjYsJG9jrQhJfXQu.dE68WkRgI2etVa5g"
+    },
+    {
+      "_id": "phbHvReWMOeLETRI",
+      "name": "Shortbow",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +4, range 80/230 ft. Acerto: 5 (1d6 + 2) Perfurante de dano, plus 2 (1d4) Perfurante dam- age if the attack roll had Advantage.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "xMgjA2Jq7TT8KHNe": {
+            "_id": "xMgjA2Jq7TT8KHNe",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "ranged",
+            "damageFormula": "1d6+2",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hjYsJG9jrQhJfXQu.phbHvReWMOeLETRI"
+    },
+    {
+      "_id": "PvUo46t4wMUFC1ae",
+      "name": "Nimble Escape",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The goblin takes the Disengage or Hide action.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hjYsJG9jrQhJfXQu.PvUo46t4wMUFC1ae"
+    },
+    {
+      "_id": "08aEL2cHSQBsH6Ta",
+      "name": "Redirect Attack",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Trigger: A creature the goblin can see makes an attack roll against it. Response: The goblin <t chooses a Small or Medium ally within 5 feet of itself. Vl Ul The goblin and that ally swap places, and th _e ally be- Ul ex:: i::: comes o alvo of the attack instead. GOBLIN HEX ER Small Fey (Goblinoid), Chaotic Neutral AC 13 Iniciativa +3 (13) HP 45 (10d6 + 10) S peed 30 ft. MOD SAVE M OD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hjYsJG9jrQhJfXQu.08aEL2cHSQBsH6Ta"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Goblin Boss",
+      "page": 145,
+      "cr": "1",
+      "warnings": []
+    }
+  }
+}

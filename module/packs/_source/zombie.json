@@ -1,0 +1,246 @@
+{
+  "_id": "eJ0les4YX7QgJ4sh",
+  "_key": "!actors!eJ0les4YX7QgJ4sh",
+  "folder": "bKQUPthn1V2Yu6Bn",
+  "name": "Zumbi",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 13,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 6,
+        "proficient": 0
+      },
+      "con": {
+        "value": 16,
+        "proficient": 0
+      },
+      "int": {
+        "value": 3,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 6,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 5,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 8,
+        "formula": ""
+      },
+      "hp": {
+        "value": 15,
+        "max": 15,
+        "formula": "2d8+6",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Mau",
+      "cr": 0.25,
+      "xp": {
+        "value": 50
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "exhaustion",
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Under stands Common plus one other"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Zumbi",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/zombie.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "t5zNzYQHWVcnTb7s",
+      "name": "Undead Fortitude",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If de dano reduces the zombie to 0 Pontos de Vida, it makes a Constituição saving throw (DC 5 plus the de dano taken) unless the de dano is Radiante or from a Critical Hit. On a successful save, the zombie drops to 1 Hit Point instead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!eJ0les4YX7QgJ4sh.t5zNzYQHWVcnTb7s"
+    },
+    {
+      "_id": "YFVIwV1GS04kaAZv",
+      "name": "Slam",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 5 (1d8 + 1) Concussão de dano. ZOMBIES OGRE ZOMBIE Ogre zombies serve as tireless labor and und ying weapons of war. These massive zombies possess the size and strength to break through barriers that re- pel smaller zombies. BEHOLDER ZOMBIE Zombies animated from the corpses of beholders re- tain some use of those monsters ' magical eyestalks. These hovering corpses rely on their magic to de- stroy impediments and paralyze foes, allowing them to savage foes with their rotting maws. Magic-usi ng beholders typically raise these abominations from the corpses of defeated rivals. T H E N , BY A SP E CTAC UL AR C RA CK O F L I GH TN I N G, THE . F IGU RES C AM E I NT O V I E W , M O VI N G SLO W LY T O WAR D THE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "4XeAnrL0mcvL8jbi": {
+            "_id": "4XeAnrL0mcvL8jbi",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "3",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "1",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 3,
+            "attackType": "melee",
+            "damageFormula": "1d8+1",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!eJ0les4YX7QgJ4sh.YFVIwV1GS04kaAZv"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Zombie",
+      "page": 348,
+      "cr": "1/4",
+      "warnings": []
+    }
+  }
+}

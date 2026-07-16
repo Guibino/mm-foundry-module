@@ -1,0 +1,470 @@
+{
+  "_id": "SkxHFxoctzA9j8SQ",
+  "_key": "!actors!SkxHFxoctzA9j8SQ",
+  "folder": "lhndsA6Aflaa0nF6",
+  "name": "Adulto Prateado Dragão",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 27,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 1
+      },
+      "con": {
+        "value": 25,
+        "proficient": 0
+      },
+      "int": {
+        "value": 16,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 13,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 22,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 19,
+        "formula": ""
+      },
+      "hp": {
+        "value": 216,
+        "max": 216,
+        "formula": "16d12 + 112",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40,
+        "fly": 80
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "dragon",
+        "subtype": "Metallic",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Bom",
+      "cr": 16,
+      "xp": {
+        "value": 15000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [
+          "cold"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Adulto Prateado Dragão",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/adult-silver-dragon.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "4BDy6Ga2RWFovxiH",
+      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the dragon fails a saving throw, it can choose to suc- ceed instead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "3",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!SkxHFxoctzA9j8SQ.4BDy6Ga2RWFovxiH"
+    },
+    {
+      "_id": "IeZFBdiwqC0mYwCV",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of (A) Paralyzing Breath or (B) Conjuração to cast Ice Knife.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!SkxHFxoctzA9j8SQ.IeZFBdiwqC0mYwCV"
+    },
+    {
+      "_id": "3z6412qDeFY9TizT",
+      "name": "Rend",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 13, alcance 10 ft. Acerto: 17 (2d8 + 8) Cortante de dano plus 4 (1d8) Frio de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d8+8",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!SkxHFxoctzA9j8SQ.3z6412qDeFY9TizT"
+    },
+    {
+      "_id": "4U7o8GDZQxQ1co1k",
+      "name": "Frio Breath (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Sa1Jing Throw: DC 20, cada criatura in a 60-foot Cone. Falha: 54 (12d8) Frio de dano. Sucesso: Metade do dano. Q:'. Paralyzing Breath. Constituição Sa1Jing 0 Throw: DC 20, w cada criatura in a 60-foot Cone. First Falha: The tar- Cl.. get has the Incapacitado condition until the end of its z next turn, when it repeats the save. Second Falha: The . target has the Paralisado condition, and it repeats the save at the end of each of its turns, ending the effect on itself on a success. After l minute, it succeeds au- tomatically.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "12d8",
+            "damageType": "cold"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!SkxHFxoctzA9j8SQ.4U7o8GDZQxQ1co1k"
+    },
+    {
+      "_id": "Xq5nXrqNmBmqaNjV",
+      "name": "Chill",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon uses Conjuração to cast Hold Mon- ster. The d ra go n can't take this a ct ion a g a i n u n ti I the start of its next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!SkxHFxoctzA9j8SQ.Xq5nXrqNmBmqaNjV"
+    },
+    {
+      "_id": "Aw7UTnQzWTcJaqaG",
+      "name": "Frio Gale",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Destreza Teste de Resistência: DC 19, cada criatura in a 60-foot-long, 10-foot-wide Line. Falha: 14 (4d6) - Frio de dano, and o alvo is pushed up to 30 feet straight away from the dragon. Sucesso: Metade do dano • only. Falha ou Sucesso: The dragon can't take this ac- tion again until the start of its next turn .</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "0f6tgbC5MmCy6klo": {
+            "_id": "0f6tgbC5MmCy6klo",
+            "type": "save",
+            "activation": {
+              "type": "legendary",
+              "value": 1,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "19"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 19,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!SkxHFxoctzA9j8SQ.Aw7UTnQzWTcJaqaG"
+    },
+    {
+      "_id": "D2wnetOwSGIezjLR",
+      "name": "Pounce",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon moves up to half its Speed, and it makes one Rend attack. SILVER DRAGONS 6.._ 279 ADULT SILVER DRAGON Adult silver dragons love to spend time among various peoples. Rather than manipulating politics directly, they support individuals who have ambi- tious goals or who popularize the return of great universities, inspiring athletics events or festivals, and other salutary civic institutions of the past. Silver dragons often surround themselves with like- minded allies and are watchful for hidden threats. ANCIENT SILVER DRAGON Ancient silver dragons pursue world-wide change. They defend their communities and allies, encour- aging them to perform deeds worthy of legend. Some set their sights on other worlds and planes of existence, creating extraplanar alliances or com- bating multiplanar threats. They might have guises in multiple societies and forge generation-spanning friendships with heroic families or valorous groups. ANCIENT SILVER DRAGON Ga rgantuan D rag on (Meta lli c), L aw ful Good AC 22 Iniciativa + 14 (24) HP 468 (24d20 + 216) Speed 40 ft., Fly 80 ft. MO D SAVE MOD SAV E MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!SkxHFxoctzA9j8SQ.D2wnetOwSGIezjLR"
+    },
+    {
+      "_id": "BVZpvlDIFCYiJGqh",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 19, +11 to hit with spell attacks): À Vontade: Detect Magic, Hold Monster, Ice Knife, Shapechange (Beast or Humanoid form only, no Temporary Pontos de Vida gained from the spell, and no Concentration or Temporary Pontos de Vida required to maintain the spell) _ 1/Dia Each: Ice Storm (level 5 version), Zone ofTruth</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "Re0SdyyLSTHaBwVB": {
+            "_id": "Re0SdyyLSTHaBwVB",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "11",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 11
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!SkxHFxoctzA9j8SQ.BVZpvlDIFCYiJGqh"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Adult Silver Dragon",
+      "page": 281,
+      "cr": "16",
+      "warnings": []
+    }
+  }
+}

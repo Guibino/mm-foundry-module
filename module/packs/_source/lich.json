@@ -1,0 +1,538 @@
+{
+  "_id": "tATTId6fero6KlOu",
+  "_key": "!actors!tATTId6fero6KlOu",
+  "folder": "bKQUPthn1V2Yu6Bn",
+  "name": "Lich",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/lich.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 11,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 16,
+        "proficient": 1
+      },
+      "con": {
+        "value": 16,
+        "proficient": 1
+      },
+      "int": {
+        "value": 21,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 16,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 20,
+        "formula": ""
+      },
+      "hp": {
+        "value": 1,
+        "max": 1,
+        "formula": "",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "truesight": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead",
+        "subtype": "Wi zard",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Mau",
+      "cr": 21,
+      "xp": {
+        "value": 33000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "necrotic",
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "All"
+      }
+    },
+    "skills": {
+      "arc": {
+        "value": 2,
+        "ability": "int"
+      },
+      "his": {
+        "value": 1,
+        "ability": "int"
+      },
+      "ins": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Lich",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/lich.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "uA2AFfyulE9fvMuh",
+      "name": "Resistência Lendária (4/Day, or 5/Day in Lair)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the lich fails a saving throw , it can choose to suc- ceed instead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "4",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!tATTId6fero6KlOu.uA2AFfyulE9fvMuh"
+    },
+    {
+      "_id": "fEgaeoVOsIxFB7xs",
+      "name": "Spiritjar",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If destroyed, the lich reforms in 1d10 days if it has a spirit jar, reviving with all its Pontos de Vida. The new body appears in an unoccupied space within the lich's lair.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!tATTId6fero6KlOu.fEgaeoVOsIxFB7xs"
+    },
+    {
+      "_id": "cfRo6JVrmNl8Dzwh",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The lich makes three attacks, using El- dritch Burst or Paralyzing Touch in any combination.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!tATTId6fero6KlOu.cfRo6JVrmNl8Dzwh"
+    },
+    {
+      "_id": "Vfy5OCDL5z9oPfgc",
+      "name": "Eldritch Burst",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância:+ 12, alcance 5 ft. or range 720 ft. Acerto: 31 (4d12 + 5) Energia de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "4d12+5",
+            "damageType": "force"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!tATTId6fero6KlOu.Vfy5OCDL5z9oPfgc"
+    },
+    {
+      "_id": "6PfiySyxDv1Dla1d",
+      "name": "Paralyzing Touch",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 12, alcance 5 ft. Acerto: 15 (3d6 + 5) Frio de dano, and o alvo has the Para- lyzed condition until the start of the lich's next turn. consumed in this way can be brought back to life only by a True Resurrection or Wish spell. If the lich is destroyed or mov es its lair elsewhere, these effects end immediately. These effects resume if the lich gains a new body (see its Undead Resto- ration trait). AMB I T IO N CAN BECOME A N ADDICTI O N O F THE MI N D AN D</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "3d6+5",
+            "damageType": "cold"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!tATTId6fero6KlOu.6PfiySyxDv1Dla1d"
+    },
+    {
+      "_id": "VFDuKgHDb6PLFXm3",
+      "name": "Protective Magic",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The lich casts Counterspell or Shield in response to the spell's trigger, using the same spell- casting ability as Conjuração.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!tATTId6fero6KlOu.VFDuKgHDb6PLFXm3"
+    },
+    {
+      "_id": "asBFqqUJbunAbDj0",
+      "name": "Deathly Teleport",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The lich teleports up to 60 feet to an unoccupied space it can see, and cada criatura within l 0 feet of the space it left takes 11 (2d1 0) Ne- crotic de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!tATTId6fero6KlOu.asBFqqUJbunAbDj0"
+    },
+    {
+      "_id": "82vUuTV9HbfX5Nbf",
+      "name": "Disrupt Life",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constitutiqn Teste de Resistência: DC 20, cada criatura that isn't an Undead in a 20-foot Emanation ~riginating from the lich. Falha: 31 (9d6) Necrótico de dano. Sucesso: Metade do dano. Falha ou Sucesso: The</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "9d6",
+            "damageType": "necrotic"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!tATTId6fero6KlOu.82vUuTV9HbfX5Nbf"
+    },
+    {
+      "_id": "o1FzTMTQhbirgYot",
+      "name": "Ii",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>ch can't take this action again until the start of its next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!tATTId6fero6KlOu.o1FzTMTQhbirgYot"
+    },
+    {
+      "_id": "o3GD6n0rhYDnsZjt",
+      "name": "Frightening Gaze",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The lich casts Fear, using the same spellcasting ability as Conjuração. The lich can't take this action again until the start of its next t,urn. LIZARD FOLK Reptilian Defenders of the Land</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!tATTId6fero6KlOu.o3GD6n0rhYDnsZjt"
+    },
+    {
+      "_id": "327moXObgLjmLlEV",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The lich casts one of the following spells, using Inteligência as the spellcasting ability (spell save DC 20): À Vontade: Detect Magic, Detect Thoughts, Dispel Magic, Fogoball (level 5 version), Invisibility, Elétrico Bolt (level 5 version), Mage Hand, Prestidigitation 2/Dia Each: Animate Dead, Dimension Door, Plane Shift 1/Dia Each: Chain Elétrico, Finger of Death, Power Word Kill, Scrying</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!tATTId6fero6KlOu.327moXObgLjmLlEV"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Lich",
+      "page": 198,
+      "cr": "21",
+      "warnings": [
+        "HP nao reconhecido"
+      ]
+    }
+  }
+}

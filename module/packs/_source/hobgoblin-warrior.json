@@ -1,0 +1,241 @@
+{
+  "_id": "9hcpJbwOMRDhBGl5",
+  "_key": "!actors!9hcpJbwOMRDhBGl5",
+  "folder": "inkH4oLnh3yP5W9M",
+  "name": "Hobgoblin Guerreiro",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/hobgoblin-warrior.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 13,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 12,
+        "proficient": 0
+      },
+      "con": {
+        "value": 12,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 9,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 18,
+        "formula": ""
+      },
+      "hp": {
+        "value": 11,
+        "max": 11,
+        "formula": "2d8 + 2",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fey",
+        "subtype": "G oblinoid",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Mau",
+      "cr": 1,
+      "xp": {
+        "value": 100
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comum, Goblin"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Hobgoblin Guerreiro",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/hobgoblin-warrior.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "H67suVN8QiHa6l8N",
+      "name": "Pack Tactics",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The hobgoblin has Advantage on an attack roll against a creature if at least one of the hob- goblin's allies is within 5 feet of the creature and the ally doesn't have the Incapacitado condition.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!9hcpJbwOMRDhBGl5.H67suVN8QiHa6l8N"
+    },
+    {
+      "_id": "IPQ1P5Ek0ao1Z1dI",
+      "name": "Longsword",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 12 (2d10 + 1) Cortante de dano. • Longbow. Rolagem de Ataque à Distância: +3, range 150/600 ft. <{ Vl Acerto: 5 (1d8 + 1) Perfurante de dano plus 7 (3d4) Poi- V) son de dano. ~ ;::: HOBGOBLIN W ARRIOR Hobgoblin warriors mjght hunt and raid alone or with trained mastiffs, worgs, goblin gangs, or other allies. They employ simple tactics and exploit every advantage their allies provide. They willingly sacri- fice companions in their pursuit of victory. HOBGOBLIN CAPTAIN Hobgoblin _ captains are battlefield tacticians. They lead their allies to victory by employing martial skill and rallying others with orders and threats. Hobgoblin captains usually oversee hobgoblin battle groups or gangs of weaker monsters. H O B GOBL IN WAR LO RD Hobgoblin warlords lead armies of hobgoblins and their allies, using their experience and strategic minds to command amjd the ebb and flow of battle. H O B GO BL IN WA R FARE The drive to subjugate and pillage is part of hob- goblins' supernatural nature, though a few might repress their warlike tendencies or turn them to HOBGOBLIN CAPTAIN Medium Fey (Gohlinoid), Lawful Evil AC 17 Iniciativa +4 (14) HP 58 (9d8 + 78) Speed 30 ft . MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "r25mYRzp4Zl0yaFh": {
+            "_id": "r25mYRzp4Zl0yaFh",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "3",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "1",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 3,
+            "attackType": "melee",
+            "damageFormula": "2d10+1",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!9hcpJbwOMRDhBGl5.IPQ1P5Ek0ao1Z1dI"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Hobgoblin Warrior",
+      "page": 172,
+      "cr": "1",
+      "warnings": []
+    }
+  }
+}

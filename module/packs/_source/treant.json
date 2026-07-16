@@ -1,0 +1,309 @@
+{
+  "_id": "mhWw5YKXGnMDoePk",
+  "_key": "!actors!mhWw5YKXGnMDoePk",
+  "folder": "UIhMG4gNrr0aGWHc",
+  "name": "Treant",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/treant.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 23,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 8,
+        "proficient": 0
+      },
+      "con": {
+        "value": 21,
+        "proficient": 0
+      },
+      "int": {
+        "value": 12,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 16,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 12,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 16,
+        "formula": ""
+      },
+      "hp": {
+        "value": 138,
+        "max": 138,
+        "formula": "12d12 + 60",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "plant",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Bom",
+      "cr": 9,
+      "xp": {
+        "value": 5000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "bludgeoning",
+          "piercing"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": "Fi re"
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comum, Druidic, Élfico, Silvestre"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Treant",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/treant.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "CciWKkSTxQDCL3Qd",
+      "name": "Siege Monster",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The treant deals double da ·mage to ob- jects and structures.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!mhWw5YKXGnMDoePk.CciWKkSTxQDCL3Qd"
+    },
+    {
+      "_id": "xJyMKNAdgttia9aw",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The treant makes two Slam attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!mhWw5YKXGnMDoePk.xJyMKNAdgttia9aw"
+    },
+    {
+      "_id": "vPCXHO37RF1CeiSX",
+      "name": "Slam",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: + l 0, alcance 5 ft. Acerto: 16 (3d6 + 6) Concussão de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "3d6+6",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!mhWw5YKXGnMDoePk.vPCXHO37RF1CeiSX"
+    },
+    {
+      "_id": "5t2fxUpx6qr0bcXC",
+      "name": "Hail of Bark",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância:+ l 0, range 180 ft. Acerto: 28 (4d10 + 6) Perfurante de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "4d10+6",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!mhWw5YKXGnMDoePk.5t2fxUpx6qr0bcXC"
+    },
+    {
+      "_id": "gDdur5J3qdbqWDly",
+      "name": "Animate Trees (1/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The treant magically animates up to two trees it can see within 60 feet of itself. Each tree uses the Treant stat block, except it has Inteligência and Carisma scores of l, it can't speak, and it lacks this action. The tree takes its turn immediately after the treant on the same Iniciativa count, and it obeys the tre- .....J UJ ant. A tree remains animate for l day or until it dies, the treant dies, or it is more than 120 feet from the treant. 0 oJ The tree then takes root if possible. 0 er: TROGLODYTE Reeking Subterranean Hunter</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!mhWw5YKXGnMDoePk.gDdur5J3qdbqWDly"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Treant",
+      "page": 310,
+      "cr": "9",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "_id": "Nbci5KbgHJeoGlDg",
+  "_key": "!actors!Nbci5KbgHJeoGlDg",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Sahuagin Guerreiro",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/sahuagin-warrior.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 73,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 12,
+        "proficient": 0
+      },
+      "int": {
+        "value": 12,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 13,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 9,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 12,
+        "formula": ""
+      },
+      "hp": {
+        "value": 22,
+        "max": 22,
+        "formula": "4d8 + 4",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "swim": 40
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Lawful",
+      "cr": 0,
+      "xp": {
+        "value": 100
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Sahuagin"
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Sahuagin Guerreiro",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/sahuagin-warrior.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "beZ8u86M2gdtJUe3",
+      "name": "Blood Frenzy",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The sahuagin has Advantage on attack rolls against any creature that doesn't have all its Pontos de Vida.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Nbci5KbgHJeoGlDg.beZ8u86M2gdtJUe3"
+    },
+    {
+      "_id": "BHAyMXES7WPLncdD",
+      "name": "Limited Amphibiousness",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The sahuagin can breathe air and water, but it must be submerged at least once ev- ery 4 hours to avoid suffocating outside water.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Nbci5KbgHJeoGlDg.BHAyMXES7WPLncdD"
+    },
+    {
+      "_id": "tAVMe8r2StNsubaJ",
+      "name": "Shark Telepathy",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The sahuagin can magically control sharks within 720 feet of itself, using a special telepatia.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Nbci5KbgHJeoGlDg.tAVMe8r2StNsubaJ"
+    },
+    {
+      "_id": "JYRulzNIZ9azUuxz",
+      "name": "A1ultiattack",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The sahuagin makes two Claw attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Nbci5KbgHJeoGlDg.JYRulzNIZ9azUuxz"
+    },
+    {
+      "_id": "08o1qbo6EYt3Kveu",
+      "name": "Claw",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Me lee Attack Roll: +3, alcance 5 ft. Acerto: 4 (1d6-+ l) Cortante de dano. l/1 BONUS ACTIONS z</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "1d6-+l",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Nbci5KbgHJeoGlDg.08o1qbo6EYt3Kveu"
+    },
+    {
+      "_id": "e6OpBicBKcWWOqhg",
+      "name": "Aquatic Charge",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The sahuagin swims up to its Swim <( Speed straight toward an enemy it can see. ~ <( SAHUAGIN PR I EST Sahuagin priests serve the will of Sekolah or other fiendish masters. They direct and support other sahuagin, and they consider every combatant that falls in battle-whether enemy or ally-a sacrifice to their fierce deities. WHEN A S AH U AG I N COMES AT Y OU, IT D O ESN'T SEEM TO BE LIVI N G UNTIL IT BITES YOU 1 . THEN TH E THI NG S BLA C K E YE S T U RN RED A S HELLFIR E AN D THE WAVES F O AM C R I M SO N . THE N COMES THE S CREAM I N G . -TIGU RAN M ARE MR YND, 4 1 5 U RVJVO R 5 MEMOIR SAHUAGIN PRIEST Medium Fiend, Lawful Evil AC 12 Iniciativa +0 (10) HP 38 (7d8 + 7)</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Nbci5KbgHJeoGlDg.e6OpBicBKcWWOqhg"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Sahuagin Warrior",
+      "page": 266,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

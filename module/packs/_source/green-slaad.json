@@ -1,0 +1,298 @@
+{
+  "_id": "2kHQZf4QdDMMFGuJ",
+  "_key": "!actors!2kHQZf4QdDMMFGuJ",
+  "folder": "1nioWC3kx0YxX8qj",
+  "name": "Verde Slaad",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/green-slaad.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 0
+      },
+      "con": {
+        "value": 16,
+        "proficient": 0
+      },
+      "int": {
+        "value": 11,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 8,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 18,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 16,
+        "formula": ""
+      },
+      "hp": {
+        "value": 144,
+        "max": 144,
+        "formula": "17d10 + 51",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60,
+        "blindsight": 30
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "aberration",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Neutro",
+      "cr": 8,
+      "xp": {
+        "value": 3
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "acid",
+          "cold",
+          "fire",
+          "thunder"
+        ],
+        "custom": "Li g htning"
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comum, Sl a ad"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Verde Slaad",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/green-slaad.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "CgfvghWaG8X6s0SU",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The slaad makes three Chaos Staff attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!2kHQZf4QdDMMFGuJ.CgfvghWaG8X6s0SU"
+    },
+    {
+      "_id": "vibNJ3CsAhh2gBQf",
+      "name": "Chaos Staff",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Me fee or Distânciad Attack Rolf: +7, alcance l 0 ft. or r~nge 60 ft. Acerto: 8 (1d8 + 4) Energia de dano. Until the start of the slaad's next turn, o alvo has a condition determined by rolling 1d4: on a 1, Enfeitiçado; qn a 2, Amedrontado; on a 3, Envenenado; or on a 4, Incapacitado.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "1d8+4",
+            "damageType": "force"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!2kHQZf4QdDMMFGuJ.vibNJ3CsAhh2gBQf"
+    },
+    {
+      "_id": "TLfEcSpukrahIYyO",
+      "name": "Shape-Shift",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The slaad shape-shifts into a Small or Me- dium Humanoid, or it returns to its true form. Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. ~86 (-\\_ SLAADI GRAY SLA A D Gray slaadi arise from green slaadi transformed by the Spawning Stone or slaad lords. They explore the planes, seeking Humanoid communities to invade near planar pathways. DEA T H SLAAD Slaad lords create death slaadi by infusing gray slaadi with a portion of their chaotic energy. When groups of slaadi act deliberately, death slaadi are of- ten behind their designs. GRAY SLAAD Medium Aberration, C ha otic Neutral AC 18 Iniciativa +7 (17) HP 150 (20d8 + 60) Speed 40 ft. MOD SAV E MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!2kHQZf4QdDMMFGuJ.TLfEcSpukrahIYyO"
+    },
+    {
+      "_id": "aUlky06tVbKKeJeS",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The slaad casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 14, +6 to hit with spell attacks): À Vontade: Detect Magic, Detect Thoughts, Mage Hand 1/Dia: Fogoball, Invisibility (self only)</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "A4Ib0ncm2uwUbiah": {
+            "_id": "A4Ib0ncm2uwUbiah",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 6
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!2kHQZf4QdDMMFGuJ.aUlky06tVbKKeJeS"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Green Slaad",
+      "page": 288,
+      "cr": "8",
+      "warnings": []
+    }
+  }
+}

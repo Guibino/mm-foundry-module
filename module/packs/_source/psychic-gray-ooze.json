@@ -1,0 +1,367 @@
+{
+  "_id": "eizL2SOQKQaUyhc1",
+  "_key": "!actors!eizL2SOQKQaUyhc1",
+  "folder": "BaJiyGJk3g8zXFNV",
+  "name": "Psychic Gray Ooze",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 12,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 8,
+        "proficient": 0
+      },
+      "con": {
+        "value": 6,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 6,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 2,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 9,
+        "formula": ""
+      },
+      "hp": {
+        "value": 1,
+        "max": 1,
+        "formula": "",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false
+      },
+      "senses": {
+        "units": "ft",
+        "blindsight": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "ooze",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 0,
+      "xp": {
+        "value": 200
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": "Blinded; Charmed; Deafened; Exhaustion"
+      },
+      "dr": {
+        "value": [
+          "acid",
+          "cold",
+          "fire",
+          "psychic"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "None"
+      }
+    },
+    "skills": {
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Psychic Gray Ooze",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/psychic-gray-ooze.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "1XO0vy6o0krRboSi",
+      "name": "Amorphous",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The ooze can move through a space as narrow as l inch without expending extra move- ment to do so.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!eizL2SOQKQaUyhc1.1XO0vy6o0krRboSi"
+    },
+    {
+      "_id": "Q9UXZYpRHOyLjLVp",
+      "name": "Pseudopod",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +3, alcance 5 ft. Acerto: 11 (3d6 + l) Ácido de dano, and o alvo has Disadvan- tage on Inteligência saving throws until the end of the ooze's next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "KXIdQRqnzaClZuEz": {
+            "_id": "KXIdQRqnzaClZuEz",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "3",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": null,
+                  "denomination": null,
+                  "bonus": "",
+                  "types": [
+                    "acid"
+                  ],
+                  "custom": {
+                    "enabled": true,
+                    "formula": "3d6+l"
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 3,
+            "attackType": "melee",
+            "damageFormula": "3d6+l",
+            "damageType": "acid"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!eizL2SOQKQaUyhc1.Q9UXZYpRHOyLjLVp"
+    },
+    {
+      "_id": "2i4c7LdWDVKt6uAB",
+      "name": "Psíquico Crush",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Inteligência Teste de Resistência: DC 10, uma criatura the ooze can see within 60 feet. Falha: 13 (3d8) Psíquico de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "VYcsC7ca47sr9I6N": {
+            "_id": "VYcsC7ca47sr9I6N",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "int"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "10"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 8,
+                  "bonus": "",
+                  "types": [
+                    "psychic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "3d8",
+            "damageType": "psychic",
+            "saveDc": 10,
+            "saveAbility": "int"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!eizL2SOQKQaUyhc1.2i4c7LdWDVKt6uAB"
+    },
+    {
+      "_id": "gVbYxAmoSCopG86c",
+      "name": "Mind Corrosion",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Trigger: The ooze fails a saving throw against a spell or another magical effect created by a creature. Response: The triggering creature takes 3 (1d6) Psíquico de dano. GRAY OOZES GREEN DRAGON WYRMLI N G GREEN DRAGONS Dragons of Deceit and Derision</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!eizL2SOQKQaUyhc1.gVbYxAmoSCopG86c"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Psychic Gray Ooze",
+      "page": 153,
+      "cr": "0",
+      "warnings": [
+        "HP nao reconhecido"
+      ]
+    }
+  }
+}

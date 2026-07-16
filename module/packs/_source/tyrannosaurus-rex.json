@@ -1,0 +1,283 @@
+{
+  "_id": "Q9QpAm4vZVX3GIhY",
+  "_key": "!actors!Q9QpAm4vZVX3GIhY",
+  "folder": "9eORFRgLi2o0urFB",
+  "name": "Tyrannosaurus Rex",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/tyrannosaurus-rex.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 25,
+        "proficient": 1
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0
+      },
+      "con": {
+        "value": 19,
+        "proficient": 0
+      },
+      "int": {
+        "value": 2,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 9,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13,
+        "formula": ""
+      },
+      "hp": {
+        "value": 136,
+        "max": 136,
+        "formula": "13d12+ 52",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 50
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast",
+        "subtype": "Dinosa ur",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 8,
+      "xp": {
+        "value": 3900
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "None"
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Tyrannosaurus Rex",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/tyrannosaurus-rex.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "WjlZ1NgndzumL3sy",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The tyrannosaurus makes one Bite attack and one Tail attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Q9QpAm4vZVX3GIhY.WjlZ1NgndzumL3sy"
+    },
+    {
+      "_id": "UPRI73VF2HvzpSaX",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 10 ft. Acerto: 33 (4d72 + 7) Perfurante de dano. If o alvo is a Large or smaller creature, it has the Agarrado condition (escape DC 17). While Agarrado, o alvo has the Impedido condition and can't be targeted by the tyrannosaurus's Tail.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "Z0dfisczFO7XcpJm": {
+            "_id": "Z0dfisczFO7XcpJm",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 72,
+                  "bonus": "7",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 10,
+            "attackType": "melee",
+            "damageFormula": "4d72+7",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Q9QpAm4vZVX3GIhY.UPRI73VF2HvzpSaX"
+    },
+    {
+      "_id": "wBtnaNrcwhmsGgZY",
+      "name": "Tail",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 10, alcance 15 ft. Acerto: 25 (4d8 + 7) Concussão de dano. If o alvo is a Huge or smaller creature, it has the Caído condition. APPENDIX A I ANIMALS VENOMOUS SNAKE Tiny Beast, Una!tgned AC 12 Iniciativa +2 (12) HP 5 (2d4) Speed 30 ft., Swim 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "4d8+7",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Q9QpAm4vZVX3GIhY.wBtnaNrcwhmsGgZY"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Tyrannosaurus Rex",
+      "page": 374,
+      "cr": "8",
+      "warnings": []
+    }
+  }
+}

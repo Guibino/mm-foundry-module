@@ -1,0 +1,408 @@
+{
+  "_id": "GYnPTbnJmMUXVhvA",
+  "_key": "!actors!GYnPTbnJmMUXVhvA",
+  "folder": "3SEe9J5t05jhrkCa",
+  "name": "Purple Worm",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/purple-worm.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 28,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 7,
+        "proficient": 0
+      },
+      "con": {
+        "value": 22,
+        "proficient": 0
+      },
+      "int": {
+        "value": 1,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 8,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 4,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 18,
+        "formula": ""
+      },
+      "hp": {
+        "value": 247,
+        "max": 247,
+        "formula": "15d20 + 90",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "blindsight": 30,
+        "tremorsense": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "monstrosity",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 15,
+      "xp": {
+        "value": 13000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "grg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Purple Worm",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/purple-worm.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "XB2Nz6T69n3S5t31",
+      "name": "Tunneler",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The worm can burrow th rough solid rock at half its Burrow Speed and leaves a 10-foot-diameter tur.inel in its wake.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!GYnPTbnJmMUXVhvA.XB2Nz6T69n3S5t31"
+    },
+    {
+      "_id": "Oe1o7EKfVGGnpE7j",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The worm makes one Bite attack and one Tail Stinger attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!GYnPTbnJmMUXVhvA.Oe1o7EKfVGGnpE7j"
+    },
+    {
+      "_id": "hHvWQjxOZN8qkYFL",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14 alcance 10 ft. Acerto: 22 (3d8 + 9) Perfurante de dano. If o alvo is a Large or smaller creature, it has the Agarrado condition (escape DC 19), and it has the Impedido condition until the grapple ends .</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "MuhieCppy1a4j2p7": {
+            "_id": "MuhieCppy1a4j2p7",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "14",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 8,
+                  "bonus": "9",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 14,
+            "attackType": "melee",
+            "damageFormula": "3d8+9",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!GYnPTbnJmMUXVhvA.hHvWQjxOZN8qkYFL"
+    },
+    {
+      "_id": "sFa7lwwDSVgcM98W",
+      "name": "Tail Stinger",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 14 alcance l Oft. Acerto: 16 (2d6 + 9) Perfurante de dano plus 35 (10d6) Poi- son de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d6+9",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!GYnPTbnJmMUXVhvA.sFa7lwwDSVgcM98W"
+    },
+    {
+      "_id": "ypmg8gKaIp7FCiPU",
+      "name": "Swallow",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Força Sai,iing Throw: DC 19 one Large or smaller creature Agarrado by the worm (it can have up to three creatures swallowed at a time). Falha: The target is swallowed by the worm and the Agarrado con- dition ends. A swallowed creature has the Cego and Impedido conditions has Total Cover against attacks and other effects outside the worm and takes 17 (5d6) Ácido de dano at the start of each of the worm's turns. If the worm takes 30 de dano or more on a single turn from a creature inside it, the worm must succeed on a DC 21 Constituição saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a· space within 5 feet of the worm and has the Vi</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "yMn9vblh9Uydc7bR": {
+            "_id": "yMn9vblh9Uydc7bR",
+            "type": "save",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "21"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 21,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!GYnPTbnJmMUXVhvA.ypmg8gKaIp7FCiPU"
+    },
+    {
+      "_id": "oRo5FYqiuUT2M6hg",
+      "name": "Caído condition",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the worm dies, any swallowed crea- <( ture no longer has the Impedido condition and can w escape from the corpse using 20 feet of movement 1 0 exiting Caído. ~ 0 QUAGGOTHS Unpredictable Subterranean Stalkers</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!GYnPTbnJmMUXVhvA.oRo5FYqiuUT2M6hg"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Purple Worm",
+      "page": 252,
+      "cr": "15",
+      "warnings": []
+    }
+  }
+}

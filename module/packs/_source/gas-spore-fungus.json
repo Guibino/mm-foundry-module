@@ -1,0 +1,197 @@
+{
+  "_id": "8sEe9nlpAAHPiXSu",
+  "_key": "!actors!8sEe9nlpAAHPiXSu",
+  "folder": "UIhMG4gNrr0aGWHc",
+  "name": "Gas Spore Fungus",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 5,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 1,
+        "proficient": 0
+      },
+      "con": {
+        "value": 3,
+        "proficient": 0
+      },
+      "int": {
+        "value": 1,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 1,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 1,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 8,
+        "formula": ""
+      },
+      "hp": {
+        "value": 13,
+        "max": 13,
+        "formula": "9d10 - 36",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 5,
+        "fly": 10
+      },
+      "senses": {
+        "units": "ft",
+        "blindsight": 30
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "plant",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 0,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "None"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Gas Spore Fungus",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/gas-spore-fungus.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "iKsJdylsGGebAPaj",
+      "name": "Death Burst",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The gas spore bursts when it dies. Consti- tution Sa~ing Throw: DC 10, cada criatura in a 20-foot</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8sEe9nlpAAHPiXSu.iKsJdylsGGebAPaj"
+    },
+    {
+      "_id": "uVDbfRJ1biAfgNcI",
+      "name": "Emanation originating from the gas spore",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Falha: The target takes l 0 (3d6) Veneno de dano and has the Poi- soned condition for 1d12 hours. Unless the Envenenado condition is removed, o alvo dies at the end of that time and sprouts 2d4 Tiny Gas Spore Fungi (each with 1 Hit Point). After 2d6 days, they become Large and have 13 Pontos de Vida. • A C TIONS LU <t: Tendril. Rolagem de Ataque Corpo a Corpo: +0, alcance 5 ft. Acerto: 3 (1d6) en Veneno de dano, and o alvo has the Envenenado condi- LLJ lJ LLJ tion until the end of its next turn. SHRIEKER FUNGUS Medium Plant, Unaligned AC 5 Iniciativa - 5 (5) HP 13 (3d8) Speed 5 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 0,
+            "attackType": "melee"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8sEe9nlpAAHPiXSu.uVDbfRJ1biAfgNcI"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Gas Spore Fungus",
+      "page": 127,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

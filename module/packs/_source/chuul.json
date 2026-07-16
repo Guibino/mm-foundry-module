@@ -1,0 +1,370 @@
+{
+  "_id": "qwzOveSpujUDSsTi",
+  "_key": "!actors!qwzOveSpujUDSsTi",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Chuul",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/chuul.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 15,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 1
+      },
+      "con": {
+        "value": 12,
+        "proficient": 0
+      },
+      "int": {
+        "value": 77,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 70,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 15,
+        "formula": ""
+      },
+      "hp": {
+        "value": 78,
+        "max": 78,
+        "formula": "72d10 + 12",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 20,
+        "fly": 60
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 720,
+        "blindsight": 70
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "Demon",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Chaotic",
+      "cr": 6,
+      "xp": {
+        "value": 2300
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Chuul",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/chuul.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "hRS53hQpOtpj398x",
+      "name": "Demonic Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the chasme dies outside the Abyss, its body dissolves into ichor, and it gains a new body instantly, reviving with all its Pontos de Vida some- where in the Abyss.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwzOveSpujUDSsTi.hRS53hQpOtpj398x"
+    },
+    {
+      "_id": "NafRtyUE3bNOIQ75",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The chasme has Advantage on sav- ing throws against spells and other magical effects.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwzOveSpujUDSsTi.NafRtyUE3bNOIQ75"
+    },
+    {
+      "_id": "Cyd4GHLh7aXugXy3",
+      "name": "Spider Climb",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The chasme can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwzOveSpujUDSsTi.Cyd4GHLh7aXugXy3"
+    },
+    {
+      "_id": "TMBllUqUxegIf9ed",
+      "name": "Proboscis",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 16 (4d6 + 2) Perfurante de dano plus 21 (6d6) Necrótico de dano. If o alvo is a creature, its Hit Point max- imum decreases by an amount equal to the Necrótico de dano taken.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "o8BUMWwtvk8p5qit": {
+            "_id": "o8BUMWwtvk8p5qit",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "4d6+2",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwzOveSpujUDSsTi.TMBllUqUxegIf9ed"
+    },
+    {
+      "_id": "E6acdjCvgvRxeR1k",
+      "name": "Drone",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Teste de Resistência: DC 12, cada criatura in a 30-foot Emanation originating from the chasme (demons automatically succeed on this save). Falha: The target has the Inconsciente condition and repeats the save at the end of each of its turns. The target suc- lJ ceeds automatically after 70 minutes or if it takes dam- ::i age or a creature within 5 feet of it takes an action to D:'. empty a flask of Holy Water on it. Sucesso: The target is immune to this chasme's Drone for 24 hours. CHIMERA Multiheaded Ravager</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "f1TrgKn78GAc3C1l": {
+            "_id": "f1TrgKn78GAc3C1l",
+            "type": "save",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "12"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 12,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwzOveSpujUDSsTi.E6acdjCvgvRxeR1k"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Chuul",
+      "page": 71,
+      "cr": "6",
+      "warnings": []
+    }
+  }
+}

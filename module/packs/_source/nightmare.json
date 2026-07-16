@@ -1,0 +1,276 @@
+{
+  "_id": "58fppTjv4wc2PKdr",
+  "_key": "!actors!58fppTjv4wc2PKdr",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Nightmare",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/nightmare.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 0
+      },
+      "con": {
+        "value": 16,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 13,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 15,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13,
+        "formula": ""
+      },
+      "hp": {
+        "value": 68,
+        "max": 68,
+        "formula": "8d10 + 24",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 60,
+        "fly": 90
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Mau",
+      "cr": 3,
+      "xp": {
+        "value": 700
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "fire"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Understands Abyssal, Comum, and"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Nightmare",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/nightmare.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "5gSpF4nXOQuGTYTX",
+      "name": "Confer Fogo Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The ni ghtmare can grant Re- sistance to Fogo de dano to? rider while it is on the nightmare.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!58fppTjv4wc2PKdr.5gSpF4nXOQuGTYTX"
+    },
+    {
+      "_id": "nUPTv7RKnBxxP01M",
+      "name": "Illumination",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The nightmare sheds Bright Light in a 10- foot radius and Dim Light for an additional 10 feet.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!58fppTjv4wc2PKdr.nUPTv7RKnBxxP01M"
+    },
+    {
+      "_id": "ZiJJKgpduUgB1Cnu",
+      "name": "Hooves",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance 5 ft. Acerto: 13 (2d8 ~ 4) Concussão de dano plus 10 (3d6) Fogo'de dano. u - Ethereal Stride. The nightmare and up to three willing 0.. creatures within 5 feet of it teleport to the Ethereal z Plane from the Material Plane or vice versa. __J - ---=----- ~- _- _- _- _-_ -_ -_ -_ -_-_-_- ....... 7~~-r- ~ NOBLE Medium or Small Humanoid, Neutral AC 15 Iniciativa +l (11) HP 9 (2d8) Speed 30 ft. MOO SAVE MOO SAVE MOO SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "pwMD4h2bLgjspEGx": {
+            "_id": "pwMD4h2bLgjspEGx",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": null,
+                  "denomination": null,
+                  "bonus": "",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": true,
+                    "formula": "2d8~4"
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 6,
+            "attackType": "melee",
+            "damageFormula": "2d8~4",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!58fppTjv4wc2PKdr.ZiJJKgpduUgB1Cnu"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Nightmare",
+      "page": 228,
+      "cr": "3",
+      "warnings": []
+    }
+  }
+}

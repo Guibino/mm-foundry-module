@@ -1,0 +1,488 @@
+{
+  "_id": "qp79U3h0JF4o6kL7",
+  "_key": "!actors!qp79U3h0JF4o6kL7",
+  "folder": "lhndsA6Aflaa0nF6",
+  "name": "Adulto Bronze Dragão",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 25,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 1
+      },
+      "con": {
+        "value": 23,
+        "proficient": 0
+      },
+      "int": {
+        "value": 16,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 15,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 20,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 18,
+        "formula": ""
+      },
+      "hp": {
+        "value": 212,
+        "max": 212,
+        "formula": "17d12 + 102",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120,
+        "blindsight": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "dragon",
+        "subtype": "Metallic",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Bom",
+      "cr": 15,
+      "xp": {
+        "value": 13000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [
+          "lightning"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comum, Dracônico"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Adulto Bronze Dragão",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/adult-bronze-dragon.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "GCBQ3yWezIzaQKqe",
+      "name": "Amphibious",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon can breathe air and water.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qp79U3h0JF4o6kL7.GCBQ3yWezIzaQKqe"
+    },
+    {
+      "_id": "ysLBVyeSp7PKnLG7",
+      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the dragon fails a saving throw, it can choose to suc- ceed instead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "3",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qp79U3h0JF4o6kL7.ysLBVyeSp7PKnLG7"
+    },
+    {
+      "_id": "evyTLP3LsyW6OSjI",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of (A) Repulsion Breath or (B) Conjuração to cast Guiding Bolt (level 2 version).</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qp79U3h0JF4o6kL7.evyTLP3LsyW6OSjI"
+    },
+    {
+      "_id": "t2iqSgPDv89zxagb",
+      "name": "Rend",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 12, alcance 10 ft. Acerto: 16 (2d8 + 7) Cortante de dano plus 5 (1d10) Elétrico de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d8+7",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qp79U3h0JF4o6kL7.t2iqSgPDv89zxagb"
+    },
+    {
+      "_id": "8cZAJEGWeVRFcJk7",
+      "name": "Elétrico Breath (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Destreza Saving <( Throw: DC 19, cada criatura in a 90- foot-long, 5-foot- LJJ l/) wide Line. Falha: 55 (10d10) Elétrico de dano. Suc- cess: Metade do dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "10d10",
+            "damageType": "lightning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qp79U3h0JF4o6kL7.8cZAJEGWeVRFcJk7"
+    },
+    {
+      "_id": "xb90krSLwwlBiK0p",
+      "name": "Repulsion Breath",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Força Saljing Throw: DC 19, cada criatura in a 30-foot Cone. Falha: The target is pushed up to 60 feet straight away from the dragon and has the Caído condition.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qp79U3h0JF4o6kL7.xb90krSLwwlBiK0p"
+    },
+    {
+      "_id": "1ZrbRcrLVk4pPi5T",
+      "name": "Guiding Light",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon uses Conjuração to cast Guiding Bolt (level 2 version).</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qp79U3h0JF4o6kL7.1ZrbRcrLVk4pPi5T"
+    },
+    {
+      "_id": "zXr4iPnujh2VKZ4F",
+      "name": "Pounce",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon moves up to half its Speed, and it - makes one Rend attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qp79U3h0JF4o6kL7.zXr4iPnujh2VKZ4F"
+    },
+    {
+      "_id": "pCXPUDbZD25MPcfG",
+      "name": "Trovejanteclap",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Saljing Throw: DC 17, each • creature in a 20-foot-radius Sphere centered on a point the dragon can see within 90 feet. Falha: 70 (3d6) Trovejante de dano, and o alvo has the Surdo con- dition until the end of its next turn. BRONZE DRAGONS 59 YOUNG BRONZE DRAGON Many young bronze dragons become experts in a type of problem, like driving off pirates or protect- ing communities from storms. Young bronze drag- ons collect friends with varied expertise , cultivating a community of experts they can rely on. ADULT BRONZE D RAGON Adult bronze dragons often dwell near places they defend or where they help other s work toward goals. They might become patrons of whole cities, advising leaders and helping generations flourish. AN CI ENT B RO N ZE D RAGON Ancient bronze dragons develop dramatic patinas on their glimmering scales. These dragons strive to protect whole regions, continents, or planets from threats. They seek solutions to planes-spanning ca- lamities or multiversal perils and oppose the evil of mighty chromatic dragons. ANCIENT BRONZE DRAGON Gargantuan Dragon ( Met allic) , Lawfu l Goo d AC 22 Iniciativa +14 (24) HP 444 (24d20 + 192)</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "3d6",
+            "damageType": "thunder"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qp79U3h0JF4o6kL7.pCXPUDbZD25MPcfG"
+    },
+    {
+      "_id": "e0wWkXOMPHCqzTqF",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon casts one of the following spells requiring no Material components and using Carisma as the spellcasting ability (spell save DC 17, + 10 to hit with s pe II attacks): À Vontade: Detect Magic , Guiding Bolt (level 2 version), Shapechange (Beast or Humanoid form only, no Temporary Pontos de Vida gained from the spell, and no Concentration or Temporary Pontos de Vida required to maintain the spell), Speak with Animals, Thaumaturgy 1/Dia Each: Detect Thoughts, Water Breathing</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qp79U3h0JF4o6kL7.e0wWkXOMPHCqzTqF"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Adult Bronze Dragon",
+      "page": 61,
+      "cr": "15",
+      "warnings": []
+    }
+  }
+}

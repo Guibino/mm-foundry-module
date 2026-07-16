@@ -1,0 +1,345 @@
+{
+  "_id": "iE5FAFfoRg7jVvOK",
+  "_key": "!actors!iE5FAFfoRg7jVvOK",
+  "folder": "IQP9BfRMl9yEsYGp",
+  "name": "Solar",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/solar.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 26,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 22,
+        "proficient": 0
+      },
+      "con": {
+        "value": 26,
+        "proficient": 0
+      },
+      "int": {
+        "value": 25,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 25,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 30,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 10,
+        "formula": ""
+      },
+      "hp": {
+        "value": 297,
+        "max": 297,
+        "formula": "22d1 0 + 176",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 50
+      },
+      "senses": {
+        "units": "ft",
+        "truesight": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "celestial",
+        "subtype": "Angel",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Bom",
+      "cr": 21,
+      "xp": {
+        "value": 33000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "poison"
+        ],
+        "custom": "Ra diant"
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "All"
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Solar",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/solar.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "itCnPJIq9s2yIgPo",
+      "name": "Divine Awareness",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The solar knows if it hears a lie.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!iE5FAFfoRg7jVvOK.itCnPJIq9s2yIgPo"
+    },
+    {
+      "_id": "4Nj8BKPast1IyK2m",
+      "name": "Exalted Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the solar dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its Pontos de Vida somewhere in Mount Celestia.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!iE5FAFfoRg7jVvOK.4Nj8BKPast1IyK2m"
+    },
+    {
+      "_id": "eBXFBb0EPcwiYZwq",
+      "name": "Resistência Lendária (4/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the solar fails a saving throw, it can choose to succeed instead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "4",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!iE5FAFfoRg7jVvOK.eBXFBb0EPcwiYZwq"
+    },
+    {
+      "_id": "UfyIhRlDKz1mZI92",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The solar has Advantage on saving throws against spells and other magical effects.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!iE5FAFfoRg7jVvOK.UfyIhRlDKz1mZI92"
+    },
+    {
+      "_id": "awH9vt0r2ZLwyRWy",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The solar makes two Flying Sword attacks. It can replace one attack with a use of Slaying Bow.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!iE5FAFfoRg7jVvOK.awH9vt0r2ZLwyRWy"
+    },
+    {
+      "_id": "ix3tRR34VVJSMnr0",
+      "name": "Flying Sword",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Me lee or Rolagem de Ataque à Distância:+ 15, alcance 10 ft. or range 120 ft. Acerto: 22 (4d6 + 8) Cortante de dano plus 36 (8d8) Radiante de dano. Hit or Erro: The sword magically returns to the solar's-hand or hovers within 5 feet · of the solar immediately after a ranged attack. 288 SOLAR SOLAR Angelic Protector of the Multiverse</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "4d6+8",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!iE5FAFfoRg7jVvOK.ix3tRR34VVJSMnr0"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Solar",
+      "page": 290,
+      "cr": "21",
+      "warnings": []
+    }
+  }
+}

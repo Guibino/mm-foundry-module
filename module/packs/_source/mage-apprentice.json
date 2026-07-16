@@ -1,0 +1,232 @@
+{
+  "_id": "3kqMEEzUi0saFyO6",
+  "_key": "!actors!3kqMEEzUi0saFyO6",
+  "folder": "1QPcErIwVgACFlzi",
+  "name": "Mage Apprentice",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/mage-apprentice.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 8,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0
+      },
+      "con": {
+        "value": 12,
+        "proficient": 1
+      },
+      "int": {
+        "value": 16,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 73,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 70,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 10,
+        "formula": ""
+      },
+      "hp": {
+        "value": 49,
+        "max": 49,
+        "formula": "9d8 + 9",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "humanoid",
+        "subtype": "Wizard",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 2,
+      "xp": {
+        "value": 450
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {
+      "arc": {
+        "value": 1,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Mage Apprentice",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/mage-apprentice.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "6yV3M7gURvmSTDxG",
+      "name": "Arcane Burst",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Melee or Distânciad Attack: +5, alcance 5 ft. or range 120 ft. Acerto: 14 (2d1 0 + 3) Energia de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d10+3",
+            "damageType": "force"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!3kqMEEzUi0saFyO6.6yV3M7gURvmSTDxG"
+    },
+    {
+      "_id": "vAWaqpCcp2uz26KT",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The mage casts one of the following spells, using Inteligência as the spellcasting ability (spell save DC 73, +5 to hit with spell attacks): l/l LL! À Vontade: Mage Hand, Prestidigitation N LL! LLI 1/Dia Each: Disguise Self, Ice Knife, Mage Armor (in- 2: cluded in AC), Trovejantewave MAGE Mages are accomplished spellcasters whose lives have been shaped by magic. They can use their powers to defend or dominate other creatures , or they could focus on magical re s earch and unlock i ng mystical secrets. ARCH M AG E Archmages have mastered incredible magical power. While some use their magic to protect the world , others become tyrants or pursue forbidden secrets. Many archmages retain magical servants and collect magic items and occult lore. MAGE Medium or Sm all Humanoid ( Wi zard), Neutral AC 15 Iniciativa +2 (12) HP 81 (18d8) Speed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "MliYveBd3SC9ZiJW": {
+            "_id": "MliYveBd3SC9ZiJW",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!3kqMEEzUi0saFyO6.vAWaqpCcp2uz26KT"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Mage Apprentice",
+      "page": 200,
+      "cr": "2",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,720 @@
+{
+  "_id": "5QaLHkHzy2kzOYdS",
+  "_key": "!actors!5QaLHkHzy2kzOYdS",
+  "folder": "3SEe9J5t05jhrkCa",
+  "name": "Tarrasque",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/tarrasque.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 30,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 1
+      },
+      "con": {
+        "value": 30,
+        "proficient": 0
+      },
+      "int": {
+        "value": 3,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 17,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 71,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 25,
+        "formula": ""
+      },
+      "hp": {
+        "value": 697,
+        "max": 697,
+        "formula": "34d20 + 340",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 60,
+        "burrow": 40,
+        "climb": 60
+      },
+      "senses": {
+        "units": "ft",
+        "blindsight": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "monstrosity",
+        "subtype": "Titan",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 30,
+      "xp": {
+        "value": 155000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "grg",
+      "di": {
+        "value": [
+          "fire",
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "deafened"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "None"
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Tarrasque",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/tarrasque.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "lYVPy9jN36h7ZSDO",
+      "name": "Resistência Lendária (6/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the tarrasque fails a saving throw, it can choose to succeed instead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "6",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5QaLHkHzy2kzOYdS.lYVPy9jN36h7ZSDO"
+    },
+    {
+      "_id": "YdJBlNaV6aWvxvmL",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The tarrasque has Advantage on sav- ing throws against spells and other magical effects.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5QaLHkHzy2kzOYdS.YdJBlNaV6aWvxvmL"
+    },
+    {
+      "_id": "iMjOM7QuakAEX7XQ",
+      "name": "Reflective Carapace",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the tarrasque is targeted by a Magic Missile spell or a spell that requires a ranged at- tack roll, roll 7d6. On a 1-5, the tarrasque is unaffected. On a 6, the tarrasque is unaffected and reflects the spell, turning the caster into o alvo.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5QaLHkHzy2kzOYdS.iMjOM7QuakAEX7XQ"
+    },
+    {
+      "_id": "ssMWRNlqkoYClTRK",
+      "name": "Siege Monster",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The tarrasque deals double de dano to objects and structures.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5QaLHkHzy2kzOYdS.ssMWRNlqkoYClTRK"
+    },
+    {
+      "_id": "hNTHvH6NQk4qvTqi",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The tarrasque makes one Bite attack and three other attacks, using Claw or Tail in any combination.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5QaLHkHzy2kzOYdS.hNTHvH6NQk4qvTqi"
+    },
+    {
+      "_id": "Fu5cth47f9j0OrjF",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 19, alcance 15 ft. Acerto: 36 (4d1 2 + 10) Perfurante de dano, and o alvo has the Agarrado condition (escape DC 20). Until the grapple ends, o alvo has the Impedido condition and can't teleport.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "4d12+10",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5QaLHkHzy2kzOYdS.Fu5cth47f9j0OrjF"
+    },
+    {
+      "_id": "AemM1lbswjyyIhar",
+      "name": "Claw",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 19, alcance 15 ft. Acerto: 28 (4d8 + 10) Cortante de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "4d8+10",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5QaLHkHzy2kzOYdS.AemM1lbswjyyIhar"
+    },
+    {
+      "_id": "7ROrucAUU7BcTeGS",
+      "name": "Tail",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +19, alcance 30 ft. Acerto: 23 (3d8 + 10) Concussão de dano. If o alvo is a Huge or smaller creature, it has the Caído condition. TARRASQUE EVIDENCE 1d4 Amid Destruction, the Tarrasque Leaves ... 1 Evidence of a magic spell reflected back on its caster, like Ice Knife or Me/f's Ácido Arrow. 2 Massive footprints or claw marks. 3 A russet scale the size of a knight's shield. 4 A shattered mountain or diverted river.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "5E2pznfXTCajy7mV": {
+            "_id": "5E2pznfXTCajy7mV",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "19",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 8,
+                  "bonus": "10",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 19,
+            "attackType": "melee",
+            "damageFormula": "3d8+10",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5QaLHkHzy2kzOYdS.7ROrucAUU7BcTeGS"
+    },
+    {
+      "_id": "hWNnsKl62ZhnAC6J",
+      "name": "Trovejanteous Bellow (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Teste de Resistência: DC 27, cada criatura and each object that isn't being worn or carried in a 150-foot Cone. Falha: 78 (12d7 2) Trovejante de dano, and o alvo has the Deaf- ened and Amedrontado conditions until the end of its next turn. Sucesso: Metade do dano only.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "HMb3nboVGMqFA7M1": {
+            "_id": "HMb3nboVGMqFA7M1",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "27"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 12,
+                  "denomination": 72,
+                  "bonus": "",
+                  "types": [
+                    "thunder"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "12d72",
+            "damageType": "thunder",
+            "saveDc": 27,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5QaLHkHzy2kzOYdS.hWNnsKl62ZhnAC6J"
+    },
+    {
+      "_id": "U40Uc8xFBlYC8Crq",
+      "name": "Swallow",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Força Teste de Resistência: DC 27, one Large or smaller creature Agarrado by the tarrasque (it can have pup to six creatures swallowed at a time). Falha: The target is swallowed, and the Agarrado condition ends. A swallowed creature has the Cego and Impedido conditions and can't teleport, it has Total Cover against attacks and other effects outside the tarrasque, and it takes 56 (16d6) Ácido de dano at the start of each of the tarrasque's turns. If the tarrasque takes 60 de dano or more on a single turn from a creature inside it, the tarrasque must suc- ceed on a DC 20 Constituição saving throw at the end of that turn or regurgitate all swallowed creatures, each of which falls in a space within 10 feet of the tarrasque and has the Caído condition. If the tarrasque dies, any swallowed creature no longer has the ~estrained con- dition and can escape from the corpse using 20 feet of movement, exiting Caído.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "dgpWYSoDwu4TraKV": {
+            "_id": "dgpWYSoDwu4TraKV",
+            "type": "save",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "27"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 27,
+            "saveAbility": "str"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5QaLHkHzy2kzOYdS.U40Uc8xFBlYC8Crq"
+    },
+    {
+      "_id": "kcrV0vIl0dejskQM",
+      "name": "Onslaught",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The tarrasque moves up to half its Speed, and it makes one Claw or Tail attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5QaLHkHzy2kzOYdS.kcrV0vIl0dejskQM"
+    },
+    {
+      "_id": "tFLF0lCb5uyG7EUY",
+      "name": "World-Shaking Movement",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The tarrasque moves up to its Speed. At the end of this movement, the tarrasque creates an instantaneous shock wave in a 60-foot Em- anation originating from itself. Creatures in that area • lose Concentration and, if Medium or small°er, have the</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5QaLHkHzy2kzOYdS.tFLF0lCb5uyG7EUY"
+    },
+    {
+      "_id": "vpA5cHA3LbBmjkiR",
+      "name": "Caído condition",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The tarrasque can't take this action again until the start of its next turn. TARRASQUE THRI - KREEN . Mantid Psíquicos and Scavengers</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!5QaLHkHzy2kzOYdS.vpA5cHA3LbBmjkiR"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Tarrasque",
+      "page": 307,
+      "cr": "30",
+      "warnings": []
+    }
+  }
+}

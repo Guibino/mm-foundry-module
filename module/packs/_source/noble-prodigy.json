@@ -1,0 +1,323 @@
+{
+  "_id": "VxWIbdYIf80H88cJ",
+  "_key": "!actors!VxWIbdYIf80H88cJ",
+  "folder": "1QPcErIwVgACFlzi",
+  "name": "Noble Prodigy",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 8,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 16,
+        "proficient": 1
+      },
+      "con": {
+        "value": 12,
+        "proficient": 1
+      },
+      "int": {
+        "value": 15,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 19,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 76,
+        "formula": ""
+      },
+      "hp": {
+        "value": 148,
+        "max": 148,
+        "formula": "27d8 + 27",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 0,
+      "xp": {
+        "value": 5900
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Common plus two other languages"
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "per": {
+        "value": 1,
+        "ability": "cha"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Noble Prodigy",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/noble-prodigy.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "4sPU5SzIupFc9fNh",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The noble makes three Beguiling Strike attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!VxWIbdYIf80H88cJ.4sPU5SzIupFc9fNh"
+    },
+    {
+      "_id": "Vrec98JmQRtE31ft",
+      "name": "Beguiling Strike",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +8, alcance 5 ft. or range 60 ft. Acerto: 18 (4d6 + 4) Psíquico de dano, and o alvo has the Enfeitiçado condition until the start of the no bl e's next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "2K8KGbjI5hy5XPgP": {
+            "_id": "2K8KGbjI5hy5XPgP",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "8",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "psychic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 8,
+            "attackType": "ranged",
+            "damageFormula": "4d6+4",
+            "damageType": "psychic"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!VxWIbdYIf80H88cJ.Vrec98JmQRtE31ft"
+    },
+    {
+      "_id": "cxXIcKgJlm0AzncH",
+      "name": "Shield (2/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The noble casts Shield in response to that spell's trigger , using the same spellcasting ability as Conjuração. '\" ~---------- N_O_B_~- E~ 227 NOTHIC Witness to the Weird</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "2",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!VxWIbdYIf80H88cJ.cxXIcKgJlm0AzncH"
+    },
+    {
+      "_id": "d2MSOOeeoVXRaSpr",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The noble casts one of the following spells , requiring no Material components and using Carisma as the spellcasting ability (spell save DC 16): À Vontade: Mage Armor (included in AC), Mage Hand, Mi - nor Illusion 1/Dia Each: Befuddlement, Detect Thoughts, Fly, Scry- ing, Shatter (level 7 version)</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!VxWIbdYIf80H88cJ.d2MSOOeeoVXRaSpr"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Noble Prodigy",
+      "page": 229,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

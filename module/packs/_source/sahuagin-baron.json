@@ -1,0 +1,367 @@
+{
+  "_id": "J3WZwbp26cCr1Zzu",
+  "_key": "!actors!J3WZwbp26cCr1Zzu",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Sahuagin Baron",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 19,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 75,
+        "proficient": 1
+      },
+      "con": {
+        "value": 16,
+        "proficient": 1
+      },
+      "int": {
+        "value": 14,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 73,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 17,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 16,
+        "formula": ""
+      },
+      "hp": {
+        "value": 76,
+        "max": 76,
+        "formula": "9d10 + 27",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30,
+        "swim": 50
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Lawful",
+      "cr": 5,
+      "xp": {
+        "value": 1800
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "acid",
+          "cold"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Sahuagin"
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Sahuagin Baron",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/sahuagin-baron.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "jmlUpLflAIjnhaQD",
+      "name": "Blood Frenzy",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The sahuagin has Advantage on attack rolls against any creature that doesn't have all its Pontos de Vida.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!J3WZwbp26cCr1Zzu.jmlUpLflAIjnhaQD"
+    },
+    {
+      "_id": "SIgUCaMet2Fdj7na",
+      "name": "Limited Amphibiousness",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The sahuagin can breathe air and water, but it must be submerged at least once ev- ery 4 hours to avoid suffocating outside water.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!J3WZwbp26cCr1Zzu.SIgUCaMet2Fdj7na"
+    },
+    {
+      "_id": "T6DhcCNR9JKllYo3",
+      "name": "Shark Telepathy",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The sahuagin can magically control sharks within 120 feet of itself, using a special telepatia.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!J3WZwbp26cCr1Zzu.T6DhcCNR9JKllYo3"
+    },
+    {
+      "_id": "AQX3k6XhQ1TeLIpp",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The sahuagin makes three Trident attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!J3WZwbp26cCr1Zzu.AQX3k6XhQ1TeLIpp"
+    },
+    {
+      "_id": "Sp1ov14c1rX2FNXc",
+      "name": "Trident",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 5 ft. or range 20/60 ft. Acerto: 7 3 (2d8 + 4) Perfurante de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "39FNiUiqjVUzEpVZ": {
+            "_id": "39FNiUiqjVUzEpVZ",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "ranged"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!J3WZwbp26cCr1Zzu.Sp1ov14c1rX2FNXc"
+    },
+    {
+      "_id": "tNtjbr8ZBDes49gv",
+      "name": "Fiendish Blood",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Trigger: The sahuagin takes Perfurante or Cortante de dano. Response-Constituição Sa1Jing Throw: DC 14, cada criatura of the sahuagin 's choice in a 5-foot Emanation originating from the sahuagin. Falha: 10 (3d6) Ácido de dano, and o alvo is cursed • until it finishes a Short or Long Rest. While cursed, o alvo can't benefit from the Invisível condition, its Speed decreases by 10 feet and all Fiends within 120 feet of o alvo can sense its location regardless of interposing obstacles. ~ SAHUAGIN 265 SALAMANDERS Serpentine Artists of the Inferno</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "3d6",
+            "damageType": "acid"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!J3WZwbp26cCr1Zzu.tNtjbr8ZBDes49gv"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Sahuagin Baron",
+      "page": 267,
+      "cr": "5",
+      "warnings": []
+    }
+  }
+}

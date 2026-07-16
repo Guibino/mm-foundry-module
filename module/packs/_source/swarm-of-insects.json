@@ -1,0 +1,231 @@
+{
+  "_id": "oLw4G1v1PhrH7iEP",
+  "_key": "!actors!oLw4G1v1PhrH7iEP",
+  "folder": "9eORFRgLi2o0urFB",
+  "name": "Enxame Of Insects",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/swarm-of-insects.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 3,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 13,
+        "proficient": 0
+      },
+      "con": {
+        "value": 14,
+        "proficient": 0
+      },
+      "int": {
+        "value": 1,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 7,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 1,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 11,
+        "formula": ""
+      },
+      "hp": {
+        "value": 19,
+        "max": 19,
+        "formula": "3d8 + 6",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 20,
+        "fly": 20
+      },
+      "senses": {
+        "units": "ft",
+        "blindsight": 30
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 1,
+      "xp": {
+        "value": 100
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Enxame Of Insects",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/swarm-of-insects.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "YLTBAILINZ0G9ePT",
+      "name": "Spider Climb",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the swarm has a Climb Speed, the swarm can climb difficult surfaces, including along ceil- ings, without needing to make an ability check.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!oLw4G1v1PhrH7iEP.YLTBAILINZ0G9ePT"
+    },
+    {
+      "_id": "auvQHipkJzByj5V0",
+      "name": "Swarm",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain Pontos de Vida or gain Temporary Pontos de Vida.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!oLw4G1v1PhrH7iEP.auvQHipkJzByj5V0"
+    },
+    {
+      "_id": "Wa0PMen4t1Txw7g6",
+      "name": "Bites",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Me lee Attack Roll: +3, alcance 5 ft. Acerto: 6 (2d4 + 1) Veneno de dano, or 3 (1d4 + 1) Veneno de dano if the swarm is Bloodied. 37 0 /\\ APPENDIX A I ANIMALS SWARM OF PIRANHAS Medium S warm ofTiny Beasts, Unaligned AC 13 I ni tiative +3 (13) HP 28 (8d8 ·_ 8) Speed 5 ft., Swim 40 ft . M OD SAVE MOD SAVE M OD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d4+1",
+            "damageType": "poison"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!oLw4G1v1PhrH7iEP.Wa0PMen4t1Txw7g6"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Swarm of Insects",
+      "page": 372,
+      "cr": "1",
+      "warnings": []
+    }
+  }
+}

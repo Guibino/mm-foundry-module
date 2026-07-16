@@ -1,0 +1,325 @@
+{
+  "_id": "Fok8tViRBJnEncTq",
+  "_key": "!actors!Fok8tViRBJnEncTq",
+  "folder": "mI6hZZeXOMovX9oy",
+  "name": "Magmin",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/magmin.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 7,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 0
+      },
+      "con": {
+        "value": 12,
+        "proficient": 0
+      },
+      "int": {
+        "value": 8,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 11,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 14,
+        "formula": ""
+      },
+      "hp": {
+        "value": 13,
+        "max": 13,
+        "formula": "3d6 + 3",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "elemental",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Neutro",
+      "cr": 0.5,
+      "xp": {
+        "value": 100
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "sm",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Primordial (lgnan)"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Magmin",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/magmin.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "02O5ItuUm1VaieNw",
+      "name": "Death Burst",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The magmin explodes when it dies. Dex- terity Teste de Resistência: DC 11, cada criatura in a l 0-foot</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Fok8tViRBJnEncTq.02O5ItuUm1VaieNw"
+    },
+    {
+      "_id": "xXXH8avF6F8hMsTt",
+      "name": "Emanation originating from the magmin",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Falha: 7 (2d6) Fogo de dano. Sucesso: Metade do dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d6",
+            "damageType": "fire"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Fok8tViRBJnEncTq.xXXH8avF6F8hMsTt"
+    },
+    {
+      "_id": "D33BM08zAfhD28fY",
+      "name": "Touch",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4 , alcance 5 ft. Acerto: 7 (2d4 + 2)</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "JAnfOfguQluACKF0": {
+            "_id": "JAnfOfguQluACKF0",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Fok8tViRBJnEncTq.D33BM08zAfhD28fY"
+    },
+    {
+      "_id": "3X9aR5oRELfQsGfl",
+      "name": "Fogo de dano",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If o alvo is a creature or a flammable object that isn't being worn or carried, it starts burning.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Fok8tViRBJnEncTq.3X9aR5oRELfQsGfl"
+    },
+    {
+      "_id": "nx4yTnCh4X3ESmol",
+      "name": "Ignited Illumination",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The magmin sets itself ablaze or extinguishes its flames. While ablaze, the magmin er: sheds Bright Light in a 10-foot radius and Dim Light for w an additional 10 feet. ' MANES Demons of Panic and Frenzy</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Fok8tViRBJnEncTq.nx4yTnCh4X3ESmol"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Magmin",
+      "page": 202,
+      "cr": "1/2",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "_id": "MgUqf5cXs4BPFgqc",
+  "_key": "!actors!MgUqf5cXs4BPFgqc",
+  "folder": "3SEe9J5t05jhrkCa",
+  "name": "Thri-kreen Psion",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18,
+        "proficient": 1
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 1
+      },
+      "con": {
+        "value": 14,
+        "proficient": 1
+      },
+      "int": {
+        "value": 19,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 11,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 16,
+        "formula": ""
+      },
+      "hp": {
+        "value": 149,
+        "max": 149,
+        "formula": "23d8 + 46",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "fly": 20
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "monstrosity",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 8,
+      "xp": {
+        "value": 3900
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Thri-kreen Psion",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/thri-kreen-psion.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "c7eqgCsPetVGYuNC",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The thri-kreen makes three Psionic Lance attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!MgUqf5cXs4BPFgqc.c7eqgCsPetVGYuNC"
+    },
+    {
+      "_id": "Jar7KGtKFzcJ8j1d",
+      "name": "Psionic Lance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance l 0 ft. or range 120 ft. Acerto: 18 (4d6 + 4) Psíquico de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "pLfzMAtNaRp0zxCV": {
+            "_id": "pLfzMAtNaRp0zxCV",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "psychic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "ranged",
+            "damageFormula": "4d6+4",
+            "damageType": "psychic"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!MgUqf5cXs4BPFgqc.Jar7KGtKFzcJ8j1d"
+    },
+    {
+      "_id": "zgFZmLS9MRLRo45p",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The thri-kreen casts one of the following spells, requiring no spell components and using Intelli- gence as the spellcasting ability (spell save DC 15): >- À Vontade: Mage Hand (the hand is Invisível) ~ 1/Dia Each: Detect Thoughts, Sending, Synaptic Static w V1 TOUGHS Brawlers and Bullies</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!MgUqf5cXs4BPFgqc.zgFZmLS9MRLRo45p"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Thri-kreen Psion",
+      "page": 308,
+      "cr": "8",
+      "warnings": []
+    }
+  }
+}

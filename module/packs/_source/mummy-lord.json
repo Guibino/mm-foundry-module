@@ -1,0 +1,710 @@
+{
+  "_id": "ow8YekngHluhf70x",
+  "_key": "!actors!ow8YekngHluhf70x",
+  "folder": "bKQUPthn1V2Yu6Bn",
+  "name": "Mummy Lord",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/mummy-lord.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 70,
+        "proficient": 0
+      },
+      "con": {
+        "value": 17,
+        "proficient": 0
+      },
+      "int": {
+        "value": 11,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 19,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 16,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 17,
+        "formula": ""
+      },
+      "hp": {
+        "value": 187,
+        "max": 187,
+        "formula": "25d8 + 75",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "truesight": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Lawful",
+      "cr": 15,
+      "xp": {
+        "value": 13000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "necrotic",
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": "Fi re"
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Common plus three other languages"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Mummy Lord",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/mummy-lord.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "Jauge2GHT0NZ1jRO",
+      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the mummy fails a saving throw, it can choose to suc- ceed instead. '-</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "3",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ow8YekngHluhf70x.Jauge2GHT0NZ1jRO"
+    },
+    {
+      "_id": "FcJtWOcCmNhjlqI1",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The mummy has Advantage on sav- ing throws against spells and other magical effects.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ow8YekngHluhf70x.FcJtWOcCmNhjlqI1"
+    },
+    {
+      "_id": "QwcvM71a2g9Qg5cr",
+      "name": "Undead Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If destroy~d, the mummy gains a new body in 24 hours if its heart is intact, reviving with all its Pontos de Vida. The new body appears in an unoccu- pied space within the mummy's lair. The heart is a Tiny object that has AC 17, HP 10, and Immunity to all dam- age except Fogo.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ow8YekngHluhf70x.QwcvM71a2g9Qg5cr"
+    },
+    {
+      "_id": "o7skN0bg35xeKeQP",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The mummy makes one Rotting Fist or Channel Negative Energy attack, and it uses Dreadful Glare.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ow8YekngHluhf70x.o7skN0bg35xeKeQP"
+    },
+    {
+      "_id": "aDBJy3VEUX1gtug1",
+      "name": "Rotting Fist",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 5 ft. Acerto: 15 (2d10 + 4) Concussão de dano plus 10 (3d6) Necrótico de dano. If o alvo is a creature, it is cursed. While cursed, o alvo can't regain Pontos de Vida, it gains no benefit from finishing a Long Rest, and its Hit Point maximum decreases by 10 (3d6) every 24 hours that elapse. A creature dies and turns to dust if reduced to 0 Pontos de Vida by this attack. save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast the spell is wasted, but any resources used to cast it aren't expended.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "RFE3aCN6fMJlusAY": {
+            "_id": "RFE3aCN6fMJlusAY",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "9",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "4",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9,
+            "attackType": "melee",
+            "damageFormula": "2d10+4",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ow8YekngHluhf70x.aDBJy3VEUX1gtug1"
+    },
+    {
+      "_id": "CJnhnvDgmZ3MC0oi",
+      "name": "Soul Drain",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Creatures within 1 mile of the lair have Disadvantage on Death Teste de Resistências. If the mummy lord is destroyed or moves its lair elsewhere, these effects end immediately. The ef- fects resume if the mummy lord gains a new body (see its Undead Restoration trait).</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ow8YekngHluhf70x.CJnhnvDgmZ3MC0oi"
+    },
+    {
+      "_id": "byNFXz2ORqMTzpQq",
+      "name": "Channel Negative Energy",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +9, range 60 ft. Acerto: 25 (6d6 + 4) Necrótico de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "dE8oQuqVmdxSqTLK": {
+            "_id": "dE8oQuqVmdxSqTLK",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "9",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 6,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "necrotic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9,
+            "attackType": "ranged",
+            "damageFormula": "6d6+4",
+            "damageType": "necrotic"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ow8YekngHluhf70x.byNFXz2ORqMTzpQq"
+    },
+    {
+      "_id": "vkiSkvk5uY8fjVQf",
+      "name": "Dreadful Glare",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Sabedoria Teste de Resistência: DC 17, one crea- ture the mummy can see within 60 feet. Falha: 25 (6d6 + 4) Psíquico de dano, and o alvo has the Paralisado condition until the end of the mummy's next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "H6vFIy5Paoh5cVEh": {
+            "_id": "H6vFIy5Paoh5cVEh",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "17"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 6,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "psychic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "6d6+4",
+            "damageType": "psychic",
+            "saveDc": 17,
+            "saveAbility": "wis"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ow8YekngHluhf70x.vkiSkvk5uY8fjVQf"
+    },
+    {
+      "_id": "CDBJ107HcaewIQo5",
+      "name": "Whirlwind of Sand",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Trigger: The mummy is hit by an attack roll. Response: The mummy adds 2 to its AC against the attack, possibly causing the attack to miss, and the mummy teleports up to 60 feet to an unoccu - pied space it can see. Each creature of its choice that it can see within 5 feet of its destination _ space has the Cego condition until the end of the mummy's next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ow8YekngHluhf70x.CDBJ107HcaewIQo5"
+    },
+    {
+      "_id": "9c14nWJQ2xLGSqON",
+      "name": "Dread Command",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The mummy casts Command (level 2 version), using the same spellcasting ability as Spell- casting. The mummy . can't take this action again until the start of its next turn. - Glare. The mummy uses Dreadful Glare. The mummy can't take this action again until the start of its • next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ow8YekngHluhf70x.9c14nWJQ2xLGSqON"
+    },
+    {
+      "_id": "jJo1xz7LDLir3V2C",
+      "name": "Necrótico Strike",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The mummy makes one Rotting Fist or Channel Negative Energy attack. MUMMIES ~~I MYCONIDS l(eepers of the Spore</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ow8YekngHluhf70x.jJo1xz7LDLir3V2C"
+    },
+    {
+      "_id": "FEbDIvsEDMUPblSd",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The mummy casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save DC 17, +9 to hit with spell attacks): À Vontade: Dispel Magic, Thaumaturgy 1/Dia Each: Animate Dead, Harm, Insect Plague (level 7 version)</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "b6ZWedwhNLAyGPgB": {
+            "_id": "b6ZWedwhNLAyGPgB",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "9",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ow8YekngHluhf70x.FEbDIvsEDMUPblSd"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Mummy Lord",
+      "page": 223,
+      "cr": "15",
+      "warnings": []
+    }
+  }
+}

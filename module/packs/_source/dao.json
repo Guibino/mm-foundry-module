@@ -1,0 +1,446 @@
+{
+  "_id": "qydtBeMwe4h4tEsr",
+  "_key": "!actors!qydtBeMwe4h4tEsr",
+  "folder": "mI6hZZeXOMovX9oy",
+  "name": "Dao",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/dao.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 23,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 12,
+        "proficient": 1
+      },
+      "con": {
+        "value": 24,
+        "proficient": 0
+      },
+      "int": {
+        "value": 12,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 13,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 18,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 18,
+        "formula": ""
+      },
+      "hp": {
+        "value": 200,
+        "max": 200,
+        "formula": "16d10 + 112",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 30,
+        "fly": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "elemental",
+        "subtype": "Genie",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 11,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": "Petrifi ed"
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Primord ia l (Terran)"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Dao",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/dao.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "jETPWDtJUEU4zqVI",
+      "name": "Earth Glide",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dao can burrow through nonmagical, unworked earth and stone. While doing so, the dao J doesn't disturb the material it moves through.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qydtBeMwe4h4tEsr.jETPWDtJUEU4zqVI"
+    },
+    {
+      "_id": "NPtPZwQSAoapHbHh",
+      "name": "Elemental Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the dao dies outside the Ele- mental Plane of Earth, its body dissolves into dirt, and it gains a new body in 1d4 days, reviving with all its Pontos de Vida somewhere on the Plane of Earth.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qydtBeMwe4h4tEsr.NPtPZwQSAoapHbHh"
+    },
+    {
+      "_id": "It2aeg6cg3qg32EI",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dao has Advantage on saving l/1 throws against spells and other magical effects. l/1 l 0 Cl'.'.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qydtBeMwe4h4tEsr.It2aeg6cg3qg32EI"
+    },
+    {
+      "_id": "swcgLZjCGwjOnhaR",
+      "name": "CD Wishes",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dao has a 30 percent chance of knowing <! the Wish spell. If the dao kriows it, the dao can cast it only on behalf of a non-genie creature who communi- cates a wish in a way the dao can understand. If the dao casts the spell for the creature, the dao suffers none of the spell's stress. Once the dao has cast it three times, the dao can't do so again for 365 days.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qydtBeMwe4h4tEsr.swcgLZjCGwjOnhaR"
+    },
+    {
+      "_id": "zHgBw1UcufMlhBhc",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dao makes three Earthen Maul at- tacks or two Earth Burst attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qydtBeMwe4h4tEsr.zHgBw1UcufMlhBhc"
+    },
+    {
+      "_id": "TQMq9MQyAim1QZwK",
+      "name": "Earthen Maul",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ l 0, alcance 5 ft. Acerto: 20 (4d6 + 6) Concussão de dano. If o alvo is a Large or smaller creature, it has the Caído condition.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "4d6+6",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qydtBeMwe4h4tEsr.TQMq9MQyAim1QZwK"
+    },
+    {
+      "_id": "GI9r4vNK62IesG9q",
+      "name": "Earth Burst",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância:+ 10, range 120 ft. Acerto: 15 (2d8 + 6) Concussão de dano. Hit or Erro: Earth explodes from o alvo's space, creating the following effect. Destreza Teste de Resistência: DC 16, cada criatura in a 10-foot Emanation· originating from and including o alvo. Falha: 10 (3d6) Trovejante de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "7mgkYu5Vnel6V4A8": {
+            "_id": "7mgkYu5Vnel6V4A8",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "16"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "6",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d8+6",
+            "damageType": "bludgeoning",
+            "saveDc": 16,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qydtBeMwe4h4tEsr.GI9r4vNK62IesG9q"
+    },
+    {
+      "_id": "5p6X8ItsbnTgS3cU",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dao casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 16): À Vontade: Detect Evil and Good, Detect Magic, Stone Shape 1/Dia Each: Gaseous Form, Invisibility, Move Earth, Pass- wa/1, Plane Shift, Tongues, Wall of Stone DAO A 89 -~~-- -----------2__,1/,.......,,......... 0 U ST A SSUME THERE S N O SUC H TH I N G AS A STALA CTI TE . -5. WAKEMAN , UN0 ER DARK EXP LO RER DARKM AN TLE Ceiling-Clinging Ambush Predator</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qydtBeMwe4h4tEsr.5p6X8ItsbnTgS3cU"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Dao",
+      "page": 91,
+      "cr": "11",
+      "warnings": []
+    }
+  }
+}

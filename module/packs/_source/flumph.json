@@ -1,0 +1,392 @@
+{
+  "_id": "xStuqe4nDIyEDnJX",
+  "_key": "!actors!xStuqe4nDIyEDnJX",
+  "folder": "1nioWC3kx0YxX8qj",
+  "name": "Flumph",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/flumph.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 6,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 0
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0
+      },
+      "int": {
+        "value": 14,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 11,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 12,
+        "formula": ""
+      },
+      "hp": {
+        "value": 7,
+        "max": 7,
+        "formula": "2d6",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 5,
+        "fly": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "aberration",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Bom",
+      "cr": 0.125,
+      "xp": {
+        "value": 25
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "sm",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [
+          "psychic"
+        ],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Understands Undercommon but can't"
+      }
+    },
+    "skills": {
+      "arc": {
+        "value": 1,
+        "ability": "int"
+      },
+      "his": {
+        "value": 1,
+        "ability": "int"
+      },
+      "rel": {
+        "value": 1,
+        "ability": "int"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Flumph",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/flumph.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "M6SnvaNpew4rwO9l",
+      "name": "Advanced Telepathy",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The flumph perceives the content of any telepathic communication within 60 feet of it.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xStuqe4nDIyEDnJX.M6SnvaNpew4rwO9l"
+    },
+    {
+      "_id": "dnrHbeK1nUifDviZ",
+      "name": "Caído Deficiency",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the flu mph receives the Caído condition, roll a die. On an odd number, it has the Inca- pacitated condition. At the end of each of its turns, the flu mph makes a DC 10 Destreza saving throw, ending the Incapacitado condition on a success.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 10,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xStuqe4nDIyEDnJX.dnrHbeK1nUifDviZ"
+    },
+    {
+      "_id": "t6x5VedjPrT8zki2",
+      "name": "Telepathic Shroud",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The flumph's thoughts can't be read by any means, and magic can't detect its location or observe it remotely.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xStuqe4nDIyEDnJX.t6x5VedjPrT8zki2"
+    },
+    {
+      "_id": "N7dK392PLs70bAZz",
+      "name": "Tentacle",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 feet. Acerto: 4 (1d4 + 2) Ácido de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "4UsSYhbp0JTMuvNP": {
+            "_id": "4UsSYhbp0JTMuvNP",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "acid"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "1d4+2",
+            "damageType": "acid"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xStuqe4nDIyEDnJX.N7dK392PLs70bAZz"
+    },
+    {
+      "_id": "hWavnsh0s3k9Un5x",
+      "name": "Stench Spray (1/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Destreza Teste de Resistência: DC 10, o.ne creature the flumph can see within 15 feet. Falha: The target is coated in a foul-smelling liquid, exudes a stench for 1d4 hours, and has the Envenenado condition while the stench lasts. Other creatures have the Poi- .soned condition while in a 5-foot Emanation originat- V) LL ing from the coated target. The target can remove the LI.J LI.J stench on itself if it bathes during a Short or Long Rest. X FOMORIAN Cursed Gigante of the Dark</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "eJgZwyZDElw9LQuP": {
+            "_id": "eJgZwyZDElw9LQuP",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "10"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 10,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xStuqe4nDIyEDnJX.hWavnsh0s3k9Un5x"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Flumph",
+      "page": 124,
+      "cr": "1/8",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,828 @@
+{
+  "_id": "ao3jjhq3ZYtq1oGf",
+  "_key": "!actors!ao3jjhq3ZYtq1oGf",
+  "folder": "IQP9BfRMl9yEsYGp",
+  "name": "Animal Lord",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/animal-lord.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 24,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 25,
+        "proficient": 0
+      },
+      "con": {
+        "value": 20,
+        "proficient": 1
+      },
+      "int": {
+        "value": 19,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 23,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 22,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 19,
+        "formula": ""
+      },
+      "hp": {
+        "value": 323,
+        "max": 323,
+        "formula": "34d8+170",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 60,
+        "fly": 60,
+        "swim": 60
+      },
+      "senses": {
+        "units": "ft",
+        "truesight": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "celestial",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 20,
+      "xp": {
+        "value": 25000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": "Charmed; Frightened; Stunned I<"
+      },
+      "dr": {
+        "value": [
+          "cold",
+          "fire",
+          "necrotic",
+          "psychic",
+          "radiant"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "All"
+      }
+    },
+    "skills": {
+      "acr": {
+        "value": 1,
+        "ability": "dex"
+      },
+      "ath": {
+        "value": 1,
+        "ability": "str"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Animal Lord",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/animal-lord.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "TMKgdBRa4UZuvuHc",
+      "name": "Animal Lordship",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>An animal lord represents a Forager, Hunter, or Sage (DM's choice), which determines cer- tain traits in this stat block.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.TMKgdBRa4UZuvuHc"
+    },
+    {
+      "_id": "bTLRxm1SJxaJO2aH",
+      "name": "Resistência Lendária (4/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the animal lord fails a saving throw, it can ~hoose to succeed instead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "4",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.bTLRxm1SJxaJO2aH"
+    },
+    {
+      "_id": "Zz2puOLKRxbUSjj2",
+      "name": "Lordly Presence",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Sabedoria Teste de Resistência: DC 20, any en- emy that starts its turn in a 30-foot Emanation originat- ing from the animal lord. Falha: The target suffers one of the following effects:</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 20,
+            "saveAbility": "wis"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.Zz2puOLKRxbUSjj2"
+    },
+    {
+      "_id": "o2jLqPSLMQgxAHdZ",
+      "name": "Captivated (Forager Only)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The target has the Enfeitiçado condition until the end of its next turn. While Enfeitiçado, o alvo has the Incapacitado condition.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.o2jLqPSLMQgxAHdZ"
+    },
+    {
+      "_id": "k27bFpZSpkRWx2Nw",
+      "name": "Fearful (Hunter Only)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The target has the ~rightened condition until the end of its next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.k27bFpZSpkRWx2Nw"
+    },
+    {
+      "_id": "J7LSNIbD7zZzhywM",
+      "name": "Mired (Sage Only)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The target takes l O (3d6) Psíquico de dano, and o alvo is magically bewildered until the end of its next turn. While bewildered, o alvo subtracts 1d4 from its saving throws.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.J7LSNIbD7zZzhywM"
+    },
+    {
+      "_id": "nhaEHYXcCDGAVDGz",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The animal lord has Advantage on [ saving throws against spells and other magical effects.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.nhaEHYXcCDGAVDGz"
+    },
+    {
+      "_id": "IX1TbzybkwqRf8ih",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The animal lord makes two attacks, using Rend or Radiante Ray in any combination, and uses Ani- mal Spirit.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.IX1TbzybkwqRf8ih"
+    },
+    {
+      "_id": "X54YzpKt9fW0YPTB",
+      "name": "Rend",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>MeleeAttack Roll:+l3, alcance 5 ft. Acerto: 14 (2d6 + 7) Cortante de dano plus 7 (2d6) Energia de dano. You C ALL Y OU R S ELF H U NT ER, B UT Y OU R FE A R M AKE S Y OU SM ELL L IKE PR EY. - W IN D AN D M oo N, WOL F LORD</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d6+7",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.X54YzpKt9fW0YPTB"
+    },
+    {
+      "_id": "PqodkqldHofAy2Sn",
+      "name": "Radiante Ray",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância:+ 12, range 120 ft. Acerto: 20 (4d6 + 6) Radiante de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "4d6+6",
+            "damageType": "radiant"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.PqodkqldHofAy2Sn"
+    },
+    {
+      "_id": "tVlpj4UwIiCWY1x0",
+      "name": "Animal Spirit",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The animal lord conjures an animal spirit that strikes at a creature and then disappears. Destreza Teste de Resistência: DC 20, uma criatura the animal lord can see within 120 feet. Falha: 28 (4d10 + 6) Radiante dam- age. Sucesso: Metade do dano. Falha ou Sucesso: One of the following effects occurs:</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "keUhvdWel5YTi1xI": {
+            "_id": "keUhvdWel5YTi1xI",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "20"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 20,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.tVlpj4UwIiCWY1x0"
+    },
+    {
+      "_id": "C94SGRepmp5A4vxd",
+      "name": "Fortify (Forager Only)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The animal lord gains 20 Tempo- rary Pontos de Vida.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.C94SGRepmp5A4vxd"
+    },
+    {
+      "_id": "Xq2UiZVuMudY5E57",
+      "name": "Marked as Prey (Hunter Only)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The animal lord has . Advantage on attack rolls against o alvo until the start of the animal lord's next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.Xq2UiZVuMudY5E57"
+    },
+    {
+      "_id": "moZSiH6IY3DWjHMn",
+      "name": "Pesky Swarm (Sage Only)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The target has Disadvantage on attack rolls and ability checks until the end of its next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.moZSiH6IY3DWjHMn"
+    },
+    {
+      "_id": "cGf4QwZcCEd1oA3a",
+      "name": "Shape-Shift",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The animal lord shape-shifts into a Huge or smaller version of the animal it represents or a Me- dium or Small Humanoid, or it returns to its true form . Its game statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.cGf4QwZcCEd1oA3a"
+    },
+    {
+      "_id": "FEspo4Xad9vQYaUB",
+      "name": "Habilidade",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Legendary Action Us es: 3. Immediate ly after another creature's tu rn , the animal lo rd c an expe nd a us e to ta ke o ne of the fo l lo wing act io ns. T he animal lo rd reg ai ns a ll expended uses at the start of each of its turns.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.FEspo4Xad9vQYaUB"
+    },
+    {
+      "_id": "JeeNi2HofM04vKDx",
+      "name": "Feral Strike",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The animal lord moves up to its Speed without provoking Opportunity Attacks, and it makes one Rend attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.JeeNi2HofM04vKDx"
+    },
+    {
+      "_id": "xoDCmTaQLyWY3DxT",
+      "name": "Radiante Strike",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The animal lord makes one Radiante Ray attack. ANIMA L L O RD /\\ 15 ANIMATED OBJECTS Mundane Objects Come to Life</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.xoDCmTaQLyWY3DxT"
+    },
+    {
+      "_id": "Tf4Er4rtbDtIVaxs",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The animal lord casts one of the following spells, requiring no Material components and using Wisdo _m as the spellcasting ability (spell save DC 20): À Vontade: Animal Friendship, Animal Messenger, Speak with Animals 2/Dia Each: Awaken, Greater Restoration 1/Dia Each (Sage Only): Animal Shapes, Sunburst</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ao3jjhq3ZYtq1oGf.Tf4Er4rtbDtIVaxs"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Animal Lord",
+      "page": 17,
+      "cr": "20",
+      "warnings": []
+    }
+  }
+}

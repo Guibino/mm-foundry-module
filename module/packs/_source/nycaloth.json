@@ -1,0 +1,341 @@
+{
+  "_id": "xrTo39WlcNhQaU6N",
+  "_key": "!actors!xrTo39WlcNhQaU6N",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Nycaloth",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/nycaloth.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 20,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 19,
+        "proficient": 0
+      },
+      "int": {
+        "value": 72,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 70,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 75,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 18,
+        "formula": ""
+      },
+      "hp": {
+        "value": 1,
+        "max": 1,
+        "formula": "",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "Yugo/0th",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Mau",
+      "cr": 9,
+      "xp": {
+        "value": 5000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "acid",
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "cold",
+          "fire",
+          "lightning"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Nycaloth",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/nycaloth.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "OtqVEcyd1AyuZXh8",
+      "name": "V1 Fiendish Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the nycaloth dies outside Ge- f..'.. henna, its body dissolves into ichor, and it gains a new \\.J body instantly, reviving with all its Pontos de Vida some- l/1 Cle'. <( '-- where in Gehenna.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xrTo39WlcNhQaU6N.OtqVEcyd1AyuZXh8"
+    },
+    {
+      "_id": "K7eyfxsttW4tGtGS",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The nycaloth has Advantage on sav- ing throws against spells and other magical effects.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xrTo39WlcNhQaU6N.K7eyfxsttW4tGtGS"
+    },
+    {
+      "_id": "NZssss3RdGmEcrB2",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The nycaloth makes two Mercurial Axe attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xrTo39WlcNhQaU6N.NZssss3RdGmEcrB2"
+    },
+    {
+      "_id": "Z8ht68rhMH7Rome3",
+      "name": "Mercurial Axe",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +9, alcance l 0 ft . or range 30/90 ft. Acerto: 78 (2d12 + 5) Cortante dam- age plus 10 (3d6) Energia de dano. Hit or Erro: The axe magically returns to the nycaloth's hand immediately after a ranged attack. - BONUS ACT IO N S</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "cnepd9m7brSbVuEN": {
+            "_id": "cnepd9m7brSbVuEN",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "9",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9,
+            "attackType": "ranged"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xrTo39WlcNhQaU6N.Z8ht68rhMH7Rome3"
+    },
+    {
+      "_id": "lh7BPGV6lGOfnBuf",
+      "name": "Shadowy Teleport",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The nycaloth has the Invisível con- dition for l minute, and it teleports up to 30 feet to an unoccupied space it can see. The condition ends early immediately after it deals de dano. NY CALOTHA '2:'2:9 ~---..._ ______ ..::::;2~7 0 C HRE]ELL Y Multiplying Amoeboid Hunter</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xrTo39WlcNhQaU6N.lh7BPGV6lGOfnBuf"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Nycaloth",
+      "page": 231,
+      "cr": "9",
+      "warnings": [
+        "HP nao reconhecido"
+      ]
+    }
+  }
+}

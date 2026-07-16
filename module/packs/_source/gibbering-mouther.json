@@ -1,0 +1,329 @@
+{
+  "_id": "zBZrC7O6YwTd7ODI",
+  "_key": "!actors!zBZrC7O6YwTd7ODI",
+  "folder": "1nioWC3kx0YxX8qj",
+  "name": "Gibbering Mouther",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/gibbering-mouther.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 8,
+        "proficient": 0
+      },
+      "con": {
+        "value": 76,
+        "proficient": 0
+      },
+      "int": {
+        "value": 3,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 70,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 6,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 9,
+        "formula": ""
+      },
+      "hp": {
+        "value": 52,
+        "max": 52,
+        "formula": "7d8 + 21",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 20,
+        "swim": 20
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "aberration",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Neutro",
+      "cr": 2,
+      "xp": {
+        "value": 450
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "None"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Gibbering Mouther",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/gibbering-mouther.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "o3vsnlVhNxOaSTXc",
+      "name": "Aberrant Ground",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The ground in a 10-foot Emanation originating from the mouther is Difficult Terrain.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!zBZrC7O6YwTd7ODI.o3vsnlVhNxOaSTXc"
+    },
+    {
+      "_id": "gsSgFzZPwEc3cGbr",
+      "name": "Gibbering",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The mouther babbles incoherently while it doesn't have the Incapacitado condition . Sabedoria Sav- ing Throw: DC 70, any creature that starts its turn within 20 feet of the mouther while it is babbling. Falha: The target rolls 1d8 to determine what it does during the current turn: 1-4. The target does nothing. 5-6. The target takes no action or Bonus Action and uses all its movement to move in a random direction. 7-8. The target makes a melee attack against a ran- domly determined creature within its alcance or does nothing if it can't make such an attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!zBZrC7O6YwTd7ODI.gsSgFzZPwEc3cGbr"
+    },
+    {
+      "_id": "lZfFVEPuGnnpJgF3",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2, alcance 5 ft. Acerto: 7 (2d6)</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "DxhiP9udcdVYnbnn": {
+            "_id": "DxhiP9udcdVYnbnn",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "2",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 2,
+            "attackType": "melee"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!zBZrC7O6YwTd7ODI.lZfFVEPuGnnpJgF3"
+    },
+    {
+      "_id": "qypyhCwU216JhSet",
+      "name": "Perfurante de dano",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If o alvo is a Medium or smaller creature, it has the Caído condition. The target dies if it is reduced to 0 Pontos de Vida by this attack. Its body is then absorbed into the mouther, leaving only equip- ment behind.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!zBZrC7O6YwTd7ODI.qypyhCwU216JhSet"
+    },
+    {
+      "_id": "DuJuoX1eAMclAxf0",
+      "name": "Blinding Spittle (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Destreza Teste de Resistência: O:'. DC 70, cada criatura in a 70-foot-radius Sphere cen- ~ tered on a point within 30 feet. Falha: 7 (2d6) Radiante co w de dano, and o alvo has-the Cego condition until lJ w the end of the mouther's next turn. GIBBERING MOUTHER Ravenous Chorus of Unreality</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!zBZrC7O6YwTd7ODI.DuJuoX1eAMclAxf0"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Gibbering Mouther",
+      "page": 135,
+      "cr": "2",
+      "warnings": []
+    }
+  }
+}

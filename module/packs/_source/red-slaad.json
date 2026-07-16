@@ -1,0 +1,356 @@
+{
+  "_id": "xEggkBNXp1JzKMKr",
+  "_key": "!actors!xEggkBNXp1JzKMKr",
+  "folder": "1nioWC3kx0YxX8qj",
+  "name": "Vermelho Slaad",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 12,
+        "proficient": 0
+      },
+      "con": {
+        "value": 16,
+        "proficient": 0
+      },
+      "int": {
+        "value": 6,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 6,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 7,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 14,
+        "formula": ""
+      },
+      "hp": {
+        "value": 93,
+        "max": 93,
+        "formula": "11d10 + 33",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "aberration",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Neutro",
+      "cr": 5,
+      "xp": {
+        "value": 1800
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "acid",
+          "cold",
+          "fire",
+          "lightning",
+          "thunder"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Vermelho Slaad",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/red-slaad.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "eEda2AjwOwegvLXO",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The slaad has Advantage on saving throws against spells and other magical effects.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xEggkBNXp1JzKMKr.eEda2AjwOwegvLXO"
+    },
+    {
+      "_id": "7W96yIU0NgNNckb3",
+      "name": "Regeneration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The slaad regains 10 Pontos de Vida at the start of each of its turns if it has at least 1 Hit Point.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xEggkBNXp1JzKMKr.7W96yIU0NgNNckb3"
+    },
+    {
+      "_id": "Nh0bU3aOAOceIntR",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The slaad makes three Injecting Claw attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xEggkBNXp1JzKMKr.Nh0bU3aOAOceIntR"
+    },
+    {
+      "_id": "krsfRzDCuXueRy2v",
+      "name": "Injecting Claw",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +6, alcance l Oft. Acerto: l 0 (2d6 + 3) Perfurante de dano. If o alvo is a Humanoid not cursed by a slaad, it is subjected to the following effect. Constituição Teste de Resistência: DC 14. Falha: The target is cursed unawares, and a minuscule slaad egg is implanted in it. Removing the curse destroys the egg. Over 2d4 x 10 days, the egg gestates. In the final 24 hours, the cursed target feels unwell; its Speed is halved, and it has Disadvantage on D20 Tests. At the end of this time, the egg turns into a Slaad Tadpole, which chews out of the host and kills it. SLAAD CONTROL GEMS A slaad bor _n from the Spawning Stone has a mag- ical control gem embedded in its head. If a crea- ture claims the gem, the slaad has the Enfeitiçado condition and obeys the gem's bearer. The slaad ceases to be Enfeitiçado if it is harmed by the gem's bearer or the bearer's allies or if the gem is re- · turned to the slaad. A Greater Restoration spell cast on a slaad destroys the gem, and the slaad ceases to be Enfeitiçado. One can obtain a slaad's control gem using a</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "VsdUZ1IF8Z6twPUN": {
+            "_id": "VsdUZ1IF8Z6twPUN",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 6,
+            "attackType": "melee",
+            "saveDc": 14,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xEggkBNXp1JzKMKr.krsfRzDCuXueRy2v"
+    },
+    {
+      "_id": "HmczM8VChknxpSUR",
+      "name": "Wish or Imprisonment spell",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the slaad fails its saving throw against Imprisonment, the caster 1 gains the gem, and the slaad isn't imprisoned. An Incapacitado slaad's control gem can be removed by spending l minute and succeeding on a DC 20 Sabedoria (Medicine) check. Failing this check deals 22 (4d10) Perfurante de dano to the slaad. BLUE SLAAD Large A berrat io n C haotic Neutra l AC 15 Iniciativa +2 (12) HP 133 (14d10 + 56) S peed 30 ft. MO D SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "s4875fM9owSa9xHO": {
+            "_id": "s4875fM9owSa9xHO",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "20"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 20,
+            "saveAbility": "wis"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xEggkBNXp1JzKMKr.HmczM8VChknxpSUR"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Red Slaad",
+      "page": 287,
+      "cr": "5",
+      "warnings": []
+    }
+  }
+}

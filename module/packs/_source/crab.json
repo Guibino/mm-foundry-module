@@ -1,0 +1,222 @@
+{
+  "_id": "PkPUBDSod5O9VEus",
+  "_key": "!actors!PkPUBDSod5O9VEus",
+  "folder": "9eORFRgLi2o0urFB",
+  "name": "Crab",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/crab.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 6,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 12,
+        "proficient": 0
+      },
+      "int": {
+        "value": 1,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 8,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 2,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 11,
+        "formula": ""
+      },
+      "hp": {
+        "value": 3,
+        "max": 3,
+        "formula": "1d4 + l",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 20,
+        "swim": 20
+      },
+      "senses": {
+        "units": "ft",
+        "blindsight": 30
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 0,
+      "xp": {
+        "value": 10
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "tiny",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "None"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Crab",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/crab.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "x0QdprZg1kNtkDsG",
+      "name": "Amphibious",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The crab can breathe air and water.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!PkPUBDSod5O9VEus.x0QdprZg1kNtkDsG"
+    },
+    {
+      "_id": "xbrvWIGUOihcYwV3",
+      "name": "Claw",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +2 \\ alcance 5 ft. Acerto: l Bludgeon- ing de dano. APPENDIX A I ANIMALS ~ 351 OU R G oos' P R OSC RIPT IO N S AR E CL E A R . 1 W O N T O RD E R MY W A RRI O R S T O FETC H THE H EA D O F THE CR O CO D I L E TH OUS AN D TEETH- N O M A TT ER H O W M A N Y IT DEV O U R S . Y ou A DV ENT URER S, O N TH E OTHER HAN D ... - Q U E E N O THO KEN T , Ll \"I AR DFOLK SO V E RE I G N CROCODILE Large Beast, Unaligned AC 12 Init ia tive +0 (l 0) HP 13 (2d10 + 2) S pee d 20 ft., Swim 30 ft. MOD SAVE MOD S AVE M OD SA VE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "JeBLr7mSFfzNVdUQ": {
+            "_id": "JeBLr7mSFfzNVdUQ",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "2",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 2,
+            "attackType": "melee"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!PkPUBDSod5O9VEus.xbrvWIGUOihcYwV3"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Crab",
+      "page": 353,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

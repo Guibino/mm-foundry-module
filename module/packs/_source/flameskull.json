@@ -1,0 +1,368 @@
+{
+  "_id": "SJVQJy1D3haeIQa5",
+  "_key": "!actors!SJVQJy1D3haeIQa5",
+  "folder": "bKQUPthn1V2Yu6Bn",
+  "name": "Flameskull",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/flameskull.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 1,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 17,
+        "proficient": 0
+      },
+      "con": {
+        "value": 14,
+        "proficient": 0
+      },
+      "int": {
+        "value": 76,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 11,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13,
+        "formula": ""
+      },
+      "hp": {
+        "value": 40,
+        "max": 40,
+        "formula": "9d4 + 78",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Mau",
+      "cr": 4,
+      "xp": {
+        "value": 1100
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "tiny",
+      "di": {
+        "value": [
+          "fire",
+          "poison"
+        ],
+        "custom": "Necrot i c"
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Common plus two other languages"
+      }
+    },
+    "skills": {
+      "arc": {
+        "value": 1,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Flameskull",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/flameskull.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "apMgU0fxatY6vyaa",
+      "name": "Illumination",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The flameskull sheds Bright Light in a 15- foot radius and Dim Light for an additional 15 feet.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!SJVQJy1D3haeIQa5.apMgU0fxatY6vyaa"
+    },
+    {
+      "_id": "zfZT1P8sE8dp1Z6n",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The flameskull has Advantage on saving throws against spells and other magical effects.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!SJVQJy1D3haeIQa5.zfZT1P8sE8dp1Z6n"
+    },
+    {
+      "_id": "x2df9ufCoZ5VXEiG",
+      "name": "Undead Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the flameskull is destroyed, it regains all its Pontos de Vida in l hour unless Holy Water is sprinkled on its remains or the Dispel Evil and Good spell is cast on them.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!SJVQJy1D3haeIQa5.x2df9ufCoZ5VXEiG"
+    },
+    {
+      "_id": "SonqM8uSoxHbycw5",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The flameskull makes two Fogo Ray attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!SJVQJy1D3haeIQa5.SonqM8uSoxHbycw5"
+    },
+    {
+      "_id": "LY53eUygKJOfDzVs",
+      "name": "Fogo Ray",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +5, alcance 5 ft. or range 60 ft . Hit : 13 (3d6 + 3) Fogo de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "eZCkGdxNHCQiXrqu": {
+            "_id": "eZCkGdxNHCQiXrqu",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "ranged"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!SJVQJy1D3haeIQa5.LY53eUygKJOfDzVs"
+    },
+    {
+      "_id": "QfqWdbvMhRH5ubeB",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The flameskull casts one of the following spells, requiring no Somatic or Material components and using Inteligência as the spellcasting ability (spell save DC 13): À Vontade: Mage Hand 2/Dia: Magic Missile (level 2 version) 1/Dia: Fogoball 120 FLAME SKULL Flameskulls take various forms, from skulls with humanlike features to ones with fearsome or bestial alterations. Their flames vary in color and grow more intense when they're angry. Roll on or choose a result from the Flameskull Details table to inspire what makes a flameskull distinctive. FLAMESKULL DETAILS 1d6 The Flameskull Features ... 1 Arcane diagrams etched into it. 2 Flames like dramatic features, horns, or hair. 3 Fractured pieces that fly in unison. 4 An iron plate bolted over its mouth. 5 Lethal head trau-ma. 6 Mismatched animal teeth. l NEYER CA RED FOR WAR M TH. l N EV ER N EE DED A BOD Y. _j M Y WI LL IS ENOUGH, AN O M Y WORK WILL BE TH E LEGACY N THAT M AKES MY EV ERY SACR I FICE WOR T HW HILE _/ <( _j -TR E N 1.IA, LJ N OE RMOU NTAIN FL AM ESK ULL • Cl::: CD FLESH GOLE M Dead Flesh Given New Life</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!SJVQJy1D3haeIQa5.QfqWdbvMhRH5ubeB"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Flameskull",
+      "page": 122,
+      "cr": "4",
+      "warnings": []
+    }
+  }
+}

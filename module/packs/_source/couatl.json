@@ -1,0 +1,350 @@
+{
+  "_id": "xvaHz1NIj1qo8QaW",
+  "_key": "!actors!xvaHz1NIj1qo8QaW",
+  "folder": "IQP9BfRMl9yEsYGp",
+  "name": "Couatl",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/couatl.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 20,
+        "proficient": 0
+      },
+      "con": {
+        "value": 17,
+        "proficient": 1
+      },
+      "int": {
+        "value": 18,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 20,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 18,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 19,
+        "formula": ""
+      },
+      "hp": {
+        "value": 60,
+        "max": 60,
+        "formula": "8d8 + 24",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "celestial",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Bom",
+      "cr": 4,
+      "xp": {
+        "value": 1100
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "psychic",
+          "radiant"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Couatl",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/couatl.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "kyiRkZyg2cGklNd2",
+      "name": "Shielded Mind",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The couatl's thoughts can't be read by any means, and other creatures can communicate with it telepathically only if it allows them .</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xvaHz1NIj1qo8QaW.kyiRkZyg2cGklNd2"
+    },
+    {
+      "_id": "e3OfJjRrNGXDoSPx",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 11 (1d1 2 + 5) Perfurante de dano, and o alvo has the Envenenado con- dition until the end of the couatl's next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "b1AZebbJ7CUi1G9D": {
+            "_id": "b1AZebbJ7CUi1G9D",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 12,
+                  "bonus": "5",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "melee",
+            "damageFormula": "1d12+5",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xvaHz1NIj1qo8QaW.e3OfJjRrNGXDoSPx"
+    },
+    {
+      "_id": "rvuilN1J9ckqpSzG",
+      "name": "Constrict",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Força Salling Throw: DC 15, one Medium or smaller creature the couatl can see within 5 feet. Fail- ure: 8 (1d6 + 5) Concussão de dano. The target has the Agarrado condition (escape pc 13), and it has the Impedido condition until the grapple ends.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xvaHz1NIj1qo8QaW.rvuilN1J9ckqpSzG"
+    },
+    {
+      "_id": "qqpJbw6ifG9D80eo",
+      "name": "Divine Aid (2/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The couatl casts Bless, Lesser Resto- 0 ration, or Sanctuary, requiring no spell components and a'.: using the same spellcasting ability as Conjuração. CRAWLING CLAWS Severed Appendages with Malicious Will</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "2",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xvaHz1NIj1qo8QaW.qqpJbw6ifG9D80eo"
+    },
+    {
+      "_id": "y2oGlCFcL6wATuB5",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The couatl casts one of the following spells, requiring no spell components and using WIS- dom as the spellcasting ability (spell save DC 15): À Vontade: Detect Evil and Good, Detect Magic, Detect Thoughts, Shapechange (Beast or Humanoid form only, no Temporary Pontos de Vida gained from the spell, and no Concentration or Temporary Pontos de Vida re- quired to maintain the spell) 1/Dia Each: Create Food and Water, Dream, Greater Res- toration, Scrying, Sleep 8. 0NUS A CTIONS</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!xvaHz1NIj1qo8QaW.y2oGlCFcL6wATuB5"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Couatl",
+      "page": 84,
+      "cr": "4",
+      "warnings": []
+    }
+  }
+}

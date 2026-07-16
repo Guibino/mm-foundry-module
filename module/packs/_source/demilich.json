@@ -1,0 +1,496 @@
+{
+  "_id": "aTgB7HlRC08c9tVw",
+  "_key": "!actors!aTgB7HlRC08c9tVw",
+  "folder": "bKQUPthn1V2Yu6Bn",
+  "name": "Demilich",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/demilich.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 1,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 20,
+        "proficient": 0
+      },
+      "con": {
+        "value": 10,
+        "proficient": 1
+      },
+      "int": {
+        "value": 20,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 17,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 20,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 20,
+        "formula": ""
+      },
+      "hp": {
+        "value": 180,
+        "max": 180,
+        "formula": "72d4",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 5,
+        "fly": 30
+      },
+      "senses": {
+        "units": "ft",
+        "truesight": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Mau",
+      "cr": 18,
+      "xp": {
+        "value": 20000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "tiny",
+      "di": {
+        "value": [
+          "necrotic",
+          "poison",
+          "psychic"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "None"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Demilich",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/demilich.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "tDO4BzwvHZhRxezM",
+      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the demilich fails a saving throw, it can choose to suc- ceed instead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "3",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!aTgB7HlRC08c9tVw.tDO4BzwvHZhRxezM"
+    },
+    {
+      "_id": "AOWNdkAsX1FmHSAb",
+      "name": "Undead Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the demilich is destroyed, it re- forms and regains all its Pontos de Vida in 1d10 days unless a Wish spell is cast on its remains.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!aTgB7HlRC08c9tVw.AOWNdkAsX1FmHSAb"
+    },
+    {
+      "_id": "uBCx9mnFhpMEyyBU",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The demilich makes three Necrótico Burst attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!aTgB7HlRC08c9tVw.uBCx9mnFhpMEyyBU"
+    },
+    {
+      "_id": "h5VS76hT8zTc98oF",
+      "name": "Necrótico Burst",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância:+ 11, alcance 5 ft. or range 120 ft. Acerto: 24 (7d6) Necrótico de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "7d6",
+            "damageType": "necrotic"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!aTgB7HlRC08c9tVw.h5VS76hT8zTc98oF"
+    },
+    {
+      "_id": "3e1vqO4Bpo2Yy28g",
+      "name": "Howl (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Teste de Resistência: DC 19, cada criatura in a 30-foot Emanation originating from the demilich. Falha: 70 (20d6) Psíquico de dano. Falha ou Sucesso: The target has the Amedrontado condition until the start of the demilich's next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "scyJC1fNIQ60a5Nk": {
+            "_id": "scyJC1fNIQ60a5Nk",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "19"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 20,
+                  "denomination": 6,
+                  "bonus": "",
+                  "types": [
+                    "psychic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "20d6",
+            "damageType": "psychic",
+            "saveDc": 19,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!aTgB7HlRC08c9tVw.3e1vqO4Bpo2Yy28g"
+    },
+    {
+      "_id": "s5KlQNgkyGLdNOEF",
+      "name": "Energy Drain",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Teste de Resistência: DC 19, uma criatura the demilich can see within 120 feet. Falha: The target's Hit Point maximum decreases by 14 (4d6). Falha ou Sucesso: The demilich can't take this action again until the start of its next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "hOgfJoipzE50WxjA": {
+            "_id": "hOgfJoipzE50WxjA",
+            "type": "save",
+            "activation": {
+              "type": "legendary",
+              "value": 1,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "19"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 19,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!aTgB7HlRC08c9tVw.s5KlQNgkyGLdNOEF"
+    },
+    {
+      "_id": "Q1tIGu4S53pacoby",
+      "name": "Grave-Dust Flight",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The demilich flies up to its Fly • Speed, shedding grave dust. Each creature within 5 feet of the demilich as it moves is targeted once by the following effect. Constituição Teste de Resistência: D~ 19. Falha: The target has the Cego condition until the end of the demilich's next turn. Falha ou Sucesso: The demilich can't take this action again until the start of its N next turn. _J LJ</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!aTgB7HlRC08c9tVw.Q1tIGu4S53pacoby"
+    },
+    {
+      "_id": "r2WncTq9wc9Ze3hI",
+      "name": "Necrosis",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The demilich makes one Necrótico Burst attack. :::) LL DEVA Medium Cel estial (Angel) , Lawful Good AC 17 Iniciativa +4 (14) HP 229 (27d8 + 108) Speed 30 ft., Fly 90 ft. (hover) MOD SAV E MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!aTgB7HlRC08c9tVw.r2WncTq9wc9Ze3hI"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Demilich",
+      "page": 98,
+      "cr": "18",
+      "warnings": []
+    }
+  }
+}

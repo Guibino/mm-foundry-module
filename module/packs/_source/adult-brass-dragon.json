@@ -1,0 +1,456 @@
+{
+  "_id": "qhjXHol6hMZt3vKL",
+  "_key": "!actors!qhjXHol6hMZt3vKL",
+  "folder": "lhndsA6Aflaa0nF6",
+  "name": "Adulto Latão Dragão",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 23,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 1
+      },
+      "con": {
+        "value": 21,
+        "proficient": 0
+      },
+      "int": {
+        "value": 14,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 13,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 17,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 18,
+        "formula": ""
+      },
+      "hp": {
+        "value": 172,
+        "max": 172,
+        "formula": "15d12 + 75",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "burrow": 30,
+        "fly": 80
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120,
+        "blindsight": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "dragon",
+        "subtype": "Metallic",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Bom",
+      "cr": 13,
+      "xp": {
+        "value": 10000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [
+          "fire"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comum, Dracônico"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Adulto Latão Dragão",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/adult-brass-dragon.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "7ypCjN7uwPM3vnDg",
+      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the dragon fails a saving throw, it can choose to suc- ceed in stead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "3",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qhjXHol6hMZt3vKL.7ypCjN7uwPM3vnDg"
+    },
+    {
+      "_id": "wu0niMnynwSfiGg8",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of (A) Sleep Breath or (B) Conjuração to cast Scorching Ray.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qhjXHol6hMZt3vKL.wu0niMnynwSfiGg8"
+    },
+    {
+      "_id": "bTebdbBSjPYVDntY",
+      "name": "Rend",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 11, alcance 10 ft. Acerto: 17 (2d1 0 + 6) Cortante de dano plus 4 (1d8) Fogo de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d10+6",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qhjXHol6hMZt3vKL.bTebdbBSjPYVDntY"
+    },
+    {
+      "_id": "bJfsdb4TsbzqwdCu",
+      "name": "Fogo Breath (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Destreza Teste de Resistência: DC 18, cada criatura in a 60-foot-long, 5-foot-wide Line. Falha: 45 (10d8) Fogo de dano. Sucesso: Metade do dano. 2 Sleep Breath. Constituição Teste de Resistência: DC 18, each <( creature in a 60-foot Cone. Falha: The target has the Incapacitado condition until the end of its next turn, at which point it repeats the save. Second Falha: The target has the Inconsciente condition for 10 minutes. This effect ends for o alvo if it takes de dano or a creature within 5 feet of it takes an action to wake it.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "BfR4VPn87X3dAStG": {
+            "_id": "BfR4VPn87X3dAStG",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "18"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 10,
+                  "denomination": 8,
+                  "bonus": "",
+                  "types": [
+                    "fire"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "10d8",
+            "damageType": "fire",
+            "saveDc": 18,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qhjXHol6hMZt3vKL.bJfsdb4TsbzqwdCu"
+    },
+    {
+      "_id": "0joaGhIoF39Mnisr",
+      "name": "Blazing Light",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon uses Conjuração to cast Scorching Ray.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qhjXHol6hMZt3vKL.0joaGhIoF39Mnisr"
+    },
+    {
+      "_id": "i8byauhc5DAsL6Fg",
+      "name": "Pounce",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon moves up to half its Speed, and it makes one Rend attack. - Scorching Sands. Destreza Teste de Resistência: DC 16, uma criatura the dragon can see within 120 feet. Falha: 27 • (6d8) Fogo de dano, and o alvo's Speed is halved until the end of its next turn. Falha ou Sucesso: The dragon can't take this action again until the start of its next turn. BRASS DRAGONS 55 YOUNG BRASS DRAGON Young brass dragons travel extensively, often spending a few years in a region before circling back to their lair. Some work closely with other metallic dragons, carrying information between allies. ADULT BRASS DRAGON Adult brass dragons know many secrets and have vast networks of contacts. These dragons share perspectives they've learned from across the world and passionately combat the lies of con artists and villains that lead people astray. ANCIENT BRASS DRAGON Ancient brass dragons create worlds-spanning net- works. They combat forces of repression and misin- formation, helping people learn from the mistakes of the past. Either personally or through webs of messengers, ancient brass dragons keep allies in- formed about challenges they can face together. ANCIENT BRASS DRAGON Gargantuan Dragon (Metallic), Chaotic Good AC 20 Iniciativa+ 12 (22) HP 332 (l 9d20 + 133) Speed 40 ft., Burrow 40 ft., Fly 80 ft. MOD SAVE MOD S AVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "CYPgXKApJ2Lu3E6v": {
+            "_id": "CYPgXKApJ2Lu3E6v",
+            "type": "save",
+            "activation": {
+              "type": "legendary",
+              "value": 1,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "16"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 16,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qhjXHol6hMZt3vKL.i8byauhc5DAsL6Fg"
+    },
+    {
+      "_id": "giA9RCrVRVkTF18y",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 16): À Vontade: Detect Magic, Minor Illusion, Scorching Ray, Shapechange (Beast or Humanoid form only, no Temporary Pontos de Vida gained from the spell, and no Concentration or Temporary Pontos de Vida required to maintain the spell), Speak with Animals\"· 1/Dia Each: Detect Thoughts, Control Weather</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qhjXHol6hMZt3vKL.giA9RCrVRVkTF18y"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Adult Brass Dragon",
+      "page": 57,
+      "cr": "13",
+      "warnings": []
+    }
+  }
+}

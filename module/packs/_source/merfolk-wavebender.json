@@ -1,0 +1,389 @@
+{
+  "_id": "XbbM3oTrKUQQ0isV",
+  "_key": "!actors!XbbM3oTrKUQQ0isV",
+  "folder": "mI6hZZeXOMovX9oy",
+  "name": "Merfolk Wavebender",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 18,
+        "proficient": 1
+      },
+      "con": {
+        "value": 14,
+        "proficient": 1
+      },
+      "int": {
+        "value": 13,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 19,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 15,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 74,
+        "formula": ""
+      },
+      "hp": {
+        "value": 97,
+        "max": 97,
+        "formula": "15d8 + 30",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "swim": 40
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "elemental",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 6,
+      "xp": {
+        "value": 2
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": "Co Id"
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Co mmon Primordial (Aqu an)"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Merfolk Wavebender",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/merfolk-wavebender.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "F6APBYLbKOA0DbkO",
+      "name": "Amphibious",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The merfolk can breathe air and water.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!XbbM3oTrKUQQ0isV.F6APBYLbKOA0DbkO"
+    },
+    {
+      "_id": "MEQ6ITHVNRXA9T2t",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The merfolk makes two Aquatic Burst attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!XbbM3oTrKUQQ0isV.MEQ6ITHVNRXA9T2t"
+    },
+    {
+      "_id": "p2nMTPMBCfl5z035",
+      "name": "Aquatic Burst",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +7, alcance 5 ft. or range 60 ft. Acerto: 20 (3d10 + 4) Frio de dano. If o alvo is a Large or smaller creature, it has the Caído condition.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "vdU2ia909dB3tcv8": {
+            "_id": "vdU2ia909dB3tcv8",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 10,
+                  "bonus": "4",
+                  "types": [
+                    "cold"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "ranged",
+            "damageFormula": "3d10+4",
+            "damageType": "cold"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!XbbM3oTrKUQQ0isV.p2nMTPMBCfl5z035"
+    },
+    {
+      "_id": "heC8cRYyTlAn5wn0",
+      "name": "Watery Rebuke",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Trigger: An enemy the merfolk can see enters a space within 5 feet of the merfolk. Response- Força Teste de Resistência: DC 15, the triggering enemy. Falha: 14 (4d6) Frio de dano. If o alvo is Large or smaller, it is pushed up to 30 feet straight away from . the merfolk by conjured water. MERFOLK 209 MERROW Ogreish Undersea Abductor</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "Vef0zeDcwcw7DLc5": {
+            "_id": "Vef0zeDcwcw7DLc5",
+            "type": "save",
+            "activation": {
+              "type": "reaction",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "str"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "15"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 6,
+                  "bonus": "",
+                  "types": [
+                    "cold"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "4d6",
+            "damageType": "cold",
+            "saveDc": 15,
+            "saveAbility": "str"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!XbbM3oTrKUQQ0isV.heC8cRYyTlAn5wn0"
+    },
+    {
+      "_id": "doNEBTCGvW6yGs0H",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The merfolk casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save DC 15): À Vontade: Elementalism Light 1/Dia Each: Control Water Create or Destroy Water</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!XbbM3oTrKUQQ0isV.doNEBTCGvW6yGs0H"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Merfolk Wavebender",
+      "page": 211,
+      "cr": "6",
+      "warnings": []
+    }
+  }
+}

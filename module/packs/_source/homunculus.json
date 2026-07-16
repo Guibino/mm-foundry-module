@@ -1,0 +1,227 @@
+{
+  "_id": "XDpJUmsB4HyKqrYU",
+  "_key": "!actors!XDpJUmsB4HyKqrYU",
+  "folder": "CVeezowVb7BNP8yc",
+  "name": "Homunculus",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/homunculus.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 4,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 0
+      },
+      "con": {
+        "value": 14,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 7,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13,
+        "formula": ""
+      },
+      "hp": {
+        "value": 4,
+        "max": 4,
+        "formula": "1d4 + 2",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 20,
+        "fly": 40
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "construct",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 0,
+      "xp": {
+        "value": 10
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "tiny",
+      "di": {
+        "value": [
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Understands Common plus one other"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Homunculus",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/homunculus.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "Tm0mbl3XMaSfHhDl",
+      "name": "Telepathic Bond",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>While the homunculus is on the same plane of existence as its master, the two of them can communicate telepathically\"with each other.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!XDpJUmsB4HyKqrYU.Tm0mbl3XMaSfHhDl"
+    },
+    {
+      "_id": "Yr9ECOi79BtwJSkJ",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 1 Perfurante de dano, and o alvo is subjected to the following effect. Constituição Sa1Jing Throw: DC 12. Falha: The target has the Envenenado condition until the end of the homunculus's next turn. Failure by 5 or More: The target has the Envenenado condition for 1 minute. While Poi- <( ~ V1 soned, o alvo has the Inconsciente condition, which · V) ends early if o alvo takes any de dano. ~ H oo KHORROR Echo-Stalking Underdark Hunter</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "WIZ7CSNBNiUEsMaw": {
+            "_id": "WIZ7CSNBNiUEsMaw",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!XDpJUmsB4HyKqrYU.Yr9ECOi79BtwJSkJ"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Homunculus",
+      "page": 174,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "_id": "ijb6tweKqmKzBvnM",
+  "_key": "!actors!ijb6tweKqmKzBvnM",
+  "folder": "CVeezowVb7BNP8yc",
+  "name": "Stone Golem",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/stone-golem.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 22,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 9,
+        "proficient": 0
+      },
+      "con": {
+        "value": 20,
+        "proficient": 0
+      },
+      "int": {
+        "value": 3,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 11,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 1,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 18,
+        "formula": ""
+      },
+      "hp": {
+        "value": 220,
+        "max": 220,
+        "formula": "21d10 + 105",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "construct",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 10,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "poison",
+          "psychic"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed"
+        ],
+        "custom": "Exh austion"
+      },
+      "languages": {
+        "value": [],
+        "custom": "Understands Common plus two other"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Stone Golem",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/stone-golem.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "aA3PH4ztahdASpws",
+      "name": "Immutable Form",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The golem can't shape-shift.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ijb6tweKqmKzBvnM.aA3PH4ztahdASpws"
+    },
+    {
+      "_id": "Izpc7IeRjrqauGJQ",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The golem has Advantage on saving throws against spells and other magical effects.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ijb6tweKqmKzBvnM.Izpc7IeRjrqauGJQ"
+    },
+    {
+      "_id": "HPaXIbzEHQNqrqJQ",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The golem makes two attacks, using Slam or Energia Bolt in any combination.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ijb6tweKqmKzBvnM.HPaXIbzEHQNqrqJQ"
+    },
+    {
+      "_id": "wHJ25kRZI5972c5f",
+      "name": "Slam",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ l 0, alcance 5 ft. Acerto: 15 (2d8 + 6) Concussão de dano plus 9 (2d8) Energia de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d8+6",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ijb6tweKqmKzBvnM.wHJ25kRZI5972c5f"
+    },
+    {
+      "_id": "CC1Pjtoj2PAO20lb",
+      "name": "Energia Bolt",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +9, range 120 ft. Acerto: 22 (4d1 0) Energia de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "GGPnDAzhvanajClO": {
+            "_id": "GGPnDAzhvanajClO",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "9",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 10,
+                  "bonus": "",
+                  "types": [
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9,
+            "attackType": "ranged",
+            "damageFormula": "4d10",
+            "damageType": "force"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ijb6tweKqmKzBvnM.CC1Pjtoj2PAO20lb"
+    },
+    {
+      "_id": "kblFe1Bqsi3EStyh",
+      "name": "Habilidade",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>D:'.'. Slow (Recarga 5-6). The golem casts the Slow spell, I requiring no spell components and using Constituição I as the spellcasting ability (spell save DC 17). STONE GOLEM ORDERS 1d6 The Stone Golem Follows Orders To ... l Allow only those wearing ritual.garb to pass. 2 Cast Slow on and aid in apprehending anyone · who touches a city's prized relic. 3 Destroy a dam or bridge at the command of one bearing a ruler's medallion of office. 4 Obey whoever places a missing crest in its chest, then deactivate for a year. 5 Reveal a hidden passage to those who recite a leader's final words. 6 Watch for and do battle with the type of mon- ster that slew the hero it resembles. E XE R C IS E DISC ER NM EN T WHE N D E CI DI N G T HE G O LE M S A PPE AR A N CE, A S Y OU R CRE AT IO N IS LIKELY TO LO N G O U TL I VE I TS M ODEL . - MAN UA L O F STO NE Go LE MS STONE GOLEM ~ 301 STORM GIANT Gigante of Seas and Skies</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ijb6tweKqmKzBvnM.kblFe1Bqsi3EStyh"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Stone Golem",
+      "page": 303,
+      "cr": "10",
+      "warnings": []
+    }
+  }
+}

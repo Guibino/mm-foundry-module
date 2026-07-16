@@ -1,0 +1,758 @@
+{
+  "_id": "qwJ45cIErAJpqwAR",
+  "_key": "!actors!qwJ45cIErAJpqwAR",
+  "folder": "bKQUPthn1V2Yu6Bn",
+  "name": "Vampire",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/vampire.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 78,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 18,
+        "proficient": 1
+      },
+      "con": {
+        "value": 18,
+        "proficient": 1
+      },
+      "int": {
+        "value": 17,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 75,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 78,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 16,
+        "formula": ""
+      },
+      "hp": {
+        "value": 795,
+        "max": 795,
+        "formula": "23d8 + 92",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40,
+        "climb": 40
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Mau",
+      "cr": 13,
+      "xp": {
+        "value": 10000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Common plus two other languages"
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Vampire",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/vampire.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "eoN5IhyaSsw9MV0H",
+      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the vampire fails a saving throw, it can choose to suc- ceed instead .</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "3",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwJ45cIErAJpqwAR.eoN5IhyaSsw9MV0H"
+    },
+    {
+      "_id": "eDiw6Tn6JTNMwqMh",
+      "name": "Misty Escape",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the vampire drops to O Pontos de Vida out- side its resting place, the vampire uses Shape-Shift to become mist (no action required). If it can't use Shape- Shift, it is destroyed. While it has O Pontos de Vida in mist form, it can't return to its vampire form, and it must alcance its resting place within 2 hours or be destroyed. Once in its resting place, it returns to its vampire form and has the Par- alyzed condition until it regains any Pontos de Vida, and it regains l Hit Point after spending 1 hour there.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwJ45cIErAJpqwAR.eDiw6Tn6JTNMwqMh"
+    },
+    {
+      "_id": "a8uXt7llgMYbG93f",
+      "name": "Spider Climb",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The vampire can climb difficult surfaces, including along ceilings, without needing to make an ability check. - Vampire Weakness. The vampire has these weaknesses:</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwJ45cIErAJpqwAR.a8uXt7llgMYbG93f"
+    },
+    {
+      "_id": "kczjIVpFtpPMNiYh",
+      "name": "Forbiddance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The vampire can't enter a residence with- out an invitation from an occupant .</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwJ45cIErAJpqwAR.kczjIVpFtpPMNiYh"
+    },
+    {
+      "_id": "2JzcOZW6oCsRQlvL",
+      "name": "Running Water",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The vampire takes 20 Ácido de dano if it ends its turn in running water.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwJ45cIErAJpqwAR.2JzcOZW6oCsRQlvL"
+    },
+    {
+      "_id": "Np77dRKnQeRNlyLN",
+      "name": "Stake to the Heart",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If a weapon that deals Perfurante de dano is driven into the vampire's heart while the vampire has the Incapacitado condition in its resting place, the vampire has the Paralisado condition until the weapon is removed.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwJ45cIErAJpqwAR.Np77dRKnQeRNlyLN"
+    },
+    {
+      "_id": "Bc7lfvJKCCsdJiFF",
+      "name": "Sunlight",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The vampire takes 20 Radiante de dano if it starts its turn in sunlight. While in sunlight, it has Disadvantage on attack rolls and ability checks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwJ45cIErAJpqwAR.Bc7lfvJKCCsdJiFF"
+    },
+    {
+      "_id": "1qWYDzzNz1J8d4Jq",
+      "name": "Ataque Múltiplo (Vampire Form Only)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The vampire makes two Grave Strike attacks and uses Bite.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwJ45cIErAJpqwAR.1qWYDzzNz1J8d4Jq"
+    },
+    {
+      "_id": "OxIIw0DERDoUOpQu",
+      "name": "Grave Strike (Vampire Form Only)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 5 ft. Acerto: 8 (1d8 + 4) Concussão de dano plus 7 (2d6) Necrótico de dano. If o alvo is a Large or smaller creature, it has.the Agarrado condition (escape DC 14) from one of two hands.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "shAEuQtFBqPYTlfx": {
+            "_id": "shAEuQtFBqPYTlfx",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "9",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "4",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9,
+            "attackType": "melee",
+            "damageFormula": "1d8+4",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwJ45cIErAJpqwAR.OxIIw0DERDoUOpQu"
+    },
+    {
+      "_id": "Sy8qcLFJLf4C1Z1M",
+      "name": "Bite (Bat or Vampire Form Only)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Teste de Resistência: DC 17, uma criatura within 5 feet that is willing or that has the Agarrado, Incapacitado, or Impedido condition. Failure : 6 (1d4 + 4) Perfurante de dano plus 73 (3d8) Necrótico dam vage. The target's Hit Point maximum decreases by an amount equal to the Ne- crotic de dano taken, and the vampire regains Hit</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "0zszL7935powtsaw": {
+            "_id": "0zszL7935powtsaw",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "17"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 17,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwJ45cIErAJpqwAR.Sy8qcLFJLf4C1Z1M"
+    },
+    {
+      "_id": "p8mA86BV23H1dyEm",
+      "name": "Points equal to that amount",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>A Humanoid reduced to 0 Pontos de Vida by this de dano and then buried rises the following sunset as a Vampire Spawn under the vam- pire's control.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwJ45cIErAJpqwAR.p8mA86BV23H1dyEm"
+    },
+    {
+      "_id": "ASFGA2vfr3P7UDFU",
+      "name": "Charm (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The vampire casts Charm Per- son, requiring no spell components and using Carisma · as the spellcasting ability (spell save DC 17), and the duration is 24 hours. The Enfeitiçado target is a willing recipient of the vampire's Bite, the de dano of which doesn't end the spell. When the spell ends, o alvo is unaware it was Enfeitiçado by the vampire.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwJ45cIErAJpqwAR.ASFGA2vfr3P7UDFU"
+    },
+    {
+      "_id": "2VP3aCmV19Lxq0bA",
+      "name": "Shape-Shift",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the vampire isn't in sun light or running water , it shape-shifts into a Tiny bat (Speed 5 ft., Fly Speed 30 ft .) or a Medium cloud of mist (Speed 5 ft.,</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwJ45cIErAJpqwAR.2VP3aCmV19Lxq0bA"
+    },
+    {
+      "_id": "W9FQHcIF1jR3bFpz",
+      "name": "Fly Speed 20 ft",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>[hover]), or it returns to its vampire form. Anything it is wearing transforms with it. While in bat form, the vampire can't speak. Its game statistics, other than its size and Speed, are unchanged. While in mist form, the vampire can't take any ac- tions, speak, or manipulate objects. It is weightless and can enter an enemy's space and stop there. If air can pass through a space, the mist can do so, but it can't pass through liquid. It has Resistance to all de dano, except the de dano it takes from sunlight.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwJ45cIErAJpqwAR.W9FQHcIF1jR3bFpz"
+    },
+    {
+      "_id": "4eFMB4sLaJ1Pf1Av",
+      "name": "Beguile",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The vampire casts Command, requiring no spell components and using Carisma as the spellcast- ing ability (spell save DC 17). The vampire can_ 't take this action again until the start of its next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwJ45cIErAJpqwAR.4eFMB4sLaJ1Pf1Av"
+    },
+    {
+      "_id": "Hl9bP4QRsPHz5Qf6",
+      "name": "Deathless Strike",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The vampire moves up to half its Speed, and it makes one Grave Strike attack. VAMPIRES 317 VAMPIRE UMBRAL LORD Medium or Small Undead, Lawful E1Ji l AC 16 Iniciativa + 14 (24) HP 187 (22d8 + 88) Speed 40 ft., Climb 40 ft., Fly 40 ft. (hover) MOD SAVE MO D SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!qwJ45cIErAJpqwAR.Hl9bP4QRsPHz5Qf6"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Vampire",
+      "page": 319,
+      "cr": "13",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "_id": "6iQBH9TK6D8TMJfx",
+  "_key": "!actors!6iQBH9TK6D8TMJfx",
+  "folder": "inkH4oLnh3yP5W9M",
+  "name": "Poltergeist",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/poltergeist.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 2,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 20,
+        "proficient": 0
+      },
+      "con": {
+        "value": 8,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 15,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 15,
+        "formula": ""
+      },
+      "hp": {
+        "value": 9,
+        "max": 9,
+        "formula": "6d4 - 6",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "fly": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fey",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro e Bom",
+      "cr": 0,
+      "xp": {
+        "value": 50
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "tiny",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Silvestre"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Poltergeist",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/poltergeist.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "3TZFsfDXq1tZFZU8",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The pixie has Advantage on saving throws against spells and other magical effects.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!6iQBH9TK6D8TMJfx.3TZFsfDXq1tZFZU8"
+    },
+    {
+      "_id": "ajrh4dDQSdLZZq6d",
+      "name": "Faerie Dust",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Melee or Distânciad Attack: +4, alcance 5 ft. or range 60 ft. Acerto: l Radiante de dano, and o alvo has the Enfeitiçado or Envenenado condition (pixie's choice) un- til the start of the pixie_'s next turn. • Conjuração. The pixie casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 12): À Vontade: Dancing Lights, Druidcraft, Invisibility (self only) • 1/Dia Each: Detect Thoughts, Fly, Sleep PIXIES Friends of the Forest</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!6iQBH9TK6D8TMJfx.ajrh4dDQSdLZZq6d"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Poltergeist",
+      "page": 246,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

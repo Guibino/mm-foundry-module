@@ -1,0 +1,340 @@
+{
+  "_id": "39fvbIWixy2EL9A8",
+  "_key": "!actors!39fvbIWixy2EL9A8",
+  "folder": "bKQUPthn1V2Yu6Bn",
+  "name": "Beholder Zumbi",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 14,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 8,
+        "proficient": 1
+      },
+      "con": {
+        "value": 16,
+        "proficient": 0
+      },
+      "int": {
+        "value": 3,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 8,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 5,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 15,
+        "formula": ""
+      },
+      "hp": {
+        "value": 93,
+        "max": 93,
+        "formula": "11d1 0 + 33",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 5,
+        "fly": 20
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 5,
+      "xp": {
+        "value": 1800
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": "Poiso n"
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "exhaustion",
+          "prone"
+        ],
+        "custom": "Po is on ed"
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Beholder Zumbi",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/beholder-zombie.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "lGYbnp81E9UC2LdZ",
+      "name": "Undead Fortitude",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If de dano reduces the zombie to 0 Pontos de Vida, it makes a Constituição saving throw (DC 5 plus the de dano taken) unless the de dano is Radiante or from a Critical Hit. On a successful save, the zombie drops to l Hit Point instead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!39fvbIWixy2EL9A8.lGYbnp81E9UC2LdZ"
+    },
+    {
+      "_id": "5o6fjCaDWuwdCCG8",
+      "name": "Habilidade",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>~ Ataque Múltiplo. The zombie uses Eye Rays twice. Vl ~ Bite. Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 16 (4d6 + 2) UJ Q'.'. ~iercing de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "feGoF3E5G4tbhULp": {
+            "_id": "feGoF3E5G4tbhULp",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!39fvbIWixy2EL9A8.5o6fjCaDWuwdCCG8"
+    },
+    {
+      "_id": "wUxshf13y3ePs56p",
+      "name": "Eye Rays",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The zombie randomly shoots one of the fol- lowing magical rays at a target it can see within 120 feet of itself (roll 1d4; reroll if the zombie has already used that ray during this turn): l: Paralyzing Ray. Constituição Teste de Resistência: DC 14. Falha: The target has the Paralisado · condition and repeats the save at the end of each of its turns, end- ing the effect on itself on a success. After l minute, it succeeds automatically. 2: Fear Ray. Sabedoria Teste de Resistência: DC 14. Falha: 13 (3d8) Psíquico de dano, and o alvo has the Fright- ened condition until the end of its next turn. 3: Enervation Ray. Constituição Teste de Resistência: DC 14. Falha: 70 (3d6) Necrótico de dano, and o alvo has the Envenenado condition until the end of its next turn. While Envenenado, o alvo can't regain Pontos de Vida. Sucesso: Metade do dano only. - 4: Disintegration Ray. Destreza Teste de Resistência: DC 14. Falha: 27 (Sdl 0) Energia de dano. If o alvo is a nonmagical object or a creation of magical force, a 10-foot Cube of it disintegrates into dust. Sucesso:</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "zbN40D3bDqyd2kRJ": {
+            "_id": "zbN40D3bDqyd2kRJ",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "14"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 8,
+                  "bonus": "",
+                  "types": [
+                    "psychic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "3d8",
+            "damageType": "psychic",
+            "saveDc": 14,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!39fvbIWixy2EL9A8.wUxshf13y3ePs56p"
+    },
+    {
+      "_id": "iMOZKma3x22iGZ9z",
+      "name": "Metade do dano",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Falha ou Sucesso: If o alvo is a crea- ture and this de dano reduces it to O Pontos de Vida, it _ disintegrates into dust. 6 347 ZOMBIES / APPENDIX HIS APPENDIX PROVIDES STAT BLOCI<S FOR animals of the Beast type-along with many of their gigantic or mythologized kin-in alpha- betical order. Most represent versions of animals that exist (or existed) in the real world . You can find descriptions of these creatures in dictionaries or other educational sources, or you might create new roles for them in your D&D worlds. ALLOSAURUS Large Beast (Dinosaur) , Unalig ned AC 13 • Iniciativa + 1 ( 11) HP 51 (6d10+18) Sp eed 60 ft. MOD SAVE MOD SA VE MOD S AVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!39fvbIWixy2EL9A8.iMOZKma3x22iGZ9z"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Beholder Zombie",
+      "page": 349,
+      "cr": "5",
+      "warnings": []
+    }
+  }
+}

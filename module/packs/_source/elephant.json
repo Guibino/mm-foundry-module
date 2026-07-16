@@ -1,0 +1,316 @@
+{
+  "_id": "aqOGagx5beqC1Kh3",
+  "_key": "!actors!aqOGagx5beqC1Kh3",
+  "folder": "9eORFRgLi2o0urFB",
+  "name": "Elephant",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/elephant.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 22,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 9,
+        "proficient": 0
+      },
+      "con": {
+        "value": 77,
+        "proficient": 0
+      },
+      "int": {
+        "value": 3,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 77,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 6,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 12,
+        "formula": ""
+      },
+      "hp": {
+        "value": 76,
+        "max": 76,
+        "formula": "8d1 2 + 24",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 4,
+      "xp": {
+        "value": 7700
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "None"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Elephant",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/elephant.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "oAFHDbuC1U1Tuuzo",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The elephant makes two Gore attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!aqOGagx5beqC1Kh3.oAFHDbuC1U1Tuuzo"
+    },
+    {
+      "_id": "YXsF3QF9UeQydETo",
+      "name": "Gore",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 5 ft. Acerto: 15 (2d8 + 6)</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "U3se4FEUQVhQZozM": {
+            "_id": "U3se4FEUQVhQZozM",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "8",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 8,
+            "attackType": "melee"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!aqOGagx5beqC1Kh3.YXsF3QF9UeQydETo"
+    },
+    {
+      "_id": "NbeE9Eh0dYsR6ft4",
+      "name": "Perfurante de dano",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If o alvo is a Huge or smaller crea- ture and the elephant moved 20+ feet straight toward it immediately before the hit, o alvo has the Caído condition.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!aqOGagx5beqC1Kh3.NbeE9Eh0dYsR6ft4"
+    },
+    {
+      "_id": "1cZieWH2teN8VFsL",
+      "name": "Trample",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Destreza Teste de Resistência: DC 16, uma criatura I within 5 feet that has the Pr-one condition. Falha: 77 0 (-2d1 0 + 6) Concussão de dano. Sucesso: Metade do dano. FANTASTIC ANIMALS The following stat blocks in this appendix repre- sent fantastical versions of real-world animals: Blood Hawk: Excessively aggressive hawklike avians known for stealing gems Flying Snake: Winged, venomous snakes often trained to serve as messengers Gigante Eagle: Mighty eagles that aid heroes Gigante Elk: Mystical guardians of the forest Gigante Fogo Beetle: Glowing, cave-dwelling beetles Gigante Owl: Avian sages and soothsayers Gigante Vulture: Vicious vultures that serve villains ELK Large Beast, Unaligned AC l 0 Iniciativa +0 (l 0) HP 77 (2d10) Speed 50 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "b65dwJ2xPYifgzSY": {
+            "_id": "b65dwJ2xPYifgzSY",
+            "type": "save",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "16"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 16,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!aqOGagx5beqC1Kh3.1cZieWH2teN8VFsL"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Elephant",
+      "page": 355,
+      "cr": "4",
+      "warnings": []
+    }
+  }
+}

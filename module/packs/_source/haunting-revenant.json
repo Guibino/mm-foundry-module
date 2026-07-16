@@ -1,0 +1,355 @@
+{
+  "_id": "hCYZg5yKoshfOdpV",
+  "_key": "!actors!hCYZg5yKoshfOdpV",
+  "folder": "bKQUPthn1V2Yu6Bn",
+  "name": "Haunting Revenant",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/haunting-revenant.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 20,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 12,
+        "proficient": 0
+      },
+      "con": {
+        "value": 18,
+        "proficient": 1
+      },
+      "int": {
+        "value": 76,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 78,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 20,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 20,
+        "formula": ""
+      },
+      "hp": {
+        "value": 203,
+        "max": 203,
+        "formula": "14d20 + 56",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "truesight": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 10,
+      "xp": {
+        "value": 5900
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "grg",
+      "di": {
+        "value": [
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Common plus two other languages"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Haunting Revenant",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/haunting-revenant.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "h7pGzzup3t0ZCwVb",
+      "name": "Haunted Zone",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Sa1Jing Throw: DC 17, any creature that casts a spell while inside the revenant's space. Falha: The spell fails and is wasted.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hCYZg5yKoshfOdpV.h7pGzzup3t0ZCwVb"
+    },
+    {
+      "_id": "pdqbUYbv9p797jKF",
+      "name": "Undead Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the revenant dies, it revives 24 hours later unless Dispel Evil or Good is cast on its remains. If it revives, it animates another Gargantuan object or structure elsewhere on the same plane of existence; it now looks different but uses the same stat block and returns with all its Pontos de Vida.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hCYZg5yKoshfOdpV.pdqbUYbv9p797jKF"
+    },
+    {
+      "_id": "qHL5oF8y6lNko5UI",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The revenant makes two Object Slam at- tacks and uses Invitation.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hCYZg5yKoshfOdpV.qHL5oF8y6lNko5UI"
+    },
+    {
+      "_id": "xvD0IMlvph1N7Uje",
+      "name": "Object Slam",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +9 (with Advantage if o alvo is inside the revenant's space), alcance 10 ft. or range 30/90 ft. Acerto: 27 (5d8 + 5) Blud- geoning de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "YrEoo0NlfBDdS8fE": {
+            "_id": "YrEoo0NlfBDdS8fE",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "9",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9,
+            "attackType": "ranged"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hCYZg5yKoshfOdpV.xvD0IMlvph1N7Uje"
+    },
+    {
+      "_id": "NgesfocFV1M7SlCi",
+      "name": "Invitation",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Carisma Teste de Resistência: DC 17, cada criatura in a 60-foot Cone. Falha: The target is teleported in- side the revenant's space and swallowed. A swallowed creature has Total Cover against attacks and other ef- fects outside the revenant. u VJ While the revenant has Pontos de Vida, a swallowed crea- <( ture can leave the revenant's space only by using magic · aJ that enables planar travel, such as the Plar (e Shift spell. er:: Roe Avian of Unbelievable Size</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "73vdbOl8Ap3H7f1c": {
+            "_id": "73vdbOl8Ap3H7f1c",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "cha"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "17"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 17,
+            "saveAbility": "cha"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hCYZg5yKoshfOdpV.NgesfocFV1M7SlCi"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Haunting Revenant",
+      "page": 262,
+      "cr": "10",
+      "warnings": []
+    }
+  }
+}

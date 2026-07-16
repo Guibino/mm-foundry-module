@@ -1,0 +1,348 @@
+{
+  "_id": "M0wsfwGzUj6znmXL",
+  "_key": "!actors!M0wsfwGzUj6znmXL",
+  "folder": "mI6hZZeXOMovX9oy",
+  "name": "Efreeti",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/efreeti.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 22,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 12,
+        "proficient": 0
+      },
+      "con": {
+        "value": 24,
+        "proficient": 0
+      },
+      "int": {
+        "value": 16,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 15,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 19,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 17,
+        "formula": ""
+      },
+      "hp": {
+        "value": 212,
+        "max": 212,
+        "formula": "17d10 + 11 9",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 40
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "elemental",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 11,
+      "xp": {
+        "value": 7200
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "fire"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Pr im ord ia l (lgnan)"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Efreeti",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/efreeti.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "Xuo8bkgcUywozzgV",
+      "name": "Elemental Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the efreeti dies outside the Elemental Pl _ane of Fogo, its body dissolves into ash, and it gains a new body in 1d4 days, reviving with all its Pontos de Vida somewhere on the Plane of Fogo. cc <! Magic Resistance. The efreeti has Advantage on saving l/1 l/1 0 throws against spells and other magical effects. cc ro LU of knowing <{ Wishes. The efreeti has a 30. percent chance 2 the Wish spell. If the efreeti knows it, the efreeti can cast it only on behalf of a non-genie creature who communi- cates a wish in a way the efreeti can understand. If the efreeti casts the spell for the creature, the efreeti suffers none of the spell's stress. Once the efreeti has cast it three times, the efreeti can't do so again for 365 days.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!M0wsfwGzUj6znmXL.Xuo8bkgcUywozzgV"
+    },
+    {
+      "_id": "RNWeRf9dGeeByMVH",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The efreeti makes three attacks, using Heated Blade or Hurl Flame in any combination.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!M0wsfwGzUj6znmXL.RNWeRf9dGeeByMVH"
+    },
+    {
+      "_id": "Zv5ncAEjfmyrXGSI",
+      "name": "Heated Blade",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 10, alcance 5 ft. Acerto: 13 (2d6 + 6) Cortante de dano plus 13 (2d12) Fogo de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d6+6",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!M0wsfwGzUj6znmXL.Zv5ncAEjfmyrXGSI"
+    },
+    {
+      "_id": "7a9epSqjZHBwsOQm",
+      "name": "Hurl Flame",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +8, range 120 ft. Acerto: 24 (7d6) Fogo de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "Zkz1hRg2WrZgS1sm": {
+            "_id": "Zkz1hRg2WrZgS1sm",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "8",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 7,
+                  "denomination": 6,
+                  "bonus": "",
+                  "types": [
+                    "fire"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 8,
+            "attackType": "ranged",
+            "damageFormula": "7d6",
+            "damageType": "fire"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!M0wsfwGzUj6znmXL.7a9epSqjZHBwsOQm"
+    },
+    {
+      "_id": "8cLhw4mUesfBOcZU",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The efreeti casts one of the following spells, requiring no Material components and _ using Carisma as the spellcasting ability (spell save DC 16): À Vontade: Detect Magic, Elementalism 1/Dia Each: Gaseous Form, Invisibility, Major Image, Plane Shift, Tongues, Wall of Fogo (level 7 version) EFREETI 109 ELEMENTAL CATACLYSM The End and Beginning of Ages</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!M0wsfwGzUj6znmXL.8cLhw4mUesfBOcZU"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Efreeti",
+      "page": 111,
+      "cr": "11",
+      "warnings": []
+    }
+  }
+}

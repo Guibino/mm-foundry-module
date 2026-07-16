@@ -1,0 +1,358 @@
+{
+  "_id": "gPg0Cakybg2RK07C",
+  "_key": "!actors!gPg0Cakybg2RK07C",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Bearded Diabo",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/bearded-devil.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 1
+      },
+      "dex": {
+        "value": 75,
+        "proficient": 0
+      },
+      "con": {
+        "value": 75,
+        "proficient": 1
+      },
+      "int": {
+        "value": 9,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 11,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 14,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13,
+        "formula": ""
+      },
+      "hp": {
+        "value": 58,
+        "max": 58,
+        "formula": "9d8+18",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 720
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "D e tJi!",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Lawful",
+      "cr": 3,
+      "xp": {
+        "value": 700
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Infernal"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Bearded Diabo",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/bearded-devil.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "MQM8h5mbiLfMM0Zs",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The devil has Advantage on saving throws against spells and other magical effects.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!gPg0Cakybg2RK07C.MQM8h5mbiLfMM0Zs"
+    },
+    {
+      "_id": "CyQWWdXZZw8h1tTy",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The devil makes one Beard attack and one Infernal Glaive attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!gPg0Cakybg2RK07C.CyQWWdXZZw8h1tTy"
+    },
+    {
+      "_id": "pPIXV6HMx4aHPlX9",
+      "name": "Beard",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 7 (1d8 + 3) Perfurante de dano, and o alvo has the Envenenado con- dition until the start of the devil's next turn. Until this poison ends, o alvo can't regain Pontos de Vida.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "aeVFVfhvpeBW31AS": {
+            "_id": "aeVFVfhvpeBW31AS",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "1d8+3",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!gPg0Cakybg2RK07C.pPIXV6HMx4aHPlX9"
+    },
+    {
+      "_id": "SgEUsWf5sQ4k2fmd",
+      "name": "Infernal Glaive",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 70 ft. Acerto: 8 (1d1 0 + 3) Cortante de dano. If o alvo is a crea- ture and doesn't already have an infernal wound, it is subjected to the following effect. Constituição Teste de Resistência: DC 12. Falha: The target receives an infernal wound. While wounded, o alvo loses 5 (1d10) Pontos de Vida at the start of each of its turns. The wound closes after l minute, after a spell restores Pontos de Vida to I o alvo, or after o alvo or a creature within 5 feet u.J <( of it takes an action to stanch the wound, doing so by lJ 0 succeeding on a DC 12 Sabedoria (Medicine) check. BEARDED DEVIL Devil of Energia and Intimidation</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "UvKhh7QyHtJEc1zM": {
+            "_id": "UvKhh7QyHtJEc1zM",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 10,
+                  "bonus": "3",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "1d10+3",
+            "damageType": "slashing",
+            "saveDc": 12,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!gPg0Cakybg2RK07C.SgEUsWf5sQ4k2fmd"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Bearded Devil",
+      "page": 35,
+      "cr": "3",
+      "warnings": []
+    }
+  }
+}

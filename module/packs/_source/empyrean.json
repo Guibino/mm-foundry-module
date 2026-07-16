@@ -1,0 +1,303 @@
+{
+  "_id": "352k7UNTBMSrKlcO",
+  "_key": "!actors!352k7UNTBMSrKlcO",
+  "folder": "IQP9BfRMl9yEsYGp",
+  "name": "Empyrean",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 1,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0
+      },
+      "int": {
+        "value": 15,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 16,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 16,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13,
+        "formula": ""
+      },
+      "hp": {
+        "value": 22,
+        "max": 22,
+        "formula": "Sd8",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 5,
+        "fly": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "celestial",
+        "subtype": "TitC1n",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 1,
+      "xp": {
+        "value": 200
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": "Prone"
+      },
+      "dr": {
+        "value": [
+          "bludgeoning",
+          "piercing"
+        ],
+        "custom": "Sl ashing"
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "All"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Empyrean",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/empyrean.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "0n6uPguDcuW0xM5v",
+      "name": "Incorporeal Movement",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The empyrean can move through other creatures and objects as if they were Dif- ficult Terrain. It takes 5 (1d10) Energia de dano ifit ends its turn inside an object.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!352k7UNTBMSrKlcO.0n6uPguDcuW0xM5v"
+    },
+    {
+      "_id": "09adzJQ9VA8Y8GPl",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The empyrean has Advantage on sav- ing throws against spells and other magical effects.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!352k7UNTBMSrKlcO.09adzJQ9VA8Y8GPl"
+    },
+    {
+      "_id": "PJOWr4JMKN6aRk6a",
+      "name": "Otherworldly Strike",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Melee or RC1nged AttC1ck Roll: +5, alcance 5 ft. or range 30 ft. Acerto: 7 (1d8 + 3) Necrótico or Radiante de dano (empyrean's choice).</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!352k7UNTBMSrKlcO.PJOWr4JMKN6aRk6a"
+    },
+    {
+      "_id": "7r07a9rNBgQlnx97",
+      "name": "Healing Word (1/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The empyrean casts Heal- ing Word, using the · same spell casting ability as Conjuração. EMPYREAN Huge Celestial or Fiend (Titan), Neutral AC 22 Iniciativa + 19 (29) HP 346 (21d12 + 210) Speed 50 ft., Fly 50 ft. (hover), Swim 50 ft. MOD SAVE MOD SAVE M OD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!352k7UNTBMSrKlcO.7r07a9rNBgQlnx97"
+    },
+    {
+      "_id": "X1nSxmzXLbDzQmMz",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The empyrean casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability: 1/Dia Each: Bless, Lesser Restoration (as an action) B' oNUS AC T IONS</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!352k7UNTBMSrKlcO.X1nSxmzXLbDzQmMz"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Empyrean",
+      "page": 114,
+      "cr": "1",
+      "warnings": []
+    }
+  }
+}

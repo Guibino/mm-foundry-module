@@ -1,0 +1,480 @@
+{
+  "_id": "JKadkb2iM0xCM5zB",
+  "_key": "!actors!JKadkb2iM0xCM5zB",
+  "folder": "IQP9BfRMl9yEsYGp",
+  "name": "Sphinx Of Lore",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/sphinx-of-lore.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 0
+      },
+      "con": {
+        "value": 16,
+        "proficient": 0
+      },
+      "int": {
+        "value": 78,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 18,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 18,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 17,
+        "formula": ""
+      },
+      "hp": {
+        "value": 170,
+        "max": 170,
+        "formula": "20d1 O + 60",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40,
+        "fly": 60
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "celestial",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Neutro",
+      "cr": 11,
+      "xp": {
+        "value": 7200
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "psychic"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "frightened"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Sphinx Of Lore",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/sphinx-of-lore.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "Yb9BCbeGL9DhCFZs",
+      "name": "Inscrutable",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>No magic can observe the sphinx remotely or detect its thoughts without its permission. Sabedoria (Insight) checks made to ascertain its intentions or sin- cerity_ are made with Disadvantage.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!JKadkb2iM0xCM5zB.Yb9BCbeGL9DhCFZs"
+    },
+    {
+      "_id": "ei0ZchW14pggkAx0",
+      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the sphinx fails a saving throw, it can choose to suc- ceed instead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "3",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!JKadkb2iM0xCM5zB.ei0ZchW14pggkAx0"
+    },
+    {
+      "_id": "59TdKDMMxVW9frMk",
+      "name": "Habilidade",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>z Ataque Múltiplo. The sphinx makes three Claw attacks. 2 Claw. Rolagem de Ataque Corpo a Corpo: +8, -alcance 5 ft. Acerto: 14 (3d6 + 4) I Cortante de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "5GBGacaqiUC28jNF": {
+            "_id": "5GBGacaqiUC28jNF",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "8",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 8,
+            "attackType": "melee"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!JKadkb2iM0xCM5zB.59TdKDMMxVW9frMk"
+    },
+    {
+      "_id": "wWMtdP72APdGpFBw",
+      "name": "Mind-Rending Roar (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Sabedoria Teste de Resistência: DC 16, each enemy in a 300-foot Emanation \\, originating from the sphinx. Falha: 35 (10d6) Psíquico de dano, and o alvo has the Incapacitado condition until the start of the sphinx's next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "kzHBVdVCEv8utFcr": {
+            "_id": "kzHBVdVCEv8utFcr",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "16"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 10,
+                  "denomination": 6,
+                  "bonus": "",
+                  "types": [
+                    "psychic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "10d6",
+            "damageType": "psychic",
+            "saveDc": 16,
+            "saveAbility": "wis"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!JKadkb2iM0xCM5zB.wWMtdP72APdGpFBw"
+    },
+    {
+      "_id": "SBMqelmvalESvBZz",
+      "name": "Arcane Prowl",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The sphinx can teleport up to 30 feet to an unoccupied space it can see, and it makes one Cl aw attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!JKadkb2iM0xCM5zB.SBMqelmvalESvBZz"
+    },
+    {
+      "_id": "zlzoGIz8Mcd3DDXv",
+      "name": "Weight of Years",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Teste de Resistência: DC 16, uma criatura the sphinx can see within 120 feet. Falha: The • target gains 1 Exaustão level. While o alvo has any Exaustão levels, it appears 3d10 years older. Falha ou Sucesso: The sphinx can't take this action again until the start of its next turn. SPHINXES ,6_ 293 • Large C elestial, Law ful Neutral AC 17 Iniciativa + 12 (22) HP 799 (79d70 + 95) Speed 40 ft., Fly 60 ft . MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "uB5TFTLP23ueVKXP": {
+            "_id": "uB5TFTLP23ueVKXP",
+            "type": "save",
+            "activation": {
+              "type": "legendary",
+              "value": 1,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "16"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 16,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!JKadkb2iM0xCM5zB.zlzoGIz8Mcd3DDXv"
+    },
+    {
+      "_id": "cCZDVqdtd9ge7lYd",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The sphinx casts one of the following spells, requiring no Material components and using In- telligence as the spellcasting ability (spell save DC 16): À Vontade: Detect Magic, Identify, Mage Hand, Minor Illu- sion, Prestidigitation 1/Dia Each: Dispel Magic, Legend Lore, Locate Object, Plane Shift, Remove Curse, Tongues</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!JKadkb2iM0xCM5zB.cCZDVqdtd9ge7lYd"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Sphinx of Lore",
+      "page": 295,
+      "cr": "11",
+      "warnings": []
+    }
+  }
+}

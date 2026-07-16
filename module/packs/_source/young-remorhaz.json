@@ -1,0 +1,248 @@
+{
+  "_id": "YJjjiXHxpbcHkm4L",
+  "_key": "!actors!YJjjiXHxpbcHkm4L",
+  "folder": "3SEe9J5t05jhrkCa",
+  "name": "Jovem Remorhaz",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 74,
+        "formula": ""
+      },
+      "hp": {
+        "value": 93,
+        "max": 93,
+        "formula": "7 7d7 0 + 33",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30,
+        "burrow": 20
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60,
+        "tremorsense": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "monstrosity",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 5,
+      "xp": {
+        "value": 1800
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "cold",
+          "fire"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "None"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Jovem Remorhaz",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/young-remorhaz.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "QCEir9PMCo8K0bbj",
+      "name": "Heat Aura",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>At the end of each of the remorhaz's turns, cada criatura in a 5-foot Emanation originating from the remorhaz takes 17 (2d7 0) Fi re de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!YJjjiXHxpbcHkm4L.QCEir9PMCo8K0bbj"
+    },
+    {
+      "_id": "ayqeU7V5CQ3LxVYH",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 15 (2d7 0 + 4) Perfurante de dano plus 13 (3d8) Fogo de dano. REMORHAZES YOUNG REMORHAZ Young remorhazes scorch and consume any crea- tures they can chase down and overwhelm. REMORHAZ Full-grown remorhazes are single-minded ambush predators. They attempt to bite prey and trap it against their searing bodies, then swallow their meal whole. Remorhazes eat as much as they can, since they might go months without feeding. REMORHAZ Huge Monstrosity, Unaligned , AC 17 Initiati ve +5 (7 5) HP 795 (17d12 + 85) Speed 40 ft., Burrow 30 ft. MOD SAVE MOD SAVE MO D SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "vOqCEUA6VYeZsTck": {
+            "_id": "vOqCEUA6VYeZsTck",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 70,
+                  "bonus": "4",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "melee",
+            "damageFormula": "2d70+4",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!YJjjiXHxpbcHkm4L.ayqeU7V5CQ3LxVYH"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Young Remorhaz",
+      "page": 260,
+      "cr": "5",
+      "warnings": [
+        "Atributos nao reconhecidos"
+      ]
+    }
+  }
+}

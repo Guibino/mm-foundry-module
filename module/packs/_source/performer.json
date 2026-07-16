@@ -1,0 +1,220 @@
+{
+  "_id": "MMOyZdFugFKhnolS",
+  "_key": "!actors!MMOyZdFugFKhnolS",
+  "folder": "1QPcErIwVgACFlzi",
+  "name": "Performer",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 12,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 76,
+        "proficient": 1
+      },
+      "con": {
+        "value": 12,
+        "proficient": 0
+      },
+      "int": {
+        "value": 13,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 76,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13,
+        "formula": ""
+      },
+      "hp": {
+        "value": 27,
+        "max": 27,
+        "formula": "5d8 + 5",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 0,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {
+      "acr": {
+        "value": 1,
+        "ability": "dex"
+      },
+      "ath": {
+        "value": 1,
+        "ability": "str"
+      },
+      "prf": {
+        "value": 2,
+        "ability": "cha"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Performer",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/performer.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "XbVCTzUtUyqb5fWT",
+      "name": "Shortsword",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 6 (1d6 + 3) Perfurante de dano. R.E ACTIONS . Uncanny Dodge. Trigger: The performer is hit by an :s attack roll. Response: The performer halves the de dano z (round down) it takes from that attack. ~ PERFORMER Comum performers include traveling storytellers, tavern musicians, local entertainers, and chorus members performing with veteran artists. These performers might be self-taught or in the early years of formal training. Most have a modest level of celebrity and two or three instruments or talents at which they excel. PERF O RM E R MAESTRO Maestros are headlining performers who enjoy con- siderable renown. They might be theaters' marquee actors, astonishing daredevils, or jesters experi- enced at entertaining fickle royals. Some share their techniques with apprentices, while others jealously guard their secrets. W ELCO ME , ONE/ W E L COME, A LL .' WELC OME T O T H E SHORT, AN D W ELCOME TO THE TA LL .' WELCO M E AN G ELS, WELCOME FIEN DS, WE LCO ME TO A LL FRO M WALKS BETWEEN.' W ELCOME T O THE CARNIVA L .' -TI N DAL, CAR NIVAL B ARKER PERFORM ER MAESTRO Medium or Small Humanoid, Neutral AC 18 Iniciativa +8 (18) HP 1 10 (17d8 + 34) Speed 30 ft. MOD SAVE MOD SAVE M OD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "vO57oKeG3Na6wfVt": {
+            "_id": "vO57oKeG3Na6wfVt",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "1d6+3",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!MMOyZdFugFKhnolS.XbVCTzUtUyqb5fWT"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Performer",
+      "page": 238,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

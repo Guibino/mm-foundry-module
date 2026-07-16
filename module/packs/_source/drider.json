@@ -1,0 +1,416 @@
+{
+  "_id": "hITDJpBxkAWgU9XO",
+  "_key": "!actors!hITDJpBxkAWgU9XO",
+  "folder": "3SEe9J5t05jhrkCa",
+  "name": "Drider",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/drider.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 19,
+        "proficient": 0
+      },
+      "con": {
+        "value": 18,
+        "proficient": 0
+      },
+      "int": {
+        "value": 13,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 16,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 12,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 19,
+        "formula": ""
+      },
+      "hp": {
+        "value": 123,
+        "max": 123,
+        "formula": "13d10 + 52",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "monstrosity",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Mau",
+      "cr": 6,
+      "xp": {
+        "value": 2300
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Élfico, Comum Inferior"
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Drider",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/drider.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "JB3yVc4VrpRLiCbb",
+      "name": "Spider Climb",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The drider can climb difficult surfaces, including along ceilings, without needing to make an ability check.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hITDJpBxkAWgU9XO.JB3yVc4VrpRLiCbb"
+    },
+    {
+      "_id": "oPlQ74NGGhMMD5cY",
+      "name": "Sunlight Sensitivity",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>While in sunlight, the drider has Disadvantage on ability checks and attack rolls.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hITDJpBxkAWgU9XO.oPlQ74NGGhMMD5cY"
+    },
+    {
+      "_id": "7j9bdE3q9xjgEg8Y",
+      "name": "Web Walker",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The drider ignores movement restrictions caused by webs, and the drider knows the location of any other creature in contact with the sam~ web.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hITDJpBxkAWgU9XO.7j9bdE3q9xjgEg8Y"
+    },
+    {
+      "_id": "9iENIBZUGAbcRUu2",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The drider makes three attacks, using Foreleg or Veneno Burst in any combination.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hITDJpBxkAWgU9XO.9iENIBZUGAbcRUu2"
+    },
+    {
+      "_id": "BIFDvhOJzlQx3HSW",
+      "name": "Foreleg",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Melee At!ack Roll: +7, alcance l 0 ft. Acerto: 13 (2d8 + 4) Perfurante de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d8+4",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hITDJpBxkAWgU9XO.BIFDvhOJzlQx3HSW"
+    },
+    {
+      "_id": "BbBwGq4K75SIv0s0",
+      "name": "Veneno Burst",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +6, range 120 ft. Acerto: 13 (3d6 + 3) Veneno de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "xdpSKNigsMzHm5QG": {
+            "_id": "xdpSKNigsMzHm5QG",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "6",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 6,
+                  "bonus": "3",
+                  "types": [
+                    "poison"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 6,
+            "attackType": "ranged",
+            "damageFormula": "3d6+3",
+            "damageType": "poison"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hITDJpBxkAWgU9XO.BbBwGq4K75SIv0s0"
+    },
+    {
+      "_id": "hKV6Z1zAvunKfdah",
+      "name": "Habilidade",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>1/1 Magic of the Spider Queen (Recarga 5-6). The drider 1/1 0::: casts Darkness, Faerie Fogo, or Web, requiring no Mate- CD LU <t: rial components and using - Sabedoria as the spellcasting 2 ability (spell save DC 14). are uncommon but possible. Roll on or choose a result from the Drider Metamorphoses table to in- spire how supernatural driders come into being. DRIDER METAMORPHOSES 1d6 The Drider Gained Its Form As ... l A blessing from a deity of assassins, danger- ous wildernesses, or the Underdark. 2 A curse from a powerful hag, vengeful witch, or strange Artifact. 3 An experiment by an aboleth, a mind flayer, or another life-shaping magic-user. 4 A magical means of escaping disaster or some worse fate. 5 A mutation after exposure to chaotic planar energies or strange Underdark radiations. 6 A punishment from a spiteful god, like Lolth or the Queen of Air and Darkness. DRIDER 105 DRUID Medium or Small Humanoid (Druid), Neutral AC 13 Iniciativa + 1 (11) HP 44 (8d8 + 8) Speed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hITDJpBxkAWgU9XO.hKV6Z1zAvunKfdah"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Drider",
+      "page": 107,
+      "cr": "6",
+      "warnings": []
+    }
+  }
+}

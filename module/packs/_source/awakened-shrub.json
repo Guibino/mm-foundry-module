@@ -1,0 +1,162 @@
+{
+  "_id": "Ane1mlkKYCbfnhab",
+  "_key": "!actors!Ane1mlkKYCbfnhab",
+  "folder": "UIhMG4gNrr0aGWHc",
+  "name": "Awakened Shrub",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/awakened-shrub.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 3,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 8,
+        "proficient": 0
+      },
+      "con": {
+        "value": 11,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 6,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 10,
+        "formula": ""
+      },
+      "hp": {
+        "value": 10,
+        "max": 10,
+        "formula": "3d6",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 20
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "plant",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 0,
+      "xp": {
+        "value": 10
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "sm",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "piercing"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": "Fi re"
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Common plus one other language"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Awakened Shrub",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/awakened-shrub.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "XNJAX705bJVZSlm4",
+      "name": "Habilidade",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>lJ <( Attack Roll:+ Acerto: 1 Slash- 0... Rake. Melee 1,- alcance 5 ft. ing de dano. AWAKENED TREE Huge Plant Neutral AC 13 Iniciativa -2 (8) HP 59 (7d1 2 + 14)</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Ane1mlkKYCbfnhab.XNJAX705bJVZSlm4"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Awakened Shrub",
+      "page": 25,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,355 @@
+{
+  "_id": "awUHjAiyTQb2o2v8",
+  "_key": "!actors!awUHjAiyTQb2o2v8",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Nalfeshnee",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/nalfeshnee.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 21,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 70,
+        "proficient": 0
+      },
+      "con": {
+        "value": 22,
+        "proficient": 1
+      },
+      "int": {
+        "value": 19,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 15,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 18,
+        "formula": ""
+      },
+      "hp": {
+        "value": 184,
+        "max": 184,
+        "formula": "16d10 + 96",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 20,
+        "fly": 30
+      },
+      "senses": {
+        "units": "ft",
+        "truesight": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "Demon",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Mau",
+      "cr": 13,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "cold",
+          "fire",
+          "lightning"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Nalfeshnee",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/nalfeshnee.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "NUOOfQpYVqJxdYxi",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The nalfeshnee makes three Rend attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!awUHjAiyTQb2o2v8.NUOOfQpYVqJxdYxi"
+    },
+    {
+      "_id": "QhF77JMrzm3rU8Xo",
+      "name": "Rend",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +10, alcance 10 ft. Acerto: 16 (2d10 + 5) Cortante de dano plus 11 (2d10) Energia de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "rOLshb0jf8z37b1H": {
+            "_id": "rOLshb0jf8z37b1H",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "10",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "5",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 10,
+            "attackType": "melee",
+            "damageFormula": "2d10+5",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!awUHjAiyTQb2o2v8.QhF77JMrzm3rU8Xo"
+    },
+    {
+      "_id": "m6MQZI4ekZkBJNFv",
+      "name": "Teleport",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The nalfeshnee teleports up to 120 feet to an unoccupied space it can see.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!awUHjAiyTQb2o2v8.m6MQZI4ekZkBJNFv"
+    },
+    {
+      "_id": "o9Ordy7vLWwzM0Xe",
+      "name": "Horror Nimbus (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Sabedoria Sa11ing Throw: DC 15, cada criatura in a 15-foot Emanation originating from the nalfeshnee. Falha: 28 (8d6) Psíquico dam- age, and o alvo has the Amedrontado condition for l minute, until it takes de dano, or until it ends its turn with the nalfeshnee out of line of sight. Sucesso: The target is immune to this nalfeshnee's Horror Nimbus for 24 hours.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!awUHjAiyTQb2o2v8.o9Ordy7vLWwzM0Xe"
+    },
+    {
+      "_id": "Ehm5sUrkWaBue7rG",
+      "name": "Pursuit",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Trigger: Another creature the nalfeshnee can see ends its move within 120 feet of the nalfeshnee. . Response: The nalfeshnee uses Teleport, but its des- -< l.lJ tination space must be within 10 feet of the trigger- z ing creature. ::J NIGHT HAG Hag of Nightmare and Corruption</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!awUHjAiyTQb2o2v8.Ehm5sUrkWaBue7rG"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Nalfeshnee",
+      "page": 226,
+      "cr": "13",
+      "warnings": []
+    }
+  }
+}

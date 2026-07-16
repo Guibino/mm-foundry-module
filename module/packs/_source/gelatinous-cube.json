@@ -1,0 +1,169 @@
+{
+  "_id": "guq7s0Dg0C3RijVx",
+  "_key": "!actors!guq7s0Dg0C3RijVx",
+  "folder": "BaJiyGJk3g8zXFNV",
+  "name": "Gelatinous Cube",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/gelatinous-cube.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 14,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 3,
+        "proficient": 0
+      },
+      "con": {
+        "value": 20,
+        "proficient": 0
+      },
+      "int": {
+        "value": 1,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 6,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 1,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 6,
+        "formula": ""
+      },
+      "hp": {
+        "value": 63,
+        "max": 63,
+        "formula": "6d10 + 30",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 15
+      },
+      "senses": {
+        "units": "ft",
+        "blindsight": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "ooze",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 2,
+      "xp": {
+        "value": 450
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "acid"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "blinded",
+          "charmed",
+          "deafened"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "None"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Gelatinous Cube",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/gelatinous-cube.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "a6EUNNnvai5bUBcK",
+      "name": "Ooze Cube",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The cube fills its entire space and is trans- parent. Other creatures can enter that space, but a creature that does so is subjected to the cube's Engulf and has Disadvantage on the saving throw. Creatures inside the cube have Total Cover, and the cube can hold one Large creature or up to four Medium or Small creatures inside itself at a time. As an action, a creature within 5 feet of the cube can pull a creature or an object out of the cube by succeed- ing on a DC 12 Força (Athletics) check, and the Cl::'. z puller takes 10 (3d6) Ácido de dano. D.:'. Transparent. Even when the cube is in plain sight, a 0 creature must succeed on a DC 15 Sabedoria (Percep- GELATINOUS CUBE Dungeon-Scouring Block of Ooze</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 12,
+            "saveAbility": "str"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!guq7s0Dg0C3RijVx.a6EUNNnvai5bUBcK"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Gelatinous Cube",
+      "page": 131,
+      "cr": "2",
+      "warnings": []
+    }
+  }
+}

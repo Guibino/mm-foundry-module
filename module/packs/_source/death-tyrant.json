@@ -1,0 +1,468 @@
+{
+  "_id": "8LhE0npllk0kOElW",
+  "_key": "!actors!8LhE0npllk0kOElW",
+  "folder": "bKQUPthn1V2Yu6Bn",
+  "name": "Death Tyrant",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/death-tyrant.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 74,
+        "proficient": 0
+      },
+      "con": {
+        "value": 14,
+        "proficient": 1
+      },
+      "int": {
+        "value": 19,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 75,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 19,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 19,
+        "formula": ""
+      },
+      "hp": {
+        "value": 195,
+        "max": 195,
+        "formula": "26d1 0 + 52",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 5,
+        "fly": 40
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead",
+        "subtype": "B eholder",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Mau",
+      "cr": 14,
+      "xp": {
+        "value": 77500
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "paralyzed"
+        ],
+        "custom": "Charm ed; Exhaus tion"
+      },
+      "languages": {
+        "value": [],
+        "custom": "Fala Profunda, Comum Inferior"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Death Tyrant",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/death-tyrant.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "fBB6iRouIvf5ypG0",
+      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the death tyrant fails a saving throw, it can choose to suc- ceed in stead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "3",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8LhE0npllk0kOElW.fBB6iRouIvf5ypG0"
+    },
+    {
+      "_id": "LWk0sM7XphhXgjvv",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The death tyrant uses Eye Rays three times.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8LhE0npllk0kOElW.LWk0sM7XphhXgjvv"
+    },
+    {
+      "_id": "cdJ3WersTJ5AXZTD",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 5 feet. Acerto: 13 (2d8 + 4) Perfurante de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "mVBsSHam6hs6wMyW": {
+            "_id": "mVBsSHam6hs6wMyW",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "9",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "4",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9,
+            "attackType": "melee",
+            "damageFormula": "2d8+4",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8LhE0npllk0kOElW.cdJ3WersTJ5AXZTD"
+    },
+    {
+      "_id": "zuI95lLDjcJa1znO",
+      "name": "Eye Rays",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The death tyrant randomly shoots one of the following magical rays at a target it can see within 120 feet of itself (roll 1d1 O; re roll if the death tyrant has al- ready used that ray during this turn): l: Charm Ray. Sabedoria Teste de Resistência: DC 17. Falha: 13 (3d8) Psíquico de dano, and o alvo has the Enfeitiçado condition for 7 hour or until it takes dam- age. Sucesso: Metade do dano only. 2: Paralyzing Ray. Constituição Teste de Resistência: DC 17. Falha: The target has the Paralisado condition and repeats the save at the end of each of its turns, end- . L ing the effect on itself on a success. After 7 minute, it succeeds automatically. ' 3: Fear Ray. Sabedoria Teste de Resistência: DC 17. Falha: 10 (3d6) Psíquico de dano, and o alvo has the Fright- ened condition until the end of its next turn. Sucesso: Metade do dano only. 4: Slowing Ray. Constituição Sa11ing Throw: DC 17. Fail- ure: 18 (4d8) Necrótico de dano. Until the end of o alvo's next turn, o alvo can't take Reactions; its Speed is halved; and it can take either an action or a Bonus Action on its turn, not both. Sucesso: Metade do dano only. 5: Enervation Ray. Constituição Teste de Resistência: DC 17. Falha: 16 (3d7 0) Veneno de dano, and o alvo has the Envenenado condition until the end of its next turn. While Envenenado, o alvo can't regain Pontos de Vida. Sucesso: Metade do dano only. 6: Telekinetic Ray. Força Teste de Resistência: DC 17 (o alvo succeeds automatically if it is Gargantuan). Falha: The death tyrant moves o alvo up to 30 feet in any direction. The target has the Impedido condition until the start of the death tyrant's next turn or until the death tyrant has the Incapacitado condition. The death tyrant can also exert fine control on objects with this ray, such as manipulating a tool or opening a door or container. 7: Sleep Ray. Sabedoria Teste de Resistência: DC 17 (o alvo succeeds automatically if it is a Construct or an Un- dead). Falha: The target has the Inconsciente con- dition for 1 minute. The condition ends if o alvo takes de dano or a creature within 5 feet of it takes an action to wake it. 8: Petrification Ray. Constituição Teste de Resistência: DC 17. First Falha: The target has the Impedido condition and repeats the save at the end of its next turn if it is still Impedido, ending the effect on itself on a success. Second Falha: The target has the Petrificado condition instead of the Impedido condition. 9: Disintegration Ray. Destreza Teste de Resistência: DC 17. Falha: 36 (8d8) Energia de dano. If o alvo is a non- magical object or a creation of magical force, a 10- foot Cube of it disintegrates into dust. Sucesso: Metade do dano. Falha ou Sucesso: If o alvo is a creature and this de dano reduces it to 0 Pontos de Vida, it disinte- grates into dust. 10: Death Ray. Destreza Teste de Resistência: DC 77. Falha: 55 (1 0d1 0) Necrótico de dano. Sucesso: Metade do dano. Falha ou Sucesso: The target dies if the ray reduces it to O Pontos de Vida.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "AiX7fcEvcvSn08uf": {
+            "_id": "AiX7fcEvcvSn08uf",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "17"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 8,
+                  "bonus": "",
+                  "types": [
+                    "psychic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "3d8",
+            "damageType": "psychic",
+            "saveDc": 17,
+            "saveAbility": "wis"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8LhE0npllk0kOElW.zuI95lLDjcJa1znO"
+    },
+    {
+      "_id": "mSvzYW6nYjgAUJvF",
+      "name": "Negative Energy Cone",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The death tyrant's central eye emits an imperceptible, magical wave of negative en- ergy in a 750-foot Cone. Creatures in that area can't re- gain Pontos de Vida until the start of the death tyrant's next turn. An intact Humanoid corpse there instantly rises as a Zombie under the death tyrant's control and takes its turn immediately aft~r the death tyrant on the same initiative count.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8LhE0npllk0kOElW.mSvzYW6nYjgAUJvF"
+    },
+    {
+      "_id": "5RusCyOZfkvqPd5W",
+      "name": "Chomp",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The death tyrant makes two Bite attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8LhE0npllk0kOElW.5RusCyOZfkvqPd5W"
+    },
+    {
+      "_id": "0f5Pqko3NfwwGdV1",
+      "name": "Glare",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The death tyrant uses Eye Rays. DEMILI CH What Lies beyond Lichdom</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!8LhE0npllk0kOElW.0f5Pqko3NfwwGdV1"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Death Tyrant",
+      "page": 97,
+      "cr": "14",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "_id": "DLJW8VD8RRThTFmc",
+  "_key": "!actors!DLJW8VD8RRThTFmc",
+  "folder": "EgPgmtpb4EiltKUV",
+  "name": "Storm Gigante",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/storm-giant.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 29,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0
+      },
+      "con": {
+        "value": 20,
+        "proficient": 1
+      },
+      "int": {
+        "value": 76,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 20,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 78,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 76,
+        "formula": ""
+      },
+      "hp": {
+        "value": 230,
+        "max": 230,
+        "formula": "20d72+ 700",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 50,
+        "fly": 25,
+        "swim": 50
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "giant",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Bom",
+      "cr": 13,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {
+      "arc": {
+        "value": 1,
+        "ability": "int"
+      },
+      "ath": {
+        "value": 1,
+        "ability": "str"
+      },
+      "his": {
+        "value": 1,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Storm Gigante",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/storm-giant.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "ogGedsXhOGfMETZz",
+      "name": "Amphibious",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The giant can breathe air and water.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!DLJW8VD8RRThTFmc.ogGedsXhOGfMETZz"
+    },
+    {
+      "_id": "LrgV7vhRQeAe4wfY",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The giant makes two attacks, using Storm Sword or Trovejantebolt in any combination.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!DLJW8VD8RRThTFmc.LrgV7vhRQeAe4wfY"
+    },
+    {
+      "_id": "Y2eR6OlFroHktFJ1",
+      "name": "Storm Sword",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 74, alcance 70 ft. Acerto: 23 (4d6 + 9) Cortante de dano plus 13 (3d8) Light- ning de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "4d6+9",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!DLJW8VD8RRThTFmc.Y2eR6OlFroHktFJ1"
+    },
+    {
+      "_id": "JhWPVEGxTs3Osyi4",
+      "name": "Trovejantebolt",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +14, range 500 ft. Acerto: 22 (2d72 + 9) Elétrico de dano, and o alvo has the • Cego and Surdo conditions until the start of the giant's next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "hSiw7UBlex79ukR4": {
+            "_id": "hSiw7UBlex79ukR4",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "14",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 72,
+                  "bonus": "9",
+                  "types": [
+                    "lightning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 14,
+            "attackType": "ranged",
+            "damageFormula": "2d72+9",
+            "damageType": "lightning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!DLJW8VD8RRThTFmc.JhWPVEGxTs3Osyi4"
+    },
+    {
+      "_id": "SzphE3dewovAnPXG",
+      "name": "Elétrico Storm (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Destreza Teste de Resistência: DC 18, cada criatura in a 10-foot-radius, 40-foot-high Cylinder originating from a point the giant can see within 500 feet. Falha: 55 (10d70) Elétrico • de dano. Sucesso: Metade do dano . . Conjuração. The giant casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save DC 18): À Vontade: Detect Magic, Light Vl Vl 1/Dia: Control Weather < SUCCUBUS Life-Draining Seducer</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "mh0JbyjBj8q0YnXT": {
+            "_id": "mh0JbyjBj8q0YnXT",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "18"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 18,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!DLJW8VD8RRThTFmc.SzphE3dewovAnPXG"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Storm Giant",
+      "page": 304,
+      "cr": "13",
+      "warnings": []
+    }
+  }
+}

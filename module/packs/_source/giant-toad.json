@@ -1,0 +1,308 @@
+{
+  "_id": "lEeLjjP8oqMZswKE",
+  "_key": "!actors!lEeLjjP8oqMZswKE",
+  "folder": "9eORFRgLi2o0urFB",
+  "name": "Gigante Toad",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/giant-toad.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 15,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 13,
+        "proficient": 0
+      },
+      "con": {
+        "value": 13,
+        "proficient": 0
+      },
+      "int": {
+        "value": 2,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 3,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 11,
+        "formula": ""
+      },
+      "hp": {
+        "value": 39,
+        "max": 39,
+        "formula": "6d1 0 + 6",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "beast",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 1,
+      "xp": {
+        "value": 200
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "None"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Gigante Toad",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/giant-toad.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "4qT0iW0lzG0NL4nE",
+      "name": "Amphibious",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The toad can breathe air and water.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!lEeLjjP8oqMZswKE.4qT0iW0lzG0NL4nE"
+    },
+    {
+      "_id": "45gRmUwuvDX1caz3",
+      "name": "Standing Leap",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The toad's Long Jump is up to 20 feet and its High Jump is up to 10 feet with or without a running start.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!lEeLjjP8oqMZswKE.45gRmUwuvDX1caz3"
+    },
+    {
+      "_id": "lFVdOtIBe3UYYhlh",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 5 (1d6 + 2) Perfurante de dano plus 5 (2d4) Veneno de dano. If o alvo is a Medium or smaller creature, it has the Grap- pled condition (escape DC 12).</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "PBv081KZDq0IwPk7": {
+            "_id": "PBv081KZDq0IwPk7",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "1d6+2",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!lEeLjjP8oqMZswKE.lFVdOtIBe3UYYhlh"
+    },
+    {
+      "_id": "bpHFJll2scekLWjH",
+      "name": "Swallow",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The toad swallows· a Medium or smaller target it is grappling. While swallowed, o alvo isn't Grap- pled but has the Cego and Impedido conditions, and it has Total Cover against attacks and other effects 0 o_utside the toad. In addition, o alvo takes 10 (3d6) I Ácido de dano at <( the end of each of the toad's turns. The 3 toad can have only one target swallowed at a time, and it can't use Bite while it has a swallowed target. If the I .toad dies, a swallowed creature is CL no longer Impedido and can escape 0 from the corpse using 5 feet of move- z ment, exiting with the Caído condition. \\ ::J GIANT VENOMOUS SNAKE Medium Beast, Unaligned AC 14 Iniciativa +4 (14) HP 11 (2d8 + 2) Speed 40 ft., Swim 40 ft. MOD SAVE M OD SAVE M OD S AV E</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!lEeLjjP8oqMZswKE.bpHFJll2scekLWjH"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Giant Toad",
+      "page": 362,
+      "cr": "1",
+      "warnings": []
+    }
+  }
+}

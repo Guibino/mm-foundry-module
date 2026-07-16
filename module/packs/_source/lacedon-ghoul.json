@@ -1,0 +1,366 @@
+{
+  "_id": "TWFcXPQKxVdGGIQ2",
+  "_key": "!actors!TWFcXPQKxVdGGIQ2",
+  "folder": "bKQUPthn1V2Yu6Bn",
+  "name": "Lacedon Ghoul",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/lacedon-ghoul.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 13,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 0
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0
+      },
+      "int": {
+        "value": 7,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 70,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 6,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 12,
+        "formula": ""
+      },
+      "hp": {
+        "value": 22,
+        "max": 22,
+        "formula": "5d8",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30,
+        "swim": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Chaotic",
+      "cr": 1,
+      "xp": {
+        "value": 200
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "cold"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion",
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comum"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Lacedon Ghoul",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/lacedon-ghoul.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "KWYS9KgB7in22TC2",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The ghoul makes two Icy Bite attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!TWFcXPQKxVdGGIQ2.KWYS9KgB7in22TC2"
+    },
+    {
+      "_id": "shAY97r5s6dpnQov",
+      "name": "Icy Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 9 (2d6 + 2) Frio de dano, and o alvo's Speed decreases by 5 feet until the start of the ghoul 1 s next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "yguiG3B2cmyDnwoI": {
+            "_id": "yguiG3B2cmyDnwoI",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "2",
+                  "types": [
+                    "cold"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "2d6+2",
+            "damageType": "cold"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!TWFcXPQKxVdGGIQ2.shAY97r5s6dpnQov"
+    },
+    {
+      "_id": "lNSKB30ZRLc3EUxc",
+      "name": "Claw",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4,· alcance 5 ft. Acerto: 4 (1d4 + 2) Cortante de dano. If o alvo is a creature that isn't an Undead or elf, it is subjected to the following effect. Constituição Teste de Resistência: DC l 0. Falha: The target has the Paralisado condition until the end of its next turn. I - s ·o N US A CTIONS l/1</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "emJLgUAhFJXOBDbW": {
+            "_id": "emJLgUAhFJXOBDbW",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "1d4+2",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!TWFcXPQKxVdGGIQ2.lNSKB30ZRLc3EUxc"
+    },
+    {
+      "_id": "B5245UeuFTZTCeht",
+      "name": "Watery Rush",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>While underwater, the ghoul moves up N to half its Swim Speed without provoking Opportu- >- w nity Attacks. z ALAS, THE E L DER ELVES MADE A FATAL M I STAKE. WH E N THE DRAG O N' S TEAR COMET NEXT RET U RNED, THE VA ST GATE -STILL KEYED TO THE FA R REA L M O F AL IE N ENT I TIES - LI N K E D T O THE CO M E T AN D O PENED AGA I N . AN D W H AT EMER GED , ULUL A TI N G P R O FANIT IE S, SAN G UNNAMEABLE HUNGERS I NTO AN U NG U ARDE D W O R LD . - FROM THE BooK o F THE G ATE , F OU ND NEAR F I REST O RM PE A K GIBBERING MOUTHER Medium Aberration, Chaotic Neutral AC 9 Iniciativa - l (9) HP 52 (7d8 + 21) Speed 20 ft., Swim 20 ft. MOD SAVE MOD S AV E MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!TWFcXPQKxVdGGIQ2.B5245UeuFTZTCeht"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Lacedon Ghoul",
+      "page": 134,
+      "cr": "1",
+      "warnings": []
+    }
+  }
+}

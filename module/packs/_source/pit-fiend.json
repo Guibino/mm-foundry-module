@@ -1,0 +1,480 @@
+{
+  "_id": "Im0IqwHqZXIuQvVq",
+  "_key": "!actors!Im0IqwHqZXIuQvVq",
+  "folder": "Hp5o2ufz9hhrO2ew",
+  "name": "Pit Fiend",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/pit-fiend.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 26,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 1
+      },
+      "con": {
+        "value": 24,
+        "proficient": 0
+      },
+      "int": {
+        "value": 22,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 18,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 24,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 21,
+        "formula": ""
+      },
+      "hp": {
+        "value": 337,
+        "max": 337,
+        "formula": "27d10 + 189",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30,
+        "fly": 60
+      },
+      "senses": {
+        "units": "ft",
+        "truesight": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "fiend",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Mau",
+      "cr": 20,
+      "xp": {
+        "value": 25000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "fire",
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Infernal"
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 1,
+        "ability": "wis"
+      },
+      "per": {
+        "value": 2,
+        "ability": "cha"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Pit Fiend",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/pit-fiend.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "MiWQHtdir7G1UipQ",
+      "name": "Diabolical Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the pit fiend dies outside the Nine Hells, its body disappears in sulfurous smoke, and it gains a new body instantly, reviving with all its Pontos de Vida somewhere in the Nine Hells.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Im0IqwHqZXIuQvVq.MiWQHtdir7G1UipQ"
+    },
+    {
+      "_id": "KJbXwXCaQQkpzDym",
+      "name": "Fear Aura",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The pit fiend emanates an aura in a 20-foot Emanation while it doesn't have the Incapacitado condition. Sabedoria Teste de Resistência: DC 21, any enemy that starts its turn in the aura. Falha: The target has the Amedrontado condition until the start of its next turn. Sucesso: The target is immune to this pit fiend's aura UJ for 24 hours. V1 OJ cc.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 21,
+            "saveAbility": "wis"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Im0IqwHqZXIuQvVq.KJbXwXCaQQkpzDym"
+    },
+    {
+      "_id": "NVd1AqgGF7QU0hcE",
+      "name": "Resistência Lendária (4/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the pit fiend fails a sav- ing throw, it can choose to succeed instead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "4",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Im0IqwHqZXIuQvVq.NVd1AqgGF7QU0hcE"
+    },
+    {
+      "_id": "xzwkSHhgXUeaTUJk",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The pit fiend has Advantage on sav- ing throws against spells and other magical effects.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Im0IqwHqZXIuQvVq.xzwkSHhgXUeaTUJk"
+    },
+    {
+      "_id": "u5dfDF1u7F7dyQxw",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The pit fiend makes one Bite attack, two Devilish Claw attacks, and one Fiery Mace attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Im0IqwHqZXIuQvVq.u5dfDF1u7F7dyQxw"
+    },
+    {
+      "_id": "Irc0pvOxRIoeJUb0",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 10 ft : Acerto: 18 (3d6 + 8) Perfurante de dano. If o alvo is a creature, it must make the following saving throw. Constituição Teste de Resistência: DC 21. Falha: The target has the Envenenado condition. While Envenenado, o alvo can't regain Pontos de Vida and takes 21 (6d6) Veneno de dano at the start of each of its turns, and it repeats the save at the end of each of its turns, ending the effect on itself on a suc- cess. After l minute, it succeeds automatically.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "sbChw3eWZpUYQ4i9": {
+            "_id": "sbChw3eWZpUYQ4i9",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "14",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 3,
+                  "denomination": 6,
+                  "bonus": "8",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 14,
+            "attackType": "melee",
+            "damageFormula": "3d6+8",
+            "damageType": "piercing",
+            "saveDc": 21,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Im0IqwHqZXIuQvVq.Irc0pvOxRIoeJUb0"
+    },
+    {
+      "_id": "5g93SFdls1NKwLBR",
+      "name": "Devilish Claw",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +14, alcance 10 ft. Acerto: 26 (4d8 + 8) Necrótico de dano. _ Fiery Mace. Rolagem de Ataque Corpo a Corpo: + 14, alcance 10 ft. Acerto: 22 (4d6 + 8) Energia de dano plus 21 (6d6) Fogo de dano. · Hellfire Conjuração (Recarga 4-6). The pit fiend casts Fogoball (level 5 version) twice, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 21). It can replace one Fogoball with Hold Monster (level 7 version) or ~all of Fogo. PI T FIEND PIXIE Tiny Fey, Neutral Good AC 15 Iniciativa +5 (15) HP 9 (6d4 - 6) Speed l O ft., Fly 30 ft . MOD SAVE MOD S AVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "QP2E08ZqABwvYgEQ": {
+            "_id": "QP2E08ZqABwvYgEQ",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "14",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 8,
+                  "bonus": "8",
+                  "types": [
+                    "necrotic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 14,
+            "attackType": "melee",
+            "damageFormula": "4d8+8",
+            "damageType": "necrotic"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Im0IqwHqZXIuQvVq.5g93SFdls1NKwLBR"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Pit Fiend",
+      "page": 245,
+      "cr": "20",
+      "warnings": []
+    }
+  }
+}

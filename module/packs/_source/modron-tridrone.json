@@ -1,0 +1,275 @@
+{
+  "_id": "7XGUqJ0poyI6DSZv",
+  "_key": "!actors!7XGUqJ0poyI6DSZv",
+  "folder": "CVeezowVb7BNP8yc",
+  "name": "Modron Tridrone",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/modron-tridrone.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 12,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 13,
+        "proficient": 0
+      },
+      "con": {
+        "value": 12,
+        "proficient": 0
+      },
+      "int": {
+        "value": 9,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 9,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 15,
+        "formula": ""
+      },
+      "hp": {
+        "value": 16,
+        "max": 16,
+        "formula": "3d8+3",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "truesight": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "construct",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Neutro",
+      "cr": 0,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": "Charmed"
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Madron"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Modron Tridrone",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/modron-tridrone.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "4f7VSffc3bUA84vp",
+      "name": "Disintegration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the modron dies, it disintegrates into dust, leaving behind anything it was wearing or carry, ng.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!7XGUqJ0poyI6DSZv.4f7VSffc3bUA84vp"
+    },
+    {
+      "_id": "jNJ3BqVuZNXdmtVE",
+      "name": "Habilidade",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>• Ataque Múltiplo. The modron makes three Clockwork Spear attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!7XGUqJ0poyI6DSZv.jNJ3BqVuZNXdmtVE"
+    },
+    {
+      "_id": "wQ9etBpxkGnuh9yL",
+      "name": "Clockwork Spear",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +3, alcance 5 ft. or range 120 ft. Acerto: 4 (1d6 + 1) Energia de dano. Hit or Erro: The spear magically returns to the modron's _ hand immediately after a ranged attack._ MODRONS ~ 217 MODRON UADRONE Quadrones are among the most relatable modrons- and those most lilzely to go rogue. M ODRON PENTADRONE Pentadrones oversee and protect contingents of lesser modrons. They're quick to call lengthy meet- ings with other modrons when making decisions. MODRON QUADRONE Medium Construct, Lawful Neutral AC 16 Ini ti ative +2 (12) HP 22 (4d8 + 4) Speed 30 ft., F ly 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "pwcptAzAe9t56cVR": {
+            "_id": "pwcptAzAe9t56cVR",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "3",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "1",
+                  "types": [
+                    "force"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 3,
+            "attackType": "ranged",
+            "damageFormula": "1d6+1",
+            "damageType": "force"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!7XGUqJ0poyI6DSZv.wQ9etBpxkGnuh9yL"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Modron Tridrone",
+      "page": 219,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

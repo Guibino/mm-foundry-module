@@ -1,0 +1,345 @@
+{
+  "_id": "ljXjGNdxvHdm2JxQ",
+  "_key": "!actors!ljXjGNdxvHdm2JxQ",
+  "folder": "1nioWC3kx0YxX8qj",
+  "name": "Spectator",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/spectator.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 8,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0
+      },
+      "con": {
+        "value": 14,
+        "proficient": 0
+      },
+      "int": {
+        "value": 13,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 17,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 14,
+        "formula": ""
+      },
+      "hp": {
+        "value": 45,
+        "max": 45,
+        "formula": "7d8 + 14",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 5,
+        "fly": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "aberration",
+        "subtype": "Beholder",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Neutro",
+      "cr": 3,
+      "xp": {
+        "value": 700
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Spectator",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/spectator.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "NDvEwVo1eYFDdpts",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The spectator uses Eye Rays twice.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ljXjGNdxvHdm2JxQ.NDvEwVo1eYFDdpts"
+    },
+    {
+      "_id": "XWCz25ZPd1K7EmGj",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Melee Attack Ro//: +4, alcance 5 ft. Acerto: 5 (7d6 + 2) Perfurante de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "7d6+2",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ljXjGNdxvHdm2JxQ.XWCz25ZPd1K7EmGj"
+    },
+    {
+      "_id": "eXiiObdN3ZHR4IFM",
+      "name": "Eye Rays",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The spectator randomly shoots one of the fol- lowing magical rays at a target it can see within 90 feet of itself (roll 1d4; reroll if the spectator has already used that ray during this turn): l: Confusion Ray. Sabedoria Teste de Resistência: DC 12. Falha: J 5 (2d4) Psíquico de dano, and o alvo can't take Reactions until the end of its next turn. On its next turn, o alvo can't move, and it uses its action to make a melee or ranged attack against a randomly determined creature within range. If o alvo can't attack, it does nothing on that turn. 2: Paralyzing Ray. Constituição Teste de Resistência: DC 12. Falha: The target has the Paralisado condition and repeats the save at the end of each of its turns, end- ing the effect on itself on a success. After 1 minute, it succeeds automatically. 3: Fear Ray. Sabedoria Teste de Resistência: DC 12. Falha: 5 (2d4) Psíquico de dano, and o alvo has the Fright- ened condition until the end of its next turn. 4: Wounding Ray. Constituição Teste de Resistência: DC 12. Falha: 16 (3d1 0) Necrótico de dano. Sucesso: Metade do dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "0MuVq9UeeM57P75k": {
+            "_id": "0MuVq9UeeM57P75k",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "12"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "",
+                  "types": [
+                    "psychic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d4",
+            "damageType": "psychic",
+            "saveDc": 12,
+            "saveAbility": "wis"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ljXjGNdxvHdm2JxQ.eXiiObdN3ZHR4IFM"
+    },
+    {
+      "_id": "8GaOsE2gGmdN4FtG",
+      "name": "Spell Reflection",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Trigger: The spectator succeeds on a saving throw against a spell, or a spell's attack roll lJ z misses it. Response-Destreza Teste de Resistência: DC 12, V1 uJ uma criatura the spectator.can see with in 120 feet. Fail- Cr'.: ~ ure: 10 (3d6) Energia de dano. SPECTATOR Magic-Bound Beholder-J(in</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "u0zbLnNgqpLzcKQt": {
+            "_id": "u0zbLnNgqpLzcKQt",
+            "type": "save",
+            "activation": {
+              "type": "reaction",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "12"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 12,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ljXjGNdxvHdm2JxQ.8GaOsE2gGmdN4FtG"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Spectator",
+      "page": 291,
+      "cr": "3",
+      "warnings": []
+    }
+  }
+}

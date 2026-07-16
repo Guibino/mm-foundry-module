@@ -1,0 +1,452 @@
+{
+  "_id": "35z9VbcjnbNX18QY",
+  "_key": "!actors!35z9VbcjnbNX18QY",
+  "folder": "kCLi0hD5goTIU7AM",
+  "name": "Intellect Devourer",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/intellect-devourer.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 6,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0
+      },
+      "con": {
+        "value": 13,
+        "proficient": 0
+      },
+      "int": {
+        "value": 14,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 11,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 12,
+        "formula": ""
+      },
+      "hp": {
+        "value": 28,
+        "max": 28,
+        "formula": "8d4 + 8",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "",
+        "subtype": "",
+        "swarm": "",
+        "custom": "Unknown"
+      },
+      "alignment": "Leal e Mau",
+      "cr": 2,
+      "xp": {
+        "value": 4
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "tiny",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "psychic"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Understands Deep Speech but can't speak"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Intellect Devourer",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/intellect-devourer.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "NGUKJDRArBlIm7mK",
+      "name": "Detect Inteligência",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The intellect devourer magically senses the location of any creature within 300 feet of itself that has an Inteligência score of 3 or higher, re- gardless of interposing barriers.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!35z9VbcjnbNX18QY.NGUKJDRArBlIm7mK"
+    },
+    {
+      "_id": "TPJarorkWS4Sacbq",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The intellect devourer makes one Claw at- tack and uses Devour Intellect.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!35z9VbcjnbNX18QY.TPJarorkWS4Sacbq"
+    },
+    {
+      "_id": "zfjMBAnUlZMbWt1x",
+      "name": "Claw",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: 7 (2d4 + 2) Cortante de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "BQLVNTfxKy0bppLo": {
+            "_id": "BQLVNTfxKy0bppLo",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 4,
+                  "bonus": "2",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee",
+            "damageFormula": "2d4+2",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!35z9VbcjnbNX18QY.zfjMBAnUlZMbWt1x"
+    },
+    {
+      "_id": "U33eJa2vO63XlrAM",
+      "name": "Devour Intellect",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Inteligência Teste de Resistência: DC 12, uma criatura the intellect devourer can see within 5 feet. Falha: 11 (2d10) Psíquico de dano, and o alvo has the Atordoado condition until the end of the intellect de- vourer's next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "hjGI1GBpVleAXdOo": {
+            "_id": "hjGI1GBpVleAXdOo",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "int"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "12"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "",
+                  "types": [
+                    "psychic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d10",
+            "damageType": "psychic",
+            "saveDc": 12,
+            "saveAbility": "int"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!35z9VbcjnbNX18QY.U33eJa2vO63XlrAM"
+    },
+    {
+      "_id": "jBhOIaf2pCoDTeaR",
+      "name": "Steal Body",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Inteligência Teste de Resistência: DC 12, one Small or Medium creature within 5 feet that has the Inca- pacitated condition, is a Humanoid or Beast, and has - 10 Pontos de Vida or fewer. Falha: The intellect devourer possesses o alvo, consumes its brain, and teleports inside its skull. While there, the intellect devourer has Total Cover against attacks and other effects originat- ing outside its host. The intellect devourer retains its Inteligência, Sabedoria, and Carisma scores; its under- standing of Fala Profunda; its telepatia; and its Detect</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "k9AZ1jsr3zxsZw0m": {
+            "_id": "k9AZ1jsr3zxsZw0m",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "int"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "12"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 12,
+            "saveAbility": "int"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!35z9VbcjnbNX18QY.jBhOIaf2pCoDTeaR"
+    },
+    {
+      "_id": "8kQF4FKQjGn3H1Ol",
+      "name": "Inteligência trait",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>It otherwise adopts o alvo's game statistics. It knows everything o alvo knew, includ- ing spells and languages. If the host body dies, the intellect devourer must leave it. The intellect devourer is also forced out if o alvo regains its devoured brain by means of a Wish , spell. By spending 5 feet of its movement, the intellect devourer can voluntarily leave the body, teleporting to the nearest unoccupied space within 5 feet of it. The body then dies unless its brain is restored before the . end of the intellect devourer's next turn ~ INTELLE0T DEV OU RER ~ 179 I NV I S IBL E STA LK ER Unseen Magical Assassin</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!35z9VbcjnbNX18QY.8kQF4FKQjGn3H1Ol"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Intellect Devourer",
+      "page": 181,
+      "cr": "2",
+      "warnings": []
+    }
+  }
+}

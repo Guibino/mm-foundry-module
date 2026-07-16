@@ -1,0 +1,310 @@
+{
+  "_id": "lImBcA9smX1QbQ82",
+  "_key": "!actors!lImBcA9smX1QbQ82",
+  "folder": "1nioWC3kx0YxX8qj",
+  "name": "Githzerai Psion",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 12,
+        "proficient": 1
+      },
+      "dex": {
+        "value": 18,
+        "proficient": 1
+      },
+      "con": {
+        "value": 15,
+        "proficient": 0
+      },
+      "int": {
+        "value": 19,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 18,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 14,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 18,
+        "formula": ""
+      },
+      "hp": {
+        "value": 169,
+        "max": 169,
+        "formula": "26d8 + 52",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 40,
+        "fly": 40
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "aberration",
+        "subtype": "G ith",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Neutro",
+      "cr": 12,
+      "xp": {
+        "value": 8400
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Githzerai Psion",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/githzerai-psion.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "nm8SMnHKNXuHURy5",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The githzerai makes three Psíquico Warp attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!lImBcA9smX1QbQ82.nm8SMnHKNXuHURy5"
+    },
+    {
+      "_id": "aXaEnLXZkpmVcTIw",
+      "name": "Psíquico Warp",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +8, alcance 5 ft. or range 120 ft. Acerto: 26 (4d10 + 4) Psíquico de dano, and o alvo has the githzerai's choice of (A) the Enfeitiçado condition until the start of the githzerai's next turn or (B) the Caído condition, provided o alvo is a Large or smaller creature.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "XXVgiEYvy3rExJIA": {
+            "_id": "XXVgiEYvy3rExJIA",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "8",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 4,
+                  "denomination": 10,
+                  "bonus": "4",
+                  "types": [
+                    "psychic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 8,
+            "attackType": "ranged",
+            "damageFormula": "4d10+4",
+            "damageType": "psychic"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!lImBcA9smX1QbQ82.aXaEnLXZkpmVcTIw"
+    },
+    {
+      "_id": "nn58exFGfyYLWI1Y",
+      "name": "Psionic Defense",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The githyanki casts Feather Fall or Shield in response to the spell's trigger, requiring no spel I components and using the same spellcasting abil- ity as Conjuração. GITHZERA I 1 37 GLABREZU L arge Fiend (Demon) , Chaotic Evil AC 17 Iniciativa +6 (16) HP 189 (18d10 + 90) Speed 40 ft. MOD SAVE MOD SA VE M OD S AVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!lImBcA9smX1QbQ82.nn58exFGfyYLWI1Y"
+    },
+    {
+      "_id": "sQGe9SGvjl4cc6kj",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The githzerai casts one of the following spells, requiring no spell components and using Intelli- gence as the spellca?ting ability (spell save DC 16): À Vontade: Mage Hand (the hand is Invisível) 1/Dia Each: Plane Shift, See Invisibility</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!lImBcA9smX1QbQ82.sQGe9SGvjl4cc6kj"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Githzerai Psion",
+      "page": 139,
+      "cr": "12",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "_id": "HeP1STxqXaFR2ux1",
+  "_key": "!actors!HeP1STxqXaFR2ux1",
+  "folder": "3SEe9J5t05jhrkCa",
+  "name": "Owlbear",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 20,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 12,
+        "proficient": 0
+      },
+      "con": {
+        "value": 17,
+        "proficient": 0
+      },
+      "int": {
+        "value": 3,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 7,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13,
+        "formula": ""
+      },
+      "hp": {
+        "value": 59,
+        "max": 59,
+        "formula": "7d10 + 21",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40,
+        "climb": 40
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "monstrosity",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 3,
+      "xp": {
+        "value": 700
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Owlbear",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/owlbear.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "gJXiXY8WdBIPSFcc",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The owlbear makes two Rend attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HeP1STxqXaFR2ux1.gJXiXY8WdBIPSFcc"
+    },
+    {
+      "_id": "Ej8lTad8MtzGMzZk",
+      "name": "Rend",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance 5 ft. Acerto: 14 (2d8 + 5) Cortante de dano. OWLBEARS 0wlbears dwell in distinctive dens. Roll on or choose a result\" from the 0wlbear Den Features ta- ble to inspire an owlbear den's noteworthy traits. OWLBEAR DEN FEATURES 1d4 An Owlbear Den Contains ... 1 Evidence of previous occupants, like bandits, wolves, or dragons. 2 Heaps of regurgitated pellets studded with coins or other treasure. 3 A nest with 1d6 owlbear eggs. 4 Passages through the earth or hollow trees. O W LBEAR 0wlbears are tenacious hunters that might track prey over miles and rarely give up their hunts. PRIMEVAL OWLBEAR Ancient forests and Feywild demesnes steeped in magic can give rise to particularly large and vicious owlbears. These · primeval specimens can fly-albeit poorly-and emit thunderous screeches that can rattle foes and even tear them asunder. PRIMEVAL 0WLBEAR Huge Monstrosity, Unaligned AC 16 Iniciativa +5 (15) HP 126 (12d12 + 48) Speed 40 ft., Climb 40 ft., Fly 5 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "AQvV8dSRS772lvAg": {
+            "_id": "AQvV8dSRS772lvAg",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "5",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "melee",
+            "damageFormula": "2d8+5",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HeP1STxqXaFR2ux1.Ej8lTad8MtzGMzZk"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Owlbear",
+      "page": 236,
+      "cr": "3",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "_id": "Vbr9pdv1bamRUotH",
+  "_key": "!actors!Vbr9pdv1bamRUotH",
+  "folder": "1nioWC3kx0YxX8qj",
+  "name": "Death Slaad",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/death-slaad.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 10,
+        "formula": ""
+      },
+      "hp": {
+        "value": 178,
+        "max": 178,
+        "formula": "21d8 + 84",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "aberration",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Mau",
+      "cr": 10,
+      "xp": {
+        "value": 5900
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {
+      "arc": {
+        "value": 2,
+        "ability": "int"
+      },
+      "prc": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Death Slaad",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/death-slaad.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "qulUiO3EyPOUfA8K",
+      "name": "Magic Resistance",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The slaad has Advantage on saving throws against spells and other magical effects. _J Regeneration. The slaad regains 10 Pontos de Vida at the 0 start of each of its turns if it has at least 1 Hit Point. Cl:'. A CTIONS w Ataque Múltiplo. The slaad makes two Chaos Blade attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Vbr9pdv1bamRUotH.qulUiO3EyPOUfA8K"
+    },
+    {
+      "_id": "1uOiQqIOeoiFy4LB",
+      "name": "Chaos Blade",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +9, alcance 10 ft. Acerto: 11 (1d12 + 5) Cortante de dano plus 10 (3d6) Necrótico de dano. Until the start of the slaad's next turn, the tar- get has a condition determined by rolling 1d4: on a 1, Enfeitiçado; on a 2, Amedrontado; on a 3, Envenenado; or on a 4, Incapacitado.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9,
+            "attackType": "melee",
+            "damageFormula": "1d12+5",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Vbr9pdv1bamRUotH.1uOiQqIOeoiFy4LB"
+    },
+    {
+      "_id": "2HYXH1lJ5DOUElEH",
+      "name": "Shape-Shift",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The slaad shape-shifts into a Small or Me- dium Humanoid, or it returns to its true form. Other than its size, its game statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. S LAADI 287 SOLAR Large Celestial (Angel) , Lawful Good</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Vbr9pdv1bamRUotH.2HYXH1lJ5DOUElEH"
+    },
+    {
+      "_id": "LgbxNy4G4Ie9kdqu",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The slaad casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 16): À Vontade: Detect Magic, Detect Thoughts, Invisibility (self only), Mage Hand, Major Image 1/Dia Each: Blight (level 8 version), Cloudki/1 (level 6 version), Fly, Plane -Shift, Tongues</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!Vbr9pdv1bamRUotH.LgbxNy4G4Ie9kdqu"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Death Slaad",
+      "page": 289,
+      "cr": "10",
+      "warnings": [
+        "Atributos nao reconhecidos"
+      ]
+    }
+  }
+}

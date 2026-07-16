@@ -1,0 +1,283 @@
+{
+  "_id": "H3tBxCgxwIitEuKe",
+  "_key": "!actors!H3tBxCgxwIitEuKe",
+  "folder": "3SEe9J5t05jhrkCa",
+  "name": "Weretiger",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/weretiger.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 77,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 75,
+        "proficient": 0
+      },
+      "con": {
+        "value": 76,
+        "proficient": 0
+      },
+      "int": {
+        "value": 70,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 13,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 77,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 72,
+        "formula": ""
+      },
+      "hp": {
+        "value": 120,
+        "max": 120,
+        "formula": "l 6d8 + 48",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "monstrosity",
+        "subtype": "Lycanth r ope",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 4,
+      "xp": {
+        "value": 1100
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Common (can't speak in tiger form)"
+      }
+    },
+    "skills": {
+      "ste": {
+        "value": 1,
+        "ability": "dex"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Weretiger",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/weretiger.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "NqEaZrZ3PbN9fffe",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The weretiger makes two attacks, using</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!H3tBxCgxwIitEuKe.NqEaZrZ3PbN9fffe"
+    },
+    {
+      "_id": "qM59FbS26lotqA2G",
+      "name": "Scratch or Longbow in any combination",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>It can replace one attack with a Bite attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!H3tBxCgxwIitEuKe.qM59FbS26lotqA2G"
+    },
+    {
+      "_id": "hPYQ1Q9esbbmt0rf",
+      "name": "Bite (Tiger or Hybrid Form Only)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +5, alcance 5 ft. Acerto: 72 (2d8 + 3) Perfurante de dano. If o alvo is a Humanoid, it is subjected to the following effect. Constituição Teste de Resistência: DC 13. Falha: The WERETIGER WERETIGER Changed by the Power of the Tiger</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "LcpPuvogAm14KzvI": {
+            "_id": "LcpPuvogAm14KzvI",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "5",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 8,
+                  "bonus": "3",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 5,
+            "attackType": "melee",
+            "damageFormula": "2d8+3",
+            "damageType": "piercing",
+            "saveDc": 13,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!H3tBxCgxwIitEuKe.hPYQ1Q9esbbmt0rf"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Weretiger",
+      "page": 328,
+      "cr": "4",
+      "warnings": []
+    }
+  }
+}

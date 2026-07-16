@@ -1,0 +1,222 @@
+{
+  "_id": "gN9JK4kSceL2oaFx",
+  "_key": "!actors!gN9JK4kSceL2oaFx",
+  "folder": "3SEe9J5t05jhrkCa",
+  "name": "Flying Snake",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/flying-snake.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 4,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 75,
+        "proficient": 0
+      },
+      "con": {
+        "value": 77,
+        "proficient": 0
+      },
+      "int": {
+        "value": 2,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 72,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 5,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 14,
+        "formula": ""
+      },
+      "hp": {
+        "value": 5,
+        "max": 5,
+        "formula": "2d4",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30,
+        "fly": 60
+      },
+      "senses": {
+        "units": "ft",
+        "blindsight": 70
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "monstrosity",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 0,
+      "xp": {
+        "value": 25
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "tiny",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "None"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Flying Snake",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/flying-snake.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "n7qf7JP5rql8bxOe",
+      "name": "Flyby",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The snake doesn't provoke an Opportunity At- tack when it flies out of an enemy's alcance.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!gN9JK4kSceL2oaFx.n7qf7JP5rql8bxOe"
+    },
+    {
+      "_id": "mTknaeDNS8AJZva8",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +4, alcance 5 ft. Acerto: l Perfurante . de dano plus 5 (2d4) Veneno de dano. APPENDIX A I ANIMALS 353 Tiny Beast, Unaligned AC ll Initiativ e+ l ( l l) HP l (1d4 - l) Speed 20 ft., Swim 20 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "kXMME6sZhueBRS4i": {
+            "_id": "kXMME6sZhueBRS4i",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "4",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 4,
+            "attackType": "melee"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!gN9JK4kSceL2oaFx.mTknaeDNS8AJZva8"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Flying Snake",
+      "page": 355,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

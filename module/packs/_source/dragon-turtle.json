@@ -1,0 +1,310 @@
+{
+  "_id": "08lbadwSg0mooI3l",
+  "_key": "!actors!08lbadwSg0mooI3l",
+  "folder": "kCLi0hD5goTIU7AM",
+  "name": "Dragão Turtle",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/dragon-turtle.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 25,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0
+      },
+      "con": {
+        "value": 20,
+        "proficient": 1
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 12,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 20,
+        "formula": ""
+      },
+      "hp": {
+        "value": 356,
+        "max": 356,
+        "formula": "23d20 + 115",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "",
+        "subtype": "",
+        "swarm": "",
+        "custom": "Unknown"
+      },
+      "alignment": "Sem Tendência",
+      "cr": 17,
+      "xp": {
+        "value": 18000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Dragão Turtle",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/dragon-turtle.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "m6HVVCY4LgufSOrq",
+      "name": "Amphibious",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon can breathe air and water.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!08lbadwSg0mooI3l.m6HVVCY4LgufSOrq"
+    },
+    {
+      "_id": "mdRP6NENwQqf7mR2",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon makes three Bite attacks. It can replace one attack with a Tail attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!08lbadwSg0mooI3l.mdRP6NENwQqf7mR2"
+    },
+    {
+      "_id": "ahDtmHZRdmVY9yzr",
+      "name": "Bite",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Me lee Attack Roll:+ 13, alcance 15 ft. Acerto: 23 (3d1 0 + 7) Perfurante de dano plus 7 (2d6) Fogo de dano. Being underwater doesn't grant Resistance to this Fogo de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "3d10+7",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!08lbadwSg0mooI3l.ahDtmHZRdmVY9yzr"
+    },
+    {
+      "_id": "s1QkCxuUEeudz40b",
+      "name": "Tail",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Melee Attack Ro - II:+ 13, alcance 15 ft. Acerto: 18 (2d1 0 + 7) Concussão de dano. If o alvo is a Huge or • smaller creature, it has the Caído condition.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d10+7",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!08lbadwSg0mooI3l.s1QkCxuUEeudz40b"
+    },
+    {
+      "_id": "gV2OizXdMO6fT4sc",
+      "name": "Steam Breath (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Sa1.1ing Throw: DC 19, cada criatura in a 60-foot Cone. Falha: 56 (l 6d6) Fogo de dano. Sucesso: Metade do dano. Falha ou Sucesso: Being underwater doesn't grant Resistance to this Fogo de dano. D RAGON TURTLE 1 03 DRETCHES Demons of Frenzy and Vulgarity</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "l6d6",
+            "damageType": "fire"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!08lbadwSg0mooI3l.gV2OizXdMO6fT4sc"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Dragon Turtle",
+      "page": 105,
+      "cr": "17",
+      "warnings": []
+    }
+  }
+}

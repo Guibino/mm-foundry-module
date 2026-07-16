@@ -1,0 +1,166 @@
+{
+  "_id": "FlH5hPUFaV82Klux",
+  "_key": "!actors!FlH5hPUFaV82Klux",
+  "folder": "IQP9BfRMl9yEsYGp",
+  "name": "Deva",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/deva.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 18,
+        "proficient": 0
+      },
+      "con": {
+        "value": 18,
+        "proficient": 0
+      },
+      "int": {
+        "value": 17,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 20,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 20,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 17,
+        "formula": ""
+      },
+      "hp": {
+        "value": 229,
+        "max": 229,
+        "formula": "27d8 + 108",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": true,
+        "walk": 30,
+        "fly": 90
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "celestial",
+        "subtype": "Angel",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Bom",
+      "cr": 10,
+      "xp": {
+        "value": 5900
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": "Charmed; Exhaustion; Frightened"
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "All, te lepathy 120 ft."
+      }
+    },
+    "skills": {
+      "ins": {
+        "value": 2,
+        "ability": "wis"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Deva",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/deva.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "iq29DPU2ioIVYo5d",
+      "name": "Exalted Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the deva dies outside Mount Celestia, its body disappears, and it gains a new body instantly, reviving with all its Pontos de Vida somewhere in :s Mount Celestia. UJ 0 Magic Resistance. The deva has Advantage on saving <( throws against spells and other magical effects. D E VA World-Changing Angelic Messenger</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!FlH5hPUFaV82Klux.iq29DPU2ioIVYo5d"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Deva",
+      "page": 99,
+      "cr": "10",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "_id": "S5stPrwh90kGoxqJ",
+  "_key": "!actors!S5stPrwh90kGoxqJ",
+  "folder": "CVeezowVb7BNP8yc",
+  "name": "Gorgon",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 20,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 17,
+        "proficient": 0
+      },
+      "con": {
+        "value": 78,
+        "proficient": 0
+      },
+      "int": {
+        "value": 2,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 7,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 19,
+        "formula": ""
+      },
+      "hp": {
+        "value": 114,
+        "max": 114,
+        "formula": "12d10 + 48",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "construct",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 5,
+      "xp": {
+        "value": 1800
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": "Exhaustion; Petrified"
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "None"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Gorgon",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/gorgon.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "qw4ucIfPTTt6C8N5",
+      "name": "Gore",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance 5 ft. Acerto: 18 (2d1 2 + 5) Perfurante de dano. If o alvo is a Large or smaller creature and the gorgon moved 20+ feet straight to- ward it immediately before the hit, o alvo has the Caído condition.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "o5GARqga2yf9iVBi": {
+            "_id": "o5GARqga2yf9iVBi",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "8",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 12,
+                  "bonus": "5",
+                  "types": [
+                    "piercing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 8,
+            "attackType": "melee",
+            "damageFormula": "2d12+5",
+            "damageType": "piercing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!S5stPrwh90kGoxqJ.qw4ucIfPTTt6C8N5"
+    },
+    {
+      "_id": "mxHzEllBql63RXUY",
+      "name": "Petrifying Breath (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Teste de Resistência: DC 75, cada criatura in a 30-foot Cone. First Falha: The target has the Impedido condition and repeats the save at the end of its next turn if it is still Impedido, ending the effect on itself on a success. Second Falha: The target has the Petrificado condition instead of the Impedido condition.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "VxRZezcAN1AIZMLB": {
+            "_id": "VxRZezcAN1AIZMLB",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "75"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 75,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!S5stPrwh90kGoxqJ.mxHzEllBql63RXUY"
+    },
+    {
+      "_id": "5GBcG30UfBu2y1MT",
+      "name": "Trample",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Destreza Teste de Resistência: DC 16, uma criatura within 5 feet that has the Caído condition. Falha: 16 (2d10 + 5) Concussão de dano. Sucesso: Metade do dano. GORGONS to guard an area, it attacks any who enter until they flee or are destroyed. Should someone provide the command key, the monster ignores that intruder so long as the intruder remains in its sight. But if the intruder ventures out of sight and then returns without again presenting th __ e command key, the gorgon attacks. Those in a gorgon's territory must remain vigilant and aware of the monster's exact position, or they risk being attacked by a gorgon they thought was no longer a threat. Those who create gorgons strive to give them purposefully obscure command keys. Hints at command keys might be found among the records of a gorgon's creator or in the area the gorg~n pro- tects-perhaps scrawled as a petrified trespasser's final act. Roll on or choose a result from the Gorgon Command I(eys table to inspire the word or signal that temporarily neutralizes a gorgon. GORGON COMMAND KEYS 1d6 Gorgon Won't Attack Those That ... l Cast a particular spell in the gorgon's presence. 2 l<eep their back to the gorgon or otherwise act like they don t see the monster. 3 Offer it a drink of blood, water, or wine. 4 Recite a specific rhyme or sing a certain song. 5 Say its creator's name backward. 6 Wear a mask, perhaps in the shape of a bull or an animal meaningful to the gorgon's creator. GO RG ON Most gorgons are iron bulls wreathed in clouds of petrifying gas. Their metal plates vary in sheen and color, from sleek silver to pitted black. The oldest gorgons might be covered in rust, but this rarely impedes their abilities. These gorgons' stomping grounds are littered with the shattered remains of petrified foes. Many gorgons outlive their creators by centuries, misleading some to believe these cre- ations have natural origins and territories. Most such gorgons continue to follow age-old commands, guarding sites long fallen to ruin. BRAZEN GORGON Followers of the exiled archdevil Moloch altered the process of creating gorgons to craft their own dia- bolical guardians called brazen gorgons. These gor- gons are hollow, bull-like automatons whose metal bodies glow with intense heat. When they charge their foes, the ribs of their frames open like cages to ensnare enemies and roast them within. Brazen gor- gons are often found in blasphemous sites dedicated to Moloch, other archdevils, or bloodthirsty gods. N OTr\\B L E /\\M O NG MY E CC ENTR I C r\\N C EST O R S SC r\\TTERED DES IG NS Wr\\S A SCHE M AT I C O F r\\ SWAM P - D W E LLI NG B O VI NE 10 0 MON ST E R AN D AN OMI N O U S NO TE : 0 B E TTER.\" - LUM THE MAE S TR O , A MIN D OF M E TAL BRAZEN GORGON Large Construct Unaligned AC 19 Initiati ve +2 (12) HP 161 (17d10+68) Speed 40 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "JDooz2gphbVDrgJB": {
+            "_id": "JDooz2gphbVDrgJB",
+            "type": "save",
+            "activation": {
+              "type": "bonus",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "16"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 10,
+                  "bonus": "5",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d10+5",
+            "damageType": "bludgeoning",
+            "saveDc": 16,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!S5stPrwh90kGoxqJ.5GBcG30UfBu2y1MT"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Gorgon",
+      "page": 150,
+      "cr": "5",
+      "warnings": []
+    }
+  }
+}

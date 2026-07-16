@@ -1,0 +1,301 @@
+{
+  "_id": "698TvtttDmuXfrjA",
+  "_key": "!actors!698TvtttDmuXfrjA",
+  "folder": "bKQUPthn1V2Yu6Bn",
+  "name": "Graveyard Revenant",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 20,
+        "proficient": 1
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0
+      },
+      "con": {
+        "value": 20,
+        "proficient": 1
+      },
+      "int": {
+        "value": 13,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 16,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 18,
+        "proficient": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 14,
+        "formula": ""
+      },
+      "hp": {
+        "value": 161,
+        "max": 161,
+        "formula": "14d1 2 + 70",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "undead",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 7,
+      "xp": {
+        "value": 2900
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "charmed",
+          "exhaustion",
+          "frightened"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Common plus two other languages"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Graveyard Revenant",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/graveyard-revenant.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "m53glFR1hEAQmIVo",
+      "name": "Undead Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the revenant dies, it revives 24 hours later unless Dispel Evil or Good is cast on its remains. If it revives, it animates another group of corpses elsewhere on the same plane of existence; it now looks different but uses the same stat block and returns with all its Pontos de Vida.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!698TvtttDmuXfrjA.m53glFR1hEAQmIVo"
+    },
+    {
+      "_id": "Ycb6xhyT9YQ4wkPr",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The revenant makes two Suffocate attacks.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!698TvtttDmuXfrjA.Ycb6xhyT9YQ4wkPr"
+    },
+    {
+      "_id": "OSXQeW7ZbOXdEv9d",
+      "name": "Suffocate",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +8, alcance l Oft. Acerto: l 0 (1d10 + 5) Concussão de dano plus 10 (3d6) Necrótico de dano. If o alvo is a Large or smaller creature, it has the Agarrado condition (escape DC 15). Until the grapple ends, o alvo is suffocating. The revenant can have up to two targets Agarrado in this way at a time.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "qTXtA24eTQQZEKH0": {
+            "_id": "qTXtA24eTQQZEKH0",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "8",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 8,
+            "attackType": "melee"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!698TvtttDmuXfrjA.OSXQeW7ZbOXdEv9d"
+    },
+    {
+      "_id": "dL1kJ12nVZMsm0IX",
+      "name": "Haunting Glare (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Sabedoria Sa1Jing Throw: DC 15, cada criatura in a 30-foot Emanation originating from the revenant. Falha: The target has the Paralisado · condition and repeats the save at the end of each of its turns, ending the effect on itself on a success. After 1 miriute, it succeeds automatically. ~60 ~ REVENANTS HAUNTING REVENANT Haunting revenants possess ruins and forsaken places connected with their deaths-such as aban- doned buildings, wrecked shjps, or junlz heaps. These revenants lurk in plain sight, waiting for their foes to near, then trap their victims within their massive bodies. Those inside a revenant might be battered by animate furrushings or more unsettling manifestations of the revenant's hatred. The places haunting revenants lurk swiftly gain infamous reputations. HAUNTING REVENANT G argantuan Undead , Neutral AC 20 Iniciativa +5 (1 5) HP 203 (14d20 + 56) Speed 30 ft. MOD SAVE MOD SA VE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!698TvtttDmuXfrjA.dL1kJ12nVZMsm0IX"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Graveyard Revenant",
+      "page": 262,
+      "cr": "7",
+      "warnings": []
+    }
+  }
+}

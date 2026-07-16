@@ -1,0 +1,308 @@
+{
+  "_id": "HRKdbC1EM7HGQqgp",
+  "_key": "!actors!HRKdbC1EM7HGQqgp",
+  "folder": "kCLi0hD5goTIU7AM",
+  "name": "Cyclops Oracle",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 22,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 11,
+        "proficient": 0
+      },
+      "con": {
+        "value": 20,
+        "proficient": 1
+      },
+      "int": {
+        "value": 16,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 18,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 16,
+        "formula": ""
+      },
+      "hp": {
+        "value": 207,
+        "max": 207,
+        "formula": "18d12 + 90",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false
+      },
+      "senses": {
+        "units": "ft",
+        "truesight": 30
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "",
+        "subtype": "",
+        "swarm": "",
+        "custom": "Unknown"
+      },
+      "alignment": "Sem Tendência",
+      "cr": 0,
+      "xp": {
+        "value": 5900
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Giant _"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Cyclops Oracle",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/cyclops-oracle.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "UT1RIBVixSftrUJN",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The cyclops makes three attacks, using Radiante Strike or Flash of Light in any combination.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HRKdbC1EM7HGQqgp.UT1RIBVixSftrUJN"
+    },
+    {
+      "_id": "5l2b2mlcyLflqK7Z",
+      "name": "Radiante Strike",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Me lee Attack Roll:+ l 0, alcance l Oft. Acerto: 22 (3d10 + 6) Radiante de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "3d10+6",
+            "damageType": "radiant"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HRKdbC1EM7HGQqgp.5l2b2mlcyLflqK7Z"
+    },
+    {
+      "_id": "4OPQ6LpOQpYnurOG",
+      "name": "Flash of Light",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância:+ l 0, range 120 ft. · Acerto: 17 (2d1 O + 6) Radiante de dano, and o alvo has Disadvantage on attack rolls until the end of the cy- clops's next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d1O+6",
+            "damageType": "radiant"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HRKdbC1EM7HGQqgp.4OPQ6LpOQpYnurOG"
+    },
+    {
+      "_id": "C0cs9aR3DLRcpObW",
+      "name": "Portent (Recharge 4-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Trigger: The cyclops or an ally it can see makes a D20 Test. Response: The cyclops rolls 1d20 and chooses whether to use that roll in place of the d20 rolled for the D20 Test. 88 CYCLOPES CYCLOPS SENTRY Huge Gigante, Chaotic Neutral AC 14 Iniciativa +O (l 0) HP 1 38 (12d12 + 60) S peed 40 ft. MOD SA VE MOD SA VE M OD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "4"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HRKdbC1EM7HGQqgp.C0cs9aR3DLRcpObW"
+    },
+    {
+      "_id": "pgrda1YFELkPgQCe",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The cyclops casts one of the following spells, requiring no Material components and using Sabedoria as the spellcasting ability (spell save DC 16): 2/Dia Each: Arcane Eye, Detect Magic, Locate Object 1/Dia: Legend Lore</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!HRKdbC1EM7HGQqgp.pgrda1YFELkPgQCe"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Cyclops Oracle",
+      "page": 90,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

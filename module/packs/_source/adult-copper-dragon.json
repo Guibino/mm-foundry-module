@@ -1,0 +1,545 @@
+{
+  "_id": "bHYXLqpfGaUiUMxj",
+  "_key": "!actors!bHYXLqpfGaUiUMxj",
+  "folder": "lhndsA6Aflaa0nF6",
+  "name": "Adulto Cobre Dragão",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 23,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 12,
+        "proficient": 1
+      },
+      "con": {
+        "value": 21,
+        "proficient": 0
+      },
+      "int": {
+        "value": 18,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 15,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 18,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 18,
+        "formula": ""
+      },
+      "hp": {
+        "value": 184,
+        "max": 184,
+        "formula": "16d12 + 80",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 40,
+        "climb": 40,
+        "fly": 80
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120,
+        "blindsight": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "dragon",
+        "subtype": "Metallic",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Bom",
+      "cr": 14,
+      "xp": {
+        "value": 11500
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [
+          "acid"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comum, Dr aconic"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Adulto Cobre Dragão",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/adult-copper-dragon.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "HbLjaRCn1HKOgw9Y",
+      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the dragon fails a saving. throw, it can choqse to suc- ceed instead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "3",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bHYXLqpfGaUiUMxj.HbLjaRCn1HKOgw9Y"
+    },
+    {
+      "_id": "f1oBZKuzDPALMD84",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon makes three Rend attacks. It can replace one attack with a use of (A) Slowing Breath or (B) Conjuração to cast Mind Spike (level 4 version). _ Rend. Rolagem de Ataque Corpo a Corpo:+ 11, alcance 10 ft. Acerto: 17 (2d1 0 + 6) Cortante de dano plus 4 (1d8) Ácido de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d10+6",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bHYXLqpfGaUiUMxj.f1oBZKuzDPALMD84"
+    },
+    {
+      "_id": "Cz3LSVcm6DzwtVg0",
+      "name": "Ácido Breath (Recharge 5-6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Destreza Teste de Resistência: DC 18, cada criatura in an 60-foot-long, 5-foot-wide Line. > Falha: 54 (l 2d8) Ácido de dano. Sucesso: Metade do dano. > Slowing Breath. Constituição Teste de Resistência: DC 18, each ......J 1 f- ~reature in a 60-foot Cone .' Falha: The target can t take l/1 Reactions; its Speed is halved; and it can take either an action or a Bonus Action on its turn not both. This effect lasts until the end of its next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "UodyVLsWGCqrMHDm": {
+            "_id": "UodyVLsWGCqrMHDm",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "18"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": null,
+                  "denomination": null,
+                  "bonus": "",
+                  "types": [
+                    "acid"
+                  ],
+                  "custom": {
+                    "enabled": true,
+                    "formula": "l2d8"
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "l2d8",
+            "damageType": "acid",
+            "saveDc": 18,
+            "saveAbility": "dex"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bHYXLqpfGaUiUMxj.Cz3LSVcm6DzwtVg0"
+    },
+    {
+      "_id": "zcN9PZdYfWsB3qC8",
+      "name": "Giggling Magic",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Carisma Teste de Resistência: DC 17, uma criatura the dragon can see within 90 feet. Falha: 24 (7d6) Psíquico de dano. Until the end of its next turn, o alvo rolls 1d6 whenever it makes an ability check or attack roll and subtracts the number rolled from the</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "gyE5D6oarVa31NC8": {
+            "_id": "gyE5D6oarVa31NC8",
+            "type": "save",
+            "activation": {
+              "type": "legendary",
+              "value": 1,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "cha"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "17"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 7,
+                  "denomination": 6,
+                  "bonus": "",
+                  "types": [
+                    "psychic"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "7d6",
+            "damageType": "psychic",
+            "saveDc": 17,
+            "saveAbility": "cha"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bHYXLqpfGaUiUMxj.zcN9PZdYfWsB3qC8"
+    },
+    {
+      "_id": "LJR0S077l1BKcmBs",
+      "name": "D20 Test",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Falha ou Sucesso: The dragon can't take this action again until the start of its next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bHYXLqpfGaUiUMxj.LJR0S077l1BKcmBs"
+    },
+    {
+      "_id": "KonPgJlkDfbJUroz",
+      "name": "Mind jolt",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon uses Conjuração to cast Mind</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bHYXLqpfGaUiUMxj.KonPgJlkDfbJUroz"
+    },
+    {
+      "_id": "G97e4f2YGfbu1T3L",
+      "name": "Spike (level 4 version)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon can't take this action again until the start of its next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bHYXLqpfGaUiUMxj.G97e4f2YGfbu1T3L"
+    },
+    {
+      "_id": "dffR87e7ibau7eW9",
+      "name": "Pounce",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon moves up to half its Speed, and _ it makes one Rend attack. COPPER DRAGONS ADULT COPPER DRAGON Adult copper dragons use their influence to better the world. With broad circles of friends, adult cop- per dragons delight in introducing people to one an- other and helping people find places where they can flourish. When disaster strikes, these dragons draw on their family of contacts to offer support, right wrongs , and rebuild stronger than before. AN CI ENT COPPER D RAGO N Ancient copper dragons use warmth and reliability to effect change over time. They open their cozy lairs to their friends as havens of learnjng and laughter for the young and those in need . These dragons watch for and oppose future threats while fostering sanctuaries of simple goodness. ANCIENT COPPER DRAGON Gargantuan Dragon (Metallic), Chaotic Good AC 21 Iniciativa + 15 (25) HP 367 (21d20 + 147)</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bHYXLqpfGaUiUMxj.dffR87e7ibau7eW9"
+    },
+    {
+      "_id": "e6hBXLTA8mGUlnSP",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The dragon casts one of the following spells, requiring no Material components and using Carisma as the spellcasting ability (spell save DC 17): À Vontade: Detect Magic, Mind Spike (level 4 version), Mi- nor Illusion, Shapec hange (Beast or Humanoid form only no Temporary Pontos de Vida gained from the spell 1 1 and no Concentration or Temporary Pontos de Vida re- quired to maintain the spell) 1/Dia Each: Greater Restoration Major Image</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!bHYXLqpfGaUiUMxj.e6hBXLTA8mGUlnSP"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Adult Copper Dragon",
+      "page": 81,
+      "cr": "14",
+      "warnings": []
+    }
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "_id": "CsTX5HgfvHcaQceR",
+  "_key": "!actors!CsTX5HgfvHcaQceR",
+  "folder": "mI6hZZeXOMovX9oy",
+  "name": "Earth Elemental",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/earth-elemental.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 20,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 8,
+        "proficient": 0
+      },
+      "con": {
+        "value": 20,
+        "proficient": 0
+      },
+      "int": {
+        "value": 5,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 5,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 17,
+        "formula": ""
+      },
+      "hp": {
+        "value": 147,
+        "max": 147,
+        "formula": "14d10 + 70",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30,
+        "burrow": 30
+      },
+      "senses": {
+        "units": "ft",
+        "tremorsense": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "elemental",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 5,
+      "xp": {
+        "value": 1800
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [
+          "thunder"
+        ],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "petrified"
+        ],
+        "custom": "Exhaust ion; Paralyze d"
+      },
+      "languages": {
+        "value": [],
+        "custom": "Primordial (Ter r an)"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Earth Elemental",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/earth-elemental.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "ExxgtVajmbtP5VR6",
+      "name": "Earth Glide",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The elemental can burrow through nonmagical, unworked earth and stone. While do- ing so, the elemental doesn't disturb the material it moves through.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!CsTX5HgfvHcaQceR.ExxgtVajmbtP5VR6"
+    },
+    {
+      "_id": "0ha3Dcg1hCuGg2wJ",
+      "name": "Siege Monster",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The elemental deals double de dano to objects and structures.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!CsTX5HgfvHcaQceR.0ha3Dcg1hCuGg2wJ"
+    },
+    {
+      "_id": "em0gdVhoeofD0hgb",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The elemental makes two attacks, using Slam or Rock Launch in any combination.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!CsTX5HgfvHcaQceR.em0gdVhoeofD0hgb"
+    },
+    {
+      "_id": "utpMpUxYd4qpCWqh",
+      "name": "Slam",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>M~lee Attack Roll: +8, alcance l O ft . Acerto: 14 (2d8 +' 5) Concussão de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d8+'5",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!CsTX5HgfvHcaQceR.utpMpUxYd4qpCWqh"
+    },
+    {
+      "_id": "BnzZR85i6Tz8tsCS",
+      "name": "Rock Launch",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: +8 , range 60 ft. Acerto: 8 0 (1d6 + 5) Concussão de dano. If o alvo is a Large u or smaller creature, it has the Caído condition. I --- - ----z~~r-~ EFREETI Genie of Fogo</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "MNnlL8niwveLZr7B": {
+            "_id": "MNnlL8niwveLZr7B",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "8",
+              "flat": true,
+              "type": {
+                "value": "ranged",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 8,
+            "attackType": "ranged"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!CsTX5HgfvHcaQceR.BnzZR85i6Tz8tsCS"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Earth Elemental",
+      "page": 110,
+      "cr": "5",
+      "warnings": []
+    }
+  }
+}

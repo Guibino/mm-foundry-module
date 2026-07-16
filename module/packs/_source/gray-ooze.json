@@ -1,0 +1,237 @@
+{
+  "_id": "hlNNNNXFqnkaOxP0",
+  "_key": "!actors!hlNNNNXFqnkaOxP0",
+  "folder": "BaJiyGJk3g8zXFNV",
+  "name": "Gray Ooze",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 12,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 6,
+        "proficient": 0
+      },
+      "con": {
+        "value": 16,
+        "proficient": 0
+      },
+      "int": {
+        "value": 1,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 6,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 2,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 9,
+        "formula": ""
+      },
+      "hp": {
+        "value": 22,
+        "max": 22,
+        "formula": "3d8 + 9",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 10,
+        "climb": 10
+      },
+      "senses": {
+        "units": "ft",
+        "blindsight": 60
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "ooze",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Sem Tendência",
+      "cr": 0,
+      "xp": {
+        "value": 0
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": "Blinded; Charmed; Deafened; Exhaustion"
+      },
+      "dr": {
+        "value": [
+          "acid",
+          "cold",
+          "fire"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "None"
+      }
+    },
+    "skills": {
+      "ste": {
+        "value": 2,
+        "ability": "dex"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Gray Ooze",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/gray-ooze.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "iVqKIngqRtiWMpCp",
+      "name": "Amorphous",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The ooze can move through a space as narrow as l inch without expending extra move- ment to do so.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hlNNNNXFqnkaOxP0.iVqKIngqRtiWMpCp"
+    },
+    {
+      "_id": "a0DjHduHxzXoyulk",
+      "name": "Corrosive Form",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Nonmagical ammunition is destroyed immediately after hitting the ooze and dealing any dam- age. Any nonmagical weapon takes a cumulative - l pen- alty to attack rolls immediately after dealing de dano to the ooze and coming into contact with it. The weapon is destroyed if the penalty alcancees -5. The penalty can be removed by casting the Mending spell on the weapon. The ooze can eat through 2-inch-thick, nonmagical metal or wood in l round.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hlNNNNXFqnkaOxP0.a0DjHduHxzXoyulk"
+    },
+    {
+      "_id": "eyDFW2olnS0zo2x4",
+      "name": "Pseudopod",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: + 3, alcance 5 ft. Acerto: l 0 (2d8 + l) Ácido de dano. Nonmagical armor worn by o alvo takes a - l penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10. The [lJ penalty can be removed by casting the Mending spell ~ on the armor. PSYCHIC GRAY OOZE Medium Ooze, Unaligned AC 9 I ni tiative - l (14) . HP 37 (5d8 + 15) Speed l Oft., Climb l Oft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!hlNNNNXFqnkaOxP0.eyDFW2olnS0zo2x4"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Gray Ooze",
+      "page": 153,
+      "cr": "0",
+      "warnings": []
+    }
+  }
+}

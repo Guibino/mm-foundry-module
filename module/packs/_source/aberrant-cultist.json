@@ -1,0 +1,370 @@
+{
+  "_id": "feXZFxuL2CsOnlhM",
+  "_key": "!actors!feXZFxuL2CsOnlhM",
+  "folder": "1QPcErIwVgACFlzi",
+  "name": "Aberrant Cultist",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/aberrant-cultist.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 70,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 19,
+        "proficient": 0
+      },
+      "con": {
+        "value": 12,
+        "proficient": 0
+      },
+      "int": {
+        "value": 16,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 18,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 15,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 10,
+        "formula": ""
+      },
+      "hp": {
+        "value": 137,
+        "max": 137,
+        "formula": "25d8 + 25",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 90
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Neutro",
+      "cr": 8,
+      "xp": {
+        "value": 3900
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Comum, Fala Profunda"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Aberrant Cultist",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/aberrant-cultist.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "eAANrYzMfftdzSUB",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The cultist makes two Tentacle Lash at- tacks. It can replace any attack with a use of Mind Rot.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!feXZFxuL2CsOnlhM.eAANrYzMfftdzSUB"
+    },
+    {
+      "_id": "u4HeEiOMgrLSA16v",
+      "name": "Tentacle Lash",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo: +7, alcance l Oft . Acerto: 7 (1d6 + 4) Cortante de dano plus 14 (4d6) Psíquico dam- age. If o alvo is a Large or smaller creature, it has the Agarrado condition (escape DC 14) from one of two tentacles, and it has the Impedido condition until the grapple ends.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "AfdVUEOZmoNkewlt": {
+            "_id": "AfdVUEOZmoNkewlt",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "7",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 6,
+                  "bonus": "4",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 7,
+            "attackType": "melee",
+            "damageFormula": "1d6+4",
+            "damageType": "slashing"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!feXZFxuL2CsOnlhM.u4HeEiOMgrLSA16v"
+    },
+    {
+      "_id": "ESAfPvWnXtCIZGPv",
+      "name": "Mind Rot",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Sabedoria Teste de Resistência: DC 15, uma criatura the cultist can see within 90 feet. Falha: 27 (6d8) Psy- chic de dano, and o alvo has the Envenenado condition until the start of the cultist's next turn. Sucesso: Metade do dano only.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "LP6MtYxTm4PyFWeJ": {
+            "_id": "LP6MtYxTm4PyFWeJ",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "15"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": []
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "saveDc": 15,
+            "saveAbility": "wis"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!feXZFxuL2CsOnlhM.ESAfPvWnXtCIZGPv"
+    },
+    {
+      "_id": "dDfnzLedKfGFJHvh",
+      "name": "Habilidade",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Counterspe/1 (2/Dia). The cultist casts Counterspell in response to that spell's trigger; using the same spell- casting ability as Conjuração. 86 Q CULTISTS undead beings, apocalyptic prophecies, or im- mortals with power over death, such as Acererak, l(yuss, Orcus, Vecna, or Wee Jas. ELEMENTAL CULTIST Elemental cultists harness destructive natural forces to cleanse the world of civilization or prove the dominance of one element over all others. Such cultists are aligned with Elemental monsters or wicked immortals such as the Princes of Elemental Evil or the Elder Elemental Eye. FIEND CULTIST Fiend cultists worship fiends or evil deities. They often work to bring ruin to innocents or to summon their sinister patron into the world. Fiend cultists might serve infamous powers such as archdevils and demon lords, or foul immortals-beings such as Demogorgon, Pazuzu, luz, Zariel, or Zuggtmoy. DEATH CULTIST Medium or Small Human oi d, Neutral Evil AC 77 I ni t ia tive +4 (14) HP 727 (15d8 + 60) S peed 30 ft. MOD SAVE MOD SAVE MOD SAVE</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!feXZFxuL2CsOnlhM.dDfnzLedKfGFJHvh"
+    },
+    {
+      "_id": "Ee04Og33JpgkIVcJ",
+      "name": "Conjuração",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The cultist casts one of the following spells, using Sabedoria as the spellcasting ability (spell save DC 15): À Vontade: Detect Thoughts, Minor Illusion</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!feXZFxuL2CsOnlhM.Ee04Og33JpgkIVcJ"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Aberrant Cultist",
+      "page": 88,
+      "cr": "8",
+      "warnings": []
+    }
+  }
+}

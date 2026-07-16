@@ -1,0 +1,385 @@
+{
+  "_id": "ZWIc9WogrjEqUrcU",
+  "_key": "!actors!ZWIc9WogrjEqUrcU",
+  "folder": "3SEe9J5t05jhrkCa",
+  "name": "Abominable Yeti",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/abominable-yeti.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 24,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0
+      },
+      "con": {
+        "value": 22,
+        "proficient": 0
+      },
+      "int": {
+        "value": 9,
+        "proficient": 0
+      },
+      "wis": {
+        "value": 13,
+        "proficient": 0
+      },
+      "cha": {
+        "value": 9,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 15,
+        "formula": ""
+      },
+      "hp": {
+        "value": 137,
+        "max": 137,
+        "formula": "11d12 + 66",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 30
+      },
+      "senses": {
+        "units": "ft"
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "monstrosity",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Caótico e Mau",
+      "cr": 9,
+      "xp": {
+        "value": 5000
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "huge",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Yeti"
+      }
+    },
+    "skills": {}
+  },
+  "prototypeToken": {
+    "name": "Abominable Yeti",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/abominable-yeti.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "992LPdgWS1B0pwWH",
+      "name": "Fear of Fogo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the yeti takes Fogo de dano, it has Disad- vantage on attack rolls and ability checks until the end of its next turn.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ZWIc9WogrjEqUrcU.992LPdgWS1B0pwWH"
+    },
+    {
+      "_id": "U0mFfLlhqmZhmsZx",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The yeti can use its Chilling Gaze and makes two attacks, using Claw or Ice Throw in any combination.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ZWIc9WogrjEqUrcU.U0mFfLlhqmZhmsZx"
+    },
+    {
+      "_id": "OCngeKndxIfiS0uG",
+      "name": "Claw",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque Corpo a Corpo:+ 11, alcance 5 ft. Acerto: 14 (2d6 + 7)- Cortante de dano plus 7 (2d6) Frio de dano. 34 0 YETIS- lN THE YET I, 1 FIND N O K I NSH I P , NO UNDERST/\\ N DI N G ,</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ZWIc9WogrjEqUrcU.OCngeKndxIfiS0uG"
+    },
+    {
+      "_id": "hB8ghWObbjkfuXHE",
+      "name": "Ice Throw",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Rolagem de Ataque à Distância: + 11, range 60/240 ft. Acerto: 12 (2d4 + 7) Concussão de dano plus 7 (2d6) Frio de dano.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "2d4+7",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ZWIc9WogrjEqUrcU.hB8ghWObbjkfuXHE"
+    },
+    {
+      "_id": "dow90Y5O3ZeyIDrj",
+      "name": "Chilling Gaze",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Teste de Resistência: DC 18, uma criatura the yeti can see within 30 feet. Falha: 21 (6d6) Frio de dano, and o alvo has the Paralisado condi- tion until the start of the yeti's next turn unless the tar- get has Immunity to Frio de dano. Sucesso: The target is · immune to this yeti's Chilling Gaze for 1 hour. lJ</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "p0FNwr2V8TD0N6OH": {
+            "_id": "p0FNwr2V8TD0N6OH",
+            "type": "save",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "save": {
+              "ability": [
+                "con"
+              ],
+              "dc": {
+                "calculation": "",
+                "formula": "18"
+              }
+            },
+            "damage": {
+              "onSave": "half",
+              "parts": [
+                {
+                  "number": 6,
+                  "denomination": 6,
+                  "bonus": "",
+                  "types": [
+                    "cold"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "6d6",
+            "damageType": "cold",
+            "saveDc": 18,
+            "saveAbility": "con"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ZWIc9WogrjEqUrcU.dow90Y5O3ZeyIDrj"
+    },
+    {
+      "_id": "eMelDhlWrHuNUlm1",
+      "name": "Frio Breath (Recharge 6)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Constituição Teste de Resistência: ::J DC 18, cada criatura in a 30-foot Cone. Falha: 45 O::'. (10d8) ~old de dano. Sucesso: Metade do dano,. Cl::'. YOCHLOL Demon of Depraved Will</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "6"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!ZWIc9WogrjEqUrcU.eMelDhlWrHuNUlm1"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Abominable Yeti",
+      "page": 342,
+      "cr": "9",
+      "warnings": []
+    }
+  }
+}

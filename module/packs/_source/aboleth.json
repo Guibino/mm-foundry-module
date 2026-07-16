@@ -1,0 +1,561 @@
+{
+  "_id": "myb9Vfn8SNLMzKbc",
+  "_key": "!actors!myb9Vfn8SNLMzKbc",
+  "folder": "1nioWC3kx0YxX8qj",
+  "name": "Aboleth",
+  "type": "npc",
+  "img": "modules/mm2024-pt-br/assets/portraits/aboleth.webp",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 21,
+        "proficient": 0
+      },
+      "dex": {
+        "value": 9,
+        "proficient": 1
+      },
+      "con": {
+        "value": 15,
+        "proficient": 1
+      },
+      "int": {
+        "value": 18,
+        "proficient": 1
+      },
+      "wis": {
+        "value": 15,
+        "proficient": 1
+      },
+      "cha": {
+        "value": 78,
+        "proficient": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 17,
+        "formula": ""
+      },
+      "hp": {
+        "value": 150,
+        "max": 150,
+        "formula": "20d10 + 40",
+        "temp": null,
+        "tempmax": null
+      },
+      "movement": {
+        "units": "ft",
+        "hover": false,
+        "walk": 10,
+        "swim": 40
+      },
+      "senses": {
+        "units": "ft",
+        "darkvision": 120
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": ""
+      }
+    },
+    "details": {
+      "type": {
+        "value": "aberration",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "Leal e Mau",
+      "cr": 70,
+      "xp": {
+        "value": 5900
+      },
+      "source": {
+        "custom": "Monster Manual 2024"
+      },
+      "biography": {
+        "value": ""
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Fala Profunda"
+      }
+    },
+    "skills": {
+      "his": {
+        "value": 2,
+        "ability": "int"
+      }
+    }
+  },
+  "prototypeToken": {
+    "name": "Aboleth",
+    "actorLink": false,
+    "sight": {
+      "enabled": true
+    },
+    "texture": {
+      "src": "modules/mm2024-pt-br/assets/tokens/aboleth.webp"
+    },
+    "disposition": -1
+  },
+  "items": [
+    {
+      "_id": "n3z1ci5aw3jmYlfw",
+      "name": "Amphibious",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The aboleth can breathe air and water.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!myb9Vfn8SNLMzKbc.n3z1ci5aw3jmYlfw"
+    },
+    {
+      "_id": "I3eiry1NQGYEupjq",
+      "name": "Eldritch Restoration",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If aestroyed, the aboleth gains a new body in Sdl0 days, reviving with all its Pontos de Vida in the Far Realm or another location chosen by the OM.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!myb9Vfn8SNLMzKbc.I3eiry1NQGYEupjq"
+    },
+    {
+      "_id": "Jt5uaAebuSIc21vf",
+      "name": "Resistência Lendária (3/Day, or 4/Day in Lair)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the aboleth fails a saving throw, it can choose to suc- ceed in stead.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "3",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!myb9Vfn8SNLMzKbc.Jt5uaAebuSIc21vf"
+    },
+    {
+      "_id": "jTC4BEJQuiv724yY",
+      "name": "Mucus Cloud",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>While underwater, the aboleth is sur- rounded by mucus. Constituição Sa1Jing Throw : DC 74, cada criatura in a 5-foot Emanation originating from the aboleth at the end of the aboleth's turn. Falha: The target is cursed. Until the curse ends, o alvo's skin becomes slimy, o alvo can breathe air and water, and it can't regain Pontos de Vida unless it is underwater. While the cursed creature is outside a body of water, the creature takes 6 (1d1 2) Ácido de dano at the end of every 10 minutes unless moisture is applied to its skin before those minutes have passed.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!myb9Vfn8SNLMzKbc.jTC4BEJQuiv724yY"
+    },
+    {
+      "_id": "2viUCNSeMr5FrcSg",
+      "name": "Probing Telepathy",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If a creature the aboleth can see communicates telepathically with the aboleth, the abo- leth learns the creature's greatest desires. A BOL ETH</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!myb9Vfn8SNLMzKbc.2viUCNSeMr5FrcSg"
+    },
+    {
+      "_id": "kCyZs1szjoiWRtdb",
+      "name": "Psionic Projection",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>While in its lair, the aboleth can cast Project Image, requiring no spell compo- nents and using Inteligência as the spellcasting ability (spell save DC 16). When casting the spell this way, the spell's range is 1 mile, and the aboleth can use its telepatia as if it were in the illusion's space. If the aboleth dies or moves its lair elsewhere, these effects end immediately.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "",
+          "value": null
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!myb9Vfn8SNLMzKbc.kCyZs1szjoiWRtdb"
+    },
+    {
+      "_id": "FPzjlu9sy26dZE3y",
+      "name": "Ataque Múltiplo",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The aboleth makes two Tentacle attacks and uses either Consume Memories or Dominate Mind if available. Te!Jtacle. Rolagem de Ataque Corpo a Corpo: +9, alcance 15 ft. Acerto: 12 (2d6 + 5) Concussão de dano. If o alvo is a Large or smaller creature, it has the Agarrado condition (escape DC 74) from one of four tentacles.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {
+          "TGRkAM2Xthi6qx3Q": {
+            "_id": "TGRkAM2Xthi6qx3Q",
+            "type": "attack",
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": true,
+              "condition": ""
+            },
+            "attack": {
+              "ability": "",
+              "bonus": "9",
+              "flat": true,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "includeBase": false,
+              "parts": [
+                {
+                  "number": 2,
+                  "denomination": 6,
+                  "bonus": "5",
+                  "types": [
+                    "bludgeoning"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "toHit": 9,
+            "attackType": "melee",
+            "damageFormula": "2d6+5",
+            "damageType": "bludgeoning"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!myb9Vfn8SNLMzKbc.FPzjlu9sy26dZE3y"
+    },
+    {
+      "_id": "TcOam7AAWp7Ed4p8",
+      "name": "Consume Memories",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Inteligência Sa1Jing Throw: DC 16, uma criatura within 30 feet that is Enfeitiçado or Grap- pled by the aboleth. Falha: 10 (3d6) Psíquico de dano. Sucesso: Metade do dano. Falha ou Sucesso: The aboleth gains o alvo's memories if o alvo is a Humanoid and is reduced to 0 Pontos de Vida by this action.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {
+            "damageFormula": "3d6",
+            "damageType": "psychic"
+          },
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!myb9Vfn8SNLMzKbc.TcOam7AAWp7Ed4p8"
+    },
+    {
+      "_id": "yHNzWgpgjT2fEoVT",
+      "name": "Dominate Mind (2/Day)",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>Sabedoria Sa1Jing Throw: DC 16, uma criatura the aboleth can see within 30 feet. Falha: The target has the Enfeitiçado condition until the aboleth dies or is on a different plane of existence from o alvo. While Enfeitiçado, o alvo acts as an ally to the aboleth and is under its control while within 60 feet of it. In addition, the aboleth and o alvo can communi- cate telepathically with each other over any distance. The target repeats the save whenever it takes de dano as well as after every 24 hours it spends at least 7 mile away from the aboleth, ending the effect on itself on a success .</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": null,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "2",
+          "recovery": [
+            {
+              "period": "day",
+              "type": "recoverAll"
+            }
+          ]
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!myb9Vfn8SNLMzKbc.yHNzWgpgjT2fEoVT"
+    },
+    {
+      "_id": "pSGLTZaU9jkQ2q1a",
+      "name": "Lash",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>The aboleth makes one Tentacle attack.</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!myb9Vfn8SNLMzKbc.pSGLTZaU9jkQ2q1a"
+    },
+    {
+      "_id": "TzZUqav3O7gRbJ6H",
+      "name": "Psíquico Drain",
+      "type": "feat",
+      "img": "icons/svg/aura.svg",
+      "system": {
+        "description": {
+          "value": "<p>If the aboleth has at least uma criatura Enfeitiçado or Agarrado, it uses Consume Memories and regains 5 (1d10) Pontos de Vida. .. A I R ELEMENTAL Primal Spirit of Wind and Storm</p>",
+          "chat": ""
+        },
+        "activation": {
+          "type": "legendary",
+          "value": 1,
+          "condition": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "activities": {}
+      },
+      "flags": {
+        "mm2024": {
+          "mechanics": {},
+          "source": "MM2024"
+        }
+      },
+      "_key": "!actors.items!myb9Vfn8SNLMzKbc.TzZUqav3O7gRbJ6H"
+    }
+  ],
+  "flags": {
+    "mm2024": {
+      "nameEn": "Aboleth",
+      "page": 14,
+      "cr": "70",
+      "warnings": []
+    }
+  }
+}
