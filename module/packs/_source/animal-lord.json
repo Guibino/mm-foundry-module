@@ -222,7 +222,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Sabedoria: CD 20, qualquer enemy that começa seu turno em a Emanação de 9 m com origem em a criatura. O alvo suffers one de the following effects:\nO alvo fica com a condição Enfeitiçado até o fim do próximo turno dele. Enquanto Enfeitiçado, o alvo fica com a condição Incapacitado.\nO alvo fica com a condição Amedrontado até o fim do próximo turno dele.\nO alvo takes 10 (3d6) dano psíquico, e o alvo is magically bewildered até o fim do próximo turno dele. Enquanto bewildered, o alvo subtrai 1d4 de seu testes de resistência.</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 20, qualquer enemy that começa seu turno na Emanação de 9 m com origem na criatura. O alvo suffers one de the following effects:\nO alvo fica com a condição Enfeitiçado até o fim do próximo turno dele. Enquanto Enfeitiçado, o alvo fica com a condição Incapacitado.\nO alvo fica com a condição Amedrontado até o fim do próximo turno dele.\nO alvo takes 10 (3d6) dano psíquico, e o alvo is magically bewildered até o fim do próximo turno dele. Enquanto bewildered, o alvo subtrai 1d4 de seu testes de resistência.</p>",
           "chat": ""
         },
         "activation": {
@@ -487,7 +487,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura conjures um animal spirit that strikes at uma criatura e then disappears. Teste de Resistência de Destreza: CD 20, uma criatura a criatura pode ver a até 36 m. 28 (4d10 + 6) dano radiante. Metade do dano. One de the following effects occurs:\nA criatura ganha 20 Pontos de Vida Temporários.\nA criatura tem Vantagem em rolagens de ataque contra o alvo until the start de da criatura next turn.\nO alvo tem Desvantagem em rolagens de ataque e testes de habilidade até o fim do próximo turno dele.</p>",
+          "value": "<p>A criatura conjures um animal spirit that strikes at uma criatura e then disappears. Teste de Resistência de Destreza: CD 20, uma criatura a criatura pode ver a até 36 m. 28 (4d10 + 6) dano radiante. Metade do dano. One de the following effects occurs:\nA criatura ganha 20 Pontos de Vida Temporários.\nA criatura tem Vantagem em rolagens de ataque contra o alvo até o início do próximo turno da criatura.\nO alvo tem Desvantagem em rolagens de ataque e testes de habilidade até o fim do próximo turno dele.</p>",
           "chat": ""
         },
         "activation": {
@@ -548,7 +548,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura shape-shifts em a Huge ou menor versão de a criatura it represents ou a Medium ou Small Humanoide, ou ela retorna to seu forma verdadeira. Its atributos de jogo, other than seu size, are the same em each form. Qualquer equipment it is vestindo ou carregando não é transformado.</p>",
+          "value": "<p>A criatura shape-shifts na Huge ou menor versão da criatura it represents ou a Medium ou Small Humanoide, ou ela retorna to seu forma verdadeira. Its atributos de jogo, other than seu size, are the same em each form. Qualquer equipment it is vestindo ou carregando não é transformado.</p>",
           "chat": ""
         },
         "activation": {
@@ -650,7 +650,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The animal lord casts one de the following spells, requiring no Material components e using Sabedoria as the spellcasting ability (magia save CD 20):</p>",
+          "value": "<p>The animal lord lança uma das seguintes magias, sem exigir componentes Materiais e usando Sabedoria como habilidade de conjuração (CD de resistência de magia 20):</p>",
           "chat": ""
         },
         "activation": {

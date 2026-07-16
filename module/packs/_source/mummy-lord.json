@@ -441,7 +441,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Teste de Resistência de Sabedoria: CD 17, uma criatura a criatura pode ver a até 18 m. 25 (6d6 + 4) dano psíquico, e o alvo fica com a condição Paralisado until the end de da criatura next turn.</p>",
+          "value": "<p>Teste de Resistência de Sabedoria: CD 17, uma criatura a criatura pode ver a até 18 m. 25 (6d6 + 4) dano psíquico, e o alvo fica com a condição Paralisado até o fim do próximo turno da criatura.</p>",
           "chat": ""
         },
         "activation": {
@@ -502,7 +502,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura is hit by um rolagem de ataque. A criatura adds 2 to seu AC contra the attack, possibly causing the attack to miss, e a criatura se teletransporta até 18 m para um espaço desocupado que possa ver. Each creature de seu choice that it pode ver a até 1,5 m de seu destination space fica com a condição Cego until the end de da criatura next turn.</p>",
+          "value": "<p>A criatura is hit by um rolagem de ataque. A criatura adiciona 2 to seu AC contra the attack, possibly causing the attack to miss, e a criatura se teletransporta até 18 m para um espaço desocupado que possa ver. Each creature de seu choice that it pode ver a até 1,5 m de seu destination space fica com a condição Cego até o fim do próximo turno da criatura.</p>",
           "chat": ""
         },
         "activation": {
@@ -604,7 +604,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mummy casts one de the following spells, requiring no Material components e using Sabedoria as the spellcasting ability (magia save CD 17, +9 to hit com magia attacks):</p>",
+          "value": "<p>The mummy lança uma das seguintes magias, sem exigir componentes Materiais e usando Sabedoria como habilidade de conjuração (CD de resistência de magia 17, +9 para acertar com ataques de magia):</p>",
           "chat": ""
         },
         "activation": {
@@ -621,37 +621,11 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {
-          "b6ZWedwhNLAyGPgB": {
-            "_id": "b6ZWedwhNLAyGPgB",
-            "type": "attack",
-            "activation": {
-              "type": "action",
-              "value": null,
-              "override": true,
-              "condition": ""
-            },
-            "attack": {
-              "ability": "",
-              "bonus": "9",
-              "flat": true,
-              "type": {
-                "value": "melee",
-                "classification": "weapon"
-              }
-            },
-            "damage": {
-              "includeBase": false,
-              "parts": []
-            }
-          }
-        }
+        "activities": {}
       },
       "flags": {
         "mm2024": {
-          "mechanics": {
-            "toHit": 9
-          },
+          "mechanics": {},
           "source": "MM2024"
         }
       },

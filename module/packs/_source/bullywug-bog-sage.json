@@ -346,7 +346,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The bullywug casts one de the following spells, using Sabedoria as the spellcasting ability (magia save CD 13, +5 to hit com magia attacks):</p>",
+          "value": "<p>The bullywug lança uma das seguintes magias, usando Sabedoria como habilidade de conjuração (CD de resistência de magia 13, +5 para acertar com ataques de magia):</p>",
           "chat": ""
         },
         "activation": {
@@ -363,37 +363,11 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {
-          "VKLJ24RJXfX3YPya": {
-            "_id": "VKLJ24RJXfX3YPya",
-            "type": "attack",
-            "activation": {
-              "type": "action",
-              "value": null,
-              "override": true,
-              "condition": ""
-            },
-            "attack": {
-              "ability": "",
-              "bonus": "5",
-              "flat": true,
-              "type": {
-                "value": "melee",
-                "classification": "weapon"
-              }
-            },
-            "damage": {
-              "includeBase": false,
-              "parts": []
-            }
-          }
-        }
+        "activities": {}
       },
       "flags": {
         "mm2024": {
-          "mechanics": {
-            "toHit": 5
-          },
+          "mechanics": {},
           "source": "MM2024"
         }
       },

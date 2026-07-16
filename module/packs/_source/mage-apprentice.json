@@ -211,7 +211,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The mage casts one de the following spells, using Inteligência as the spellcasting ability (magia save CD 13, +5 to hit com magia attacks):</p>",
+          "value": "<p>The mage lança uma das seguintes magias, usando Inteligência como habilidade de conjuração (CD de resistência de magia 13, +5 para acertar com ataques de magia):</p>",
           "chat": ""
         },
         "activation": {
@@ -228,37 +228,11 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {
-          "MliYveBd3SC9ZiJW": {
-            "_id": "MliYveBd3SC9ZiJW",
-            "type": "attack",
-            "activation": {
-              "type": "action",
-              "value": null,
-              "override": true,
-              "condition": ""
-            },
-            "attack": {
-              "ability": "",
-              "bonus": "5",
-              "flat": true,
-              "type": {
-                "value": "melee",
-                "classification": "weapon"
-              }
-            },
-            "damage": {
-              "includeBase": false,
-              "parts": []
-            }
-          }
-        }
+        "activities": {}
       },
       "flags": {
         "mm2024": {
-          "mechanics": {
-            "toHit": 5
-          },
+          "mechanics": {},
           "source": "MM2024"
         }
       },

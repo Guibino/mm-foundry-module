@@ -89,10 +89,21 @@ function fixAreas(s: string): string {
 }
 
 /** Traduz terminologia mecanica de um texto (substituicao de termos oficiais). */
+/** Contrai preposicao+artigo (de+a=da, em+o=no...) e limpa artefatos de traducao. */
+function fixContractions(s: string): string {
+  return s
+    .replace(/\bde da\b/g, "da").replace(/\bde do\b/g, "do")
+    .replace(/\bde a\b/g, "da").replace(/\bde o\b/g, "do")
+    .replace(/\bde os\b/g, "dos").replace(/\bde as\b/g, "das")
+    .replace(/\bem a\b/g, "na").replace(/\bem o\b/g, "no")
+    .replace(/\bem os\b/g, "nos").replace(/\bem as\b/g, "nas")
+    .replace(/\bpor a\b/g, "pela").replace(/\bpor o\b/g, "pelo");
+}
+
 export function translateText(text: string): string {
   let s = convertUnits(text);
   for (const [re, pt] of REPLACEMENTS) s = s.replace(re, pt);
-  return fixAreas(s);
+  return fixContractions(fixAreas(s));
 }
 
 /** So converte unidades para metrico (para texto ja em PT, ex.: Pocket DM). */

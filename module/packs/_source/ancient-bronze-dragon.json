@@ -578,7 +578,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>A criatura casts one de the following spells, requiring no Material components e using Carisma as the spellcasting ability (magia save CD 22, +14 to hit com magia attacks):</p>",
+          "value": "<p>A criatura lança uma das seguintes magias, sem exigir componentes Materiais e usando Carisma como habilidade de conjuração (CD de resistência de magia 22, +14 para acertar com ataques de magia):</p>",
           "chat": ""
         },
         "activation": {
@@ -595,37 +595,11 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {
-          "dVS8SnDyOXH76A68": {
-            "_id": "dVS8SnDyOXH76A68",
-            "type": "attack",
-            "activation": {
-              "type": "action",
-              "value": null,
-              "override": true,
-              "condition": ""
-            },
-            "attack": {
-              "ability": "",
-              "bonus": "14",
-              "flat": true,
-              "type": {
-                "value": "melee",
-                "classification": "weapon"
-              }
-            },
-            "damage": {
-              "includeBase": false,
-              "parts": []
-            }
-          }
-        }
+        "activities": {}
       },
       "flags": {
         "mm2024": {
-          "mechanics": {
-            "toHit": 14
-          },
+          "mechanics": {},
           "source": "MM2024"
         }
       },

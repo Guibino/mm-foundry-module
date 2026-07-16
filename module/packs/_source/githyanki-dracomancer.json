@@ -166,7 +166,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +10, alcance 3 m. ou distância 36 m. Acerto: 12 (2d6 + 5) dano cortante mais 17 (5d6) dano de fogo, e o alvo fica com a condição Amedrontado until the start de da criatura next turn.</p>",
+          "value": "<p>Rolagem de Ataque Corpo a Corpo ou à Distância: +10, alcance 3 m. ou distância 36 m. Acerto: 12 (2d6 + 5) dano cortante mais 17 (5d6) dano de fogo, e o alvo fica com a condição Amedrontado até o início do próximo turno da criatura.</p>",
           "chat": ""
         },
         "activation": {
@@ -314,7 +314,7 @@
       "img": "icons/svg/aura.svg",
       "system": {
         "description": {
-          "value": "<p>The githyanki casts one de the following spells, requiring no magia components e using Inteligência as the spellcasting ability (magia save CD 18, +10 to hit com magia attacks):</p>",
+          "value": "<p>The githyanki lança uma das seguintes magias, requiring no magia components e using Inteligência como habilidade de conjuração (CD de resistência de magia 18, +10 para acertar com ataques de magia):</p>",
           "chat": ""
         },
         "activation": {
@@ -331,37 +331,11 @@
           "value": "monster",
           "subtype": ""
         },
-        "activities": {
-          "OhlQx8BoxG7qAiVb": {
-            "_id": "OhlQx8BoxG7qAiVb",
-            "type": "attack",
-            "activation": {
-              "type": "action",
-              "value": null,
-              "override": true,
-              "condition": ""
-            },
-            "attack": {
-              "ability": "",
-              "bonus": "10",
-              "flat": true,
-              "type": {
-                "value": "melee",
-                "classification": "weapon"
-              }
-            },
-            "damage": {
-              "includeBase": false,
-              "parts": []
-            }
-          }
-        }
+        "activities": {}
       },
       "flags": {
         "mm2024": {
-          "mechanics": {
-            "toHit": 10
-          },
+          "mechanics": {},
           "source": "MM2024"
         }
       },
