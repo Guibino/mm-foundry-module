@@ -52,21 +52,100 @@ function mapTraitList(items: string[], dict: Record<string, { key: string }>): {
   return { value, custom: custom.join("; ") };
 }
 
-interface Entry { name: string; text: string; uses?: string; recharge?: string }
+interface Entry { name: string; text: string; textEn?: string; uses?: string; recharge?: string }
 
-/** Detecta metadados de ataque/resistencia no texto (para flags e futura activity). */
+/** Detecta metadados de ataque/save/dano no texto EN (para flags e activities). */
 function detectMechanics(textEn: string) {
-  const attack = textEn.match(/([+-]\d+)\s*to hit|Attack Roll:\s*([+-]\d+)/i);
-  const toHit = attack ? Number(attack[1] ?? attack[2]) : undefined;
-  const dmg = textEn.match(/Hit:\s*\d+\s*\(([^)]+)\)\s*(\w+)\s*damage/i);
-  const save = textEn.match(/DC\s*(\d+)\s*(Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma)/i);
+  // Ataque: "Melee/Ranged Attack Roll: +N" (MM 2024) ou "+N to hit" (legado).
+  const atk = textEn.match(/(Melee|Ranged)\s+Attack Roll:\s*([+-]\d+)/i);
+  const atkOld = textEn.match(/([+-]\d+)\s*to hit/i);
+  const toHit = atk ? Number(atk[2]) : atkOld ? Number(atkOld[1]) : undefined;
+  const attackType = atk ? atk[1]!.toLowerCase() : undefined; // "melee" | "ranged"
+  // Dano: "Hit: 5 (1d6 + 2) Slashing damage" (ataque) ou
+  // "Failure: 24 (4d10 + 2) Thunder damage" (save). Primeira instancia.
+  const dmg = textEn.match(/(?:Hit|Failure):\s*\d+\s*\(([^)]+)\)\s*(\w+)\s*damage/i);
+  // Save: "Strength Saving Throw: DC 13" (MM 2024) ou "DC 13 Strength" (legado).
+  let saveDc: number | undefined, saveAbility: string | undefined;
+  const s1 = textEn.match(/(Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma)\s+Saving Throw:\s*DC\s*(\d+)/i);
+  const s2 = textEn.match(/DC\s*(\d+)\s+(Strength|Dexterity|Constitution|Intelligence|Wisdom|Charisma)/i);
+  if (s1) { saveDc = Number(s1[2]); saveAbility = s1[1]!.slice(0, 3).toLowerCase(); }
+  else if (s2) { saveDc = Number(s2[1]); saveAbility = s2[2]!.slice(0, 3).toLowerCase(); }
   return {
-    toHit,
+    toHit, attackType,
     damageFormula: dmg?.[1]?.replace(/\s/g, ""),
     damageType: dmg?.[2]?.toLowerCase(),
-    saveDc: save ? Number(save[1]) : undefined,
-    saveAbility: save?.[2]?.slice(0, 3).toLowerCase(),
+    saveDc, saveAbility,
   };
+}
+
+/** Converte "1d6+2" | "2d6" | "7" numa parte de dano do dnd5e (v4). */
+function damagePart(formula?: string, type?: string): any | null {
+  if (!formula) return null;
+  const f = formula.replace(/\s+/g, "");
+  const types = type ? [type] : [];
+  const m = f.match(/^(\d+)d(\d+)([+-]\d+)?$/i);
+  if (m) {
+    return {
+      number: Number(m[1]),
+      denomination: Number(m[2]),
+      bonus: m[3] ? m[3].replace(/^\+/, "") : "",
+      types,
+      custom: { enabled: false, formula: "" },
+      scaling: { mode: "", number: 1, formula: "" },
+    };
+  }
+  // formula nao-padrao (ex.: "1d8+1d6" ou dano fixo) -> parte custom.
+  return {
+    number: null, denomination: null, bonus: "",
+    types,
+    custom: { enabled: true, formula: f },
+    scaling: { mode: "", number: 1, formula: "" },
+  };
+}
+
+/**
+ * Constroi o mapa `system.activities` do dnd5e (v4) a partir das mechanics.
+ *  - to-hit presente  -> activity "attack" (bonus fixo + parte de dano);
+ *  - senao CD de save -> activity "save" (habilidade + CD + dano com meio-dano).
+ * Retorna {} quando nao ha mecanica acionavel (o item continua sendo um feat).
+ */
+function buildActivities(mech: any, activation: string, seed: string): Record<string, any> {
+  const acts: Record<string, any> = {};
+  const part = damagePart(mech.damageFormula, mech.damageType);
+  const activationNode = {
+    type: activation,
+    value: activation === "legendary" ? 1 : null,
+    override: true,
+    condition: "",
+  };
+  if (mech.toHit !== undefined && mech.toHit !== null) {
+    const id = makeId(`atk:${seed}`);
+    acts[id] = {
+      _id: id,
+      type: "attack",
+      activation: activationNode,
+      attack: {
+        ability: "",
+        bonus: String(mech.toHit),
+        flat: true, // NPC: o bonus ja e o total de acerto
+        type: { value: mech.attackType ?? "melee", classification: "weapon" },
+      },
+      damage: { includeBase: false, parts: part ? [part] : [] },
+    };
+  } else if (mech.saveDc !== undefined && mech.saveDc !== null) {
+    const id = makeId(`sav:${seed}`);
+    acts[id] = {
+      _id: id,
+      type: "save",
+      activation: activationNode,
+      save: {
+        ability: mech.saveAbility ? [mech.saveAbility] : [],
+        dc: { calculation: "", formula: String(mech.saveDc) },
+      },
+      damage: { onSave: "half", parts: part ? [part] : [] },
+    };
+  }
+  return acts;
 }
 
 /** Constroi usos/recarga nativos a partir do texto do parenteses. */
@@ -83,9 +162,12 @@ function buildUses(entry: Entry): any {
 }
 
 function featItem(entry: Entry, entryEn: Entry, activation: string, seed: string): any {
-  const mech = detectMechanics(entryEn.text);
+  const mech = detectMechanics(entryEn.textEn ?? entryEn.text);
   const uses = buildUses(entry);
   const nameSuffix = entry.recharge ? ` (${entry.recharge})` : entry.uses ? ` (${entry.uses})` : "";
+  // Activities nativas so para entradas acionaveis (acoes/bonus/reacoes/lendarias);
+  // traits passivos (activation vazio) permanecem apenas descritivos.
+  const activities = activation ? buildActivities(mech, activation, seed) : {};
   return {
     _id: makeId(seed),
     name: (entry.name || "Habilidade") + nameSuffix,
@@ -96,6 +178,7 @@ function featItem(entry: Entry, entryEn: Entry, activation: string, seed: string
       activation: activation ? { type: activation, value: activation === "legendary" ? 1 : null, condition: "" } : { type: "", value: null },
       uses: uses ?? { spent: 0, max: "", recovery: [] },
       type: { value: "monster", subtype: "" },
+      activities,
     },
     flags: { mm2024: { mechanics: mech, source: "MM2024" } },
   };

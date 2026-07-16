@@ -39,6 +39,34 @@ async function main() {
   ok(Array.isArray(actor.items), "actor tem array de items");
   ok(actor.items.every((i: any) => i._key?.startsWith("!actors.items!")), "items tem _key valido");
 
+  // 5) activities nativas do dnd5e a partir de flags.mm2024.mechanics
+  const actors = pt.map((m: any) => toActor(m));
+  let attackAct = 0, saveAct = 0;
+  for (const a of actors)
+    for (const it of a.items)
+      for (const act of Object.values(it.system.activities ?? {}) as any[]) {
+        if (act.type === "attack") attackAct++;
+        if (act.type === "save") saveAct++;
+      }
+  ok(attackAct > 200, `esperado > 200 activities de ataque, obtido ${attackAct}`);
+  ok(saveAct > 80, `esperado > 80 activities de save, obtido ${saveAct}`);
+
+  // 5b) uma activity de ataque bem-formada (Goblin Warrior: Scimitar +4)
+  const goblin = actors.find((a: any) => a.flags.mm2024.nameEn === "Goblin Warrior");
+  ok(!!goblin, "Goblin Warrior presente");
+  const scimitar = goblin?.items.find((i: any) => /Scimitar|Cimitarra/i.test(i.name));
+  const atk = scimitar && (Object.values(scimitar.system.activities) as any[]).find((x) => x.type === "attack");
+  ok(!!atk, "Scimitar tem activity de ataque");
+  ok(atk?.attack?.flat === true && atk?.attack?.bonus === "4", "ataque tem bonus fixo +4");
+  ok(atk?.damage?.parts?.length === 1 && atk.damage.parts[0].denomination === 6, "dano d6 na parte");
+
+  // 5c) uma activity de save bem-formada (Air Elemental: Whirlwind, CD 13 FOR)
+  const air = actors.find((a: any) => a.flags.mm2024.nameEn === "Air Elemental");
+  const wh = air?.items.map((i: any) => Object.values(i.system.activities) as any[]).flat()
+    .find((x: any) => x?.type === "save");
+  ok(!!wh, "Air Elemental tem activity de save");
+  ok(wh?.save?.dc?.formula === "13" && wh?.save?.ability?.[0] === "str", "save CD 13 Forca");
+
   console.log(`\n✓ ${passed} asserts passaram`);
 }
 main().catch((e) => { console.error("✗ TESTE FALHOU:", e.message); process.exit(1); });

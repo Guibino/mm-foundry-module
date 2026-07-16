@@ -25,6 +25,8 @@ function translateEntries(entries: NamedText[]): NamedText[] {
     ...e,
     name: translateEntryName(e.name),
     text: translateText(e.text),
+    // preserva o texto EN para deteccao de mecanica (to-hit/dano/CD) no normalize
+    textEn: e.text,
   }));
 }
 
