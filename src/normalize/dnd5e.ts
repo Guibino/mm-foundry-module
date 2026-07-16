@@ -197,6 +197,11 @@ function assetPath(dir: string, kind: "portraits" | "tokens", slug: string): str
   return existsSync(file) ? `modules/${MODULE_ID}/assets/${kind}/${slug}.webp` : null;
 }
 
+/** Escala do token (lado do quadrado) por chave de tamanho do dnd5e. */
+const TOKEN_SCALE: Record<string, number> = {
+  tiny: 0.5, sm: 1, med: 1, lg: 2, huge: 3, grg: 4,
+};
+
 export function toActor(m: any, folderId?: string): any {
   const id = makeId(`actor:${m.name}|${m.page ?? ""}|${m.hp?.value ?? ""}|${m.cr ?? ""}`);
   const slug = slugify(m.name);
@@ -272,7 +277,9 @@ export function toActor(m: any, folderId?: string): any {
         ac: { calc: "flat", flat: m.ac.value, formula: "" },
         hp: { value: m.hp.value, max: m.hp.value, formula: m.hp.formula, temp: null, tempmax: null },
         movement, senses,
-        init: { ability: "dex", bonus: "" },
+        // Iniciativa 2024 (mod DES + proficiency x PB): o dnd5e ja soma o mod de
+        // DES, entao o bonus e a parte de proficiencia (initiative - modDES).
+        init: { ability: "dex", bonus: m.initiative != null ? String(m.initiative - m.abilities.dex.mod) : "" },
       },
       details: {
         type: { value: typeKey, subtype: m.subtypes.join(", "), swarm: "", custom: typeKey ? "" : m.type },
@@ -292,6 +299,9 @@ export function toActor(m: any, folderId?: string): any {
     prototypeToken: {
       name: m.name,
       actorLink: false,
+      // Tamanho do token em quadrados: Grande 2x2, Enorme 3x3, Imenso 4x4.
+      width: TOKEN_SCALE[sizeKey] ?? 1,
+      height: TOKEN_SCALE[sizeKey] ?? 1,
       sight: { enabled: true },
       texture: { src: token },
       disposition: -1,

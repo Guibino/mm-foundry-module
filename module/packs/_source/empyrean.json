@@ -58,7 +58,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "14"
       }
     },
     "details": {
@@ -112,11 +112,11 @@
     },
     "skills": {
       "ins": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       }
     }
@@ -124,6 +124,8 @@
   "prototypeToken": {
     "name": "Empyrean",
     "actorLink": false,
+    "width": 3,
+    "height": 3,
     "sight": {
       "enabled": true
     },

@@ -56,7 +56,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "4"
       }
     },
     "details": {
@@ -103,7 +103,7 @@
     },
     "skills": {
       "ins": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "prc": {
@@ -115,6 +115,8 @@
   "prototypeToken": {
     "name": "Cloud Giant",
     "actorLink": false,
+    "width": 3,
+    "height": 3,
     "sight": {
       "enabled": true
     },

@@ -58,7 +58,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "3"
       }
     },
     "details": {
@@ -113,6 +113,8 @@
   "prototypeToken": {
     "name": "Primeval Owlbear",
     "actorLink": false,
+    "width": 3,
+    "height": 3,
     "sight": {
       "enabled": true
     },

@@ -57,7 +57,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "4"
       }
     },
     "details": {
@@ -116,7 +116,7 @@
         "ability": "cha"
       },
       "ins": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       }
     }
@@ -124,6 +124,8 @@
   "prototypeToken": {
     "name": "Yochlol",
     "actorLink": false,
+    "width": 1,
+    "height": 1,
     "sight": {
       "enabled": true
     },

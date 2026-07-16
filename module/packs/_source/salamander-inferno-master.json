@@ -57,7 +57,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "5"
       }
     },
     "details": {
@@ -111,6 +111,8 @@
   "prototypeToken": {
     "name": "Salamander Inferno Master",
     "actorLink": false,
+    "width": 2,
+    "height": 2,
     "sight": {
       "enabled": true
     },

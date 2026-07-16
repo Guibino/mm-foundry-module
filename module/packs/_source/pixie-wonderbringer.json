@@ -56,7 +56,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "0"
       }
     },
     "details": {
@@ -103,15 +103,15 @@
     },
     "skills": {
       "arc": {
-        "value": 2,
+        "value": 1,
         "ability": "int"
       },
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "ste": {
-        "value": 2,
+        "value": 1,
         "ability": "dex"
       }
     }
@@ -119,6 +119,8 @@
   "prototypeToken": {
     "name": "Pixie Wonderbringer",
     "actorLink": false,
+    "width": 0.5,
+    "height": 0.5,
     "sight": {
       "enabled": true
     },

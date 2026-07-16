@@ -57,7 +57,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "12"
       }
     },
     "details": {
@@ -111,7 +111,7 @@
     },
     "skills": {
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "per": {
@@ -123,6 +123,8 @@
   "prototypeToken": {
     "name": "Pit Fiend",
     "actorLink": false,
+    "width": 2,
+    "height": 2,
     "sight": {
       "enabled": true
     },

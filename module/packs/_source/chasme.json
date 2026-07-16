@@ -58,7 +58,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "3"
       }
     },
     "details": {
@@ -113,7 +113,7 @@
     },
     "skills": {
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       }
     }
@@ -121,6 +121,8 @@
   "prototypeToken": {
     "name": "Chasme",
     "actorLink": false,
+    "width": 2,
+    "height": 2,
     "sight": {
       "enabled": true
     },

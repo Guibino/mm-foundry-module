@@ -57,7 +57,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "3"
       }
     },
     "details": {
@@ -131,6 +131,8 @@
   "prototypeToken": {
     "name": "Invisible Stalker",
     "actorLink": false,
+    "width": 2,
+    "height": 2,
     "sight": {
       "enabled": true
     },

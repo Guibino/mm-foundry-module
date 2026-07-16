@@ -58,7 +58,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "0"
       }
     },
     "details": {
@@ -110,6 +110,8 @@
   "prototypeToken": {
     "name": "Dao",
     "actorLink": false,
+    "width": 2,
+    "height": 2,
     "sight": {
       "enabled": true
     },

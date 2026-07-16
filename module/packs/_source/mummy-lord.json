@@ -56,7 +56,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "10"
       }
     },
     "details": {
@@ -114,15 +114,15 @@
     },
     "skills": {
       "his": {
-        "value": 2,
+        "value": 1,
         "ability": "int"
       },
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "rel": {
-        "value": 2,
+        "value": 1,
         "ability": "int"
       }
     }
@@ -130,6 +130,8 @@
   "prototypeToken": {
     "name": "Mummy Lord",
     "actorLink": false,
+    "width": 1,
+    "height": 1,
     "sight": {
       "enabled": true
     },

@@ -57,7 +57,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "3"
       }
     },
     "details": {
@@ -106,7 +106,7 @@
     },
     "skills": {
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "ste": {
@@ -118,6 +118,8 @@
   "prototypeToken": {
     "name": "Thri-kreen Psion",
     "actorLink": false,
+    "width": 1,
+    "height": 1,
     "sight": {
       "enabled": true
     },

@@ -56,7 +56,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "5"
       }
     },
     "details": {
@@ -109,15 +109,15 @@
     },
     "skills": {
       "ins": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "per": {
-        "value": 2,
+        "value": 1,
         "ability": "cha"
       }
     }
@@ -125,6 +125,8 @@
   "prototypeToken": {
     "name": "Ice Devil",
     "actorLink": false,
+    "width": 2,
+    "height": 2,
     "sight": {
       "enabled": true
     },

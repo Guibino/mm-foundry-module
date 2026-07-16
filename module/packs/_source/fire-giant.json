@@ -55,7 +55,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "4"
       }
     },
     "details": {
@@ -104,11 +104,11 @@
     },
     "skills": {
       "ath": {
-        "value": 2,
+        "value": 1,
         "ability": "str"
       },
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       }
     }
@@ -116,6 +116,8 @@
   "prototypeToken": {
     "name": "Fire Giant",
     "actorLink": false,
+    "width": 3,
+    "height": 3,
     "sight": {
       "enabled": true
     },

@@ -56,7 +56,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "14"
       }
     },
     "details": {
@@ -126,6 +126,8 @@
   "prototypeToken": {
     "name": "Blob of Annihilation",
     "actorLink": false,
+    "width": 4,
+    "height": 4,
     "sight": {
       "enabled": true
     },

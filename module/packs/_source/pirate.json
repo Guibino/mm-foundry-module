@@ -55,7 +55,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "2"
       }
     },
     "details": {
@@ -105,6 +105,8 @@
   "prototypeToken": {
     "name": "Pirate",
     "actorLink": false,
+    "width": 1,
+    "height": 1,
     "sight": {
       "enabled": true
     },

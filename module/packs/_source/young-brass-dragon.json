@@ -59,7 +59,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "3"
       }
     },
     "details": {
@@ -112,11 +112,11 @@
         "ability": "wis"
       },
       "per": {
-        "value": 2,
+        "value": 1,
         "ability": "cha"
       },
       "ste": {
-        "value": 2,
+        "value": 1,
         "ability": "dex"
       }
     }
@@ -124,6 +124,8 @@
   "prototypeToken": {
     "name": "Young Brass Dragon",
     "actorLink": false,
+    "width": 2,
+    "height": 2,
     "sight": {
       "enabled": true
     },

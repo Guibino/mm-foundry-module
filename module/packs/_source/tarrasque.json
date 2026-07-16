@@ -58,7 +58,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "18"
       }
     },
     "details": {
@@ -118,7 +118,7 @@
     },
     "skills": {
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       }
     }
@@ -126,6 +126,8 @@
   "prototypeToken": {
     "name": "Tarrasque",
     "actorLink": false,
+    "width": 4,
+    "height": 4,
     "sight": {
       "enabled": true
     },

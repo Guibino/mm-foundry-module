@@ -58,7 +58,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "5"
       }
     },
     "details": {
@@ -108,6 +108,8 @@
   "prototypeToken": {
     "name": "Purple Worm",
     "actorLink": false,
+    "width": 4,
+    "height": 4,
     "sight": {
       "enabled": true
     },

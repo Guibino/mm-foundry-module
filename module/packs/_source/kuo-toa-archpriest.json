@@ -58,7 +58,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "0"
       }
     },
     "details": {
@@ -109,7 +109,7 @@
         "ability": "wis"
       },
       "rel": {
-        "value": 2,
+        "value": 1,
         "ability": "int"
       }
     }
@@ -117,6 +117,8 @@
   "prototypeToken": {
     "name": "Kuo-toa Archpriest",
     "actorLink": false,
+    "width": 1,
+    "height": 1,
     "sight": {
       "enabled": true
     },

@@ -59,7 +59,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "5"
       }
     },
     "details": {
@@ -111,19 +111,19 @@
     },
     "skills": {
       "arc": {
-        "value": 2,
+        "value": 1,
         "ability": "int"
       },
       "ath": {
-        "value": 2,
+        "value": 1,
         "ability": "str"
       },
       "his": {
-        "value": 2,
+        "value": 1,
         "ability": "int"
       },
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       }
     }
@@ -131,6 +131,8 @@
   "prototypeToken": {
     "name": "Storm Giant",
     "actorLink": false,
+    "width": 3,
+    "height": 3,
     "sight": {
       "enabled": true
     },

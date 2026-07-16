@@ -57,7 +57,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "3"
       }
     },
     "details": {
@@ -104,15 +104,15 @@
     },
     "skills": {
       "ath": {
-        "value": 2,
+        "value": 1,
         "ability": "str"
       },
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "ste": {
-        "value": 2,
+        "value": 1,
         "ability": "dex"
       }
     }
@@ -120,6 +120,8 @@
   "prototypeToken": {
     "name": "Half-Dragon",
     "actorLink": false,
+    "width": 1,
+    "height": 1,
     "sight": {
       "enabled": true
     },

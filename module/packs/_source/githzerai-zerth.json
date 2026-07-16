@@ -55,7 +55,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "3"
       }
     },
     "details": {
@@ -102,15 +102,15 @@
     },
     "skills": {
       "arc": {
-        "value": 2,
+        "value": 1,
         "ability": "int"
       },
       "ins": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       }
     }
@@ -118,6 +118,8 @@
   "prototypeToken": {
     "name": "Githzerai Zerth",
     "actorLink": false,
+    "width": 1,
+    "height": 1,
     "sight": {
       "enabled": true
     },

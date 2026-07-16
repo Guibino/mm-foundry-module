@@ -56,7 +56,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "6"
       }
     },
     "details": {
@@ -111,11 +111,11 @@
     },
     "skills": {
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "sur": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       }
     }
@@ -123,6 +123,8 @@
   "prototypeToken": {
     "name": "Goristro",
     "actorLink": false,
+    "width": 3,
+    "height": 3,
     "sight": {
       "enabled": true
     },

@@ -57,7 +57,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "0"
       }
     },
     "details": {
@@ -106,7 +106,7 @@
     },
     "skills": {
       "arc": {
-        "value": 2,
+        "value": 1,
         "ability": "int"
       },
       "dec": {
@@ -114,7 +114,7 @@
         "ability": "cha"
       },
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       }
     }
@@ -122,6 +122,8 @@
   "prototypeToken": {
     "name": "Oni",
     "actorLink": false,
+    "width": 2,
+    "height": 2,
     "sight": {
       "enabled": true
     },

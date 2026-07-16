@@ -56,7 +56,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "0"
       }
     },
     "details": {
@@ -111,6 +111,8 @@
   "prototypeToken": {
     "name": "Dire Worg",
     "actorLink": false,
+    "width": 3,
+    "height": 3,
     "sight": {
       "enabled": true
     },

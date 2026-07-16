@@ -55,7 +55,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "0"
       }
     },
     "details": {
@@ -102,15 +102,15 @@
     },
     "skills": {
       "arc": {
-        "value": 2,
+        "value": 1,
         "ability": "int"
       },
       "his": {
-        "value": 2,
+        "value": 1,
         "ability": "int"
       },
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       }
     }
@@ -118,6 +118,8 @@
   "prototypeToken": {
     "name": "Mage",
     "actorLink": false,
+    "width": 1,
+    "height": 1,
     "sight": {
       "enabled": true
     },

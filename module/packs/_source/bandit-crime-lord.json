@@ -55,7 +55,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "4"
       }
     },
     "details": {
@@ -102,7 +102,7 @@
     },
     "skills": {
       "acr": {
-        "value": 2,
+        "value": 1,
         "ability": "dex"
       },
       "prc": {
@@ -118,6 +118,8 @@
   "prototypeToken": {
     "name": "Bandit Crime Lord",
     "actorLink": false,
+    "width": 1,
+    "height": 1,
     "sight": {
       "enabled": true
     },

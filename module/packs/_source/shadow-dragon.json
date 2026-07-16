@@ -59,7 +59,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "10"
       }
     },
     "details": {
@@ -120,6 +120,8 @@
   "prototypeToken": {
     "name": "Shadow Dragon",
     "actorLink": false,
+    "width": 3,
+    "height": 3,
     "sight": {
       "enabled": true
     },

@@ -126,6 +126,11 @@ export function convert5e(m: any): Monster {
   const crRaw = typeof m.cr === "object" ? (m.cr?.cr ?? "0") : (m.cr ?? "0");
   const langs = Array.isArray(m.languages) ? m.languages.map(render5e) : [];
   const telep = langs.join(" ").match(/telepathy\s+(\d+)/i);
+  // Bonus de Proficiencia por CR e Iniciativa 2024 (mod DES + proficiency x PB).
+  const crNum = crRaw === "1/8" ? 0.125 : crRaw === "1/4" ? 0.25 : crRaw === "1/2" ? 0.5 : Number(crRaw) || 0;
+  const pb = Math.max(2, Math.ceil(crNum / 4) + 1);
+  const initProf = (m.initiative && typeof m.initiative.proficiency === "number") ? m.initiative.proficiency : 0;
+  const initiative = mod(abScore("dex")) + initProf * pb;
 
   return {
     name: render5e(m.name),
@@ -148,7 +153,8 @@ export function convert5e(m: any): Monster {
     languages: langs.filter((l) => !/telepathy/i.test(l)),
     telepathy: telep ? Number(telep[1]) : undefined,
     cr: String(crRaw),
-    xp: undefined, pb: undefined,
+    initiative,
+    xp: undefined, pb,
     habitat: undefined, treasure: undefined,
     description: undefined,
     traits: toEntries(m.trait),

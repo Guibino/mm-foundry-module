@@ -56,7 +56,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "10"
       }
     },
     "details": {
@@ -117,6 +117,8 @@
   "prototypeToken": {
     "name": "Iron Golem",
     "actorLink": false,
+    "width": 2,
+    "height": 2,
     "sight": {
       "enabled": true
     },

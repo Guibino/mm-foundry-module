@@ -55,7 +55,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "3"
       }
     },
     "details": {
@@ -106,11 +106,11 @@
         "ability": "dex"
       },
       "ath": {
-        "value": 2,
+        "value": 1,
         "ability": "str"
       },
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "prf": {
@@ -118,7 +118,7 @@
         "ability": "cha"
       },
       "ste": {
-        "value": 2,
+        "value": 1,
         "ability": "dex"
       }
     }
@@ -126,6 +126,8 @@
   "prototypeToken": {
     "name": "Performer Maestro",
     "actorLink": false,
+    "width": 1,
+    "height": 1,
     "sight": {
       "enabled": true
     },

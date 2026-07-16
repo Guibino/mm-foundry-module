@@ -56,7 +56,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "8"
       }
     },
     "details": {
@@ -115,6 +115,8 @@
   "prototypeToken": {
     "name": "Cyclops Oracle",
     "actorLink": false,
+    "width": 3,
+    "height": 3,
     "sight": {
       "enabled": true
     },

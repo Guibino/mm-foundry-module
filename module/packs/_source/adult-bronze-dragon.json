@@ -59,7 +59,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "10"
       }
     },
     "details": {
@@ -108,7 +108,7 @@
     },
     "skills": {
       "ins": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "prc": {
@@ -116,7 +116,7 @@
         "ability": "wis"
       },
       "ste": {
-        "value": 2,
+        "value": 1,
         "ability": "dex"
       }
     }
@@ -124,6 +124,8 @@
   "prototypeToken": {
     "name": "Adult Bronze Dragon",
     "actorLink": false,
+    "width": 3,
+    "height": 3,
     "sight": {
       "enabled": true
     },

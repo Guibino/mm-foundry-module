@@ -55,7 +55,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "4"
       }
     },
     "details": {
@@ -102,15 +102,15 @@
     },
     "skills": {
       "ins": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "med": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "rel": {
@@ -122,6 +122,8 @@
   "prototypeToken": {
     "name": "Archpriest",
     "actorLink": false,
+    "width": 1,
+    "height": 1,
     "sight": {
       "enabled": true
     },

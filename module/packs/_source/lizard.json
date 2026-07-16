@@ -57,7 +57,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "0"
       }
     },
     "details": {
@@ -107,6 +107,8 @@
   "prototypeToken": {
     "name": "Lizard",
     "actorLink": false,
+    "width": 0.5,
+    "height": 0.5,
     "sight": {
       "enabled": true
     },

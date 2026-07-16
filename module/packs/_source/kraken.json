@@ -57,7 +57,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "14"
       }
     },
     "details": {
@@ -112,11 +112,11 @@
     },
     "skills": {
       "his": {
-        "value": 2,
+        "value": 1,
         "ability": "int"
       },
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       }
     }
@@ -124,6 +124,8 @@
   "prototypeToken": {
     "name": "Kraken",
     "actorLink": false,
+    "width": 4,
+    "height": 4,
     "sight": {
       "enabled": true
     },

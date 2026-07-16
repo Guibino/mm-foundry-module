@@ -56,7 +56,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "3"
       }
     },
     "details": {
@@ -103,15 +103,15 @@
     },
     "skills": {
       "ath": {
-        "value": 2,
+        "value": 1,
         "ability": "str"
       },
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "sur": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       }
     }
@@ -119,6 +119,8 @@
   "prototypeToken": {
     "name": "Giant Ape",
     "actorLink": false,
+    "width": 3,
+    "height": 3,
     "sight": {
       "enabled": true
     },

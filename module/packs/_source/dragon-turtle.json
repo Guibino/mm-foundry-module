@@ -57,7 +57,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "6"
       }
     },
     "details": {
@@ -109,6 +109,8 @@
   "prototypeToken": {
     "name": "Dragon Turtle",
     "actorLink": false,
+    "width": 4,
+    "height": 4,
     "sight": {
       "enabled": true
     },

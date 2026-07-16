@@ -57,7 +57,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "8"
       }
     },
     "details": {
@@ -116,6 +116,8 @@
   "prototypeToken": {
     "name": "Aboleth",
     "actorLink": false,
+    "width": 2,
+    "height": 2,
     "sight": {
       "enabled": true
     },

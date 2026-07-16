@@ -56,7 +56,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "6"
       }
     },
     "details": {
@@ -112,6 +112,8 @@
   "prototypeToken": {
     "name": "Unicorn",
     "actorLink": false,
+    "width": 2,
+    "height": 2,
     "sight": {
       "enabled": true
     },

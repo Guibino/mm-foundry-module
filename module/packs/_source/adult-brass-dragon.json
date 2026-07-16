@@ -59,7 +59,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "10"
       }
     },
     "details": {
@@ -108,7 +108,7 @@
     },
     "skills": {
       "his": {
-        "value": 2,
+        "value": 1,
         "ability": "int"
       },
       "prc": {
@@ -116,11 +116,11 @@
         "ability": "wis"
       },
       "per": {
-        "value": 2,
+        "value": 1,
         "ability": "cha"
       },
       "ste": {
-        "value": 2,
+        "value": 1,
         "ability": "dex"
       }
     }
@@ -128,6 +128,8 @@
   "prototypeToken": {
     "name": "Adult Brass Dragon",
     "actorLink": false,
+    "width": 3,
+    "height": 3,
     "sight": {
       "enabled": true
     },

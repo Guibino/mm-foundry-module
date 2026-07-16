@@ -56,7 +56,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "16"
       }
     },
     "details": {
@@ -121,6 +121,8 @@
   "prototypeToken": {
     "name": "Colossus",
     "actorLink": false,
+    "width": 4,
+    "height": 4,
     "sight": {
       "enabled": true
     },

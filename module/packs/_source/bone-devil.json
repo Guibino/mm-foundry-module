@@ -57,7 +57,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "4"
       }
     },
     "details": {
@@ -111,11 +111,11 @@
     },
     "skills": {
       "dec": {
-        "value": 2,
+        "value": 1,
         "ability": "cha"
       },
       "ins": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       }
     }
@@ -123,6 +123,8 @@
   "prototypeToken": {
     "name": "Bone Devil",
     "actorLink": false,
+    "width": 2,
+    "height": 2,
     "sight": {
       "enabled": true
     },

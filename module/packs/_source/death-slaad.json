@@ -57,7 +57,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "8"
       }
     },
     "details": {
@@ -110,7 +110,7 @@
     },
     "skills": {
       "arc": {
-        "value": 2,
+        "value": 1,
         "ability": "int"
       },
       "prc": {
@@ -122,6 +122,8 @@
   "prototypeToken": {
     "name": "Death Slaad",
     "actorLink": false,
+    "width": 1,
+    "height": 1,
     "sight": {
       "enabled": true
     },

@@ -56,7 +56,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "8"
       }
     },
     "details": {
@@ -111,6 +111,8 @@
   "prototypeToken": {
     "name": "Roc",
     "actorLink": false,
+    "width": 4,
+    "height": 4,
     "sight": {
       "enabled": true
     },

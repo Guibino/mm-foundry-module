@@ -59,7 +59,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "4"
       }
     },
     "details": {
@@ -108,7 +108,7 @@
     },
     "skills": {
       "ins": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "prc": {
@@ -116,11 +116,11 @@
         "ability": "wis"
       },
       "per": {
-        "value": 2,
+        "value": 1,
         "ability": "cha"
       },
       "ste": {
-        "value": 2,
+        "value": 1,
         "ability": "dex"
       }
     }
@@ -128,6 +128,8 @@
   "prototypeToken": {
     "name": "Young Gold Dragon",
     "actorLink": false,
+    "width": 2,
+    "height": 2,
     "sight": {
       "enabled": true
     },

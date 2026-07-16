@@ -56,7 +56,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "14"
       }
     },
     "details": {
@@ -119,15 +119,15 @@
         "ability": "int"
       },
       "his": {
-        "value": 2,
+        "value": 1,
         "ability": "int"
       },
       "ins": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       }
     }
@@ -135,6 +135,8 @@
   "prototypeToken": {
     "name": "Lich",
     "actorLink": false,
+    "width": 1,
+    "height": 1,
     "sight": {
       "enabled": true
     },

@@ -57,7 +57,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "8"
       }
     },
     "details": {
@@ -120,7 +120,7 @@
         "ability": "int"
       },
       "prc": {
-        "value": 2,
+        "value": 1,
         "ability": "wis"
       },
       "rel": {
@@ -132,6 +132,8 @@
   "prototypeToken": {
     "name": "Sphinx of Lore",
     "actorLink": false,
+    "width": 2,
+    "height": 2,
     "sight": {
       "enabled": true
     },

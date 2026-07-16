@@ -57,7 +57,7 @@
       },
       "init": {
         "ability": "dex",
-        "bonus": ""
+        "bonus": "0"
       }
     },
     "details": {
@@ -120,6 +120,8 @@
   "prototypeToken": {
     "name": "Faerie Dragon Youth",
     "actorLink": false,
+    "width": 0.5,
+    "height": 0.5,
     "sight": {
       "enabled": true
     },
